@@ -1,8 +1,8 @@
 # V1.5 Curriculum
 
-
-
 ## Modules
+
+### Phase 1
 
 0. [Installfest](./modules/Installfest/README.md)
 0. [Terminal Basics](./modules/Terminal-Basics/README.md)
@@ -13,3 +13,8 @@
 0. [Super Simple testing]
 0. [Error handling and Debugging]
 0. [Testing with Mocha and Chai]
+
+
+### Phase 2
+
+0. [Punit for beginners](./modules/punit-for-beginners/README.md)
