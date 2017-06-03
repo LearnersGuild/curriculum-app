@@ -1,4 +1,4 @@
-# Saving Progress With GitHub
+# Saving Progress With Git And GitHub
 
 ## Description
 
