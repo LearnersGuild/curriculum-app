@@ -14,3 +14,12 @@
 - Can open a directory in the finder from the Terminal
 - Can open a file in it’s default app from the Terminal
 - Can explain what a filesystem path is
+
+
+## Potential Resources
+
+- http://guide.bash.academy/
+- http://linuxcommand.org/learning_the_shell.php
+- https://www.tutorialspoint.com/unix/
+- http://freeengineer.org/learnUNIXin10minutes.html
+- https://www.learnenough.com/command-line-tutorial

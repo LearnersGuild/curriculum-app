@@ -14,5 +14,8 @@
 
 
 
-## Completion
+## Potential Resources
 
+- https://brew.sh/
+- https://caskroom.github.io/
+- https://robots.thoughtbot.com/brewfile-a-gemfile-but-for-homebrew

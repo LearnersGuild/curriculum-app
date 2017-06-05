@@ -14,3 +14,8 @@ In this module you'll learn to use just enough of Git and GitHub to create a new
 - Can create a repo on GitHub
 - Can use `git add`, `git commit`, and `git push`
 
+
+## Potential Resources
+
+- https://try.github.io/levels/1/challenges/1
+- https://github.com/jlord/git-it-electron
