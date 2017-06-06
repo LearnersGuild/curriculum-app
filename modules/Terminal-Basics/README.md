@@ -13,7 +13,9 @@
 1. Can open a file in its default app from the Terminal
 1. Can use: ctrl-c, ctrl-a, ctrl-e
 1. Can split screen their terminal window
-1. Can install packages via homebrew
+1. Can effectively utilize a .bashrc and .bash_profile
+1. Can create and has some bash aliases
+1. Can and has customized their PS1
 
 ## Glossary of Terms
 | Term | Explanation |
@@ -58,6 +60,7 @@
 0. [ ] [Environment-Variables-And-PATH](./exercises/Environment-Variables-And-PATH.md)
 0. [ ] [Basic-BASH-Commands](./exercises/Basic-BASH-Commands.md)
 0. [ ] [Terminal-Shortcuts](./exercises/Terminal-Shortcuts.md)
+0. [ ] [Customizing-Your-Shell](./exercises/Customizing-Your-Shell.md)
 
 ## Recommended Resources
 - [Learn Shell](http://www.learnshell.org/)

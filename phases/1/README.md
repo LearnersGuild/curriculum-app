@@ -26,7 +26,6 @@ _For more detail on the skills you'll learn in Phase 1 checkout
 0. [ ] [How To Learn At The Guild](../../modules/How-To-Learn-At-The-Guild)
 0. [ ] [Installfest](../../modules/Installfest)
 0. [ ] [Terminal Basics](../../modules/Terminal-Basics)
-0. [ ] [Shell Configuration](../../modules/Shell-Configuration)
 0. [ ] [Editor Basics](../../modules/Editor-Basics)
 0. [ ] [Saving Progress With Git And GitHub](../../modules/Saving-Progress-With-Git-And-GitHub)
 0. [ ] [Foundational JavaScript Programing](../../modules/Foundational-JavaScript-Programing)
