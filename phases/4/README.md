@@ -1,10 +1,8 @@
 # Phase 4
 
-
+Apprenticeship
 
 
 ## Resources
 
-### Interviewing
 
-- https://www.interviewcake.com/

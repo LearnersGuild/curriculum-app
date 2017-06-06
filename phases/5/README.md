@@ -9,3 +9,9 @@ Get a job hippie!
 ### Networking
 
 - Can explain how the Internet works (DNS, domains, TCP stack, IP addresses)
+
+
+
+## Potential Resources
+
+- https://www.interviewcake.com/

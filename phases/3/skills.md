@@ -40,3 +40,4 @@
 ## Dev Ops
 
 - Can deploy a node express app to Heroku
+- Setting environment variables in production

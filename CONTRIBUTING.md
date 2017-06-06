@@ -24,3 +24,9 @@ schema:
 0. TBD
 0. TBD
 0. TBD
+
+
+## Big Open Questions
+
+- Who will lead each Phase with only 2 SEPs?
+- Are we still calling SEPs SEPs?
