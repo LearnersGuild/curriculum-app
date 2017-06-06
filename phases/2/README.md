@@ -44,3 +44,13 @@ _For more detail on the skills you'll learn in Phase 2 checkout
 0. [ ] [Build Your Own jQuery]
 0. [ ] [Build Your Own Express]
 0. [ ] [Party like its ES2017]
+
+
+
+## Instructor Support Offerings
+
+- meet with each learner once a week for 20m to assess progress
+  - this shakes out to about 2 hours a day to meet 1-1
+- clarity on modules
+- Di and Ethan are coaches for phase 1 and 2
+- learners place a `i need help` indicator on their monitor

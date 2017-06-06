@@ -30,3 +30,5 @@ schema:
 
 - Who will lead each Phase with only 2 SEPs?
 - Are we still calling SEPs SEPs?
+- How is the assessment schedule and expected pacing actually working?
+-

@@ -1,6 +1,6 @@
 # Foundational JavaScript Programing
 
-# Skills
+## Skills
 
 - [ ] Can explain the difference between `==` and `===` and when to use which one
 - [ ] Can use an if / else statement
@@ -16,3 +16,10 @@
 - [ ] Can pass multiple arguments into a function using a plain object
 - [ ] Can catch errors
 - [ ] Can explain lexical scope inheritance
+
+
+## Exercises
+
+
+- https://www.freecodecamp.com/challenges/iterate-with-javascript-for-loops
+- https://www.freecodecamp.com/challenges/iterate-odd-numbers-with-a-for-loop

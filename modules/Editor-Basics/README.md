@@ -14,5 +14,15 @@
 
 ## Resources
 
+
+### Atom
+
+- [Top 5 Features: Atom Code Editor](https://www.youtube.com/watch?v=WWwBQQOGllo&list=PLYzJdSdNWNqwNWlxz7bvu-lOYR0CFWQ4I)
+- [My Code Editor: Atom, Setup & Packages](https://www.youtube.com/watch?v=hPC6keUUiTA)
+
+
+### Sublime
+
+
 ## Practice
 

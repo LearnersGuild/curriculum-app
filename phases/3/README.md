@@ -31,7 +31,16 @@ In Phase 3 you'll vote on goals in the goal library… blah blah blah
 
 
 
-## Instructor Services
+## Instructor Support Offerings
 
 - Will review your pull requests
--
+- Will give you qualitative feedback on final product
+
+### Other Options
+
+- live code reviews
+- live coding
+- lectures
+- AMAs
+- 1-1
+- cog apps
