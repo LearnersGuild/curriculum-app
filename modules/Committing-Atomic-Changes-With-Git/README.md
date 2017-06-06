@@ -1,4 +1,4 @@
-# Git Ninja
+# Committing Atomic Changes With Git
 
 ## Skills
 

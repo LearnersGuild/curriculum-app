@@ -56,13 +56,15 @@
 - Can convert an array of objects with unique property into a hash by that property
 - Throwing and catching errors as flow control
 - Branching and Looping
+- Can and does author well formatted code
+- Can and does use a linter
 
 
 ## Programming in JavaScript
 
 At this level we are using ES5 only. No ES6 with or without transpiling. We’re also avoiding anything async. Sync code only.
 
-- Can explain the difference between == and === and when to use which one
+- Can explain the difference between `==` and `===` and when to use which one
 - Can use an if / else statement
 - Can use a switch statement
 - Can use a while loop
@@ -72,7 +74,7 @@ At this level we are using ES5 only. No ES6 with or without transpiling. We’re
 - Can access object properties with both dot and bracket syntax
 - Can get all the keys on an object
 - Can parse and serialize JSON
-- Can use Array#forEach, Array#map, Array#filter, Array#reduce
+- Can use `Array#forEach`, `Array#map`, `Array#filter`, `Array#reduce`
 - Can create and use closures
 - Can pass multiple arguments into a function using a plain object
 - Can catch errors
@@ -84,9 +86,6 @@ At this level we are using ES5 only. No ES6 with or without transpiling. We’re
 - Can write a basic assert function
 - Can write basic tests at the bottom of a file
 - Can write synchronous tests using mocha and chai
-- Code Quality
-- Can and does author well formatted code
-- Can and does use a linter
 
 
 ## Node

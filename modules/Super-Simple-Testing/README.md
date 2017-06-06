@@ -26,3 +26,5 @@ if (require.main === module) (function(){
 
 
 - [ ] can write tiny tests at the bottom of a file
+- [ ] Can write a basic assert function
+- [ ] Can write basic tests at the bottom of a file

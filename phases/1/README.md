@@ -34,7 +34,7 @@ _For more detail on the skills you'll learn in Phase 1 checkout
 0. [ ] [Super Simple Testing](../../modules/Super-Simple-Testing)
 0. [ ] [Error handling]
 0. [ ] [Debugging in Node](../../modules/Debugging-in-Node)
-0. [ ] [Testing with Mocha and Chai]
 0. [ ] [Serialization](../../modules/Serialization)
 0. [ ] [Building A CLI in Node](../../modules/Building-A-CLI-in-Node)
 0. [ ] [Foundational SQL](../../modules/Foundational-SQL)
+0. [ ] [Intro to Testing with Mocha and Chai]
