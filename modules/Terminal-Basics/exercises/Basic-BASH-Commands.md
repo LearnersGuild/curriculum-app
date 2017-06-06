@@ -40,6 +40,7 @@ Complete the following steps in your terminal to check your understanding.
 1. Remove the copy of your text file in the new folder
 1. Change directory back to `Documents/`
 1. Remove the new_folder
+1. Open the `Documents/` directory in your finder
 
 When you feel comfortable with some of these commands, check out this web-based text-game where you can put your newfound tools to the test!
 

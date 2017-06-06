@@ -58,9 +58,6 @@
 0. [ ] [Environment-Variables-And-PATH](./exercises/Environment-Variables-And-PATH.md)
 0. [ ] [Basic-BASH-Commands](./exercises/Basic-BASH-Commands.md)
 0. [ ] [Terminal-Shortcuts](./exercises/Terminal-Shortcuts.md)
-0. [ ] [Opening-Files](./exercises/Opening-Files.md)
-0. [ ] [Installing-Packages](./exercises/Installing-Packages.md)
-
 
 ## Recommended Resources
 - [Learn Shell](http://www.learnshell.org/)
