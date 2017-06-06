@@ -21,6 +21,7 @@ Read the following articles on BASH commands:
 
 - [ ] [Commands and Arguments](http://guide.bash.academy/commands/)
 - [ ] [Command Line Primer for Beginners](http://lifehacker.com/5633909/who-needs-a-mouse-learn-to-use-the-command-line-for-almost-anything)
+- [ ] [ShortcutFoo Command Line](https://www.shortcutfoo.com/app/dojos/command-line)
 
 ### Exercise
 
