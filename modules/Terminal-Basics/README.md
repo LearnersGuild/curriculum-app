@@ -22,11 +22,11 @@
 | Terminal | The terminal is wrapper program, like iTerm2, that runs the Shell program and provides a user interface.
 | BASH | BASH (Bourne-Again Shell) is a kind of UNIX shell and is the most used shell since 1989.
 | UNIX | An operating system that comes with a bunch of small, composeable tools (or programs) like `ls`, `grep`, `cd`, `mkdir`, and more. These UNIX tools can be used alone or they can be used together.
-| Environment Variable | |
-| Arguments | |
-| Standard Output (STDOUT) | |
-| Standard In (STDIN) | |
-| Command | |
+| Environment Variable | Environment variables store information about your current shell or environment that you're working in. They're used to answer questions like `What is my current working directory?` `echo $PWD` or `What is the current user name?` `echo $USER`. When you start managing a web app, you'll use environment variables to store private variables you don't want displayed in your code for the whole world to see.|
+| Arguments | Arguments are additional pieces of information you can send to a command, for example the command `echo` takes whatever you want to print to STDOUT as its argument. In this example, the string 'Hello there' is the argument given to the command: `echo 'Hello there!'`|
+| Standard Output (STDOUT) | Most commands will print to STDOUT, which you will see printed to your terminal. You can also redirect the output of a command and send it to a file or even send it as an argument to a new command. |
+| Standard In (STDIN) | The counterpart to STDOUT, STDIN is the source of an input for a program or command line tool. STDIN is any input or text entered into the shell and passed as an argument to a program. |
+| Command | A command is a program that is executed in the shell, some examples are `echo`, `ls`, `cd`, `open`. |
 
 ## Potential Resources
 
@@ -65,3 +65,4 @@
 - [Codecademy Learn the Command line](https://www.codecademy.com/learn/learn-the-command-line)
 - [UNIX Tutorial for Beginners](http://www.ee.surrey.ac.uk/Teaching/Unix/)
 - [UNIX File Operations](http://heim.ifi.uio.no/gisle/staging2/drupalprimer/unix/unix03.html)
+- [BASH Redirection Cheat Sheet](http://www.catonmat.net/download/bash-redirections-cheat-sheet.pdf)
