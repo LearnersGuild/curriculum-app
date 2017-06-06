@@ -22,8 +22,7 @@
 | Terminal | The terminal is wrapper program, like iTerm2, that runs the Shell program and provides a user interface.
 | BASH | BASH (Bourne-Again Shell) is a kind of UNIX shell and is the most used shell since 1989.
 | UNIX | An operating system that comes with a bunch of small, composeable tools (or programs) like `ls`, `grep`, `cd`, `mkdir`, and more. These UNIX tools can be used alone or they can be used together.
-| Environment | |
-| Variable | |
+| Environment Variable | |
 | Arguments | |
 | Standard Output (STDOUT) | |
 | Standard In (STDIN) | |
@@ -39,18 +38,20 @@
 
 
 ## Suggested Search Terms
-  `unix path introduction`
-  `difference between unix shell terminal console`
-  `introduction to bash shell`
-  `absolute vs relative paths`
-  `unix change directories`
-  `unix open files`
-  `unix customizing bash profile`
-  `unix creating files directories`
-  `unix copying files directories`
-  `unix listing files directories`
-  `unix renaming files directories`
-  `unix viewing contents of a file`
+  ```
+  unix path introduction
+  difference between unix shell terminal console
+  introduction to bash shell
+  absolute vs relative paths
+  unix change directories
+  osx open files terminal
+  unix customizing bash profile
+  unix creating files directories
+  unix copying files directories
+  unix listing files directories
+  unix renaming files directories
+  unix viewing contents of a file
+  ```
 
 ## Exercises
 
@@ -62,6 +63,7 @@
 
 
 ## Recommended Resources
+- [Learn Shell](http://www.learnshell.org/)
 - [Command Line Crash Course](https://learnpythonthehardway.org/book/appendixa.html)
 - [Codecademy Learn the Command line](https://www.codecademy.com/learn/learn-the-command-line)
 - [UNIX Tutorial for Beginners](http://www.ee.surrey.ac.uk/Teaching/Unix/)

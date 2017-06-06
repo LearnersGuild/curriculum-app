@@ -46,21 +46,21 @@ You'll notice the `$PATH` is colon-delimited, between each colon is a new direct
 ```
 
 ### Exercise
-Let's practice adding a new `/bin/` directory to your home directory and then adding this directory to your `$PATH`. Once you've added it to your `$PATH`, you can save executable programs in that directory for your shell environment to find and execute.
+Let's practice adding a new `bin` directory to your home directory and then adding this directory to your `$PATH`. Once you've added it to your `$PATH`, you can save executable programs in that directory for your shell environment to find and execute.
 
-Start by navigating to your root directory using the command `cd ~/.`. The command `cd` is for change directory and let's you change the folder you're currently working in from your shell.
+Start by navigating to your root directory using the command `cd ~`. The command `cd` is for change directory and let's you change the folder you're currently working in from your shell.
 
 Then, we'll create a new folder at your root with the `mkdir` command, which means make directory:
 
 ```bash
-mkdir example_bin
+mkdir bin
 ```
 
 Now, let's take a look at what directories we have in the root folder. Use the command `ls` to list all visible directories. You should see your new directory in the list!
 
-Ok, we have a directory to add to the `$PATH`, let's `echo $PATH` now so we can compare it with the new `$PATH` to see where `/example_bin/` gets placed after we add it.
+Ok, we have a directory to add to the `$PATH`, let's `echo $PATH` now so we can compare it with the new `$PATH` to see where `~/bin` gets placed after we add it.
 
-To add `/example_bin/` to your `PATH`, you:
+To add `~/bin` to your `PATH`, you:
   1. Set the environment variable by using the `=`
   1. Use the value of the current `PATH` first
   1. Separate the current path from your new directory using a `:`
@@ -68,11 +68,11 @@ To add `/example_bin/` to your `PATH`, you:
   1. Permanently add it to your `PATH` using the `export` command
 
 ```bash
-PATH=$PATH:~/example_bin/
+PATH=$PATH:~/bin/
 export PATH # without this you will lose this change when you open a new shell window
 ```
 
-Now if you `echo $PATH` you should see `/Users/your_username/example_bin`. This is the absolute path we get by using `~/` before the directory. Learn more about absolute paths versus relative paths by watching this [BASH Basics video](https://youtu.be/eH8Z9zeywq0?t=506) from minute 8:30 to the end.
+Now if you `echo $PATH` you should see `/Users/your_username/bin`. This is the absolute path we get by using `~/` before the directory. Learn more about absolute paths versus relative paths by watching this [BASH Basics video](https://youtu.be/eH8Z9zeywq0?t=506).
 
 Research these links and topics to learn more about the `$PATH`. While you're researching, complete the list of tasks below to check your understanding.
 
@@ -85,7 +85,7 @@ Research these links and topics to learn more about the `$PATH`. While you're re
 0. [ ] Add a new directory to your PATH
 0. [ ] Add a new directory to the beginning of your PATH
 0. [ ] Add a new directory to the end of your PATH
-0. [ ] Export and environment variable and access it in a new shell window
+0. [ ] Export an environment variable and access it in a new shell window
 0. [ ] Run the command `ls /usr/bin` and identify some programs you recognize. If you don't recognize any of them, try researching a few to see what they do!
 
 ### Suggested Search Terms
