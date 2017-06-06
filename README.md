@@ -2,7 +2,7 @@
 
 ## Phases
 
-- [Phase 1](./phases/1.md)
-- [Phase 2](./phases/2.md)
-- [Phase 3](./phases/3.md)
-- [Phase 4](./phases/4.md)
+- [Phase 1](./phases/1)
+- [Phase 2](./phases/2)
+- [Phase 3](./phases/3)
+- [Phase 4](./phases/4)

@@ -1,6 +1,7 @@
 # Phase 1
 
-Phase 1 is all about the fundamentals. You
+Phase 1 is all about the fundamentals. Here you'll learn the basic skills needed
+to begin programming like a professional.
 
 ## High Level Skills
 
@@ -17,20 +18,23 @@ In this phase you will learn…
 - how to persist state in an application via reading and writing to local files
 - how to use basic SQL using the postgres command line interface and Postico
 
+_For more detail on the skills you'll learn in Phase 1 checkout
+[Phase 1 Skills](./skills.md). Also checkout the skills listed in each module._
+
 ## Modules
 
-0. [ ] [How To Learn At The Guild](../modules/How-To-Learn-At-The-Guild)
-0. [ ] [Installfest](../modules/Installfest)
-0. [ ] [Terminal Basics](../modules/Terminal-Basics)
-0. [ ] [Shell Configuration](../modules/Shell-Configuration)
-0. [ ] [Editor Basics](../modules/Editor-Basics)
-0. [ ] [Saving Progress With Git And GitHub](../modules/Saving-Progress-With-Git-And-GitHub)
-0. [ ] [Foundational JavaScript Programing](../modules/Foundational-JavaScript-Programing)
-0. [ ] [Foundational Programing in Node](../modules/Foundational-Programing-in-Node)
-0. [ ] [Super Simple Testing](../modules/Super-Simple-Testing)
+0. [ ] [How To Learn At The Guild](../../modules/How-To-Learn-At-The-Guild)
+0. [ ] [Installfest](../../modules/Installfest)
+0. [ ] [Terminal Basics](../../modules/Terminal-Basics)
+0. [ ] [Shell Configuration](../../modules/Shell-Configuration)
+0. [ ] [Editor Basics](../../modules/Editor-Basics)
+0. [ ] [Saving Progress With Git And GitHub](../../modules/Saving-Progress-With-Git-And-GitHub)
+0. [ ] [Foundational JavaScript Programing](../../modules/Foundational-JavaScript-Programing)
+0. [ ] [Foundational Programing in Node](../../modules/Foundational-Programing-in-Node)
+0. [ ] [Super Simple Testing](../../modules/Super-Simple-Testing)
 0. [ ] [Error handling]
-0. [ ] [Debugging in Node](../modules/Debugging-in-Node)
+0. [ ] [Debugging in Node](../../modules/Debugging-in-Node)
 0. [ ] [Testing with Mocha and Chai]
-0. [ ] [Serialization](../modules/Serialization)
-0. [ ] [Building A CLI in Node](../modules/Building-A-CLI-in-Node)
-0. [ ] [Foundational SQL](../modules/Foundational-SQL)
+0. [ ] [Serialization](../../modules/Serialization)
+0. [ ] [Building A CLI in Node](../../modules/Building-A-CLI-in-Node)
+0. [ ] [Foundational SQL](../../modules/Foundational-SQL)
