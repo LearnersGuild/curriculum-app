@@ -29,6 +29,7 @@
 - Can open a file in its default app from the Terminal
 - Is aware of process exit statuses
 - Can use && and || in the terminal
+- Has their preferred editor setup to be their `$EDITOR`
 
 
 ## Git & GitHub
@@ -39,6 +40,7 @@
 - Can initialize a new git repo
 - Can create a repo on GitHub
 - Can use `git add`, `git commit`, and `git push`
+- Has their preferred editor setup to be their `$GIT_EDITOR`
 
 
 ## Programming

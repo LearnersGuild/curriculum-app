@@ -13,8 +13,8 @@ In this phase you will learn…
 - how to create static HTML & CSS “pages” from mockups and wireframes
 - how to use the latest version of JavaScript
 
-_For more detail on the skills you'll learn in Phase 1 checkout
-[Phase 1 Skills](./skills.md). Also checkout the skills listed in each module._
+_For more detail on the skills you'll learn in Phase 2 checkout
+[Phase 2 Skills](./skills.md). Also checkout the skills listed in each module._
 
 ## Modules
 
