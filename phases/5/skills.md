@@ -17,6 +17,7 @@
     * Implements the algorithm with legible, syntactically correct code
     * Test
     * Identifies the run time and space complexity for implemented algorithm
+* [Cracking the coding interview resource](http://www.crackingthecodinginterview.com/uploads/6/5/2/8/6528028/cracking_the_coding_skills_-_v6.pdf)
 
 ## Algorithms
 * Sorting
@@ -52,3 +53,4 @@
     * etc.
 * Situation, Action, Result (SAR) stories prepared (and rehearsed)
 * Prepared questions for interviewer
+* [Cracking the coding interview resource](http://www.crackingthecodinginterview.com/uploads/6/5/2/8/6528028/cracking_the_soft_skills_-_v6.pdf)
