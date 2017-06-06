@@ -1,7 +1,15 @@
 # CONTRIBUTING
 
 
-This repo was developed using [grip](https://github.com/joeyespo/grip)
+This repo was developed using [grip](https://github.com/joeyespo/grip).
+
+Do this to install and run it.
+
+```sh
+brew install grip
+cd v1.5-curriculum
+grip
+```
 
 
 

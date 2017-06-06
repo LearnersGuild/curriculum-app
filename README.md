@@ -8,3 +8,9 @@
 - [Phase 3](./phases/3)
 - [Phase 4](./phases/4)
 - [Phase 5](./phases/5)
+
+
+
+## Contributing
+
+[CONTRIBUTING](./CONTRIBUTING.md)
