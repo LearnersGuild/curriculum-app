@@ -1,6 +1,6 @@
 # Phase 3 -> 4 Assessment
 
-This is the assessment for moving from phase 3 to phase 4.
+This is the assessment for moving from phase 3 to phase 4. You'll work on one app, building it in three stages.
 
 To get started, create a new repository called `phase-3-assessment`. Do all of your work in this repo and submit it as your solution.
 
@@ -18,15 +18,7 @@ Skills covered:
 
 Build a community for record enthusiasts to review their favorite albums. The app is called **Vinyl**.
 
-The client has provided basic wireframes and user stories (broken into 3 parts).
-
-## General Requirements
-
-- [ ] Solution is in a public repository called `phase-3-assessment`.
-- [ ] All dependencies are declared in a `package.json` file.
-- [ ] Express is used for the web server.
-- [ ] PostgreSQL is used for the database.
-- [ ] Database is seeded with at least 4 albums (check out the [sample data](#sample-data)).
+The client has provided basic wireframes and user stories (broken into 3 stages).
 
 ## Wireframes
 
@@ -47,7 +39,19 @@ Use this data to seed the `albums` table on your database.
 | Blue      | Joni Mitchell   |
 | Graceland | Paul Simon      |
 
-## Part 1: Basic User Authentication & Profiles
+## General Requirements
+
+- [ ] Solution is in a public repository called `phase-3-assessment`.
+- [ ] All dependencies are declared in a `package.json` file.
+- [ ] Express is used for the web server.
+- [ ] PostgreSQL is used for the database.
+- [ ] Database is seeded with at least 4 albums (check out the [sample data](#sample-data)).
+
+## Stage 1: Basic User Authentication & Profiles
+
+Allow users to sign up, sign in, view their profile page, and sign out.
+
+#### Requirements
 
 **Users can...**
 
@@ -62,7 +66,11 @@ Use this data to seed the `albums` table on your database.
 - [ ] See a link to "Profile" and "Sign Out" if they're logged in in the site-wide header.
 - [ ] See links to "Sign In" and "Sign Up" if they're logged out in the site-wide header.
 
-## Part 2: Album Reviews
+## Stage 2: Album Reviews
+
+Allow users to see albums and leave reviews on them.
+
+#### Requirements
 
 **Users can...**
 
@@ -83,7 +91,11 @@ Use this data to seed the `albums` table on your database.
 - [ ] See a pop-up that says: "Are you sure you want to delete this review?" when clicking trash can icon
 - [ ] Have the review deleted when confirming the pop-up.
 
-## Part 3: Validations & Authorization
+## Stage 3: Validations & Authorization
+
+Ensure that no invalid data gets saved to the database with validation. Also make sure that certain user actions are authorized.
+
+#### Requirements
 
 Users CANNOT save invalid data to the database. You don't need to show error messages to the user for the following.
 
@@ -94,6 +106,8 @@ A user is authorized to perform certain actions on the site. You don't need to s
 
 - [ ] Only logged in users can create/destroy reviews.
 - [ ] Users may only delete their own reviews.
+
+---
 
 ## Pairing Exercise
 
@@ -111,13 +125,14 @@ These are the possible features that your assessor may choose from to pair with 
 - [ ] Update their profile photo (consider using Uploadcare).
 - [ ] See their profile photo next to their reviews.
 - [ ] Receive a welcome email after creating an account.
+- [ ] Visit user profile pages via pretty urls, like "/users/james-franco".
 
-#### Review Features
+#### Review  Features
 
 **Users can...**
 
 - [ ] Visit album pages via pretty urls, like "/albums/thriller".
-- [ ] Visit user profile pages via pretty urls, like "/users/james-franco".
+- [ ] Add a star rating to reviews (from 1-5) and see the star rating for each review of an album in star icons.
 - [ ] See review content truncated to 400 characters max, with a link to view more on a album's page.
 - [ ] See a relative published date, e.g. "2 days ago" on a album's page.
 
