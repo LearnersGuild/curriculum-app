@@ -1,5 +1,18 @@
 # CONTRIBUTING
 
+## Just want to comment?
+
+Just edit this repo on GitHub and create a Pull Request.
+
+## Editing locally?
+
+```
+Clone
+Edit
+Create Pull Request
+```
+
+### Grip
 
 This repo was developed using [grip](https://github.com/joeyespo/grip).
 
@@ -29,6 +42,6 @@ schema:
 ## Big Open Questions
 
 - Who will lead each Phase with only 2 SEPs?
-- Are we still calling SEPs SEPs?
+- Are we still calling SEPs "SEPs" or are they now instructors?
 - How is the assessment schedule and expected pacing actually working?
 -

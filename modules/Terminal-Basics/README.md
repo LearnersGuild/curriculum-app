@@ -18,6 +18,7 @@
 1. Can and has customized their PS1
 
 ## Glossary of Terms
+
 | Term | Explanation |
 | ---- | ----------- |
 | Shell | a shell is a program that has a command line interface that you give commands that can be processed by an operating system.
@@ -40,20 +41,21 @@
 
 
 ## Suggested Search Terms
-  ```
-  unix path introduction
-  difference between unix shell terminal console
-  introduction to bash shell
-  absolute vs relative paths
-  unix change directories
-  osx open files terminal
-  unix customizing bash profile
-  unix creating files directories
-  unix copying files directories
-  unix listing files directories
-  unix renaming files directories
-  unix viewing contents of a file
-  ```
+
+```
+unix path introduction
+difference between unix shell terminal console
+introduction to bash shell
+absolute vs relative paths
+unix change directories
+osx open files terminal
+unix customizing bash profile
+unix creating files directories
+unix copying files directories
+unix listing files directories
+unix renaming files directories
+unix viewing contents of a file
+```
 
 ## Exercises
 

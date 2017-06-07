@@ -46,3 +46,9 @@ _For more detail on the skills you'll learn in Phase 1 checkout
 - clarity on modules
 - Di and Ethan are coaches for phase 1 and 2
 - learners place a `i need help` indicator on their monitor
+
+
+## Questions
+
+- How will learners track and report the modules they're working on, the
+modules they've completed, and the skills they believe they now have?
