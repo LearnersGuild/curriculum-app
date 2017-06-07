@@ -34,6 +34,7 @@ _For more detail on the skills you'll learn in Phase 1 checkout
 - [ ] [Error handling]
 - [ ] [Debugging in Node](../../modules/Debugging-in-Node)
 - [ ] [Serialization](../../modules/Serialization)
+- [ ] [Regular Expression Baiscs](../../modules/Regular-Expression-Basics)
 - [ ] [Building A CLI in Node](../../modules/Building-A-CLI-in-Node)
 - [ ] [Foundational SQL](../../modules/Foundational-SQL)
 - [ ] [Intro to Testing with Mocha and Chai]
