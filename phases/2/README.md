@@ -19,19 +19,19 @@ _For more detail on the skills you'll learn in Phase 2 checkout
 ## Modules
 
 0. [ ] [Terminal Advanced](../../modules/Terminal-Advanced)
-0. [x] [HTTP Anatomy](../../modules/HTTP-Anatomy)
+0. [ ] [HTTP Anatomy](../../modules/HTTP-Anatomy)
 0. [ ] [Committing Atomic Changes With Git](../../modules/Committing-Atomic-Changes-With-Git)
 0. [ ] [Digging Deeper Into JavaScript](../../modules/Digging-Deeper-Into-JavaScript)
 0. [ ] [Asynchronous JavaScript](../../modules/Asynchronous-JavaScript)
-0. [x] [File IO](../../modules/File-IO)
+0. [ ] [File IO](../../modules/File-IO)
 0. [ ] [HTTP Node](../../modules/HTTP-Node)
 0. [ ] [JavaScript in the Browser](../../modules/JavaScript-in-the-Browser)
 0. [ ] [Mac Calculator Clone]
 0. [ ] [HTML-And-CSS-Layouts](../../modules/HTML-And-CSS-Layouts)
 0. [ ] [HTML-And-CSS-Mockups-and-Wireframes](../../modules/HTML-And-CSS-Mockups-and-Wireframes)
 0. [ ] [HTML-And-CSS-Common-Components](../../modules/HTML-And-CSS-Common-Components)
-0. [x] [Your First HTTP Server](../../modules/Your-First-HTTP-Server)
-0. [x] [Posting Data To The Server With A Form](../../modules/Posting-Data-To-The-Server-With-A-Form)
+0. [ ] [Your First HTTP Server](../../modules/Your-First-HTTP-Server)
+0. [ ] [Posting Data To The Server With A Form](../../modules/Posting-Data-To-The-Server-With-A-Form)
 0. [ ] [Stateless and Stateful HTTP Server](../../modules/Stateless-and-Stateful-HTTP-Server)
 0. [ ] [Integration Testing With Mocha And Chai](../../modules/Integration-Testing-With-Mocha-And-Chai)
 0. [ ] [RESTful Routing](../../modules/RESTful-Routing)
