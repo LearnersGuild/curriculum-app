@@ -1,6 +1,6 @@
 # Phase 2 -> 3 Assessment
 
-This is the assessment for moving from phase 2 to phase 3. There are 4 parts to the assessment.
+This is the assessment for moving from phase 2 to phase 3. There are 3 parts to the assessment.
 
 To get started, create a new repository called `phase-2-assessment`. Do all of your work in this repo and submit it as your solution.
 
@@ -17,7 +17,7 @@ Skills covered:
 ## General Requirements
 
 - [ ] Solution is in a public repository called `phase-2-assessment`
-- [ ] Solution repository has 4 folders: `part-1`, `part-2`, `part-3`, and `part-4`
+- [ ] Solution repository has 3 folders: `part-1`, `part-2`, and `part-3`.
 
 ## Part 1: Simple web app
 
@@ -72,30 +72,6 @@ response: 16
 - [ ] GET requests to the `/double/:number` route doubles the number provided in the URL (in place of `:number`) and responds with the result
 - [ ] GET requests to the `/square/:number` route calculates the square of the number provided in the URL (in place of `:number`) and responds with the result
 
-## Part 2: Script to fetch GitHub data
-
-Write an executable Node.js script that will list all repositories for a given GitHub user.
-
-To handle authentication, provide a GitHub username and authentication token as environment variables.
-
-Example usage:
-
-```
-$ GH_USERNAME=myusername GH_TOKEN=authtoken node repos.js
-
-GitHub repos for myusername:
-
-- repo_one
-- repo_two private
-- repo_three fork
-- repo_four
-- ...
-```
-
-In the above example, you would need to replace `myusername` with your GitHub username and `authtoken` with your GitHub authentication token.
-
-The script should then print out a list of each repo name along with the string `private` if it is a private repo and `fork` if it is a fork.
-
 ### Requirements
 
 - [ ] All files are stored under the `part-2/` folder
@@ -106,7 +82,7 @@ The script should then print out a list of each repo name along with the string 
 - [ ] The list of repositories printed notes private repos with the string `private`
 - [ ] The list of repositories printed notes forked repos with the string `fork`
 
-## Part 3: Grocery store interface
+## Part 2: Grocery store interface
 
 Create a front-end only site for an online grocery store where users can choose from a list of items and add them to a cart.
 
@@ -130,7 +106,7 @@ Clicking on the "Cart" button opens the cart modal.
 
 ### Requirements
 
-- [ ] All files are stored under the `part-3/` folder
+- [ ] All files are stored under the `part-2/` folder
 - [ ] No third party CSS or JS libraries are used (all code must be written from scratch)
 - [ ] Main page is in a file called `index.html`
 - [ ] CSS is written in a separate file (or files)
@@ -160,7 +136,7 @@ Clicking on the "Cart" button opens the cart modal.
 - [ ] Clicking on the "X" button in the cart modal closes the modal
 - [ ] The "Total" in the cart modal shows the calculated sum of all item prices
 
-## Part 4: SQL challenges
+## Part 3: SQL challenges
 
 Build a small database for an online grocery store. Same idea as in part 3, but focused on the database side.
 
@@ -172,7 +148,7 @@ Use the provided [grocery item data][grocery-data] to seed your grocery items ta
 
 ### Requirements
 
-- [ ] All files are stored under the `part-4/` folder
+- [ ] All files are stored under the `part-3/` folder
 - [ ] Database schema (all `CREATE TABLE` statements) is defined in a file `schema.sql`
 - [ ] SQL script to insert seed data and/or load from CSV is created in a file `load-data.sql`
 - [ ] Data from [grocery item data][grocery-data] CSV is loaded in `load-data.sql` script
