@@ -1,4 +1,4 @@
-# Foundational JavaScript Programing
+# Foundational JavaScript Programming
 
 ## Skills
 
