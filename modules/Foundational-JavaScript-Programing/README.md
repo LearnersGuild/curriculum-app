@@ -23,3 +23,4 @@
 
 - https://www.freecodecamp.com/challenges/iterate-with-javascript-for-loops
 - https://www.freecodecamp.com/challenges/iterate-odd-numbers-with-a-for-loop
+- [Freecodecamp - Basic Javascript (10 hours)](https://www.freecodecamp.com/map)

@@ -23,20 +23,28 @@ _For more detail on the skills you'll learn in Phase 1 checkout
 
 ## Modules
 
-0. [ ] [How To Learn At The Guild](../../modules/How-To-Learn-At-The-Guild)
-0. [ ] [Installfest](../../modules/Installfest)
-0. [ ] [Terminal Basics](../../modules/Terminal-Basics)
-0. [ ] [Editor Basics](../../modules/Editor-Basics)
-0. [ ] [Saving Progress With Git And GitHub](../../modules/Saving-Progress-With-Git-And-GitHub)
-0. [ ] [Foundational JavaScript Programming](../../modules/Foundational-JavaScript-Programing)
-0. [ ] [Foundational Programming in Node](../../modules/Foundational-Programing-in-Node)
-0. [ ] [Super Simple Testing](../../modules/Super-Simple-Testing)
-0. [ ] [Error handling]
-0. [ ] [Debugging in Node](../../modules/Debugging-in-Node)
-0. [ ] [Serialization](../../modules/Serialization)
-0. [ ] [Building A CLI in Node](../../modules/Building-A-CLI-in-Node)
-0. [ ] [Foundational SQL](../../modules/Foundational-SQL)
-0. [ ] [Intro to Testing with Mocha and Chai]
+- [ ] [How To Learn At The Guild](../../modules/How-To-Learn-At-The-Guild)
+- [ ] [Installfest](../../modules/Installfest)
+- [ ] [Terminal Basics](../../modules/Terminal-Basics)
+- [ ] [Editor Basics](../../modules/Editor-Basics)
+- [ ] [Saving Progress With Git And GitHub](../../modules/Saving-Progress-With-Git-And-GitHub)
+- [ ] [Foundational JavaScript Programming](../../modules/Foundational-JavaScript-Programing)
+- [ ] [Foundational Programming in Node](../../modules/Foundational-Programing-in-Node)
+- [ ] [Super Simple Testing](../../modules/Super-Simple-Testing)
+- [ ] [Error handling]
+- [ ] [Debugging in Node](../../modules/Debugging-in-Node)
+- [ ] [Serialization](../../modules/Serialization)
+- [ ] [Building A CLI in Node](../../modules/Building-A-CLI-in-Node)
+- [ ] [Foundational SQL](../../modules/Foundational-SQL)
+- [ ] [Intro to Testing with Mocha and Chai]
+
+
+## Ideas For Other Modules
+
+- Create a lot of command line tools (CLIs) and programs
+- Read several CSV files and do manual joins to extract data
+- Build underscore.js
+- Create a schema for modeling a simple app (café, basketball statistics)
 
 
 ## Instructor Support Offerings
@@ -52,3 +60,18 @@ _For more detail on the skills you'll learn in Phase 1 checkout
 
 - How will learners track and report the modules they're working on, the
 modules they've completed, and the skills they believe they now have?
+- How will instructors review learner work?
+- How will instructors give qualitative feedback on learners work?
+- When / How to SEPs lecture or AMA?
+- How do scheduled 1-1s work?
+- how do learners capture their work for review/sharing with their SEP when
+using external resources?
+- what does daily learning look like at this phase?
+- how long are assignments?
+- do we use any of our existing projects at this phase?
+- should learners interact with subject areas on a pre-determined schedule
+(i.e.: syllabus style? ) or should we enable more flexibility to move around
+subject areas within a phase (i.e.: not every learner in the phase is studying
+the same thing at the same time)?
+- how does the answer to the above impact lectures - both content and
+scheduling?
