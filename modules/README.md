@@ -7,6 +7,6 @@
 - Exercises
 - Search Terms
 - Suggested Resources
-  - reading
-  - watching
+  - Reading
+  - Watching
 - Glossary of Terms
