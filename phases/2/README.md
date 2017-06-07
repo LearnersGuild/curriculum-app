@@ -36,8 +36,9 @@ _For more detail on the skills you'll learn in Phase 2 checkout
 0. [ ] [Integration Testing With Mocha And Chai](../../modules/Integration-Testing-With-Mocha-And-Chai)
 0. [ ] [RESTful Routing](../../modules/RESTful-Routing)
 0. [ ] [Defensive Programming](../../modules/Defensive-Programming)
-0. [ ] [Relational Database Design]
-0. [ ] [Advanced SQL] _<-- break this up into targeted SQL modules_
+0. [ ] [Relational Database Design](../../modules/Relational-Database-Design)
+0. [ ] [How to Avoid SQL Injection](../../modules/How-to-Avoid-SQL-Injection)
+0. [ ] [What is an SQL Transaction?](../../modules/What-is-an-SQL-Transaction)
 0. [ ] [Debugging in The Chrome Developer Tools]
 0. [ ] [Command line Todo List]
 0. [ ] [Build Your Own jQuery]

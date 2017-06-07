@@ -3,7 +3,7 @@
 ## Skills
 
 - Can describe hoisting
-- IIFEs (Immediately Invoked Function Expressions)
+- IIFEs (Immediately Invoked Function Expressions) & Module pattern
 - Constructors and Prototypes
 - Can explain and give an example of when to use Closures
 - `this` operator
