@@ -12,6 +12,7 @@
 
 ### Reading
 
+- [Node.js FS docs](https://nodejs.org/api/fs.html)
 - https://www.tutorialspoint.com/nodejs/nodejs_file_system.htm
 - http://stackabuse.com/read-files-with-node-js/
 - [How to parse a JSON file](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON/parse)
