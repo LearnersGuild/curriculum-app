@@ -115,6 +115,14 @@
 
 
 ## SQL
-
 - Can convert a mental model into a SQL schema
+- Can explain what 1:1, 1:many, many:many relationships mean
+- Can explain what a join table is
+- Can explain the difference between normalization & de-normalization
+- Explain what ACID principles are
+- Can explain what SQL injection is
+- Can explain what a parameterized query(or prepared statement) is
+- Can explain what a transaction is, and why/when to use one
+- Can explain what  `COMMIT` and `ROLLBACK` means
+- Can explain what an atomic operation is
 
