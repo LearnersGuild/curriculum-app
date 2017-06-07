@@ -8,3 +8,33 @@
 - Can explain why the `body-parser` package is needed
 - Can use cURL to send test requests to the HTTP server
 - Can explain the use cases for the HTTP status codes 200, 404, 500
+
+
+## Suggested Search Terms
+```
+express api docs
+build an express api
+simple express api tutorial
+```
+
+
+## Suggested Resources
+
+### Reading
+
+- [https://expressjs.com/]
+- [https://expressjs.com/en/starter/hello-world.html]
+- [https://www.thepolyglotdeveloper.com/2015/10/create-a-simple-restful-api-with-node-js/]
+
+### Watching
+
+- [https://www.youtube.com/watch?v=p-x6WdwaJco]
+
+
+## Exercises
+- Complete 3 sections in the `Express Basics` course in [TeamTreeHouse](https://teamtreehouse.com/library/express-basics)
+  - [ ] Getting Started with Express
+  - [ ] Developing Express Apps like a Boss
+  - [ ] The Request and Response Objects in Express
+
+
