@@ -1,5 +1,8 @@
 # Installfest
 
+This module will help you install all the packages and applications you will
+need for phase 1. The skills in this module will be useful whenever you want to
+install, uninstall and upgrade packages and application on OS X.
 
 ## Skills
 
@@ -9,30 +12,39 @@
 
 ## Tasks
 
-- Install homebrew
-- Install Sublime and Atom
-- Install iTerm2
+Your first task will be to install `homebrew` (if you haven't already)
 
-### Install these via Cask
+Using `brew` and `brew cask` install the following packages:
 
 ```
-iterm2
+google-chrome
 sublime-text
+atom
+git
+iterm2
+postgresql
 postico
-postman
 ```
 
-#### Also consider installing:
+optionally, consider also installing:
 
 ```
 caffeine
 dash
-google-chrome
 growlnotify
 slack
+screenhero
+spectacle
+postman
 ```
 
+## Search Terms
 
+```
+install homebrew
+install atom via homebrew
+install postgresl via homebrew
+```
 
 ## Potential Resources
 
