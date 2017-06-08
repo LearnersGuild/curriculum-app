@@ -14,3 +14,4 @@
 ## Resources
 
 - https://teamtreehouse.com/library/debugging-node-applications-with-google-chrome
+- https://jvns.ca/blog/2015/11/22/how-i-got-better-at-debugging/

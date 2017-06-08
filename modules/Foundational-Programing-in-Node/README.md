@@ -46,9 +46,10 @@ later.
 - [node repl](https://docs.nodejitsu.com/articles/REPL/how-to-use-nodejs-repl/)
 - [require and exports](http://openmymind.net/2012/2/3/Node-Require-and-Exports/)
 - [exporting in node](http://www.tutorialsteacher.com/nodejs/nodejs-module-exports)
-
+- [npm](https://www.tutorialspoint.com/nodejs/nodejs_npm.htm)
 
 ## Excercises
 
 
 - [Calculator](./exercises/Calculator)
+- [learnyounode](https://github.com/workshopper/learnyounode) __(only the first 3)__

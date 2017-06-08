@@ -53,3 +53,4 @@ install postgresl via homebrew
 - https://robots.thoughtbot.com/brewfile-a-gemfile-but-for-homebrew
 - https://www.youtube.com/results?search_query=os+x+homebrew
 - https://www.howtogeek.com/211541/homebrew-for-os-x-easily-installs-desktop-apps-and-terminal-utilities/
+- https://github.com/GuildCrafts/Installapalooza
