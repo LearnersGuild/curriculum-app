@@ -3,19 +3,19 @@
 
 ## Skills
 
-1. Can describe, read and write environment variables
-1. Can describe, read and their $PATH
-1. Can use: cd, ls, cat, pwd, touch, mkdir, rmdir, rm, cp
-1. Can explain what a filesystem path is
-1. Can explain absolute and relative file paths
-1. Can open a file or directory in their editor
-1. Can open a directory in the finder from the Terminal
-1. Can open a file in its default app from the Terminal
-1. Can use: ctrl-c, ctrl-a, ctrl-e
-1. Can split screen their terminal window
-1. Can effectively utilize a .bashrc and .bash_profile
-1. Can create and has some bash aliases
-1. Can and has customized their PS1
+- Can describe, read and write environment variables
+- Can describe, read and their $PATH
+- Can use: cd, ls, cat, pwd, touch, mkdir, rmdir, rm, cp
+- Can explain what a filesystem path is
+- Can explain absolute and relative file paths
+- Can open a file or directory in their editor
+- Can open a directory in the finder from the Terminal
+- Can open a file in its default app from the Terminal
+- Can use: ctrl-c, ctrl-a, ctrl-e
+- Can split screen their terminal window
+- Can effectively utilize a .bashrc and .bash_profile
+- Can create and has some bash aliases
+- Can and has customized their PS1
 
 ## Glossary of Terms
 
