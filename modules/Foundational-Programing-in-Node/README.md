@@ -39,8 +39,8 @@ node module exports
 
 ### Text
 
-- [node repl](https://www.tutorialspoint.com/nodejs/nodejs_repl_terminal.htm)Î
-- [node repl](https://docs.nodejitsu.com/articles/REPL/how-to-use-nodejs-repl/)Î
+- [node repl](https://www.tutorialspoint.com/nodejs/nodejs_repl_terminal.htm)
+- [node repl](https://docs.nodejitsu.com/articles/REPL/how-to-use-nodejs-repl/)
 - [require and exports](http://openmymind.net/2012/2/3/Node-Require-and-Exports/)
 - [exporting in node](http://www.tutorialsteacher.com/nodejs/nodejs-module-exports)
 

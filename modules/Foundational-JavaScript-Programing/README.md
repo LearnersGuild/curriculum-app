@@ -2,6 +2,26 @@
 
 ## Skills
 
+### General Programming
+
+- [ ] Variables
+- [ ] Functions
+- [ ] Can describe an Array
+- [ ] Can describe a Hash / Index / Map
+- [ ] Can turn any object into its Boolean equivalent
+- [ ] Can convert a Hash into an array of arrays [key, value], and back again
+- [ ] Can sort an array by multiple conditions
+- [ ] Can use the ! (bang) operator
+- [ ] Using return as flow control
+- [ ] Terenery statements
+- [ ] Can convert an array of objects with unique property into a hash by that property
+- [ ] Throwing and catching errors as flow control
+- [ ] Branching and Looping
+- [ ] Can and does author well formatted code
+- [ ] Can and does use a linter
+
+### JavaScript Specific
+
 - [ ] Can declare local and global variables
 - [ ] Can explain the difference between `==` and `===` and when to use which one
 - [ ] Can use an if / else statement
@@ -22,24 +42,6 @@
 - [ ] Can split a string into an array
 - [ ] Can join an array into a string
 
-
-
-
-- Variables
-- Functions
-- Can describe an Array
-- Can describe a Hash / Index / Map
-- Can turn any object into its Boolean equivalent
-- Can convert a Hash into an array of arrays [key, value], and back again
-- Can sort an array by multiple conditions
-- Can use the ! (bang) operator
-- Using return as flow control
-- Terenery statements
-- Can convert an array of objects with unique property into a hash by that property
-- Throwing and catching errors as flow control
-- Branching and Looping
-- Can and does author well formatted code
-- Can and does use a linter
 
 
 ## Exercises

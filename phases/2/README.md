@@ -1,6 +1,9 @@
 # Phase 2
 
-Phase 2 introduces
+Phase 2 delves deeper into foundational topics introduced in F1, while also
+introducing new material like how to create static HTML and CSS pages and use
+the latest version of JavaScript.
+
 
 ## High Level Skills
 

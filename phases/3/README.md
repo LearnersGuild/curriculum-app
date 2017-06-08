@@ -1,13 +1,15 @@
 # Phase 3
 
-Phase 3 is all about integrating the skills you used in Phase 1 and 2 into
-applications that mimic real world applications.
+The Integrated Practice Curriculum gives learners a chance to synthesize and
+utilize skills developed in Foundations 1 & 2 in module-based assignments and
+small projects that mimic real world applications.
 
 ## High Level Skills
 
 In this phase you will learn…
 
-- How to combine all of your `HTML and CSS`, `HTTP Server` and `Browser` skills together
+- How to combine all of your `HTML and CSS`, `HTTP Server` and `Browser` skills
+together
 - More JavaScript design patterns
 - Full Web Application Architecture
 - How Authentication works on most of the web
