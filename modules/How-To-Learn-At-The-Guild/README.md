@@ -9,3 +9,8 @@
 - [ ] can use slack and slack commands
 - [ ] can paste a gif into slack ;P
 - [ ] can do an advanced google search
+
+
+
+You should be asking "how can I google this problem?" before "how do I fix this
+problem".
