@@ -117,7 +117,11 @@ At this level we are using ES5 only. No ES6 with or without transpiling. We’re
 
 ## SQL
 
-- [the basics up to a double join]
+- [ ] can select everything from a single table
+- [ ] can select everything from two tables using a join on a primary key id
+- [ ] can select a subset of a table using a where clause
+- [ ] can join at least two tables together
+- [ ] can describe the difference between a left, right, inner and outer joins
 
 
 
