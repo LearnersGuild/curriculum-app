@@ -10,7 +10,7 @@ install, uninstall and upgrade packages and application on OS X.
 - Can install desktop applications via brew cask
 - Use a code linter in your editor
 
-## Tasks
+## Exercises
 
 Your first task will be to install `homebrew` (if you haven't already)
 

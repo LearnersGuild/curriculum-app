@@ -6,6 +6,8 @@
 - https://www.khanacademy.org/
 - https://www.freecodecamp.com
 - https://www.codecademy.com/learn
+- https://javascript30.com/
+- https://github.com/karan/Projects
 
 ## Editor
 

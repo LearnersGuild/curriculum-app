@@ -4,14 +4,13 @@
 
 - [ ] Can use the node REPL
 - [ ] Can run a `.js` file with the node command
+- [ ] Can require files
+- [ ] Can export one or more objects from a file
+- [ ] Can read and write to files using `fs.readFileSync`
 - [ ] Can initialize a node module (npm init)
 - [ ] Can understand and modify a `package.json`
 - [ ] Can install and save node package dependencies
-- [ ] Can require files & modules
-- [ ] Can export multiple objects from a file / module
-- [ ] Can read and write to files using `fs.readFileSync`
-
-## Activities
+- [ ] Can require modules
 
 ## Google Search Terms
 
@@ -23,8 +22,11 @@ node repl
 node module exports
 ```
 
-## Resources
+Skip anything you find that tries to show you how to make a web server. It wont
+be relevant to anything we do in phase 1. We'll get into making web servers
+later.
 
+## Resources
 
 ### Videos
 
@@ -36,6 +38,7 @@ node module exports
 - [npm install](https://www.youtube.com/watch?v=2UNs7ohpfPo)
 - [require files & modules](https://www.youtube.com/watch?v=xAcEF-uDeVw&list=PLVHlCYNvnqYqjnypg2Czw4vVjTL2gB7_e&index=5)
 - [require and exports](https://www.youtube.com/watch?v=P51O_PT7NUg&list=PLVHlCYNvnqYqjnypg2Czw4vVjTL2gB7_e&index=10)
+- [hello-world](https://teamtreehouse.com/library/hello-world)
 
 ### Text
 
@@ -46,3 +49,6 @@ node module exports
 
 
 ## Excercises
+
+
+- [Calculator](./exercises/Calculator)

@@ -28,7 +28,7 @@ _For more detail on the skills you'll learn in Phase 1 checkout
 - [x] [Terminal Basics](../../modules/Terminal-Basics)
 - [x] [Editor Basics](../../modules/Editor-Basics)
 - [x] [Saving Progress With Git And GitHub](../../modules/Saving-Progress-With-Git-And-GitHub)
-- [ ] [Foundational JavaScript Programming](../../modules/Foundational-JavaScript-Programing)
+- [x] [Foundational JavaScript Programming](../../modules/Foundational-JavaScript-Programing)
 - [ ] [Foundational Programming in Node](../../modules/Foundational-Programing-in-Node)
 - [ ] [Error Handling](../../modules/Error-Handling)
 - [ ] [Super Simple Testing](../../modules/Super-Simple-Testing)

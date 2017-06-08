@@ -22,7 +22,7 @@
 - https://sqlbolt.com/lesson/select_queries_order_of_execution
 - http://sqlzoo.net/
 
-## Tasks
+## Exercises
 
 1. Complete the Khan Academy section on SQL Basics and use the
  the following tutorials as guides to solving the tasks below:
