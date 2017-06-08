@@ -25,9 +25,9 @@ _For more detail on the skills you'll learn in Phase 1 checkout
 
 - [ ] [How To Learn At The Guild](../../modules/How-To-Learn-At-The-Guild)
 - [ ] [Installfest](../../modules/Installfest)
-- [X] [Terminal Basics](../../modules/Terminal-Basics)
-- [X] [Editor Basics](../../modules/Editor-Basics)
-- [X] [Saving Progress With Git And GitHub](../../modules/Saving-Progress-With-Git-And-GitHub)
+- [x] [Terminal Basics](../../modules/Terminal-Basics)
+- [x] [Editor Basics](../../modules/Editor-Basics)
+- [x] [Saving Progress With Git And GitHub](../../modules/Saving-Progress-With-Git-And-GitHub)
 - [ ] [Foundational JavaScript Programming](../../modules/Foundational-JavaScript-Programing)
 - [ ] [Foundational Programming in Node](../../modules/Foundational-Programing-in-Node)
 - [ ] [Super Simple Testing](../../modules/Super-Simple-Testing)
