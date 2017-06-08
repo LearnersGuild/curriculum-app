@@ -108,6 +108,7 @@ javascript split string into array
 
 ## Resources
 
+- https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps
 - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide
 - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Functions
 - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Indexed_collections
@@ -115,6 +116,7 @@ javascript split string into array
 - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Control_flow_and_error_handling
 - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Operator_Precedence
 - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Property_Accessors
+- http://javascriptissexy.com/javascript-objects-in-detail/
 - https://medium.com/@prufrock123/js-dot-notation-vs-bracket-notation-797c4e34f01d
 - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/keys
 - https://www.w3schools.com/jsref/jsref_obj_array.asp

@@ -113,6 +113,8 @@
 
 - TBD
 
+- https://developers.google.com/web/tools/chrome-devtools/javascript/
+- http://blog.teamtreehouse.com/mastering-developer-tools-console
 
 ## SQL
 - Can convert a mental model into a SQL schema

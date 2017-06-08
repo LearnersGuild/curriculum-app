@@ -14,6 +14,8 @@
 - Don’t be jerk while pairing
 - Reviewing Pull Requests
 
+- https://www.thoughtworks.com/insights/blog/effective-navigation-in-pair-programming
+
 ## Git & GitHub
 
 - Merging a branch into master

@@ -8,3 +8,13 @@
 - Can create a node executable script that takes arguments and prints output to STDOUT and STDERR
 - Can read and write CSV files
 - Can read and write JSON files
+
+
+## Exercises
+
+- https://medium.freecodecamp.com/writing-command-line-applications-in-nodejs-2cf8327eee2
+
+
+## Resources
+
+- https://www.npmjs.com/package/commander

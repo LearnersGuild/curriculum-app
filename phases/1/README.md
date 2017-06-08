@@ -31,11 +31,12 @@ _For more detail on the skills you'll learn in Phase 1 checkout
 - [x] [Foundational JavaScript Programming](../../modules/Foundational-JavaScript-Programing)
 - [x] [Foundational Programming in Node](../../modules/Foundational-Programing-in-Node)
 - [x] [Error Handling](../../modules/Error-Handling)
-- [ ] [Super Simple Testing](../../modules/Super-Simple-Testing)
-- [ ] [Debugging in Node](../../modules/Debugging-in-Node)
-- [ ] [Serialization](../../modules/Serialization)
 - [ ] [Regular Expression Baiscs](../../modules/Regular-Expression-Basics)
+- [ ] [Super Simple Testing](../../modules/Super-Simple-Testing)
+- [ ] [Serialization](../../modules/Serialization)
+- [ ] [Node Input and Output](../../modules/Node-Input-and-Output)
 - [ ] [Building A CLI in Node](../../modules/Building-A-CLI-in-Node)
+- [ ] [Debugging in Node](../../modules/Debugging-in-Node)
 - [ ] [Foundational SQL](../../modules/Foundational-SQL)
 - [ ] [Intro to Testing with Mocha and Chai]
 
