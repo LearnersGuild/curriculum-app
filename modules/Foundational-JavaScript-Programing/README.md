@@ -112,6 +112,7 @@ javascript split string into array
 - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Functions
 - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Indexed_collections
 - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Working_with_Objects
+- https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Control_flow_and_error_handling
 - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Operator_Precedence
 - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Property_Accessors
 - https://medium.com/@prufrock123/js-dot-notation-vs-bracket-notation-797c4e34f01d
