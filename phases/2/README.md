@@ -28,7 +28,7 @@ _For more detail on the skills you'll learn in Phase 2 checkout
 0. [ ] [Asynchronous JavaScript](../../modules/Asynchronous-JavaScript)
 0. [x] [File IO](../../modules/File-IO)
 0. [ ] [HTTP Node](../../modules/HTTP-Node)
-0. [ ] [JavaScript in the Browser](../../modules/JavaScript-in-the-Browser)
+0. [x wip] [JavaScript in the Browser](../../modules/JavaScript-in-the-Browser)
 0. [ ] [Mac Calculator Clone]
 0. [ ] [HTML-And-CSS-Layouts](../../modules/HTML-And-CSS-Layouts)
 0. [ ] [HTML-And-CSS-Mockups-and-Wireframes](../../modules/HTML-And-CSS-Mockups-and-Wireframes)

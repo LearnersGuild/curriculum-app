@@ -20,10 +20,12 @@
 - https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/Object_prototypes
 - http://eloquentjavascript.net/1st_edition/chapter8.html
 
-
 ### Watching
 
+- [Google Tech Talk - Introduction to JavaScript and Browser DOM](https://www.youtube.com/watch?v=ljNi8nS5TtQ)
 - [Object Oriented JavaScript(1hr)](https://www.youtube.com/watch?v=O8wwnhdkPE4)
+- [JavaBrains course on Scopes & Closures](https://javabrains.io/courses/corejs_scopesclosures)
+- [JavaBrains course on Prototypes](https://javabrains.io/courses/corejs_objectsprototypes)
 
 ## Exercises
 
