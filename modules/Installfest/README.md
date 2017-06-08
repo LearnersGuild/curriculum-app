@@ -1,4 +1,4 @@
-# Installfest
+# Installapalooza
 
 This module will help you install all the packages and applications you will
 need for phase 1. The skills in this module will be useful whenever you want to
@@ -12,39 +12,7 @@ install, uninstall and upgrade packages and application on OS X.
 
 ## Tasks
 
-Your first task will be to install `homebrew` (if you haven't already)
-
-Using `brew` and `brew cask` install the following packages:
-
-```
-google-chrome
-sublime-text
-atom
-git
-iterm2
-postgresql
-postico
-```
-
-optionally, consider also installing:
-
-```
-caffeine
-dash
-growlnotify
-slack
-screenhero
-spectacle
-postman
-```
-
-## Search Terms
-
-```
-install homebrew
-install atom via homebrew
-install postgresl via homebrew
-```
+Follow the Installapalooza guide [here](https://github.com/GuildCrafts/Installapalooza)
 
 ## Potential Resources
 
