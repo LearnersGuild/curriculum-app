@@ -7,3 +7,9 @@
 - Can write asynchronous tests using mocha and chai
 - Can explain what the `done` function does
 - Can explain the difference between `eql` & `equal`
+
+
+
+## Resources
+
+- https://www.sitepoint.com/javascript-testing-unit-functional-integration/

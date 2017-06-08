@@ -31,7 +31,7 @@ _For more detail on the skills you'll learn in Phase 1 checkout
 - [x] [Foundational JavaScript Programming](../../modules/Foundational-JavaScript-Programing)
 - [x] [Foundational Programming in Node](../../modules/Foundational-Programing-in-Node)
 - [x] [Error Handling](../../modules/Error-Handling)
-- [ ] [Regular Expression Baiscs](../../modules/Regular-Expression-Basics)
+- [x] [Regular Expression Baiscs](../../modules/Regular-Expression-Basics)
 - [ ] [Super Simple Testing](../../modules/Super-Simple-Testing)
 - [ ] [Serialization](../../modules/Serialization)
 - [ ] [Node Input and Output](../../modules/Node-Input-and-Output)
