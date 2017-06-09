@@ -19,6 +19,10 @@ together
 - How to render dynamically generated HTML
 
 
+_For more detail on the skills you'll learn in Phase 3 checkout
+[Phase 3 Skills](./skills.md). Also checkout the skills listed in each module._
+
+
 ## Goal Library
 
 In Phase 3 you'll vote on goals in the goal library… blah blah blah
