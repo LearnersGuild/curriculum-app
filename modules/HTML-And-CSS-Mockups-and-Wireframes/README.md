@@ -5,18 +5,7 @@
 - Can convert a wireframe/mockup into an HTML page
 
 
-## Exercise
+## Exercises
 
-### Boogle
-
-![boogle](./data/MockupBoogle.png)
-
-
-### Product Detail Page
-
-![product page](./data/MockupProduct.png)
-
-
-### Scrollable Column Page
-
-![scrollable column page](./data/Mockup3Column.png)
+- [Boogle](./exercises/boogle)
+- More to come…
