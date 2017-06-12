@@ -11,21 +11,31 @@
 - Can write a bash script and add it to their path
 - Can and does modify their path
 - Can redirect STDOUT to a file
-- Can explain what flags are
+- Can explain what unix command flags are
 - Can explain what file permissions are (read/write/executable)
 - Can use `pbcopy` and `pbpaste`
 
 
-
-## Potential Resources
-
-
 ## Suggested Search Terms
+
+```
+unix bash pipes
+unix bash redirects
+unix bash stdout
+unix bash modify path
+bash keyboard shortcuts mac
+unix du
+unix grep
+os x pbcopy
+```
+
+## Suggested Resources
+
+- http://www.catb.org/esr/writings/taoup/html/ch10s05.html
 
 
 ## Exercises
 
 - [Adding A Custom bin Directory](./exercises/Adding-A-Custom-bin-Directory/README.md)
-- brew services
-- adding a custom bin to your path
-- challenges that require use of `|`, `>` to solve
+- [Manage Postgresql with brew services](./exercises/Manage-Postgresql-with-brew-services/README.md)
+- [Guide to Pipes and Redirects](http://ryanstutorials.net/linuxtutorial/piping.php)
