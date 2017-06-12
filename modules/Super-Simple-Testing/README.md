@@ -1,21 +1,19 @@
 # Super Simple Testing
 
-In this module we'll explore simple, manual ways you can test your code. This
-is meant to be a precursur to testing your code with testing libraries like
-`Mocha` or `Jasmine`.
-
-
+In this module we'll explore simple, manual ways you can test your code. This is meant to be a precursor to testing your code with testing libraries like `Mocha` or `Jasmine`.
 
 ## Skills
 
-- [ ] can describe what a test is
-- [ ] can use `console.assert` to write simple tests
-
-
+- Can describe what a test is
+- Can use `console.assert()` to write simple tests
+- Can write a function to test another function
+- Can write a test script to test one or more functions in source code file
+- Can run tests in a console
+- Can run tests from a command shell
 
 ## Exercises
 
-A corner stone of all testing is assertions. The value of all tests comes down
+A cornerstone of all testing is assertions. The value of all tests comes down
 to asserting what should be true and failing the test if any of your assertions
 are not true.
 
@@ -41,9 +39,13 @@ module.exports = add
 ```
 
 ```js
+// add_test.js
 var add = require('./add')
 
 console.assert(typeof add === 'function', 'add is not a function')
 console.assert(add(10, 5) === 15, 'expected add(10, 5) to return 15')
 ```
 
+## Suggested Resources
+### Courses & Tutorials
+### Reading

@@ -38,7 +38,7 @@ _For more detail on the skills you'll learn in Phase 1 checkout
 - [ ] [Building A CLI in Node](../../modules/Building-A-CLI-in-Node)
 - [ ] [Debugging in Node](../../modules/Debugging-in-Node)
 - [ ] [Foundational SQL](../../modules/Foundational-SQL)
-- [ ] [Intro to Testing with Mocha and Chai]
+- [ ] [Unit Testing with Mocha and Chai](../../modules/Unit-Testing-With-Mocha-And-Chai)
 
 
 ## Ideas For Other Modules
