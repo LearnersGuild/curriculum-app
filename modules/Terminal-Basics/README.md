@@ -31,14 +31,6 @@
 | Standard In (STDIN) | The counterpart to STDOUT, STDIN is the source of an input for a program or command line tool. STDIN is any input or text entered into the shell and passed as an argument to a program. |
 | Command | A command is a program that is executed in the shell, some examples are `echo`, `ls`, `cd`, `open`. |
 
-## Potential Resources
-
-- http://guide.bash.academy/
-- http://linuxcommand.org/learning_the_shell.php
-- https://www.tutorialspoint.com/unix/
-- http://freeengineer.org/learnUNIXin10minutes.html
-- https://www.learnenough.com/command-line-tutorial
-
 
 ## Suggested Search Terms
 
@@ -57,6 +49,21 @@ unix renaming files directories
 unix viewing contents of a file
 ```
 
+## Resources
+
+- [Learn Shell](http://www.learnshell.org/)
+- [Command Line Crash Course](https://learnpythonthehardway.org/book/appendixa.html)
+- [Codecademy Learn the Command line](https://www.codecademy.com/learn/learn-the-command-line)
+- [UNIX Tutorial for Beginners](http://www.ee.surrey.ac.uk/Teaching/Unix/)
+- [UNIX File Operations](http://heim.ifi.uio.no/gisle/staging2/drupalprimer/unix/unix03.html)
+- [BASH Redirection Cheat Sheet](http://www.catonmat.net/download/bash-redirections-cheat-sheet.pdf)
+- http://guide.bash.academy/
+- http://linuxcommand.org/learning_the_shell.php
+- https://www.tutorialspoint.com/unix/
+- http://freeengineer.org/learnUNIXin10minutes.html
+- https://www.learnenough.com/command-line-tutorial
+
+
 ## Exercises
 
 0. [ ] [Environment-Variables-And-PATH](./exercises/Environment-Variables-And-PATH.md)
@@ -64,10 +71,3 @@ unix viewing contents of a file
 0. [ ] [Terminal-Shortcuts](./exercises/Terminal-Shortcuts.md)
 0. [ ] [Customizing-Your-Shell](./exercises/Customizing-Your-Shell.md)
 
-## Recommended Resources
-- [Learn Shell](http://www.learnshell.org/)
-- [Command Line Crash Course](https://learnpythonthehardway.org/book/appendixa.html)
-- [Codecademy Learn the Command line](https://www.codecademy.com/learn/learn-the-command-line)
-- [UNIX Tutorial for Beginners](http://www.ee.surrey.ac.uk/Teaching/Unix/)
-- [UNIX File Operations](http://heim.ifi.uio.no/gisle/staging2/drupalprimer/unix/unix03.html)
-- [BASH Redirection Cheat Sheet](http://www.catonmat.net/download/bash-redirections-cheat-sheet.pdf)
