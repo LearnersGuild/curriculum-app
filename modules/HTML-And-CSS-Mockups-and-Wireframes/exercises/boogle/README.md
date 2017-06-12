@@ -9,7 +9,7 @@ Create a new directory and repository with the following files:
 /shared.css
 ```
 
-then create pages based on the mockups below as best you can.
+then create pages based on the wireframes below as best you can.
 
 
 # Homepage

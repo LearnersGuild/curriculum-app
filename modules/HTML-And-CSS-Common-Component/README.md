@@ -1,10 +1,44 @@
 # HTML And CSS Common Components
 
-
 ## Skills
 
-- Can implement a sticky footer
-- Can create a modal
-- Can implement a fixed header
+- Can style a form
+- Can style typographic elements (headers, paragraphs, etc.)
 - Can style buttons
-- Can create a simple grid system
+- Can implement a sticky footer
+- Can implement a fixed header
+- Can implement a modal component
+- Can implement a card component
+- Can implement a menu component
+- Can implement a navbar component
+- Can implement a pagination component
+- Can implement a tabs component
+
+## Exercises
+
+- [ ] Complete the [Rebuild Common Components](./exercises/Rebuild-Common-Components.md) exercise
+
+## Glossary of Terms
+
+- component
+- element
+- parent element
+- child element
+- styling
+- CSS selector
+- CSS property
+
+## Suggested Resources
+
+### Courses & Tutorials
+- https://teamtreehouse.com/library/create-a-modal-window-with-css-2
+- https://teamtreehouse.com/library/practice-the-css-box-model
+- https://teamtreehouse.com/library/css-basics
+- https://teamtreehouse.com/library/css-selectors
+- https://teamtreehouse.com/library/html
+- https://teamtreehouse.com/library/html-forms
+- https://teamtreehouse.com/library/accessibility
+
+### Reading
+- https://developer.mozilla.org/en-US/docs/Learn/CSS
+- https://css-tricks.com/considerations-styling-modal/
