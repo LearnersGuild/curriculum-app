@@ -30,7 +30,7 @@ _For more detail on the skills you'll learn in Phase 1 checkout
 - [x] [Saving Progress With Git And GitHub](../../modules/Saving-Progress-With-Git-And-GitHub)
 - [x] [Foundational JavaScript Programming](../../modules/Foundational-JavaScript-Programing)
 - [x] [Foundational Programming in Node](../../modules/Foundational-Programing-in-Node)
-- [x] [Error Handling](../../modules/Error-Handling)
+- [ ] [Error Handling](../../modules/Error-Handling)
 - [x] [Regular Expression Baiscs](../../modules/Regular-Expression-Basics)
 - [ ] [Super Simple Testing](../../modules/Super-Simple-Testing)
 - [ ] [Serialization](../../modules/Serialization)

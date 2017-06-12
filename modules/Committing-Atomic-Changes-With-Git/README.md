@@ -10,6 +10,7 @@
 - Can merge branches
 
 ## Google search terms
+
 ```
 how to resolve a merge conflict using git
 git workflow
