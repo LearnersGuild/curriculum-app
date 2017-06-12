@@ -7,3 +7,25 @@
 - Can explain the difference between query params and body params and url params
 - Can explain the use cases for PUT & DELETE method types
 - Can explain the HTTP status codes 201, 301, 400
+
+
+## Suggested Resources
+
+## Reading
+
+- https://en.wikipedia.org/wiki/Representational_state_transfer
+- Best Practices : https://blog.risingstack.com/10-best-practices-for-writing-node-js-rest-apis/
+- https://scotch.io/tutorials/keeping-api-routing-clean-using-express-routers
+- Read the part about using Postman to test your API - https://scotch.io/tutorials/build-a-restful-api-using-node-and-express-4
+- https://www.sitepoint.com/creating-restful-apis-express-4/
+- https://medium.com/@jeffandersen/building-a-node-js-rest-api-with-express-46b0901f29b6
+- http://mherman.org/blog/2016/03/13/designing-a-restful-api-with-node-and-postgres/#.WT8B9xPyuRs
+
+## Watching
+- What is REST : http://www.restapitutorial.com/lessons/whatisrest.html
+- https://www.youtube.com/watch?v=0M2S_7-Tcsc&t=414s
+- https://www.youtube.com/watch?v=Q-BpqyOT3a8
+
+## Exercises
+
+- [RESTful routing using files](./exercises/RESTful-routing-using-files.md)
