@@ -25,6 +25,7 @@
 
 ## Exercises
 
+- [Adding A Custom bin Directory](./exercises/Adding-A-Custom-bin-Directory/README.md)
 - brew services
 - adding a custom bin to your path
 - challenges that require use of `|`, `>` to solve
