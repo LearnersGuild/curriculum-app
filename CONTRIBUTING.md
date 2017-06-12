@@ -39,9 +39,13 @@ schema:
 0. TBD
 
 
-## Big Open Questions
+## Open Questions
 
-- Who will lead each Phase with only 2 SEPs?
-- Are we still calling SEPs "SEPs" or are they now instructors?
-- How is the assessment schedule and expected pacing actually working?
--
+- How are learners are expected to contribute?
+- How can learners make modules better?
+- How will learners save their artifacts?
+- How will learners track their progress?
+  - What modules has a given learners completed?
+  - What module is a learner working on now?
+  - What skills do each learner believe they have?
+
