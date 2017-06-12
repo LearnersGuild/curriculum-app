@@ -21,7 +21,7 @@ _For more detail on the skills you'll learn in Phase 2 checkout
 
 ## Modules
 
-0. [ ] [Terminal Advanced](../../modules/Terminal-Advanced)
+0. [x] [Terminal Advanced](../../modules/Terminal-Advanced)
 0. [x] [HTTP Anatomy](../../modules/HTTP-Anatomy)
 0. [x] [Committing Atomic Changes With Git](../../modules/Committing-Atomic-Changes-With-Git)
 0. [x] [Digging Deeper Into JavaScript](../../modules/Digging-Deeper-Into-Javascript)
