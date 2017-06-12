@@ -1,4 +1,4 @@
-# Advanced JavaScript
+# Digging Deeper Into JavaScript
 
 ## Skills
 
