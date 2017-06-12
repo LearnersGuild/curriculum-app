@@ -8,6 +8,12 @@
 - Can explain the use cases for PUT & DELETE method types
 - Can explain the HTTP status codes 201, 301, 400
 
+## Google Search Terms
+```
+what is a rest api?
+implement a rest api using express
+how to send a request using postman
+```
 
 ## Suggested Resources
 
@@ -17,6 +23,7 @@
 - Best Practices : https://blog.risingstack.com/10-best-practices-for-writing-node-js-rest-apis/
 - https://scotch.io/tutorials/keeping-api-routing-clean-using-express-routers
 - Read the part about using Postman to test your API - https://scotch.io/tutorials/build-a-restful-api-using-node-and-express-4
+- https://www.getpostman.com/docs/postman/sending_api_requests/requests
 - https://www.sitepoint.com/creating-restful-apis-express-4/
 - https://medium.com/@jeffandersen/building-a-node-js-rest-api-with-express-46b0901f29b6
 - http://mherman.org/blog/2016/03/13/designing-a-restful-api-with-node-and-postgres/#.WT8B9xPyuRs
