@@ -8,23 +8,22 @@
 - Can explain the difference between normalization & de-normalization
 - Explain what ACID principles are
 
-## Google Search Terms
-```
-
-```
-
 ## Suggested Resources
 
 ### Reading
 
 - Data Relationships : https://code.tutsplus.com/articles/sql-for-beginners-part-3-database-relationships--net-8561
-- https://www.ntu.edu.sg/home/ehchua/programming/sql/Relational_Database_Design.html
-- http://www.geekgirls.com/2011/09/databases-from-scratch-iii-relational-design-process/
+- http://www.oracle.com/technetwork/issue-archive/2011/11-nov/o61sql-512018.html
+- [Relational Database Design NTU](https://www.ntu.edu.sg/home/ehchua/programming/sql/Relational_Database_Design.html)
+- [Relational Database Design GeekGirls](http://www.geekgirls.com/2011/09/databases-from-scratch-iii-relational-design-process/)
 - https://www.lucidchart.com/pages/database-diagram/database-design
+- https://technet.microsoft.com/en-us/library/ms190651(v=sql.105).aspx
+- What is ACID - https://msdn.microsoft.com/en-us/library/aa480356.aspx
 
 ### Watching
 
 - https://www.youtube.com/watch?v=I_rxqSJAj6U
+- [Data Relationships](https://www.youtube.com/watch?v=ByqeSP9Y2UM)
 
 ## Exercises
 
