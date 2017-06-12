@@ -37,7 +37,7 @@ _For more detail on the skills you'll learn in Phase 2 checkout
 0. [x] [Posting Data To The Server With A Form](../../modules/Posting-Data-To-The-Server-With-A-Form)
 0. [ ] [Stateless and Stateful HTTP Server](../../modules/Stateless-and-Stateful-HTTP-Server)
 0. [ ] [Integration Testing With Mocha And Chai](../../modules/Integration-Testing-With-Mocha-And-Chai)
-0. [ ] [RESTful Routing](../../modules/RESTful-Routing)
+0. [x] [RESTful Routing](../../modules/RESTful-Routing)
 0. [ ] [Defensive Programming](../../modules/Defensive-Programming)
 0. [ ] [Relational Database Design](../../modules/Relational-Database-Design)
 0. [ ] [How to Avoid SQL Injection](../../modules/How-to-Avoid-SQL-Injection)
