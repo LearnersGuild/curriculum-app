@@ -10,9 +10,25 @@
 - Build the HTML & CSS for [Boogle](./exercises/boogle) from wireframes
 - Build the HTML & CSS for [Mmmarkdown](./exercises/mmmarkdown) from mockup
 
+## Glossary of Terms
+
+- UI (user interface)
+- UX (user experience)
+- wireframe
+- mockup
+- user flow
+- layout
+- CSS selector
+- CSS property 
+
 ## Resources
 
-https://www.khanacademy.org/computing/computer-programming/html-css
+### Courses & Tutorials
+- https://teamtreehouse.com/library/css-basics
+- https://teamtreehouse.com/library/css-selectors
+- https://www.khanacademy.org/computing/computer-programming/html-css
+
+### Reading
 - https://www.w3schools.com/html/html_layout.asp
 - https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout
 - https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/Realizing_common_layouts_using_CSS_Grid_Layout

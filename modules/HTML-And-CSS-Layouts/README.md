@@ -8,6 +8,7 @@
 - Can build layouts with relative, absolute, and fixed positioning
 - Can use flexbox to align elements
 - Can use flexbox to create a grid
+- Can create a simple grid system
 - Can inspect and change CSS using browser developer tools
 
 ## Exercises
@@ -19,16 +20,26 @@
 
 ## Glossary of Terms
 
+- layout
+- page
+- document
+- section
+- header
+- footer
 - box model
 - elements
+- CSS selector
+- CSS property
 
 ## Suggested Resources
 
 ### Courses & Tutorials
 - https://www.khanacademy.org/computing/computer-programming/html-css
+- http://learn.shayhowe.com/html-css/
+- https://teamtreehouse.com/library/introduction-to-html-and-css
 - https://teamtreehouse.com/library/css-basics
 - https://teamtreehouse.com/library/css-selectors
-- http://learn.shayhowe.com/html-css/
+- https://teamtreehouse.com/library/html
 
 ### Reading
 - https://developer.mozilla.org/en-US/docs/Learn/CSS

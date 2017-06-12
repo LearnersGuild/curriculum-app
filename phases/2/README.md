@@ -30,9 +30,9 @@ _For more detail on the skills you'll learn in Phase 2 checkout
 0. [x] [HTTP Node](../../modules/HTTP-Node)
 0. [x] [JavaScript in the Browser](../../modules/JavaScript-in-the-Browser)
 0. [ ] [Mac Calculator Clone]
-0. [ ] [HTML-And-CSS-Layouts](../../modules/HTML-And-CSS-Layouts)
+0. [x] [HTML-And-CSS-Layouts](../../modules/HTML-And-CSS-Layouts)
 0. [x] [HTML-And-CSS-Mockups-and-Wireframes](../../modules/HTML-And-CSS-Mockups-and-Wireframes)
-0. [ ] [HTML-And-CSS-Common-Components](../../modules/HTML-And-CSS-Common-Components)
+0. [x] [HTML-And-CSS-Common-Components](../../modules/HTML-And-CSS-Common-Components)
 0. [x] [Your First HTTP Server](../../modules/Your-First-HTTP-Server)
 0. [x] [Posting Data To The Server With A Form](../../modules/Posting-Data-To-The-Server-With-A-Form)
 0. [ ] [Stateless and Stateful HTTP Server](../../modules/Stateless-and-Stateful-HTTP-Server)
