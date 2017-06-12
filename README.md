@@ -2,6 +2,8 @@
 
 Learning Model this curriculum is based on [this](https://docs.google.com/document/d/1hYsvbiqqsx3NN8EdaGFAES6y0vaJl5lkuoWIv22fON0/edit)
 
+The Curriculum for Phase 1 and Phase 2 are broken up into [Modules](./modules).
+
 ## Program Arc
 
 I’m attempting to develop an arc to our program where we introduce divisible

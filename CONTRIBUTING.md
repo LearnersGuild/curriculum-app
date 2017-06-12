@@ -39,6 +39,21 @@ schema:
 0. TBD
 
 
+## Modules
+
+
+### Subsections
+
+- Skill
+- Exercises
+- Search Terms
+- Suggested Resources
+  - Reading
+  - Watching
+- Glossary of Terms
+
+
+
 ## Open Questions
 
 - How are learners are expected to contribute?
