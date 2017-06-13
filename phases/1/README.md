@@ -32,13 +32,13 @@ _For more detail on the skills you'll learn in Phase 1 checkout
 - [x] [Foundational Programming in Node](../../modules/Foundational-Programing-in-Node)
 - [ ] [Error Handling](../../modules/Error-Handling)
 - [x] [Regular Expression Basics](../../modules/Regular-Expression-Basics)
-- [ ] [Super Simple Testing](../../modules/Super-Simple-Testing)
+- [x] [Super Simple Testing](../../modules/Super-Simple-Testing)
 - [ ] [Serialization](../../modules/Serialization)
 - [ ] [Node Input and Output](../../modules/Node-Input-and-Output)
 - [ ] [Building A CLI in Node](../../modules/Building-A-CLI-in-Node)
 - [ ] [Debugging in Node](../../modules/Debugging-in-Node)
 - [ ] [Foundational SQL](../../modules/Foundational-SQL)
-- [ ] [Unit Testing with Mocha and Chai](../../modules/Unit-Testing-With-Mocha-And-Chai)
+- [x] [Unit Testing with Mocha and Chai](../../modules/Unit-Testing-With-Mocha-And-Chai)
 
 
 ## Ideas For Other Modules
