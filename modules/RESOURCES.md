@@ -8,6 +8,7 @@
 - https://www.codecademy.com/learn
 - https://javascript30.com/
 - https://github.com/karan/Projects
+- http://javascript-roadtrip.codeschool.com/levels/1/challenges/1
 
 ## Editor
 

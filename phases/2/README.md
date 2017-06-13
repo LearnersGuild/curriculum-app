@@ -34,7 +34,7 @@ _For more detail on the skills you'll learn in Phase 2 checkout
 0. [x] [JavaScript in the Browser](../../modules/JavaScript-in-the-Browser)
 0. [x] [Your First HTTP Server](../../modules/Your-First-HTTP-Server)
 0. [x] [Posting Data To The Server With A Form](../../modules/Posting-Data-To-The-Server-With-A-Form)
-0. [ ] [Stateless and Stateful HTTP Server](../../modules/Stateless-and-Stateful-HTTP-Server)
+0. [ ] [Adding State to HTTP](../../modules/Adding-State-to-HTTP)
 0. [x] [Integration Testing With Mocha And Chai](../../modules/Integration-Testing-With-Mocha-And-Chai)
 0. [x] [RESTful Routing](../../modules/RESTful-Routing)
 0. [ ] [Defensive Programming](../../modules/Defensive-Programming)
