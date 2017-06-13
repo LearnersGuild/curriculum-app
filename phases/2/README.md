@@ -41,7 +41,7 @@ _For more detail on the skills you'll learn in Phase 2 checkout
 0. [x] [Relational Database Design](../../modules/Relational-Database-Design)
 0. [ ] [How to Avoid SQL Injection](../../modules/How-to-Avoid-SQL-Injection)
 0. [ ] [What is an SQL Transaction?](../../modules/What-is-an-SQL-Transaction)
-0. [ ] [Debugging in The Chrome Developer Tools]
+0. [x] [Debugging with Chrome Developer Tools](../../modules/Debugging-with-Chrome-Developer-Tools)
 0. [ ] [Command line Todo List](../../modules/Command-Line-Todo-List)
 0. [ ] [Build Your Own jQuery]
 0. [ ] [Build Your Own Express]
