@@ -8,6 +8,14 @@
 - Can explain the difference between normalization & de-normalization
 - Explain what ACID principles are
 
+## Suggested Search Terms
+```
+relational database relationships
+sql 1 to many
+database design normalization vs de-normalization
+what is ACID database
+```
+
 ## Suggested Resources
 
 ### Reading
