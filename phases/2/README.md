@@ -44,7 +44,7 @@ _For more detail on the skills you'll learn in Phase 2 checkout
 0. [ ] [Debugging in The Chrome Developer Tools]
 0. [ ] [Command line Todo List](../../modules/Command-Line-Todo-List)
 0. [ ] [Build Your Own jQuery]
-0. [ ] [Build Your Own Express]
+0. [x] [Build Your Own Express](../../modules/Build-Your-Own-Express)
 0. [ ] [Party like its ES2017]
 
 
