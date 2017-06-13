@@ -6,15 +6,26 @@
 - Can run tests from a command shell
 - Can write unit tests for client-side code
 - Can write unit tests for server-side code
-- Can use `expect` to test the behaviour of a function
+- Can use `expect` to test the behavior of a function
 - Can explain the difference between a `describe` and `it` block
-- Can write asynchronous tests using mocha and chai
-- Can explain what the `done` function does
-- Can explain the difference between `eql` & `equal`
 - Can write tests checking number of function arguments
 - Can write tests checking type of function argument(s)
 - Can write tests checking function return values
 - Can write tests checking exception handling within functions
+
+## Glossary of Terms
+
+- test
+- unit test
+- expectation
+- assertion
+- expected value
+- actual value
+
+## Exercises
+
+- [ ] Follow along with the tutorial [Getting Started with Node.js and Mocha](https://semaphoreci.com/community/tutorials/getting-started-with-node-js-and-mocha) and write all the code (don't just copy-paste)
+- [ ] Pick some Node.js code that you've written already and write a test suite for it. Make sure to test both expected inputs/outputs as well as unexpected/invalid inputs.
 
 ## Suggested Resources
 
