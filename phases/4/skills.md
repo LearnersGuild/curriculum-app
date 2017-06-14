@@ -2,6 +2,10 @@
 
 ## Programming
 
+- What does "simple" mean? (which code is simplier and why)
+- Can articulate the trade offs of a given decision
+- Never asks which is "better"
+
 ## Pair Programming
 
 - Reviewing Pull Requests
