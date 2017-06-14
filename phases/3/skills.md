@@ -26,8 +26,6 @@
 
 - Only one person on the controls at a time
 - Don’t be jerk while pairing
-- Reviewing Pull Requests
-
 - https://www.thoughtworks.com/insights/blog/effective-navigation-in-pair-programming
 
 ## Git & GitHub
@@ -57,6 +55,11 @@
 
 - Can deploy a node express app to Heroku
 - Setting environment variables in production
+- Can setup postgres on heroku
+- Can configure an app to use postgres locally and on Heroku
+- Can to ensure all dependencies are defined for production or development properly
+
+
 
 
 ## Meta Learning

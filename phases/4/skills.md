@@ -2,7 +2,9 @@
 
 ## Programming
 
+## Pair Programming
 
+- Reviewing Pull Requests
 
 
 ## Dev Ops
