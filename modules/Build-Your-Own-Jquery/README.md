@@ -1,16 +1,20 @@
-# Asynchronous JavaScript
+# Build Your Own jQuery (FauxQuery)
 
 ## Skills
 
 - DOM manipulation
-- Use of XMLHttpRequest 
 
 ## Suggested Resources
-
+- MDN!
 
 ### Reading
-- document.querySelectorAll
-- NodeList
+- DOM Manipulation
+  - [document.querySelector](https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelector)
+  - [document.querySelectorAll](https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelectorAll)
+  - [NodeList](https://developer.mozilla.org/en-US/docs/Web/API/NodeList)
+- [JS Interview Questions](http://www.thatjsdude.com/interview/dom.html), specifically:
+  - [What are the different ways to get an element from DOM?](http://www.thatjsdude.com/interview/dom.html#queryDOM)
+  - [Fastest way to Query DOM](http://www.thatjsdude.com/interview/dom.html#fastestDOMQuery)
 
 ### Watching
 
