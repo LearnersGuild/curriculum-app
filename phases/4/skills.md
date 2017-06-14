@@ -17,5 +17,14 @@
 
 ## Open Source
 
-- how to contribute to OSS on GitHub
+- how to contribute to an OSS project on GitHub
 
+
+## Team Work Skills
+
+- can manage and track complex work
+- can adapt to and use work tracking systems (trello, pivotal tracker, github projects)
+- can work with issues (tickets) system
+  - can reference tickets in commit message
+  - can reference tickets in pull requests
+- has an organized approach to working in teams
