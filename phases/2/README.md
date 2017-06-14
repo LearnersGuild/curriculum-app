@@ -44,7 +44,7 @@ _For more detail on the skills you'll learn in Phase 2 checkout
 0. [ ] [What is an SQL Transaction?](../../modules/What-is-an-SQL-Transaction)
 0. [x] [Debugging with Chrome Developer Tools](../../modules/Debugging-with-Chrome-Developer-Tools)
 0. [x] [Command line Todo List](../../modules/Command-Line-Todo-List)
-0. [ ] [Build Your Own jQuery]
+0. [x] [Build Your Own jQuery](../../modules/Build-Your-Own-Jquery)
 0. [ ] [Build Your Own Express]
 0. [ ] [Party like its ES2017]
 
