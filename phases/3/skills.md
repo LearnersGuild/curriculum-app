@@ -2,11 +2,25 @@
 
 ## Programming
 
-- Design patterns (snapshot goals with pre existing design patterns)
-- Evented architecture
 - Writing code that matches pre-existing style & standards
 - Following a programming style guide
+- Design patterns (snapshot goals with pre existing design patterns)
+- Evented architecture
 - Refactoring (your own code and others)
+- Application architecture
+- able to identify what code runs in the browser vs. elsewhere
+- able to identify and follow clear boundaries (view vs logic)
+- Tools for organizing code (name-spaces, separate files, naming conventions)
+
+## Debugging
+
+- debugging JavaScript running in a browser
+- debugging unexpected CSS issues
+- debugging errors in the console
+- debugging errors in production
+- adding more logging to debug production bugs
+- setting up log files
+
 
 ## Pair Programming
 
@@ -43,3 +57,13 @@
 
 - Can deploy a node express app to Heroku
 - Setting environment variables in production
+
+
+## Meta Learning
+
+- how to google good
+- problem decomposition
+  - how to break down a large task / problem
+  - how to sequence their work / changes
+- how to effectively read documentation
+-

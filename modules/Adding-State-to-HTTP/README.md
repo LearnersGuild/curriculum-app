@@ -1,5 +1,9 @@
 # Adding State to HTTP
 
+Clone this goal: https://github.com/GuildCrafts/web-development-js/issues/214
+
+Here is an example: https://github.com/jason00111/http-authentication-214
+
 ## Skills
 
 - Can explain "state" vs. "stateless"
