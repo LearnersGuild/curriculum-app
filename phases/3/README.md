@@ -1,8 +1,6 @@
 # Phase 3
 
-The Integrated Practice Curriculum gives learners a chance to synthesize and
-utilize skills developed in Foundations 1 & 2 in module-based assignments and
-small projects that mimic real world applications.
+Phase 3 is the Integrated Practice phase. Integrated Practice gives learners a chance to synthesize and utilize skills developed in Foundations 1 & 2 in module-based assignments and small projects that mimic real world applications.
 
 ## High Level Skills
 
@@ -19,34 +17,13 @@ together
 - How to render dynamically generated HTML
 
 
-_For more detail on the skills you'll learn in Phase 3 checkout
-[Phase 3 Skills](./skills.md). Also checkout the skills listed in each module._
+_For more detail on the skills you'll learn in Phase 3 checkout [Phase 3 Skills](./skills.md). Also checkout the skills listed in each module._
 
 
 ## Goal Library
 
-In Phase 3 you'll vote on goals in the goal library… blah blah blah
+In phase 3, you'll vote for and work on goals from the [goal library][jsdev].
 
+Use the `/vote` command from Slack to vote for your preferred goals on Monday morning.
 
-### Potential Goals For This Phase
-
-
-- #??? _Authentication Goal_
-- #226 Trossello Labels Epic
-- #378 Socket.io Party Chat
-
-
-
-## Instructor Support Offerings
-
-- Will review your pull requests
-- Will give you qualitative feedback on final product
-
-### Other Options
-
-- live code reviews
-- live coding
-- lectures
-- AMAs
-- 1-1
-- cog apps
+[jsdev]: http://jsdev.learnersguild.org/
