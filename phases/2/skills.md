@@ -32,7 +32,25 @@
 
 - Callbacks
 - Async flow control
+- Recursion
+- Binary Search
+- Sorting
+  - n log n sorts
+    - quick sort (know the possible problems with quicksort)
+    - merge sort
 
+- Trees and Common tree algorithms
+  - Search
+  - Traversals
+    - pre order
+    - in order
+    - post order
+  - BST insert
+  - BST delete
+  - TODO: (create your own querySelectorAll to learn tree algorithms)
+
+- Tracks
+  - TODO: use the calculator clone to teach tracks
 
 ## Programming in JavaScript
 

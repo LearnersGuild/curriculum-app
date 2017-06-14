@@ -60,6 +60,11 @@
 - Branching and Looping
 - Can and does author well formatted code
 - Can and does use a linter
+- Sorting
+  - n^2 sorts
+    - bubble sort
+    - insertion sort
+    - selection sort
 
 
 ## Programming in JavaScript

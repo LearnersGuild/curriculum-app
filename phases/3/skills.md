@@ -11,6 +11,10 @@
 - able to identify what code runs in the browser vs. elsewhere
 - able to identify and follow clear boundaries (view vs logic)
 - Tools for organizing code (name-spaces, separate files, naming conventions)
+- Queues
+  - TODO: learn queues from event loops
+  - TODO: simulate a bank with adding and removing tellers
+  - TODO: build a background job system
 
 ## Debugging
 
