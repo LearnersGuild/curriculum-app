@@ -8,7 +8,6 @@ STDIN or "Standard In" and write to STDOUT or "Standard Out"
 
 In a new empty directly create the following files:
 
-
 #### `./something.txt`
 
 ```
@@ -120,7 +119,25 @@ This script should take whatever is piped to STDIN and print out an all upper
 cased version of the string.
 
 ```sh
-echo "ooooh weeee can do" | node ./reverse.js
+echo "ooooh weeee can do" | node ./upcase.js
 
 OOOOH WEEEE CAN DO
+```
+
+___TIP:__ try using `process.stdout.write(output)` instead of `console.log(output)`
+to avoid adding a line return to your output_
+
+## Part 4
+
+Now try stringing your scripts together
+
+
+```sh
+echo '!emosewa era sepip ooooow' | node ./upcase.js | node ./reverse.js
+```
+
+or
+
+```sh
+cat something.txt | node ./reverse.js | node ./upcase.js
 ```
