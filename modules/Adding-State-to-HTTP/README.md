@@ -1,8 +1,9 @@
 # Adding State to HTTP
 
-Clone this goal: https://github.com/GuildCrafts/web-development-js/issues/214
-
-Here is an example: https://github.com/jason00111/http-authentication-214
+HTTP is a stateless protocol. This means each request does not know anything
+about any previous requests. So in order to add state to your web application
+that state, or a reference to it, needs to be sent as part of every single
+HTTP request. This is where cookies come in.
 
 ## Skills
 
@@ -29,11 +30,12 @@ cookie based authentication
 
 ### Read
 
+- https://en.wikipedia.org/wiki/State_(computer_science)
 - [All You Ever Wanted to Know About Sessions In Node.js](https://stormpath.com/blog/everything-you-ever-wanted-to-know-about-node-dot-js-sessions)
 
 
 
 ## Activies
 
-- Create an express App that uses session-cookie
 - [Remember Me App](./exercises/Remember-Me-App)
+- [Secure Session Cookie](./exercises/Secure-Session-Cookie)

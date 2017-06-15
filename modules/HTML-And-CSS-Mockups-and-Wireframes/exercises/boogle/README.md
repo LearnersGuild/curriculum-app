@@ -12,7 +12,7 @@ Create a new directory and repository with the following files:
 then create pages based on the wireframes below as best you can.
 
 
-# Homepage
+## Homepage
 
 ![boogle](./MockupBoogle.png)
 
