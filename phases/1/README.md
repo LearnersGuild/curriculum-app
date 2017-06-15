@@ -3,6 +3,7 @@
 Phase 1 is all about the fundamentals. Here you'll learn the basic skills needed
 to begin programming like a professional.
 
+
 ## High Level Skills
 
 In this phase you will learn…
@@ -20,6 +21,7 @@ In this phase you will learn…
 
 _For more detail on the skills you'll learn in Phase 1 checkout
 [Phase 1 Skills](./skills.md). Also checkout the skills listed in each module._
+
 
 ## Modules
 
@@ -41,39 +43,14 @@ _For more detail on the skills you'll learn in Phase 1 checkout
 - [x] [Unit Testing with Mocha and Chai](../../modules/Unit-Testing-With-Mocha-And-Chai)
 
 
-## Ideas For Other Modules
+## Support
 
-- Create a lot of command line tools (CLIs) and programs
-- Read several CSV files and do manual joins to extract data
-- Build underscore.js
-- Create a schema for modeling a simple app (café, basketball statistics)
-
-
-## Instructor Support Offerings
-
-- meet with each learner once a week for 20m to assess progress
-  - this shakes out to about 2 hours a day to meet 1-1
-- clarity on modules
-- Di and Ethan are coaches for phase 1 and 2
-- learners place a `i need help` indicator on their monitor
+- answering question in phase slack channel
+- help escalations
+- 2, lectures a week
+- 2, 1 hour `office hours` a week
 
 
-## Questions
+## Schedule
 
-- How will learners track and report the modules they're working on, the
-modules they've completed, and the skills they believe they now have?
-- How will instructors review learner work?
-- How will instructors give qualitative feedback on learners work?
-- When / How to SEPs lecture or AMA?
-- How do scheduled 1-1s work?
-- how do learners capture their work for review/sharing with their SEP when
-using external resources?
-- what does daily learning look like at this phase?
-- how long are assignments?
-- do we use any of our existing projects at this phase?
-- should learners interact with subject areas on a pre-determined schedule
-(i.e.: syllabus style? ) or should we enable more flexibility to move around
-subject areas within a phase (i.e.: not every learner in the phase is studying
-the same thing at the same time)?
-- how does the answer to the above impact lectures - both content and
-scheduling?
+Checkout the [Phase 1 Schedule](./schedule.md)

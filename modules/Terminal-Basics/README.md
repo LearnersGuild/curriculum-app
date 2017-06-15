@@ -16,6 +16,7 @@
 - Can effectively utilize a .bashrc and .bash_profile
 - Can create and has some bash aliases
 - Can and has customized their PS1
+- Can use `{}` (bash expando?)
 
 ## Glossary of Terms
 

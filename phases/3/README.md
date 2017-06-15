@@ -25,28 +25,8 @@ _For more detail on the skills you'll learn in Phase 3 checkout
 
 ## Goal Library
 
-In Phase 3 you'll vote on goals in the goal library… blah blah blah
+In Phase 3 you'll… TBD
 
+## Support
 
-### Potential Goals For This Phase
-
-
-- #??? _Authentication Goal_
-- #226 Trossello Labels Epic
-- #378 Socket.io Party Chat
-
-
-
-## Instructor Support Offerings
-
-- Will review your pull requests
-- Will give you qualitative feedback on final product
-
-### Other Options
-
-- live code reviews
-- live coding
-- lectures
-- AMAs
-- 1-1
-- cog apps
+TBD

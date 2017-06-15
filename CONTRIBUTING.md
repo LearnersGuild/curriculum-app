@@ -64,3 +64,10 @@ schema:
   - What module is a learner working on now?
   - What skills do each learner believe they have?
 
+
+
+
+## TODO
+
+- balance phase 1 and 2
+- adjust phase 1>2 & 2>3 assessments after re-balancing

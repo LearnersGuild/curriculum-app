@@ -19,6 +19,7 @@ In this phase you will learn…
 _For more detail on the skills you'll learn in Phase 2 checkout
 [Phase 2 Skills](./skills.md). Also checkout the skills listed in each module._
 
+
 ## Modules
 
 0. [x] [Terminal Advanced](../../modules/Terminal-Advanced)
@@ -48,11 +49,15 @@ _For more detail on the skills you'll learn in Phase 2 checkout
 0. [ ] [Party like its ES2017]
 
 
+## Support
 
-## Instructor Support Offerings
+- answering question in phase slack channel
+- help escalations
+- 2, lectures a week
+- 2, 1 hour `office hours` a week
+- async code reviews (48 hour turnaround)
 
-- meet with each learner once a week for 20m to assess progress
-  - this shakes out to about 2 hours a day to meet 1-1
-- clarity on modules
-- Di and Ethan are coaches for phase 1 and 2
-- learners place a `i need help` indicator on their monitor
+
+## Schedule
+
+Checkout the [Phase 1 Schedule](./schedule.md)
