@@ -37,10 +37,10 @@ _For more detail on the skills you'll learn in Phase 1 checkout
 0. [ ] [Node Input and Output](../../modules/Node-Input-and-Output)
 0. [ ] [Serialization](../../modules/Serialization)
 0. [ ] [Building A CLI in Node](../../modules/Building-A-CLI-in-Node)
+0. [x] [Command line Todo List](../../modules/Command-Line-Todo-List)
 0. [ ] [Debugging in Node](../../modules/Debugging-in-Node)
 0. [x] [Foundational SQL](../../modules/Foundational-SQL)
 0. [x] [Unit Testing with Mocha and Chai](../../modules/Unit-Testing-With-Mocha-And-Chai)
-
 
 ## Support
 
