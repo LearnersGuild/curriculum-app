@@ -47,7 +47,7 @@ _For more detail on the skills you'll learn in Phase 2 checkout
 0. [x] [Build Your Own jQuery](../../modules/Build-Your-Own-Jquery)
 0. [ ] [Build Your Own Express]
 0. [ ] [Party like its ES2017]
-
+0. [ ] [Learn Promises](../../modules/Learn-Promises)
 
 ## Support
 
