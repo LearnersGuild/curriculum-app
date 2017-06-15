@@ -38,7 +38,7 @@ _For more detail on the skills you'll learn in Phase 2 checkout
 0. [ ] [Adding State to HTTP](../../modules/Adding-State-to-HTTP)
 0. [x] [Integration Testing With Mocha And Chai](../../modules/Integration-Testing-With-Mocha-And-Chai)
 0. [x] [RESTful Routing](../../modules/RESTful-Routing)
-0. [ ] [Defensive Programming](../../modules/Defensive-Programming)
+0. [x] [Defensive Programming](../../modules/Defensive-Programming)
 0. [x] [Relational Database Design](../../modules/Relational-Database-Design)
 0. [ ] [How to Avoid SQL Injection](../../modules/How-to-Avoid-SQL-Injection)
 0. [ ] [What is an SQL Transaction?](../../modules/What-is-an-SQL-Transaction)
@@ -47,7 +47,6 @@ _For more detail on the skills you'll learn in Phase 2 checkout
 0. [x] [Build Your Own jQuery](../../modules/Build-Your-Own-Jquery)
 0. [ ] [Build Your Own Express]
 0. [ ] [Party like its ES2017]
-0. [ ] [Learn Promises](../../modules/Learn-Promises)
 
 ## Support
 
