@@ -11,7 +11,7 @@ writing to files asynchronously.
 In step one you're going to write a node script that takes a file path as its
 first argument, reads that file, and writes it contents to STDOUT.
 
-In a new empty directly create the following files:
+In a new empty directory create the following files:
 
 #### `./something.txt`
 

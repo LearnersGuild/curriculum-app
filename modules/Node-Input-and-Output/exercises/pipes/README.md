@@ -6,7 +6,7 @@ STDIN or "Standard In" and write to STDOUT or "Standard Out"
 
 ## Part 1
 
-In a new empty directly create the following files:
+In a new empty directory create the following files:
 
 #### `./something.txt`
 
@@ -45,7 +45,7 @@ You should see the exact same output except the second command's output was
 wrapped with `passthrough.js start` & `passthrough.js end`.
 
 
-Now try pipping other things itto your `passthrough.js` script. It
+Now try pipping other things into your `passthrough.js` script. It
 should print out whatever you give it.
 
 ```

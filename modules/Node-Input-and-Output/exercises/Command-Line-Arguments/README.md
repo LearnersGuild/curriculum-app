@@ -6,7 +6,7 @@ to a node script.
 
 ## Part 1
 
-In a new empty directly create the following files:
+In a new empty directory create the following files:
 
 #### `./print_arguments.js`
 
