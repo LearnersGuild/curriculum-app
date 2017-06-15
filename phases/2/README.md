@@ -51,8 +51,8 @@ _For more detail on the skills you'll learn in Phase 2 checkout
 - answering question in phase slack channel
 - help escalations
 - 2, lectures a week
-- 2, 1 hour `office hours` a week
-- async code reviews (48 hour turnaround)
+- 2, 1 hour AMAs' a week
+- async code reviews for integrated practice projects (48 hour turnaround)
 
 
 ## Schedule

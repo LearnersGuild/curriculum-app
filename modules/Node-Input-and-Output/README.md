@@ -1,15 +1,16 @@
 # Node Input and Output
 
-In this module you'll learn how to read inputs and generate outputs in a node
-program. The inputs we'll be covering are `command line arguments` and `STDIN`.
-The outputs we'll cover are `STDOUT` and `STDERR`
+In this module you'll learn several command ways to get data into your node
+program and several ways to generate output from your node program.
 
 ## Skills
 
 - can read arguments
 - can read from STDIN
+- can read a file
 - can write to STDOUT
 - can write to STDERR
+- can write to a file
 
 ## Search Terms
 
@@ -20,10 +21,25 @@ unix stderr
 node command line arguments
 nodejs read STDIN
 nodejs write STDOUT
+read file synchronously node js
+write file synchronously node js
 ```
+
+## Suggested Resources
+
+### Reading
+
+- https://nodejs.org/api/fs.html
+
+### Watching
+
+- https://www.youtube.com/watch?v=U57kU311-nE
+
+
 
 ## Exercises
 
+- [Pipes](./exercises/pipes)
 - Create a node program that prints the command line arguments given to it
 - Create a node program that reads `STDIN` and writes it to `STDOUT`
 - Create a node program that reads `STDIN` and outputs the number of lines

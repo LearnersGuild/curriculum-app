@@ -9,7 +9,8 @@
 - Can explain the difference between a relative and absolute url path
 - Can explain what a redirect is
 
-## Google Search Terms
+## Search Terms
+
 ```
 html forms
 express form handling
