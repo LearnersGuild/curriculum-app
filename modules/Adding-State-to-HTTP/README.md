@@ -35,7 +35,7 @@ cookie based authentication
 
 
 
-## Activies
+## Exercises
 
 - [Remember Me App](./exercises/Remember-Me-App)
 - [Secure Session Cookie](./exercises/Secure-Session-Cookie)

@@ -31,6 +31,7 @@ later.
 ### Videos
 
 - [Introducing the Node.js REPL](https://youtu.be/xUNr2gUT0FY?t=20)
+- [What is Node.js Exactly? - a beginners introduction to Nodejs](https://www.youtube.com/watch?v=pU9Q6oiQNd0)
 - [Node JS Tutorial for Beginners](https://www.youtube.com/playlist?list=PL4cUxeGkcC9gcy9lrvMJ75z9maRw4byYp)
 - [What is npm?](https://www.youtube.com/watch?v=ZNbFagCBlwo)
 - [npm init](https://www.youtube.com/watch?v=ROoc5AW90pA)
