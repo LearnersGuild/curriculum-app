@@ -40,7 +40,5 @@ write file synchronously node js
 ## Exercises
 
 - [Pipes](./exercises/pipes)
-- Create a node program that prints the command line arguments given to it
-- Create a node program that reads `STDIN` and writes it to `STDOUT`
-- Create a node program that reads `STDIN` and outputs the number of lines
-given.
+- [Command Line Arguments](./exercises/Command-Line-Arguments)
+- [File IO](./exercises/File-IO)

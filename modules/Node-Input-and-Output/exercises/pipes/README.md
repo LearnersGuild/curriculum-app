@@ -6,16 +6,8 @@ STDIN or "Standard In" and write to STDOUT or "Standard Out"
 
 ## Part 1
 
-In a new empty directly create the following files
+In a new empty directly create the following files:
 
-#### `./passthrough.js`
-
-```js
-console.log('passthrough.js start')
-const fs = require('fs')
-console.log(fs.readFileSync('/dev/stdin').toString())
-console.log('passthrough.js end')
-```
 
 #### `./something.txt`
 
@@ -27,6 +19,16 @@ consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
 cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
 proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 ```
+
+#### `./passthrough.js`
+
+```js
+const fs = require('fs')
+console.log('passthrough.js start')
+console.log(fs.readFileSync('/dev/stdin').toString())
+console.log('passthrough.js end')
+```
+
 
 Now in the terminal compare the following commands
 
@@ -40,8 +42,8 @@ vs.
 cat ./something.txt | node ./passthrough.js
 ```
 
-You should see the exact same output except the second command was wrapped with
-`passthrough.js start` & `passthrough.js end`.
+You should see the exact same output except the second command's output was
+wrapped with `passthrough.js start` & `passthrough.js end`.
 
 
 Now try pipping other things itto your `passthrough.js` script. It
