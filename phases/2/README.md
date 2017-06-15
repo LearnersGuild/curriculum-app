@@ -35,18 +35,16 @@ _For more detail on the skills you'll learn in Phase 2 checkout
 0. [x] [JavaScript in the Browser](../../modules/JavaScript-in-the-Browser)
 0. [x] [Your First HTTP Server](../../modules/Your-First-HTTP-Server)
 0. [x] [Posting Data To The Server With A Form](../../modules/Posting-Data-To-The-Server-With-A-Form)
-0. [ ] [Adding State to HTTP](../../modules/Adding-State-to-HTTP)
+0. [x] [Adding State to HTTP](../../modules/Adding-State-to-HTTP)
 0. [x] [Integration Testing With Mocha And Chai](../../modules/Integration-Testing-With-Mocha-And-Chai)
 0. [x] [RESTful Routing](../../modules/RESTful-Routing)
 0. [x] [Defensive Programming](../../modules/Defensive-Programming)
 0. [x] [Relational Database Design](../../modules/Relational-Database-Design)
-0. [ ] [How to Avoid SQL Injection](../../modules/How-to-Avoid-SQL-Injection)
-0. [ ] [What is an SQL Transaction?](../../modules/What-is-an-SQL-Transaction)
 0. [x] [Debugging with Chrome Developer Tools](../../modules/Debugging-with-Chrome-Developer-Tools)
 0. [x] [Command line Todo List](../../modules/Command-Line-Todo-List)
 0. [x] [Build Your Own jQuery](../../modules/Build-Your-Own-Jquery)
-0. [ ] [Build Your Own Express]
-0. [ ] [Party like its ES2017]
+0. [ ] [Build Your Own Express](../../modules/Build-Your-Own-Express)
+0. [ ] [Party Like Its ES2017](../../modules/Party-Like-Its-ES2017)
 
 ## Support
 

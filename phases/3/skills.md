@@ -52,6 +52,10 @@
 
 ## SQL
 
+
+- Can explain what a transaction is, and why/when to use one
+- Can explain what  `COMMIT` and `ROLLBACK` means
+- Can explain what an atomic operation is
 - Can write migrations
 - Can migrate data from one table to another
 
