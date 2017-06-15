@@ -44,7 +44,7 @@ _For more detail on the skills you'll learn in Phase 2 checkout
 0. [x] [Command line Todo List](../../modules/Command-Line-Todo-List)
 0. [x] [Build Your Own jQuery](../../modules/Build-Your-Own-Jquery)
 0. [ ] [Build Your Own Express](../../modules/Build-Your-Own-Express)
-0. [ ] [Party Like Its ES2017](../../modules/Party-Like-Its-ES2017)
+0. [x] [Party Like Its ES2017](../../modules/Party-Like-Its-ES2017)
 
 ## Support
 
