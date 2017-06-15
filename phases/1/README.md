@@ -39,7 +39,7 @@ _For more detail on the skills you'll learn in Phase 1 checkout
 - [ ] [Node Input and Output](../../modules/Node-Input-and-Output)
 - [ ] [Building A CLI in Node](../../modules/Building-A-CLI-in-Node)
 - [ ] [Debugging in Node](../../modules/Debugging-in-Node)
-- [ ] [Foundational SQL](../../modules/Foundational-SQL)
+- [x] [Foundational SQL](../../modules/Foundational-SQL)
 - [x] [Unit Testing with Mocha and Chai](../../modules/Unit-Testing-With-Mocha-And-Chai)
 
 
