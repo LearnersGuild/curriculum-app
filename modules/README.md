@@ -1,9 +1,5 @@
 # Modules
 
-Modules are intended to help you focus on acquiring a specific set of skills.
-Each module starts with a list of specific skills so as you go through a module
-stay focused on learning the specific skills listed at the top.
-
 There are two types of modules:
 
 1. Research & Practice Modules
