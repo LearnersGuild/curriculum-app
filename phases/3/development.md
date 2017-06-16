@@ -2,16 +2,14 @@
 
 ## Potential Goals For This Phase
 
-
 - #??? _Authentication Goal_
 - #226 Trossello Labels Epic
 - #378 Socket.io Party Chat
+- Queues
+  - TODO: learn queues from event loops
+  - TODO: simulate a bank with adding and removing tellers
+  - TODO: build a background job system
 
-## Other Support Option Ideas
+## Unsorted Resources
 
-- live code reviews
-- live coding
-- lectures
-- AMAs
-- 1-1
-- cog apps
+- https://www.thoughtworks.com/insights/blog/effective-navigation-in-pair-programming
