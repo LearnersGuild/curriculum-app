@@ -8,6 +8,7 @@
 - Can explain what event bubbling is
 - Can explain what a `<script>` tag does
 - Can explain what `window` is
+- Can find DOM nodes using `querySelectorAll`
 
 ## Google Search Terms
 
@@ -35,3 +36,4 @@ javascript event bubbling
 
 - [JavaScript and the DOM TreeHouse Course](https://teamtreehouse.com/library/javascript-and-the-dom-2)
 - [Mac Calculator Clone](./exercises/Mac-Calculator-Clone)
+- [Tic Tac Toe](./exercises/Tic-Tac-Toe)
