@@ -32,6 +32,7 @@ _For more detail on the skills you'll learn in Phase 1 checkout
 - _P:_ [Foundational JavaScript Programming](../../modules/Foundational-JavaScript-Programming)
 - _P:_ [Foundational Programming in Node](../../modules/Foundational-Programming-in-Node)
 - _P:_ [Party Like Its ES2017](../../modules/Party-Like-Its-ES2017)
+- _P:_ [Sorting Algorithms](../../modules/Sorting-Algorithms)
 - _B:_ [3,2,1,Contacts](../../3-2-1-Contacts)
 - _P:_ [Error Handling](../../modules/Error-Handling)
 - _P:_ [Regular Expression Basics](../../modules/Regular-Expression-Basics)

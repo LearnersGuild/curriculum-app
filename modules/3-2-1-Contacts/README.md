@@ -1,6 +1,13 @@
 # 3, 2, 1, Contacts
 
+## Skills
 
+- can use `Array#sort`
+
+
+## Specs
+
+- must sort contacts
 
 
 ## DEVELOPMENT IDEAS
