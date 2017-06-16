@@ -46,7 +46,7 @@ _For more detail on the skills you'll learn in Phase 1 checkout
 - _P:_ [HTML-And-CSS-Layouts](../../modules/HTML-And-CSS-Layouts)
 - _P:_ [HTML-And-CSS-Mockups-and-Wireframes](../../modules/HTML-And-CSS-Mockups-and-Wireframes)
 - _P:_ [HTML-And-CSS-Common-Components](../../modules/HTML-And-CSS-Common-Components)
-- _P:_ [Static HTTP Server]
+- _P:_ [Static HTTP Server](../../modules/Static-HTTP-Server)
 - _B:_ [Clone Caviar](../../modules/Clone-Caviar)
 
 ## Support
