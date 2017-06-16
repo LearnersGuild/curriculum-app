@@ -66,6 +66,6 @@
 
 - Can use Google to quickly and effectively find answers
 - Can decompose problems
-  - Can break down a large task / problem into smaller parts
-  - Can sequence work / changes in an appropriate order
+- Can break down a large task / problem into smaller parts
+- Can sequence work / changes in an appropriate order
 - Can effectively and efficiently find and read documentation
