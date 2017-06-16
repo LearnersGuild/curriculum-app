@@ -11,21 +11,21 @@ In this module we'll go over throwing and catching errors.
 - Can re-throw errors
 - Can log errors
 
-
-
-## Glossary of Terms
-
-| Term        | Explanation |
-| ----------- | ----------- |
-| throw       | The throw statement throws a user-defined exception. |
-| catch       | |
-
 ## Search Terms
 
 ```
 javascript error handling
 javascript throw catch
 ```
+
+## Glossary of Terms
+
+- throw
+- catch
+- re-throw
+- console.log
+- console.error
+- console.trace
 
 ## Resources
 
