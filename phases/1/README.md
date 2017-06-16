@@ -25,21 +25,23 @@ _For more detail on the skills you'll learn in Phase 1 checkout
 
 ## Modules
 
-0. [x] [Installfest](../../modules/Installfest)
-0. [x] [Terminal Basics](../../modules/Terminal-Basics)
-0. [x] [Editor Basics](../../modules/Editor-Basics)
-0. [x] [Saving Progress With Git And GitHub](../../modules/Saving-Progress-With-Git-And-GitHub)
-0. [x] [Foundational JavaScript Programming](../../modules/Foundational-JavaScript-Programing)
-0. [x] [Foundational Programming in Node](../../modules/Foundational-Programing-in-Node)
-0. [x] [Error Handling](../../modules/Error-Handling)
-0. [x] [Regular Expression Basics](../../modules/Regular-Expression-Basics)
-0. [x] [Super Simple Testing](../../modules/Super-Simple-Testing)
-0. [x] [Node Input and Output](../../modules/Node-Input-and-Output)
-0. [x] [Serialization](../../modules/Serialization)
-0. [x] [Command line Todo List](../../modules/Command-Line-Todo-List)
-0. [x] [Debugging in Node](../../modules/Debugging-in-Node)
-0. [x] [Foundational SQL](../../modules/Foundational-SQL)
-0. [x] [Unit Testing with Mocha and Chai](../../modules/Unit-Testing-With-Mocha-And-Chai)
+0. _P:_ [Installfest](../../modules/Installfest)
+0. _P:_ [Terminal Basics](../../modules/Terminal-Basics)
+0. _P:_ [Editor Basics](../../modules/Editor-Basics)
+0. _P:_ [Saving Progress With Git And GitHub](../../modules/Saving-Progress-With-Git-And-GitHub)
+0. _P:_ [Foundational JavaScript Programming](../../modules/Foundational-JavaScript-Programing)
+0. _P:_ [Foundational Programming in Node](../../modules/Foundational-Programing-in-Node)
+0. _B:_ [Unknown-Integration-Module-1](../../modules/Unknown-Integration-Module-1)
+0. _P:_ [Error Handling](../../modules/Error-Handling)
+0. _P:_ [Regular Expression Basics](../../modules/Regular-Expression-Basics)
+0. _P:_ [Super Simple Testing](../../modules/Super-Simple-Testing)
+0. _P:_ [Node Input and Output](../../modules/Node-Input-and-Output)
+0. _P:_ [Serialization](../../modules/Serialization)
+0. _B:_ [Command line Todo List](../../modules/Command-Line-Todo-List)
+0. _P:_ [Debugging in Node](../../modules/Debugging-in-Node)
+0. _P:_ [Foundational SQL](../../modules/Foundational-SQL)
+0. _P:_ [Unit Testing with Mocha and Chai](../../modules/Unit-Testing-With-Mocha-And-Chai)
+0. _B:_ [Unknown-Integration-Module-2](../../modules/Unknown-Integration-Module-2)
 
 ## Support
 
