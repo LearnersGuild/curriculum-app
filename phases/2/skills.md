@@ -49,8 +49,8 @@
   - BST delete
   - TODO: (create your own querySelectorAll to learn tree algorithms)
 
-- Tracks
-  - TODO: use the calculator clone to teach tracks
+- Stacks
+  - TODO: use the calculator clone to teach Stacks
 
 ## Programming in JavaScript
 
