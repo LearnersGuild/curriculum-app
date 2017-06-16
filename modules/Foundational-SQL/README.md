@@ -2,14 +2,31 @@
 
 ## Skills
 
+
+- [ ] can select everything from a single table
+- [ ] can select specific columns from a single table
+- [ ] can select a subset of the rows in a table using a where clause
+- [ ] can select from two tables using a join on a primary key id
+- [ ] can select a subset of a table using a join
+- [ ] can describe the difference between a left, right, inner and outer joins
+
+
 - [ ] can select everything from a single table
 - [ ] can select everything from two tables using a join on a primary key id
 - [ ] can select a subset of a table using a where clause
 - [ ] more TBD…
 
 
+## Search Terms
+
+
 ## Resources
 
+### Watching
+
+### Reading
+
+- https://blog.codinghorror.com/a-visual-explanation-of-sql-joins/
 - https://www.khanacademy.org/computing/computer-programming/sql
 - http://www.postgresqltutorial.com/
 - https://www.tutorialspoint.com/postgresql/
