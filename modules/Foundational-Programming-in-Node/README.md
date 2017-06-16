@@ -1,4 +1,4 @@
-# Foundational Programing in Node
+# Foundational Programming in Node
 
 ## Skills
 

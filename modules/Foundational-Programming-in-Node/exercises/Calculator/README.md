@@ -3,7 +3,7 @@
 In this exercises were going to explore the basics of writing JavaScript in
 node.
 
-This exercises if part of the [Foundational-Programing-in-Node](../../) module.
+This exercises if part of the [Foundational-Programming-in-Node](../../) module.
 
 
 ## Stage 1
