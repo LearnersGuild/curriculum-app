@@ -34,3 +34,36 @@ Here are the goals that you can choose from (ordered in rough approximation of i
 1. Trossello Snapshot: Members & Teams Epic
 
 To view each goal, visit http://jsdev.learnersguild.org/.
+
+## Lectures
+
+- Deploying with Heroku
+  - Buildpacks
+  - Using add-ons
+  - Configuration & environment variables
+  - Logging and debugging
+  - Integration w/ GitHub
+- The Three Environments: Test, Development, Production
+  - Using config files
+  - Keeping dependencies explicit
+  - Isolating test data
+  - Protecting secrets and keys
+- Web Authentication from Scratch
+  - Differentiating authentication from authorization
+  - Storing and encrypting passwords
+  - Using sessions and cookies
+  - Common pitfalls and errors
+- Web Application Architectures
+  - Separating client & server code
+  - Sharing client & server code
+  - Identifying and organizing common components: server routing, database API, UI layer, etc.
+  - Some common architectural patterns (e.g. MVC)
+- Database Transactions
+  - What they are
+  - When and why to use them
+  - How to integrate transactional model into a codebase
+- Meta-Skills: Problem Decomposition
+  - Breaking down big problems into bite-sized chunks
+  - Sequencing and organizing work
+  - Collaborating in parallel
+  - Finding the minimum viable product (MVP)
