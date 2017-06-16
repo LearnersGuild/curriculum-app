@@ -32,7 +32,7 @@ _For more detail on the skills you'll learn in Phase 2 checkout
 - _B:_ [Movie Search CLI](../../modules/Movie- Search-CLI)
 - _P:_ [HTML-And-CSS-Layouts](../../modules/HTML-And-CSS-Layouts)
 - _P:_ [HTML-And-CSS-Mockups-and-Wireframes](../../modules/HTML-And-CSS-Mockups-and-Wireframes)
-- _P:_ [HßTML-And-CSS-Common-Components](../../modules/HTML-And-CSS-Common-Components)
+- _P:_ [HTML-And-CSS-Common-Components](../../modules/HTML-And-CSS-Common-Components)
 - _P:_ [JavaScript in the Browser](../../modules/JavaScript-in-the-Browser)
 - _P:_ [Your First HTTP Server](../../modules/Your-First-HTTP-Server)
 - _P:_ [Posting Data To The Server With A Form](../../modules/Posting-Data-To-The-Server-With-A-Form)
