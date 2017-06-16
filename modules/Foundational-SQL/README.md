@@ -1,7 +1,13 @@
 # Foundational SQL
 
+This module assumes you've already installed postgresql via homebrew. If you
+have not done that please do back and do the [Installfest](../Installfest)
+module.
+
 ## Skills
 
+___Note:__ all of the skills below are applicable to any SQL server but were
+practicing them in postgresql_
 
 - [ ] can select everything from a single table
 - [ ] can select specific columns from a single table
@@ -9,20 +15,23 @@
 - [ ] can select from two tables using a join on a primary key id
 - [ ] can select a subset of a table using a join
 - [ ] can describe the difference between a left, right, inner and outer joins
-
-
-- [ ] can select everything from a single table
-- [ ] can select everything from two tables using a join on a primary key id
-- [ ] can select a subset of a table using a where clause
-- [ ] more TBD…
-
+- [ ] can define a table with a auto sequencing primary key
 
 ## Search Terms
 
+```
+postgresql create table
+postgresql sql beginner OR intro OR tutorial
+postgresql joins intro OR tutorial
+sql joins intro OR tutorial
+```
 
 ## Resources
 
 ### Watching
+
+- https://www.youtube.com/watch?v=53k1mcDLoXY&index=3&list=PLbp7jfOGpdRjLO9sPRJRSKm8T2TTi2hwa
+- https://www.youtube.com/watch?v=w4HEVY_GjqY
 
 ### Reading
 
@@ -38,113 +47,11 @@
 - https://www.postgresql.org/docs/
 - https://sqlbolt.com/lesson/select_queries_order_of_execution
 - http://sqlzoo.net/
+- https://www.w3schools.com/sql/sql_join.asp
 
 ## Exercises
 
-1. Complete the Khan Academy section on SQL Basics and use the
- the following tutorials as guides to solving the tasks below:
-  - [ ] [SQL Basics](https://www.khanacademy.org/computing/computer-programming/sql/sql-basics/v/welcome-to-sql)
-  - [ ] [SQL Tutorial](https://www.w3schools.com/sql/)
-  - [ ] [PostgreSQL Exercises](https://pgexercises.com/questions/basic/)
-
-2. Practice on your local machine
-  - [ ] Install PostgreSQL using Homebrew: `brew install postgresql`
-  - [ ] Create a test database called test_db: `createdb test_db`
-  - [ ] Run a local postgres server: `brew services start postgresql`
-  - [ ] Open your database in the Postgres console: `psql test_db`
-  - [ ] Use the following SQL Statement to seed your database with a table and some rows:
-
-  ```sql
-    CREATE TABLE groceries (
-      id INTEGER PRIMARY KEY,
-      item TEXT,
-      quantity INTEGER,
-      aisle_id INTEGER
-    );
-
-    INSERT INTO groceries (
-      id,
-      item,
-      quantity,
-      aisle_id
-    )
-    VALUES
-    (1, 'Bananas', 4, 2),
-    (2, 'Peanut Butter', 3, 1),
-    (3, 'Dark Chocolate Bars', 2, 1),
-    (4, 'Broccoli', 1, 3),
-    (5, 'Cherries', 2, 2),
-    (6, 'Asparagus', 6, 3);
-
-    CREATE TABLE aisles (
-      id INTEGER PRIMARY KEY,
-      name TEXT
-    );
-
-    INSERT INTO aisles (
-      id,
-      name
-    )
-    VALUES
-    (1, 'Snacks'),
-    (2, 'Fruit'),
-    (3, 'Vegetables');
-  ```
-
-  - [ ] Select all from the `groceries` table
-  ```sql
-  # Expected output
-
-  id |        item         | quantity | aisle_id
-----+---------------------+----------+----------
-  1 | Bananas             |        4 |        2
-  2 | Peanut Butter       |        3 |        1
-  3 | Dark Chocolate Bars |        2 |        1
-  4 | Broccoli            |        1 |        3
-  5 | Cherries            |        2 |        2
-  6 | Asparagus           |        6 |        3
-  ```
-
-  - [ ] Select all from the `aisles` table
-  ```sql
-  # Expected output
-
-  id |    name
- ----+------------
-   1 | Snacks
-   2 | Fruit
-   3 | Vegetable
-  ```
-
-  - [ ] Select all items that have a quantity less than or equal to 3
-  ```sql
-  # Expected output
-
-  id |        item         | quantity | aisle_id
- ----+---------------------+----------+----------
-   2 | Peanut Butter       |        3 |        1
-   3 | Dark Chocolate Bars |        2 |        1
-   4 | Broccoli            |        1 |        3
-   5 | Cherries            |        2 |        2
-  ```
-
-  - [ ] Select all items that are in the `Fruits` aisle from the `groceries` table
-
-  ```sql
-  # Expected output
-
-  id |   item   | quantity | aisle_id | id | name
- ----+----------+----------+----------+----+-------
-   1 | Bananas  |        4 |        2 |  2 | Fruit
-   5 | Cherries |        2 |        2 |  2 | Fruit
-  ```
-
-  - [ ] Select all items that are in the `Vegetables` aisle and have a quantity greater than 1 from the `groceries` table
-
-  ```sql
-  # Expected output
-
-  id |   item    | quantity | aisle_id | id |    name
- ----+-----------+----------+----------+----+------------
-   6 | Asparagus |        6 |        3 |  3 | Vegetables
-  ```
+- [SQL Basics](https://www.khanacademy.org/computing/computer-programming/sql/sql-basics/v/welcome-to-sql)
+- [SQL Tutorial](https://www.w3schools.com/sql/)
+- [PostgreSQL Exercises](https://pgexercises.com/questions/basic/)
+- [Grocery Queries](./exercises/Grocery-Queries)
