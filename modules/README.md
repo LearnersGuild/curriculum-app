@@ -47,7 +47,7 @@ steps.
 
 ```
 Q: How do I know if I have a specific skill?
-A: Ask yourself first. When in double Ask your phase instructor to confirm.
+A: Ask yourself first. When in doubt ask your phase instructor to confirm.
 ```
 
 ```
