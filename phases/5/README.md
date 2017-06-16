@@ -1,7 +1,5 @@
 # Phase 5
 
-Get a job hippie!
-
 ## High Level Skills
 
 - Can explain how the Internet works (DNS, domains, TCP stack, IP addresses)
