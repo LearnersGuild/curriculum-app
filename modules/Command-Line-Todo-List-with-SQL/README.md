@@ -19,6 +19,8 @@ Create a command line todo-list script, that stores the tasks in a SQL database.
 - [ ] `delete` command has been implemented
 - [ ] `update` command has been implemented
 - [ ] script returns a `Command Not Found` message when the user enters an invalid command
+- [ ] a separate test database exists for SQL tests
+- [ ] all SQL functions are tested with mocha and chai
 
 
 ### Example Usage
