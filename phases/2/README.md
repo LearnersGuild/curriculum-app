@@ -41,7 +41,7 @@ _For more detail on the skills you'll learn in Phase 2 checkout
 - _P:_ [RESTful Routing](../../modules/RESTful-Routing)
 - _B:_ [Movie Search API](../../modules/Movie-Search-API)
 - _P:_ [Adding State to HTTP](../../modules/Adding-State-to-HTTP)
-- _B:_ [Authentication](../../modules/Authentication)
+- _B:_ [HTTP Authentication](../../modules/HTTP-Authentication)
 - _P:_ [JavaScript in the Browser](../../modules/JavaScript-in-the-Browser)
 - _P:_ [Debugging with Chrome Developer Tools](../../modules/Debugging-with-Chrome-Developer-Tools)
 - _P:_ [AJAX](../../modules/AJAX)
