@@ -18,4 +18,4 @@
 - Complete the following sections in the [learnyouanode](https://github.com/workshopper/learnyounode) module
   - [ ] HTTP Client
   - [ ] HTTP Collect
-- [IMDB webscraper](./exercises/IMDB-webscraper.md)
+- [Whats the Weather?](./exercises/Whats-The-Weather.md)
