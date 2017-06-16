@@ -42,6 +42,10 @@ _For more detail on the skills you'll learn in Phase 1 checkout
 - _P:_ [Foundational SQL](../../modules/Foundational-SQL)
 - _P:_ [Unit Testing with Mocha and Chai](../../modules/Unit-Testing-With-Mocha-And-Chai)
 - _B:_ [Unknown-Integration-Module-2](../../modules/Unknown-Integration-Module-2)
+- _P:_ [HTML-And-CSS-Layouts](../../modules/HTML-And-CSS-Layouts)
+- _P:_ [HTML-And-CSS-Mockups-and-Wireframes](../../modules/HTML-And-CSS-Mockups-and-Wireframes)
+- _P:_ [HTML-And-CSS-Common-Components](../../modules/HTML-And-CSS-Common-Components)
+- _B:_ [Clone Caviar](../../modules/Clone-Caviar)
 
 ## Support
 
