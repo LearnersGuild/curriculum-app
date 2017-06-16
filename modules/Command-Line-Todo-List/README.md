@@ -3,7 +3,6 @@
 ## Skills
 
 - parsing command line arguments
-- JavaScript Contructors
 - Modular organization of your code
 - Reading and writing to files
 - unit tests with mocha
@@ -11,6 +10,8 @@
 ### Description
 
 Design a todo-list which manages your tasks from the command line. It should maintain a task list, allowing you to add, list and complete your tasks.
+
+The tasks should be saved ta a file called `tasks.json`. Use the command `fs.readFileSync` to save the tasks to the file. Read the documentation [here](https://nodejs.org/api/fs.html#fs_fs_readfilesync_path_options)
 
 The following commands should be supported by your node script:
 
@@ -22,7 +23,7 @@ The following commands should be supported by your node script:
 
 
 ### Specs:
-- [ ] tasks are persisted to a `json` file.
+- [ ] tasks are persisted to a `json` file using `fs.readFileSync`
 - [ ] node script `task.js` is used to manage the tasks.
 - [ ] `list` command has been implemented in a file located at `commands/list.js`
 - [ ] `add` command has been implemented in a file located at `commands/add.js`
