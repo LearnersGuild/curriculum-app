@@ -4,11 +4,12 @@ In this module you'll learn about the use of Promises for asynchronous programmi
 
 ## Skills
 
-- can create a promise
+- can use `.then` handle when a promise is fulfilled
+- can use `.catch` to handle when a promise is rejected
 - can explain when a promise is fulfilled or rejected
+- can use `.then` to chain promises (promise composition)
+- can use `.catch` to handle errors up a promise chain
 - can create a `new Promise`
-- can chain promises using `.then` (promise composition)
-- can use `.catch` to handle errors up the promise chain
 - can convert a function that uses callbacks into function that returns a Promise
 - can use `Promise.all()` to return a `Promise` that resolves when all of the promises in the provided iterable are resolved
 - can use `Promise.race()` to return a promise that resolves or rejects as soon as one of the promises in the provided iterable are resolved or rejected
@@ -45,5 +46,7 @@ javascript promise resolve
 
 ## Exercises
 
-- [Promise it won't hurt](https://github.com/GuildCrafts/promises-exercises/tree/master/promise-it-wont-hurt-solutions)
+- [Promise it won't hurt](https://github.com/stevekane/promise-it-wont-hurt)
+- [scotch.io's Javascript Promises](https://scotch.io/tutorials/javascript-promises-for-dummies)
+- play with [Node's `fs` module wrapped in promises](https://github.com/normalize/mz)
 
