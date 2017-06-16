@@ -12,7 +12,7 @@ http://api.openweathermap.org/data/2.5/weather?q=San+Francisco&mode=json&appid=4
 Example usage
 ```
 $ node weather.js "San Franciso"
-Temperature in Kelvin: 85.244
+Temperature in Farenheit: 85.244
 ```
 
 Requirements:
