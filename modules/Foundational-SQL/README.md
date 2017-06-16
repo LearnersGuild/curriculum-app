@@ -1,8 +1,9 @@
 # Foundational SQL
 
-This module assumes you've already installed postgresql via homebrew. If you
+___Note:__ This module assumes you've already installed postgresql via homebrew. If you
 have not done that please do back and do the [Installfest](../Installfest)
-module.
+module._
+
 
 ## Skills
 
@@ -54,4 +55,4 @@ sql joins intro OR tutorial
 - [SQL Basics](https://www.khanacademy.org/computing/computer-programming/sql/sql-basics/v/welcome-to-sql)
 - [SQL Tutorial](https://www.w3schools.com/sql/)
 - [PostgreSQL Exercises](https://pgexercises.com/questions/basic/)
-- [Grocery Queries](./exercises/Grocery-Queries)
+

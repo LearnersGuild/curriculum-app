@@ -1,5 +1,22 @@
 # Grocery Queries Exercise
 
+___Note:__ This module assumes you've already installed postgresql via homebrew. If you
+have not done that please do back and do the [Installfest](../Installfest)
+module._
+
+## Skills
+
+___Note:__ all of the skills below are applicable to any SQL server but were
+practicing them in postgresql_
+
+- [ ] can select everything from a single table
+- [ ] can select specific columns from a single table
+- [ ] can select a subset of the rows in a table using a where clause
+- [ ] can select from two tables using a join on a primary key id
+- [ ] can select a subset of a table using a join
+- [ ] can describe the difference between a left, right, inner and outer joins
+- [ ] can define a table with a auto sequencing primary key
+
 
 ## Setup
 
