@@ -31,7 +31,8 @@ _For more detail on the skills you'll learn in Phase 1 checkout
 - _P:_ [Saving Progress With Git And GitHub](../../modules/Saving-Progress-With-Git-And-GitHub)
 - _P:_ [Foundational JavaScript Programming](../../modules/Foundational-JavaScript-Programming)
 - _P:_ [Foundational Programming in Node](../../modules/Foundational-Programming-in-Node)
-- _B:_ [Unknown-Integration-Module-1](../../modules/Unknown-Integration-Module-1)
+- _P:_ [Party Like Its ES2017](../../modules/Party-Like-Its-ES2017)
+- _B:_ [??????](../../modules/Unknown-Integration-Module-1)
 - _P:_ [Error Handling](../../modules/Error-Handling)
 - _P:_ [Regular Expression Basics](../../modules/Regular-Expression-Basics)
 - _P:_ [Super Simple Testing](../../modules/Super-Simple-Testing)
@@ -41,10 +42,11 @@ _For more detail on the skills you'll learn in Phase 1 checkout
 - _P:_ [Debugging in Node](../../modules/Debugging-in-Node)
 - _P:_ [Foundational SQL](../../modules/Foundational-SQL)
 - _P:_ [Unit Testing with Mocha and Chai](../../modules/Unit-Testing-With-Mocha-And-Chai)
-- _B:_ [Unknown-Integration-Module-2](../../modules/Unknown-Integration-Module-2)
+- _B:_ [???????](../../modules/Unknown-Integration-Module-2)
 - _P:_ [HTML-And-CSS-Layouts](../../modules/HTML-And-CSS-Layouts)
 - _P:_ [HTML-And-CSS-Mockups-and-Wireframes](../../modules/HTML-And-CSS-Mockups-and-Wireframes)
 - _P:_ [HTML-And-CSS-Common-Components](../../modules/HTML-And-CSS-Common-Components)
+- _P:_ [Static HTTP Server]
 - _B:_ [Clone Caviar](../../modules/Clone-Caviar)
 
 ## Support

@@ -5,7 +5,6 @@
 - Callbacks
 - Async flow control
 - Sleep using setTimeout
-- (Promises are in phase 3)
 
 
 ## Suggested Resources

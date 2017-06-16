@@ -8,7 +8,8 @@
 - Can explain why the `body-parser` package is needed
 - Can use cURL to send test requests to the HTTP server
 - Can explain the use cases for the HTTP status codes 200, 404, 500
-
+- can render HTML using `ejs` templates
+- can respond to an HTTP request with html from a template
 
 ## Suggested Search Terms
 

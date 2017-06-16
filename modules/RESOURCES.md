@@ -1,5 +1,6 @@
 # Resources
 
+- https://www.rithmschool.com/courses/javascript
 - https://teamtreehouse.com/library
 - https://techprep.fb.com/
 - https://www.youtube.com/

@@ -23,25 +23,31 @@ _For more detail on the skills you'll learn in Phase 2 checkout
 ## Modules
 
 - _P:_ [Terminal Advanced](../../modules/Terminal-Advanced)
-- _P:_ [HTTP Anatomy](../../modules/HTTP-Anatomy)
 - _P:_ [Committing Atomic Changes With Git](../../modules/Committing-Atomic-Changes-With-Git)
 - _P:_ [Digging Deeper Into JavaScript](../../modules/Digging-Deeper-Into-Javascript)
 - _P:_ [Asynchronous JavaScript](../../modules/Asynchronous-JavaScript)
+- _B:_ [Command line Todo List With Callbacks](../../modules/Command-line-Todo-List-With-Callbacks)
+- _P:_ [HTTP Anatomy](../../modules/HTTP-Anatomy)
 - _P:_ [HTTP Node](../../modules/HTTP-Node)
-- _P:_ [Promises](../../modules/Promises)
 - _B:_ [Movie Search CLI](../../modules/Movie-Search-CLI)
-- _P:_ [JavaScript in the Browser](../../modules/JavaScript-in-the-Browser)
+- _P:_ [Promises](../../modules/Promises)
+- _P:_ [Integration Testing With Mocha And Chai](../../modules/Integration-Testing-With-Mocha-And-Chai)
+- _B:_ [Movie Search CLI with Promises](../../modules/Movie-Search-CLI)
+- _P:_ [Relational Database Design](../../modules/Relational-Database-Design)
+- _P:_ [Defensive Programming](../../modules/Defensive-Programming)
+- _B:_ [Command Line Todo List with SQL](../../modules/Command-Line-Todo-List-with-SQL)
 - _P:_ [Your First HTTP Server](../../modules/Your-First-HTTP-Server)
 - _P:_ [Posting Data To The Server With A Form](../../modules/Posting-Data-To-The-Server-With-A-Form)
 - _P:_ [RESTful Routing](../../modules/RESTful-Routing)
 - _B:_ [Movie Search API](../../modules/Movie-Search-API)
 - _P:_ [Adding State to HTTP](../../modules/Adding-State-to-HTTP)
-- _P:_ [Integration Testing With Mocha And Chai](../../modules/Integration-Testing-With-Mocha-And-Chai)
-- _P:_ [Defensive Programming](../../modules/Defensive-Programming)
-- _P:_ [Relational Database Design](../../modules/Relational-Database-Design)
+- _B:_ [Authentication](../../modules/Authentication)
+- _P:_ [JavaScript in the Browser](../../modules/JavaScript-in-the-Browser)
 - _P:_ [Debugging with Chrome Developer Tools](../../modules/Debugging-with-Chrome-Developer-Tools)
-- _B:_ [Build Your Own jQuery](../../modules/Build-Your-Own-Jquery)
-- _P:_ [Party Like Its ES2017](../../modules/Party-Like-Its-ES2017)
+- _P:_ [AJAX](../../modules/AJAX)
+- _B:_ [Movie Search Engine](../../modules/Movie-Search-Engine)
+
+
 
 ## Support
 

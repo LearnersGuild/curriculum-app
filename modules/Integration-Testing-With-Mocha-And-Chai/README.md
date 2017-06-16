@@ -21,8 +21,7 @@
 
 ## Exercises
 
-- [ ] Pick an HTTP app that you've written already and write some integration tests for the endpoints.
-- [ ] Pick one of your apps that interacts with a database and write some integration tests for it.
+- ???? TODO
 
 ## Suggested Resources
 
