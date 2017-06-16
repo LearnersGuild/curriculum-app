@@ -32,7 +32,7 @@ _For more detail on the skills you'll learn in Phase 2 checkout
 - _B:_ [Movie Search CLI](../../modules/Movie-Search-CLI)
 - _P:_ [Promises](../../modules/Promises)
 - _P:_ [Integration Testing With Mocha And Chai](../../modules/Integration-Testing-With-Mocha-And-Chai)
-- _B:_ [Movie Search CLI with Promises](../../modules/Movie-Search-CLI)
+- _B:_ [Movie Search CLI with Promises](../../modules/Movie-Search-CLI-With-Promises)
 - _P:_ [Relational Database Design](../../modules/Relational-Database-Design)
 - _P:_ [Defensive Programming](../../modules/Defensive-Programming)
 - _B:_ [Command Line Todo List with SQL](../../modules/Command-Line-Todo-List-with-SQL)
