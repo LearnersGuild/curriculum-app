@@ -10,8 +10,24 @@
 - [ ] can catch, log and re-throw errors
 
 
+## Suggested Search Terms
+```
+how to read a javascript stack trace
+javascript try catch block
+what is javascript call stack
+```
 
-## Resources
+## Suggested Resources
+
+### Reading
 
 - https://teamtreehouse.com/library/debugging-node-applications-with-google-chrome
 - https://jvns.ca/blog/2015/11/22/how-i-got-better-at-debugging/
+- [Reading Stack Traces](http://tobyho.com/2011/06/08/the-javascript-stacktrace-blog/)
+- https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Control_flow_and_error_handling#throw_statement
+- https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Control_flow_and_error_handling#try...catch_statement
+- https://developer.mozilla.org/en-US/docs/Glossary/Call_stack
+
+### Watching
+
+- https://www.youtube.com/watch?v=Vv1CLj4vLjE
