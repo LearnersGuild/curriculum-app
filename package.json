@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/GuildCrafts/curriculum#readme",
   "dependencies": {
+    "bootflat": "^2.0.4",
     "ejs": "^2.5.6",
     "express": "^4.15.3",
     "highlight.js": "^9.12.0",

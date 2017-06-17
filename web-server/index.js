@@ -2,14 +2,26 @@ const fs = require('fs')
 const path = require('path')
 const express = require('express')
 require('./environment')
+
 const renderMarkdown = require('./renderMarkdown')
 
 const app = express()
+const APP_ROOT = path.resolve(__dirname, '..')
 
 app.set('view engine', 'jade')
 app.set('views', __dirname+'/views')
 
-app.use(express.static(__dirname+'/public'))
+app.use('/assets', express.static(__dirname+'/assets'))
+
+app.use((request, response, next) => {
+  // load modules
+  fs.readdir(APP_ROOT+'/modules', (error, files) => {
+    response.locals.modules = files.filter(file =>
+      !/\.md$/.test(file)
+    )
+    next()
+  })
+})
 
 app.use((request, response, next) => {
 
@@ -27,14 +39,7 @@ app.use((request, response, next) => {
   }
 
   response.renderMarkdownFile = function(relativeFilePath){
-    console.log('relativeFilePath', relativeFilePath)
-    // if (relativeFilePath === '/'){
-    //   relativeFilePath = 'README.md'
-    // }
     const absoluteFilePath = path.resolve(__dirname, '..', '.'+relativeFilePath)
-
-    console.log('absoluteFilePath', absoluteFilePath)
-
     fs.readFile(absoluteFilePath, (error, file) => {
       if (error){
         if (error.message.includes('ENOENT')){
