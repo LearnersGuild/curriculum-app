@@ -33,10 +33,12 @@ nav.navbar.navbar-inverse(role='navigation')
               li
                 a(href='/modules/'+module)= module.replace(/-/,' ')
 
-      form.navbar-form.navbar-right(role='search')
-        .form-search.search-only
-          i.search-icon.glyphicon.glyphicon-search
-          input.form-control.search-query(type='text')
+      .navbar-text.navbar-right
+        .list-inline
+          li
+            a.navbar-link(href="")= user.handle
+          li
+            a.navbar-link(href=logoutUrl) logout
 
 //-   // /.navbar-collapse
 //-   // /.container-fluid

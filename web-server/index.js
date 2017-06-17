@@ -1,6 +1,8 @@
 const fs = require('fs')
+const https = require('express-sslify').HTTPS
 const path = require('path')
 const express = require('express')
+const cookieParser = require('cookie-parser')
 require('./environment')
 const renderMarkdown = require('./renderMarkdown')
 const loadCurriculum = require('./curriculum').load
@@ -10,12 +12,19 @@ const app = express()
 app.set('view engine', 'jade')
 app.set('views', __dirname+'/views')
 
+// ensure secure connection
+if (process.env.NODE_ENV === 'production') {
+  app.use(https({trustProtoHeader: true}))
+}
+
+app.use(cookieParser())
 app.use('/assets', express.static(__dirname+'/assets'))
+
+require('./authentication')(app)
 
 app.use((request, response, next) => {
   loadCurriculum()
     .then(curriculum => {
-      console.log('curriculum', curriculum)
       Object.assign(response.locals, curriculum)
       next()
     })
