@@ -85,6 +85,10 @@ app.use((request, response, next) => {
 })
 
 
+app.get('/skills', (request, response, next) => {
+  response.render('skills')
+})
+
 app.get(/.*$/, (request, response, next) => {
   const path = request.path
   if (!/(\/|\.md)$/.test(path)){

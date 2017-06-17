@@ -1,0 +1,10 @@
+extends layout
+
+block content
+  h1 Skills
+
+  pre= JSON.stringify(skills)
+
+  ul
+    each skill in skills
+      li= skill
