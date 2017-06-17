@@ -67,3 +67,17 @@ h3, .h3{
 ol, ul {
   padding-left: 1em;
 }
+ol > li,
+ul > li {
+  margin-left: 1em;
+}
+
+
+.list-item-with-checkbox{
+  list-style: none;
+}
+
+.list-item-with-checkbox > input:first-child{
+  margin-left: -1em;
+  margin-right: 0.25em;
+}

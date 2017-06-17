@@ -15,6 +15,17 @@ renderer.code = (code, language) => {
   return `<pre><code class="hljs ${language}">${highlighted}</code></pre>`;
 };
 
+renderer.listitem = function(text) {
+  if (/^\s*\[[x ]\]\s*/.test(text)) {
+    text = text
+      .replace(/^\s*\[ \]\s*/, '<input type="checkbox" /> ')
+      .replace(/^\s*\[x\]\s*/, '<input type="checkbox" checked /> ');
+    return '<li class="list-item-with-checkbox">' + text + '</li>';
+  } else {
+    return '<li>' + text + '</li>';
+  }
+};
+
 
 marked.setOptions({
   renderer: renderer,
@@ -24,31 +35,6 @@ marked.setOptions({
   pedantic: false,
   sanitize: true,
   smartLists: true,
-  // highlight: function (code, language) {
-  //   // Check whether the given language is valid for highlight.js.
-  //   const validLang = !!(language && highlightjs.getLanguage(language));
-  //   // Highlight only if the language is valid.
-  //   const highlighted = validLang ? highlightjs.highlight(language, code).value : code;
-  //   // Render the highlighted code with `hljs` class.
-  //   return `<code class="hljs ${language}">${highlighted}</code>`;
-
-  //   // return highlightjs.highlightAuto(code).value;
-  // }
-
-  // highlight: function (code, lang, callback) {
-  //   console.log('CODE?', result.toString())
-  //   pygmentize(
-  //     {
-  //       lang: lang,
-  //       format: 'html'
-  //     },
-  //     code,
-  //     function (error, result) {
-  //       console.log('CODE?', result.toString())
-  //       callback(error, result.toString());
-  //     }
-  //   )
-  // }
 })
 
 module.exports = marked
