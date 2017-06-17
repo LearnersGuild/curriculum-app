@@ -5,7 +5,6 @@ const express = require('express')
 const cookieParser = require('cookie-parser')
 require('./environment')
 const renderMarkdown = require('./renderMarkdown')
-const loadDigest = require('../digest')
 
 const app = express()
 
@@ -26,14 +25,8 @@ app.use((request, response, next) => {
   if (request.user.roles.includes('staff')) return next()
   response.status(401).send('Unauthorized')
 })
-app.use((request, response, next) => {
-  loadDigest()
-    .then(digest => {
-      Object.assign(response.locals, digest)
-      next()
-    })
-    .catch(next)
-})
+
+require('./digest')(app)
 
 app.use((request, response, next) => {
 
