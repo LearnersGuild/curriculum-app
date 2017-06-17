@@ -1,5 +1,9 @@
 const marked = require('marked')
-const pygmentizeBundled = require('pygmentize-bundled')
+// const highlight = require('highlight.js')
+// const pygmentizeBundled = require('pygmentize-bundled')
+// const highlight = require('pygments').colorize;
+const pygmentize = require('pygmentize-bundled')
+
 
 marked.setOptions({
   renderer: new marked.Renderer(),
@@ -9,9 +13,10 @@ marked.setOptions({
   pedantic: false,
   sanitize: true,
   smartLists: true,
-  smartypants: false,
+
+
   highlight: function (code, lang, callback) {
-    pygmentizeBundled(
+    pygmentize(
       {
         lang: lang,
         format: 'html'
@@ -20,7 +25,7 @@ marked.setOptions({
       function (error, result) {
         callback(error, result.toString());
       }
-    );
+    )
   }
 })
 

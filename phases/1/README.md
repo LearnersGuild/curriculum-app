@@ -33,7 +33,7 @@ _For more detail on the skills you'll learn in Phase 1 checkout
 - 🤸 [Foundational Programming in Node](../../modules/Foundational-Programming-in-Node)
 - 🤸 [Party Like Its ES2017](../../modules/Party-Like-Its-ES2017)
 - 🤸 [Sorting Algorithms](../../modules/Sorting-Algorithms)
-- 🏋 [3,2,1,Contacts](../../3-2-1-Contacts)
+- 🏋 [3,2,1,Contacts](../../modules/3-2-1-Contacts)
 - 🤸 [Error Handling](../../modules/Error-Handling)
 - 🤸 [Regular Expression Basics](../../modules/Regular-Expression-Basics)
 - 🤸 [Super Simple Testing](../../modules/Super-Simple-Testing)

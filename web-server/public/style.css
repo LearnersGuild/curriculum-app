@@ -1,0 +1,15 @@
+body > nav.navbar {
+  margin-bottom: 0;
+  border-radius: 0;
+}
+
+
+body > main {
+  margin: 0 auto;
+  max-width: ;
+}
+
+
+.footer-logo img {
+  height: 120px;
+}

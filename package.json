@@ -19,10 +19,15 @@
   },
   "homepage": "https://github.com/GuildCrafts/curriculum#readme",
   "dependencies": {
+    "ejs": "^2.5.6",
     "express": "^4.15.3",
+    "highlight.js": "^9.12.0",
+    "jade": "^1.11.0",
     "marked": "^0.3.6",
     "pug": "^2.0.0-rc.2",
-    "pygmentize-bundled": "^2.3.0"
+    "pygmentize-bundled": "^2.3.0",
+    "pygments": "^0.2.1",
+    "pygments-css": "^1.0.0"
   },
   "devDependencies": {
     "chai": "^4.0.2",

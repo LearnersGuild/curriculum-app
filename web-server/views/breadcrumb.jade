@@ -1,0 +1,14 @@
+ol.breadcrumb
+  li
+    a(href='/') home
+
+  - breadcrumbs = path.split('/')
+  - breadcrumbs.shift()
+  - console.log('breadcrumbs', breadcrumbs)
+  - for (var index = 0; index < breadcrumbs.length; index++)
+    - part = breadcrumbs[index]
+    if index === breadcrumbs.length - 1
+      li.active= part
+    else
+      li
+        a(href='/'+breadcrumbs.slice(0, index+1).join('/'))= part

@@ -1,0 +1,81 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='utf-8')
+    title Curriculum - Learners Guild
+    meta(name='description', content='')
+    meta(name='author', content='')
+    link(rel='stylesheet', href='https://netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css')
+    link(rel='stylesheet', href='https://bootflat.github.io/bootflat/css/bootflat.css')
+    link(href='/style.css', rel='stylesheet')
+    link(href='/pygments.css', rel='stylesheet')
+  body
+
+    nav.navbar.navbar-inverse(role='navigation')
+      .container
+        .navbar-header
+          button.navbar-toggle(type='button', data-toggle='collapse', data-target='#bs-example-navbar-collapse-7')
+            span.sr-only Toggle navigation
+            span.icon-bar
+            span.icon-bar
+            span.icon-bar
+          a.navbar-brand(href='#') Learners Guild
+        #bs-example-navbar-collapse-7.collapse.navbar-collapse
+          p.navbar-text.navbar-right
+            a.navbar-link(href='') deadlyicon
+
+    .container
+      .row
+        include breadcrumb
+
+    .container
+      block content
+
+
+    .container-fluid
+      .row
+        .footer
+          .container
+            .clearfix
+              .footer-logo
+                a(href='/')
+                  img(src='https://brand.learnersguild.org/assets/learners-guild-logo-white-250x149.png')
+              dl.footer-nav
+                dt.nav-title PORTFOLIO
+                dd.nav-item
+                  a(href='#') Web Design
+                dd.nav-item
+                  a(href='#') Branding & Identity
+                dd.nav-item
+                  a(href='#') Mobile Design
+                dd.nav-item
+                  a(href='#') Print
+                dd.nav-item
+                  a(href='#') User Interface
+              dl.footer-nav
+                dt.nav-title ABOUT
+                dd.nav-item
+                  a(href='#') The Company
+                dd.nav-item
+                  a(href='#') History
+                dd.nav-item
+                  a(href='#') Vision
+              dl.footer-nav
+                dt.nav-title GALLERY
+                dd.nav-item
+                  a(href='#') Flickr
+                dd.nav-item
+                  a(href='#') Picasa
+                dd.nav-item
+                  a(href='#') iStockPhoto
+                dd.nav-item
+                  a(href='#') PhotoDune
+              dl.footer-nav
+                dt.nav-title CONTACT
+                dd.nav-item
+                  a(href='#') Basic Info
+                dd.nav-item
+                  a(href='#') Map
+                dd.nav-item
+                  a(href='#') Conctact Form
+            .footer-copyright.text-center Copyright © 2017 Learners Guild. All rights reserved.
