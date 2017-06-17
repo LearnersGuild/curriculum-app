@@ -31,7 +31,7 @@ nav.navbar.navbar-inverse(role='navigation')
           ul.dropdown-menu(role='menu')
             each module in modules
               li
-                a(href='/modules/'+module)= module.replace(/-/,' ')
+                a(href='/modules/'+module)= module.replace(/-/g,' ')
 
       .navbar-text.navbar-right
         .list-inline
@@ -39,41 +39,3 @@ nav.navbar.navbar-inverse(role='navigation')
             a.navbar-link(href="")= user.handle
           li
             a.navbar-link(href=logoutUrl) logout
-
-//-   // /.navbar-collapse
-//-   // /.container-fluid
-
-
-
-
-//- nav.navbar.navbar-inverse(role='navigation')
-//-   .container
-//-     .navbar-header
-//-       button.navbar-toggle(type='button', data-toggle='collapse', data-target='#bs-example-navbar-collapse-7')
-//-         span.sr-only Toggle navigation
-//-         span.icon-bar
-//-         span.icon-bar
-//-         span.icon-bar
-//-       a.navbar-brand(href='#') Learners Guild
-
-//-       .btn-group
-//-         button.btn(type='button') Normal
-//-         button.btn.dropdown-toggle(type='button', data-toggle='dropdown')
-//-           span.caret
-//-           span.sr-only Toggle Dropdown
-//-         ul.dropdown-menu(role='menu')
-//-           li
-//-             a(href='#') Action
-//-           li
-//-             a(href='#') Another action
-//-           li
-//-             a(href='#') Something else here
-//-           li.divider
-//-           li
-//-             a(href='#') Separated link
-
-//-     .collapse.navbar-collapse
-//-       p.navbar-text.navbar-right
-//-         a.navbar-link(href='') deadlyicon
-
-
