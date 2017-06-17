@@ -78,6 +78,7 @@ app.use((request, response, next) => {
 })
 
 
+
 app.get('/skills', (request, response, next) => {
   response.render('skills')
 })
