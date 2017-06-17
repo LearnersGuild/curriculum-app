@@ -1,7 +1,16 @@
-body > main {
-  min-height: 100vh;
+body {
   display: flex;
+  min-height: 100vh;
   flex-direction: column;
+}
+
+body > main {
+  flex: 1;
+}
+
+body > .footer {
+  flex: 0 0;
+  margin-top: 5em;
 }
 
 .navbar {
@@ -9,16 +18,8 @@ body > main {
   border-radius: 0;
 }
 
-.breadcrumb-container{
-  flex: 0 0;
-}
-
 .breadcrumb-container .breadcrumb{
   margin-bottom: 0;
-}
-
-.page-container{
-  flex: 1 1;
 }
 
 .footer{
@@ -28,4 +29,10 @@ body > main {
 
 .footer-logo img {
   height: 120px;
+}
+
+
+.dropdown-menu{
+  max-height: 90vh;
+  overflow: auto;
 }

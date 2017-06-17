@@ -1,10 +1,10 @@
 extends layout
 
 block content
-  .row
-    ul.list-inline.pull-right
-      li
-        a(href=sourceUrl target="_blank") Source
-      li
-        a(href=editeUrl target="_blank") Edit
-  !{content}
+  ul.list-inline.pull-right
+    li
+      a(href=sourceUrl target="_blank") Source
+    li
+      a(href=editeUrl target="_blank") Edit
+
+  div !{content}

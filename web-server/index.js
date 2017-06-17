@@ -37,8 +37,8 @@ app.use((request, response, next) => {
     this.status(500).send(error.message)
   }
 
-  response.renderMarkdownFile = function(){
-    const absoluteFilePath = path.resolve(__dirname, '..', '.'+request.path)
+  response.renderMarkdownFile = function(relativeFilePath=request.path){
+    const absoluteFilePath = path.resolve(__dirname, '..', '.'+relativeFilePath)
     fs.readFile(absoluteFilePath, (error, file) => {
       if (error){
         if (error.message.includes('ENOENT')){
