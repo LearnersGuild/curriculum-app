@@ -5,7 +5,7 @@ const express = require('express')
 const cookieParser = require('cookie-parser')
 require('./environment')
 const renderMarkdown = require('./renderMarkdown')
-const loadCurriculum = require('./curriculum').load
+const loadDigest = require('../digest')
 
 const app = express()
 
@@ -27,9 +27,9 @@ app.use((request, response, next) => {
   response.status(401).send('Unauthorized')
 })
 app.use((request, response, next) => {
-  loadCurriculum()
-    .then(curriculum => {
-      Object.assign(response.locals, curriculum)
+  loadDigest()
+    .then(digest => {
+      Object.assign(response.locals, digest)
       next()
     })
     .catch(next)

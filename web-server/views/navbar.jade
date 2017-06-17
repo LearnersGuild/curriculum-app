@@ -22,7 +22,7 @@ nav.navbar.navbar-inverse(role='navigation')
           ul.dropdown-menu(role='menu')
             each phase in phases
               li
-                a(href='/phases/'+phase) Phase #{phase}
+                a(href='/phases/'+phase.number) Phase #{phase.number}
 
         li.dropdown
           a.dropdown-toggle(href='#', data-toggle='dropdown')
@@ -31,7 +31,7 @@ nav.navbar.navbar-inverse(role='navigation')
           ul.dropdown-menu(role='menu')
             each module in modules
               li
-                a(href='/modules/'+module)= module.replace(/-/g,' ')
+                a(href='/modules/'+module.name)= module.name
 
         li.dropdown
           a(href='/skills/')
