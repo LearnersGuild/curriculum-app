@@ -17,7 +17,7 @@ module.exports = function(app){
 
     loadDigest()
       .then(digest => {
-        Object.assign(app”.locals, digest)
+        Object.assign(app.locals, digest)
       })
       .catch(error => {
         console.error(error)
