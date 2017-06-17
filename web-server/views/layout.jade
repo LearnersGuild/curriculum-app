@@ -13,17 +13,15 @@ html(lang='en')
     script(src="/assets/bootflat/js/bootstrap.min.js")
 
   body
+    main
+      include navbar
 
-    include navbar
+      .breadcrumb-container.container
+        .row
+          include breadcrumb
 
-    .container
-      .row
-        include breadcrumb
-
-    .container
-      block content
+      .page-container.container
+        block content
 
 
-    .container-fluid
-      .row
-        include footer
+      include footer

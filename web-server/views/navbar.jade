@@ -7,12 +7,23 @@ nav.navbar.navbar-inverse(role='navigation')
         span.icon-bar
         span.icon-bar
         span.icon-bar
-      a.navbar-brand(href='/') Bootflat
+      a.navbar-brand(href='/') Learners Guild
 
     .collapse.navbar-collapse
       ul.nav.navbar-nav
+
         li
           a(href='https://guide.learnersguild.org') Guide
+
+        li.dropdown
+          a.dropdown-toggle(href='#', data-toggle='dropdown')
+            | Phases
+            b.caret
+          ul.dropdown-menu(role='menu')
+            each phase in phases
+              li
+                a(href='/phases/'+phase) Phase #{phase}
+
         li.dropdown
           a.dropdown-toggle(href='#', data-toggle='dropdown')
             | Modules
@@ -21,6 +32,7 @@ nav.navbar.navbar-inverse(role='navigation')
             each module in modules
               li
                 a(href='/modules/'+module)= module.replace(/-/,' ')
+
       form.navbar-form.navbar-right(role='search')
         .form-search.search-only
           i.search-icon.glyphicon.glyphicon-search

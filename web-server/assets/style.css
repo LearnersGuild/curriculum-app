@@ -1,14 +1,30 @@
-body > nav.navbar {
+body > main {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.navbar {
   margin-bottom: 0;
   border-radius: 0;
 }
 
-
-body > main {
-  margin: 0 auto;
-  max-width: ;
+.breadcrumb-container{
+  flex: 0 0;
 }
 
+.breadcrumb-container .breadcrumb{
+  margin-bottom: 0;
+}
+
+.page-container{
+  flex: 1 1;
+}
+
+.footer{
+  flex: 0 0;
+  margin-top: 5em;
+}
 
 .footer-logo img {
   height: 120px;

@@ -2,11 +2,10 @@ const fs = require('fs')
 const path = require('path')
 const express = require('express')
 require('./environment')
-
 const renderMarkdown = require('./renderMarkdown')
+const loadCurriculum = require('./curriculum').load
 
 const app = express()
-const APP_ROOT = path.resolve(__dirname, '..')
 
 app.set('view engine', 'jade')
 app.set('views', __dirname+'/views')
@@ -14,13 +13,13 @@ app.set('views', __dirname+'/views')
 app.use('/assets', express.static(__dirname+'/assets'))
 
 app.use((request, response, next) => {
-  // load modules
-  fs.readdir(APP_ROOT+'/modules', (error, files) => {
-    response.locals.modules = files.filter(file =>
-      !/\.md$/.test(file)
-    )
-    next()
-  })
+  loadCurriculum()
+    .then(curriculum => {
+      console.log('curriculum', curriculum)
+      Object.assign(response.locals, curriculum)
+      next()
+    })
+    .catch(next)
 })
 
 app.use((request, response, next) => {
