@@ -12,7 +12,7 @@
 - can author a RegExp with a character set
 - can use the `|` (or) operator
 - can describe what `$` and `^` mean
-- can write a regular expression to determine if a a string does or doesn't
+- can write a regular expression to determine if a a string does or doesn't match
 - can use a RegExp to extract parts of a string
 
 

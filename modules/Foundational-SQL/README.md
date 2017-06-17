@@ -7,7 +7,7 @@ module._
 
 ## Skills
 
-___Note:__ all of the skills below are applicable to any SQL server but were
+___Note:__ all of the skills below are applicable to any SQL server but we're
 practicing them in postgresql_
 
 - [ ] can select everything from a single table

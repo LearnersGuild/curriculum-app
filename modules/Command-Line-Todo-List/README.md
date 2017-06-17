@@ -17,7 +17,7 @@ The following commands should be supported by your node script:
 
 | command | description                                            | example usage                            |
 |---------|--------------------------------------------------------|------------------------------------------|
-| add     | adds the specified                                     | node task.js add Finish reading Flatland |
+| add     | adds the specified task                                     | node task.js add Finish reading Flatland |
 | list    | lists the incomplete tasks                             | node task.js list                        |
 | done    | marks the task with `id` equal to `<task-id>` complete | node task.js done `<task-id>`            |
 
@@ -29,7 +29,7 @@ The following commands should be supported by your node script:
 - [ ] `add` command has been implemented in a file located at `commands/add.js`
 - [ ] `done` command has been implemented in a file located at `commands/done.js`
 - [ ] Add tests using Mocha and Chai for all functions
-
+- [ ] User receives an error message if they enter an invalid command
 
 ### Example Usage
 

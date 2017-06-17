@@ -73,5 +73,5 @@ You should see the following output:
 
 
 
-___Important:__ make sure you save this folder so your instructor can review
-it with you_
+___Important:__ make sure you save the folder and files you created so your instructor can review
+them with you_

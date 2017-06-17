@@ -68,8 +68,8 @@ is sent to your node script's STDIN.
 
 ## Part 2
 
-Okay now lets do something more useful than just printout out whatever we're
-given. In part two your going to create a script that counts words in the text
+Okay now let's do something more useful than just print out out whatever we're
+given. In part two you're going to create a script that counts words in the text
 you pass to it through STDIN (Standard In).
 
 Create the following additional files
@@ -102,17 +102,6 @@ Your script should print out the number of "words" it found in it's given input.
 
 Try to create the following scripts
 
-#### `./reverse.js`
-
-This script should take whatever is piped to STDIN, and print out a reversed
-version of the string.
-
-```sh
-echo "ooooh weeee can do" | node ./reverse.js
-
-od nac eeeew hoooo
-```
-
 #### `./upcase.js`
 
 This script should take whatever is piped to STDIN and print out an all upper
@@ -124,7 +113,18 @@ echo "ooooh weeee can do" | node ./upcase.js
 OOOOH WEEEE CAN DO
 ```
 
-___TIP:__ try using `process.stdout.write(output)` instead of `console.log(output)`
+#### `./reverse.js`
+
+This script should take whatever is piped to STDIN, and print out a reversed
+version of the string.
+
+```sh
+echo "ooooh weeee can do" | node ./reverse.js
+
+od nac eeeew hoooo
+```
+
+___TIP:___ try using `process.stdout.write(output)` instead of `console.log(output)`
 to avoid adding a line return to your output_
 
 ## Part 4

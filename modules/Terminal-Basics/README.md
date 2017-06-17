@@ -22,7 +22,7 @@
 
 | Term | Explanation |
 | ---- | ----------- |
-| Shell | a shell is a program that has a command line interface that you give commands that can be processed by an operating system.
+| Shell | a shell is a program that has a command line interface. Your commands can be processed by an operating system.
 | Terminal | The terminal is wrapper program, like iTerm2, that runs the Shell program and provides a user interface.
 | BASH | BASH (Bourne-Again Shell) is a kind of UNIX shell and is the most used shell since 1989.
 | UNIX | An operating system that comes with a bunch of small, composeable tools (or programs) like `ls`, `grep`, `cd`, `mkdir`, and more. These UNIX tools can be used alone or they can be used together.

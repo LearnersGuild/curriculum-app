@@ -26,6 +26,9 @@ postgresql
 postico
 ```
 
+`postgresql` should only ever be installed using homebrew; the standalone
+installer creates conflicts.
+
 optionally, consider also installing:
 
 ```
@@ -36,6 +39,8 @@ slack
 screenhero
 spectacle
 postman
+copyclip
+xcode command line tools
 ```
 
 ## Search Terms

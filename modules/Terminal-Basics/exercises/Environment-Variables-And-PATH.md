@@ -48,15 +48,15 @@ You'll notice the `$PATH` is colon-delimited, between each colon is a new direct
 ### Exercise
 Let's practice adding a new `bin` directory to your home directory and then adding this directory to your `$PATH`. Once you've added it to your `$PATH`, you can save executable programs in that directory for your shell environment to find and execute.
 
-Start by navigating to your root directory using the command `cd ~`. The command `cd` is for change directory and let's you change the folder you're currently working in from your shell.
+Start by navigating to your home directory using the command `cd ~`. The command `cd` is for change directory and let's you change the folder you're currently working in from your shell.
 
-Then, we'll create a new folder at your root with the `mkdir` command, which means make directory:
+Then, we'll create a new folder in your home directory with the `mkdir` command, which means make directory:
 
 ```bash
 mkdir bin
 ```
 
-Now, let's take a look at what directories we have in the root folder. Use the command `ls` to list all visible directories. You should see your new directory in the list!
+Now, let's take a look at what directories we have in the home folder. Use the command `ls` to list all visible directories. You should see your new directory in the list!
 
 Ok, we have a directory to add to the `$PATH`, let's `echo $PATH` now so we can compare it with the new `$PATH` to see where `~/bin` gets placed after we add it.
 
