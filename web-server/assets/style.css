@@ -36,3 +36,31 @@ body > .footer {
   max-height: 90vh;
   overflow: auto;
 }
+
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4,
+h5, .h5,
+h6, .h6{
+  margin-top: 24px;
+  margin-bottom: 16px;
+  font-weight: 600;
+  line-height: 1.25;
+}
+
+h1, .h1{
+  padding-bottom: 0.3em;
+  font-size: 40px;
+  border-bottom: 1px solid #eaecef;
+}
+
+h2, .h2{
+  padding-bottom: 0.3em;
+  font-size: 35px;
+  border-bottom: 1px solid #eaecef;
+}
+
+h3, .h3{
+  font-size: 25px;
+}
