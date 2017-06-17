@@ -23,6 +23,10 @@ app.use('/assets', express.static(__dirname+'/assets'))
 require('./authentication')(app)
 
 app.use((request, response, next) => {
+  if (request.user.roles.includes('staff')) return next()
+  response.status(401).send('Unauthorized')
+})
+app.use((request, response, next) => {
   loadCurriculum()
     .then(curriculum => {
       Object.assign(response.locals, curriculum)
