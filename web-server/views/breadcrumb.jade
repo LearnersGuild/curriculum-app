@@ -10,7 +10,7 @@ ol.breadcrumb
   - for (var index = 0; index < breadcrumbs.length; index++)
     - part = breadcrumbs[index]
     if index === breadcrumbs.length - 1
-      li.active= part
+      li.active= part.replace(/-/g,' ')
     else
       li
-        a(href='/'+breadcrumbs.slice(0, index+1).join('/'))= part
+        a(href='/'+breadcrumbs.slice(0, index+1).join('/'))= part.replace(/-/g,' ')
