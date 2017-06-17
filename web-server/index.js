@@ -37,23 +37,34 @@ app.use((request, response, next) => {
     this.status(500).send(error.message)
   }
 
-  response.renderMarkdownFile = function(relativeFilePath){
-    const absoluteFilePath = path.resolve(__dirname, '..', '.'+relativeFilePath)
+  response.renderMarkdownFile = function(){
+    const absoluteFilePath = path.resolve(__dirname, '..', '.'+request.path)
     fs.readFile(absoluteFilePath, (error, file) => {
       if (error){
         if (error.message.includes('ENOENT')){
           response.renderNotFound()
         }else if (error.message.includes('EISDIR')){
-          response.renderMarkdownFile(relativeFilePath+'/README.md')
+          response.renderMarkdownFile(request.path+'/README.md')
         }else{
           response.renderServerError(error)
         }
         return
       }
-      renderMarkdown(file.toString(), (error, html) => {
-        if (error) return response.renderServerError(error)
-        response.render('markdown', {content: html})
-      })
+      response.renderMarkdown(file.toString())
+    })
+  }
+
+  response.renderMarkdown = function(markdown){
+
+    renderMarkdown(markdown, (error, content) => {
+      if (error) return response.renderServerError(error)
+
+      const file = {
+        content,
+        sourceUrl: 'https://github.com/GuildCrafts/curriculum/blob/master'+response.path,
+        editeUrl: 'https://github.com/GuildCrafts/curriculum/edit/master'+response.path,
+      }
+      response.render('markdown', file)
     })
   }
 
@@ -66,7 +77,7 @@ app.get(/.*$/, (request, response, next) => {
   if (!/(\/|\.md)$/.test(path)){
     response.redirect(path+'/')
   }else{
-    response.renderMarkdownFile(request.path)
+    response.renderMarkdownFile()
   }
 })
 
