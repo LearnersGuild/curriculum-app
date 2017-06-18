@@ -26,6 +26,7 @@ app.use((request, response, next) => {
 })
 
 require('./digest')(app)
+// require('./api')(app)
 
 app.use((request, response, next) => {
 
@@ -80,6 +81,13 @@ app.use((request, response, next) => {
 
 app.get('/skills', (request, response, next) => {
   response.render('skills')
+})
+
+app.get('/modules/:moduleName', (request, response, next) => {
+  const moduleName = request.params.moduleName
+  const module = response.digest.modules[moduleName]
+  response.locals.module = module
+  next()
 })
 
 app.get(/.*$/, (request, response, next) => {
