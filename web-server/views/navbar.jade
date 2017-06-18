@@ -31,7 +31,7 @@ nav.navbar.navbar-inverse(role='navigation')
           ul.dropdown-menu(role='menu')
             each module in modules
               li
-                a(href='/modules/'+module.name)= module.name
+                a(href='/modules/'+module.path.split('/modules/')[1])= module.name
 
         li.dropdown
           a(href='/skills') Skills
