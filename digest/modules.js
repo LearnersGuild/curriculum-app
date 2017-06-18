@@ -3,18 +3,11 @@ const Path = require('path')
 const parseMarkdown = require('./parseMarkdown')
 module.exports = function(curriculum){
 
-  const extractSkills = (module, document) => {
-    // console.log('set module.skills', module.name)
-    module.skills = parseMarkdown.extractListFromSection(document, 'Skills', 2)
-    // module.resources = parseMarkdown.extractListFromSection(document, 'Resources', 2)
-    // module.exercises = parseMarkdown.extractListFromSection(document, 'Exercises', 2)
 
-    module.skills = module.skills.map(name =>
-      name
-        .replace(/`/g, '')
-        .replace(/^\s*\[\s+\]\s+/, '')
-        .replace(/\s+$/, '')
-    )
+
+  const extractSkills = (module, document) => {
+    module.skills = parseMarkdown.extractListFromSection(document, 'Skills', 2)
+      .map(stripSkillLabel)
 
     return document
   }
@@ -53,3 +46,8 @@ module.exports = function(curriculum){
 
 
 const noExtension = module => !module.includes('.')
+
+const stripSkillLabel = name =>
+  name
+    .replace(/^\s*\[\s+\]\s+/, '')
+    .replace(/\s+$/, '')

@@ -1,8 +1,12 @@
 const path = require('path')
 const fs = require('fs')
 const renderMarkdown = require('./renderMarkdown')
+const escapeHTML = require('jade').runtime.escape
 
 module.exports = app => {
+
+  app.locals.escapeHTML = escapeHTML
+  app.locals.renderMarkdown = renderMarkdown
 
   app.use((request, response, next) => {
 

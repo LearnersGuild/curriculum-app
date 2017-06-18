@@ -28,6 +28,12 @@
     )
   })
 
+  // TODO dry this up, duplicate of /digest/nameToId
+  const skillNameToSkillId = name =>
+    name
+      .replace(/[\/ #]/g, '-')
+      .replace(/`/g, '')
+
 
   if (location.pathname.match(/^\/modules\//)) $(() => {
     const findSkillLis = () => {
@@ -45,18 +51,20 @@
     const checkboxes = {}
     lis.each((i, li) => {
       li = $(li)
-      const label = li.text()
-      const labelUrl = `/skills/${encodeURIComponent(label.replace(/ /g,'-'))}`
+      const labelHtml = li.html().replace(/<code>(.+)<\/code>/g, '`$1`')
+      const skillName = $('<div>'+labelHtml+'</div>').text()
+      const skillId = skillNameToSkillId(skillName)
+      const href = `/skills/${encodeURIComponent(skillId)}`
       const checkbox = $('<input type="checkbox" class="skill-checkbox" />')
-      checkboxes[label]= checkbox[0]
-      checkbox.data('label', label)
+      checkboxes[skillName]= checkbox[0]
+      checkbox.data('label', skillName)
       li
-        .wrapInner(`<a href="${labelUrl}"></a>`)
+        .wrapInner(`<a href="${href}"></a>`)
         .prepend(checkbox)
     })
 
-    Object.keys(checkboxes).forEach(label => {
-      const checkbox = checkboxes[label]
+    Object.keys(checkboxes).forEach(skillName => {
+      const checkbox = checkboxes[skillName]
       checkbox.disabled = true
     })
 
@@ -65,9 +73,9 @@
       labels: Object.keys(checkboxes),
     })
     .then(checks => {
-      Object.keys(checkboxes).forEach(label => {
-        const checkbox = checkboxes[label]
-        checkbox.checked = label in checks && checks[label] || false
+      Object.keys(checkboxes).forEach(skillName => {
+        const checkbox = checkboxes[skillName]
+        checkbox.checked = skillName in checks && checks[skillName] || false
         checkbox.disabled = false
       })
     })
