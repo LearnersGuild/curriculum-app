@@ -17,9 +17,6 @@
 
 
   if (location.pathname.match(/^\/modules\//)) $(() => {
-    const checkboxes = {}
-
-
     const findSkillLis = () => {
       let withinSkillsSection = false
       return $('h1,h2,ul').filter((i, node) => {
@@ -32,6 +29,7 @@
     const lis = findSkillLis()
       .addClass('list-item-with-checkbox')
 
+    const checkboxes = {}
     lis.each((i, li) => {
       li = $(li)
       const label = li.text()
