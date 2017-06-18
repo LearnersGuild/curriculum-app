@@ -32,15 +32,25 @@
       checkboxes[label]= input[0]
 
       input.on('change', event => {
+        const checkbox = event.target
+        checkbox.disabled = true
         postJSON('/api/checks/set', {
           label: label,
-          checked: event.target.checked,
-        })
+          checked: checkbox.checked,
+        }).then(
+          _ => { checkbox.disabled = false },
+          _ => { checkbox.disabled = false }
+        )
       })
 
       li
         .wrapInner(`<a href="${labelUrl}"></a>`)
         .prepend(input)
+    })
+
+    Object.keys(checkboxes).forEach(label => {
+      const checkbox = checkboxes[label]
+      checkbox.disabled = true
     })
 
     postJSON('/api/checks/status', {
@@ -51,6 +61,7 @@
       Object.keys(checkboxes).forEach(label => {
         const checkbox = checkboxes[label]
         checkbox.checked = label in checks && checks[label] || false
+        checkbox.disabled = false
       })
     })
 
