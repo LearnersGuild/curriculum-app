@@ -26,7 +26,7 @@ app.use((request, response, next) => {
 })
 
 require('./digest')(app)
-// require('./api')(app)
+require('./api')(app)
 
 app.use((request, response, next) => {
 
