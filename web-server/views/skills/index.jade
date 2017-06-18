@@ -1,0 +1,10 @@
+extends ../layout
+
+block content
+  h1 Skills
+  ul
+    each skill, key in skills
+      - const checked = checks[skill.name] || false
+      li.list-item-with-checkbox
+        input.skill-checkbox(type="checkbox", checked=checked, data-label=skill.name)
+        a(href="/skills/"+skill.id)= skill.name
