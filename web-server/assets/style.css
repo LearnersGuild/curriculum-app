@@ -37,13 +37,14 @@ body > .footer {
   padding-bottom: 5em;
 }
 
-.navbar-logo {
+.navbar-logo {`
   color: #8c8c8c;
   padding-top: 15px;
   padding-bottom: 15px;
 }
 .navbar-logo > img {
   height: 50px;
+  width: 50px;
 }
 
 .footer-logo {
@@ -56,6 +57,7 @@ body > .footer {
 }
 .footer-logo > img {
   height: 75px;
+  width: 125px;
 }
 
 
@@ -152,4 +154,11 @@ ul.skills > li > label > input[type="checkbox"] {
   height: 100%;
   width: 100%;
   border: 0;
+}
+
+.markdown-body{
+  padding-top: 15px;
+}
+.markdown-body > *:first-child {
+  margin-top: 0 !important;
 }
