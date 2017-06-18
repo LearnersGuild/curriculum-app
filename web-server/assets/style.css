@@ -13,6 +13,10 @@ body > main {
 
 body > .footer {
   flex: 0 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: row;
+  align-items: center;
 }
 
 .navbar {
@@ -33,8 +37,25 @@ body > .footer {
   padding-bottom: 5em;
 }
 
-.footer-logo img {
-  height: 120px;
+.navbar-logo {
+  color: #8c8c8c;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+.navbar-logo > img {
+  height: 50px;
+}
+
+.footer-logo {
+  height: auto;
+  width: auto;
+  margin-top: 0;
+  line-height: inherit;
+  float: none;
+  padding: 0;
+}
+.footer-logo > img {
+  height: 75px;
 }
 
 
@@ -94,54 +115,6 @@ ul > li {
   margin-right: 0.75em;
 }
 
-
-.skills-list{
-  padding: 0;
-}
-.skills-list > .panel {
-  margin-bottom: 4px;
-}
-
-input.skills-list-item-checkbox{
-  margin-right: 1em;
-}
-
-.skills-list-item > .panel-body{
-  display: none;
-}
-
-.skills-list-item-expanded-icon{
-  display: none;
-}
-
-.skills-list-item-expanded > .panel-body{
-  display: block;
-}
-
-.skills-list-item-expanded .skills-list-item-collapsed-icon{
-  display: none;
-}
-
-.skills-list-item-expanded .skills-list-item-expanded-icon{
-  display: block;
-}
-
-.skills-list-item-name{
-
-}
-
-.skills-list-item-modules-list{
-
-}
-
-.skills-list-item-modules-list-item{
-  list-style-type: none;
-}
-
-.skills-list-item-modules-list-item-name{
-
-}
-
 ul.skills > li > label {
   display: block;
   margin: 0;
@@ -160,10 +133,6 @@ ul.skills > li > label > input[type="checkbox"] {
   margin: 0;
 }
 
-.markdown-content{
-
-}
-
 .skill-show-page-heading{
   display: flex;
   flex-direction: row;
@@ -172,4 +141,15 @@ ul.skills > li > label > input[type="checkbox"] {
 
 .skill-show-page-heading > .skill-checkbox {
   margin-right: 0.25em;
+}
+
+.guide-iframe{
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  border: 0;
 }
