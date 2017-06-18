@@ -34,8 +34,11 @@ nav.navbar.navbar-inverse(role='navigation')
                 a(href='/modules/'+module.name)= module.name
 
         li.dropdown
-          a(href='/skills/')
-            | Skills
+          a(href='/skills') Skills
+
+        if process.env.NODE_ENV === 'development'
+          li.dropdown
+            a(href='/digest') Digest
 
       .navbar-text.navbar-right
         .list-inline
