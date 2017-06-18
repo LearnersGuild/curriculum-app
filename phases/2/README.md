@@ -24,7 +24,7 @@ _For more detail on the skills you'll learn in Phase 2 checkout
 
 - 🤸 [Terminal Advanced](../../modules/Terminal-Advanced)
 - 🤸 [Committing Atomic Changes With Git](../../modules/Committing-Atomic-Changes-With-Git)
-- 🤸 [Digging Deeper Into JavaScript](../../modules/Digging-Deeper-Into-Javascript)
+- 🤸 [Digging Deeper Into JavaScript](../../modules/Digging-Deeper-Into-JavaScript)
 - 🤸 [Asynchronous JavaScript](../../modules/Asynchronous-JavaScript)
 - 🏋 [Command line Todo List With Callbacks](../../modules/Command-line-Todo-List-With-Callbacks)
 - 🤸 [HTTP Anatomy](../../modules/HTTP-Anatomy)
