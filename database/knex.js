@@ -1,8 +1,4 @@
-process.env.DATABASE_URL
-
-const knex = require('knex')({
-  client: 'pg',
-  connection: process.env.DATABASE_URL
-});
+const config = require('../knexfile')[process.env.NODE_ENV]
+const knex = require('knex')(config);
 
 module.exports = knex
