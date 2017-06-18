@@ -9,41 +9,41 @@ before moving on from this module.
 
 ### General Programming
 
-- [ ] Can describe and use variables
-- [ ] Can define both local and global variables
-- [ ] Can describe the difference between local and global variables
-- [ ] Can describe a function
-- [ ] Can describe an Array
-- [ ] Can describe a Hash / Index / Map
-- [ ] Can turn any object into its Boolean equivalent
-- [ ] Can sort an array by multiple conditions
-- [ ] Can use the ! (bang) operator
-- [ ] Using return as flow control
-- [ ] Can read and write ternary statements
-- [ ] Branching and Looping
-- [ ] Can convert a Hash into an array of arrays [key, value], and back again
-- [ ] Can convert an array of objects with unique property into a hash by that property
+- Can describe and use variables
+- Can define both local and global variables
+- Can describe the difference between local and global variables
+- Can describe a function
+- Can describe an Array
+- Can describe a Hash / Index / Map
+- Can turn any object into its Boolean equivalent
+- Can sort an array by multiple conditions
+- Can use the ! (bang) operator
+- Using return as flow control
+- Can read and write ternary statements
+- Branching and Looping
+- Can convert a Hash into an array of arrays [key, value], and back again
+- Can convert an array of objects with unique property into a hash by that property
 
 ### JavaScript Specific
 
-- [ ] Can declare local and global variables
-- [ ] Can explain the difference between `==` and `===` and when to use which one
-- [ ] Can use an if / else statement
-- [ ] Can use a switch statement
-- [ ] Can use a while loop
-- [ ] Can use a for loop
-- [ ] Can define and use static functions
-- [ ] Can explain when to use var
-- [ ] Can explain operator precedence
-- [ ] Can access object properties with both dot and bracket syntax
-- [ ] Can get all the keys on an object
-- [ ] Can use `Array#push`, `Array#pop`, `Array#shift`, `Array#unshift`
-- [ ] Can use `Array#forEach`, `Array#map`, `Array#filter`, `Array#reduce`
-- [ ] Can create and use closures
-- [ ] Can pass multiple arguments into a function using a plain object
-- [ ] Can explain lexical scope inheritance
-- [ ] Can split a string into an array
-- [ ] Can join an array into a string
+- Can declare local and global variables
+- Can explain the difference between `==` and `===` and when to use which one
+- Can use an if / else statement
+- Can use a switch statement
+- Can use a while loop
+- Can use a for loop
+- Can define and use static functions
+- Can explain when to use var
+- Can explain operator precedence
+- Can access object properties with both dot and bracket syntax
+- Can get all the keys on an object
+- Can use `Array#push`, `Array#pop`, `Array#shift`, `Array#unshift`
+- Can use `Array#forEach`, `Array#map`, `Array#filter`, `Array#reduce`
+- Can create and use closures
+- Can pass multiple arguments into a function using a plain object
+- Can explain lexical scope inheritance
+- Can split a string into an array
+- Can join an array into a string
 
 
 ## Glossary of Terms
