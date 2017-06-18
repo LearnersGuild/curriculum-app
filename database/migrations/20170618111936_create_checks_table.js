@@ -2,11 +2,11 @@ exports.up = knex =>
   Promise.all([
 
     knex.schema.createTable('checks', table => {
-      table.timestamps()
+      table.timestamp('updated_at')
       table.string('user_id').notNullable().index()
       table.string('label').notNullable().index()
       table.boolean('checked').notNullable()
-      table.index(['user_id', 'label'])
+      table.unique(['user_id', 'label'])
     }),
 
     knex.schema.createTable('check_log', table => {
