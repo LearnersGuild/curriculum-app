@@ -60,17 +60,17 @@ h6, .h6{
 
 h1, .h1{
   padding-bottom: 0.3em;
-  font-size: 40px;
+  font-size: 38px;
 }
 
 h2, .h2{
   padding-bottom: 0.3em;
-  font-size: 32px;
+  font-size: 28px;
   border-bottom: 1px solid #eaecef;
 }
 
 h3, .h3{
-  font-size: 25px;
+  font-size: 20px;
 }
 
 ol, ul {

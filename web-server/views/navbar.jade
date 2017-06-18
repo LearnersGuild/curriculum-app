@@ -30,7 +30,7 @@ nav.navbar.navbar-inverse(role='navigation')
             b.caret
           ul.dropdown-menu(role='menu')
             each module, id in modules
-              - className = module.id === currentModule.id ? 'dropdown-menu-current' : ''
+              - className = currentModule && currentModule.id == module.id ? 'dropdown-menu-current' : ''
               li(class=className)
                 a(href='/modules/'+id)= module.name
 

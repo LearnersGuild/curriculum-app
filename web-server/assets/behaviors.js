@@ -19,9 +19,17 @@
   if (location.pathname.match(/^\/modules\//)) $(() => {
     const checkboxes = {}
 
-    const ul = $('h2#skills + ul').addClass('skills')
 
-    const lis = ul.find('li')
+    const findSkillLis = () => {
+      let withinSkillsSection = false
+      return $('h1,h2,ul').filter((i, node) => {
+        if ($(node).is('h1,h2')) withinSkillsSection = false
+        if ($(node).is('h2#skills')) withinSkillsSection = true
+        return withinSkillsSection && $(node).is('ul')
+      }).find('> li')
+    }
+
+    const lis = findSkillLis()
       .addClass('list-item-with-checkbox')
 
     lis.each((i, li) => {
