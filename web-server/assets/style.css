@@ -7,6 +7,8 @@ body {
 body > main {
   flex: 1;
   background-color: #e6e9ed;
+  display: flex;
+  flex-direction: column;
 }
 
 body > .footer {
@@ -24,6 +26,7 @@ body > .footer {
 }
 
 .page-container{
+  flex: 1 1;
   position: relative;
   overflow-x: auto;
   background-color: white;

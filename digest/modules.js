@@ -11,6 +11,7 @@ module.exports = function(curriculum){
 
     module.skills = module.skills.map(name =>
       name
+        .replace(/`/g, '')
         .replace(/^\s*\[\s+\]\s+/, '')
         .replace(/\s+$/, '')
     )
