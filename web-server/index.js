@@ -39,8 +39,13 @@ app.use((request, response, next) => {
       .render('not_found')
   }
 
+  response.renderError = function(error){
+    response.status(error.status || 500).send(error.message)
+  }
+
   response.renderServerError = function(error){
-    this.status(500).send(error.message)
+    error.status = 500
+    response.renderError(error)
   }
 
   response.renderMarkdownFile = function(relativeFilePath=request.path){
@@ -76,8 +81,6 @@ app.use((request, response, next) => {
 
   next()
 })
-
-
 
 app.get('/skills', (request, response, next) => {
   response.render('skills')

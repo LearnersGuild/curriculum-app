@@ -7,27 +7,7 @@
       contentType : 'application/json',
       dataType: 'json',
       data: JSON.stringify(data),
-    })
-  }
-
-  const request = (method, path, data) => {
-    const options = {
-      method: method,
-      credentials: 'same-origin',
-      qs: $.param(data)
-    }
-    console.log('REQUEST', method, path, options)
-    return fetch(path, options)
-      .then(response => response.json())
-      .catch(error => {
-        console.warn('RESONSE ERROR')
-        console.error(error)
-        throw error
-      })
-      .then(response => {
-        console.log('RESONSE', response)
-        return response
-      })
+    }).promise()
   }
 
   $(document).on('click', '.skills-list-item-toggle-button', event => {
@@ -37,36 +17,41 @@
 
 
   if (location.pathname.match(/^\/modules\//)) $(() => {
-    const labels = []
+    const checkboxes = {}
 
     const ul = $('h2#skills + ul').addClass('skills')
 
     const lis = ul.find('li')
+      .addClass('list-item-with-checkbox')
 
     lis.each((i, li) => {
       li = $(li)
       const label = li.text()
       const labelUrl = `/skills/${encodeURIComponent(label.replace(/ /g,'-'))}`
-      labels.push(label)
-      li.data('skill', {label})
-      li.wrapInner(`<a href="${labelUrl}"></a>`)
-    })
+      const input = $('<input type="checkbox" class="skill-checkbox" />')
+      checkboxes[label]= input[0]
 
-    lis
-      .addClass('list-item-with-checkbox')
-      .prepend('<input type="checkbox" class="skill-checkbox" />')
+      input.on('change', event => {
+        postJSON('/api/checks/set', {
+          label: label,
+          checked: event.target.checked,
+        })
+      })
 
-    lis.find('> input').on('change', event => {
-      const label = $(event.target).closest('li').data('skill').label
-      console.log('CHECK!', label)
+      li
+        .wrapInner(`<a href="${labelUrl}"></a>`)
+        .prepend(input)
     })
 
     postJSON('/api/checks/status', {
       type: 'skill',
-      labels: labels,
+      labels: Object.keys(checkboxes),
     })
-    .then(response => {
-      console.log('CHECKS', response)
+    .then(checks => {
+      Object.keys(checkboxes).forEach(label => {
+        const checkbox = checkboxes[label]
+        checkbox.checked = label in checks && checks[label] || false
+      })
     })
 
   })

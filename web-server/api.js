@@ -1,17 +1,51 @@
 const url = require('url')
 const bodyParser = require('body-parser')
 const queries = require('../database/queries')
+const commands = require('../database/commands')
 
 module.exports = app => {
 
   app.use('/api', bodyParser.json())
 
   app.post('/api/checks/status', (request, response, next) => {
-    response.json(request.body)
+    const user_id = request.user.id
+    const { labels } = request.body
+    queries.getChecks({user_id, labels})
+      .then(checks => {
+        const checkedMap = {}
+        checks.forEach(check => {
+          checkedMap[check.label] = check.checked
+        })
+        response.json(checkedMap)
+      })
+      .catch(next)
   })
 
-  app.post('/api/checks', (request, response, next) => {
-    response.json({nothing: true})
+  app.post('/api/checks/set', (request, response, next) => {
+    const user_id = request.user.id
+    const { label, checked } = request.body
+    commands.setCheck({user_id, label, checked})
+      .then(_ => {
+        response.json({saved: true})
+      })
+      .catch(next)
+  })
+
+
+  // Error Handler
+  app.use('/api', (error, req, res, next) => {
+    let status = error.code || error.status
+    if (typeof status !== 'number') status = 500
+    const stack = process.env.NODE_ENV === 'development'
+      ? error.stack
+      : null
+    const json = {
+      error: {},
+    }
+    Object.assign(json.error, error)
+    json.error.message = error.message
+    json.error.stack = stack
+    res.status(status).json(json);
   })
 
 }

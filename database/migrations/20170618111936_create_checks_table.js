@@ -1,13 +1,25 @@
 exports.up = knex =>
-  knex.schema.createTable('checks', table => {
-    table.timestamp('checked_at').defaultTo(knex.fn.now())
-    table.string('type').notNullable().index() // skill | module | ?
-    table.string('label').notNullable().index()
-    table.string('user_id').notNullable().index()
-    table.boolean('checked').notNullable()
-    table.index(['type', 'user_id', 'label'])
-  })
+  Promise.all([
+
+    knex.schema.createTable('checks', table => {
+      table.timestamps()
+      table.string('user_id').notNullable().index()
+      table.string('label').notNullable().index()
+      table.boolean('checked').notNullable()
+      table.index(['user_id', 'label'])
+    }),
+
+    knex.schema.createTable('check_log', table => {
+      table.timestamp('occurred_at').defaultTo(knex.fn.now())
+      table.string('user_id').notNullable()
+      table.string('label').notNullable()
+      table.boolean('checked').notNullable()
+    }),
+
+  ])
 
 exports.down = knex =>
-  knex.schema.dropTable('checks')
-
+  Promise.all([
+    knex.schema.dropTable('checks'),
+    knex.schema.dropTable('check_log'),
+  ])
