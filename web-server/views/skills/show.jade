@@ -4,7 +4,8 @@ block content
 
   h1.skill-show-page-heading
     input.skill-checkbox(type="checkbox", data-label=skill.name, checked=checked)
-    span= skill.name
+    span
+      !{renderMarkdown(skill.name).slice(3,-5)}
 
   h2 Modules
   ul
