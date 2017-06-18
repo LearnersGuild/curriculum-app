@@ -1,2 +1,4 @@
 module.exports = name =>
-  name.replace(/ /g, '-')
+  name
+    .replace(/`/g, '')
+    .replace(/ /g, '-')

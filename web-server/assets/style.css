@@ -161,7 +161,12 @@ ul.skills > li > label > input[type="checkbox"] {
 
 }
 
-.skill-show-page-heading > input {
+.skill-show-page-heading{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.skill-show-page-heading > .skill-checkbox {
   margin-right: 0.25em;
-  vertical-align: middle;
 }

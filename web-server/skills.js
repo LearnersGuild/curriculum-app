@@ -12,11 +12,18 @@ module.exports = app => {
   app.get('/skills/:skillId', (request, response, next) => {
     const skillId = request.params.skillId
     const skill = response.digest.skills[skillId]
-
     if (!skill) return response.renderNotFound()
-    response.render('skills/show', {
-      skill,
-    })
+
+    const user_id = request.user.id
+    const labels = [skill.name]
+    queries.getChecks({user_id, labels})
+      .then(([check]) => {
+        response.render('skills/show', {
+          skill,
+          checked: check.checked,
+        })
+      })
+      .catch(next)
   })
 
 }
