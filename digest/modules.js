@@ -33,6 +33,7 @@ module.exports = function(curriculum){
       .filter(noExtension)
       .sort()
       .map(directoryName => ({
+        id: directoryName,
         name: directoryName.replace(/-/g, ' '),
         path: `${curriculum.root}/modules/${directoryName}`,
       }))
@@ -40,7 +41,10 @@ module.exports = function(curriculum){
     return Promise.all(
       modules.map(extractModuleDetails)
     ).then(modules => {
-      curriculum.modules = modules
+      curriculum.modules = {}
+      modules.forEach(module => {
+        curriculum.modules[module.id] = module
+      })
       return curriculum
     })
   })

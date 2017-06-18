@@ -29,9 +29,9 @@ nav.navbar.navbar-inverse(role='navigation')
             | Modules
             b.caret
           ul.dropdown-menu(role='menu')
-            each module in modules
+            each module, id in modules
               li
-                a(href='/modules/'+module.path.split('/modules/')[1])= module.name
+                a(href='/modules/'+id)= module.name
 
         li.dropdown
           a(href='/skills') Skills

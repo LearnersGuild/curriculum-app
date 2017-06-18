@@ -36,7 +36,13 @@ const isModulesHeading = token =>
   token.text === 'Modules'
 
 const parseModuleText = (text, phase) => {
-  let [_, icon, name, path] = text.match(/([^\[]+)\s*\[([^\]]+)\]\(([^\(]+)\)/)
-  path = Path.resolve(phase.readmePath, path)
-  return {icon, name, path}
+  let [_, icon, name, path] = text.match(/([^\[]+?)\s*\[([^\]]+)\]\(([^\(]+)\)/)
+  path = Path.resolve(phase.readmePath, '..', path)
+  let id = path.split('/modules/')[1]
+  let type = (
+    icon === "🤸" ? 'practice' :
+    icon === "🏋" ? 'benchmark' :
+    undefined
+  )
+  return {id, type, name, path}
 }
