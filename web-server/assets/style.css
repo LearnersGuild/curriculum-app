@@ -85,3 +85,51 @@ ul > li {
   margin-left: -1em;
   margin-right: 0.25em;
 }
+
+
+.skills-list{
+  padding: 0;
+}
+.skills-list > .panel {
+  margin-bottom: 4px;
+}
+
+input.skills-list-item-checkbox{
+  margin-right: 1em;
+}
+
+.skills-list-item > .panel-body{
+  display: none;
+}
+
+.skills-list-item-expanded-icon{
+  display: none;
+}
+
+.skills-list-item-expanded > .panel-body{
+  display: block;
+}
+
+.skills-list-item-expanded .skills-list-item-collapsed-icon{
+  display: none;
+}
+
+.skills-list-item-expanded .skills-list-item-expanded-icon{
+  display: block;
+}
+
+.skills-list-item-name{
+
+}
+
+.skills-list-item-modules-list{
+
+}
+
+.skills-list-item-modules-list-item{
+  list-style-type: none;
+}
+
+.skills-list-item-modules-list-item-name{
+
+}

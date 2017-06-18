@@ -4,6 +4,7 @@ const parseMarkdown = require('./parseMarkdown')
 module.exports = function(curriculum){
 
   const extractSkills = (module, document) => {
+    console.log('set module.skills', module.name)
     module.skills = parseMarkdown.extractListFromSection(document, 'Skills', 2)
     // module.resources = parseMarkdown.extractListFromSection(document, 'Resources', 2)
     // module.exercises = parseMarkdown.extractListFromSection(document, 'Exercises', 2)
@@ -22,12 +23,13 @@ module.exports = function(curriculum){
     fs.readFile(module.path+'/README.md')
       .then(file => parseMarkdown(file.toString()))
       .then(document => extractSkills(module, document))
+      .then(_ => module)
 
 
 
   return fs.readdir(curriculum.root+'/modules')
   .then(modules => {
-    curriculum.modules = modules
+    modules = modules
       .filter(noExtension)
       .sort()
       .map(directoryName => ({
@@ -35,9 +37,12 @@ module.exports = function(curriculum){
         path: `${curriculum.root}/modules/${directoryName}`,
       }))
 
-    return Promise.all([
-      curriculum.modules.map(extractModuleDetails)
-    ]).then(_ => curriculum)
+    return Promise.all(
+      modules.map(extractModuleDetails)
+    ).then(modules => {
+      curriculum.modules = modules
+      return curriculum
+    })
   })
 
 }

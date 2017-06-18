@@ -8,24 +8,25 @@ module.exports = function(curriculum){
       module.name === name
     )
 
+  curriculum.skills = {}
+
+  const getSkillByName = name =>
+    curriculum.skills[name] = curriculum.skills[name] || {
+      name, modules: []
+    }
+
   curriculum.phases.forEach(phase => {
-    phase.skills = {}
+    phase.skills = []
     phase.modules.forEach(({name}) => {
+      console.log('--- skills extraction')
       const module = findModuleByName(name)
       // console.log('findModuleByName', name, module)
       if (!module) console.log('CANNOT FIND MODULES', name)
       if (!module) return
       module.skills.forEach(skillName => {
-        const skill = phase.skills[skillName] = phase.skills[skillName] || {
-          name: skillName,
-          modules: []
-        }
-        skill.modules.push(module.name)
+        phase.skills.push(skillName)
+        getSkillByName(skillName).modules.push(module.name)
       })
-    })
-    Object.keys(phase.skills).forEach(key => {
-      const skill = phase.skills[key]
-      skill.numberOfModules = skill.modules.length
     })
   })
 
