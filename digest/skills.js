@@ -18,10 +18,10 @@ module.exports = function(curriculum){
   curriculum.phases.forEach(phase => {
     phase.skills = []
     phase.modules.forEach(({name}) => {
-      console.log('--- skills extraction')
+      // console.log('--- skills extraction')
       const module = findModuleByName(name)
       // console.log('findModuleByName', name, module)
-      if (!module) console.log('CANNOT FIND MODULES', name)
+      if (!module) console.log('CANNOT FIND MODULE', `phase ${phase.number}`, name)
       if (!module) return
       module.skills.forEach(skillName => {
         phase.skills.push(skillName)

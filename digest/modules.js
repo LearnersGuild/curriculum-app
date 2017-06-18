@@ -4,7 +4,7 @@ const parseMarkdown = require('./parseMarkdown')
 module.exports = function(curriculum){
 
   const extractSkills = (module, document) => {
-    console.log('set module.skills', module.name)
+    // console.log('set module.skills', module.name)
     module.skills = parseMarkdown.extractListFromSection(document, 'Skills', 2)
     // module.resources = parseMarkdown.extractListFromSection(document, 'Resources', 2)
     // module.exercises = parseMarkdown.extractListFromSection(document, 'Exercises', 2)

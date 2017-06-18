@@ -36,5 +36,5 @@ webpack express tutorial -React
 
 ## Exercises
 
-- [Official Getting Started Guide]https://webpack.js.org/guides/getting-started/
+- [Official Getting Started Guide](https://webpack.js.org/guides/getting-started/)
 - [ES2017 with Babel + Node.js Tutorial](https://www.youtube.com/watch?v=LtEP_-3a5CY)
