@@ -1,4 +1,4 @@
-require('./environment')
+require('../environment')
 const fs = require('fs')
 const https = require('express-sslify').HTTPS
 const path = require('path')
