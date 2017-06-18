@@ -23,8 +23,11 @@ module.exports = function(app){
 
     loadDigest()
       .then(digest => {
-        response.digest = digest
         Object.assign(app.locals, digest)
+        app.use((request, response, next) => {
+          response.digest = digest
+          next()
+        })
       })
       .catch(error => {
         console.error(error)
