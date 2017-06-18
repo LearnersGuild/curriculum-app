@@ -14,6 +14,7 @@ exports.up = knex =>
       table.string('user_id').notNullable()
       table.string('label').notNullable()
       table.boolean('checked').notNullable()
+      table.string('referrer').notNullable()
     }),
 
   ])

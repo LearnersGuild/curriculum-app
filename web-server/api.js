@@ -24,7 +24,8 @@ module.exports = app => {
   app.post('/api/checks/set', (request, response, next) => {
     const user_id = request.user.id
     const { label, checked } = request.body
-    commands.setCheck({user_id, label, checked})
+    const referrer = request.header('Referer');
+    commands.setCheck({user_id, label, checked, referrer})
       .then(_ => {
         response.json({saved: true})
       })
