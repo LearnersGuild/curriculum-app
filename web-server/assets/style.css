@@ -160,3 +160,8 @@ ul.skills > li > label > input[type="checkbox"] {
 .markdown-content{
 
 }
+
+.skill-show-page-heading > input {
+  margin-right: 0.25em;
+  vertical-align: middle;
+}

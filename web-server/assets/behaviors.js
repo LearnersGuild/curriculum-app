@@ -16,6 +16,19 @@
   })
 
 
+  $(document).on('change', '.skill-checkbox', event => {
+    const checkbox = event.target
+    checkbox.disabled = true
+    postJSON('/api/checks/set', {
+      label: $(checkbox).data('label'),
+      checked: checkbox.checked,
+    }).then(
+      _ => { checkbox.disabled = false },
+      _ => { checkbox.disabled = false }
+    )
+  })
+
+
   if (location.pathname.match(/^\/modules\//)) $(() => {
     const findSkillLis = () => {
       let withinSkillsSection = false
@@ -34,24 +47,12 @@
       li = $(li)
       const label = li.text()
       const labelUrl = `/skills/${encodeURIComponent(label.replace(/ /g,'-'))}`
-      const input = $('<input type="checkbox" class="skill-checkbox" />')
-      checkboxes[label]= input[0]
-
-      input.on('change', event => {
-        const checkbox = event.target
-        checkbox.disabled = true
-        postJSON('/api/checks/set', {
-          label: label,
-          checked: checkbox.checked,
-        }).then(
-          _ => { checkbox.disabled = false },
-          _ => { checkbox.disabled = false }
-        )
-      })
-
+      const checkbox = $('<input type="checkbox" class="skill-checkbox" />')
+      checkboxes[label]= checkbox[0]
+      checkbox.data('label', label)
       li
         .wrapInner(`<a href="${labelUrl}"></a>`)
-        .prepend(input)
+        .prepend(checkbox)
     })
 
     Object.keys(checkboxes).forEach(label => {

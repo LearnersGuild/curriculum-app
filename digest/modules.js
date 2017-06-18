@@ -18,7 +18,6 @@ module.exports = function(curriculum){
     return document
   }
 
-  // go through all the phase/*/README.md and extract each module
   const extractModuleDetails = module =>
     fs.readFile(module.path+'/README.md')
       .then(file => parseMarkdown(file.toString()))

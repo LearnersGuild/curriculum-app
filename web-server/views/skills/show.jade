@@ -1,0 +1,14 @@
+extends ../layout
+
+block content
+
+  h1.skill-show-page-heading
+    input.skill-checkbox(type="checkbox", data-label=skill.name)
+    span= skill.name
+
+  h2 Modules
+  ul
+    for moduleId in skill.modules
+      - const module = modules[moduleId]
+      li
+        a(href="/modules/"+module.id)= module.name
