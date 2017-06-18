@@ -21,13 +21,17 @@ module.exports = function(app){
 
   }else{
 
+    let digest;
+
+    app.use((request, response, next) => {
+      response.digest = digest
+      next()
+    })
+
     loadDigest()
-      .then(digest => {
+      .then(_digest => {
+        digest = _digest
         Object.assign(app.locals, digest)
-        app.use((request, response, next) => {
-          response.digest = digest
-          next()
-        })
       })
       .catch(error => {
         console.error(error)

@@ -26,7 +26,6 @@ const setCheck = ({user_id, label, checked, referrer}) =>
       const query = util.format('%s ON CONFLICT (user_id, label) DO UPDATE SET %s',
         insert.toString(),
         update.toString().replace(/^update\s.*\sset\s/i, ''));
-      console.log('setCheck', query.toString())
       return knex.raw(query)
     })
 
