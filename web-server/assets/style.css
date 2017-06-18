@@ -39,6 +39,12 @@ body > .footer {
   max-height: 90vh;
   overflow: auto;
 }
+.dropdown-menu > li {
+  margin-left: 0;
+}
+.dropdown-menu > .dropdown-menu-current {
+  background-color: rgba(255,255,255,0.25);
+}
 
 h1, .h1,
 h2, .h2,

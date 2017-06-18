@@ -88,8 +88,8 @@ app.get('/skills', (request, response, next) => {
 
 app.get('/modules/:moduleName', (request, response, next) => {
   const moduleName = request.params.moduleName
-  const module = response.digest.modules[moduleName]
-  response.locals.module = module
+  const currentModule = response.digest.modules[moduleName]
+  response.locals.currentModule = currentModule
   next()
 })
 
