@@ -32,7 +32,8 @@
     "pug": "^2.0.0-rc.2",
     "pygmentize-bundled": "^2.3.0",
     "pygments": "^0.2.1",
-    "pygments-css": "^1.0.0"
+    "pygments-css": "^1.0.0",
+    "serve-favicon": "^2.4.3"
   },
   "devDependencies": {
     "chai": "^4.0.2",

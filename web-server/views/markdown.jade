@@ -1,10 +1,10 @@
 extends layout
 
 block content
-  ul.list-inline.pull-right
+  ul.markdown-page-options.list-inline
     li
       a(href=sourceUrl target="_blank") Source
     li
       a(href=editeUrl target="_blank") Edit
 
-  div !{content}
+  .markdown-content !{content}

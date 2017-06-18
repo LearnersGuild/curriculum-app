@@ -1,9 +1,8 @@
+require('./environment')
 const fs = require('fs')
 const https = require('express-sslify').HTTPS
 const path = require('path')
 const express = require('express')
-const cookieParser = require('cookie-parser')
-require('./environment')
 const renderMarkdown = require('./renderMarkdown')
 
 const app = express()
@@ -15,8 +14,8 @@ app.set('views', __dirname+'/views')
 if (process.env.NODE_ENV === 'production') {
   app.use(https({trustProtoHeader: true}))
 }
-
-app.use(cookieParser())
+app.use(require('serve-favicon')(`${__dirname}/assets/favicon.ico`))
+app.use(require('cookie-parser')())
 app.use('/assets', express.static(__dirname+'/assets'))
 
 require('./authentication')(app)
