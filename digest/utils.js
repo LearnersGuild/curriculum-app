@@ -8,7 +8,9 @@ const values = object =>
   Object.keys(object).map(key => object[key])
 
 const readdir = path =>
-  fs.readdir(APP_ROOT+path)
+  fs.readdir(APP_ROOT+path).then(files =>
+    files.filter(file => file[0] !== '.')
+  )
 
 const readFile = path =>
   fs.readFile(APP_ROOT+path)
