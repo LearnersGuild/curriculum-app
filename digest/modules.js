@@ -26,6 +26,7 @@ const extractModuleDetails = modules =>
       utils.readMarkdownFile(module.path+'/README.md')
         .then(document => {
           module.skills = utils.extractListFromSection(document, 'Skills', 2)
+            .map(skill => skill.trim())
           return module
         })
     )
