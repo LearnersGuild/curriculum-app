@@ -6,9 +6,9 @@ install, uninstall and upgrade packages and application on OS X.
 
 ## Skills
 
-- Can install packages via homebrew
-- Can install desktop applications via brew cask
-- Use a code linter in your editor
+- Can install packages via homebrew, in the terminal
+- Can install desktop applications via brew cask, in the terminal
+- Can install a code linter in your editor
 
 ## Exercises
 

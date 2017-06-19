@@ -33,7 +33,8 @@ console.log(fs.readFileSync(process.argv[2]).toString())
 console.log('kitty_cat.js end')
 ```
 
-Now in the terminal compare the following commands
+Now
+ compare the following commands
 
 ```sh
 cat ./something.txt

@@ -7,9 +7,9 @@ As your reading about these tools avoid tutorials aiming to explain React.
 
 ## Skills
 
-- Can setup an app to use ES2017 in node
-- Can setup an app to use ES2017 in the browser
-- Can setup webpack
+- Can setup a Node app to use ES2017 in Node
+- Can setup a Node app to compile ES2017 for the browser
+- Can setup a Node app to use webpack to compile code for the browser
 
 
 ## Search Terms

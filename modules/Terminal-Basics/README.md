@@ -3,20 +3,35 @@
 
 ## Skills
 
-- Can describe, read and write environment variables
-- Can describe, read and their $PATH
-- Can use: cd, ls, cat, pwd, touch, mkdir, rmdir, rm, cp
-- Can explain what a filesystem path is
-- Can explain absolute and relative file paths
-- Can open a file or directory in their editor
-- Can open a directory in the finder from the Terminal
-- Can open a file in its default app from the Terminal
-- Can use: ctrl-c, ctrl-a, ctrl-e
-- Can split screen their terminal window
-- Can effectively utilize a .bashrc and .bash_profile
-- Can create and has some bash aliases
-- Can and has customized their PS1
-- Can use `{}` (bash expando?)
+- Can describe shell environment variables
+- Can get a sell environment variable's value, in the terminal
+- Can set a sell environment variable's value, in the terminal
+- Can describe what the shell $PATH environment variable is used for
+- Can and modify your shell's `$PATH`, in the terminal
+- Can use the `echo` terminal command
+- Can use the `cd` terminal command
+- Can use the `ls` terminal command
+- Can use the `cat` terminal command
+- Can use the `pwd` terminal command
+- Can use the `touch` terminal command
+- Can use the `mkdir` terminal command
+- Can use the `rmdir` terminal command
+- Can use the `rm` terminal command
+- Can use the `cp` terminal command
+- Can describe what a filesystem is
+- Can describe what a filesystem path is
+- Can describe the difference between absolute vs. relative filesystem paths
+- Can open a file or directory in their editor from the terminal
+- Can open a directory in the Finder.app from the terminal
+- Can open a file in its default app from the terminal
+- Can use `ctrl-c` in the terminal
+- Can use `ctrl-a` in the terminal
+- Can use `ctrl-e` in the terminal
+- Can configure a Bash shell by modifying the `~/.bashrc` and `~/.bash_profile` files
+- Can define a BASH alias
+- Can customize your BASH `$PS1`
+- Can use BASH brace expansion
+- Can set `$EDITOR` to their preferred editors terminal command
 
 ## Glossary of Terms
 
@@ -30,7 +45,7 @@
 | Arguments | Arguments are additional pieces of information you can send to a command, for example the command `echo` takes whatever you want to print to STDOUT as its argument. In this example, the string 'Hello there' is the argument given to the command: `echo 'Hello there!'`|
 | Standard Output (STDOUT) | Most commands will print to STDOUT, which you will see printed to your terminal. You can also redirect the output of a command and send it to a file or even send it as an argument to a new command. |
 | Standard In (STDIN) | The counterpart to STDOUT, STDIN is the source of an input for a program or command line tool. STDIN is any input or text entered into the shell and passed as an argument to a program. |
-| Command | A command is a program that is executed in the shell, some examples are `echo`, `ls`, `cd`, `open`. |
+| Command | A command is a program that is executed in the terminal, some examples are `echo`, `ls`, `cd`, `open`. |
 
 
 ## Suggested Search Terms

@@ -2,5 +2,5 @@
 
 ## Skills
 
-- Can explain what SQL injection is
-- Can explain what a parameterized query(or prepared statement) is
+- Can describe what SQL injection is
+- Can describe what a parameterized query(or prepared statement) is

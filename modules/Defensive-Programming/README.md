@@ -2,10 +2,10 @@
 
 ## Skills
 
-- Knows how to throw a custom error
-- Can check if the parameters to a function are valid, and throw an error if not
-- use try/catch clause to handle failing conditions
-- be able to return HTTP status code 400 when the request params are invalid
+- Can throw a custom error in JavaScript
+- Can throw and error when function arguments are invalid in JavaScript
+- Can catch and rescue from an error in JavaScript
+- Can render an HTTP response with status code 400 when the request params are invalid, in Node and Express
 
 ## Glossary of Terms
 

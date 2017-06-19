@@ -7,13 +7,14 @@
 - Can describe why immediately invoked function expressions are useful in JavaScript
 - Can define a JavaScript Constructor
 - Can add properties to the prototype of a JavaScript Constructor
-- Can explain and give an example of when to use Closures
+- Can describe what a closures is
+- Can give an example of when one might use a closures
 - Can describe what the `this` operator is in JavaScript
 - Can show at least three ways to declare what `this` will be when calling a function in JavaScript
 - Can describe what a "higher order function" is in JavaScript
 - Can write and example of a "higher order function" is in JavaScript
-- Can explain the difference between `bind`, `call`, `apply` in JavaScript
-- Can explain what a pure JavaScript function is
+- Can describe the differences between `bind`, `call`, `apply` in JavaScript
+- Can describe what a pure JavaScript function is
 
 ## Suggested Resources
 

@@ -2,7 +2,7 @@
 
 ## High Level Skills
 
-- Can explain how the Internet works (DNS, domains, TCP stack, IP addresses)
+- Can describe how the Internet works (DNS, domains, TCP stack, IP addresses)
 - more TBD
 
 

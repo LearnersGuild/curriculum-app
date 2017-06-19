@@ -6,7 +6,7 @@
 - Can take, organize, maintain and review detailed notes
 - Can use Slack
 - Can use Slack commands
-- Can paste a Gif into slack
+- Can paste a Gif into Slack
 - Can do an advanced Google search
 
 

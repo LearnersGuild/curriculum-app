@@ -2,8 +2,9 @@
 
 ## Skills
 
-- Promises
-- HTTP
+- Can effectively use Promises
+- Can make HTTP requests from Node
+
 
 ## Exercise
 

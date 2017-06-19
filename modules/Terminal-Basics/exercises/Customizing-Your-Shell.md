@@ -15,7 +15,8 @@ Read more about these files in the following resources:
 
 ## Exercise: Exporting Environment Variables
 
-When you modifed your `PATH` in the terminal using `export PATH`, that only adds your custom path in your current session. If you want to keep that custom path, you'll need to add it every time you start a new terminal. You can do this by adding your custom path and `export PATH` command directly to your `.bashrc` to be loaded each time you open a new terminal window.
+When you modifed your `PATH`
+ using `export PATH`, that only adds your custom path in your current session. If you want to keep that custom path, you'll need to add it every time you start a new terminal. You can do this by adding your custom path and `export PATH` command directly to your `.bashrc` to be loaded each time you open a new terminal window.
 
 ```bash
 # in your .bashrc

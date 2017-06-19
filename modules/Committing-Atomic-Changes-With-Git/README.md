@@ -3,9 +3,15 @@
 ## Skills
 
 - Can define a Git alias
-- Can add Git metadata to the shell $PS1
-- Can use `git add -p`, `git checkout -p`, `git reset -p`, `git reset` and `git pull --rebase`
-- Can explain when to use `git stash`
+- Can add Git metadata to the shell `$PS1`
+- Can use `git pull --rebase`
+- Can use `git reset`
+- Can use `git reset HEAD^`
+- Can use `git add -p`
+- Can use `git checkout -p`
+- Can use `git reset -p`
+- Can use `git stash`
+- Can use `git stash pop`
 - Can create a Git branch
 - Can merge Git branches
 

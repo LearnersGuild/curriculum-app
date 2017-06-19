@@ -2,12 +2,12 @@
 
 ## Skills
 
-- Can avoid defining global variables
-- Can bind to user events like `click`, `hover`, `focus`, `submit` etc.
-- Can make HTTP / AJAX / XHR requests
-- Can explain what event bubbling is
-- Can explain what a `<script>` tag does
-- Can explain what `window` is
+- Can avoid defining global variables in Browser JavaScript
+- Can bind to a DOM event in the Browser
+- Can make HTTP requests from JavaScript in the Browser
+- Can describe DOM event bubbling
+- Can describe what an HTML `<script>` tag does
+- Can describe the `window` variable is within JavaScript in the Browser
 - Can find DOM nodes using `querySelectorAll`
 
 ## Google Search Terms

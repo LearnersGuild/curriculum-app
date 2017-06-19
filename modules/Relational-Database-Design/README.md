@@ -3,10 +3,14 @@
 ## Skills
 
 - Can convert a mental model into a SQL schema
-- Can explain what 1:1, 1:many, many:many relationships mean
-- Can explain what a join table is
-- Can explain the difference between normalization & de-normalization
-- Explain what ACID principles are
+- Can describe a 1 to 1 relationship in SQL
+- Can describe a 1 to many relationship in SQL
+- Can describe a many to many relationship in SQL
+- Can describe a SQL join
+- Can describe a SQL join table
+- Can describe SQL normalization
+- Can describe SQL de-normalization
+- Can describe SQL ACID principals
 
 ## Suggested Search Terms
 ```

@@ -3,11 +3,11 @@
 
 ## Skills
 
-- express
-- restful routing
-- http requests using `request-promise`
-- rendering json in response to an HTTP request
-- promises
+- Can use Express to handle an HTTP `GET`
+- Can define routes in Express that follow the Restful Routing pattern
+- Can make HTTP requests from Node using the `request-promise` Node package
+- Can render json in response to an HTTP request, in Express
+- Can effectively use Promises
 
 ## Description
 

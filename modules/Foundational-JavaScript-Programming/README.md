@@ -45,8 +45,8 @@ before moving on from this module.
 - Can set the value of a property on a JavaScript Object using `[]` syntax
 - Can get the value of a property on a JavaScript Object using `.` syntax
 - Can get the value of a property on a JavaScript Object using `[]` syntax
-- Can explain the difference between `==` and `===` in JavaScript
-- Can explain the difference between `var`, `let`, and `const` in JavaScript
+- Can describe the difference between `==` and `===` in JavaScript
+- Can describe the difference between `var`, `let`, and `const` in JavaScript
 - Can use `Array#push` in JavaScript
 - Can use `Array#pop` in JavaScript
 - Can use `Array#shift` in JavaScript
@@ -60,7 +60,7 @@ before moving on from this module.
 - Can get all the values on a JavaScript object
 - Can write a closure in JavaScript
 - Can pass multiple objects into a function using a plain object as a single argument, in JavaScript
-- Can explain lexical scope inheritance in JavaScript
+- Can describe lexical scope inheritance in JavaScript
 - Can split a string into an array in JavaScript
 - Can join an array into a string in JavaScript
 

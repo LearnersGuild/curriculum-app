@@ -6,8 +6,8 @@
 - Can read environment variables in Node
 - Can read and write to files using `fs.readFileSync`
 - Can create a Node executable script that takes arguments and prints output to `STDOUT`
-- Can read and write `CSV` files
-- Can read and write `JSON` files
+- Can read and write `CSV` files in Node
+- Can read and write `JSON` files in Node
 
 
 ## Exercises

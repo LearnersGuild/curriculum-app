@@ -7,10 +7,10 @@
 - Can set the content type of an HTTP response to `json`, in Node and Express
 - Can set the content type of an HTTP response to `html`, in Node and Express
 - Can set the content type of an HTTP response to `text`, in Node and Express
-- Can explain what Express Middleware is
-- Can explain why the `body-parser` package is needed in Express
+- Can describe what Express Middleware is
+- Can describe why the `body-parser` package is needed in Express
 - Can use `curl` to send HTTP requests to an HTTP server
-- Can explain the use cases for the HTTP status codes `200`, `404`, and `500`
+- Can describe the use cases for the HTTP status codes `200`, `404`, and `500`
 - Can render HTML using `ejs` templates on Node
 - Can respond to an HTTP request with HTML from a template
 

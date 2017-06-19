@@ -29,7 +29,8 @@ console.log('passthrough.js end')
 ```
 
 
-Now in the terminal compare the following commands
+Now
+ compare the following commands
 
 ```sh
 cat ./something.txt

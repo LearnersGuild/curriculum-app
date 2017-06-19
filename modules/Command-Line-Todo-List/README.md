@@ -2,10 +2,11 @@
 
 ## Skills
 
-- parsing command line arguments
-- Modular organization of your code
-- Reading and writing to files
-- unit tests with mocha
+- Can write a Node script that parses complex command line arguments
+- Can write a complex Node script with modular organization of the code
+- Can use `fs.readFileSync` to read from a file in Node
+- Can use `fs.writeFileSync` to write to a file in Node
+- Can write unit tests with mocha in Node
 
 ## Description
 

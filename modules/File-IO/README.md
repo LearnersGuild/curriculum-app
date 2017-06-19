@@ -2,11 +2,10 @@
 
 ## Skills
 
-- Can read and write to files
-- Can parse/write a CSV/JSON file
-- Can explain the difference between fs.readFileSync & fs.readFile
-- Knows when to use sync vs async
-
+- Can read from and write to files in Node
+- Can read and write `CSV` files in Node
+- Can read and write `JSON` files in Node
+- Can describe the difference between `fs.readFileSync` & `fs.readFile` in Node
 
 ## Suggested Resources
 

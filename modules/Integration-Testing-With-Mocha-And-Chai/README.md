@@ -2,14 +2,13 @@
 
 ## Skills
 
-- Can explain the difference between unit and integration testing
-- Can write integration tests
-- Can test code that integrates multiple modules
-- Can test code that interacts with a database
-- Can test an HTTP API
-- Can write asynchronous tests using mocha and chai
-- Can explain what the `done` function does
-- Can explain the difference between `eql` & `equal`
+- Can describe the difference between unit and integration tests
+- Can write integration tests in Node using Mocha with Chai
+- Can write asynchronous tests in Node using Mocha with Chai
+- Can test an HTTP API in Node using Mocha with Chai
+- Can test SQL database queries in Node using Mocha with Chai
+- Can describe what Mocha's `done` function does
+- Can describe the difference between Chai's `eql` vs. `equal`
 
 ## Glossary of Terms
 

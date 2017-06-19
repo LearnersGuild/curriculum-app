@@ -4,14 +4,15 @@ __Note:__ This module assumes you've already installed Atom and Sublime Text 3
 
 ## Skills
 
-- Can use Atom or Sublime
-- Can install packages in their editor
-- Can find and install syntax highlighters for their editor for any language
-- Can find and install linters for their editor for any language
-- Can split screen in their editor
-- Can duplicate a line
-- Can search and replace in current file & multiple files
-- Can navigate to a file in their editor without using the mouse (cmd-t)
+- Can use Atom or Sublime as your editor
+- Can install packages in your editor
+- Can find and install syntax highlighters for any language in your editor
+- Can find and install linters for any language in your editor
+- Can split screen in your editor
+- Can duplicate a line in your editor
+- Can search and replace in the current file in your editor
+- Can search and replace in all files in your editor
+- Can navigate to a file without using the mouse, in your editor
 
 ## Search Terms
 

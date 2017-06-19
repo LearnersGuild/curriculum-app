@@ -2,9 +2,9 @@
 
 ## Skills
 
-- using callback function `fs.readFile`
-- Reading and writing to files
-- unit tests with mocha and chai
+- Can use `fs.readFile` to read a file in Node
+- Can read from and write to files in Node
+- Can write unit tests with mocha in Node
 
 ## Description
 

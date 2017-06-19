@@ -2,16 +2,19 @@
 
 ## Skills
 
-- Can install and configure a testing framework
-- Can run tests from a command shell
-- Can write unit tests for client-side code
-- Can write unit tests for server-side code
-- Can use `expect` to test the behavior of a function
-- Can explain the difference between a `describe` and `it` block
-- Can write tests checking number of function arguments
-- Can write tests checking type of function argument(s)
-- Can write tests checking function return values
-- Can write tests checking exception handling within functions
+- Can describe what a unit test is
+- Can describe what a test assertion is
+- Can install and configure Mocha And Chai in Node
+- Can configure `npm test` to run Mocha, in Node
+- Can use Chai's `expect` syntax in Node
+- Can write a test that asserts the contents of a JavaScript Object, in Node using Mocha with Chai
+- Can write a test that asserts the contents of a JavaScript Array, in Node using Mocha with Chai
+- Can write a test that asserts a function will throw and error, in Node using Mocha with Chai
+
+## Search Terms
+
+```
+```
 
 ## Glossary of Terms
 

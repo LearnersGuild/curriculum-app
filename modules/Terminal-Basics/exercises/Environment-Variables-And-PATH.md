@@ -10,7 +10,7 @@ So, why would you want to use a shell?
   - Use the command-line program `git` to save and commit your work!
 
 ## Environment Variables
-Environment variables (or env vars) are variables that store values and can be used in the shell. You can set and reset them as needed, and they are usually used to build shell scripts.
+Environment variables (or env vars) are variables that store values and can be used in the terminal. You can set and reset them as needed, and they are usually used to build shell scripts.
 
 Env vars are generally written in all caps. To set a new variable, type the name of the variable followed by an = sign and the value you want to store. Don't use any spaces between the variable and the value.
 

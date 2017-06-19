@@ -2,15 +2,15 @@
 
 ## Skills
 
-- Can open Chrome Developer Tools
-- Can use the debugger statement to pause execution in the browser
-- Can use log values to the browser console
-- Can set breakpoints in code using Chrome Developer Tools
-- Can inspect an element in the DOM using Chrome Developer Tools
-- Can change element styling using Chrome Developer Tools
-- Can inspect network requests and responses using Chrome Developer Tools
-- Can explain what the call stack is
-- Can step in, out, and over function calls
+- Can open the Chrome Developer Tools
+- Can use the debugger statement to pause execution in the Chrome Developer Tools
+- Can use log values to the console, in the Browser
+- Can set breakpoints in code using the Chrome Developer Tools
+- Can inspect an element in the DOM using the Chrome Developer Tools
+- Can change element styling using the Chrome Developer Tools
+- Can inspect network requests using the Chrome Developer Tools
+- Can describe what the a call stack is
+- Can use the debugger step in, step out, and step over function calls, in the Chrome Developer Tools
 
 ## Glossary of Terms
 

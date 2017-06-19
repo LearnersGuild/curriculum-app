@@ -3,11 +3,11 @@
 
 ## Skills
 
-- Can create a form that does an HTTP GET request
-- Can create a form that does an HTTP POST request
-- Can explain the difference between query params and body params
-- Can explain the difference between a relative and absolute url path
-- Can explain what a redirect is
+- Can create a form that does an HTTP `GET` request
+- Can create a form that does an HTTP `POST` request
+- Can describe the difference between HTTP query params and HTTP body params
+- Can describe the difference between a relative and absolute URL path
+- Can describe an HTTP redirect
 
 ## Search Terms
 

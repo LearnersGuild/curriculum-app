@@ -7,9 +7,9 @@ HTTP request. This is where cookies come in.
 
 ## Skills
 
-- Can explain "state" means
-- Can explain what "HTTP is a stateless protocol" means
-- Can explain what an HTTP cookie is
+- Can describe what "state" is
+- Can describe what "HTTP is a stateless protocol" means
+- Can describe what an HTTP cookie is
 - Can store data in an HTTP cookie using Node and Express
 - Can track individual visitors to your App using HTTP cookies, Node and Express
 - Can setup a Node & Express app that uses cookie based authentication
