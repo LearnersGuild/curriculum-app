@@ -31,7 +31,7 @@ module.exports = digest => {
       const module = digest.modules[id]
       if (!module) return
       module.skills.forEach(skillId =>
-        phase.skills.push(digest.skills[skillId])
+        phase.skills.push(skillId)
       )
     })
   })
