@@ -162,3 +162,26 @@ ul.skills > li > label > input[type="checkbox"] {
 .markdown-body > *:first-child {
   margin-top: 0 !important;
 }
+
+
+.users-grid{
+  margin-top: 15px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.users-grid-member {
+  margin: 2px;
+  width: 140px;
+  text-align: center;
+}
+.users-grid-member-name {
+
+}
+.users-grid-member-handle {
+
+}
+.users-grid-member-avatar > img {
+  height: 10vh;
+  min-width: 10vh;
+}

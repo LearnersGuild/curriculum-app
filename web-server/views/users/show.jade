@@ -1,0 +1,14 @@
+extends ../layout
+
+block content
+
+  h1= user.name
+  h3= user.handle
+
+  ul.list-inline
+    li
+      a(href="https://github.com/"+user.handle, target="_blank") GitHub
+    li
+      a(href="mailto:"+user.email, target="_blank") Email
+
+  img(src=user.avatarUrl)

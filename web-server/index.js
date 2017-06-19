@@ -26,6 +26,7 @@ require('./digest')(app)
 require('./api')(app)
 require('./helpers')(app)
 require('./skills')(app)
+require('./users')(app)
 app.get('/guide', (request, response, next) => {
   response.render('guide')
 })

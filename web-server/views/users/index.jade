@@ -1,0 +1,11 @@
+extends ../layout
+
+block content
+  .users-grid
+    for user in users
+      .users-grid-member.well
+        a(href="/users/"+user.handle)
+          .users-grid-member-name= user.name
+          .users-grid-member-handle= user.handle
+          .users-grid-member-avatar
+            img(src=user.avatarUrl)
