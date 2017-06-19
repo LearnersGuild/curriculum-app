@@ -12,7 +12,11 @@ module.exports = app => {
     const { labels } = request.body
     queries.getChecks({user_id, labels})
       .then(checks => {
-        response.json(checks)
+        const map = {}
+        labels.forEach(label => {
+          map[label] = !!checks[label]
+        })
+        response.json(map)
       })
       .catch(next)
   })

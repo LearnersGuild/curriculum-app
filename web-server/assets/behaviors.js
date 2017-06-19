@@ -35,15 +35,13 @@
 
   if (onModulePage) $(() => {
     const skills = JSON.parse($('.skills-data').val())
-    console.log('skills', skills)
-
     const lis = $('.markdown-body li').filter((index, li) => {
       li = $(li)
       const html = li.html()
       const skill = skills.find(skill => skill.html === html)
       if (!skill) return false
-
       const checkbox = $('<input type="checkbox" class="skill-checkbox" />')
+      checkbox.attr('data-label', skill.id)
       checkbox.data('label', skill.id)
       checkbox[0].checked = skill.checked
       li
@@ -55,18 +53,25 @@
       return true
     })
 
-  //   postJSON('/api/checks/status', {
-  //     type: 'skill',
-  //     labels: Object.keys(checkboxes),
-  //   })
-  //   .then(checks => {
-  //     Object.keys(checkboxes).forEach(skillName => {
-  //       const checkbox = checkboxes[skillName]
-  //       checkbox.checked = skillName in checks && checks[skillName] || false
-  //       checkbox.disabled = false
-  //     })
-  //   })
-
   })
+
+  const reloadSkillCheckboxes = () => {
+    const checkboxes = $('.skill-checkbox[data-label]').get()
+    const labels = checkboxes.map(checkbox => $(checkbox).data('label'))
+    return postJSON('/api/checks/status', {type: 'skill', labels: labels})
+    .then(checks => {
+      $(() => {
+        Object.keys(checks).forEach(label => {
+          const checkbox = $('.skill-checkbox[data-label="'+label+'"]')
+          if (checkbox.length === 0) console.warn('no checkbox found for '+label)
+          if (checkbox.prop('checked') !== !!checks[label]) console.info('FIXED',label)
+          checkbox.prop('checked', !!checks[label])
+        })
+      })
+    })
+  }
+
+  $(reloadSkillCheckboxes)
+
 
 })()
