@@ -10,6 +10,6 @@ block content
   h2 Modules
   ul
     for moduleId in skill.modules
-      - const module = modules[moduleId]
+      - const module = digest.modules[moduleId]
       li
         a(href="/modules/"+module.id)= module.name

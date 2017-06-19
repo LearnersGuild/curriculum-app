@@ -1,3 +1,4 @@
+const util = require('util')
 const path = require('path')
 const fs = require('fs')
 const renderMarkdown = require('./renderMarkdown')
@@ -5,6 +6,12 @@ const escapeHTML = require('jade').runtime.escape
 
 module.exports = app => {
 
+  app.locals.inspect = object =>
+    util.inspect(object, {
+      depth: null,
+      colors: false,
+      maxArrayLength: null,
+    })
   app.locals.escapeHTML = escapeHTML
   app.locals.renderMarkdown = renderMarkdown
 

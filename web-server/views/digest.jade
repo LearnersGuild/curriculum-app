@@ -1,0 +1,25 @@
+extends layout
+
+block breadcrumb
+
+
+block content
+  h1 Digest
+
+  a(href="/digest.json") digest.json
+
+  h2 Report
+
+  pre= inspect(digest.report)
+
+  h2 Phases
+
+  pre= inspect(digest.phases)
+
+  h2 Modules
+
+  pre= inspect(digest.modules)
+
+  h2 Skills
+
+  pre= inspect(digest.skills)

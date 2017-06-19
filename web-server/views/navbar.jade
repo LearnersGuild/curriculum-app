@@ -22,7 +22,7 @@ nav.navbar.navbar-inverse(role='navigation')
             | Phases
             b.caret
           ul.dropdown-menu(role='menu')
-            each phase in phases
+            each phase in digest.phases
               li
                 a(href='/phases/'+phase.number) Phase #{phase.number}
 
@@ -31,7 +31,7 @@ nav.navbar.navbar-inverse(role='navigation')
             | Modules
             b.caret
           ul.dropdown-menu(role='menu')
-            each module, id in modules
+            each module, id in digest.modules
               - className = currentModule && currentModule.id == module.id ? 'dropdown-menu-current' : ''
               li(class=className)
                 a(href='/modules/'+id)= module.name

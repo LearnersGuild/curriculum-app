@@ -8,13 +8,17 @@ module.exports = function(app){
       loadDigest()
         .then(digest => {
           response.digest = digest
-          Object.assign(response.locals, digest)
+          response.locals.digest = digest
         })
         .then(next)
         .catch(next)
     })
 
     app.get('/digest', (request, response, next) => {
+      response.render('digest')
+    })
+
+    app.get('/digest.json', (request, response, next) => {
       response.json(response.digest)
     })
 

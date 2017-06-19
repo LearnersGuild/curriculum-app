@@ -3,9 +3,9 @@ extends ../layout
 block content
   h1 Skills
   ul
-    each skill, key in skills
+    each skill, key in digest.skills
       - const checked = checks[skill.name] || false
       li.list-item-with-checkbox(data=data)
         input.skill-checkbox(type="checkbox", checked=checked, data-label=skill.name)
         a(href="/skills/"+skill.id)
-          !{renderMarkdown(skill.name).slice(3,-5)}
+          !{renderMarkdown(skill.rawText).slice(3,-5)}
