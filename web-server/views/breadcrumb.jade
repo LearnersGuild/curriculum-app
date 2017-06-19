@@ -7,9 +7,9 @@ ol.breadcrumb
   if breadcrumbs[breadcrumbs.length-1] === ''
     - breadcrumbs.pop()
   - for (var index = 0; index < breadcrumbs.length; index++)
-    - part = breadcrumbs[index]
+    - let part = decodeURIComponent(breadcrumbs[index].replace(/-/g,' '))
     if index === breadcrumbs.length - 1
-      li.active= part.replace(/-/g,' ')
+      li.active= part
     else
       li
-        a(href='/'+breadcrumbs.slice(0, index+1).join('/'))= part.replace(/-/g,' ')
+        a(href='/'+breadcrumbs.slice(0, index+1).join('/'))= part
