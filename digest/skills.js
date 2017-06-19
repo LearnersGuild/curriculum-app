@@ -12,8 +12,7 @@ module.exports = digest => {
     }
   }
 
-  Object.keys(digest.modules).forEach(moduleId => {
-    const module = digest.modules[moduleId]
+  utils.values(digest.modules).forEach(module => {
     module.skills = module.skills
       .map(getSkillByRawText)
       .map(skill => {
@@ -22,7 +21,7 @@ module.exports = digest => {
       })
   })
 
-  digest.phases.forEach(phase => {
+  utils.values(digest.phases).forEach(phase => {
     phase.skills = []
     phase.modules.forEach(id => {
       const module = digest.modules[id]

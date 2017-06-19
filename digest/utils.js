@@ -4,6 +4,8 @@ const lexer = require('marked').lexer
 
 const APP_ROOT = Path.resolve(__dirname, '..')
 
+const values = object =>
+  Object.keys(object).map(key => object[key])
 
 const readdir = path =>
   fs.readdir(APP_ROOT+path)
@@ -69,6 +71,7 @@ const extractListFromSection = (document, text, depth) => {
 
  module.exports = {
   APP_ROOT,
+  values,
   readdir,
   readFile,
   readMarkdownFile,

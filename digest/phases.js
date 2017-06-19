@@ -4,6 +4,7 @@ module.exports = () =>
   utils.readdir('/phases')
     .then(phaseNumbersToPhases)
     .then(loadDetails)
+    .then(indexByNumber)
 
 const phaseNumbersToPhases = numbers =>
   numbers.map(number => (
@@ -26,6 +27,12 @@ const loadDetails = phases =>
       .then(_ => phase)
     )
   )
+
+const indexByNumber = phases =>
+  phases.reduce((index, phase) => {
+    index[phase.number] = phase
+    return index
+  }, {})
 
 const isModulesHeading = token =>
   token.type === 'heading' &&
