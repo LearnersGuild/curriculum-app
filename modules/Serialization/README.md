@@ -11,9 +11,9 @@ then you're serializing that data it.
 
 ## Skills
 
-- [ ] save data to a file in JSON format, read that file and restore that data
-- [ ] save data to a file in CSV format, read that file and restore that data
-- [ ] can identify objects and data that are or are not serializable
+- can save data to a file in JSON format, read that file and restore that data
+- can save data to a file in CSV format, read that file and restore that data
+- can identify objects and data that are or are not serializable
 
 
 ## Search Terms

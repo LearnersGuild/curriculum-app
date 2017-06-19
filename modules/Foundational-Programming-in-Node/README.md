@@ -2,15 +2,15 @@
 
 ## Skills
 
-- [ ] Can use the node REPL
-- [ ] Can run a `.js` file with the node command
-- [ ] Can require files
-- [ ] Can export one or more objects from a file
-- [ ] Can read and write to files using `fs.readFileSync`
-- [ ] Can initialize a node module (npm init)
-- [ ] Can understand and modify a `package.json`
-- [ ] Can install and save node package dependencies
-- [ ] Can require modules
+- Can use the node REPL
+- Can run a `.js` file with the node command
+- Can require files
+- Can export one or more objects from a file
+- Can read and write to files using `fs.readFileSync`
+- Can initialize a node module (npm init)
+- Can understand and modify a `package.json`
+- Can install and save node package dependencies
+- Can require modules
 
 ## Google Search Terms
 
