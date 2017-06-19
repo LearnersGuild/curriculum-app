@@ -25,18 +25,22 @@
 ## Suggested Resources
 
 ### Courses & Tutorials
+
 - https://scotch.io/tutorials/debugging-javascript-with-chrome-devtools-breakpoints
 - https://www.codeschool.com/courses/discover-devtools
 - https://teamtreehouse.com/library/debugging-node-applications-with-google-chrome
 - https://teamtreehouse.com/library/debugging-javascript-in-the-browser
 
 ### Reading
+
 - https://developers.google.com/web/tools/chrome-devtools/
 - https://developers.google.com/web/tools/chrome-devtools/javascript/
 - https://developers.google.com/web/tools/chrome-devtools/javascript/breakpoints
 - https://jvns.ca/blog/2015/11/22/how-i-got-better-at-debugging/
+- https://medium.freecodecamp.com/mastering-chrome-developer-tools-next-level-front-end-development-techniques-3ac0b6fe8a3
 
 ### Watching
+
 - [Chrome Dev Tools Tutorial (Level 1)](https://www.youtube.com/watch?v=0GfQ2-jKhLM)
 - [30 Chrome DevTools Tips](https://www.youtube.com/watch?v=UURZFzk92bU)
 - [Chrome DevTools - Introduction](https://www.youtube.com/watch?v=9xA80triUT0)
