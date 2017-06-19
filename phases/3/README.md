@@ -31,7 +31,7 @@ Here are the goals that you can choose from (ordered in rough approximation of i
 1. Timeoff Snapshot - Approver Epic
 1. Trossello Snapshot: Members & Teams Epic
 
-To view each goal, visit http://jsdev.learnersguild.org/.
+To view each goal, visit http://curriculum.learnersguild.org/phases/3/goals
 
 ## Lectures
 

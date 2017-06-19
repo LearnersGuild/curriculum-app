@@ -18,4 +18,8 @@ module.exports = app => {
       .catch(next)
   })
 
+  app.get('/phases/3/goals', (request, response, next) => {
+    response.render('phases/goals')
+  })
+
 }
