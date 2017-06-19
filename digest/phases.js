@@ -1,43 +1,39 @@
-const fs = require('fs-extra')
-const Path = require('path')
-const parseMarkdown = require('./parseMarkdown')
+const utils = require('./utils')
 
-module.exports = function(curriculum){
+module.exports = () =>
+  utils.readdir('/phases')
+    .then(phaseNumbersToPhases)
+    .then(loadDetails)
 
-  const extractModules = (phase, document) => {
-    phase.modules =
-      parseMarkdown.extractListFromSection(document, 'Modules', 2)
-      .map(module => parseModuleText(module, phase))
+const phaseNumbersToPhases = numbers =>
+  numbers.map(number => (
+    {
+      number: Number.parseInt(number),
+      path: `/phases/${number}`,
+    }
+  ))
 
-    return document
-  }
-
-  const loadPhaseDetails = phase =>
-    fs.readFile(
-      phase.readmePath = `${curriculum.root}/phases/${phase.number}/README.md`
+const loadDetails = phases =>
+  Promise.all(
+    phases.map(phase =>
+      utils.readMarkdownFile(`${phase.path}/README.md`)
+      .then(document => {
+        phase.modules =
+          utils.extractListFromSection(document, 'Modules', 2)
+          .map(parseModuleText)
+        return document
+      })
+      .then(_ => phase)
     )
-      .then(file => parseMarkdown(file.toString()))
-      .then(document => extractModules(phase, document))
-
-  return fs.readdir(curriculum.root+'/phases')
-    .then(phases => {
-      curriculum.phases = phases.map(newPhase)
-      return Promise.all(
-        curriculum.phases.map(loadPhaseDetails)
-      )
-    })
-}
-
-const newPhase = number => ({number})
+  )
 
 const isModulesHeading = token =>
   token.type === 'heading' &&
   token.depth === 2 &&
   token.text === 'Modules'
 
-const parseModuleText = (text, phase) => {
+const parseModuleText = (text) => {
   let [_, icon, name, path] = text.match(/([^\[]+?)\s*\[([^\]]+)\]\(([^\(]+)\)/)
-  // path = Path.resolve(phase.readmePath, '..', path)
   let id = path.split('/modules/')[1]
   // let type = (
   //   icon === "🤸" ? 'practice' :

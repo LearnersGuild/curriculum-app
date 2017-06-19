@@ -1,9 +1,27 @@
+const Path = require('path')
+const fs = require('fs-extra')
 const lexer = require('marked').lexer
 
-module.exports = markdown =>
-  lexer(markdown.toString())
+const APP_ROOT = Path.resolve(__dirname, '..')
 
-module.exports.extractListFromSection = (document, text, depth) => {
+
+const readdir = path =>
+  fs.readdir(APP_ROOT+path)
+
+const readFile = path =>
+  fs.readFile(APP_ROOT+path)
+
+const readMarkdownFile = path =>
+  readFile(path)
+    .then(file => lexer(file.toString()))
+
+const nameToId = name =>
+  name
+    .replace(/[\/ #]/g, '-')
+    .replace(/`/g, '')
+
+
+const extractListFromSection = (document, text, depth) => {
   // console.log('===== extractListFromSection ====', text, depth)
   let
     items = [],
@@ -40,3 +58,13 @@ module.exports.extractListFromSection = (document, text, depth) => {
   // console.log('ITEMSs =====', items)
   return items
 }
+
+
+ module.exports = {
+  APP_ROOT,
+  readdir,
+  readFile,
+  readMarkdownFile,
+  nameToId,
+  extractListFromSection,
+ }
