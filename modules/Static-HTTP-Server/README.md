@@ -28,3 +28,7 @@ serving static files express
 
 - https://www.youtube.com/watch?v=7UErZ43jzrU
 - https://www.youtube.com/watch?v=Hk2LkOD7ZH0
+
+## Exercises
+
+- [Static Server](./exercises/Static-Server/README.md)
