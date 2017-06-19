@@ -22,12 +22,11 @@ The web app lets a user signup, login, and search for movies.
 - As a user I should be able to search for a movie title. Clicking on the "search" button should trigger an AJAX request, and without refreshing the page, the search results should be displayed on the page.
 - As a user, I should be able to look at my search history.
 
-
 ## Specs
-- [ ] all user stories are completed
-- [ ] use the `express` node package
-- [ ] use the `pg-promise` node package
-- [ ] the schema for the database exists in `schema.sql`
+- All user stories are completed
+- `express` node package is used
+- `pg-promise` node package is used
+- The schema for the database exists in the file `schema.sql`
 
 ## Wireframes
 
