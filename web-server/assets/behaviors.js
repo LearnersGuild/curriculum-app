@@ -25,7 +25,7 @@
   })
 
   if (onModulePage) $(() => {
-    const skills = JSON.parse($('.skills-data').val())
+    const skills = JSON.parse($('.skills-data').val() || '[]')
     const lis = $('.markdown-body li').filter((index, li) => {
       li = $(li)
       const html = li.html()
@@ -56,7 +56,7 @@
       }, {})
 
     const labels = Object.keys(checkboxes)
-    return postJSON('/api/checks/status', {type: 'skill', labels: labels})
+    return postJSON('/api/checks/status', {labels})
     .then(checks => {
       $(() => {
         Object.keys(checks).forEach(label => {
