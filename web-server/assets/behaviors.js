@@ -31,6 +31,9 @@
 
 
   if (location.pathname.match(/^\/modules\//)) $(() => {
+    const module = JSON.parse($('.module-data').val())
+    console.log('module page now has', module)
+
     const findSkillLis = () => {
       let withinSkillsSection = false
       return $('h1,h2,ul').filter((i, node) => {

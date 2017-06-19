@@ -1,5 +1,7 @@
-module.exports = require('marked').lexer
+const lexer = require('marked').lexer
 
+module.exports = markdown =>
+  lexer(markdown.toString())
 
 module.exports.extractListFromSection = (document, text, depth) => {
   // console.log('===== extractListFromSection ====', text, depth)

@@ -2,6 +2,7 @@ module.exports = app => {
 
   app.get('/modules/:moduleName', (request, response, next) => {
     const moduleName = request.params.moduleName
+    response.locals.moduleName = moduleName
     const currentModule = response.digest.modules[moduleName]
     response.locals.currentModule = currentModule
     next()

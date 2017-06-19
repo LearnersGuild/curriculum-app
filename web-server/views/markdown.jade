@@ -7,4 +7,8 @@ block content
     li
       a(href=editeUrl target="_blank") Edit
 
+  textarea.hidden.module-data= JSON.stringify(currentModule)
+
   .markdown-body !{content}
+
+
