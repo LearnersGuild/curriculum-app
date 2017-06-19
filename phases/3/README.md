@@ -15,8 +15,6 @@ In this phase you will learn…
 - How to use Git and GitHub on a team
 - How to render dynamically generated HTML
 
-_For more detail on the skills you'll learn in Phase 3 checkout [Phase 3 Skills](./skills.md). Also checkout the skills listed in each module._
-
 ## Goal Library
 
 In Phase 3, you'll work on goals from the goal library. Most of the goals are pairing goals, with a couple solo goals mixed in.

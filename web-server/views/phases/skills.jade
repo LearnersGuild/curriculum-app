@@ -1,0 +1,12 @@
+extends ../layout
+
+block content
+  h1 Skills for Phase #{phase.number}
+
+  ul
+    each skillId, key in phase.skills
+      - const skill = digest.skills[skillId]
+      - const checked = checks[skill.id] || false
+      li.list-item-with-checkbox(data=data)
+        input.skill-checkbox(type="checkbox", checked=checked, data-label=skill.id)
+        a(href=skill.path) !{renderSkill(skill)}

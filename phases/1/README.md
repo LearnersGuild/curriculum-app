@@ -19,9 +19,6 @@ In this phase you will learn…
 - how to persist state in an application via reading and writing to local files
 - how to use basic SQL using the postgres command line interface and Postico
 
-_For more detail on the skills you'll learn in Phase 1 check out
-[Phase 1 Skills](./skills.md). Also check out the skills listed in each module._
-
 
 ## Modules
 

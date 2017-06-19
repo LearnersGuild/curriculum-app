@@ -37,7 +37,16 @@ nav.navbar.navbar-inverse(role='navigation')
                 a(href='/modules/'+id)= module.name
 
         li.dropdown
-          a(href='/skills') Skills
+          a.dropdown-toggle(href='#', data-toggle='dropdown')
+            | Skills
+            b.caret
+          ul.dropdown-menu(role='menu')
+            li(class=className)
+              a(href='/skills') All Skills
+            li.divider(role="presentation")
+            each phase in digest.phases
+              li
+                a(href='/phases/'+phase.number+'/skills') Phase #{phase.number}
 
         li.dropdown
           a(href='/users') Users
