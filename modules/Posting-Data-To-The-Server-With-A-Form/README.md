@@ -62,7 +62,7 @@ The server should have the following routes
     - url: `/form-get`
     - http method: `GET`
     - response: renders the `<form>` with method set to `GET`, and `action` set to `/submit-form`.
-1. A route to render the `/form-get` page
+1. A route to render the `/form-post` page
     - url: `/form-post`
     - http method: `GET`
     - response: renders the `<form>` with method set to `POST`,  and `action` set to `/submit-form`
