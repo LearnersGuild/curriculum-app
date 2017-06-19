@@ -43,7 +43,10 @@ const extractListFromSection = (document, text, depth) => {
   document.forEach(token => {
     // console.log(withinSection, withinListItem, token)
 
-    if (token.type === 'heading') withinSection = false
+    if (
+      token.type === 'heading' &&
+      (depth && token.depth <= depth)
+    ) withinSection = false
 
     if (
       token.type === 'heading' &&
