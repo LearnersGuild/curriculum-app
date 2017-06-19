@@ -8,7 +8,11 @@ module.exports = digest => {
     const name = utils.rawTextToName(rawText)
     const id = utils.nameToId(name)
     return digest.skills[id] = digest.skills[id] || {
-      id, name, rawText, modules: []
+      id,
+      name,
+      rawText,
+      modules: [],
+      path: `/skills/${id}`,
     }
   }
 

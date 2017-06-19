@@ -3,9 +3,9 @@ extends ../layout
 block content
 
   h1.skill-show-page-heading
-    input.skill-checkbox(type="checkbox", data-label=skill.name, checked=checked)
+    input.skill-checkbox(type="checkbox", data-label=skill.id, checked=checked)
     span
-      !{renderMarkdown(skill.name).slice(3,-5)}
+      !{renderSkill(skill)}
 
   h2 Modules
   ul

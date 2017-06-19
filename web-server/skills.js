@@ -22,10 +22,10 @@ module.exports = app => {
     if (!skill) return response.renderNotFound()
 
     const user_id = request.user.id
-    const labels = [skill.name]
+    const labels = [skill.id]
     queries.getChecks({user_id, labels})
       .then(checks => {
-        const checked = skill.name in checks ? checks[skill.name] : false
+        const checked = !!checks[skill.id]
         response.render('skills/show', {skill, checked})
       })
       .catch(next)

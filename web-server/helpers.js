@@ -15,6 +15,9 @@ module.exports = app => {
   app.locals.escapeHTML = escapeHTML
   app.locals.renderMarkdown = renderMarkdown
 
+  app.locals.renderSkill = skill =>
+    renderMarkdown(skill.rawText).slice(3,-5).trim()
+
   app.use((request, response, next) => {
 
     response.path = request.url
