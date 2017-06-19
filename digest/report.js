@@ -4,10 +4,11 @@ module.exports = digest => {
   const report = digest.report = {
     missingModules: [],
     missingSkills: [],
-    skillsThatSuck: [],
+    skillsThatSuck: {},
     skillsThatAreShort: [],
     skillsThatHaveFormattingErrors: [],
     skillsMissingContext: [],
+    explainToDescribe: [],
   }
 
   const getModuleById = moduleId =>
@@ -23,9 +24,14 @@ module.exports = digest => {
 
   utils.values(digest.skills).forEach(skill => {
     if (
-      skill.name.match(/^can /)
+      !skill.name.match(/^Can /)
     ){
-      report.skillsThatSuck.push(skill.rawText)
+      report.skillsThatSuck[skill.rawText] = skill.modules
+    }
+    if (
+      skill.name.match(/explain/)
+    ){
+      report.explainToDescribe[skill.rawText] = skill.modules
     }
 
     if (
@@ -35,13 +41,13 @@ module.exports = digest => {
     }
 
     if (
-      skill.name.match(/\W(javascript|express|node|git)\W/)
+      skill.name.match(/(^|\W)(javascript|express|node|slack)(\W|$)/)
     ){
       report.skillsThatHaveFormattingErrors.push(skill.rawText)
     }
 
     if (
-      !skill.name.match(/JavaScript|Node|Browser/)
+      !skill.name.match(/SQL|JavaScript|Node|Express|Browser|(g|G)it|Chrome Developer Tools|HTTP|HTML & CSS|Slack|Google|editor|terminal/)
     ){
       report.skillsMissingContext.push(skill.rawText)
     }
