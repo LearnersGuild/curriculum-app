@@ -17,9 +17,16 @@ const readMarkdownFile = path =>
 
 const nameToId = name =>
   name
+    .replace(/^\s*/,'')
+    .replace(/\s*$/,'')
     .replace(/[\/ #]/g, '-')
     .replace(/`/g, '')
 
+const rawTextToName = rawText =>
+  rawText
+    .replace(/^\s*\[\s+\]\s+/, '')
+    .replace(/^\s*/,'')
+    .replace(/\s*$/,'')
 
 const extractListFromSection = (document, text, depth) => {
   // console.log('===== extractListFromSection ====', text, depth)
@@ -65,6 +72,7 @@ const extractListFromSection = (document, text, depth) => {
   readdir,
   readFile,
   readMarkdownFile,
+  rawTextToName,
   nameToId,
   extractListFromSection,
  }

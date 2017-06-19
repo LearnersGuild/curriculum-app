@@ -26,7 +26,6 @@ const extractModuleDetails = modules =>
       utils.readMarkdownFile(module.path+'/README.md')
         .then(document => {
           module.skills = utils.extractListFromSection(document, 'Skills', 2)
-            .map(stripSkillLabel)
           return module
         })
     )
@@ -40,8 +39,3 @@ const indexById = modules =>
 
 
 const noExtension = module => !module.includes('.')
-
-const stripSkillLabel = name =>
-  name
-    .replace(/^\s*\[\s+\]\s+/, '')
-    .replace(/\s+$/, '')
