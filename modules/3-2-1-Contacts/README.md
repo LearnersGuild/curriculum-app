@@ -3,53 +3,46 @@
 ## Skills
 
 - Can use JavaScript's `Array#sort`
+- Can iterate through an Array
 
+## Exercise
+
+Complete the functions provided in the file [contacts.js](./contacts.js).
+
+Executing the file should print the following:
+```
+$ node contacts.js
+Loading contact data...
+...Finished loading contact data.
+
+All Contacts:
+|----------------------+--------------------------------|
+| Full Name            | Email Address                  |
+|----------------------+--------------------------------|
+| Ambrose Scullard     | ascullard6@timesonline.co.uk   |
+| Charil Clegg         | cclegge@weibo.com              |
+| Conroy Honsch        | chonsch3@sohu.com              |
+| Devon Bocking        | dbockingc@comcast.net          |
+| Didi Grose           | dgroseh@google.com.hk          |
+| Engracia Folger      | efolger2@epa.gov               |
+| Karita Bough         | kbough9@angelfire.com          |
+| Marguerite Lafayette | mlafayettea@bravesites.com     |
+| Mateo Da Costa       | mdacosta5@about.com            |
+| Mercy Browncey       | mbrownceyg@yelp.com            |
+| Nessi Bywaters       | nbywatersf@shop-pro.jp         |
+| Niccolo Spruce       | nsprucei@wordpress.com         |
+| Northrop Bauchop     | nbauchopb@pagesperso-orange.fr |
+| Pier Waine           | pwaine8@unc.edu                |
+| Shaylah Fairney      | sfairney7@stumbleupon.com      |
+| Tanny Vibert         | tvibert0@illinois.edu          |
+| Tova Myall           | tmyall1@instagram.com          |
+| Virgina Cankett      | vcankett4@washington.edu       |
+| Willdon Hedley       | whedleyd@purevolume.com        |
+| Winston Hixley       | whixleyj@homestead.com         |
+|----------------------+--------------------------------|
+```
 
 ## Specs
 
-- must sort contacts
-
-
-## DEVELOPMENT IDEAS
-
-requirements
-
-addContact function
-addContacts function (bulk add)
-provide a set of contacts for them
-require them to print contacts in a nice grid
-
-```
-Name  |  Address     |
-------+--------------+
-Jared |
-Punit | 123 nowhere etc.
-```
-
-```js
-
-const contacts = []
-
-const addContact = function(firstName, lastName, address, phone){
-
-}
-
-const addContacts = function(){
-
-}
-
-const printContacts = function(){
-
-}
-
-printContacts()
-
-addContacts([
-  {name:"", nickname:""},
-  {name:"", nickname:""},
-  {name:"", nickname:""},
-  {name:"", nickname:""},
-  {name:"", nickname:""},
-])
-
-```
+- Contacts must be sorted by first and last name
+- functions `addContact`, `addContacts` and `printContacts` have been implmented
