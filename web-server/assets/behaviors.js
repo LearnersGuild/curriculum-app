@@ -12,7 +12,6 @@
     }).promise()
   }
 
-
   $(document).on('change', '.skill-checkbox', event => {
     const checkbox = event.target
     checkbox.disabled = true
@@ -24,14 +23,6 @@
       _ => { checkbox.disabled = false }
     )
   })
-
-  // TODO dry this up, duplicate of /digest/nameToId
-  const skillNameToSkillId = name =>
-    name
-      .replace(/[\/ #]/g, '-')
-      .replace(/`/g, '')
-
-
 
   if (onModulePage) $(() => {
     const skills = JSON.parse($('.skills-data').val())
