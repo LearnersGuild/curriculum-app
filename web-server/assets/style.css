@@ -164,22 +164,36 @@ ul.skills > li > label > input[type="checkbox"] {
 }
 
 
+
+.users-grid-controls{
+  padding-top: 0.25em;
+  text-align: right;
+}
+.users-grid-controls .form-control{
+  width: auto;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 0.5em;
+}
+
+
 .users-grid{
   margin-top: 15px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  justify-content: space-around;
 }
 .users-grid-member {
-  margin: 2px;
-  width: 140px;
+  margin: 2px 2px 5px 2px;
+  width: 120px;
   text-align: center;
 }
-.users-grid-member-name {
-
-}
+.users-grid-member-name,
 .users-grid-member-handle {
-
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .users-grid-member-avatar > img {
   height: 10vh;

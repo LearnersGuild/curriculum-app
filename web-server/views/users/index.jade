@@ -1,9 +1,18 @@
 extends ../layout
 
 block content
+  form.users-grid-controls
+    span filters:
+    select.users-grid-controls-sort.form-control(name="")
+      option(checked) name asc
+      option name desc
+      option handle asc
+      option handle desc
+    input.users-grid-controls-filter.form-control(type="text" placeholder="filter")
+
   .users-grid
     for user in users
-      .users-grid-member.well
+      .users-grid-member.well(data-user=JSON.stringify(user))
         a(href="/users/"+user.handle)
           .users-grid-member-name= user.name
           .users-grid-member-handle= user.handle

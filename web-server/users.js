@@ -19,8 +19,17 @@ module.exports = app => {
         }
       `)
       .then(results =>
-        results.data.findUsers.filter(user => user.active)
+        results.data.findUsers
       )
+      .then(users =>
+        users.filter(user => user.active)
+      )
+      .then(users =>
+        users.filter(user =>
+          !['echo-bot','lg-bot'].includes(user.handle)
+        )
+      )
+
     next()
   })
 
