@@ -9,41 +9,60 @@ before moving on from this module.
 
 ### General Programming
 
-- Can describe and use variables
-- Can define both local and global variables
-- Can describe the difference between local and global variables
-- Can describe a function
-- Can describe an Array
-- Can describe a Hash / Index / Map
-- Can turn any object into its Boolean equivalent
-- Can sort an array by multiple conditions
-- Can use the ! (bang) operator
-- Using return as flow control
-- Can read and write ternary statements
-- Branching and Looping
-- Can convert a Hash into an array of arrays [key, value], and back again
-- Can convert an array of objects with unique property into a hash by that property
+- Can describe what a variable is
+- Can describe the difference between a local and global variable
+- Can describe a Function
+- Can describe a Hash
+- Can describe a Array
+- Can describe a Set
+- Can describe the ! (bang) operator
+- Can describe an "if statement"
+- Can describe a pure vs. impure function
+- Can describe operator precedence
+- Can describe the `push` Array method
+- Can describe the `pop` Array method
+- Can describe the `shift` Array method
+- Can describe the `unshift` Array method
+- Can describe the `each` Array method
+- Can describe the `map` Array method
+- Can describe the `filter` Array method
+- Can describe the `reduce` Array method
+- Can describe a closure
 
 ### JavaScript Specific
 
-- Can declare local and global variables
-- Can explain the difference between `==` and `===` and when to use which one
-- Can use an if / else statement
-- Can use a switch statement
-- Can use a while loop
-- Can use a for loop
-- Can define and use static functions
-- Can explain when to use var
-- Can explain operator precedence
-- Can access object properties with both dot and bracket syntax
-- Can get all the keys on an object
-- Can use `Array#push`, `Array#pop`, `Array#shift`, `Array#unshift`
-- Can use `Array#forEach`, `Array#map`, `Array#filter`, `Array#reduce`
-- Can create and use closures
-- Can pass multiple arguments into a function using a plain object
-- Can explain lexical scope inheritance
-- Can split a string into an array
-- Can join an array into a string
+- Can write a Function in JavaScript
+- Can write an Object literal in JavaScript
+- Can write an Array literal in JavaScript
+- Can write an String literal in JavaScript
+- Can write an Number literal in JavaScript
+- Can write and `if`/`else` statement in JavaScript
+- Can write and `switch` statement in JavaScript
+- Can write and `while` loop in JavaScript
+- Can write and `for` loop in JavaScript
+- Can write a pure function in JavaScript
+- Can set the value of a property on a JavaScript Object using `.` syntax
+- Can set the value of a property on a JavaScript Object using `[]` syntax
+- Can get the value of a property on a JavaScript Object using `.` syntax
+- Can get the value of a property on a JavaScript Object using `[]` syntax
+- Can explain the difference between `==` and `===` in JavaScript
+- Can explain the difference between `var`, `let`, and `const` in JavaScript
+- Can use `Array#push` in JavaScript
+- Can use `Array#pop` in JavaScript
+- Can use `Array#shift` in JavaScript
+- Can use `Array#unshift` in JavaScript
+- Can use `Array#forEach` in JavaScript
+- Can use `Array#map` in JavaScript
+- Can use `Array#filter` in JavaScript
+- Can use `Array#reduce` in JavaScript
+- Can declare local vs. global variables in JavaScript
+- Can get all the keys on a JavaScript object
+- Can get all the values on a JavaScript object
+- Can write a closure in JavaScript
+- Can pass multiple objects into a function using a plain object as a single argument, in JavaScript
+- Can explain lexical scope inheritance in JavaScript
+- Can split a string into an array in JavaScript
+- Can join an array into a string in JavaScript
 
 
 ## Glossary of Terms

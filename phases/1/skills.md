@@ -97,7 +97,7 @@ At this level we are using ES5 only. No ES6 with or without transpiling. We’re
 
 ## Node
 
-- Can use the node REPL
+- Can use the Node REPL
 - Can create a node package
 - Package.json
 - Can install and save node package dependencies

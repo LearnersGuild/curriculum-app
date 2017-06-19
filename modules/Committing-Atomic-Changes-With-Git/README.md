@@ -2,12 +2,12 @@
 
 ## Skills
 
-- Has some git aliases
-- Has git related metadata in their PS1
+- Can define a Git alias
+- Can add Git metadata to the shell $PS1
 - Can use `git add -p`, `git checkout -p`, `git reset -p`, `git reset` and `git pull --rebase`
 - Can explain when to use `git stash`
-- Can create a branch
-- Can merge branches
+- Can create a Git branch
+- Can merge Git branches
 
 ## Google search terms
 

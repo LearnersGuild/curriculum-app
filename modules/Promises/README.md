@@ -4,17 +4,17 @@ In this module you'll learn about the use of Promises for asynchronous programmi
 
 ## Skills
 
-- can use `.then` handle when a promise is fulfilled
-- can use `.catch` to handle when a promise is rejected
-- can explain when a promise is fulfilled or rejected
-- can use `.then` to chain promises (promise composition)
-- can use `.catch` to handle errors up a promise chain
-- can create a `new Promise`
-- can convert a function that uses callbacks into function that returns a Promise
-- can use `Promise.all()` to return a `Promise` that resolves when all of the promises in the provided iterable are resolved
-- can use `Promise.race()` to return a promise that resolves or rejects as soon as one of the promises in the provided iterable are resolved or rejected
-- can use `Promise.reject()` to return a rejected `Promise`, with a reason
-- can use `Promise.resolve()` to return a resolved `Promise`, with a value
+- Can explain the difference between a JavaScript Promise being fulfilled vs. rejected
+- Can use `.then` to handle when a JavaScript Promise is fulfilled
+- Can use `.catch` to handle when a JavaScript Promise is rejected
+- Can use `.then` to chain JavaScript Promises
+- Can use `.catch` to handle errors up a JavaScript Promise chain
+- Can create a `new Promise` in JavaScript
+- Can convert a function that uses callbacks into function that returns a JavaScript Promise
+- Can use describe and use `Promise.all()` in JavaScript
+- Can use describe and use `Promise.race()` in JavaScript
+- Can use describe and use `Promise.reject()` in JavaScript
+- Can use describe and use `Promise.resolve()` in JavaScript
 
 ## Search Terms
 

@@ -2,14 +2,17 @@
 
 ## Skills
 
-- Can use express to create POST & GET routes
-- Can set the content type of the response to `json`, `html`, `application/text` etc
-- Can explain what a middleware is
-- Can explain why the `body-parser` package is needed
-- Can use cURL to send test requests to the HTTP server
-- Can explain the use cases for the HTTP status codes 200, 404, 500
-- can render HTML using `ejs` templates
-- can respond to an HTTP request with html from a template
+- Can use Express to handle an HTTP `POST`
+- Can use Express to handle an HTTP `GET`
+- Can set the content type of an HTTP response to `json`, in Node and Express
+- Can set the content type of an HTTP response to `html`, in Node and Express
+- Can set the content type of an HTTP response to `text`, in Node and Express
+- Can explain what Express Middleware is
+- Can explain why the `body-parser` package is needed in Express
+- Can use `curl` to send HTTP requests to an HTTP server
+- Can explain the use cases for the HTTP status codes `200`, `404`, and `500`
+- Can render HTML using `ejs` templates on Node
+- Can respond to an HTTP request with HTML from a template
 
 ## Suggested Search Terms
 

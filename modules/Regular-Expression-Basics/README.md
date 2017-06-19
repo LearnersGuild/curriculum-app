@@ -3,18 +3,15 @@
 
 ## Skills
 
-- can describe what the `g`, `i`, and `m` flags do
-- can author a RegExp literal
-- can author a RegExp from using the RegExp constructor
-- can describe the following character classes `.` `\d` `\D` `\w` `\W` `\s`
-`\S`
-- can describe a RegExp character set
-- can author a RegExp with a character set
-- can use the `|` (or) operator
-- can describe what `$` and `^` mean
-- can write a regular expression to determine if a a string does or doesn't match
-- can use a RegExp to extract parts of a string
-
+- Can describe what the JavaScript RegExp flags `g`, `i`, and `m` do
+- Can author a RegExp literal in JavaScript
+- Can author a RegExp from using the RegExp constructor
+- Can describe what a JavaScript RegExp character set is
+- Can describe what the JavaScript RegExp character classes `.` `\d` `\D` `\w` `\W` `\s` `\S` do
+- Can author a JavaScript RegExp with a character set
+- Can use the `|` (or) operator in a JavaScript RegExp
+- Can describe what `$` and `^` mean in a JavaScript RegExp
+- Can use a JavaScript RegExp to extract parts of a string
 
 ## Resources
 

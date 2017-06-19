@@ -3,27 +3,29 @@
 
 ## Skills
 
-- Defensive Programming
-- Relational Database Design
+- Can describe what "Defensive Programming" means
+- Can give two examples of "Defensive Programming"
+- Can design a schema and queries for a SQL Database
 
-### Description
+## Description
 
 Create a command line todo-list script, that stores the tasks in a SQL database. You will have to design a schema for the Todo List application such that you can easily add/read/update/delete the tasks.
 
-### Specs:
-- [ ] tasks are persisted in a Postgres database
-- [ ] Schema for the database exists in a file `schema.sql`
-- [ ] npm scripts exists to setup the database
-- [ ] `list` command has been implemented
-- [ ] `add` command has been implemented
-- [ ] `delete` command has been implemented
-- [ ] `update` command has been implemented
-- [ ] script returns a `Command Not Found` message when the user enters an invalid command
-- [ ] a separate test database exists for SQL tests
-- [ ] all SQL functions are tested with mocha and chai
+## Specs:
+
+- Tasks are persisted in a Postgres database
+- Schema for the database exists in a file `schema.sql`
+- Npm scripts exists to setup the database
+- `list` command has been implemented
+- `add` command has been implemented
+- `delete` command has been implemented
+- `update` command has been implemented
+- Script returns a `Command Not Found` message when the user enters an invalid command
+- A separate test database exists for SQL tests
+- All SQL functions are tested with mocha and chai
 
 
-### Example Usage
+## Example Usage
 
 To add tasks:
 ```bash

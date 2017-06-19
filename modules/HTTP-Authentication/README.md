@@ -10,10 +10,10 @@ down into smaller steps you can take sequentially.
 
 ## Skills
 
-- Can build an HTTP server with express
+- Can build an HTTP server with Node and Express
 - Can track individual users with cookies
 - Can POST data to the server with a form
-- Can read and write cookies in an express server
+- Can store data in an HTTP cookie using Node and Express
 - Can designing a small SQL schema
 - Can use `pg-promise` to communicate to a postgresql server
 

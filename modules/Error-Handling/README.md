@@ -5,11 +5,11 @@ In this module we'll go over throwing and catching errors.
 
 ## Skills
 
-- Can throw errors
-- Can catch errors
-- Can catch specific errors
-- Can re-throw errors
-- Can log errors
+- Can throw an error in JavaScript
+- Can catch errors in JavaScript
+- Can catch specific errors in JavaScript
+- Can re-throw an error in JavaScript
+- Can log errors in JavaScript
 
 ## Search Terms
 

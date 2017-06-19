@@ -2,7 +2,7 @@
 
 ## Skills
 
-- can use `Array#sort`
+- Can use JavaScript's `Array#sort`
 
 
 ## Specs

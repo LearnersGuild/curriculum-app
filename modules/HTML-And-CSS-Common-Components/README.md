@@ -2,17 +2,17 @@
 
 ## Skills
 
-- Can style a form
+- Can style a `<form>` in HTML & CSS
 - Can style typographic elements (headers, paragraphs, etc.)
-- Can style buttons
-- Can implement a sticky footer
-- Can implement a fixed header
-- Can implement a modal component
-- Can implement a card component
-- Can implement a menu component
-- Can implement a navbar component
-- Can implement a pagination component
-- Can implement a tabs component
+- Can style buttons in HTML & CSS
+- Can implement a sticky footer in HTML & CSS
+- Can implement a fixed header in HTML & CSS
+- Can implement a modal component in HTML & CSS
+- Can implement a card component in HTML & CSS
+- Can implement a menu component in HTML & CSS
+- Can implement a navbar component in HTML & CSS
+- Can implement a pagination component in HTML & CSS
+- Can implement a tabs component in HTML & CSS
 
 ## Exercises
 

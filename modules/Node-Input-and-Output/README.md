@@ -5,12 +5,12 @@ program and several ways to generate output from your node program.
 
 ## Skills
 
-- can read arguments
-- can read from STDIN
-- can read a file
-- can write to STDOUT
-- can write to STDERR
-- can write to a file
+- Can read program arguments in Node
+- Can read from STDIN in Node
+- Can read a file in Node
+- Can write to STDOUT in Node
+- Can write to STDERR in Node
+- Can write to a file in Node
 
 ## Search Terms
 

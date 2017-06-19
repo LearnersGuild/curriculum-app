@@ -2,8 +2,8 @@
 
 ## Skills
 
-- can host a directory of static files as a local web server
-- can link to assets from HTML using <link>
-- can link to assets from HTML using <script>
-- can link to assets from HTML using <img>
-- can link to assets from CSS using @import
+- Can host a directory of static files as a local web server
+- Can link to HTTP assets from HTML using `<link>`
+- Can link to HTTP assets from HTML using `<script>`
+- Can link to HTTP assets from HTML using `<img>`
+- Can link to HTTP assets from CSS using `@import`

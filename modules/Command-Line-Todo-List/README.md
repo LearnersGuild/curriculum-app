@@ -7,7 +7,7 @@
 - Reading and writing to files
 - unit tests with mocha
 
-### Description
+## Description
 
 Design a todo-list which manages your tasks from the command line. It should maintain a task list, allowing you to add, list and complete your tasks.
 
@@ -22,16 +22,16 @@ The following commands should be supported by your node script:
 | done    | marks the task with `id` equal to `<task-id>` complete | node task.js done `<task-id>`            |
 
 
-### Specs:
-- [ ] tasks are persisted to a `json` file using `fs.readFileSync`
-- [ ] node script `task.js` is used to manage the tasks. (See example usage below)
-- [ ] `list` command has been implemented in a file located at `commands/list.js`
-- [ ] `add` command has been implemented in a file located at `commands/add.js`
-- [ ] `done` command has been implemented in a file located at `commands/done.js`
-- [ ] Add tests using Mocha and Chai for all functions
-- [ ] User receives an error message if they enter an invalid command
+## Specs:
+- Tasks are persisted to a `json` file using `fs.readFileSync`
+- Node script `task.js` is used to manage the tasks. (See example usage below)
+- `list` command has been implemented in a file located at `commands/list.js`
+- `add` command has been implemented in a file located at `commands/add.js`
+- `done` command has been implemented in a file located at `commands/done.js`
+- Add tests using Mocha and Chai for all functions
+- User receives an error message if they enter an invalid command
 
-### Example Usage
+## Example Usage
 
 To add tasks:
 ```bash
