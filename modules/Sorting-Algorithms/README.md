@@ -29,7 +29,7 @@ javascript selection sort
 - Sorting Visualizations
     - [Visual Algorithms](https://visualgo.net/en/sorting)
     - [Comparison Sorting Algorithms](https://www.cs.usfca.edu/~galles/visualization/ComparisonSort.html)
-- Wikipedia - Note that these articles explore performance and optimization topics that are out of scope for this module, but will be revisisted in Phase 5 (Big O notation, algorithm analysis)
+- Wikipedia - Note that these articles explore performance and optimization topics that are out of scope for this module, but will be revisited in Phase 5 (Big O notation, algorithm analysis)
     - [Bubble Sort](https://en.wikipedia.org/wiki/Bubble_sort)
     - [Insertion Sort](https://en.wikipedia.org/wiki/Insertion_sort)
     - [Selection Sort](https://en.wikipedia.org/wiki/Selection_sort)

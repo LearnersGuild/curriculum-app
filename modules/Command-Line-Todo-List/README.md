@@ -17,14 +17,14 @@ The following commands should be supported by your node script:
 
 | command | description                                            | example usage                            |
 |---------|--------------------------------------------------------|------------------------------------------|
-| add     | adds the specified task                                     | node task.js add Finish reading Flatland |
+| add     | adds the specified task                                | node task.js add Finish reading Flatland |
 | list    | lists the incomplete tasks                             | node task.js list                        |
 | done    | marks the task with `id` equal to `<task-id>` complete | node task.js done `<task-id>`            |
 
 
 ### Specs:
 - [ ] tasks are persisted to a `json` file using `fs.readFileSync`
-- [ ] node script `task.js` is used to manage the tasks.
+- [ ] node script `task.js` is used to manage the tasks. (See example usage below)
 - [ ] `list` command has been implemented in a file located at `commands/list.js`
 - [ ] `add` command has been implemented in a file located at `commands/add.js`
 - [ ] `done` command has been implemented in a file located at `commands/done.js`

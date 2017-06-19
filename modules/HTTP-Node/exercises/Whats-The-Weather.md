@@ -4,7 +4,7 @@
 
 ## Exercise
 
-Write a Node.js script called `weather.js` that takes a `city` as the first argument, and prints the names of the movies in the console which match that search term.
+Write a Node.js script called `weather.js` that takes a `city` as the first argument, and prints the current temperature in that city.
 
 Here is a sample API call which returns the weather for San Francisco
 http://api.openweathermap.org/data/2.5/weather?q=San+Francisco&mode=json&appid=498fa131dbb425c13df97463ab9d22dd

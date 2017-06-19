@@ -72,7 +72,7 @@ down into smaller steps you can take sequentially.
         - you should be logged in and redirect to the home page
   - when you are logged in
     - and you visit `/` (the home page) you see:
-      - "Welcome back ${email}"
+      - "Welcome back [email address]"
       - a link to `/logout`
     - and you visit `/login`
       - you are redirected to the homepage

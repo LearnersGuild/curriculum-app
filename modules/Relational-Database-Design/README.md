@@ -36,6 +36,9 @@ what is ACID
 - https://www.youtube.com/watch?v=I_rxqSJAj6U
 - [Data Relationships](https://www.youtube.com/watch?v=ByqeSP9Y2UM)
 
+### Tools
+- [Visual SQL Designer](http://ondras.zarovi.cz/sql/demo/)
+
 ## Exercises
 
 - [Shopping Cart Schema Design](./exercises/Shopping-Cart-Schema-Design)

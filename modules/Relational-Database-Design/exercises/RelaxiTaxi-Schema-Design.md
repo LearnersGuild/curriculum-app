@@ -2,7 +2,7 @@
 
 Design the SQL schema for a taxi service called RelaxiTaxi
 
-### The schema design should satify the followign constraints:
+### The schema design should satisfy the following constraints:
 
 - [ ] A driver should have a `name`, `email`, `status`(available/busy)
 - [ ] A customer should have a `name`, `email`

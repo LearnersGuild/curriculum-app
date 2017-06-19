@@ -49,5 +49,6 @@ javascript throw catch
 
 ## Exercises
 
-Read through the resources above and play with these concepts using a node
+- Read through the resources above and play with these concepts using a node
 script.
+- Complete the two exercises at the end of the [Eloquent Javascript lesson](http://eloquentjavascript.net/08_error.html).

@@ -11,7 +11,7 @@
 Create a command line todo-list script, that stores the tasks in a SQL database. You will have to design a schema for the Todo List application such that you can easily add/read/update/delete the tasks.
 
 ### Specs:
-- [ ] tasks are persisited in a Postgres database
+- [ ] tasks are persisted in a Postgres database
 - [ ] Schema for the database exists in a file `schema.sql`
 - [ ] npm scripts exists to setup the database
 - [ ] `list` command has been implemented

@@ -21,8 +21,8 @@ In App 1 we're going to store a single string in an HTTP cookie.
 
 Using express, make an app that renders an html page that with a form that does
 a post of the users name and then store their given name in a cookie. Parse
-cookies using a cookie parsing node package. Display the users name on the
-page if you have it in the cookie. also have a "clear name" button
+cookies using a cookie parsing node package. Display the user's name on the
+page if you have it in the cookie. The user should also have a "clear name" button.
 
 
 ### Search Terms
@@ -53,7 +53,7 @@ node express cookies
 - When you type your name into the text field and press "Save my name!" the page reloads and displays the text "Welcome back [the name you entered]!" only.
   - Example: If I enter "Ada Lovelace" and hit "Save my name!" The only thing I should see on the page is "Welcome back Ada Lovelace".
 - If I reload the page I should still see the same text
-- When I delete my cookies I should see the form again
+- When I delete my cookies or visit the site in an incognito window, I should see the form again.
 
 ## App 2 - Storing data in cookies
 
@@ -74,11 +74,11 @@ In App 2 we're going to store more than one piece of data in a cookie using JSON
   - a text input with the place holder "First name"
   - a text input with the place holder "Last name"
   - a text input with the place holder "Favorite color"
-  - a submit button with the text "Thats me!"
-- When you type your first name, last name and favorite color into the text fields and press "Thats me!" the page reloads and displays the text "Welcome back [first_name] [last_name] I bet your favorite color is [favorite_color]!".
+  - a submit button with the text "That's me!"
+- When you type your first name, last name and favorite color into the text fields and press "That's me!", the page reloads and displays the text "Welcome back [first_name] [last_name] I bet your favorite color is [favorite_color]!".
   - Example: If I enter "Ada", "Lovelace", "Green" and hit "Save my name!" The only thing I should see on the page is "Welcome back Ada Lovelace I bet your favorite color is green".
 - If I reload the page I should still see the same text
-- When I delete my cookies I should see the form again
+- When I delete my cookies or visit the site in an incognito window, I should see the form again.
 
 
 ## App 3 - An insecure session
@@ -108,11 +108,11 @@ Build a middleware that serializes a session object into a session cookie using 
 - your dependencies are all listed in `/app3/package.json`
 - your can start your server with `npm start`
 - your server should use `node` and `express`
-- When you type your first name, last name and favorite color into the text fields and press "Thats me!" the page reloads and displays the text "Welcome back [first_name] [last_name] I bet your favorite color is [favorite_color]!".
+- When you type your first name, last name and favorite color into the text fields and press "That's me!", the page reloads and displays the text "Welcome back [first_name] [last_name] I bet your favorite color is [favorite_color]!".
   - Example: If I enter "Ada", "Lovelace", "Green" and hit "Save my name!" The only thing I should see on the page is "Welcome back Ada Lovelace I bet your favorite color is green".
 - If I reload the page I should still see the same text
-- When I delete my cookies I should see the form again
-- all cookie related code should be in the express middleware
+- When I delete my cookies or visit the site in an incognito window, I should see the form again.
+- all cookie-related code should be in the express middleware
 - the `homepage` and `form post` routes should only read and write data to and from `request.session` and not to the cookies header directly.
 
 
@@ -128,10 +128,10 @@ Encrypt the session cookie using bcrypt
 - your dependencies are all listed in `/app3/package.json`
 - your can start your server with `npm start`
 - your server should use `node` and `express`
-- When you type your first name, last name and favorite color into the text fields and press "Thats me!" the page reloads and displays the text "Welcome back [first_name] [last_name] I bet your favorite color is [favorite_color]!".
+- When you type your first name, last name and favorite color into the text fields and press "That's me!", the page reloads and displays the text "Welcome back [first_name] [last_name] I bet your favorite color is [favorite_color]!".
   - Example: If I enter "Ada", "Lovelace", "Green" and hit "Save my name!" The only thing I should see on the page is "Welcome back Ada Lovelace I bet your favorite color is green".
 - If I reload the page I should still see the same text
-- When I delete my cookies I should see the form again
+- When I delete my cookies or visit the site in an incognito window, I should see the form again.
 - all cookie related code should be in the express middleware
 - the `homepage` and `form post` routes should only read and write data to and from `request.session` and not to the cookies header directly.
 - the data in the cookie should be encrypted and decrypted on every request.

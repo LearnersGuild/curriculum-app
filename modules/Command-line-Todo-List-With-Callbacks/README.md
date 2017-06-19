@@ -16,7 +16,7 @@ The following commands should be supported by your node script:
 
 | command | description                                            | example usage                            |
 |---------|--------------------------------------------------------|------------------------------------------|
-| add     | adds the specified                                     | node task.js add Finish reading Flatland |
+| add     | adds the specified task                                    | node task.js add 'Finish reading Flatland' |
 | list    | lists the incomplete tasks                             | node task.js list                        |
 | done    | marks the task with `id` equal to `<task-id>` complete | node task.js done `<task-id>`            |
 
