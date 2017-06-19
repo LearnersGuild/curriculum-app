@@ -48,12 +48,19 @@
 
   const reloadSkillCheckboxes = () => {
     const checkboxes = $('.skill-checkbox[data-label]').get()
-    const labels = checkboxes.map(checkbox => $(checkbox).data('label'))
+      .reduce((index, checkbox) => {
+        const label = $(checkbox).data('label')
+        index[label] = index[label] || $()
+        index[label] = index[label].add(checkbox)
+        return index
+      }, {})
+
+    const labels = Object.keys(checkboxes)
     return postJSON('/api/checks/status', {type: 'skill', labels: labels})
     .then(checks => {
       $(() => {
         Object.keys(checks).forEach(label => {
-          const checkbox = $('.skill-checkbox[data-label="'+label+'"]')
+          const checkbox = checkboxes[label]
           if (checkbox.length === 0) console.warn('no checkbox found for '+label)
           if (checkbox.prop('checked') !== !!checks[label]) console.info('FIXED',label)
           checkbox.prop('checked', !!checks[label])

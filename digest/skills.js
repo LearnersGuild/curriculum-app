@@ -12,7 +12,7 @@ module.exports = digest => {
       name,
       rawText,
       modules: [],
-      path: `/skills/${id}`,
+      path: `/skills/${encodeURIComponent(id)}`,
     }
   }
 

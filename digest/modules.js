@@ -17,7 +17,7 @@ const convertModuleDirectoryNamesToModules = moduleDirectoryNames =>
       directoryName,
       id: directoryName,
       name: directoryName.replace(/-/g, ' '),
-      path: `/modules/${directoryName}`,
+      path: `/modules/${encodeURIComponent(directoryName)}`,
     }))
 
 const extractModuleDetails = modules =>
