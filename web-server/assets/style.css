@@ -162,7 +162,88 @@ ul.skills > li > label > input[type="checkbox"] {
 .markdown-body > *:first-child {
   margin-top: 0 !important;
 }
-
+.markdown-body .highlight pre, .markdown-body pre {
+  padding: 16px;
+  overflow: auto;
+  font-size: 85%;
+  line-height: 1.45;
+  background-color: #f6f8fa;
+  border-radius: 3px;
+}
+.markdown-body pre {
+  word-wrap: normal;
+}
+.markdown-body p,
+.markdown-body blockquote,
+.markdown-body ul,
+.markdown-body ol,
+.markdown-body dl,
+.markdown-body table,
+.markdown-body pre {
+  margin-top: 0;
+  margin-bottom: 16px;
+}
+.markdown-body code,
+.markdown-body tt {
+  padding: 0;
+  padding-top: 0.2em;
+  padding-bottom: 0.2em;
+  margin: 0;
+  font-size: 85%;
+  background-color: rgba(27,31,35,0.05);
+  border-radius: 3px;
+  color: inherit;
+}
+.markdown-body code::before,
+.markdown-body code::after,
+.markdown-body tt::before,
+.markdown-body tt::after {
+  letter-spacing: -0.2em;
+  content: "\00a0";
+}
+.markdown-body pre code,
+.markdown-body pre tt {
+  display: inline;
+  max-width: auto;
+  padding: 0;
+  margin: 0;
+  overflow: visible;
+  line-height: inherit;
+  word-wrap: normal;
+  background-color: transparent;
+  border: 0;
+}
+.markdown-body pre>code {
+  padding: 0;
+  margin: 0;
+  font-size: 100%;
+  word-break: normal;
+  white-space: pre;
+  background: transparent;
+  border: 0;
+}
+.markdown-body pre code::before,
+.markdown-body pre code::after,
+.markdown-body pre tt::before,
+.markdown-body pre tt::after {
+  content: normal;
+}
+.markdown-body table {
+  display: block;
+  width: 100%;
+  overflow: auto;
+}
+.markdown-body table tr {
+  background-color: #fff;
+  border-top: 1px solid #c6cbd1;
+}
+.markdown-body table tr:nth-child(2n) {
+  background-color: #f6f8fa;
+}
+.markdown-body table th, .markdown-body table td {
+  padding: 6px 13px;
+  border: 1px solid #dfe2e5;
+}
 
 
 .users-grid-controls{
