@@ -25,6 +25,8 @@ Read the following articles on BASH commands:
 
 ### Exercise
 
+A general question that will apply to many modules: is it important / helpful to have learners create an artifact for any of these? For instance, in our previous git / github curriculum, we'd have learners create a file that contained steps (like below), and mark the commands they used after each. On one hand, I can see that being useful for a learner to have as a future reference. On the other hand, I can see empowering folk to take notes when it's useful to THEM, and not require it.
+
 Complete the following steps in your terminal to check your understanding.
 
 1. Find out which directory you're currently in

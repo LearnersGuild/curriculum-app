@@ -13,6 +13,9 @@ Create a file called `shopping-cart-schema.sql` that contains the schema.
 
 ### Questions I should be able to answer with the design:
 
+For this and the other sql design questions:
+As a learner, how will I know that my design "answers" the questions below? Perhaps it's by checking with my Phase SEP; if so, maybe make that explicit
+
 - What is the average number of items per order?
 - What is the name of the user who purchased the costliest item?
 - Average cost of an order per user

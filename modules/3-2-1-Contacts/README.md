@@ -18,6 +18,7 @@ addContact function
 addContacts function (bulk add)
 provide a set of contacts for them
 require them to print contacts in a nice grid
+suggest whether to sort when adding or sort when printing
 
 ```
 Name  |  Address     |

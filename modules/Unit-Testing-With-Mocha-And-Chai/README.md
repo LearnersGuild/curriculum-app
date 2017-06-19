@@ -26,6 +26,7 @@
 
 - [ ] Follow along with the tutorial [Getting Started with Node.js and Mocha](https://semaphoreci.com/community/tutorials/getting-started-with-node-js-and-mocha) and write all the code (don't just copy-paste)
 - [ ] Pick some Node.js code that you've written already and write a test suite for it. Make sure to test both expected inputs/outputs as well as unexpected/invalid inputs.
+This module might be a good contender to have Learners download an existing snapshot of a simple project that has some test coverage, and have them complete test coverage (using existing tests as a model).
 
 ## Suggested Resources
 
