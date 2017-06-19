@@ -1,7 +1,7 @@
 const url = require('url')
 const bodyParser = require('body-parser')
-const queries = require('../database/queries')
-const commands = require('../database/commands')
+const queries = require('../../database/queries')
+const commands = require('../../database/commands')
 
 module.exports = app => {
 

@@ -1,6 +1,6 @@
-const loadDigest = require('../digest')
+const loadDigest = require('../../digest')
 
-module.exports = function(app){
+module.exports = app => {
 
   if (process.env.NODE_ENV === 'development') {
 
