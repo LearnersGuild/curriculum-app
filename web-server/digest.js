@@ -25,17 +25,14 @@ module.exports = function(app){
 
   }else{
 
-    let digest;
-
     app.use((request, response, next) => {
-      response.digest = digest
+      response.digest = app.locals.digest
       next()
     })
 
     loadDigest()
-      .then(_digest => {
-        digest = _digest
-        Object.assign(app.locals, digest)
+      .then(digest => {
+        app.locals.digest = digest
       })
       .catch(error => {
         console.error(error)
