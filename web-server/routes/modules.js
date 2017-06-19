@@ -2,7 +2,7 @@ const queries = require('../../database/queries')
 
 module.exports = app => {
 
-  app.get('/modules/:moduleName', (request, response, next) => {
+  app.use('/modules/:moduleName', (request, response, next) => {
     const user_id = request.user.id
     const { moduleName } = request.params
     const { digest } = response
