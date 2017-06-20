@@ -108,10 +108,12 @@ module.exports = app => {
       renderMarkdown(markdown, (error, content) => {
         if (error) return response.renderServerError(error)
 
+        const path = response.path.match(/\/$/) ? response.path+'README.md' : response.path
+
         const file = {
           content,
-          sourceUrl: 'https://github.com/GuildCrafts/curriculum/blob/master'+response.path,
-          editeUrl: 'https://github.com/GuildCrafts/curriculum/edit/master'+response.path,
+          sourceUrl: 'https://github.com/GuildCrafts/curriculum/blob/master'+path,
+          editeUrl: 'https://github.com/GuildCrafts/curriculum/edit/master'+path,
         }
         response.render('markdown', file)
       })
