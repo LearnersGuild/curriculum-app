@@ -2,8 +2,6 @@
 
 There are two types of modules:
 
-
-
 - 🤸 Practice Modules
 - 🏋 Benchmark Modules
 
