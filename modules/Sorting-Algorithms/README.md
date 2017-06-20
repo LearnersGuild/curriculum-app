@@ -7,10 +7,10 @@ built in JavaScript `Array.prototype.sort()` function.
 ## Skills
 
 
-- Can use JavaScript's `Array#sort`
-- Can implement bubble sort in JavaScript
-- Can implement insertion sort in JavaScript
-- Can implement selection sort in JavaScript
+- Can use `Array#sort` in JavaScript
+- Can implement bubble algorithm sort in JavaScript
+- Can implement insertion sort algorithm in JavaScript
+- Can implement selection sort algorithm in JavaScript
 
 
 ## Search Terms

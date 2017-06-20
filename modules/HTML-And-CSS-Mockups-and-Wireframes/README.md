@@ -27,6 +27,7 @@
 - https://teamtreehouse.com/library/css-basics
 - https://teamtreehouse.com/library/css-selectors
 - https://www.khanacademy.org/computing/computer-programming/html-css
+- https://www.rithmschool.com/courses/intermediate-css-bootstrap
 
 ### Reading
 - https://www.w3schools.com/html/html_layout.asp

@@ -36,6 +36,7 @@
 
 - https://www.khanacademy.org/computing/computer-programming/html-css
 - http://learn.shayhowe.com/html-css/
+- https://www.rithmschool.com/courses/html-css-fundamentals
 - https://teamtreehouse.com/library/introduction-to-html-and-css
 - https://teamtreehouse.com/library/css-basics
 - https://teamtreehouse.com/library/css-selectors
