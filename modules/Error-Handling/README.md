@@ -6,10 +6,10 @@ In this module we'll go over throwing and catching errors.
 ## Skills
 
 - Can throw an error in JavaScript
-- Can catch errors in JavaScript
-- Can catch specific errors in JavaScript
-- Can re-throw an error in JavaScript
-- Can log errors in JavaScript
+- Can use `try/catch` expression to catch errors in JavaScript
+- Can use `try/catch` expression to catch specific errors in JavaScript
+- Can use `throw` statement to re-throw an error in JavaScript
+- Can use `console.error` to log errors in JavaScript
 
 ## Search Terms
 
