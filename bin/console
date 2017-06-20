@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+
+echo locals: loadDigest, digest, queries, commands
+node -i -e "\
+const loadDigest = require('./digest'); \
+const queries = require('./database/queries'); \
+const commands = require('./database/commands'); \
+let digest; loadDigest().then(d => digest = d); \
+"
