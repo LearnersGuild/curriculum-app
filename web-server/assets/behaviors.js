@@ -186,3 +186,13 @@ if (location.pathname.match(/^\/users\/?$/)) $(()=>{
   })
 
 })()
+
+
+// All external links from markdown files are set to open in a new tab
+$(() => {
+  $('.markdown-body a[href]').each((i, link) => {
+    if (location.hostname !== link.hostname) {
+      $(link).attr('target', '_blank')
+    }
+  })
+})
