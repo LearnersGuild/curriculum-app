@@ -26,7 +26,7 @@ Contents of file written: Learners Guild
 Write an executable node script `file-io-async.js` that reads a JSON file asynchronously and also writes to a separate .txt file asynchronously. The JSON file to be read is provided [here](../data/reading-and-writing.json)
 
 Example Usage Output:
-The script reads the JSON file, extracts the name, and writes the name to 'city.txt'
+The script reads the JSON file, extracts the city, and writes the city to 'city.txt'
 ```
 $ node file-io-sync.js
 Going to read file asynchronously ...
