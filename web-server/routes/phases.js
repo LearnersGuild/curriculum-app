@@ -5,7 +5,7 @@ module.exports = app => {
   app.get('/phases/:phaseNumber', app.ensureTrailingSlash)
 
   app.use('/phases/:phaseNumber', (request, response, next) => {
-    const phaseNumber = Number.parseInt(request.params.phaseNumber)
+    const { phaseNumber } = request.params
     response.locals.phase = response.phase = response.digest.phases[phaseNumber]
     next()
   })
