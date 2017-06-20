@@ -29,6 +29,10 @@ app.get('/', (request, response, next) => {
   response.renderMarkdownFile(`/README.md`)
 })
 
+app.get('/CONTRIBUTING.md', (request, response, next) => {
+  response.renderMarkdownFile(`/CONTRIBUTING.md`)
+})
+
 const server = app.listen(process.env.PORT, () => {
   console.log('http://localhost:'+process.env.PORT)
 })
