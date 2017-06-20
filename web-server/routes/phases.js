@@ -13,7 +13,10 @@ module.exports = app => {
     const labels = response.phase.skills
     queries.getChecks({user_id, labels})
       .then(checks => {
-        response.render('phases/skills', {checks})
+        const skills = response.phase.skills.map(skillId =>
+          Object.assign({}, response.digest.skills[skillId], {checked: !!checks[skillId]})
+        )
+        response.render('phases/skills', {skills})
       })
       .catch(next)
   })

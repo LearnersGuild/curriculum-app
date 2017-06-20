@@ -18,6 +18,16 @@ module.exports = app => {
   app.locals.renderSkill = skill =>
     renderMarkdown(skill.rawText).slice(3,-5).trim()
 
+  app.locals.sortSkills = skills => {
+    skills = Array.isArray(skills)
+      ? skills
+      : Object.keys(skills).map(id => skills[id])
+    return skills.sort((a,b) =>
+      a.name.toLowerCase() < b.name.toLowerCase() ? -1 :
+      a.name.toLowerCase() > b.name.toLowerCase() ? 1 : 0
+    )
+  }
+
   app.use((request, response, next) => {
 
     response.path = request.url

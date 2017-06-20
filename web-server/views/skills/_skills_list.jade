@@ -1,0 +1,28 @@
+mixin skillsList(skills)
+
+  - skills = sortSkills(skills)
+
+  .skills-list
+    .skills-list-controls
+      .list-inline
+        li
+          .btn-group
+            button.btn.btn-default.dropdown-toggle(type='button', data-toggle='dropdown')
+              | Filters
+              span.caret
+            ul.dropdown-menu(role='menu')
+              for filter in digest.skillContexts
+                li
+                  a.skills-list-filter(href='')= filter
+              li.divider
+              li
+                a.skills-list-clear-filter(href='#') Clear
+        li
+          input.skills-list-filter-input.form-control(type="text" placeholder="filter")
+    ul.skills-list-list
+      each skill in skills
+        li.list-item-with-checkbox
+          input.skill-checkbox(type="checkbox", checked=skill.checked, data-label=skill.id)
+          a(href=skill.path) !{renderSkill(skill)}
+      else
+        h3 Whoooops no skills here ¯\_(ツ)_/¯

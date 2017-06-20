@@ -7,10 +7,15 @@ module.exports = app => {
 
   app.get('/skills', (request, response, next) => {
     const user_id = request.user.id
+
+
     queries.getChecks({user_id})
       .then(checks => {
+        const skills = Object.keys(response.digest.skills).map(skillId =>
+          Object.assign({}, response.digest.skills[skillId], {checked: !!checks[skillId]})
+        )
         response.render('skills/index', {
-          checks,
+          skills
         })
       })
       .catch(next)

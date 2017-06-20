@@ -280,3 +280,17 @@ ul.skills > li > label > input[type="checkbox"] {
   height: 10vh;
   min-width: 10vh;
 }
+
+
+.skills-list-filter{
+  display: inline-block;
+  width: auto;
+  min-width: 20vw;
+}
+
+.skills-list-controls{
+  margin-bottom: 0.5em;
+}
+.skills-list-controls > .list-inline > li {
+  vertical-align: middle;
+}
