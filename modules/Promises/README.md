@@ -27,6 +27,7 @@ javascript promise all
 javascript promise race
 javascript promise reject
 javascript promise resolve
+callbacks vs promises
 ```
 
 ## Suggested Resources
@@ -39,6 +40,7 @@ javascript promise resolve
 - [JavaScript Promises: an Introduction](https://developers.google.com/web/fundamentals/getting-started/primers/promises)
 - [JavaScript Promise API](https://davidwalsh.name/promises)
 - One reason that promises are handy: [Callback Hell](http://callbackhell.com/)
+- https://blog.domenic.me/youre-missing-the-point-of-promises/
 
 ### Watching
 
