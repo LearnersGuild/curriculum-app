@@ -34,3 +34,5 @@
 ### Reading
 - https://codeutopia.net/blog/2015/04/11/what-are-unit-testing-integration-testing-and-functional-testing/
 - http://blog.bguiz.com/2016/03/08/unit-integration-test-frontend-javascript/
+- http://mherman.org/blog/2016/04/28/test-driven-development-with-node/#.WUlZMhPyuRs
+- https://blog.risingstack.com/getting-node-js-testing-and-tdd-right-node-js-at-scale/
