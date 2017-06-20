@@ -23,7 +23,7 @@
 
 ## Exercises
 
-- Copy the fauxQuery skeleton code from [here]() and:
+- Copy the fauxQuery skeleton code from [here](./fauxQuery.js) and:
   - Implement the fauxQuery selection logic, that returns a `FauxQuery` object
     - Implement the `FauxQuery` object that exposes the following functions:
       - `constructor( NodeList )` - creates a `FauxQuery` object that receives a `NodeList` as an input
