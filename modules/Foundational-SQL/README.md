@@ -7,13 +7,15 @@ module._
 
 ## Skills
 
-- Can select everything from a single table in SQL
-- Can select specific columns from a single table in SQL
-- Can select a subset of the rows in a table using a where clause in SQL
-- Can select from two tables using a join on a primary key id in SQL
-- Can select a subset of a table using a join in SQL
-- Can describe the difference between a left, right, inner and outer joins in SQL
-- Can define a table with a auto sequencing primary key in SQL
+- Can describe `primary key` in SQL
+- Can describe `foreign key` in SQL
+- Can use `select` statement to return everything from a single table in SQL
+- Can use `select` statement to return specific columns from a single table in SQL
+- Can use `where` clause to return a subset of the rows in a table in SQL
+- Can use `join` clause to join two tables on a primary key id in SQL
+- Can use `limit` clause to select a subset of a rows in SQL
+- Can describe the difference between a `left`, `right`, `inner` and `outer` joins in SQL
+- Can use `serial` keyword to define a table with a auto sequencing primary key in SQL
 
 ___Note:__ all of the skills above are applicable to any SQL server but we're
 practicing them in postgresql_
@@ -25,6 +27,7 @@ postgresql create table
 postgresql sql beginner OR intro OR tutorial
 postgresql joins intro OR tutorial
 sql joins intro OR tutorial
+postgres autoincrement integer column
 ```
 
 ## Resources
