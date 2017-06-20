@@ -34,6 +34,7 @@ body > .footer {
   position: relative;
   overflow-x: auto;
   background-color: white;
+  padding-top: 15px;
   padding-bottom: 5em;
 }
 
@@ -160,11 +161,18 @@ ul.skills > li > label > input[type="checkbox"] {
 }
 
 .markdown-body{
-  padding-top: 15px;
+
 }
 .markdown-body > *:first-child {
   margin-top: 0 !important;
 }
+
+.markdown-body img {
+  max-width: 100%;
+  box-sizing: content-box;
+  background-color: #fff;
+}
+
 .markdown-body .highlight pre, .markdown-body pre {
   padding: 16px;
   overflow: auto;
