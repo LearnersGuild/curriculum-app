@@ -1,6 +1,6 @@
 const util = require('util')
 const path = require('path')
-const fs = require('fs')
+const fs = require('fs-extra')
 const renderMarkdown = require('./renderMarkdown')
 const escapeHTML = require('jade').runtime.escape
 
@@ -28,6 +28,14 @@ module.exports = app => {
     )
   }
 
+  app.ensureTrailingSlash = (request, response, next) => {
+    if (!request.path.match(/\/$/)){
+      response.redirect(request.path+'/')
+    }else{
+      next()
+    }
+  }
+
   app.use((request, response, next) => {
 
     response.path = request.url
@@ -48,21 +56,51 @@ module.exports = app => {
       response.renderError(error)
     }
 
+    response.renderFile = function(relativePath){
+      if (relativePath.match(/README\.md$/)){
+        return response.redirect(relativePath.replace(/README\.md$/, ''))
+      }
+      if (relativePath.match(/\.md$/)){
+        return response.renderMarkdownFile(relativePath)
+      }
+      const absolutePath = path.resolve(__dirname, '..', '.'+relativePath)
+
+      fs.readdir(absolutePath)
+        .then(files => {
+          if (!request.path.match(/\/$/)){
+            response.redirect(request.path+'/')
+          }else{
+            if (files.includes('README.md')){
+              response.renderMarkdownFile(relativePath+'/README.md')
+            }else{
+              response.render('directory', {files})
+            }
+          }
+        })
+        .catch(error => {
+          if (error.message.includes('ENOENT')){
+            return response.renderNotFound()
+          }
+          if (error.message.includes('ENOTDIR')){
+            return response.sendFile(absolutePath)
+          }
+          response.renderError(error)
+        })
+    }
+
     response.renderMarkdownFile = function(relativeFilePath=request.path){
       const absoluteFilePath = path.resolve(__dirname, '..', '.'+relativeFilePath)
-      fs.readFile(absoluteFilePath, (error, file) => {
-        if (error){
+      fs.readFile(absoluteFilePath)
+        .then(file => {
+          response.renderMarkdown(file.toString())
+        })
+        .catch(error => {
           if (error.message.includes('ENOENT')){
             response.renderNotFound()
-          }else if (error.message.includes('EISDIR')){
-            response.renderMarkdownFile(request.path+'/README.md')
           }else{
             response.renderServerError(error)
           }
-          return
-        }
-        response.renderMarkdown(file.toString())
-      })
+        })
     }
 
     response.renderMarkdown = function(markdown){

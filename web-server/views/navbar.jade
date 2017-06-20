@@ -24,7 +24,7 @@ nav.navbar.navbar-inverse(role='navigation')
           ul.dropdown-menu(role='menu')
             each phase in digest.phases
               li
-                a(href='/phases/'+phase.number) Phase #{phase.number}
+                a(href='/phases/'+phase.number+'/') Phase #{phase.number}
 
         li.dropdown
           a.dropdown-toggle(href='#', data-toggle='dropdown')
@@ -34,7 +34,7 @@ nav.navbar.navbar-inverse(role='navigation')
             each module, id in digest.modules
               - className = currentModule && currentModule.id == module.id ? 'dropdown-menu-current' : ''
               li(class=className)
-                a(href='/modules/'+id)= module.name
+                a(href='/modules/'+id+'/')= module.name
 
         li.dropdown
           a.dropdown-toggle(href='#', data-toggle='dropdown')

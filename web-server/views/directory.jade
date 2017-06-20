@@ -1,0 +1,8 @@
+extends layout
+
+block content
+
+  ul
+    for file in files
+      li
+        a(href=file)= file

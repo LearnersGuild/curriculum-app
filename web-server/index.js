@@ -25,6 +25,10 @@ require('./routes/guide')(app)
 require('./routes/phases')(app)
 require('./routes/modules')(app)
 
+app.get('/', (request, response, next) => {
+  response.renderMarkdownFile(`/README.md`)
+})
+
 const server = app.listen(process.env.PORT, () => {
   console.log('http://localhost:'+process.env.PORT)
 })

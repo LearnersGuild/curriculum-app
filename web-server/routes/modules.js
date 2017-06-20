@@ -2,6 +2,12 @@ const queries = require('../../database/queries')
 
 module.exports = app => {
 
+  app.get('/modules', app.ensureTrailingSlash, (request, response, next) => {
+    response.renderMarkdownFile(`/modules/README.md`)
+  })
+
+  app.get('/modules/:moduleName', app.ensureTrailingSlash)
+
   app.use('/modules/:moduleName', (request, response, next) => {
     const user_id = request.user.id
     const { moduleName } = request.params
@@ -30,13 +36,13 @@ module.exports = app => {
       .catch(next)
   })
 
-  app.get(/.*$/, (request, response, next) => {
-    const path = request.path
-    if (!/(\/|\.md)$/.test(path)){
-      response.redirect(path+'/')
-    }else{
-      response.renderMarkdownFile()
-    }
+  app.get('/modules/:moduleName', (request, response, next) => {
+    const { moduleName } = request.params
+    response.renderMarkdownFile(`/modules/${moduleName}/README.md`)
+  })
+
+  app.get('/modules/:moduleName/*', (request, response, next) => {
+    response.renderFile(request.path)
   })
 
 }

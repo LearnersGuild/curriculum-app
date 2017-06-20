@@ -2,10 +2,17 @@ const queries = require('../../database/queries')
 
 module.exports = app => {
 
+  app.get('/phases/:phaseNumber', app.ensureTrailingSlash)
+
   app.use('/phases/:phaseNumber', (request, response, next) => {
     const phaseNumber = Number.parseInt(request.params.phaseNumber)
     response.locals.phase = response.phase = response.digest.phases[phaseNumber]
     next()
+  })
+
+  app.get('/phases/:phaseNumber', (request, response, next) => {
+    const { phaseNumber } = request.params
+    response.renderMarkdownFile(`/phases/${phaseNumber}/README.md`)
   })
 
   app.get('/phases/:phaseNumber/skills', (request, response, next) => {
@@ -25,4 +32,7 @@ module.exports = app => {
     response.render('phases/goals')
   })
 
+  app.get('/phases/:phaseNumber/*', (request, response, next) => {
+    response.renderFile(request.path)
+  })
 }
