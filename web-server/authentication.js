@@ -8,21 +8,28 @@ if ( !process.env.JWT_PUBLIC_KEY ) {
 module.exports = app => {
   app.use(addUserToRequestFromJWT)
 
-  // redirect to login if not logged in
-  app.use((req, res, next) => {
-    req.completeUrl = `${req.protocol}://${req.get('host')}${req.originalUrl}`
-    if (req.user) return next()
-    res.redirect(
-      `${process.env.IDM_BASE_URL}/sign-in?redirect=${encodeURIComponent(req.completeUrl)}`
-    )
+  app.use((request, response, next) => {
+    const { user } = request
+    if (!user){
+      const completeUrl = `${request.protocol}://${request.get('host')}${request.originalUrl}`
+      response.redirect(
+        `${process.env.IDM_BASE_URL}/sign-in?redirect=${encodeURIComponent(completeUrl)}`
+      )
+      return
+    }
+    if (user.roles.includes('staff') || user.roles.includes('coach')){
+      return next()
+    }
+    response.status(401).send('Unauthorized')
   })
 
-  app.use((req, res, next) => {
-    res.locals.user = req.user
-    res.locals.logoutUrl = `${process.env.IDM_BASE_URL}/auth/sign-out?redirect=${encodeURIComponent(req.completeUrl)}`
-    req.queryIdm = function(query, variables={}){
-      return idmGraphQLFetch({query, variables}, req.cookies.lgJWT)
+  app.use((request, response, next) => {
+    response.locals.user = request.user
+    response.locals.logoutUrl = `${process.env.IDM_BASE_URL}/auth/sign-out?redirect=${encodeURIComponent(request.completeUrl)}`
+    request.queryIdm = function(query, variables={}){
+      return idmGraphQLFetch({query, variables}, request.cookies.lgJWT)
     }
     next()
   })
+
 }

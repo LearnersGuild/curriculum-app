@@ -16,12 +16,6 @@ app.use(require('cookie-parser')())
 app.use('/assets', express.static(__dirname+'/assets'))
 
 require('./authentication')(app)
-
-app.use((request, response, next) => {
-  if (request.user.roles.includes('staff')) return next()
-  response.status(401).send('Unauthorized')
-})
-
 require('./routes/api')(app)
 require('./helpers')(app)
 require('./routes/digest')(app)
