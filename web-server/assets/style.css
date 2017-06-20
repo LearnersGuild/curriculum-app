@@ -107,6 +107,9 @@ ul > li {
   margin-left: 1em;
 }
 
+.dropdown-toggle > .caret {
+  margin-left: 0.25em;
+}
 
 .list-item-with-checkbox{
   list-style: none;
