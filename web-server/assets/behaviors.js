@@ -26,6 +26,13 @@
 
   if (onModulePage) $(() => {
     const skills = JSON.parse($('.skills-data').val() || '[]')
+
+    // HACK encoding fix
+    // jQuery seems to decode & encoded characters but leaves html intact. weird
+    skills.forEach(skill => {
+      skill.html = $('<div>').html(skill.html).html()
+    })
+
     const lis = $('.markdown-body li').filter((index, li) => {
       li = $(li)
       const html = li.html()
