@@ -7,7 +7,14 @@
 
 ## Exercise
 
-Complete the functions provided in the file [contacts.js](./contacts.js).
+In this benchmark module, you will be writing functions to load a list of contacts, and print them out in the console. A [file](./contacts.js) with some scaffolding has already been provided for you.
+
+Complete the functions provided, such that all the specs are met.
+
+## Specs
+
+- Contacts printed in the console must be sorted by first and last name
+- functions `addContact`, `addContacts` and `printContacts` have been implmented
 
 Executing the file should print the following:
 ```
@@ -41,8 +48,3 @@ All Contacts:
 | Winston Hixley       | whixleyj@homestead.com         |
 |----------------------+--------------------------------|
 ```
-
-## Specs
-
-- Contacts must be sorted by first and last name
-- functions `addContact`, `addContacts` and `printContacts` have been implmented
