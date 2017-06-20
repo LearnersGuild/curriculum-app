@@ -30,11 +30,16 @@ write file synchronously node js
 ### Reading
 
 - https://nodejs.org/api/fs.html
+- http://stackabuse.com/read-files-with-node-js/
+- [How to parse a JSON file](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON/parse)
+- https://www.tutorialspoint.com/nodejs/nodejs_file_system.htm
 
 ### Watching
 
 - https://www.youtube.com/watch?v=U57kU311-nE
-
+- 2 part video
+  - read files https://www.youtube.com/watch?v=XFRQHhKTutI
+  - write files https://www.youtube.com/watch?v=FRE8N-XfszI
 
 
 ## Exercises
