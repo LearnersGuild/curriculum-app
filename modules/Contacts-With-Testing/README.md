@@ -5,6 +5,16 @@
 
 This benchmark builds on the [3-2-1-Contacts](../3-2-1-Contacts) benchmark that you may have completed earlier. In this benchmark you will be adding some additional functionality and tests to the code you have written earlier
 
+## Specs
+
+- `addContact` function should check if the `firstName`, `lastName` & `email` addresses are strings
+  - if either of those arguments are NOT strings, the function should throw an error
+- `addContacts` function should catch errors thrown by `addContact` function, and continue processing the remaining contacts.
+  - The function should maintain the list of contacts that failed to be loaded, and should print a warning to the console about the failed imports.
+- Test `addContact` and `addContacts` using `console.assert`.
+
+Modify the [file](./contacts-with-testing.js) so that all the specs are met.
+
 Executing the file should print the following to the console:
 ```
 $ node contacts-with-testing.js
@@ -37,11 +47,3 @@ First: Virgina , Last: Cankett , Email: true
 First: Willdon , Last: 22, Email: whedleyd@purevolume.com
 
 ```
-
-## Specs
-
-- `addContact` function should check if the `firstName`, `lastName` & `email` addresses are strings
-  - if either of those arguments are NOT strings, the function should throw an error
-- `addContacts` function should catch errors thrown by `addContact` function, and continue processing the remaining contacts.
-  - The function should maintain the list of contacts that failed to be loaded, and should print a warning to the console about the failed imports.
-- Test `addContact` and `addContacts` using `console.assert`.
