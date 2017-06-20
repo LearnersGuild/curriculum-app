@@ -1,20 +1,18 @@
 # HTTP Authentication
 
-In this benchmark goal you're going to build an express HTTP server that allows
-users to signup, login and logout if your application. Your http routes will be
-able to render different information depending on if the request is from an
-unknown visitor or a logged in user.
+In this benchmark goal you're going to build an Express HTTP server that allows users to signup, login and logout of your application.
 
-There are a ton of specs you need to build so make sure you break each problem
-down into smaller steps you can take sequentially.
+Your HTTP routes will be able to render different information depending on whether the request is from an unknown visitor or a logged in user.
+
+There are a ton of specs you need to build so make sure you break each problem down into smaller steps you can take sequentially.
 
 ## Skills
 
-- Can build an HTTP server with Node and Express
-- Can track individual users with cookies
-- Can POST data to the server with a form
+- Can build a HTTP server with Node and Express
+- Can track individual users with HTTP cookies
+- Can make HTTP POST requests to a server with a form
 - Can store data in an HTTP cookie using Node and Express
-- Can designing a small SQL schema
+- Can implement a SQL schema by looking at the specs
 - Can use `pg-promise` to communicate to a postgresql server
 
 ## Specs
