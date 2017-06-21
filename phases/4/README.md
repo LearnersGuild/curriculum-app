@@ -4,7 +4,7 @@
 
 The software field -- and indeed, the world at large -- owes a great deal to the open source software community. Like most developers, members of Learners Guild benefit daily from the availability of countless freely available software tools and educational resources. We are committed to contributing to these efforts and resources as committers to (and even maintainers of) open source projects.
 
-In the **apprenticeship** phase, SEPs and learners will collaborate on contributions to OSS projects. SEPs will select proejcts and work with learners to identify appropriate issues to work on, and learners will be expected to submit pull requests to project maintainers.
+In the **apprenticeship** phase, SEPs and learners will collaborate on contributions to OSS projects and possibly on live, production systems like the LOS apps (echo, idm, etc.). SEPs will select projects and work with learners to identify appropriate issues to work on, and learners will be expected to submit pull requests to project maintainers.
 
 ## High Level Skills
 
@@ -25,10 +25,10 @@ SEPs will choose the projects to be worked on. These may be internally-developed
 
 Some examples of projects you may work on:
 
-- LOS: echo, idm
 - Ghost: https://github.com/tryghost/ghost
 - Free Code Camp: https://github.com/freeCodeCamp/freeCodeCamp
 - React Toolbox: https://github.com/react-toolbox/react-toolbox
+- LOS: echo, idm
 
 ## Support
 

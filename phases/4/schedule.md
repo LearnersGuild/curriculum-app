@@ -8,4 +8,3 @@
 ## Daily Events
 
 - 9am: standup (via Slack)
-- 9:30am: code reviews
