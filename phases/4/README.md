@@ -2,22 +2,26 @@
 
 ## Description
 
-The software field -- and indeed, the world at large -- owe a great deal to the open source software community. Like most developers, members of Learners Guild benefit daily from the availability of countless freely available software tools and educational resources. We are committed to contributing to these efforts and resources as committers to (and even maintainers of) open source projects.
+The software field -- and indeed, the world at large -- owes a great deal to the open source software community. Like most developers, members of Learners Guild benefit daily from the availability of countless freely available software tools and educational resources. We are committed to contributing to these efforts and resources as committers to (and even maintainers of) open source projects.
 
-In the **apprenticeship** phase, SEPs and learners will collaborate on contributions to OSS projects. SEPs will work with learners to identify appropriate issues to work on, and learners will be expected to submit pull requests to project maintainers.
+In the **apprenticeship** phase, SEPs and learners will collaborate on contributions to OSS projects. SEPs will select proejcts and work with learners to identify appropriate issues to work on, and learners will be expected to submit pull requests to project maintainers.
 
 ## High Level Skills
 
-- Looking under the hood: understanding how popular OSS tools work
-- Being a good contributor: understanding OSS best practices
-- Being able to adapt to the style of an existing codebase
-- Using complex branching strategies
-- Developing elegant, maintainable solutions to complex problems
-- Devops for live production deployments
+In this phase you will learn…
+
+- How to "look under the hood" and understand how larger applications and systems work
+- How to be a good contributor: understand OSS (open source software) best practices
+- Adapting to the style and conventions of an existing codebase
+- Advanced git and GitHub (e.g. complex branching strategies)
+- How to develop elegant, maintainable solutions to complex problems
+- DevOps for live production deployments
+- More advanced debugging and problem-solving skills
+- How to collaborate on a team and use basic project-management tools
 
 ## Projects
 
-SEPs will choose the projects to be worked on. These may be internal tools, or external projects.
+SEPs will choose the projects to be worked on. These may be internally-developed tools, or external projects.
 
 Some examples of projects you may work on:
 
@@ -28,7 +32,7 @@ Some examples of projects you may work on:
 
 ## Support
 
-In phase 4, learners can expect to be working closely with an SEP throughout the week. SEPs will spend time pairing with learners on the development of solutions for issues in an OSS project’s repo (typically hosted on github). In the course of working on an open issue (either a bug fix, feature, or chore), SEPs will support learners in one or more of the following ways:
+In phase 4, learners can expect to be working closely with an SEP throughout the week. In the course of working on an open issue (either a bug fix, feature, or chore), SEPs will support learners in one or more of the following ways:
 
 - Reviewing learners' code thoroughly, offering suggestions and feedback
 - Doing live code reviews for all learners to observe and particpate in
