@@ -17,10 +17,7 @@ module.exports = app => {
       )
       return
     }
-    if (user.roles.includes('staff') || user.roles.includes('coach')){
-      return next()
-    }
-    response.status(401).send('Unauthorized')
+    next()
   })
 
   app.use((request, response, next) => {
