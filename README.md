@@ -1,6 +1,6 @@
 # Curriculum
 
-The Curriculum for Phase 1 and Phase 2 are broken up into [Modules](./modules).
+The Curriculum for Phase 1 and Phase 2 is broken up into [Modules](./modules).
 
 ## Phases
 
