@@ -7,7 +7,7 @@ create and run custom shell commands. To do this you will need to:
 2. Put executable files in that directory
 
 _If you want to push yourself in this exercise, skip the guide below and see if
-you can complete this exercise but just googling how to do it._
+you can complete this exercise by just googling how to do it._
 
 ## Completion Criteria
 
