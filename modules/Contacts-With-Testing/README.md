@@ -19,27 +19,27 @@ Executing the file should print the following to the console:
 ```
 $ node contacts-with-testing.js
 
-|----------------------+--------------------------------|
-| Full Name            | Email Address                  |
-|----------------------+--------------------------------|
-| Ambrose Scullard     | ascullard6@timesonline.co.uk   |
-| Charil Clegg         | cclegge@weibo.com              |
-| Conroy Honsch        | chonsch3@sohu.com              |
-| Devon Bocking        | dbockingc@comcast.net          |
-| Didi Grose           | dgroseh@google.com.hk          |
-| Engracia Folger      | efolger2@epa.gov               |
-| Karita Bough         | kbough9@angelfire.com          |
-| Marguerite Lafayette | mlafayettea@bravesites.com     |
-| Mateo Da Costa       | mdacosta5@about.com            |
-| Mercy Browncey       | mbrownceyg@yelp.com            |
-| Nessi Bywaters       | nbywatersf@shop-pro.jp         |
-| Niccolo Spruce       | nsprucei@wordpress.com         |
-| Northrop Bauchop     | nbauchopb@pagesperso-orange.fr |
-| Pier Waine           | pwaine8@unc.edu                |
-| Shaylah Fairney      | sfairney7@stumbleupon.com      |
-| Tanny Vibert         | tvibert0@illinois.edu          |
-| Winston Hixley       | whixleyj@homestead.com         |
-|----------------------+--------------------------------|
+|------------------------------------------------------|
+| Full Name (Email Address)
+|------------------------------------------------------|
+| Ambrose Scullard (ascullard6@timesonline.co.uk)
+| Charil Clegg (cclegge@weibo.com)
+| Conroy Honsch (chonsch3@sohu.com)
+| Devon Bocking (dbockingc@comcast.net)
+| Didi Grose (dgroseh@google.com.hk)
+| Engracia Folger (efolger2@epa.gov)
+| Karita Bough (kbough9@angelfire.com)
+| Marguerite Lafayette (mlafayettea@bravesites.com)
+| Mateo Da Costa (mdacosta5@about.com)
+| Mercy Browncey (mbrownceyg@yelp.com)
+| Nessi Bywaters (nbywatersf@shop-pro.jp)
+| Niccolo Spruce (nsprucei@wordpress.com)
+| Northrop Bauchop (nbauchopb@pagesperso-orange.fr)
+| Pier Waine (pwaine8@unc.edu)
+| Shaylah Fairney (sfairney7@stumbleupon.com)
+| Tanny Vibert (tvibert0@illinois.edu)
+| Winston Hixley (whixleyj@homestead.com)
+|------------------------------------------------------|
 
 Could not import 3 contacts.
 First: 55 , Last: Myall, Email: tmyall1@instagram.com
