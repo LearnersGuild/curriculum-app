@@ -48,11 +48,3 @@ In this phase you will learn…
 - 🤸 [Static HTTP Server](../../modules/Static-HTTP-Server)
 - 🏋 [Clone Caviar](../../modules/Clone-Caviar)
 
-## Support
-
-- answering question in phase slack channel
-- help escalations
-- 2, lectures a week
-- 2, 1 hour AMAs' a week
-- async code reviews for integrated practice projects (48 hour turnaround)
-
