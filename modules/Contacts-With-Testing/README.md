@@ -46,3 +46,5 @@ First: Virgina , Last: Cankett , Email: true
 First: Willdon , Last: 22, Email: whedleyd@purevolume.com
 
 ```
+
+[solution](./contacts-with-testing-solution.js)
