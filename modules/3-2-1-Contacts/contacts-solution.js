@@ -14,18 +14,18 @@ const addContacts = function(contactData) {
 
 const printContacts= function(contacts) {
   console.log('All Contacts:');
-  console.log('|----------------------+--------------------------------|');
-  console.log('| Full Name            | Email Address                  |');
-  console.log('|----------------------+--------------------------------|');
+  console.log('|------------------------------------------------------|');
+  console.log('| Full Name (Email Address)');
+  console.log('|------------------------------------------------------|');
   contacts.sort(function(a, b) {
     if(a.fullName < b.fullName) return -1;
     if(a.fullName > b.fullName) return 1;
     return 0;
   })
   for (var i=0; i<contacts.length; i++) {
-    console.log('| '+contacts[i].fullName+'    | '+contacts[i].email+'    |');
+    console.log('| '+contacts[i].fullName+' ('+contacts[i].email+')');
   }
-  console.log('|----------------------+--------------------------------|');
+  console.log('|------------------------------------------------------|');
 }
 
 ///////////////////////////////////////////////////////////////////////////
