@@ -1,5 +1,7 @@
 # Phase 1 Schedule
 
+__WARNING__ this is in draft and is subject to change
+
 ### Monday 2017/06/26
 
 ```

@@ -56,7 +56,3 @@ In this phase you will learn…
 - 2, 1 hour AMAs' a week
 - async code reviews for integrated practice projects (48 hour turnaround)
 
-
-## Schedule
-
-Checkout the [Phase 1 Schedule](./schedule.md)
