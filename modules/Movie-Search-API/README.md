@@ -11,7 +11,7 @@
 
 ## Description
 
-Create a Movie Search API which uses Express, and fetches movies from IMDB API.
+Create a Movie Search API which uses Express, and fetches movies from IMDB.
 
 The api should have the following routes
 ```
@@ -20,8 +20,9 @@ response: {"movies": [{name: "<movie-name>", year: "<year-released>"}]}
 ```
 
 ## Specs
-- [ ] express server adhering to the API
+- [ ] app uses Express to handle API requests
 - [ ] http requests to IMDB are made using [request-promise](https://github.com/request/request-promise)
+- [ ] use the [cheerio library](https://github.com/cheeriojs/cheerio) to extract contents from the HTML page.
 - [ ] response header `content-type` is `application/json`
 
 ## Example requests

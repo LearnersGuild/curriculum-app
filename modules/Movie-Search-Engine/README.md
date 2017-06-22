@@ -10,7 +10,7 @@
 
 ## Exercise
 
-Implement a full stack web application which helps you search for a movie using the IMDB API.
+Implement a full stack web application which helps you search for a movie using data scraped from IMDB.
 
 The web app lets a user signup, login, and search for movies.
 
