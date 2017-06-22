@@ -4,7 +4,7 @@
 
 - Can write a Node script that parses complex command line arguments
 - Can write a complex Node script with modular organization of the code
-- Can use `fs.readFileSync` to read from a file in Node
+- Can require a `json` file to read from in Node
 - Can use `fs.writeFileSync` to write to a file in Node
 - Can write unit tests with mocha in Node
 
@@ -12,7 +12,7 @@
 
 Design a todo-list which manages your tasks from the command line. It should maintain a task list, allowing you to add, list and complete your tasks.
 
-The tasks should be saved to a file called `tasks.json`. Use the command `fs.readFileSync` to save the tasks to the file. Read the documentation [here](https://nodejs.org/api/fs.html#fs_fs_readfilesync_path_options)
+The tasks should be saved to a file called `tasks.json`. Use the command `fs.writeFileSync` to save the tasks to the file. Read the documentation [here](https://nodejs.org/api/fs.html#fs_fs_readfilesync_path_options)
 
 The following commands should be supported by your node script:
 
@@ -24,7 +24,7 @@ The following commands should be supported by your node script:
 
 
 ## Specs:
-- Tasks are persisted to a `json` file using `fs.readFileSync`
+- Tasks are persisted to a `json` file using `fs.writeFileSync`
 - Node script `task.js` is used to manage the tasks. (See example usage below)
 - `list` command has been implemented in a file located at `commands/list.js`
 - `add` command has been implemented in a file located at `commands/add.js`
@@ -80,5 +80,3 @@ ID Description
 
 2 tasks.
 ```
-
-
