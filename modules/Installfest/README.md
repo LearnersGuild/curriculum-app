@@ -18,7 +18,6 @@ Using `brew` and `brew cask` install the following packages:
 
 ```
 google-chrome
-sublime-text
 atom
 git
 iterm2
@@ -48,7 +47,7 @@ xcode command line tools
 ```
 install homebrew
 install atom via homebrew
-install postgresl via homebrew
+install postgresql via homebrew
 ```
 
 ## Potential Resources
