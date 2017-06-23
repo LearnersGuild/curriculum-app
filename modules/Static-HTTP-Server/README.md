@@ -31,4 +31,4 @@ serving static files express
 
 ## Exercises
 
-- [Static Server](./exercises/Static-Server/README.md)
+- [Static Server](./Static-Server/README.md)
