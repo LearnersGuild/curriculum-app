@@ -4,6 +4,11 @@ var list = require('./commands/list');
 var add = require('./commands/add');
 var done = require('./commands/done')
 
+// check if the json file exists, if not, create file and initilize with tasks object
+if (!fs.existsSync("./tasks.json")) {
+  fs.openSync("./tasks.json", 'w');
+  fs.writeFileSync("./tasks.json",'{ "tasks": []}')
+}
 
 var taskjson = JSON.parse(fs.readFileSync("./tasks.json"))
 var tasks = taskjson.tasks;
@@ -23,9 +28,8 @@ function parseArgs(args){
         done(args[1], tasks);
       break;
     default:
-      list(tasks);
+      console.log("Enter a command. Commands are: list, add, and done.");;
   }
 }
 
-var todoArgs = Array.prototype.slice.call(process.argv, 2);
-parseArgs(todoArgs);
+parseArgs(process.argv.slice(2));

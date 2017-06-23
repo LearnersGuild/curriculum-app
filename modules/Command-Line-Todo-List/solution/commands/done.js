@@ -3,9 +3,9 @@ var fs = require('fs');
 function writeTasks(tasks){
   try{
     fs.writeFileSync("./tasks.json",'{ "tasks":' + JSON.stringify(tasks) + '}')
-  } catch (err) {
-    throw err;
-    process.exit();
+  } catch (error) {
+    console.error(error)
+    process.exit(1)
   }
 }
 
