@@ -1,8 +1,11 @@
+var fs = require('fs');
+
 var list = require('./commands/list');
 var add = require('./commands/add');
 var done = require('./commands/done')
 
-var taskjson = require('./tasks.json');
+
+var taskjson = JSON.parse(fs.readFileSync("./tasks.json"))
 var tasks = taskjson.tasks;
 
 // parse args

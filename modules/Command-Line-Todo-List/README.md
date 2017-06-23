@@ -5,6 +5,7 @@
 - Can write a Node script that parses complex command line arguments
 - Can write a complex Node script with modular organization of the code
 - Can require a `json` file to read from in Node
+- Can use `fs.readFileSync` to read to a file in Node
 - Can use `fs.writeFileSync` to write to a file in Node
 - Can write unit tests with mocha in Node
 
