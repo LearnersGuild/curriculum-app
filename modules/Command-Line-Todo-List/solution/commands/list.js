@@ -5,7 +5,7 @@ var list = function(tasks){
   tasks.forEach(function(item,num){
     if (item.status !== "complete") {
       numUncompletedTasks++
-      console.log(num+1+"  "+item.name);
+      console.log(num+"  "+item.name);
     }
   });
   console.log("\n" + numUncompletedTasks + " tasks.");
