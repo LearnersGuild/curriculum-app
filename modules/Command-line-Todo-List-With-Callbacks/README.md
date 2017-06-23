@@ -3,10 +3,13 @@
 ## Skills
 
 - Can use `fs.readFile` to read a file in Node
+- Can use `fs.writeFile` to read a file in Node
 - Can read from and write to files in Node
 - Can write unit tests with mocha in Node
 
 ## Description
+
+This exercise is similar to the [Command Line Todo List](https://curriculum.learnersguild.org/modules/Command-Line-Todo-List/) from phase 1. The difference is that we're moving from `fs.readFileSync` & `fs.writeFileSync` to `fs.readFile` & `fs.writeFile` requiring you to use callbacks and async code flow control. 
 
 Design a todo-list which manages your tasks from the command line. It should maintain a task list, allowing you to add, list and complete your tasks.
 
