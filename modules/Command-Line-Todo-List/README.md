@@ -25,13 +25,14 @@ The following commands should be supported by your node script:
 
 
 ## Specs:
-- Tasks are persisted to a `json` file using `fs.writeFileSync`
-- Node script `task.js` is used to manage the tasks. (See example usage below)
-- `list` command has been implemented in a file located at `commands/list.js`
-- `add` command has been implemented in a file located at `commands/add.js`
-- `done` command has been implemented in a file located at `commands/done.js`
-- Add tests using Mocha and Chai for all functions
-- User receives an error message if they enter an invalid command
+- [ ] Tasks are read from a `json` file using `fs.readFileSync`
+- [ ] Tasks are persisted to a `json` file using `fs.writeFileSync`
+- [ ] Node script `task.js` is used to manage the tasks. (See example usage below)
+- [ ] `list` command has been implemented in a file located at `commands/list.js`
+- [ ] `add` command has been implemented in a file located at `commands/add.js`
+- [ ] `done` command has been implemented in a file located at `commands/done.js`
+- [ ] Add tests using Mocha and Chai for all functions
+- [ ] User receives an error message if they enter an invalid command
 
 ## Example Usage
 
