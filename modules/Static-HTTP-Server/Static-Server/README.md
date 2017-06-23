@@ -23,5 +23,5 @@ static
 - Navigating to `http://localhost:3000/about.html` should serve the file `static/pages/about.html`
 - Navigating to `http://localhost:3000/landing.html` should serve the file `static/pages/landing.html`
 - Navigating to `http://localhost:3000/css/main.css` should serve the file `static/assets/css/main.css`
-- Navigating to `http://localhost:3000/js/main.js` should serve the file `static/assets/js/main.css`
+- Navigating to `http://localhost:3000/js/main.js` should serve the file `static/assets/js/main.js`
 - Pages `about.html` and `landing.html` load the files `main.css` and `main.js`
