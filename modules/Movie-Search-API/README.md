@@ -41,3 +41,5 @@ GET /api/imdb/search/findingnemo
 
 Hints:
 - Sample IMDB search url : `http://www.imdb.com/find?ref_=nv_sr_fn&q=findingnemo&s=all`. Replace `findingnemo` with the dynamic search term.
+
+[solution](./solution/server.js)
