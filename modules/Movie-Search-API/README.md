@@ -13,7 +13,7 @@
 
 Create a Movie Search API which uses Express, and fetches movies from IMDB.
 
-The api should have the following routes
+The api should have the following route
 ```
 request: GET /api/imdb/search/:query
 response: {"movies": [{name: "<movie-name>", year: "<year-released>"}]}
@@ -24,6 +24,7 @@ response: {"movies": [{name: "<movie-name>", year: "<year-released>"}]}
 - [ ] http requests to IMDB are made using [request-promise](https://github.com/request/request-promise)
 - [ ] use the [cheerio library](https://github.com/cheeriojs/cheerio) to extract contents from the HTML page.
 - [ ] response header `content-type` is `application/json`
+- [ ] test your GET route with [Postman](https://www.getpostman.com/)
 
 ## Example requests
 
@@ -40,4 +41,3 @@ GET /api/imdb/search/findingnemo
 
 Hints:
 - Sample IMDB search url : `http://www.imdb.com/find?ref_=nv_sr_fn&q=findingnemo&s=all`. Replace `findingnemo` with the dynamic search term.
-
