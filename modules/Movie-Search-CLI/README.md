@@ -6,7 +6,7 @@ Write a Node.js script called `movie-search-cli.js` that takes a `search term` a
 
 Example usage
 ```
-$ node imdb.js "findingnemo"
+$ node movie-search-cli.js "findingnemo"
  Finding Nemo (2003)
  Finding Nemo (2003) (Video Game)
  Finding Nemo (2001) (TV Episode)
@@ -23,4 +23,3 @@ Specs:
 
 Hints:
 - IMDB search url for the example above : `http://www.imdb.com/find?ref_=nv_sr_fn&q=findingnemo&s=all`. Replace `findingnemo` with the dynamic search term.
-
