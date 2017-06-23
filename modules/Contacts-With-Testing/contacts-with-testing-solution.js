@@ -3,7 +3,7 @@ let errorContacts = []
 
 const addContact = function(firstName, lastName, email) {
   if (typeof firstName != "string" || typeof lastName != "string" || typeof email != "string"){
-    throw 'err'
+    throw new Error('First name, last name, and/or email are not strings.')
   }
   else {
     allContacts.push({fullName: firstName + " " + lastName, email: email})
