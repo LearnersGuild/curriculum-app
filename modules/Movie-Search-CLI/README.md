@@ -23,3 +23,5 @@ Specs:
 
 Hints:
 - IMDB search url for the example above : `http://www.imdb.com/find?ref_=nv_sr_fn&q=findingnemo&s=all`. Replace `findingnemo` with the dynamic search term.
+
+[solution](./solution/movie-search-cli.js)
