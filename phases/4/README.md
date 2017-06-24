@@ -30,6 +30,8 @@ Some examples of projects you may work on:
 - React Toolbox: https://github.com/react-toolbox/react-toolbox
 - LOS: echo, idm
 
+Work is selected by SEPs and tracked via the [Phase 4 Trello board][trello]. Join this board and the `#phase-4` Slack channel.
+
 ## Support
 
 In phase 4, learners can expect to be working closely with an SEP throughout the week. In the course of working on an open issue (either a bug fix, feature, or chore), SEPs will support learners in one or more of the following ways:
@@ -46,3 +48,5 @@ When a learner has a set of changes ready to be submitted to the project maintai
 ## Tracking
 
 As with phases 1, 2, and 5, weekly (cycle-based) project tracking for learners in phase 4 will happen automatically in the background. The assigned goal will be a generic Phase 4 goal. These projects will have retro surveys, and learners will be expected to set a project artifact.
+
+[trello]: https://trello.com/b/5y3fu6Xj/phase-4
