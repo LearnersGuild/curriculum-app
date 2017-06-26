@@ -22,7 +22,7 @@
 - Can write an executable bash script
 - Can and modify your shell's `$PATH`, in the terminal
 - Can redirect `STDOUT` to a file, in the terminal
-- Can describe UNIX command flags
+- Can use UNIX command flags and arguments
 - Can describe UNIX file permissions
 - Can get a file's permissions, in the terminal
 - Can set a file's permissions, in the terminal
