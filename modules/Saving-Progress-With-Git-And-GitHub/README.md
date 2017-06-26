@@ -15,6 +15,7 @@ In this module you'll learn to use just enough of Git and GitHub to create a new
 - Can use `git add`
 - Can use `git commit`
 - Can use `git push`
+- Can install and use the `hub` command
 
 ## Glossary of Terms
 
@@ -57,3 +58,4 @@ See: [Github Glossary](https://help.github.com/articles/github-glossary/)
 - [Learn Git Tutorial](https://www.atlassian.com/git/tutorials/learn-git-with-bitbucket-cloud)
 - [Try Git Tutorial](https://try.github.io/levels/1/challenges/1)
 - [Git-It Desktop App](https://github.com/jlord/git-it-electron)
+- [GitHub's `hub` command](https://hub.github.com/)
