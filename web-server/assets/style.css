@@ -38,14 +38,20 @@ body > .footer {
   padding-bottom: 5em;
 }
 
-.navbar-logo {`
-  color: #8c8c8c;
-  padding-top: 15px;
-  padding-bottom: 15px;
-}
-.navbar-logo > img {
+.navbar-logo {
+  display: block;
+  /*color: #8c8c8c;*/
   height: 50px;
   width: 50px;
+  background-image: url(https://brand.learnersguild.org/assets/learners-guild-logo-white.png);
+  background-repeat: no-repeat;
+  background-position: -30px 0;
+  background-size: 116px;
+}
+
+.footer{
+  background-color: #333;
+  border-color: #333;
 }
 
 .footer-logo {
