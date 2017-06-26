@@ -4,8 +4,8 @@
 ## Skills
 
 - Can describe shell environment variables
-- Can get a sell environment variable's value, in the terminal
-- Can set a sell environment variable's value, in the terminal
+- Can get a shell environment variable's value, in the terminal
+- Can set a shell environment variable's value, in the terminal
 - Can describe what the shell $PATH environment variable is used for
 - Can and modify your shell's `$PATH`, in the terminal
 - Can use the `echo` terminal command
@@ -17,6 +17,7 @@
 - Can use the `mkdir` terminal command
 - Can use the `rmdir` terminal command
 - Can use the `rm` terminal command
+- Can use the `mv` terminal command
 - Can use the `cp` terminal command
 - Can describe what a filesystem is
 - Can describe what a filesystem path is
