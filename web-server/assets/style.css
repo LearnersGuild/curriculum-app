@@ -1,3 +1,47 @@
+/*
+
+Brand Guide: https://drive.google.com/file/d/0Bze59erWerCebFhqU0RNQjBfWms/view
+
+Primary Colors
+
+#00A3DF Blue
+#97C93D Green
+#ED3F60 Red
+#F2BB1A Yellow
+
+
+Secondary Colors
+
+#4A539F Dark Blue
+#1B8C5C Dark Green
+#981C4D Dark Red
+#E47226 Orange
+
+
+Text and Background Colors
+
+#252531 Slate Gray
+#E2E3E4 Light Gray
+
+
+Header Fonts
+
+Stag Light
+Stag Medium
+Stag Bold
+
+Copy Fonts
+
+Proxima Nova
+
+
+Gray Dot Pattern
+
+??
+
+*/
+
+
 body {
   display: flex;
   min-height: 100vh;
