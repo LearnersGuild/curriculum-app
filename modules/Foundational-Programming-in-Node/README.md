@@ -11,6 +11,7 @@
 - Can understand and modify a Node `package.json` file
 - Can install and save Node packages as dependencies
 - Can require modules in Node
+- Can add `./node_modules/.bin` to your `$PATH`
 
 ## Google Search Terms
 
@@ -51,6 +52,6 @@ later.
 
 ## Excercises
 
-
+- [Add `./node_modules/.bin` to your `$PATH`](./exercises/add-node_modules-bin-to-your-path)
 - [Calculator](./exercises/Calculator)
 - [learnyounode](https://github.com/workshopper/learnyounode) __(only the first 3)__
