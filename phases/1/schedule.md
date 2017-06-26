@@ -5,80 +5,41 @@ __WARNING__ this is in draft and is subject to change
 ### Monday 2017/06/26
 
 ```
- 9:00am Phase Orientation (All Group Meeting)
-11:00am Free Work
-12:00pm Lunch
- 1:30pm Free Work
- 6:00pm Go home
+ 9:30am Phase Orientation (All Group Meeting)
+10:00am Office Hours (Jared & Trevor)
 ```
 
-### Tuesday 2017/06/27
+### Monday
 
 ```
- 9:00am Stand up
-10:00am Lecture
-11:00am Free Work
-12:00pm Lunch
- 1:30pm Free Work
- 6:00pm Go home
+ 9:00am Announcements
+11:00am Office Hours (Jared)
 ```
 
-### Wednesday 2017/06/28
+### Tuesday
 
 ```
- 9:00am Stand up
-10:00am Lecture
-11:00am Free Work
-12:00pm Lunch
- 1:30pm Free Work
- 6:00pm Go home
+ 9:00am Announcements
+10:00am Lecture / Live Coding (Jared)
 ```
 
-
-### Thursday 2017/06/29
-
-```
- 9:00am Stand up
-10:00am Lecture
-11:00am Free Work
-12:00pm Lunch
- 1:30pm Free Work
- 6:00pm Go home
-```
-
-
-### Friday 2017/06/30
+### Wednesday
 
 ```
- 9:00am Stand up
-10:00am Lecture
-11:00am Free Work
-12:00pm Lunch
- 1:30pm Free Work
- 4:00pm Ask Me Anything
- 6:00pm Go home
+ 9:00am Announcements
+11:00am Office Hours (Jared)
 ```
 
-
-
-### Monday 2017/07/03
+### Thursday
 
 ```
- 9:00am Standup
-10:00am Lecture
-12:00pm Lunch
- 1:30pm Free Work
- 6:00pm Go home
+ 9:00am Announcements
+10:00am Lecture / Live Coding (Jared)
 ```
 
-### Monday 2017/07/03
+### Friday
 
 ```
- 9:00am Standup
-10:00am Lecture
-12:00pm Lunch
- 1:30pm Free Work
- 6:00pm Go home
+ 9:00am Announcements
+11:00am Office Hours (Jared)
 ```
-
-

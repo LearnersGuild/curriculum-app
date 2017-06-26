@@ -42,3 +42,7 @@ In this phase you will learn…
 - 🤸 [Debugging with Chrome Developer Tools](../../modules/Debugging-with-Chrome-Developer-Tools)
 - 🤸 [AJAX](../../modules/AJAX)
 - 🏋 [Movie Search Engine](../../modules/Movie-Search-Engine)
+
+## Schedule
+
+[schedule](./schedule.md)
