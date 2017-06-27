@@ -2,10 +2,10 @@
 
 There are two types of modules:
 
-- 🤸 Practice Modules
-- 🏋 Benchmark Modules
+- _P:_ Practice Modules
+- _B:_ Benchmark Modules
 
-### 🤸 Practice modules
+### _P:_ Practice modules
 
 Practice modules are intended to help you focus on acquiring a
 specific set of skills. Each Practice module starts with a list of
@@ -32,7 +32,7 @@ teach yourself these kinds of skills in the future. Do your own google searches,
 learn to how find the answers you need, get the skills you need and move on.
 
 
-### 🏋 Benchmark Modules
+### _B:_ Benchmark Modules
 
 Benchmark Modules are intended to be used as a tool to test yourself for the
 skills the previous practice modules aimed to help you learn.
