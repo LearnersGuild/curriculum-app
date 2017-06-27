@@ -34,7 +34,8 @@ node parse xml
 ### Reading
 
 - https://en.wikipedia.org/wiki/Serialization
-
+- [Node API for fs.readFileSync()](https://nodejs.org/api/fs.html#fs_fs_readfilesync_path_options)
+- [TutorialsPoint article on Node.js Filesystem](https://www.tutorialspoint.com/nodejs/nodejs_file_system.htm)
 
 
 ## Exercises
