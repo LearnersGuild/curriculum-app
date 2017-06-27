@@ -25,7 +25,7 @@ There are a ton of specs you need to build so make sure you break each problem d
 - commit your schema in `schema.sql`
 - use the `express` node package
 - use the `body-parser` node package
-- use the `session-cookie` node package
+- use the `cookie-session` node package
 - use the `pg-promise` node package
 - implement the following user stories:
   - when you are not logged in

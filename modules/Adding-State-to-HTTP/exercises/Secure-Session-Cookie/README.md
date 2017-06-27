@@ -91,7 +91,7 @@ The express middleware should look for the session cookie and if present deseria
 
  the session cookie, if present, and makes a session object available at `request.session`
 
-Build a middleware that serializes a session object into a session cookie using JSON. look at `session-cookie` as a guide. Each route should have access to the deserialized session cookie object at `req.session`. The cookie needs to be updated on each request. Update the form to store the users name in the session cookie object under the key `user_name`
+Build a middleware that serializes a session object into a session cookie using JSON. look at `cookie-session` as a guide. Each route should have access to the deserialized session cookie object at `req.session`. The cookie needs to be updated on each request. Update the form to store the users name in the session cookie object under the key `user_name`
 
 
 ### Resources
