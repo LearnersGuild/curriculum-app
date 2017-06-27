@@ -45,4 +45,4 @@ git cheatsheet
 - Complete the `git.rocks` tutorial in the following sequence
   - http://git.rocks/advanced/
   - http://git.rocks/branches/
-- Complete the exercises [here](http://learngitbranching.js.org/)
+- Complete the exercises at [Learn Git Branching](http://learngitbranching.js.org/)
