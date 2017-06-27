@@ -6,22 +6,22 @@
 
 You've already seen a few of these commands in the previous exercise. Research the following commands and take notes about what they're used for.
 
-- [ ] cd
-- [ ] ls
-- [ ] cat
-- [ ] pwd
-- [ ] touch
-- [ ] mkdir
-- [ ] rmdir
-- [ ] rm
-- [ ] cp
-- [ ] open
+- cd
+- ls
+- cat
+- pwd
+- touch
+- mkdir
+- rmdir
+- rm
+- cp
+- open
 
 Read the following articles on BASH commands:
 
-- [ ] [Commands and Arguments](http://guide.bash.academy/commands/)
-- [ ] [Command Line Primer for Beginners](http://lifehacker.com/5633909/who-needs-a-mouse-learn-to-use-the-command-line-for-almost-anything)
-- [ ] [ShortcutFoo Command Line](https://www.shortcutfoo.com/app/dojos/command-line)
+- [Commands and Arguments](http://guide.bash.academy/commands/)
+- [Command Line Primer for Beginners](http://lifehacker.com/5633909/who-needs-a-mouse-learn-to-use-the-command-line-for-almost-anything)
+- [ShortcutFoo Command Line](https://www.shortcutfoo.com/app/dojos/command-line)
 
 ### Exercise
 

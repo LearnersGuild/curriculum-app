@@ -16,6 +16,6 @@
 ## Exercises
 
 - Complete the following sections in the [learnyouanode](https://github.com/workshopper/learnyounode) module
-  - [ ] HTTP Client
-  - [ ] HTTP Collect
+  - HTTP Client
+  - HTTP Collect
 - [Whats the Weather?](./exercises/Whats-The-Weather.md)

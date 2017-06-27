@@ -13,10 +13,10 @@ you can complete this exercise by just googling how to do it._
 
 You've completed this exercise when:
 
-- [ ] You have a directory somewhere on your system dedicated to custom shell
+- You have a directory somewhere on your system dedicated to custom shell
 commands. I recommend `~/bin`
-- [ ] There is at least one executable file within that directory
-- [ ] You can run a custom command from anywhere in a new terminal window
+- There is at least one executable file within that directory
+- You can run a custom command from anywhere in a new terminal window
 
 ## Search Terms
 

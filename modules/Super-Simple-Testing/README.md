@@ -54,7 +54,7 @@ console.assert(add(10, 5) === 15, 'expected add(10, 5) to return 15')
 
 ## Exercises
 
-- [ ] Pick some functions that you've written already and write some tests using `console.assert()` for them. Make sure to test both expected inputs/outputs as well as unexpected/invalid inputs.
+- Pick some functions that you've written already and write some tests using `console.assert()` for them. Make sure to test both expected inputs/outputs as well as unexpected/invalid inputs.
 
 ## Suggested Resources
 

@@ -17,9 +17,9 @@ $ node imdb.js "findingnemo"
 ```
 
 Specs:
-- [ ] use Node.js's `http` module to make a request to imdb.com
-- [ ] use the [cheerio library](https://github.com/cheeriojs/cheerio) to extract contents from the HTML page.
-- [ ] functions are tested with mocha and chai
+- use Node.js's `http` module to make a request to imdb.com
+- use the [cheerio library](https://github.com/cheeriojs/cheerio) to extract contents from the HTML page.
+- functions are tested with mocha and chai
 
 Hints:
 - IMDB search url for the example above : `http://www.imdb.com/find?ref_=nv_sr_fn&q=findingnemo&s=all`. Replace `findingnemo` with the dynamic search term.

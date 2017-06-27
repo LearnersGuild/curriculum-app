@@ -16,7 +16,7 @@ Temperature in Farenheit: 85.244
 ```
 
 Requirements:
-- [ ] Use Node.js's `http` module to make a request to http://api.openweathermap.com
+- Use Node.js's `http` module to make a request to http://api.openweathermap.com
 
 
 Hints:

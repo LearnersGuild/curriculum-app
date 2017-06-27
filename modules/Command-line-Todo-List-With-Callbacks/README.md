@@ -22,12 +22,12 @@ The following commands should be supported by your node script:
 
 
 ## Specs:
-- [ ] tasks are persisted to a `json` file using `fs.readFile`
-- [ ] node script `task.js` is used to manage the tasks.
-- [ ] `list` command has been implemented in a file located at `commands/list.js`
-- [ ] `add` command has been implemented in a file located at `commands/add.js`
-- [ ] `done` command has been implemented in a file located at `commands/done.js`
-- [ ] Add tests using Mocha and Chai for all functions
+- tasks are persisted to a `json` file using `fs.readFile`
+- node script `task.js` is used to manage the tasks.
+- `list` command has been implemented in a file located at `commands/list.js`
+- `add` command has been implemented in a file located at `commands/add.js`
+- `done` command has been implemented in a file located at `commands/done.js`
+- Add tests using Mocha and Chai for all functions
 
 
 ## Example Usage

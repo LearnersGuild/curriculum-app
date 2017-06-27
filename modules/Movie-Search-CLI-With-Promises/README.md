@@ -23,9 +23,9 @@ $ node imdb.js "findingnemo"
 ```
 
 Specs:
-- [ ] use the [request-promise](https://github.com/request/request-promise) library to make HTTP requests
-- [ ] use the [cheerio library](https://github.com/cheeriojs/cheerio) to extract contents from the HTML page.
-- [ ] functions are tested with mocha and chai
+- use the [request-promise](https://github.com/request/request-promise) library to make HTTP requests
+- use the [cheerio library](https://github.com/cheeriojs/cheerio) to extract contents from the HTML page.
+- functions are tested with mocha and chai
 
 
 Hints:

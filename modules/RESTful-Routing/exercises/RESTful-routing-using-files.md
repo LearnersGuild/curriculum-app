@@ -36,7 +36,7 @@ DELETE /api/quotes/1
 
 Additional Specs:
 
-- [ ] If you try to fetch/update/delete a quote with an `<id>` that does not exist, the response status code should be `404`.
+- If you try to fetch/update/delete a quote with an `<id>` that does not exist, the response status code should be `404`.
 
 
 

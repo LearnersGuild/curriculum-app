@@ -16,7 +16,7 @@
 
 ## Exercises
 
-- [ ] Complete the [Rebuild Common Components](./exercises/Rebuild-Common-Components.md) exercise
+- Complete the [Rebuild Common Components](./exercises/Rebuild-Common-Components.md) exercise
 
 ## Glossary of Terms
 

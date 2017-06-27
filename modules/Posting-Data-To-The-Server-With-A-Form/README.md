@@ -36,7 +36,7 @@ how to parse a body of a request express
 ### Part 1
 
 - Complete the following sections in the `Express Basics` course in [TeamTreeHouse](https://teamtreehouse.com/library/express-basics)
-  - [ ] Using Templates with Express
+  - Using Templates with Express
 
 ### Part 2
 

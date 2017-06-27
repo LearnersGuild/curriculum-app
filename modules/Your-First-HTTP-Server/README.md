@@ -39,8 +39,8 @@ simple express api tutorial
 ## Exercises
 
 - Complete the following sections in the `Express Basics` course in [TeamTreeHouse](https://teamtreehouse.com/library/express-basics)
-  - [ ] Getting Started with Express
-  - [ ] Developing Express Apps like a Boss
-  - [ ] The Request and Response Objects in Express
+  - Getting Started with Express
+  - Developing Express Apps like a Boss
+  - The Request and Response Objects in Express
 
 

@@ -4,11 +4,11 @@ Design the SQL schema for a music streaming service called Awaaz.
 
 ### The schema design should satisfy the following constraints:
 
-- [ ] An artist has a `name`, `date of birth`.
-- [ ] An artist can have many albums
-- [ ] An album has a `name` and a `release date`.
-- [ ] An album can have many songs
-- [ ] A song has a `name`, `length`
+- An artist has a `name`, `date of birth`.
+- An artist can have many albums
+- An album has a `name` and a `release date`.
+- An album can have many songs
+- A song has a `name`, `length`
 
 Create a file called `awaaz-music-streaming.sql` that contains the schema.
 

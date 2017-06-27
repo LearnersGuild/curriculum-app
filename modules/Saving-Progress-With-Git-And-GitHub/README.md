@@ -38,13 +38,13 @@ See: [Github Glossary](https://help.github.com/articles/github-glossary/)
 
 1. Follow the steps in `Setting up a repository` and `Saving Changes` in the following tutorial:
 
-- [ ] [Setting up a repository](https://www.atlassian.com/git/tutorials/setting-up-a-repository)
-- [ ] [Saving Changes](https://www.atlassian.com/git/tutorials/saving-changes)
+- [Setting up a repository](https://www.atlassian.com/git/tutorials/setting-up-a-repository)
+- [Saving Changes](https://www.atlassian.com/git/tutorials/saving-changes)
 
 ### Practice setting up a new repository on Github
 
 2. Follow the steps in this Github tutorial
-- [ ] [Create a Repository](https://guides.github.com/activities/hello-world/)
+- [Create a Repository](https://guides.github.com/activities/hello-world/)
 
 ## Resources
 

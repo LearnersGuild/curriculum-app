@@ -51,15 +51,15 @@ make the calculator work in stage 2.
 
 ### You're done when…
 
-- [ ] All text is in the [Roboto](https://fonts.google.com/specimen/Roboto) web font
-- [ ] Your `HTML` and `CSS` follows this [style guide](https://google.github.io/styleguide/htmlcssguide.xml)
-- [ ] The calculator is positioned in the center of the page, both vertically and horizontally
-- [ ] The calculator is a fixed size. It does not change in size when the page resizes.
-- [ ] If the window is too small for the calculator, the page scrolls, both vertically and horizontally
-- [ ] Each button has a CSS transition to slightly darken the background color on hover over 100ms
-- [ ] Each button has a CSS transition to slightly darken the background color on click over 100ms
-- [ ] All class names re: the calculator are name-spaced under `.calculator-…`
-- [ ] Your stylesheet contains little to no duplicate style declarations
+- All text is in the [Roboto](https://fonts.google.com/specimen/Roboto) web font
+- Your `HTML` and `CSS` follows this [style guide](https://google.github.io/styleguide/htmlcssguide.xml)
+- The calculator is positioned in the center of the page, both vertically and horizontally
+- The calculator is a fixed size. It does not change in size when the page resizes.
+- If the window is too small for the calculator, the page scrolls, both vertically and horizontally
+- Each button has a CSS transition to slightly darken the background color on hover over 100ms
+- Each button has a CSS transition to slightly darken the background color on click over 100ms
+- All class names re: the calculator are name-spaced under `.calculator-…`
+- Your stylesheet contains little to no duplicate style declarations
 
 ## Stage 2
 
@@ -88,38 +88,38 @@ In stage 2 you will be adding `JavaScript` to make the calculator work.
 
 ### You're done when…
 
-- [ ] Your `JavaScript` is written in `ES5`
-- [ ] Your `JavaScript` follows this [style guide](https://google.github.io/styleguide/jsguide.html)
-- [ ] Your JavaScript defines 1 or less global variables
-- [ ] Typing a relevant key at any point is reflected on the calculator
-- [ ] Typing a relevant key causes the corresponding button on the calculator to appear to have been pressed. AKA flashes active
-- [ ] The state of the calculator is not be stored in the `DOM`
-- [ ] The mathematical operations for your calculator are each their own function, and are defined outside of any DOM event handler
-- [ ] When the length of the number displayed exceeds the width available, the font-size deterministically drops
+- Your `JavaScript` is written in `ES5`
+- Your `JavaScript` follows this [style guide](https://google.github.io/styleguide/jsguide.html)
+- Your JavaScript defines 1 or less global variables
+- Typing a relevant key at any point is reflected on the calculator
+- Typing a relevant key causes the corresponding button on the calculator to appear to have been pressed. AKA flashes active
+- The state of the calculator is not be stored in the `DOM`
+- The mathematical operations for your calculator are each their own function, and are defined outside of any DOM event handler
+- When the length of the number displayed exceeds the width available, the font-size deterministically drops
 
 Calculator functionality and behavior is consistent with [Mac calculator rules](#calculator-rules-and-examples):
 
-- [ ] pressing `AC` displays `0`
-- [ ] pressing `AC` `8` `+/-` displays `-8`
-- [ ] pressing `AC` `-5` `+/-` displays `5`
-- [ ] pressing `AC` `99` `%` displays `0.99`
-- [ ] pressing `AC` `9` `+` `9` `-` `3` `=` displays `15`
-- [ ] pressing `AC` `6` `+` `=` displays `12`
-- [ ] pressing `AC` `4` `x` `4` `=` displays `16`
-- [ ] pressing `AC` `64` `+` `=` displays `128`
-- [ ] pressing `AC` `9` `+` displays `9`
-- [ ] pressing `AC` `8` `-` `5` `-` displays `3`
-- [ ] pressing `AC` `9` `-` `5` `+` displays `4`
-- [ ] pressing `AC` `9` `+` `9` `+` `+` `+` displays `18`
-- [ ] pressing `AC` `5` `+` `3` `x` `6` `+` displays `23`
-- [ ] pressing `AC` `9` `x` displays `9`
-- [ ] pressing `AC` `3` `x` `5` `x` displays `15`
-- [ ] pressing `AC` `6` `/` `3` displays `2`
-- [ ] pressing `AC` `3` `x` `4` `x` `x` `x` displays `12`
-- [ ] pressing `AC` `4` `+` `3` `x` `6` `x` displays `18`
-- [ ] pressing `AC` `3` `+` `5` `x` displays `5`
-- [ ] pressing `AC` `3` `+` `5` `x` `6` `x` displays `30`
-- [ ] pressing `AC` `3` `+` `5` `x` `6` `x` `2` `+` displays `63`
+- pressing `AC` displays `0`
+- pressing `AC` `8` `+/-` displays `-8`
+- pressing `AC` `-5` `+/-` displays `5`
+- pressing `AC` `99` `%` displays `0.99`
+- pressing `AC` `9` `+` `9` `-` `3` `=` displays `15`
+- pressing `AC` `6` `+` `=` displays `12`
+- pressing `AC` `4` `x` `4` `=` displays `16`
+- pressing `AC` `64` `+` `=` displays `128`
+- pressing `AC` `9` `+` displays `9`
+- pressing `AC` `8` `-` `5` `-` displays `3`
+- pressing `AC` `9` `-` `5` `+` displays `4`
+- pressing `AC` `9` `+` `9` `+` `+` `+` displays `18`
+- pressing `AC` `5` `+` `3` `x` `6` `+` displays `23`
+- pressing `AC` `9` `x` displays `9`
+- pressing `AC` `3` `x` `5` `x` displays `15`
+- pressing `AC` `6` `/` `3` displays `2`
+- pressing `AC` `3` `x` `4` `x` `x` `x` displays `12`
+- pressing `AC` `4` `+` `3` `x` `6` `x` displays `18`
+- pressing `AC` `3` `+` `5` `x` displays `5`
+- pressing `AC` `3` `+` `5` `x` `6` `x` displays `30`
+- pressing `AC` `3` `+` `5` `x` `6` `x` `2` `+` displays `63`
 
 ### Stage 3
 
@@ -144,9 +144,9 @@ In stage 3 you are going to add a second calculator to the page. Both calculator
 
 ### You're done when…
 
-- [ ] Each calculator acts independently.
-- [ ] Clicking anywhere on a calculator focuses that calculator.
-- [ ] Typing a relevant key affects the focused calculator.
-- [ ] Use event delegation to avoid binding a `click` event listener to each button
-- [ ] The focused calculator is `opacity: 1`
-- [ ] The not-focused calculator is `opacity: 0.5`
+- Each calculator acts independently.
+- Clicking anywhere on a calculator focuses that calculator.
+- Typing a relevant key affects the focused calculator.
+- Use event delegation to avoid binding a `click` event listener to each button
+- The focused calculator is `opacity: 1`
+- The not-focused calculator is `opacity: 0.5`

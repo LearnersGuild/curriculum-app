@@ -34,6 +34,6 @@
 
 ## Exercises
 
-- [ ] Complete the Object Oriented course on [TeamTreeHouse](https://teamtreehouse.com/library/objectoriented-javascript)
-- [ ] Complete the Object Oriented exercises on [FreeCodeCamp](https://www.freecodecamp.com/challenges/declare-javascript-objects-as-variables)
-- [ ] [TodoList](./exercises/Todo-List.md)
+- Complete the Object Oriented course on [TeamTreeHouse](https://teamtreehouse.com/library/objectoriented-javascript)
+- Complete the Object Oriented exercises on [FreeCodeCamp](https://www.freecodecamp.com/challenges/declare-javascript-objects-as-variables)
+- [TodoList](./exercises/Todo-List.md)
