@@ -20,7 +20,7 @@
 - Can use the `pbcopy` terminal command
 - Can use the `pbpaste` terminal command
 - Can write an executable bash script
-- Can modify your shell's `$PATH`, in the terminal
+- Can permanently modify your shell's `$PATH`, in the terminal
 - Can redirect `STDOUT` to a file, in the terminal
 - Can use UNIX command flags and arguments
 - Can describe UNIX file permissions

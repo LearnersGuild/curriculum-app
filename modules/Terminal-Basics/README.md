@@ -7,7 +7,7 @@
 - Can get a shell environment variable's value, in the terminal
 - Can set a shell environment variable's value, in the terminal
 - Can describe what the shell $PATH environment variable is used for
-- Can and modify your shell's `$PATH`, in the terminal
+- Can permanently modify your shell's `$PATH`, in the terminal
 - Can use the `echo` terminal command
 - Can use the `cd` terminal command
 - Can use the `ls` terminal command
