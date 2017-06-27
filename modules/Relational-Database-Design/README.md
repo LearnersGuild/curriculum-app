@@ -45,6 +45,6 @@ what is ACID
 
 ## Exercises
 
-- [Shopping Cart Schema Design](./exercises/Shopping-Cart-Schema-Design)
-- [Awaaz Music Service](./exercises/Awaaz-Music-Service)
-- [RelaxiTaxi Schema Design](./exercises/Taxi-Service-Schema-Design)
+- [Shopping Cart Schema Design](./exercises/Shopping-Cart-Schema-Design.md)
+- [Awaaz Music Service](./exercises/Awaaz-Music-Service.md)
+- [RelaxiTaxi Schema Design](./exercises/RelaxiTaxi-Schema-Design.md)
