@@ -79,6 +79,7 @@ unix viewing contents of a file
 - https://www.tutorialspoint.com/unix/
 - http://freeengineer.org/learnUNIXin10minutes.html
 - https://www.learnenough.com/command-line-tutorial
+- https://www.lynda.com/Mac-OS-X-10-6-tutorials/Unix-for-Mac-OS-X-Users/78546-2.html
 
 
 ## Exercises
