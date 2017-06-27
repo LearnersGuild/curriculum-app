@@ -2,6 +2,11 @@ const queries = require('../../database/queries')
 
 module.exports = app => {
 
+  app.get('/phases', app.ensureTrailingSlash, (request, response, next) => {
+    response.renderMarkdownFile(`/phases/README.md`)
+  })
+
+
   app.get('/phases/:phaseNumber', app.ensureTrailingSlash)
 
   app.use('/phases/:phaseNumber', (request, response, next) => {

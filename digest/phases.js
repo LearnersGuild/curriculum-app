@@ -2,6 +2,9 @@ const utils = require('./utils')
 
 module.exports = () =>
   utils.readdir('/phases')
+    .then(phaseNumbers =>
+      phaseNumbers.filter(phaseNumber => phaseNumber == Number(phaseNumber))
+    )
     .then(phaseNumbersToPhases)
     .then(loadDetails)
     .then(indexByNumber)
