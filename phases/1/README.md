@@ -19,6 +19,7 @@ In this phase you will learn…
 - how to persist state in an application via reading and writing to local files
 - how to use basic SQL using the postgres command line interface and Postico
 
+To see how to use these skills to track and assess yourself, watch this [14m video tutorial](https://shereef.wistia.com/medias/t292vu1rk1).
 
 ## Modules
 
