@@ -3,7 +3,7 @@
 ## Skills
 
 - Can describe JavaScript hoisting
-- Can write an immediately invoked function expressions in JavaScript
+- Can write an immediately invoked function expression in JavaScript
 - Can describe why immediately invoked function expressions are useful in JavaScript
 - Can define a JavaScript Constructor
 - Can add properties to the prototype of a JavaScript Constructor
@@ -12,7 +12,7 @@
 - Can describe what the `this` operator is in JavaScript
 - Can show at least three ways to declare what `this` will be when calling a function in JavaScript
 - Can describe what a "higher order function" is in JavaScript
-- Can write and example of a "higher order function" is in JavaScript
+- Can write an example of a "higher order function" in JavaScript
 - Can describe the differences between `bind`, `call`, `apply` in JavaScript
 - Can describe what a pure JavaScript function is
 
