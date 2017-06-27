@@ -29,7 +29,10 @@ os x add directory to path
 
 ## Resources
 
-- https://en.wikipedia.org/wiki/Shebang_(Unix)
+<!-- not sure why this didn't work
+- [Shebang_(Unix)](https://en.wikipedia.org/wiki/Shebang_(Unix))
+-->
+- <a href="https://en.wikipedia.org/wiki/Shebang_(Unix)">Shebang_(Unix)</a>
 
 ## Step By Step Guide
 
