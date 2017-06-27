@@ -30,7 +30,7 @@
 - Can use `ctrl-e` in the terminal
 - Can configure a Bash shell by modifying the `~/.bashrc` and `~/.bash_profile` files
 - Can define a BASH alias
-- Can customize your BASH `$PS1`
+- Can customize your BASH prompt
 - Can use BASH brace expansion
 - Can set `$EDITOR` to their preferred editors terminal command
 

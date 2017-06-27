@@ -3,7 +3,7 @@
 ## Skills
 
 - Can define a Git alias
-- Can add Git metadata to the shell `$PS1`
+- Can add Git metadata to your shell prompt
 - Can use `git pull --rebase`
 - Can use `git reset`
 - Can use `git reset HEAD^`
