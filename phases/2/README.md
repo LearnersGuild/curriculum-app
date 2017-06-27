@@ -40,7 +40,7 @@ In this phase you will learn…
 - _B:_ [HTTP Authentication](../../modules/HTTP-Authentication)
 - _P:_ [JavaScript in the Browser](../../modules/JavaScript-in-the-Browser)
 - _P:_ [Debugging with Chrome Developer Tools](../../modules/Debugging-with-Chrome-Developer-Tools)
-- _P:_ [AJAX](../../modules/AJAX)
+- _P:_ [HTTP Requests From JavaScript In The Browser](../../modules/HTTP-Requests-From-JavaScript-In-The-Browser)
 - _B:_ [Movie Search Engine](../../modules/Movie-Search-Engine)
 
 ## Schedule
