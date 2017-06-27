@@ -37,9 +37,10 @@ git cheatsheet
 
 ### Watching
 
-- https://www.youtube.com/watch?v=uR-9NGrpU-c
-- https://www.youtube.com/watch?v=JTE2Fn_sCZs
-- https://www.youtube.com/watch?v=a6D-9MIdWKk
+- ['Git Tutorials || 3.Branching and Merging'](https://www.youtube.com/watch?v=uR-9NGrpU-c)
+- ['Git: Working with Branches'](https://www.youtube.com/watch?v=JTE2Fn_sCZs) 
+- ['Git & GitHub: Branching (8/11)'](https://www.youtube.com/watch?v=a6D-9MIdWKk)
+- [Git Checkout -p](https://www.youtube.com/watch?v=I6oD_eXXYpE) 
 
 ## Practice
 - Complete the `git.rocks` tutorial in the following sequence
