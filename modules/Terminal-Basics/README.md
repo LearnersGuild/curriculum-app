@@ -84,8 +84,9 @@ unix viewing contents of a file
 
 ## Exercises
 
-0. [ ] [Environment-Variables-And-PATH](./exercises/Environment-Variables-And-PATH.md)
-0. [ ] [Basic-BASH-Commands](./exercises/Basic-BASH-Commands.md)
-0. [ ] [Terminal-Shortcuts](./exercises/Terminal-Shortcuts.md)
-0. [ ] [Customizing-Your-Shell](./exercises/Customizing-Your-Shell.md)
+0. [Dot Files](https://github.com/GuildCrafts/dotfiles)
+0. [Environment-Variables-And-PATH](./exercises/Environment-Variables-And-PATH.md)
+0. [Basic-BASH-Commands](./exercises/Basic-BASH-Commands.md)
+0. [Terminal-Shortcuts](./exercises/Terminal-Shortcuts.md)
+0. [Customizing-Your-Shell](./exercises/Customizing-Your-Shell.md)
 
