@@ -1,12 +1,53 @@
 # Serialization
 
-Serialization is the process of translating data structures into a format that
+Serialization is the process of translating data into a format that
 can be stored (for example, in a file) or transmitted (for example, across a
 network connection) and reconstructed later.
 
-In other words anytime you convert data (like objects, arrays, strings, numbers,
-etc.) into a string that can be converted back into those same data strictures,
-then you're serializing that data it.
+For example if you have this array:
+
+```js
+const colors = ['red', 'green', 'blue']
+```
+
+You cannot just write this array to a file, or send it across a network
+connection. You have to serialize it into a string first.
+
+An example of this is would be converting our array into a comma separated
+string (CSV) string like this:
+
+```js
+"red,green,blue"
+```
+
+Now that we have our data in the form of a serialized string, we can write it
+to a file or send it over the network. Then later we can either read this file
+or receive this network transmission and deserialize our string back into our
+original array. Like this:
+
+```js
+"red,green,blue".split(',')
+```
+
+All together:
+
+```js
+const colorsArray = ['red', 'green', 'blue']
+
+// serializing:
+const colorsArrayAsString = colorsArray.join(',')
+// colorsArrayAsString is a serialized version of colorsArray
+
+console.log(colorsArrayAsString)
+// => "red,green,blue"
+
+// deserializing:
+const colorsArray2 = colorsArrayAsString.split(',')
+// colorsArray2 should now be identical to colorsArray
+
+console.log(colorsArray2)
+// => ['red', 'green', 'blue']
+```
 
 
 ## Skills
