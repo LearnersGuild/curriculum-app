@@ -24,3 +24,5 @@ Specs:
 Hints:
 - IMDB search url for the example above : `http://www.imdb.com/find?ref_=nv_sr_fn&q=findingnemo&s=all`. Replace `findingnemo` with the dynamic search term.
 
+Resources:
+- [Trevor's walkthrough of a (partial) solution](https://zoom.us/recording/play/AYFYw3AK0BmdqDDxL2c_zi64-VqNnWDMHpgr-iCDesweL8SRD8qIVaKpqbEpfEuO). (WARNING: This video contains spoilers! You may want to work on this on your own first before watching this)
