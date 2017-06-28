@@ -30,7 +30,8 @@ You **should not** use real data - just use placeholder text and images from the
 
 ## Specifications
 
-- Your `index.html` page matches the design of the images in the `mockups/` subdirectory
+- Your `index.html` page matches the design of the images in the `mockups/` subdirectory: `mockups/caviar-homeroom.png` and `mockups/caviar-footer.png` (\*see note below for exceptions)
+- Your page has the _exact_ same alignment, spacing, and colors as the mockup images, and uses the "Helvetica Neue" typeface
 - Hovering over an item gives it an orange overlay and shows the text "Add to cart" (as shown in `mockups/caviar-homeroom-item-hover.png`)
 - Clicking on "View Available Hours" opens the hours modal (as shown in `mockups/caviar-hours-modal.png`)
 - Clicking _anywhere_ on an item (i.e. over the image, title, description, and price) opens the item modal (as shown in `mockups/caviar-item-modal.png`)
@@ -43,4 +44,4 @@ Best practices:
 - Your HTML and CSS is properly formatted with consistent indentation and spacing
 - There is no unused code (e.g. HTML elements with classes or IDs that aren't styled in CSS or used by JS)
 
-__Note:__ You do not need to build any features not listed in these specs. No login, no cart, etc.
+\* **Exceptions**: Don't worry about adding icons. You do not need to build any features not listed in these specs. No login, no cart, etc.
