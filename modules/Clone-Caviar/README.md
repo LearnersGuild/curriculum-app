@@ -1,43 +1,46 @@
 # Clone Caviar
 
-In this benchmark module is meant to help you practice everything you've learned
-in phase 1. It's a tall order so don't be discouraged if this takes you a long
-time to complete.
+This is a benchmark module meant to help you practice your HTML & CSS skills and combine them with some basic browser-side JS to produce a semi-functional clone of a [restaurant page on the Caviar website](https://www.trycaviar.com/sf-east-bay/homeroom-151).
 
-In this module you will be cloning a subset of the restaurant page of the food
-ordering service [caviar](https://www.trycaviar.com/sf-east-bay/homeroom-151).
+Don't be discouraged if this takes you some time to complete - it will take effort, but getting to a finished product will be worth it.
 
-This module provides the SQL database for two fake restaurants. You need to make
-a web application that serves.
+Re-create a page from Caviar by following the designs of the screenshots in the `mockups/` subdirectory. Write your code to the [specifications](#specifications) using the files in the `scaffold/` subdirectory.
 
+You **should not** use real data - just use placeholder text and images from the `scaffold/data.txt` file for the header content and items' titles, images, and description.
 
 ## Skills
 
-All of the skills in [Phase 1](http://curriculum.learnersguild.org/phases/1/skills)
+- Can style a `<form>` in HTML & CSS
+- Can style typographic elements (headers, paragraphs, etc.)
+- Can style buttons in HTML & CSS
+- Can implement a sticky footer in HTML & CSS
+- Can implement a modal component in HTML & CSS
+- Can implement a card component in HTML & CSS
+- Can implement a menu component in HTML & CSS
+- Can implement a navbar component in HTML & CSS
+- Can implement a single column page layout in HTML & CSS
+- Can implement a two column page layout in HTML & CSS
+- Can implement a three column page layout in HTML & CSS
+- Can position elements with `position: absolute` in HTML & CSS
+- Can position elements with `position: relative` in HTML & CSS
+- Can position elements with flexbox in HTML & CSS
+- Can hide elements using `display` in HTML & CSS
+- Can inspect and change CSS using the Chrome Developer Tools
+- Can convert a mockup into an HTML page with proper styling
 
+## Specifications
 
+- Your `index.html` page matches the design of the images in the `mockups/` subdirectory
+- Hovering over an item gives it an orange overlay and shows the text "Add to cart" (as shown in `mockups/caviar-homeroom-item-hover.png`)
+- Clicking on "View Available Hours" opens the hours modal (as shown in `mockups/caviar-hours-modal.png`)
+- Clicking _anywhere_ on an item (i.e. over the image, title, description, and price) opens the item modal (as shown in `mockups/caviar-item-modal.png`)
+- Your site is responsive and when the window is made narrower the elements will re-align as shown in `mockups/caviar-narrow-screen.png`
 
-## Specs
+Best practices:
 
-
-- All your work is in a repository on GitHub
+- Code is in a repository on GitHub
 - Your progress is preserved by committing often
-- When you got to `/homeroom` you see the order page for Homeroom
-- When you got to `/souley-vegan` you see the order page for Souley Vegan
-- On each order page has all items are listed
-- Each items has a photo or default photo
-- When you click on any item, a model pops up.
-- When you click the X on the modal it should close
+- Your HTML and CSS is properly formatted with consistent indentation and spacing
+- There is no unused code (e.g. HTML elements with classes or IDs that aren't styled in CSS or used by JS)
 
-
-
-*__Note:__ You do not need to build any features not listed in these specs. No login, no cart, etc. *
-
-
-## Screenshots
-
-*__Note:__ We've removed some features you will see on the real trycaviar.com.*
-*Take a look at these screenshots to see exactly what you need to build.*
-
-- [Restaurant Page](./restaurant-page-example.png)
-- [Modal](./modal-example.png)
+__Note:__ You do not need to build any features not listed in these specs. No login, no cart, etc.

@@ -1,0 +1,49 @@
+-- HEADER --
+
+bannerImage: https://img.trycaviar.com/x7pgux2UGo3J3wY_QrD3lITEmnk=/1680x1120/https://s3.amazonaws.com/trycaviar.com/offers/151/9049.jpg
+name: Homeroom
+description: Mac & Cheese Specialists.
+
+-- ITEMS --
+
+img: https://img.trycaviar.com/-xcqZTu1821FAa80VEUvvJHb330=/350x233/https://s3.amazonaws.com/trycaviar.com/offers/151/9041.jpg
+title: Classic Mac
+description: Homeroom’s super creamy and extra cheesy remake of the all-cheddar mac you ate as a kid.
+price: 11.75
+category: Popular
+
+img: https://img.trycaviar.com/aYETAvPu24hjhyc5EYdb6B1wDsk=/350x233/https://s3.amazonaws.com/trycaviar.com/offers/151/9048.jpg
+title: Gilroy Garlic Mac
+description: Creamy gouda, sharp pecorino, and just the right amount of garlic.
+price: 12.90
+category: Popular
+
+img: https://img.trycaviar.com/kYy7CeXogeB1i25dCw0vDjNEIOU=/350x233/https://s3.amazonaws.com/trycaviar.com/offers/151/9049.jpg
+title: Mexican Mac
+description: Niman Ranch chorizo, jack cheese, homemade chipotle adobo sauce, and cilantro, served with a wedge of lime.
+price: 13.85
+category: Popular
+
+img: https://img.trycaviar.com/m5lLB-JY9wQWWTx7VPUCIXrWjpM=/350x233/https://s3.amazonaws.com/trycaviar.com/offers/151/9042.jpg
+title: Smoky Bacon Mac
+description: Rich and bold with smoked cheddar, jack cheese, and bacon.
+price: 13.85
+category: Popular
+
+img: https://img.trycaviar.com/TJBuzy6bs7K-nZ80hrh2OT7Hr8Y=/350x233/https://s3.amazonaws.com/trycaviar.com/offers/151/156132-201608191857.jpg
+title: Secret Menu: Breakfast Mac
+description: Caviar exclusive. Breakfast Mac: classic mac with bacon and egg with side of a biscuit.
+price: 19.45
+category: Secret Menu
+
+img: https://img.trycaviar.com/F63v80PwCEFihW5E_OPszkmnzvw=/350x233/https://s3.amazonaws.com/trycaviar.com/offers/151/156336-201608191857.jpg
+title: Secret Menu: Eggy Bacon Sprouts
+description: Caviar Exclusive. Roasted brussels sprouts with bacon, topped with a fried egg.
+price: 9.80
+category: Secret Menu
+
+img: https://img.trycaviar.com/moE-oRIOGim0-0uFHb5AI-xB7PU=/350x233/https://s3.amazonaws.com/trycaviar.com/offers/151/156133-201608191857.jpg
+title: Secret Menu: (Vegetarian) Eggy Sprouts
+description: Caviar exclusive. Roasted brussels sprouts, topped with a fried egg.
+price: 8.60
+category: Secret Menu
