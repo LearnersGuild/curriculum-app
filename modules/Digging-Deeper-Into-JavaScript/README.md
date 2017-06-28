@@ -24,6 +24,7 @@
 - https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/Object-oriented_JS
 - https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/Object_prototypes
 - http://eloquentjavascript.net/1st_edition/chapter8.html
+- https://medium.com/@zfrisch/destroying-buildings-a-simple-guide-to-javascript-closures-ef9fc326c73d
 
 ### Watching
 
