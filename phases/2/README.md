@@ -46,3 +46,10 @@ In this phase you will learn…
 ## Schedule
 
 [schedule](./schedule.md)
+
+## Supports
+
+- [Asking For Help](../../SUPPORT.md#asking-for-help)
+- [Office Hours](../../SUPPORT.md#office-hours)
+- [Lectures](../../SUPPORT.md#lectures)
+- [Live Code Review](../../SUPPORT.md#live-code-reviews)

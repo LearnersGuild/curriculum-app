@@ -52,3 +52,9 @@ To see how to use these skills to track and assess yourself, watch this [14m vid
 ## Schedule
 
 [schedule](./schedule.md)
+
+## Supports
+
+- [Asking For Help](../../SUPPORT.md#asking-for-help)
+- [Office Hours](../../SUPPORT.md#office-hours)
+- [Lectures](../../SUPPORT.md#lectures)

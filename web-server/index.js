@@ -29,9 +29,15 @@ app.get('/', (request, response, next) => {
   response.renderMarkdownFile(`/README.md`)
 })
 
-app.get('/CONTRIBUTING.md', (request, response, next) => {
-  response.renderMarkdownFile(`/CONTRIBUTING.md`)
+;[
+  'CONTRIBUTING.md',
+  'SUPPORT.md',
+].forEach(topLevelMarkdownFile => {
+  app.get(`/${topLevelMarkdownFile}`, (request, response, next) => {
+    response.renderMarkdownFile(`/${topLevelMarkdownFile}`)
+  })
 })
+
 
 const server = app.listen(process.env.PORT, () => {
   console.log('http://localhost:'+process.env.PORT)
