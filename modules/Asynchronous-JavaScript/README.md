@@ -3,7 +3,7 @@
 ## Skills
 
 - Can use Callbacks in JavaScript
-- Can affectively manage asynchronous flow control in JavaScript
+- Can effectively manage asynchronous flow control in JavaScript
 - Can use setTimeout to sleep in JavaScript
 
 
