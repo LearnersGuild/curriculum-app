@@ -4,9 +4,9 @@ This is a benchmark module meant to help you practice your HTML & CSS skills and
 
 Don't be discouraged if this takes you some time to complete - it will take effort, but getting to a finished product will be worth it.
 
-Re-create a page from Caviar by following the designs of the screenshots in the `mockups/` subdirectory. Write your code to the [specifications](#specifications) using the files in the `scaffold/` subdirectory.
+Re-create a page from Caviar by following the designs of the screenshots in the [mockups](./mockups) subdirectory. Write your code to the [specifications](#specifications) using the files in the [scaffold](./scaffold) subdirectory.
 
-You **should not** use real data - just use placeholder text and images from the `scaffold/data.txt` file for the header content and items' titles, images, and description.
+You **should not** use real data - just use placeholder text and images from the [scaffold/data.txt](./scaffold/data.txt) file for the header content and items' titles, images, and description.
 
 ## Skills
 
@@ -30,13 +30,13 @@ You **should not** use real data - just use placeholder text and images from the
 
 ## Specifications
 
-- Your `index.html` page matches the design of the images in the `mockups/` subdirectory: `mockups/caviar-homeroom.png` and `mockups/caviar-footer.png` (\*see note below for exceptions)
+- Your `index.html` page matches the design of the images in the [mockups](./mockups) subdirectory: [mockups/caviar-homeroom.png](./mockups/caviar-homeroom.png) and [mockups/caviar-footer.png](./mockups/caviar-footer.png) (\*see note below for exceptions)
 - Your page has the _exact_ same alignment, spacing, and colors as the mockup images, and uses the "Helvetica Neue" typeface
-- Your page uses the same icons as the mockups (provided in the `scaffold/icons/` subdirectory)
-- Hovering over an item gives it an orange overlay and shows the text "Add to cart" (as shown in `mockups/caviar-homeroom-item-hover.png`)
-- Clicking on "View Available Hours" opens the hours modal (as shown in `mockups/caviar-hours-modal.png`)
-- Clicking _anywhere_ on an item (i.e. over the image, title, description, and price) opens the item modal (as shown in `mockups/caviar-item-modal.png`)
-- Your site is responsive and when the window is made narrower the elements will re-align as shown in `mockups/caviar-narrow-screen.png`
+- Your page uses the same icons as the mockups (provided in the [scaffold/icons](./scaffold/icons) subdirectory)
+- Hovering over an item gives it an orange overlay and shows the text "Add to cart" (as shown in [mockups/caviar-homeroom-item-hover.png](./mockups/caviar-homeroom-item-hover.png))
+- Clicking on "View Available Hours" opens the hours modal (as shown in [mockups/caviar-hours-modal.png](./mockups/caviar-hours-modal.png))
+- Clicking _anywhere_ on an item (i.e. over the image, title, description, and price) opens the item modal (as shown in [mockups/caviar-item-modal.png](./mockups/caviar-item-modal.png)
+- Your site is responsive and when the window is made narrower the elements will re-align as shown in [mockups/caviar-narrow-screen.png](./mockups/caviar-narrow-screen.png)
 
 Best practices:
 
