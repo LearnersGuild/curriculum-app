@@ -19,6 +19,7 @@ module.exports = app => {
     renderMarkdown(skill.rawText).slice(3,-5).trim()
 
   app.locals.sortSkills = skills => {
+    console.log('**** sortSkills::', skills);
     skills = Array.isArray(skills)
       ? skills
       : Object.keys(skills).map(id => skills[id])
