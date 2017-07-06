@@ -21,17 +21,12 @@ In Phase 3, you'll work on goals from the goal library. Most of the goals are pa
 
 Here are the goals that you can choose from (ordered in rough approximation of increasing difficulty/complexity):
 
-1. Mmmarkdown
-1. To Do List App
-1. Your Portfolio Site
-1. CRUD Mutably
-1. Simple Book Store
-1. Roam
-1. Pizza Restaurant: Relational DB Schema with CRUD API
-1. Timeoff Snapshot - Approver Epic
-1. Trossello Snapshot: Members & Teams Epic
-
 To view each goal, visit http://curriculum.learnersguild.org/phases/3/goals
+
+## Goals
+
+- _P:_ [444 Auth Snapshot](../../goals/444-Auth-Snapshot)
+- _P:_ [387 Mmmarkdown](../../goals/387-Mmmarkdown)
 
 ## Lectures
 

@@ -5,7 +5,8 @@
   "scripts": {
     "dev": "nodemon web-server",
     "start": "node web-server",
-    "test": "mocha"
+    "test": "mocha",
+    "migrate": "knex --knexfile ./database/knex.js migrate:latest"
   },
   "repository": {
     "type": "git",
