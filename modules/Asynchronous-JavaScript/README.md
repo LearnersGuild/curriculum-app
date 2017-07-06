@@ -20,7 +20,7 @@
 
 ### Watching
 
-
+- https://www.lynda.com/Node-js-tutorials/How-Node-js-works/417077/454426-4.html
 - [Tutorial 15mins](https://www.youtube.com/watch?v=pTbSfCT42_M)
 - https://node.university/courses/you-dont-know-node/lectures/1590280
 - https://node.university/courses/you-dont-know-node/lectures/1590277
