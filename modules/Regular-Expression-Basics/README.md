@@ -31,3 +31,4 @@
 - https://www.freecodecamp.com/challenges/find-whitespace-with-regular-expressions
 - https://www.freecodecamp.com/challenges/invert-regular-expression-matches-with-javascript
 - https://github.com/workshopper/regex-adventure
+- https://codegolf.stackexchange.com/questions/129941/regex-paper-scissors-lizard-spock
