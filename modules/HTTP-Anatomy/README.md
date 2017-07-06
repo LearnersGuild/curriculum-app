@@ -15,7 +15,8 @@
 
 ### Reading
 
-- [https://code.tutsplus.com/tutorials/http-the-protocol-every-web-developer-must-know-part-1--net-31177]
+- https://code.tutsplus.com/tutorials/http-the-protocol-every-web-developer-must-know-part-1--net-31177
+- IETF documentation on cookies https://tools.ietf.org/html/rfc6265
 
 ### Watching
 
