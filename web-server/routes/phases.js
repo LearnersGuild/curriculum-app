@@ -23,8 +23,11 @@ module.exports = app => {
   app.get('/phases/:phaseNumber/skills', (request, response, next) => {
     const user_id = request.user.id
     const labels = response.phase.skills
+    console.log('!!!!!!!!! ------------- !!!!!!!!!!');
+    console.dir(response.phase);
     queries.getChecks({user_id, labels})
       .then(checks => {
+        console.log('^^^^^ response.digest.skills::', response.digest.skills);
         const skills = response.phase.skills.map(skillId =>
           Object.assign({}, response.digest.skills[skillId], {checked: !!checks[skillId]})
         )
