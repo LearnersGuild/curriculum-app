@@ -143,3 +143,4 @@ javascript split string into array
 - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/prototype?v=example
 - https://auth0.com/blog/glossary-of-modern-javascript-concepts/#purity
 - https://medium.com/@zfrisch/destroying-buildings-a-simple-guide-to-javascript-closures-ef9fc326c73d
+- https://developer.mozilla.org/en-US/docs/Web/JavaScript/Equality_comparisons_and_sameness
