@@ -1,19 +1,16 @@
----
-authors:
-- 'jlopker'
-team_size: 2
-goal_id: 330
-title: 'Roam'
-created_at: '2017-05-12T10:38:28Z'
-labels:
-- practice
-published: true
-level: '3'
-phase: 3
-redirect_from: '/goals/330'
----
+# Roam (330)
 
-# Roam
+## Skills
+
+- Can build a full stack application using Express
+- Can add authorization to an API to restrict access to certain resources
+- Can write end-to-end tests for an existing HTTP API using the chai-http library
+- Can explain the difference between unit vs integration vs end-to-end tests
+- Can explain what a Minimum Viable Product(MVP) is.
+- Can look at a list of requirements and filter them to those that are needed to build an MVP.
+- Can build a SQL schema for a given problem definition
+- Can build a HTTP API with authentication using Passport OAuth.
+
 
 ## Challenge Rating
 

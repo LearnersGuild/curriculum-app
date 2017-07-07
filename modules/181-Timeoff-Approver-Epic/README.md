@@ -1,19 +1,10 @@
----
-authors:
-- "shereefb"
-goal_id: 181
-team_size: 2
-title: Timeoff Snapshot - Approver Epic
-created_at: '2017-02-21T22:26:48Z'
-labels:
-- snapshot
-published: true
-level: '2'
-phase: 3
-redirect_from: "/goals/181"
----
+# Timeoff Snapshot [Approver Epic] (181)
 
-# Timeoff Snapshot [Approver Epic]
+## Skills
+
+- Can add features to an existing codebase
+- Can write code adhering to SOLID & DRY principles
+
 
 ## Challenge Rating
 
