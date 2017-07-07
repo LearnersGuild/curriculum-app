@@ -3,7 +3,7 @@
 In this module we're going to cover what you need to know to use ES2017 features
 in both Node and the browser.
 
-As your reading about these tools avoid tutorials aiming to explain React.
+As you're reading about these tools, avoid tutorials aiming to explain React.
 
 ## Skills
 
