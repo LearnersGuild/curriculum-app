@@ -23,10 +23,19 @@ Here are the goals that you can choose from (ordered in rough approximation of i
 
 To view each goal, visit http://curriculum.learnersguild.org/phases/3/goals
 
-## Goals
+## Modules
 
-- _P:_ [444 Auth Snapshot](../../goals/444-Auth-Snapshot)
-- _P:_ [387 Mmmarkdown](../../goals/387-Mmmarkdown)
+- _P:_ [444 Auth Snapshot](../../modules/444-Auth-Snapshot)
+- _P:_ [387 Mmmarkdown](../../modules/387-Mmmarkdown)
+- _P:_ [64 To Do List App](../../modules/64-To-Do-List-App)
+- _P:_ [383 CRUD Mutability](../../modules/383-CRUD-Mutability)
+- _P:_ [98 Pizza Restaurant: Relational DB With CRUD API](../../modules/98-Pizza-Restaurant-Relational-DB-Schema-With-CRUD-API)
+- _P:_ [69 Simple Book Store](../../modules/69-Simple-Book-Store)
+- _P:_ [446 Testing Snapshot](../../modules/446-Testing-Snapshot)
+- _P:_ [181 Timeoff: Approver Epic](../../modules/181-Timeoff-Approver-Epic)
+- _P:_ [330 Roam](../../modules/69-Roam)
+- _P:_ [356 Your Portfolio Site](../../modules/356-Your-Portfolio-Site)
+- _P:_ [232 Trossello Snapshot: Members and Teams Epic](../../modules/232-Trosello-Snapshot-Members-And-Teams-Epic)
 
 ## Lectures
 

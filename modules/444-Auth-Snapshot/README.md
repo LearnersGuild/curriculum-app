@@ -1,20 +1,3 @@
----
-authors:
-- "jlopker"
-goal_id: 444
-team_size: 1
-title: "Auth Snapshot"
-created_at: '2017-06-28T11:10:48Z'
-labels:
-- snapshot
-published: true
-level: '2'
-phase: 3
-redirect_from: "/goals/444"
-base_xp: 250
-bonus_xp: 37
----
-
 # Auth Snapshot
 
 ## Skills
@@ -37,7 +20,7 @@ You will start by cloning a starter app the has full CRUD functionality. From he
 
 ### Setting Up Your Snapshot
 
-1. Fork & clone the [Contacts starter repo][https://github.com/GuildCrafts/contacts-snapshot-starter]
+1. Fork & clone the [Contacts starter repo](https://github.com/GuildCrafts/contacts-snapshot-starter)
 1. Create and checkout a new branch for this goal, something like `auth`
     ```
     $ git checkout -b auth
