@@ -1,12 +1,11 @@
 const loadModules = require('./modules')
-const loadGoals = require('./goals')
 const loadPhases = require('./phases')
 const loadSkills = require('./skills')
 const generateReport = require('./report')
 
 module.exports = () =>
-  Promise.all([loadModules(), loadPhases(), loadGoals()])
-  .then(([modules, phases, goals]) => ({modules, phases, goals}))
+  Promise.all([loadModules(), loadPhases()])
+  .then(([modules, phases]) => ({modules, phases}))
   .then(digest => {
     digest.skillContexts = [
       'SQL',
