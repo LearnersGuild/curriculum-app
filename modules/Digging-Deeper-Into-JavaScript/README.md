@@ -2,6 +2,7 @@
 
 ## Skills
 
+- Can use template literals
 - Can describe JavaScript hoisting
 - Can write an immediately invoked function expression in JavaScript
 - Can describe why immediately invoked function expressions are useful in JavaScript
@@ -20,6 +21,7 @@
 
 ### Reading
 
+- [Template literals](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals)
 - [Learn JS tutorial](https://www.learn-js.org/en/Object_Oriented_JavaScript)
 - https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/Object-oriented_JS
 - https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/Object_prototypes
