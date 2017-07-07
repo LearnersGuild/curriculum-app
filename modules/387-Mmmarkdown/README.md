@@ -1,23 +1,11 @@
-b---
-authors:
-- 'tannerwelsh'
-team_size: 2
-goal_id: 387
-title: 'Mmmarkdown'
-created_at: '2017-05-12T10:38:28Z'
-labels:
-- practice
-published: true
-level: '1'
-phase: 3
-redirect_from: '/goals/387'
----
-
-# Mmmarkdown
+# Mmmarkdown (387)
 
 ## Skills
 
-- Can make a full stack web application
+- Can build a full stack application using Express
+- Can use an external JavaScript library
+- Can explain what an HTML templating library is
+- Can use an HTML templating library like pug or handlebars
 
 ## Challenge Rating
 

@@ -1,21 +1,10 @@
----
-authors:
-- "tannerwelsh"
-goal_id: 232
-team_size: 2
-title: "Trossello Snapshot: Members & Teams Epic"
-created_at: '2017-03-22T11:10:48Z'
-labels:
-- snapshot
-published: true
-level: '2'
-phase: 3
-redirect_from: "/goals/232"
-base_xp: 250
-bonus_xp: 37
----
+# Trossello Snapshot: Members & Teams Epic (232)
 
-# Trossello Snapshot: Members & Teams Epic
+## Skills
+
+- Can add features to an existing codebase
+- Can write code adhering to SOLID & DRY principles
+- Can explain what webpack is, and use it to create a bundle file
 
 ## Challenge Rating
 

@@ -1,20 +1,14 @@
----
-authors:
-- "rachel-ftw"
-- "mantinone"
-team_size: 1
-goal_id: 64
-title: To Do List App
-created_at: '2016-08-06T00:52:33Z'
-labels:
-- practice
-published: true
-level: '1'
-phase: 3
-redirect_from: "/goals/64"
----
+# To Do List (64)
 
-# To Do List
+## Skills
+
+- Can build a full stack application using Express
+- Can use the fetch API to make HTTP requests
+- Can use ES6 and use `babel-node` to transpile the code
+- Can explain what a Minimum Viable Product(MVP) is.
+- Can look at a list of requirements and filter them to those that are needed to build an MVP.
+- Can build a RESTful API using Express
+- Can write code adhering to SOLID & DRY principles
 
 ## Challenge Rating
 
