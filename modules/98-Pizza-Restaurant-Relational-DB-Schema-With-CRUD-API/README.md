@@ -1,19 +1,11 @@
----
-authors:
-- "deonna"
-team_size: 2
-goal_id: 98
-title: 'Pizza Restaurant: Relational DB Schema with CRUD API'
-created_at: '2016-10-13T22:49:54Z'
-labels:
-- practice
-published: true
-level: '1'
-phase: 3
-redirect_from: "/goals/98"
----
+# Pizza Restaurant: RDB Schema with CRUD API (98)
 
-# Pizza Restaurant: RDB Schema with CRUD API
+## Skills
+
+- Can build a SQL schema for a given problem definition
+- Can build a RESTful API using Express
+- Can explain what an Entity Relationship(ER) diagram is
+- Can explain what an SQL transaction is
 
 ## Challenge Rubric
 
@@ -48,8 +40,6 @@ Acronyms from title:
 ## Context
 
 This project will give you experience in designing a robust schema that represents a complex, real-world system as well as an introduction to how to update your DB without having to worry too much about complex join operations.
-
-The suggested prerequisite goals are [#96 - Foundational Relational Database Exercises](./96-Foundational_Relational_Database_Exercises.md) and [#69 - Simple Book Store](./69-Simple_Book_Store.md).
 
 Before diving in, it is **strongly recommended** to review the video and code from @tannerwelsh's remote cognitive apprenticeship session: [Relational DB schema design for a bookstore](https://github.com/GuildCrafts/cog-app/tree/master/sessions/02-bookstore-db-schema-20161026).
 

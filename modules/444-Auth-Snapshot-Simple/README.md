@@ -1,11 +1,10 @@
-# Auth Snapshot
+# Auth Snapshot Simple (444)
 
 ## Skills
 
 - Can build a HTTP API with simple authentication using bcrypt and session cookies
-- Can build a HTTP API with authentication using Passport Local Strategy
-- Can build a HTTP API with authentication using Passport OAuth.
-
+- Can explain what encryption is, and why it is important when dealing with sensitive information(eg: passwords)
+- Can build a SQL schema for a given problem definition
 
 ## Challenge Rating
 

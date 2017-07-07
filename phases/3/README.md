@@ -25,7 +25,7 @@ To view each goal, visit http://curriculum.learnersguild.org/phases/3/goals
 
 ## Modules
 
-- _P:_ [444 Auth Snapshot](../../modules/444-Auth-Snapshot)
+- _P:_ [444 Auth Snapshot Simple](../../modules/444-Auth-Snapshot)
 - _P:_ [387 Mmmarkdown](../../modules/387-Mmmarkdown)
 - _P:_ [64 To Do List App](../../modules/64-To-Do-List-App)
 - _P:_ [383 CRUD Mutability](../../modules/383-CRUD-Mutability)

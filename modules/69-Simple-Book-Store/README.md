@@ -1,19 +1,11 @@
----
-authors:
-- "jrob8577"
-team_size: 2
-goal_id: 69
-title: Simple Book Store
-created_at: '2016-08-12T23:16:31Z'
-labels:
-- practice
-published: true
-level: '1'
-phase: 3
-redirect_from: "/goals/69"
----
+# Simple Book Store (69)
 
-# Simple Book Store
+## Skills
+
+- Can build a RESTful API using Express
+- Can build a SQL schema for a given problem definition
+- Can use the fetch API to make HTTP requests
+- Can write end-to-end tests for an existing HTTP API using the chai-http library
 
 ## Challenge Rubric
 

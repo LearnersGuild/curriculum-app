@@ -1,21 +1,11 @@
----
-authors:
-- "jlopker"
-goal_id: 446
-team_size: 1
-title: "Testing Snapshot"
-created_at: '2017-06-28T11:10:48Z'
-labels:
-- snapshot
-published: true
-level: '2'
-phase: 3
-redirect_from: "/goals/446"
-base_xp: 250
-bonus_xp: 37
----
+# Testing Snapshot (446)
 
-# Testing Snapshot
+## Skills
+
+- Can write end-to-end tests for an existing HTTP API using the chai-http library
+- Can explain the difference between unit vs integration vs end-to-end tests
+- Can create different configuration files for multiple environments(test, development, production)
+- Can add features to an existing codebase
 
 ## Challenge Rating
 

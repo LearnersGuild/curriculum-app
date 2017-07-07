@@ -1,20 +1,12 @@
----
-authors:
-- "jlopker"
-team_size: 2
-goal_id: 383
-title: CRUD Mutably
-created_at: '2017-05-11T11:00:00Z'
-labels:
-- practice
-level: '1'
-phase: 3
-base_xp: 150
-published: true
-redirect_from: '/goals/383'
----
+# CRUD Mutably (383)
 
-# CRUD Mutably
+## Skills
+
+- Can build a RESTful API using Express
+- Can explain what the MVC(Model View Controller) pattern is
+- Can use the MVC pattern to build a Single Page Application using JavaScript
+- Can integrate with an external HTTP API
+- Can use the MVC pattern to build a Single Page Application using JavaScript
 
 ## Challenge Rating
 

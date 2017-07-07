@@ -1,19 +1,8 @@
----
-authors:
-- "jlopker"
-team_size: 1
-goal_id: 356
-title: Your Portfolio Site
-created_at: '2017-04-26T11:00:00Z'
-labels:
-- practice
-level: '2'
-phase: 3
-published: true
-redirect_from: '/goals/356'
----
+# Your Portfolio Site (356)
 
-# Your Portfolio Site
+## Skills
+
+- Can deploy an application to Heroku
 
 ## Challenge Rating
 
