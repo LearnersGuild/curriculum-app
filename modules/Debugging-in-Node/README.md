@@ -4,6 +4,7 @@
 
 ## Skills
 
+
 - Can read a JavaScript backtrace
 - Can find the file and line number where an JavaScript error was thrown
 - Can describe what the JavaScript call stack is
@@ -21,6 +22,8 @@ what is javascript call stack
 
 ### Reading
 
+* This team treehouse link doesn't work because the instructions are dated. 
+* I found this article which I was able to follow. NOTE: Node version matters when running these debugger tools. This article was the most recent I found. 
 - https://teamtreehouse.com/library/debugging-node-applications-with-google-chrome
 - http://lucasfcosta.com/2017/02/17/JavaScript-Errors-and-Stack-Traces.html
 - https://jvns.ca/blog/2015/11/22/how-i-got-better-at-debugging/
