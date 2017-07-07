@@ -12,7 +12,6 @@ module.exports = digest => {
       name,
       rawText,
       modules: [],
-      goals: [],
       path: `/skills/${encodeURIComponent(id)}`,
     }
   }
@@ -26,30 +25,12 @@ module.exports = digest => {
       })
   })
 
-  utils.values(digest.goals).forEach(goal => {
-    goal.skills = goal.skills
-      .map(getSkillByRawText)
-      .map(skill => {
-        skill.goals.push(goal.id)
-        return skill.id
-      })
-  })
-
-
   utils.values(digest.phases).forEach(phase => {
     phase.skills = []
     phase.modules.forEach(id => {
       const module = digest.modules[id]
       if (!module) return
       module.skills.forEach(skillId =>
-        phase.skills.push(skillId)
-      )
-    })
-    phase.goals.forEach(id => {
-      const goal = digest.goals[id]
-      console.log('!!!! goal id::', id, goal);
-      if (!goal) return
-      goal.skills.forEach(skillId =>
         phase.skills.push(skillId)
       )
     })

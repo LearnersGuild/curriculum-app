@@ -25,9 +25,6 @@ const loadDetails = phases =>
         phase.modules =
           utils.extractListFromSection(document, 'Modules', 2)
           .map(moduleLink => parseResourceText(moduleLink, 'modules'))
-        phase.goals =
-          utils.extractListFromSection(document, 'Goals', 2)
-          .map(goalLink => parseResourceText(goalLink, 'goals'))
         return document
       })
       .then(_ => phase)
