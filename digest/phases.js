@@ -24,7 +24,7 @@ const loadDetails = phases =>
       .then(document => {
         phase.modules =
           utils.extractListFromSection(document, 'Modules', 2)
-          .map(moduleLink => parseResourceText(moduleLink, 'modules'))
+          .map(parseModuleText)
         return document
       })
       .then(_ => phase)
@@ -42,9 +42,9 @@ const isModulesHeading = token =>
   token.depth === 2 &&
   token.text === 'Modules'
 
-const parseResourceText = (text, folderName) => {
+const parseModuleText = (text) => {
   let [_, icon, name, path] = text.match(/([^\[]+?)\s*\[([^\]]+)\]\(([^\(]+)\)/)
-  let id = path.split(`/${folderName}/`)[1]
+  let id = path.split('/modules/')[1]
   // let type = (
   //   icon === "🤸" ? 'practice' :
   //   icon === "🏋" ? 'benchmark' :
