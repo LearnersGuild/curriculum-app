@@ -50,7 +50,7 @@ later.
 - [exporting in node](http://www.tutorialsteacher.com/nodejs/nodejs-module-exports)
 - [npm](https://www.tutorialspoint.com/nodejs/nodejs_npm.htm)
 
-## Excercises
+## Exercises
 
 - [Add `./node_modules/.bin` to your `$PATH`](./exercises/add-node_modules-bin-to-your-path)
 - [Calculator](./exercises/Calculator)
