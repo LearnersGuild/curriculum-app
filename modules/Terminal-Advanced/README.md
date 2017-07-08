@@ -43,6 +43,7 @@ os x pbcopy
 
 ## Suggested Resources
 
+- [Trevor's Learners Guild Lecture on this Module](https://youtu.be/P3v4RXcBFPc)
 - http://www.catb.org/esr/writings/taoup/html/ch10s05.html
 
 

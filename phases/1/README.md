@@ -3,6 +3,7 @@
 Phase 1 is all about the fundamentals. Here you'll learn the basic skills needed
 to begin programming like a professional.
 
+Some modules link to resources in Treehouse or other paid services. For access to an account, see your SEP.
 
 ## High Level Skills
 
