@@ -14,11 +14,11 @@ Design a todo-list which manages your tasks from the command line. It should mai
 
 The following commands should be supported by your node script:
 
-| command | description                                            | example usage                            |
-|---------|--------------------------------------------------------|------------------------------------------|
-| add     | adds the specified task                                    | node task.js add 'Finish reading Flatland' |
-| list    | lists the incomplete tasks                             | node task.js list                        |
-| done    | marks the task with `id` equal to `<task-id>` complete | node task.js done `<task-id>`            |
+| command  | description                                            | example usage                             |
+|----------|--------------------------------------------------------|-------------------------------------------|
+| add      | adds the specified task                                | node task.js add 'Finish reading Flatland'|
+| list     | lists the incomplete tasks                             | node task.js list                         |
+| complete | marks the task with `id` equal to `<task-id>` complete | node task.js complete `<task-id>`         |
 
 
 ## Specs:
@@ -26,7 +26,7 @@ The following commands should be supported by your node script:
 - node script `task.js` is used to manage the tasks.
 - `list` command has been implemented in a file located at `commands/list.js`
 - `add` command has been implemented in a file located at `commands/add.js`
-- `done` command has been implemented in a file located at `commands/done.js`
+- `complete` command has been implemented in a file located at `commands/complete.js`
 - Add tests using Mocha and Chai for all functions
 
 
@@ -63,10 +63,10 @@ ID Description
 
 To complete a task:
 ```bash
-$ node task.js done 1
+$ node task.js complete 1
 Completed the task 'Buy milk'
 
-$ node task.js done 3
+$ node task.js complete 3
 Completed the task 'Buy cake'
 
 $ node task.js list
