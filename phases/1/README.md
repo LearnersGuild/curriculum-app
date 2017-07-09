@@ -5,7 +5,7 @@ to begin programming like a professional.
 
 Some modules link to resources in Treehouse or other paid services. For access to an account, see your SEP.
 
-## High Level Skills
+## High Level Skills Of the Masters
 
 In this phase you will learn…
 
