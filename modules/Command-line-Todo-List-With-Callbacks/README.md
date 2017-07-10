@@ -78,3 +78,10 @@ ID Description
 
 2 tasks.
 ```
+
+## Resources
+
+### Videos
+Spoiler alert! The following videos include example solutions. For your own learning, it's suggested that you attempt this module _before_ watching the videos.
+
+- [Testing Command-Line Todo App (Part 1: Architecture & Refactoring)](https://youtu.be/icrNTnNLV2Q)
