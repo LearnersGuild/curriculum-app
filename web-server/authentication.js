@@ -11,7 +11,7 @@ const addFakeAuthenticatedUser = (request, response, next ) => {
   next()
 }
 
-if(process.env.DISABLE_IDM) {
+if (process.env.DISABLE_IDM) {
   module.exports = app => {
     app.use(addFakeAuthenticatedUser)
   }
