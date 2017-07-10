@@ -30,11 +30,9 @@ module.exports = digest => {
     phase.modules.forEach(id => {
       const module = digest.modules[id]
       if (!module) return
-      module.skills.forEach(skillId => {
-        if(!phase.skills.includes(skillId)) {
-          phase.skills.push(skillId)
-        }
-      })
+      module.skills.forEach(skillId =>
+        phase.skills.includes(skillId) || phase.skills.push(skillId)
+      )
     })
   })
 
