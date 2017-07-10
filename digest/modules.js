@@ -9,8 +9,8 @@ module.exports = () =>
 const loadModuleDirectoryNames = () =>
   utils.readdir('/modules')
 
-const convertModuleDirectoryNamesToModules = moduleDirectoryNames => {
-  return moduleDirectoryNames
+const convertModuleDirectoryNamesToModules = moduleDirectoryNames =>
+  moduleDirectoryNames
     .filter(noExtension)
     .sort()
     .map(directoryName => ({
@@ -19,7 +19,7 @@ const convertModuleDirectoryNamesToModules = moduleDirectoryNames => {
       name: directoryName.replace(/-/g, ' '),
       path: `/modules/${encodeURIComponent(directoryName)}`,
     }))
-};
+
 const extractModuleDetails = modules =>
   Promise.all(
     modules.map(module =>
