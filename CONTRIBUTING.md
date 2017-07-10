@@ -1,25 +1,16 @@
-# CONTRIBUTING
+# How to contribute to Learners Guild's curriculum
 
-## Just want to comment?
 
-Please make a pull request.
+## Did you find a bug?
 
-## Dev Environment Setup
+Please submit a [GitHub Issue](https://github.com/isaacs/github/issues/new?&body=%23+Bug+Report%0A%0A)
 
-create a `.env` file like this:
 
-```
-PORT=3233
-DATABASE_URL=postgres://deadlyicon@localhost:5432/lg-curriculum
-IDM_BASE_URL=http://idm.learnersguild.dev
-JWT_PUBLIC_KEY="SEE IDM SETUP"
-```
+## Did you find a typo or spelling mistake?
 
-```sh
-createdb lg-curriculum
-```
+Please submit a [Pull Request](https://github.com/GuildCrafts/curriculum/pulls)
 
-```sh
-npm run dev
-```
 
+## Do you want to request a new feature?
+
+Please submit a [GitHub Issue](https://github.com/isaacs/github/issues/new?&body=%23+Feature+Request%0A%0A)
