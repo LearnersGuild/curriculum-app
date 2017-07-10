@@ -48,7 +48,7 @@ xcode command line tools
 ```
 install homebrew
 install atom via homebrew
-install postgresl via homebrew
+install postgresql via homebrew
 ```
 
 ## Potential Resources
