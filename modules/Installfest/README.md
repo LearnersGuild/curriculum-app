@@ -29,7 +29,7 @@ postico
 `postgresql` should only ever be installed using homebrew; the standalone
 installer creates conflicts.
 
-optionally, consider also installing the following applications/packages using "brew cask install" commmand to install into your application folder using the commandline:
+optionally, consider also installing the following applications/packages using "brew cask install" command to install into your application folder using the command line:
 
 ```
 caffeine
