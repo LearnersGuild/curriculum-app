@@ -20,16 +20,16 @@ Make your site simple! Make the content that employers will want to see front an
 
 ## Specifications
 
-- [ ] __10:__ Site is hosted (I recommend Heroku or gh-pages)
-- [ ] __5:__ Site prominently features link to your GitHub
-- [ ] __10:__ Site uses a CSS framework
-- [ ] __10:__ Site includes blurb / screenshots / links (both to GitHub and live site) to one of your most impressive projects
-- [ ] __10:__ Site includes blurb / screenshots / links (both to GitHub and live site) to another of your most impressive projects
-- [ ] __10:__ Site includes blurbs / links to your open source contributions
-- [ ] __10:__ Site includes social links (like LinkedIn, Twitter, and other places to find you on the internet)
-- [ ] __10:__ Site includes an about page / section with a headshot
-- [ ] __10:__ Site includes an about page / section with a bio
-- [ ] __10:__ Your GitHub profile page is cleaned up with clear, descriptive READMEs for the projects you are highlighting
+- Site is hosted (I recommend Heroku or gh-pages)
+- Site prominently features link to your GitHub
+- Site uses a CSS framework
+- Site includes blurb / screenshots / links (both to GitHub and live site) to one of your most impressive projects
+- Site includes blurb / screenshots / links (both to GitHub and live site) to another of your most impressive projects
+- Site includes blurbs / links to your open source contributions
+- Site includes social links (like LinkedIn, Twitter, and other places to find you on the internet)
+- Site includes an about page / section with a headshot
+- Site includes an about page / section with a bio
+- Your GitHub profile page is cleaned up with clear, descriptive READMEs for the projects you are highlighting
 
 ### Optional / Nice to have
 

@@ -47,29 +47,29 @@ Having learned the basics of CRUD apps, you'll spend as much time reading code a
 
 This epics adds a new role: approver. Approvers can approve and reject requests, but don't have all of the admin access that an admin has.
 
-- [ ] As an Admin when I add a new user, I can choose to make them an approver.
-- [ ] As an Admin if I try to make someone an approver AND an admin I get an error: "User can only be approver or admin, not both".
-- [ ] As an approver I can see a menu item in the top navbar next to calendar called "Requests" which links to `/requests`.
-- [ ] As an admin I can see the requests link as well.
-- [ ] As an employee without the approver role, I cannot see the requests.
-- [ ] As an approver or admin, I can see a notification icon next to the request link that shows the number of pending requests.
-- [ ] As an approver, I can approve and reject requests.
-- [ ] As an approver, I do not have access to other admin functions (general, department, LDAP configuration, emails audit).
+- As an Admin when I add a new user, I can choose to make them an approver.
+- As an Admin if I try to make someone an approver AND an admin I get an error: "User can only be approver or admin, not both".
+- As an approver I can see a menu item in the top navbar next to calendar called "Requests" which links to `/requests`.
+- As an admin I can see the requests link as well.
+- As an employee without the approver role, I cannot see the requests.
+- As an approver or admin, I can see a notification icon next to the request link that shows the number of pending requests.
+- As an approver, I can approve and reject requests.
+- As an approver, I do not have access to other admin functions (general, department, LDAP configuration, emails audit).
 
 **General**
 
-- [ ] Artifact is a fork of the [Timeoff.Management][repo] repo.
-- [ ] Practice an Agile approach to developing this epic:
+- Artifact is a fork of the [Timeoff.Management][repo] repo.
+- Practice an Agile approach to developing this epic:
   - All user stories are added as issues on GitHub in your fork of timeoff.management and tracked there.
   - Start a [project](https://help.github.com/articles/about-projects/) in GitHub, add all user stories to it, and drag one issue at a time from the `backlog` to `in progress`.
   - Every user story should be in its own clean pull request, with unit and integration tests included. PRs can include one or more user stories, but user stories should _not_ span multiple PRs (don't solve one user story with 2+ PRs).
   - Practice a daily standup with your pair: "what we worked on yesterday, what we are accomplishing today, what's blocking".
-- [ ] All major features are added via pull requests with a clear description and concise commit messages.
-- [ ] Code uses a linter and there are no linting errors.
-- [ ] Code is well formatted with proper spacing and indentation.
-- [ ] Where appropriate, comments explain unusual code, bug fixes, code assumptions.
-- [ ] Variables, functions, files, etc. have appropriate and meaningful names.
-- [ ] Methods are grouped logically or by accessibility. Basic separation of code into logical folders.
+- All major features are added via pull requests with a clear description and concise commit messages.
+- Code uses a linter and there are no linting errors.
+- Code is well formatted with proper spacing and indentation.
+- Where appropriate, comments explain unusual code, bug fixes, code assumptions.
+- Variables, functions, files, etc. have appropriate and meaningful names.
+- Methods are grouped logically or by accessibility. Basic separation of code into logical folders.
 
 ### Stretch
 
@@ -77,11 +77,11 @@ This epics adds a new role: approver. Approvers can approve and reject requests,
 
 This epic adds a new role: backend user. Backend users can access general admin functions, but can't approve/reject requests.
 
-- [ ] As an Admin when I add a new user, I can choose to make them a 'backend user'.
-- [ ] As an Admin if I try to make someone a 'backend user' AND an admin I get an error: "User can only be a 'backend user' or admin, not both".
-- [ ] As a Backend user, I can't see the 'Requests' menu item but I can see a menu item 'My Requests', which links to `/requests`.
-- [ ] As a Backend user, when I browse `/requests` I see only my personal requests, not the admin/approver view.
-- [ ] As a Backend user, I have access to other admin functions (general, department, LDAP configuration, emails audit).
+- As an Admin when I add a new user, I can choose to make them a 'backend user'.
+- As an Admin if I try to make someone a 'backend user' AND an admin I get an error: "User can only be a 'backend user' or admin, not both".
+- As a Backend user, I can't see the 'Requests' menu item but I can see a menu item 'My Requests', which links to `/requests`.
+- As a Backend user, when I browse `/requests` I see only my personal requests, not the admin/approver view.
+- As a Backend user, I have access to other admin functions (general, department, LDAP configuration, emails audit).
 
 ## Resources
 
