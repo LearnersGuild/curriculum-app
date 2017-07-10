@@ -1,4 +1,4 @@
-# Basic BASH Commands
+# Terminal Shortcuts
 
 **Objective**: Use ctrl-c, ctrl-a, ctrl-e and split your terminal screen
 
