@@ -25,17 +25,17 @@ To view each goal, visit http://curriculum.learnersguild.org/phases/3/goals
 
 ## Modules
 
-- _P:_ [444 Auth Snapshot Simple](../../modules/444-Auth-Snapshot)
-- _P:_ [387 Mmmarkdown](../../modules/387-Mmmarkdown)
-- _P:_ [64 To Do List App](../../modules/64-To-Do-List-App)
-- _P:_ [383 CRUD Mutability](../../modules/383-CRUD-Mutability)
-- _P:_ [98 Pizza Restaurant: Relational DB With CRUD API](../../modules/98-Pizza-Restaurant-Relational-DB-Schema-With-CRUD-API)
-- _P:_ [69 Simple Book Store](../../modules/69-Simple-Book-Store)
-- _P:_ [446 Testing Snapshot](../../modules/446-Testing-Snapshot)
-- _P:_ [181 Timeoff: Approver Epic](../../modules/181-Timeoff-Approver-Epic)
-- _P:_ [330 Roam](../../modules/69-Roam)
-- _P:_ [356 Your Portfolio Site](../../modules/356-Your-Portfolio-Site)
-- _P:_ [232 Trossello Snapshot: Members and Teams Epic](../../modules/232-Trosello-Snapshot-Members-And-Teams-Epic)
+- _P:_ [Auth Snapshot Simple - Goal 444](../../modules/Auth-Snapshot--Goal-444)
+- _P:_ [Mmmarkdown - Goal 387](../../modules/Mmmarkdown--Goal-387)
+- _P:_ [To Do List App - Goal 64](../../modules/To-Do-List-App--Goal-64)
+- _P:_ [CRUD Mutability - Goal 383](../../modules/CRUD-Mutability--Goal-383)
+- _P:_ [Pizza Restaurant: Relational DB With CRUD API - Goal 98](../../modules/Pizza-Restaurant-Relational-DB-Schema-With-CRUD-API--Goal-98)
+- _P:_ [Simple Book Store - Goal 69](../../modules/Simple-Book-Store--Goal-69)
+- _P:_ [Testing Snapshot - Goal 446](../../modules/Testing-Snapshot--Goal-446)
+- _P:_ [Timeoff: Approver Epic - Goal 181](../../modules/Timeoff-Approver-Epic--Goal-181)
+- _P:_ [Roam - Goal 330](../../modules/Roam--Goal-330)
+- _P:_ [Your Portfolio Site - Goal 356](../../modules/Your-Portfolio-Site--Goal-356)
+- _P:_ [Trossello Snapshot: Members and Teams Epic - Goal 232](../../modules/Trosello-Snapshot-Members-And-Teams-Epic--Goal-232)
 
 ## Lectures
 
