@@ -43,3 +43,8 @@ about.html index.html script.js style.css panda.jpg
 ```bash
 curl http://cdn.history.com/sites/2/2017/03/GettyImages-157278376.jpg > panda.jpg
 ```
+
+
+## Solutions
+
+- [deadlyicon](./solutions/deadlyicon)
