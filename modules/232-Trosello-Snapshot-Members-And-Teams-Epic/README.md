@@ -107,40 +107,40 @@ _If you've never done a snapshot goal before_, this one may not be the best plac
 ## Specifications
 
 #### Members & Teams
-- [ ] Boards have members
-- [ ] Cards have members
-- [ ] Board owners can add members to their board using the board menu
-- [ ] Board owners can search for & add members by their name (not just email)
-- [ ] Board members receive messages in their activity feed when new cards are created
-- [ ] Board members receive messages in their activity feed when new members are added
-- [ ] Board members can add members to a card on the board using the card modal
-- [ ] Board owners can remove members from their board
-- [ ] Board members can remove members from a card on the board
-- [ ] Card members are identified by their avatar in the modal view
-- [ ] Card members are identified by their avatar in the board view
-- [ ] Card members receive messages in their activity feed for new comments on the card
-- [ ] Card members receive messages in their activity feed for changes to the due date
-- [ ] Card members receive messages in their activity feed for upcoming due dates
-- [ ] Card members receive messages in their activity feed for moving the card between lists
-- [ ] Tests exist for each of the above specs
-- [ ] UI looks the same as in the mockups
+- Boards have members
+- Cards have members
+- Board owners can add members to their board using the board menu
+- Board owners can search for & add members by their name (not just email)
+- Board members receive messages in their activity feed when new cards are created
+- Board members receive messages in their activity feed when new members are added
+- Board members can add members to a card on the board using the card modal
+- Board owners can remove members from their board
+- Board members can remove members from a card on the board
+- Card members are identified by their avatar in the modal view
+- Card members are identified by their avatar in the board view
+- Card members receive messages in their activity feed for new comments on the card
+- Card members receive messages in their activity feed for changes to the due date
+- Card members receive messages in their activity feed for upcoming due dates
+- Card members receive messages in their activity feed for moving the card between lists
+- Tests exist for each of the above specs
+- UI looks the same as in the mockups
 
 #### General
-- [ ] All major features are added via pull requests with a clear description and concise commit messages.
-- [ ] Code uses a linter and there are no linting errors.
-- [ ] Variables, functions, files, etc. have appropriate and meaningful names.
-- [ ] The artifact produced is a fork of the [Trossello][trossello] repository
+- All major features are added via pull requests with a clear description and concise commit messages.
+- Code uses a linter and there are no linting errors.
+- Variables, functions, files, etc. have appropriate and meaningful names.
+- The artifact produced is a fork of the [Trossello][trossello] repository
 
 ### Stretch
 
 Implement the "teams" feature from Trello.
 
-- [ ] Users can create teams
-- [ ] Users can add members to their team
-- [ ] Team members can create team boards
-- [ ] Team members can remove team boards
-- [ ] Team boards automatically include all team members
-- [ ] Team boards work like regular boards in all other ways
+- Users can create teams
+- Users can add members to their team
+- Team members can create team boards
+- Team members can remove team boards
+- Team boards automatically include all team members
+- Team boards work like regular boards in all other ways
 
 ## Resources
 
