@@ -21,7 +21,8 @@ what is javascript call stack
 
 ### Reading
 
-- https://teamtreehouse.com/library/debugging-node-applications-with-google-chrome
+- https://nodejs.org/en/docs/guides/debugging-getting-started/
+- https://hackernoon.com/debug-node-js-with-chrome-devtools-aca7cf83af6b
 - http://lucasfcosta.com/2017/02/17/JavaScript-Errors-and-Stack-Traces.html
 - https://jvns.ca/blog/2015/11/22/how-i-got-better-at-debugging/
 - [Reading Stack Traces](http://tobyho.com/2011/06/08/the-javascript-stacktrace-blog/)
