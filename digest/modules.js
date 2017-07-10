@@ -33,7 +33,6 @@ const extractModuleDetails = modules =>
   )
 
 const indexById = modules => {
-  console.log('$$$ modules::', modules);
   return modules.reduce((index, module) => {
     index[module.id] = module
     return index
