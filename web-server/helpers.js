@@ -39,6 +39,12 @@ module.exports = app => {
   app.use((request, response, next) => {
 
     response.path = request.url
+    response.locals.currentURL = (
+      request.protocol +
+      '://' +
+      request.get('host') +
+      request.originalUrl
+    )
     response.locals.path = response.path
 
     response.renderNotFound = function(){
