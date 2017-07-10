@@ -5,14 +5,18 @@ if ( !process.env.JWT_PUBLIC_KEY ) {
   throw new Error(`You do not have a JWT_PUBLIC_KEY in your .env. Please add it.`)
 }
 
-const addFakeAuthenticatedUser = (req, res, next ) => {
-  req.user = {id: 'this is a fake user!!', handle: 'Fake News'}
+const addFakeAuthenticatedUser = (request, response, next ) => {
+  request.user = {id: 'this is a fake user!!', handle: 'Fake News'}
+  response.locals.user = request.user
   next()
 }
 
-module.exports = app => {
-  if(!process.env.DISABLE_IDM) {
-
+if(process.env.DISABLE_IDM) {
+  module.exports = app => {
+    app.use(addFakeAuthenticatedUser)
+  }
+} else {
+  module.exports = app => {
     app.use(addUserToRequestFromJWT)
 
     app.use((request, response, next) => {
@@ -35,7 +39,5 @@ module.exports = app => {
       }
       next()
     })
-  } else {
-    app.use(addFakeAuthenticatedUser)
   }
 }
