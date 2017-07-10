@@ -56,7 +56,7 @@ nav.navbar.navbar-inverse(role='navigation')
       .navbar-text.navbar-right
         .list-inline
           li
-            a.navbar-link(href="")= user.handle
+            a.navbar-link(href="#{IDM_BASE_URL}/profile" target="_blank")= user.handle
           li
             a.navbar-link(href=logoutUrl) logout
           li
