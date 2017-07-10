@@ -4,7 +4,7 @@
 
 ## Shell Initialization Files
 
-Everytime you open a new shell, initialization files are run to set up your basic shell environment with any custom configurations you might have. Two of these files are the `.bashrc` (bash resource) and the `.bash_profile`.
+Every time you open a new shell, initialization files are run to set up your basic shell environment with any custom configurations you might have. Two of these files are the `.bashrc` (bash resource) and the `.bash_profile`.
 
 According to `man bash`, `.bash_profile` is executed for shells where you've logged in, which is the default for each new terminal window in Mac OS. Both files are loaded when you start a new shell window, but it's easier to maintain configurations in one file. For this example, let's add configurations to the `.bash_rc`.
 
@@ -15,8 +15,8 @@ Read more about these files in the following resources:
 
 ## Exercise: Exporting Environment Variables
 
-When you modifed your `PATH`
- using `export PATH`, that only adds your custom path in your current session. If you want to keep that custom path, you'll need to add it every time you start a new terminal. You can do this by adding your custom path and `export PATH` command directly to your `.bashrc` to be loaded each time you open a new terminal window.
+When you modified your `PATH`
+ using `export PATH`, you only added your custom path in your current session. If you want to keep that custom path, you'll need to add it every time you start a new terminal. You can do this by adding your custom path and `export PATH` command directly to your `.bashrc` to be loaded each time you open a new terminal window.
 
 ```bash
 # in your .bashrc
@@ -58,7 +58,7 @@ pwd
 # => /Desktop/work_folder/
 ```
 
-[Follow this article](https://www.digitalocean.com/community/tutorials/an-introduction-to-useful-bash-aliases-and-functions) to learn about declaring aliases in BASH and add a few to your `.bashrc`.
+[Read this article](https://www.digitalocean.com/community/tutorials/an-introduction-to-useful-bash-aliases-and-functions) to learn about declaring aliases in BASH and add a few to your `.bashrc`.
 
 ## Customizing Your Prompt
 
