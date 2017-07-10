@@ -35,6 +35,7 @@
 - [Object Oriented JavaScript(1hr)](https://www.youtube.com/watch?v=O8wwnhdkPE4)
 - [JavaBrains course on Scopes & Closures](https://javabrains.io/courses/corejs_scopesclosures)
 - [JavaBrains course on Prototypes](https://javabrains.io/courses/corejs_objectsprototypes)
+- [javaScript call apply and bind](https://www.youtube.com/watch?v=c0mLRpw-9rI)
 
 ## Exercises
 
