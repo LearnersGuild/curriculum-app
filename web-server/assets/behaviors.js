@@ -1,6 +1,6 @@
 (()=>{
 
-  const onModulePage = location.pathname.match(/^\/modules\//) || location.pathname.match(/^\/goals\//)
+  const onModulePage = location.pathname.match(/^\/modules\//)
 
   const postJSON = (path, data) => {
     return $.ajax({

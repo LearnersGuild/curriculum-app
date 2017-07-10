@@ -22,7 +22,6 @@ module.exports = () =>
       'editor',
       'terminal'
     ]
-    console.log('digest::', digest);
     return digest
   })
   .then(loadSkills)
