@@ -2,7 +2,7 @@ const url = require('url')
 const bodyParser = require('body-parser')
 const queries = require('../../database/queries')
 const commands = require('../../database/commands')
-const goalById = require('../../goals/goals')
+const goalsById = require('../../goals/goals')
 
 module.exports = app => {
 
@@ -33,24 +33,19 @@ module.exports = app => {
       .catch(next)
   })
 
-
-////////////////////////////////////////////////////////////////////////////////
-//      API replacement for JSDev
   app.get('/api/goals/index.json', (request, response, next) => {
-    response.json({goals: Object.values(goalById)})
+    response.json({goals: Object.values(goalsById)})
   })
 
   app.get('/api/goals/:id.json', (request, response, next) => {
     const id = request.params.id
-    const goal = goalById[id]
-    if(goal) {
+    const goal = goalsById[id]
+    if (goal) {
       response.json(goal)
     } else {
       response.status(404).json({error: `Could not find goal with id: ${id}`})
     }
   })
-
-////////////////////////////////////////////////////////////////////////////////
 
   // Error Handler
   app.use('/api', (error, req, res, next) => {
