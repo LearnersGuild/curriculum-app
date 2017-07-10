@@ -1,33 +1,23 @@
-# Movie Search CLI
+# Movie Search CLI With Promises
+
+This module is exactly the same as the
+[Movie Search CLI](../Movie-Search-CLI) phase 1 module but with the added
+requirement of the use of Promises.
 
 ## Skills
 
-- Can effectively use Promises
 - Can make HTTP requests from Node
-
+- Can write Asynchronous code in JavaScript using Promises
+- Can extract data from HTML in Node
+- Can scrape a web page in Node
 
 ## Exercise
 
-Write a Node.js script called `movie-search-cli-promises.js` that takes a `search term` as the first argument, and prints the names of the movies in the console which match that search term.
+[Movie Search CLI](../Movie-Search-CLI)
 
-Example usage
-```
-$ node imdb.js "findingnemo"
- Finding Nemo (2003)
- Finding Nemo (2003) (Video Game)
- Finding Nemo (2001) (TV Episode)
- Finding Dory (2016)
- Finding Nemo Submarine Voyage (2007) (Short)
- Finding Nemo: Studio Tour of Pixar (2003) (Video)
- Finding Nemo Attraction & Stage Show (2007) (TV Episode)
-```
+### Specs
 
-Specs:
+*These specs are in addition to the specs in the
+[Movie Search CLI](../Movie-Search-CLI) module*
+
 - use the [request-promise](https://github.com/request/request-promise) library to make HTTP requests
-- use the [cheerio library](https://github.com/cheeriojs/cheerio) to extract contents from the HTML page.
-- functions are tested with mocha and chai
-
-
-Hints:
-- IMDB search url for the example above : `http://www.imdb.com/find?ref_=nv_sr_fn&q=findingnemo&s=all`. Replace `findingnemo` with the dynamic search term.
-
