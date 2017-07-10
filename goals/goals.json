@@ -11,12 +11,8 @@
       "snapshot"
     ],
     "published": true,
-    "level": "2",
     "phase": 3,
-    "redirect_from": "/goals/181",
-    "url": "https://jsdev.learnersguild.org/goals/181-Timeoff_Snapshot-Approver_Epic.html",
-    "base_xp": 200,
-    "bonus_xp": 30.0,
+    "url": "https://curriculum.learnersguild.org/modules/181-Timeoff-Approver-Epic",
     "dynamic": false
   },
   "232": {
@@ -31,12 +27,8 @@
       "snapshot"
     ],
     "published": true,
-    "level": "2",
     "phase": 3,
-    "redirect_from": "/goals/232",
-    "base_xp": 250,
-    "bonus_xp": 37,
-    "url": "https://jsdev.learnersguild.org/goals/232-Trossello_Snapshot-Members_and_Teams_Epic.html",
+    "url": "https://curriculum.learnersguild.org/modules/232-Trosello-Snapshot-Members-And-Teams-Epic",
     "dynamic": false
   },
   "330": {
@@ -51,12 +43,8 @@
       "practice"
     ],
     "published": true,
-    "level": "3",
     "phase": 3,
-    "redirect_from": "/goals/330",
-    "url": "https://jsdev.learnersguild.org/goals/330-Roam-Travel-App.html",
-    "base_xp": 300,
-    "bonus_xp": 45.0,
+    "url": "https://curriculum.learnersguild.org/modules/330-Roam",
     "dynamic": false
   },
   "356": {
@@ -70,13 +58,9 @@
     "labels": [
       "practice"
     ],
-    "level": "2",
     "phase": 3,
     "published": true,
-    "redirect_from": "/goals/356",
-    "url": "https://jsdev.learnersguild.org/goals/356-Your_Portfolio_Site.html",
-    "base_xp": 100,
-    "bonus_xp": 7.5,
+    "url": "https://curriculum.learnersguild.org/goals/356-Your-Portfolio-Site",
     "dynamic": false
   },
   "383": {
@@ -90,13 +74,9 @@
     "labels": [
       "practice"
     ],
-    "level": "1",
     "phase": 3,
-    "base_xp": 150,
     "published": true,
-    "redirect_from": "/goals/383",
-    "url": "https://jsdev.learnersguild.org/goals/383-CRUD_Mutably.html",
-    "bonus_xp": 22.5,
+    "url": "https://curriculum.learnersguild.org/goals/383-CRUD-Mutably",
     "dynamic": false
   },
   "387": {
@@ -111,12 +91,8 @@
       "practice"
     ],
     "published": true,
-    "level": "1",
     "phase": 3,
-    "redirect_from": "/goals/387",
-    "url": "https://jsdev.learnersguild.org/goals/387-Mmmarkdown.html",
-    "base_xp": 100,
-    "bonus_xp": 15.0,
+    "url": "https://curriculum.learnersguild.org/goals/387-Mmmarkdown",
     "dynamic": false
   },
   "412": {
@@ -131,12 +107,8 @@
       "phase"
     ],
     "published": false,
-    "level": "1",
     "phase": 1,
-    "redirect_from": "/goals/412",
-    "url": "https://jsdev.learnersguild.org/goals/412-Phase_1.html",
-    "base_xp": 50,
-    "bonus_xp": 3.75,
+    "url": "https://curriculum.learnersguild.org/goals/412-Phase-1",
     "dynamic": false
   },
   "413": {
@@ -151,12 +123,8 @@
       "phase"
     ],
     "published": false,
-    "level": "1",
     "phase": 2,
-    "redirect_from": "/goals/413",
-    "url": "https://jsdev.learnersguild.org/goals/413-Phase_2.html",
-    "base_xp": 50,
-    "bonus_xp": 3.75,
+    "url": "https://curriculum.learnersguild.org/goals/413-Phase-2",
     "dynamic": false
   },
   "414": {
@@ -171,12 +139,8 @@
       "phase"
     ],
     "published": false,
-    "level": "1",
     "phase": 4,
-    "redirect_from": "/goals/414",
-    "url": "https://jsdev.learnersguild.org/goals/414-Phase_4.html",
-    "base_xp": 50,
-    "bonus_xp": 3.75,
+    "url": "https://curriculum.learnersguild.org/goals/414-Phase_4.html",
     "dynamic": false
   },
   "415": {
@@ -191,12 +155,8 @@
       "phase"
     ],
     "published": false,
-    "level": "1",
     "phase": 5,
-    "redirect_from": "/goals/415",
-    "url": "https://jsdev.learnersguild.org/goals/415-Phase_5.html",
-    "base_xp": 50,
-    "bonus_xp": 3.75,
+    "url": "https://curriculum.learnersguild.org/goals/415-Phase_5.html",
     "dynamic": false
   },
   "416": {
@@ -211,12 +171,8 @@
       "phase"
     ],
     "published": false,
-    "level": "1",
     "phase": 1,
-    "redirect_from": "/goals/416",
-    "url": "https://jsdev.learnersguild.org/goals/416-Phase_2_Interview.html",
-    "base_xp": 50,
-    "bonus_xp": 3.75,
+    "url": "https://curriculum.learnersguild.org/goals/416-Phase_2_Interview.html",
     "dynamic": false
   },
   "417": {
@@ -231,12 +187,8 @@
       "phase"
     ],
     "published": false,
-    "level": "1",
     "phase": 2,
-    "redirect_from": "/goals/417",
-    "url": "https://jsdev.learnersguild.org/goals/417-Phase_3_Interview.html",
-    "base_xp": 50,
-    "bonus_xp": 3.75,
+    "url": "https://curriculum.learnersguild.org/goals/417-Phase_3_Interview.html",
     "dynamic": false
   },
   "418": {
@@ -251,12 +203,8 @@
       "phase"
     ],
     "published": false,
-    "level": "1",
     "phase": 3,
-    "redirect_from": "/goals/418",
-    "url": "https://jsdev.learnersguild.org/goals/418-Phase_4_Interview.html",
-    "base_xp": 50,
-    "bonus_xp": 3.75,
+    "url": "https://curriculum.learnersguild.org/goals/418-Phase_4_Interview.html",
     "dynamic": false
   },
   "444": {
@@ -271,12 +219,8 @@
       "snapshot"
     ],
     "published": true,
-    "level": "2",
     "phase": 3,
-    "redirect_from": "/goals/444",
-    "base_xp": 250,
-    "bonus_xp": 37,
-    "url": "https://jsdev.learnersguild.org/goals/444-Auth_Snapshot.html",
+    "url": "https://curriculum.learnersguild.org/goals/444-Auth_Snapshot.html",
     "dynamic": false
   },
   "446": {
@@ -291,12 +235,8 @@
       "snapshot"
     ],
     "published": true,
-    "level": "2",
     "phase": 3,
-    "redirect_from": "/goals/446",
-    "base_xp": 250,
-    "bonus_xp": 37,
-    "url": "https://jsdev.learnersguild.org/goals/446-Testing_Snapshot.html",
+    "url": "https://curriculum.learnersguild.org/goals/446-Testing_Snapshot.html",
     "dynamic": false
   },
   "64": {
@@ -312,12 +252,8 @@
       "practice"
     ],
     "published": true,
-    "level": "1",
     "phase": 3,
-    "redirect_from": "/goals/64",
-    "url": "https://jsdev.learnersguild.org/goals/64-To_Do_List_App.html",
-    "base_xp": 50,
-    "bonus_xp": 3.75,
+    "url": "https://curriculum.learnersguild.org/goals/64-To_Do_List_App.html",
     "dynamic": false
   },
   "69": {
@@ -332,12 +268,8 @@
       "practice"
     ],
     "published": true,
-    "level": "1",
     "phase": 3,
-    "redirect_from": "/goals/69",
-    "url": "https://jsdev.learnersguild.org/goals/69-Simple_Book_Store.html",
-    "base_xp": 100,
-    "bonus_xp": 15.0,
+    "url": "https://curriculum.learnersguild.org/goals/69-Simple_Book_Store.html",
     "dynamic": false
   },
   "98": {
@@ -352,12 +284,8 @@
       "practice"
     ],
     "published": true,
-    "level": "1",
     "phase": 3,
-    "redirect_from": "/goals/98",
-    "url": "https://jsdev.learnersguild.org/goals/98-Pizza_Restaurant-RDB_Schema_with_CRUD_API.html",
-    "base_xp": 100,
-    "bonus_xp": 15.0,
+    "url": "https://curriculum.learnersguild.org/goals/98-Pizza_Restaurant-RDB_Schema_with_CRUD_API.html",
     "dynamic": false
   }
 }
