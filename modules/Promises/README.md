@@ -41,6 +41,7 @@ callbacks vs promises
 - [JavaScript Promise API](https://davidwalsh.name/promises)
 - One reason that promises are handy: [Callback Hell](http://callbackhell.com/)
 - https://blog.domenic.me/youre-missing-the-point-of-promises/
+- [A very bare-bones (and incomplete) implementation of the idea behind Promise](https://gist.github.com/tannerwelsh/5236252ffacfb0867e65269f4a4547b7)
 
 ### Watching
 
