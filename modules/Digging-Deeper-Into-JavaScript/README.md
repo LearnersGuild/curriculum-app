@@ -2,7 +2,7 @@
 
 ## Skills
 
-- Can use template literals
+- Can use template literals in JavaScript
 - Can describe JavaScript hoisting
 - Can write an immediately invoked function expression in JavaScript
 - Can describe why immediately invoked function expressions are useful in JavaScript
