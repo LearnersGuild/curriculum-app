@@ -41,3 +41,8 @@ You will start by cloning a starter app the has full CRUD functionality. From he
 - A test for the `/contacts/:contactId` GET route that makes sure the correct data is returned
 - A test for the `/contacts/:contactId/delete` GET route that makes sure the correct data is deleted
 - A test for the `/search` GET route that checks that the search is returning the correct data and rendering the correct page
+
+
+## Resources
+
+- http://cmme.org/tdumitrescu/blog/2014/02/node-sql-testing/
