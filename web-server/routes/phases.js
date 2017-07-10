@@ -23,7 +23,6 @@ module.exports = app => {
   app.get('/phases/:phaseNumber/skills', (request, response, next) => {
     const user_id = request.user.id
     const labels = response.phase.skills
-    console.dir(response.phase);
     queries.getChecks({user_id, labels})
       .then(checks => {
         const skills = response.phase.skills.map(skillId =>
