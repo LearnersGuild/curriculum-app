@@ -33,8 +33,10 @@ module.exports = app => {
       .catch(next)
   })
 
+
+////////////////////////////////////////////////////////////////////////////////
+//      API replacement for JSDev
   app.get('/api/goals/index.json', (request, response, next) => {
-    console.log('foo:', request.params.foo);
     response.json({goals: Object.values(goalById)})
   })
 
@@ -44,9 +46,11 @@ module.exports = app => {
     if(goal) {
       response.json(goal)
     } else {
-      response.status(404).json({error: `Could not find goal with id: ${id}`});
+      response.status(404).json({error: `Could not find goal with id: ${id}`})
     }
   })
+
+////////////////////////////////////////////////////////////////////////////////
 
   // Error Handler
   app.use('/api', (error, req, res, next) => {
