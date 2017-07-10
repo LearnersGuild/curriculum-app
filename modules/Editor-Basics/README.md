@@ -79,7 +79,7 @@ Make sure you know how the keyboard shortcuts for:
 Some nice to haves:
 
 - split screen in your editor
-- select the next instance of the exact thing i have selected now (cmd-d)
+- select the next instance of my current selection (cmd-d)
 
 
 
