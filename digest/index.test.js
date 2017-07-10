@@ -48,13 +48,7 @@ describe('digest', function(){
         Object.keys(this.digest.phases).forEach(phaseNumber => {
           const phase = this.digest.phases[phaseNumber]
           expect(phase.skills).to.be.an('Array')
-          const dups = []
-          phase.skills.forEach((skillId, index) => {
-            if (phase.skills.lastIndexOf(skillId) !== index){
-              dups.push(skillId)
-            }
-          })
-          expect(dups).to.eql([])
+          expect(phase.skills).to.not.haveDuplicates()
         })
       })
     })
