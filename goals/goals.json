@@ -1,0 +1,363 @@
+{
+  "181": {
+    "authors": [
+      "shereefb"
+    ],
+    "goal_id": 181,
+    "team_size": 2,
+    "title": "Timeoff Snapshot - Approver Epic",
+    "created_at": "2017-02-21T22:26:48Z",
+    "labels": [
+      "snapshot"
+    ],
+    "published": true,
+    "level": "2",
+    "phase": 3,
+    "redirect_from": "/goals/181",
+    "url": "https://jsdev.learnersguild.org/goals/181-Timeoff_Snapshot-Approver_Epic.html",
+    "base_xp": 200,
+    "bonus_xp": 30.0,
+    "dynamic": false
+  },
+  "232": {
+    "authors": [
+      "tannerwelsh"
+    ],
+    "goal_id": 232,
+    "team_size": 2,
+    "title": "Trossello Snapshot: Members & Teams Epic",
+    "created_at": "2017-03-22T11:10:48Z",
+    "labels": [
+      "snapshot"
+    ],
+    "published": true,
+    "level": "2",
+    "phase": 3,
+    "redirect_from": "/goals/232",
+    "base_xp": 250,
+    "bonus_xp": 37,
+    "url": "https://jsdev.learnersguild.org/goals/232-Trossello_Snapshot-Members_and_Teams_Epic.html",
+    "dynamic": false
+  },
+  "330": {
+    "authors": [
+      "jlopker"
+    ],
+    "team_size": 2,
+    "goal_id": 330,
+    "title": "Roam",
+    "created_at": "2017-05-12T10:38:28Z",
+    "labels": [
+      "practice"
+    ],
+    "published": true,
+    "level": "3",
+    "phase": 3,
+    "redirect_from": "/goals/330",
+    "url": "https://jsdev.learnersguild.org/goals/330-Roam-Travel-App.html",
+    "base_xp": 300,
+    "bonus_xp": 45.0,
+    "dynamic": false
+  },
+  "356": {
+    "authors": [
+      "jlopker"
+    ],
+    "team_size": 1,
+    "goal_id": 356,
+    "title": "Your Portfolio Site",
+    "created_at": "2017-04-26T11:00:00Z",
+    "labels": [
+      "practice"
+    ],
+    "level": "2",
+    "phase": 3,
+    "published": true,
+    "redirect_from": "/goals/356",
+    "url": "https://jsdev.learnersguild.org/goals/356-Your_Portfolio_Site.html",
+    "base_xp": 100,
+    "bonus_xp": 7.5,
+    "dynamic": false
+  },
+  "383": {
+    "authors": [
+      "jlopker"
+    ],
+    "team_size": 2,
+    "goal_id": 383,
+    "title": "CRUD Mutably",
+    "created_at": "2017-05-11T11:00:00Z",
+    "labels": [
+      "practice"
+    ],
+    "level": "1",
+    "phase": 3,
+    "base_xp": 150,
+    "published": true,
+    "redirect_from": "/goals/383",
+    "url": "https://jsdev.learnersguild.org/goals/383-CRUD_Mutably.html",
+    "bonus_xp": 22.5,
+    "dynamic": false
+  },
+  "387": {
+    "authors": [
+      "tannerwelsh"
+    ],
+    "team_size": 2,
+    "goal_id": 387,
+    "title": "Mmmarkdown",
+    "created_at": "2017-05-12T10:38:28Z",
+    "labels": [
+      "practice"
+    ],
+    "published": true,
+    "level": "1",
+    "phase": 3,
+    "redirect_from": "/goals/387",
+    "url": "https://jsdev.learnersguild.org/goals/387-Mmmarkdown.html",
+    "base_xp": 100,
+    "bonus_xp": 15.0,
+    "dynamic": false
+  },
+  "412": {
+    "authors": [
+      "tannerwelsh"
+    ],
+    "team_size": 1,
+    "goal_id": 412,
+    "title": "Phase 1",
+    "created_at": "2017-06-13T10:38:28Z",
+    "labels": [
+      "phase"
+    ],
+    "published": false,
+    "level": "1",
+    "phase": 1,
+    "redirect_from": "/goals/412",
+    "url": "https://jsdev.learnersguild.org/goals/412-Phase_1.html",
+    "base_xp": 50,
+    "bonus_xp": 3.75,
+    "dynamic": false
+  },
+  "413": {
+    "authors": [
+      "tannerwelsh"
+    ],
+    "team_size": 1,
+    "goal_id": 413,
+    "title": "Phase 2",
+    "created_at": "2017-06-13T10:38:28Z",
+    "labels": [
+      "phase"
+    ],
+    "published": false,
+    "level": "1",
+    "phase": 2,
+    "redirect_from": "/goals/413",
+    "url": "https://jsdev.learnersguild.org/goals/413-Phase_2.html",
+    "base_xp": 50,
+    "bonus_xp": 3.75,
+    "dynamic": false
+  },
+  "414": {
+    "authors": [
+      "tannerwelsh"
+    ],
+    "team_size": 1,
+    "goal_id": 414,
+    "title": "Phase 4",
+    "created_at": "2017-06-13T10:38:28Z",
+    "labels": [
+      "phase"
+    ],
+    "published": false,
+    "level": "1",
+    "phase": 4,
+    "redirect_from": "/goals/414",
+    "url": "https://jsdev.learnersguild.org/goals/414-Phase_4.html",
+    "base_xp": 50,
+    "bonus_xp": 3.75,
+    "dynamic": false
+  },
+  "415": {
+    "authors": [
+      "tannerwelsh"
+    ],
+    "team_size": 1,
+    "goal_id": 415,
+    "title": "Phase 5",
+    "created_at": "2017-06-13T10:38:28Z",
+    "labels": [
+      "phase"
+    ],
+    "published": false,
+    "level": "1",
+    "phase": 5,
+    "redirect_from": "/goals/415",
+    "url": "https://jsdev.learnersguild.org/goals/415-Phase_5.html",
+    "base_xp": 50,
+    "bonus_xp": 3.75,
+    "dynamic": false
+  },
+  "416": {
+    "authors": [
+      "tannerwelsh"
+    ],
+    "team_size": 1,
+    "goal_id": 416,
+    "title": "Phase 2 Interview",
+    "created_at": "2017-06-13T10:38:28Z",
+    "labels": [
+      "phase"
+    ],
+    "published": false,
+    "level": "1",
+    "phase": 1,
+    "redirect_from": "/goals/416",
+    "url": "https://jsdev.learnersguild.org/goals/416-Phase_2_Interview.html",
+    "base_xp": 50,
+    "bonus_xp": 3.75,
+    "dynamic": false
+  },
+  "417": {
+    "authors": [
+      "tannerwelsh"
+    ],
+    "team_size": 1,
+    "goal_id": 417,
+    "title": "Phase 3 Interview",
+    "created_at": "2017-06-13T10:38:28Z",
+    "labels": [
+      "phase"
+    ],
+    "published": false,
+    "level": "1",
+    "phase": 2,
+    "redirect_from": "/goals/417",
+    "url": "https://jsdev.learnersguild.org/goals/417-Phase_3_Interview.html",
+    "base_xp": 50,
+    "bonus_xp": 3.75,
+    "dynamic": false
+  },
+  "418": {
+    "authors": [
+      "tannerwelsh"
+    ],
+    "team_size": 1,
+    "goal_id": 418,
+    "title": "Phase 4 Interview",
+    "created_at": "2017-06-13T10:38:28Z",
+    "labels": [
+      "phase"
+    ],
+    "published": false,
+    "level": "1",
+    "phase": 3,
+    "redirect_from": "/goals/418",
+    "url": "https://jsdev.learnersguild.org/goals/418-Phase_4_Interview.html",
+    "base_xp": 50,
+    "bonus_xp": 3.75,
+    "dynamic": false
+  },
+  "444": {
+    "authors": [
+      "jlopker"
+    ],
+    "goal_id": 444,
+    "team_size": 1,
+    "title": "Auth Snapshot",
+    "created_at": "2017-06-28T11:10:48Z",
+    "labels": [
+      "snapshot"
+    ],
+    "published": true,
+    "level": "2",
+    "phase": 3,
+    "redirect_from": "/goals/444",
+    "base_xp": 250,
+    "bonus_xp": 37,
+    "url": "https://jsdev.learnersguild.org/goals/444-Auth_Snapshot.html",
+    "dynamic": false
+  },
+  "446": {
+    "authors": [
+      "jlopker"
+    ],
+    "goal_id": 446,
+    "team_size": 1,
+    "title": "Testing Snapshot",
+    "created_at": "2017-06-28T11:10:48Z",
+    "labels": [
+      "snapshot"
+    ],
+    "published": true,
+    "level": "2",
+    "phase": 3,
+    "redirect_from": "/goals/446",
+    "base_xp": 250,
+    "bonus_xp": 37,
+    "url": "https://jsdev.learnersguild.org/goals/446-Testing_Snapshot.html",
+    "dynamic": false
+  },
+  "64": {
+    "authors": [
+      "rachel-ftw",
+      "mantinone"
+    ],
+    "team_size": 1,
+    "goal_id": 64,
+    "title": "To Do List App",
+    "created_at": "2016-08-06T00:52:33Z",
+    "labels": [
+      "practice"
+    ],
+    "published": true,
+    "level": "1",
+    "phase": 3,
+    "redirect_from": "/goals/64",
+    "url": "https://jsdev.learnersguild.org/goals/64-To_Do_List_App.html",
+    "base_xp": 50,
+    "bonus_xp": 3.75,
+    "dynamic": false
+  },
+  "69": {
+    "authors": [
+      "jrob8577"
+    ],
+    "team_size": 2,
+    "goal_id": 69,
+    "title": "Simple Book Store",
+    "created_at": "2016-08-12T23:16:31Z",
+    "labels": [
+      "practice"
+    ],
+    "published": true,
+    "level": "1",
+    "phase": 3,
+    "redirect_from": "/goals/69",
+    "url": "https://jsdev.learnersguild.org/goals/69-Simple_Book_Store.html",
+    "base_xp": 100,
+    "bonus_xp": 15.0,
+    "dynamic": false
+  },
+  "98": {
+    "authors": [
+      "deonna"
+    ],
+    "team_size": 2,
+    "goal_id": 98,
+    "title": "Pizza Restaurant: Relational DB Schema with CRUD API",
+    "created_at": "2016-10-13T22:49:54Z",
+    "labels": [
+      "practice"
+    ],
+    "published": true,
+    "level": "1",
+    "phase": 3,
+    "redirect_from": "/goals/98",
+    "url": "https://jsdev.learnersguild.org/goals/98-Pizza_Restaurant-RDB_Schema_with_CRUD_API.html",
+    "base_xp": 100,
+    "bonus_xp": 15.0,
+    "dynamic": false
+  }
+}
