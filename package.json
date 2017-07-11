@@ -22,6 +22,7 @@
   "homepage": "https://github.com/GuildCrafts/curriculum#readme",
   "dependencies": {
     "@learnersguild/idm-jwt-auth": "^2.0.1",
+    "@learnersguild/styles": "^0.1.0",
     "body-parser": "^1.17.2",
     "bootflat": "^2.0.4",
     "cookie-parser": "^1.4.3",
