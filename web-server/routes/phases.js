@@ -20,6 +20,15 @@ module.exports = app => {
     response.renderMarkdownFile(`/phases/${phaseNumber}/README.md`)
   })
 
+  app.get('/phases/:phaseNumber/schedule.md', (request, response, next) => {
+    const { phaseNumber } = request.params
+    response.redirect(`/phases/${phaseNumber}/schedule`)
+  })
+
+  app.get('/phases/:phaseNumber/schedule', (request, response, next) => {
+    response.render("phases/schedule")
+  })
+
   app.get('/phases/:phaseNumber/skills', (request, response, next) => {
     const user_id = request.user.id
     const labels = response.phase.skills

@@ -52,7 +52,7 @@ To see how to use these skills to track and assess yourself, watch this [14m vid
 
 ## Schedule
 
-[schedule](./schedule.md)
+[schedule](./schedule)
 
 ## Supports
 

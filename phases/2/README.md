@@ -46,7 +46,7 @@ In this phase you will learn…
 
 ## Schedule
 
-[schedule](./schedule.md)
+[schedule](./schedule)
 
 ## Supports
 

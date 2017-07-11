@@ -215,3 +215,15 @@ ul.skills > li > label > input[type="checkbox"] {
 .skills-list-controls > .list-inline > li {
   vertical-align: middle;
 }
+
+
+.phase-calendar-iframe {
+  border: 0;
+  position: absolute;
+  top: 0.25em;
+  left: 0.25em;
+  bottom: 0.25em;
+  right: 0.25em;
+  height: calc(100% - 0.5em);
+  width: calc(100% - 0.5em);
+}
