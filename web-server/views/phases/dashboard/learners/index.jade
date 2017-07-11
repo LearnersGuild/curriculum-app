@@ -1,0 +1,9 @@
+extends ../../../layout
+
+block content
+  h1 Learners in Phase #{phase.number}
+
+  ol
+    for learner in learners
+      li
+        a(href="/phases/#{phase.number}/dashboard/learners/#{learner.handle}")= learner.handle

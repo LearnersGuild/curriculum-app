@@ -1,0 +1,19 @@
+extends ../../../layout
+
+block content
+  h2 #{learner.handle}'s Skill Check Log for Phase #{phase.number}
+
+  ol
+    for check in learner.checkLog
+      - skill = digest.skills[check.label]
+      if phase.skills.includes(check.label)
+        li
+          div
+            input(type="checkbox" checked=check.checked disabled)
+            &nbsp;
+            = skill ? skill.name : check.label
+          div
+            small on #{check.occurred_at}
+          div
+            small from #{check.referrer.replace(/https?:\/\/[\w\.]+\.(org|dev)/, '')}
+

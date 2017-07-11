@@ -9,9 +9,9 @@ module.exports = app => {
   app.use('/api', bodyParser.json())
 
   app.post('/api/checks/status', (request, response, next) => {
-    const user_id = request.user.id
+    const userId = request.user.id
     const { labels } = request.body
-    queries.getChecks({user_id, labels})
+    queries.getChecks({userId, labels})
       .then(checks => {
         const map = {}
         labels.forEach(label => {

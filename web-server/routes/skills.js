@@ -6,9 +6,9 @@ const commands = require('../../database/commands')
 module.exports = app => {
 
   app.get('/skills', (request, response, next) => {
-    const user_id = request.user.id
+    const userId = request.user.id
 
-    queries.getChecks({user_id})
+    queries.getChecks({userId})
       .then(checks => {
         const skills = Object.keys(response.digest.skills).map(skillId =>
           Object.assign({}, response.digest.skills[skillId], {checked: !!checks[skillId]})
@@ -25,9 +25,9 @@ module.exports = app => {
     const skill = response.digest.skills[skillId]
     if (!skill) return response.renderNotFound()
 
-    const user_id = request.user.id
+    const userId = request.user.id
     const labels = [skill.id]
-    queries.getChecks({user_id, labels})
+    queries.getChecks({userId, labels})
       .then(checks => {
         const checked = !!checks[skill.id]
         response.render('skills/show', {skill, checked})

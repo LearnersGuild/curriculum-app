@@ -1,5 +1,5 @@
+const BackOffice = require('./BackOffice')
 const { addUserToRequestFromJWT } = require('@learnersguild/idm-jwt-auth/lib/middlewares')
-const { idmGraphQLFetch } = require('@learnersguild/idm-jwt-auth/lib/utils')
 
 if ( !process.env.JWT_PUBLIC_KEY ) {
   throw new Error(`You do not have a JWT_PUBLIC_KEY in your .env. Please add it.`)
@@ -27,6 +27,8 @@ if (process.env.DISABLE_IDM) {
           `${process.env.IDM_BASE_URL}/sign-in?redirect=${encodeURIComponent(completeUrl)}`
         )
         return
+      }else{
+        user.isAdmin = user.roles.includes('staff')
       }
       next()
     })
@@ -34,9 +36,7 @@ if (process.env.DISABLE_IDM) {
     app.use((request, response, next) => {
       response.locals.user = request.user
       response.locals.logoutUrl = `${process.env.IDM_BASE_URL}/auth/sign-out?redirect=${encodeURIComponent(request.completeUrl)}`
-      request.queryIdm = function(query, variables={}){
-        return idmGraphQLFetch({query, variables}, request.cookies.lgJWT)
-      }
+      request.backOffice = new BackOffice(request.cookies.lgJWT)
       next()
     })
   }

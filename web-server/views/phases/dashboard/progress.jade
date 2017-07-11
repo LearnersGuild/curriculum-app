@@ -1,0 +1,13 @@
+extends ../../layout
+
+block content
+  h1 Phase #{phase.number} Progress
+
+  ul
+    for learner in learners
+      li
+        div
+          a(href="/phases/#{phase.number}/dashboard/learners/#{learner.handle}")= learner.handle
+        progress.skill-progress(value=learner.skillsNumerator max=learner.skillsDenominator)
+        small #{learner.skillsNumerator}&nbsp;/&nbsp;#{learner.skillsDenominator}
+

@@ -1,0 +1,20 @@
+extends ../../../layout
+
+block content
+  h1= learner.handle
+
+  p
+    img(src=learner.avatarUrl)
+
+  ul
+    li
+      a(href="/phases/#{phase.number}/dashboard/learners/#{learner.handle}/skills") Skills
+    li
+      a(href="/phases/#{phase.number}/dashboard/learners/#{learner.handle}/check-log") Skill Check Log
+
+  h2 Skills Progress
+  - skillsDenominator = phase.skills.length
+  - skillsNumerator = learner.checkedSkills.filter(skill => phase.skills.includes(skill)).length
+  progress.skill-progress(value=skillsNumerator max=skillsDenominator)
+  div
+    small #{skillsNumerator}&nbsp;/&nbsp;#{skillsDenominator}
