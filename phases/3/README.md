@@ -2,6 +2,8 @@
 
 The Integrated Practice phase gives learners a chance to synthesize and utilize skills developed in Foundations 1 & 2 through module-based assignments and small projects that mimic real world applications.
 
+In Phase 3, you'll vote on a goal(from the list of goals below) using Echo, and will be put on a team. Most of the goals are pairing goals, with a couple solo goals mixed in.
+
 ## High Level Skills
 
 In this phase you will learn…
@@ -14,14 +16,6 @@ In this phase you will learn…
 - More advanced asynchronous patterns in JavaScript
 - How to use Git and GitHub on a team
 - How to render dynamically generated HTML
-
-## Goal Library
-
-In Phase 3, you'll work on goals from the goal library. Most of the goals are pairing goals, with a couple solo goals mixed in.
-
-Here are the goals that you can choose from (ordered in rough approximation of increasing difficulty/complexity):
-
-To view each goal, visit http://curriculum.learnersguild.org/phases/3/goals
 
 ## Modules
 
