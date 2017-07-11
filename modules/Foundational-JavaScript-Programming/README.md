@@ -96,9 +96,11 @@ before moving on from this module.
 | Object         | Almost all values in JavaScript are objects |
 | ReferenceError | The error that is thrown when your code attempts to use something that was not declared |
 
-[More](https://www.codecademy.com/articles/glossary-javascript)
-[A Lot More](https://developer.mozilla.org/en-US/docs/Glossary)
-[JavaScript Reference](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference)
+### Useful Glossarys
+
+- [Javascript Glossary](https://www.codecademy.com/articles/glossary-javascript)
+- [Mozilla Javascript Glossary](https://developer.mozilla.org/en-US/docs/Glossary)
+- [JavaScript Reference](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference)
 
 ## Search Terms
 
