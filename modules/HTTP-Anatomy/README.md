@@ -22,6 +22,7 @@
 ### Watching
 
 - HTTP Request Anatomy : https://www.youtube.com/watch?v=DvQp7hJk0TA
+- Anatomy of a web request: https://robrich.org/slides/anatomy_of_a_web_request/#/21
 - URLs & Query Params : https://www.youtube.com/watch?v=7D0031eA-ZQ
 - MIME Types & Content Type Headers : https://www.youtube.com/watch?v=FBkZ2TJZZUY
 - Request Body Encoding : https://www.youtube.com/watch?v=nBE3-6fHspM
