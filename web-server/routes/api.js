@@ -34,7 +34,7 @@ module.exports = app => {
   })
 
   app.get('/api/goals/index.json', (request, response, next) => {
-    response.json({goals: Object.values(goalsById)})
+    response.json({goals: Object.keys(goalsById).map( goalId => goalsById[goalId])})
   })
 
   app.get('/api/goals/:id.json', (request, response, next) => {
