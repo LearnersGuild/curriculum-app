@@ -3,7 +3,7 @@ extends ../layout
 block content
   - phaseCalendarSrc = [null,"bquecoujtqg49ss45o31p75hk8","mq5c40phqs9bahdln84k1ub8s4","cp10fqmfm51bcojt2n6jscnjlk","jdtd800osuihbp2u19pau0gbi4","6ua9fouf3j0u0q1e396o105o3c"][phase.number]
   if phaseCalendarSrc
-    - src = "https://calendar.google.com/calendar/embed?wkst=1&src=learnersguild.org_"+phaseCalendarSrc+"%40group.calendar.google.com&showPrint=0&showCalendars=0&ctz=America%2FLos_Angeles"
-    iframe.phase-calendar-iframe(src=src style="border-width:0" width="800" height="600" frameborder="0" scrolling="no")
+    - src = "https://calendar.google.com/calendar/embed?wkst=1&mode=AGENDA&src=learnersguild.org_"+phaseCalendarSrc+"%40group.calendar.google.com&showPrint=0&showCalendars=0&ctz=America%2FLos_Angeles"
+    iframe.phase-calendar-iframe(src=src style="border-width:0" frameborder="0" scrolling="no")
   else
     h3 Phase #{phase.number} has no calendar at this time
