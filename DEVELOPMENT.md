@@ -1,5 +1,7 @@
 # DEVELOPMENT
 
+[![CircleCI](https://circleci.com/gh/GuildCrafts/curriculum.svg?style=svg)](https://circleci.com/gh/GuildCrafts/curriculum)
+
 ## Dev Environment Setup
 
 
@@ -31,3 +33,7 @@ npm run migrate
 npm run dev
 ```
 
+
+## Continuous Integration
+
+https://circleci.com/gh/GuildCrafts/curriculum
