@@ -19,7 +19,7 @@ In this phase you will learn…
 
 ## Modules
 
-- _P:_ [Auth Snapshot Simple - Goal 444](../../modules/Auth-Snapshot--Goal-444)
+- _P:_ [Auth Snapshot Simple - Goal 444](../../modules/Auth-Snapshot-Simple--Goal-444)
 - _P:_ [Mmmarkdown - Goal 387](../../modules/Mmmarkdown--Goal-387)
 - _P:_ [To Do List App - Goal 64](../../modules/To-Do-List-App--Goal-64)
 - _P:_ [CRUD Mutability - Goal 383](../../modules/CRUD-Mutability--Goal-383)
