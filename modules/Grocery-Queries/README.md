@@ -9,13 +9,13 @@ module._
 ___Note:__ all of the skills below are applicable to any SQL server but were
 practicing them in postgresql_
 
-- Can select everything from a single table in SQL
-- Can select specific columns from a single table in SQL
-- Can select a subset of the rows in a table using a where clause in SQL
-- Can select from two tables using a join on a primary key id in SQL
-- Can select a subset of a table using a join in SQL
-- Can describe the difference between a left, right, inner and outer joins in SQL
-- Can define a table with a auto sequencing primary key in SQL
+[ ]Can select everything from a single table in SQL
+[ ]Can select specific columns from a single table in SQL
+[ ]Can select a subset of the rows in a table using a where clause in SQL
+[ ]Can select from two tables using a join on a primary key id in SQL
+[ ]Can select a subset of a table using a join in SQL
+[ ]Can describe the difference between a left, right, inner and outer joins in SQL
+[ ]Can define a table with a auto sequencing primary key in SQL
 
 
 ## Setup
