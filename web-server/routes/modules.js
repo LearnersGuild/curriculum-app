@@ -9,7 +9,7 @@ module.exports = app => {
   app.get('/modules/:moduleName', app.ensureTrailingSlash)
 
   app.use('/modules/:moduleName', (request, response, next) => {
-    const user_id = request.user.id
+    const userId = request.user.id
     const { moduleName } = request.params
     const { digest } = response
     const { renderSkill } = app.locals
@@ -26,7 +26,7 @@ module.exports = app => {
     response.locals.currentModuleSkills = currentModuleSkills
 
     const labels = currentModuleSkills.map(skill => skill.id)
-    queries.getChecks({user_id, labels})
+    queries.getChecks({userId, labels})
       .then(checks => {
         currentModuleSkills.forEach(skill => {
           skill.checked = !!checks[skill.id]

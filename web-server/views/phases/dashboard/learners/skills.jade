@@ -1,0 +1,14 @@
+extends ../../../layout
+
+
+block content
+  h1 #{learner.handle}'s skills
+
+  ul.skills-list-list
+    for skillId in phase.skills
+      - skill = digest.skills[skillId]
+      - checked = learner.checkedSkills.includes(skillId)
+      li.list-item-with-checkbox
+        input(type="checkbox" checked=checked disabled)
+        a(href=skill.path) !{renderSkill(skill)}
+

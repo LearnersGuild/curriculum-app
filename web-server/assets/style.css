@@ -227,3 +227,8 @@ ul.skills > li > label > input[type="checkbox"] {
   height: calc(100% - 0.5em);
   width: calc(100% - 0.5em);
 }
+
+.skill-progress{
+  display: block;
+  width: 100%;
+}

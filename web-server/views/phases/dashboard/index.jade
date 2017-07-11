@@ -1,0 +1,10 @@
+extends ../../layout
+
+block content
+  h1 Phase #{phase.number} Dashboard
+
+  ul
+    li
+      a(href="/phases/#{phase.number}/dashboard/learners") Learners
+    li
+      a(href="/phases/#{phase.number}/dashboard/progress") Progress

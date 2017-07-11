@@ -10,9 +10,12 @@ block content
       a(href="https://github.com/isaacs/github/issues/new?&body=%23+Bug+Report%0A%0AI+found+a+problem+on+#{encodeURIComponent(currentURL)}%0A%0A" target="_blank") Report A Bug
     if phase
       li
-        a(href="/phases/"+phase.number+"/skills") Skills
+        a(href="/phases/#{phase.number}/skills") Skills
       li
-        a(href="/phases/"+phase.number+"/schedule") Schedule
+        a(href="/phases/#{phase.number}/schedule") Schedule
+      if user.isAdmin
+        li
+          a(href="/phases/#{phase.number}/dashboard") Dashboard
 
   textarea.hidden.skills-data= JSON.stringify(currentModuleSkills)
 

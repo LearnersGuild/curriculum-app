@@ -1,8 +1,9 @@
 const util = require('util')
 const path = require('path')
 const fs = require('fs-extra')
-const renderMarkdown = require('./renderMarkdown')
 const escapeHTML = require('jade').runtime.escape
+const renderMarkdown = require('./renderMarkdown')
+const queries = require('../database/queries')
 
 module.exports = app => {
 
@@ -124,6 +125,37 @@ module.exports = app => {
         }
         response.render('markdown', file)
       })
+    }
+
+    request.getUserWithCheckLog = (handle) => {
+      return request.backOffice.getUser(handle)
+        .then(learner => {
+          return queries.getCheckLogsForUsers([learner.id])
+          .then(checkLogs => {
+            const checkLog = checkLogs[learner.id]
+            learner.checkLog = checkLog
+            learner.checkedSkills = checkLog
+              .filter(checkLogLine => checkLogLine.checked)
+              .map(checkLogLine => checkLogLine.label)
+            return learner
+          })
+        })
+    }
+
+    request.getUsersForPhaseWithCheckLog = phaseNumber => {
+      return request.backOffice.getActiveLearnersForPhase(phaseNumber)
+        .then(learners => {
+          return queries.getCheckLogsForUsers(learners.map(l => l.id))
+            .then(checkLogsByUserId => {
+              learners.forEach(learner => {
+                learner.checkLog = checkLogsByUserId[learner.id]
+                learner.checkedSkills = learner.checkLog
+                  .filter(checkLogLine => checkLogLine.checked)
+                  .map(checkLogLine => checkLogLine.label)
+              })
+              return learners
+            })
+        })
     }
 
     next()
