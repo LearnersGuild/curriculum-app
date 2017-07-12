@@ -8,20 +8,31 @@ module.exports = () =>
   .then(([modules, phases]) => ({modules, phases}))
   .then(digest => {
     digest.skillContexts = [
-      'SQL',
+      'Bash',
+      'Browser',
+      'Chrome Developer Tools',
+      'CSS',
+      'Editor',
+      'Encryption',
+      'Express',
+      'General Programming',
+      'Git',
+      'GitHub',
+      'Google',
+      'Heroku',
+      'HTML & CSS',
+      'HTML',
+      'HTTP',
       'JavaScript',
       'Node',
-      'Express',
-      'Browser',
-      'Git',
-      'Chrome Developer Tools',
-      'HTTP',
-      'HTML & CSS',
+      'Regular Expressions',
+      'shell',
       'Slack',
-      'Google',
-      'editor',
-      'terminal'
-    ]
+      'SQL',
+      'Terminal',
+      'test',
+      'UNIX',
+    ].sort()
     return digest
   })
   .then(loadSkills)
