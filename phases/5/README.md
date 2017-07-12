@@ -28,6 +28,6 @@ Weekly work plans should align with one of the four main accountabilities below.
 You are accountable for setting your own objectives for the week on Monday, sharing them via gist in your phase channel, crushing them, and circling back to assess on how the week went during Friday reflection.
 
 Work plans must include specific objectives based on the accountabilities above and follow the format below: 
-- [ ] Artifact is a gist of your weekly workplan
-- [ ] Artifact includes 1-2 objectives from each of the four work areas above
-- [ ] Resources other learners may find useful are added to this page by using the _Improve this page_ button above.
+- Artifact is a gist of your weekly workplan
+- Artifact includes 1-2 objectives from each of the four work areas above
+- Resources other learners may find useful are added to this page by using the _Improve this page_ button above.
