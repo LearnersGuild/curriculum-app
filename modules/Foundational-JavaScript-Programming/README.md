@@ -9,25 +9,17 @@ before moving on from this module.
 
 ### General Programming
 
-- Can describe what a variable is
-- Can describe the difference between a local and global variable
-- Can describe a Function
-- Can describe a Hash
-- Can describe a Array
-- Can describe a Set
-- Can describe the ! (bang) operator
-- Can describe an "if statement"
-- Can describe a pure vs. impure function
-- Can describe operator precedence
-- Can describe the `push` Array method
-- Can describe the `pop` Array method
-- Can describe the `shift` Array method
-- Can describe the `unshift` Array method
-- Can describe the `each` Array method
-- Can describe the `map` Array method
-- Can describe the `filter` Array method
-- Can describe the `reduce` Array method
-- Can describe a closure
+- Can describe the general programming term `variable`
+- Can describe the general programming term `global variable`
+- Can describe the general programming term `local variable`
+- Can describe the general programming term `Function`
+- Can describe the general programming term `Hash`
+- Can describe the general programming term `Array`
+- Can describe the general programming term `Set`
+- Can describe the general programming term `if statement`
+- Can describe the general programming term `pure function`
+- Can describe the general programming term `operator precedence`
+- Can describe the general programming term `closure`
 
 ### JavaScript Specific
 
@@ -47,6 +39,15 @@ before moving on from this module.
 - Can get the value of a property on a JavaScript Object using `[]` syntax
 - Can describe the difference between `==` and `===` in JavaScript
 - Can describe the difference between `var`, `let`, and `const` in JavaScript
+- Can describe the `!` (bang) operator in JavaScript
+- Can describe the `push` Array method in JavaScript
+- Can describe the `pop` Array method in JavaScript
+- Can describe the `shift` Array method in JavaScript
+- Can describe the `unshift` Array method in JavaScript
+- Can describe the `each` Array method in JavaScript
+- Can describe the `map` Array method in JavaScript
+- Can describe the `filter` Array method in JavaScript
+- Can describe the `reduce` Array method in JavaScript
 - Can use `Array#push` in JavaScript
 - Can use `Array#pop` in JavaScript
 - Can use `Array#shift` in JavaScript

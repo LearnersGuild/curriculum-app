@@ -5,10 +5,11 @@
 - Can build a full stack application using Express
 - Can use the fetch API to make HTTP requests
 - Can use ES6 and use `babel-node` to transpile the code
-- Can explain what a Minimum Viable Product(MVP) is.
-- Can look at a list of requirements and filter them to those that are needed to build an MVP.
+- Can describe the general programming term `Minimum Viable Product` or `MVP`
+- Can determine which HTTP application feature requirements are required to build an MVP of said feature
 - Can build a RESTful API using Express
-- Can write code adhering to SOLID & DRY principles
+- Can describe the general programming term `SOLID`
+- Can describe the general programming term `DRY`
 
 ## Challenge Rating
 

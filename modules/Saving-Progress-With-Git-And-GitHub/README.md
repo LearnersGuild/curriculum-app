@@ -15,7 +15,7 @@ In this module you'll learn to use just enough of Git and GitHub to create a new
 - Can use `git add`
 - Can use `git commit`
 - Can use `git push`
-- Can install and use the `hub` command
+- Can install and use the `hub` command (for GitHub)
 
 ## Glossary of Terms
 

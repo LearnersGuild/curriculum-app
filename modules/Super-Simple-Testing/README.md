@@ -9,7 +9,7 @@ In this module we'll explore simple, manual ways you can test your code. This is
 - Can write a function to test another function
 - Can write a test script to test one or more functions in source code file
 - Can run tests in a console
-- Can run tests from a command shell
+- Can run tests from the Terminal
 
 ## Glossary of Terms
 

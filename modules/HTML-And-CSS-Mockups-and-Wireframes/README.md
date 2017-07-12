@@ -2,8 +2,8 @@
 
 ## Skills
 
-- Can convert a wireframe into an HTML page with proper styling
-- Can convert a mockup into an HTML page with proper styling
+- Can convert a wireframe into HTML & CSS
+- Can convert a mockup into HTML & CSS
 
 ## Exercises
 
@@ -19,7 +19,7 @@
 - user flow
 - layout
 - CSS selector
-- CSS property 
+- CSS property
 
 ## Resources
 

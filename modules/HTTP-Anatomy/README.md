@@ -2,7 +2,7 @@
 
 ## Skills
 
-- Can diagram the anatomy of a URL
+- Can diagram the anatomy of an HTTP URL
 - Can recall at least 5 HTTP status codes
 - Can describe what an HTTP redirect is
 - Can recall at least 3 common HTTP headers

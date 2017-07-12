@@ -4,7 +4,7 @@
 
 - Can build a full stack application using Express
 - Can use an external JavaScript library
-- Can explain what an HTML templating library is
+- Can describe what an HTML templating library is
 - Can use an HTML templating library like pug or handlebars
 
 ## Challenge Rating

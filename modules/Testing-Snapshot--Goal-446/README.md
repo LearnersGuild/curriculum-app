@@ -3,9 +3,9 @@
 ## Skills
 
 - Can write end-to-end tests for an existing HTTP API using the chai-http library
-- Can explain the difference between unit vs integration vs end-to-end tests
-- Can create different configuration files for multiple environments(test, development, production)
-- Can add features to an existing codebase
+- Can describe the differences between `unit`, `integration` and `end-to-end` tests
+- Can create different configuration files for multiple environments (test, development, production) in Node
+- Can add features to a pre-existing Node codebase
 
 ## Challenge Rating
 

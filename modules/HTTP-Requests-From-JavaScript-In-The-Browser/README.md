@@ -3,8 +3,8 @@
 ## Skills
 
 - Can make an HTTP request from the browser
-- Can describe what XHR is
-- Can describe what AJAX is
+- Can describe what XHR is (browser)
+- Can describe what AJAX is (browser)
 - Can describe the difference between normal HTTP requests and XHR
 - Can make an HTTP request from the browser without any libraries
 - Can make an HTTP request from the browser using jQuery

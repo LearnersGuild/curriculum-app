@@ -3,7 +3,7 @@
 ## Skills
 
 - Can style a `<form>` in HTML & CSS
-- Can style typographic elements (headers, paragraphs, etc.)
+- Can style typographic elements (headers, paragraphs, etc.) in HTML & CSS
 - Can style buttons in HTML & CSS
 - Can implement a sticky footer in HTML & CSS
 - Can implement a fixed header in HTML & CSS

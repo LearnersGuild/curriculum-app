@@ -4,8 +4,8 @@
 ## Skills
 
 - Can describe what the JavaScript RegExp flags `g`, `i`, and `m` do
-- Can author a RegExp literal in JavaScript
-- Can author a RegExp from using the RegExp constructor
+- Can author a Regular Expression literal in JavaScript
+- Can author a Regular Expression by using the RegExp constructor
 - Can describe what a JavaScript RegExp character set is
 - Can describe what the JavaScript RegExp character classes `.` `\d` `\D` `\w` `\W` `\s` `\S` do
 - Can author a JavaScript RegExp with a character set

@@ -54,7 +54,7 @@ console.log(colorsArray2)
 
 - Can save data to a file in JSON format, read that file and restore that data, in Node
 - Can save data to a file in CSV format, read that file and restore that data, in Node
-- Can identify objects and data that are or are not serializable via JSON
+- Can identify which data types are or are not serializable via JSON from JavaScript
 
 
 ## Search Terms
