@@ -14,7 +14,7 @@ module._
 - Can use `where` clause to return a subset of the rows in a table in SQL
 - Can use `join` clause to join two tables on a primary key id in SQL
 - Can use `limit` clause to select a subset of a rows in SQL
-- Can describe the difference between a `left`, `right`, `inner` and `outer` joins in SQL
+- Can describe the difference between a left, right, inner and outer joins in SQL
 - Can use `serial` keyword to define a table with a auto sequencing primary key in SQL
 
 ___Note:__ all of the skills above are applicable to any SQL server but we're
