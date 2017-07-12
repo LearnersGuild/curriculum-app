@@ -23,7 +23,7 @@ webpack express tutorial -React
 ```
 
 ## Resources
-
+Alot of resources are repeats...
 ### Watch
 
 - https://www.youtube.com/watch?v=LtEP_-3a5CY
