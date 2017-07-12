@@ -2,8 +2,9 @@
 
 ## Skills
 
-- Can add features to an existing codebase
-- Can write code adhering to SOLID & DRY principles
+- Can add features to a pre-existing Node codebase
+- Can describe the general programming term `SOLID`
+- Can describe the general programming term `DRY`
 
 
 ## Challenge Rating

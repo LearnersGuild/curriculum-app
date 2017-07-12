@@ -4,8 +4,8 @@
 
 - Can build a SQL schema for a given problem definition
 - Can build a RESTful API using Express
-- Can explain what an Entity Relationship(ER) diagram is
-- Can explain what an SQL transaction is
+- Can describe the general programming term `Entity Relationship Diagram`
+- Can describe a SQL transaction
 
 ## Challenge Rubric
 

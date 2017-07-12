@@ -5,11 +5,11 @@
 - Can implement a single column page layout in HTML & CSS
 - Can implement a two column page layout in HTML & CSS
 - Can implement a three column page layout in HTML & CSS
-- Can position elements with `position: absolute` in HTML & CSS
-- Can position elements with `position: relative` in HTML & CSS
-- Can position elements with `float: left | right` in HTML & CSS
-- Can position elements with flexbox in HTML & CSS
-- Can hide elements using `display` in HTML & CSS
+- Can position elements with `position: absolute` in CSS
+- Can position elements with `position: relative` in CSS
+- Can position elements with `float: left | right` in CSS
+- Can position elements with flexbox in CSS
+- Can hide elements using `display` in CSS
 - Can inspect and change CSS using the Chrome Developer Tools
 
 ## Exercises

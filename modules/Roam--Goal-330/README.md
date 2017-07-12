@@ -3,13 +3,13 @@
 ## Skills
 
 - Can build a full stack application using Express
-- Can add authorization to an API to restrict access to certain resources
+- Can add authorization to an HTTP API to restrict access to certain resources
 - Can write end-to-end tests for an existing HTTP API using the chai-http library
-- Can explain the difference between unit vs integration vs end-to-end tests
-- Can explain what a Minimum Viable Product(MVP) is.
-- Can look at a list of requirements and filter them to those that are needed to build an MVP.
+- Can describe the differences between `unit`, `integration` and `end-to-end` tests
+- Can describe the general programming term `Minimum Viable Product` or `MVP`
+- Can determine which HTTP application feature requirements are required to build an MVP of said feature
 - Can build a SQL schema for a given problem definition
-- Can build a HTTP API with authentication using Passport OAuth.
+- Can build a HTTP API with authentication using Passport OAuth
 
 
 ## Challenge Rating

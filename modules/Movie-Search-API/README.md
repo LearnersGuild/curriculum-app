@@ -7,7 +7,7 @@
 - Can define routes in Express that follow the Restful Routing pattern
 - Can make HTTP requests from Node using the `request-promise` Node package
 - Can render json in response to an HTTP request, in Express
-- Can effectively use Promises
+- Can effectively use Promises in JavaScript
 
 ## Description
 

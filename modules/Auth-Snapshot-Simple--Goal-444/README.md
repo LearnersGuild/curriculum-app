@@ -3,9 +3,10 @@
 ## Skills
 
 - Can build a HTTP API with simple authentication using bcrypt and session cookies
-- Can explain what encryption is, and why it is important when dealing with sensitive information(eg: passwords)
+- Can describe what encryption is
+- Can describe why encryption is important when dealing with sensitive information like passwords
 - Can build a SQL schema for a given problem definition
-- Can explain the difference between authentication and authorization
+- Can describe the difference between HTTP authentication and authorization
 
 ## Challenge Rating
 

@@ -3,7 +3,7 @@
 ## Skills
 
 - Can build a RESTful API using Express
-- Can explain what the MVC(Model View Controller) pattern is
+- Can describe the general programming pattern `MVC` (Model View Controller)
 - Can use the MVC pattern to build a Single Page Application using JavaScript
 - Can integrate with an external HTTP API
 - Can use the MVC pattern to build a Single Page Application using JavaScript

@@ -11,7 +11,7 @@ You **should not** use real data - just use placeholder text and images from the
 ## Skills
 
 - Can style a `<form>` in HTML & CSS
-- Can style typographic elements (headers, paragraphs, etc.)
+- Can style typographic elements (headers, paragraphs, etc.) in HTML & CSS
 - Can style buttons in HTML & CSS
 - Can implement a sticky footer in HTML & CSS
 - Can implement a modal component in HTML & CSS
@@ -21,12 +21,12 @@ You **should not** use real data - just use placeholder text and images from the
 - Can implement a single column page layout in HTML & CSS
 - Can implement a two column page layout in HTML & CSS
 - Can implement a three column page layout in HTML & CSS
-- Can position elements with `position: absolute` in HTML & CSS
-- Can position elements with `position: relative` in HTML & CSS
+- Can position elements with `position: absolute` in CSS
+- Can position elements with `position: relative` in CSS
 - Can position elements with flexbox in HTML & CSS
-- Can hide elements using `display` in HTML & CSS
+- Can hide elements using `display` in CSS
 - Can inspect and change CSS using the Chrome Developer Tools
-- Can convert a mockup into an HTML page with proper styling
+- Can convert a mockup into HTML & CSS
 
 ## Specifications
 

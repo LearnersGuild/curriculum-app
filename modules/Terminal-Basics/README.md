@@ -19,9 +19,9 @@
 - Can use the `rm` terminal command
 - Can use the `mv` terminal command
 - Can use the `cp` terminal command
-- Can describe what a filesystem is
-- Can describe what a filesystem path is
-- Can describe the difference between absolute vs. relative filesystem paths
+- Can describe the UNIX filesystem
+- Can describe what a UNIX filesystem path is
+- Can describe the difference between absolute vs. relative UNIX filesystem paths
 - Can open a file or directory in their editor from the terminal
 - Can open a directory in the Finder.app from the terminal
 - Can open a file in its default app from the terminal

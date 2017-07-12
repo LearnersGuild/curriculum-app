@@ -7,8 +7,8 @@
 - Can write asynchronous tests in Node using Mocha with Chai
 - Can test an HTTP API in Node using Mocha with Chai
 - Can test SQL database queries in Node using Mocha with Chai
-- Can describe what Mocha's `done` function does
-- Can describe the difference between Chai's `eql` vs. `equal`
+- Can describe what Mocha's `done` function is for, in Node
+- Can describe the difference between Chai's `eql` vs. `equal`, in Node
 
 ## Glossary of Terms
 

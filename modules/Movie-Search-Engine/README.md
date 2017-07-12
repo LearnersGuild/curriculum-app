@@ -3,10 +3,10 @@
 
 ## Skills
 
--  Can use AJAX to make HTTP requests from the browser
--  Can design the HTML & CSS using wireframes provided
--  Can design and implement a SQL schema
--  Can write JavaScript in the browser
+- Can use AJAX to make HTTP requests from the browser
+- Can convert a wireframe into HTML & CSS
+- Can design and implement a SQL schema
+- Can write JavaScript in the browser
 
 ## Exercise
 

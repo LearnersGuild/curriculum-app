@@ -2,8 +2,8 @@
 
 ## Skills
 
-- Can use JavaScript's `Array#sort`
-- Can iterate through an Array
+- Can use `Array#sort` in JavaScript
+- Can iterate through an Array in JavaScript
 
 ## Exercise
 

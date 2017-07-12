@@ -10,7 +10,7 @@ As you're reading about these tools, avoid tutorials aiming to explain React.
 - Can setup a Node app to use ES2017 in Node
 - Can setup a Node app to compile ES2017 for the browser
 - Can setup a Node app to use webpack to compile code for the browser
-- Can lookup which ES2017 feature is supported in what environment
+- Can lookup which JavaScript ES2017 feature is supported in what environment
 
 ## Search Terms
 

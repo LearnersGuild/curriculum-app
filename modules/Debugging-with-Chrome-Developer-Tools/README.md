@@ -9,7 +9,7 @@
 - Can inspect an element in the DOM using the Chrome Developer Tools
 - Can change element styling using the Chrome Developer Tools
 - Can inspect network requests using the Chrome Developer Tools
-- Can describe what the a call stack is
+- Can describe the JavaScript call stack
 - Can use the debugger step in, step out, and step over function calls, in the Chrome Developer Tools
 
 ## Glossary of Terms

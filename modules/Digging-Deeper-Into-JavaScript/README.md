@@ -8,8 +8,8 @@
 - Can describe why immediately invoked function expressions are useful in JavaScript
 - Can define a JavaScript Constructor
 - Can add properties to the prototype of a JavaScript Constructor
-- Can describe what a closure is
-- Can give an example of when one might use a closure
+- Can describe the general programming term `closure`
+- Can give an example of a closure in JavaScript
 - Can describe what the `this` operator is in JavaScript
 - Can show at least three ways to declare what `this` will be when calling a function in JavaScript
 - Can describe what a "higher order function" is in JavaScript
