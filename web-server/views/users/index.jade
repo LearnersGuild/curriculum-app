@@ -1,6 +1,7 @@
 extends ../layout
 
 block content
+
   form.users-grid-controls
     select.users-grid-controls-sort.form-control(name="")
       option(checked) name asc
@@ -9,11 +10,21 @@ block content
       option handle desc
     input.users-grid-controls-filter.form-control(type="text" placeholder="filter")
 
-  .users-grid
-    for user in users
-      .users-grid-member.well(data-user=JSON.stringify(user))
-        a(href="/users/"+user.handle)
-          .users-grid-member-name= user.name
-          .users-grid-member-handle= user.handle
-          .users-grid-member-avatar
-            img(src=user.avatarUrl)
+  mixin usersList(_users)
+    .users-grid
+      for user in _users
+        .users-grid-member.well(data-user=JSON.stringify(user))
+          a(href="/users/"+user.handle)
+            .users-grid-member-name= user.name
+            .users-grid-member-handle= user.handle
+            .users-grid-member-avatar
+              img(src=user.avatarUrl)
+
+  h2 Staff
+  +usersList(users.filter(u => u.roles.includes('staff')))
+
+  h2 Learners
+
+  for phase in digest.phases
+    h3 Phase #{phase.number}
+    +usersList(users.filter(u => !u.roles.includes('staff') && u.phase === phase.number))

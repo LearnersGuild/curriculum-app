@@ -111,23 +111,26 @@ if (location.pathname.match(/^\/users\/?$/)) $(()=>{
     const filter = filterInput.val().toLowerCase()
     console.log('updateUsersGrid', {sort, filter})
 
-    const usersGrid = $('.users-grid')
-    const userNodes = usersGrid.find(' > .users-grid-member')
+    $('.users-grid').each(function(){
+      const usersGrid = $(this)
 
-    userNodes.sort((a, b) => {
-      a = $(a).data('user')
-      b = $(b).data('user')
-      return sorters[sort](a, b)
-    })
+      const userNodes = usersGrid.find(' > .users-grid-member')
 
-    userNodes.detach().appendTo(usersGrid);
+      userNodes.sort((a, b) => {
+        a = $(a).data('user')
+        b = $(b).data('user')
+        return sorters[sort](a, b)
+      })
 
-    userNodes.each((i, node) => {
-      const user = $(node).data('user')
-      if ((user.name+' '+user.handle+' '+user.email).toLowerCase().includes(filter))
-        $(node).show()
-      else
-        $(node).hide()
+      userNodes.detach().appendTo(usersGrid);
+
+      userNodes.each((i, node) => {
+        const user = $(node).data('user')
+        if ((user.name+' '+user.handle+' '+user.email).toLowerCase().includes(filter))
+          $(node).show()
+        else
+          $(node).hide()
+      })
     })
   }
 
