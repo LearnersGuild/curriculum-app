@@ -1,5 +1,7 @@
 const { idmGraphQLFetch } = require('@learnersguild/idm-jwt-auth/lib/utils')
 
+const ROBOT_HANDLES = ['echo-bot','lg-bot']
+
 module.exports = class BackOffice {
   constructor(lgJWT){
     this.lgJWT = lgJWT
@@ -79,6 +81,11 @@ module.exports = class BackOffice {
       }
     `)
     .then(response => response.data.findUsers)
+    .then(users =>
+      users.filter(user =>
+        !ROBOT_HANDLES.includes(user.handle)
+      )
+    )
     .then(learners => this.getPhasesForLearners(learners))
   }
 
