@@ -1,7 +1,15 @@
 # Command Line Todo List
 
+This benchmark module is the 1st of a series of modules designed to take the
+same problem and make it increasingly more complex as you learn new skills.
+
+1. [Command Line Todo List](../../modules/Command-Line-Todo-List)
+1. [Command Line Todo List With Callbacks](../../modules/Command-Line-Todo-List-With-Callbacks)
+1. [Command Line Todo List With SQL](../../modules/Command-Line-Todo-List-with-SQL)
+
 ## Skills
 
+- Can write an executable script in Node
 - Can write a Node script that parses complex command line arguments
 - Can write a complex Node script with modular organization of the code
 - Can use `fs.readFileSync` to read from a file in Node
@@ -10,48 +18,79 @@
 
 ## Description
 
-Design a todo-list which manages your tasks from the command line. It should maintain a task list, allowing you to add, list and complete your tasks.
+Write a command line script called `tasks` that allows the user to manage a list
+of tasks from the terminal.
 
-The tasks should be saved to a file called `tasks.json`. Use the command `fs.readFileSync` to save the tasks to the file. Read the documentation [here](https://nodejs.org/api/fs.html#fs_fs_readfilesync_path_options)
+Your `tasks` command should support the following sub-commands:
 
-The following commands should be supported by your node script:
+| command  | description                                            | example usage                       |
+|----------|--------------------------------------------------------|-------------------------------------|
+| add      | adds the specified task                                | ./tasks add Finish reading Flatland |
+| list     | lists the incomplete tasks                             | ./tasks list                        |
+| complete | marks the task with `id` equal to `<task-id>` complete | ./tasks complete `<task-id>`        |
+| delete   | deleted the specified task                             | ./tasks delete                      |
 
-| command | description                                            | example usage                            |
-|---------|--------------------------------------------------------|------------------------------------------|
-| add     | adds the specified task                                | node task.js add Finish reading Flatland |
-| list    | lists the incomplete tasks                             | node task.js list                        |
-| done    | marks the task with `id` equal to `<task-id>` complete | node task.js done `<task-id>`            |
+
+In this 1st version the data for your tasks should be saved to a file called
+`tasks.json`.
 
 
-## Specs:
-- Tasks are persisted to a `json` file using `fs.readFileSync`
-- Node script `task.js` is used to manage the tasks. (See example usage below)
-- `list` command has been implemented in a file located at `commands/list.js`
-- `add` command has been implemented in a file located at `commands/add.js`
-- `done` command has been implemented in a file located at `commands/done.js`
+## Specs
+
+- Your command should be called `tasks`
+- The `tasks` command file should have a shebang pointing to `node`
+- The `tasks` command file should have execute permissions
+- Tasks are persisted to a `json` file using `fs.readFileSync` and `fs.writeFileSync`
+- The `list` command is implemented in `./commands/list.js`
+- The `add` command is implemented in `./commands/add.js`
+- The `complete` command is implemented in `./commands/complete.js`
+- The `delete` command is implemented in `./commands/delete.js`
 - Add tests using Mocha and Chai for all functions
 - User receives an error message if they enter an invalid command
+- Your program should create the `tasks.json` file doesn't exist
+- `tasks.json` is ignored and not checked into your Git repository
 
 ## Example Usage
 
-To add tasks:
+
+
+##### Listing tasks when you have no tasks
+
 ```bash
-$ node task.js add "Buy milk"
-Created task 1.
+$ ./tasks list
 
-$ node task.js add "Buy eggs"
-Created task 2.
+ID Description
+-- -----------
 
-$ node task.js add "Bake cake"
-Created task 3.
-
-$ node task.js add "Put groceries in the fridge"
-Created task 4.
+You have 0 tasks
 ```
 
-To view incomplete tasks:
+##### Adding some tasks
+
+```
+$ ./tasks add "Buy milk"
+Created task 1
+```
+
+```
+$ ./tasks add "Buy eggs"
+Created task 2
+```
+
+```
+$ ./tasks add "Bake a cake"
+Created task 3
+```
+
+```
+$ ./tasks add "Put groceries in the fridge"
+Created task 4
+```
+
+##### Listing tasks when you have some
+
 ```bash
-$ node task.js list
+$ ./tasks list
 
 ID Description
 -- -----------
@@ -60,25 +99,40 @@ ID Description
 3  Bake cake
 4  Put groceries in the fridge
 
-4 tasks.
+You have 4 tasks
 ```
 
-To complete a task:
+##### Completing a task
+
+```
+$ ./tasks complete 1
+Completed task 1: 'Buy milk'
+```
+
+##### Deleting a task
+
+```
+$ ./tasks delete 2
+Deleted task 2: 'Buy eggs'
+```
+
+##### Listing after completing and/or deleteing tasks
+
 ```bash
-$ node task.js done 1
-Completed the task 'Buy milk'
-
-$ node task.js done 3
-Completed the task 'Buy cake'
-
-$ node task.js list
+$ ./tasks list
 
 ID Description
 -- -----------
-2  Bake eggs
+3  Bake cake
 4  Put groceries in the fridge
 
-2 tasks.
+You have 4 tasks
 ```
 
 
+## Resources
+
+### Reading
+
+- [Docs for fs.readFileSync](https://nodejs.org/api/fs.html#fs_fs_readfilesync_path_options)
+- [Docs for fs.writeFileSync](https://nodejs.org/api/fs.html#fs_fs_writefilesync_file_data_options)
