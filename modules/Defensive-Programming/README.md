@@ -3,7 +3,7 @@
 ## Skills
 
 - Can throw a custom error in JavaScript
-- Can throw and error when function arguments are invalid in JavaScript
+- Can throw an error when function arguments are invalid in JavaScript
 - Can catch and rescue from an error in JavaScript
 - Can render an HTTP response with status code 400 when the request params are invalid, in Node and Express
 
