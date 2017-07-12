@@ -8,7 +8,7 @@ module.exports = app => {
   app.get('/skills', (request, response, next) => {
     const userId = request.user.id
 
-    queries.getChecks({userId})
+    queries.getChecksForUserAndLabels({userId})
       .then(checks => {
         const skills = Object.keys(response.digest.skills).map(skillId =>
           Object.assign({}, response.digest.skills[skillId], {checked: !!checks[skillId]})
@@ -27,7 +27,7 @@ module.exports = app => {
 
     const userId = request.user.id
     const labels = [skill.id]
-    queries.getChecks({userId, labels})
+    queries.getChecksForUserAndLabels({userId, labels})
       .then(checks => {
         const checked = !!checks[skill.id]
         response.render('skills/show', {skill, checked})

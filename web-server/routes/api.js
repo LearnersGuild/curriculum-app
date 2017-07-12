@@ -11,7 +11,7 @@ module.exports = app => {
   app.post('/api/checks/status', (request, response, next) => {
     const userId = request.user.id
     const { labels } = request.body
-    queries.getChecks({userId, labels})
+    queries.getChecksForUserAndLabels({userId, labels})
       .then(checks => {
         const map = {}
         labels.forEach(label => {

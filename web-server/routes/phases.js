@@ -32,7 +32,7 @@ module.exports = app => {
   app.get('/phases/:phaseNumber/skills', (request, response, next) => {
     const userId = request.user.id
     const labels = request.phase.skills
-    queries.getChecks({userId, labels})
+    queries.getChecksForUserAndLabels({userId, labels})
       .then(checks => {
         const skills = request.phase.skills.map(skillId =>
           Object.assign({}, response.digest.skills[skillId], {checked: !!checks[skillId]})

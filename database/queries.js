@@ -1,6 +1,6 @@
 const knex = require('./knex')
 
-const getChecks = ({userId, labels}) => {
+const getChecksForUserAndLabels = ({userId, labels}) => {
   let query = knex
     .select('*')
     .from('checks')
@@ -39,7 +39,7 @@ const hashChecksByLabel = checks => {
 }
 
 module.exports = {
-  getChecks,
+  getChecksForUserAndLabels,
   getCheckLogsForUsers,
 }
 
