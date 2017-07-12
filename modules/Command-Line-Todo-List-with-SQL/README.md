@@ -18,7 +18,7 @@ Create a command line todo-list script, that stores the tasks in a SQL database.
 - Npm scripts exists to setup the database
 - `list` command has been implemented
 - `add` command has been implemented
-- `delete` command has been implemented
+- `done` command has been implemented
 - `update` command has been implemented
 - Script returns a `Command Not Found` message when the user enters an invalid command
 - A separate test database exists for SQL tests
@@ -79,6 +79,6 @@ Accepted commands are
 list
 add
 update
-delete
+done
 ```
 
