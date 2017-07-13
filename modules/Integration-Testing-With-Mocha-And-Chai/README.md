@@ -20,7 +20,8 @@
 
 ## Exercises
 
-- ???? TODO
+- [Integration Tests with a Database](./exercises/Testing-Database)
+- [Integration Tests with an HTTP Server](./exercises/Testing-HTTP)
 
 ## Suggested Resources
 
