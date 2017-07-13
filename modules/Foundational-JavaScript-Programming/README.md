@@ -85,7 +85,7 @@ before moving on from this module.
 | Truthy       | A value that translates to true when evaluated in a Boolean context |
 | Falsy        | A value that translates to false when evaluated in a Boolean context |
 | Comment      | A part of your source code that is ignored by the computed and is meant for other developers to read |
-| Error        | An unindented event or outcome |
+| Error        | An unintended event or outcome |
 | Syntax Error | A error that is thrown when your source code is written incorrectly |
 
 ### JavaScript Specific
