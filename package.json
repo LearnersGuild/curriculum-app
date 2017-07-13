@@ -2,6 +2,9 @@
   "name": "curriculum",
   "version": "0.0.1",
   "description": "Learners Guild Curriculum",
+  "engines": {
+    "node": "8.1.2"
+  },
   "scripts": {
     "dev": "nodemon web-server",
     "start": "node web-server",
