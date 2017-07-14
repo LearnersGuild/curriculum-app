@@ -43,7 +43,9 @@ const isModulesHeading = token =>
   token.text === 'Modules'
 
 const parseModuleText = (text) => {
-  let [_, icon, name, path] = text.match(/([^\[]+?)\s*\[([^\]]+)\]\(([^\(]+)\)/)
+  const matches = text.match(/([^\[]+?)\s*\[([^\]]+)\]\(([^\(]+)\)/)
+  if (!matches) return
+  let [_, icon, name, path] = matches
   let id = path.split('/modules/')[1]
   // let type = (
   //   icon === "🤸" ? 'practice' :
