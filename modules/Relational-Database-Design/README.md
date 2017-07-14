@@ -18,7 +18,7 @@ relational database relationships
 how to design a sql schema
 sql 1 to many
 database design normalization vs de-normalization
-what is ACID
+what is ACID sql
 ```
 
 
