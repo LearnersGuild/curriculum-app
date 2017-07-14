@@ -33,7 +33,7 @@ The specs for this module are the same as the specs listed in the
 except instead of `fs.readFileSync` and `fs.writeFileSync` you need to use the
 `pg` node module to store tasks in a Postgresql database.
 
-##### Additional Tasks:
+##### Additional Specs:
 
 
 - Tasks are persisted in a Postgres database
