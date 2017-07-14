@@ -6,7 +6,6 @@ body {
 
 body > main {
   flex: 1;
-  background-color: #e6e9ed;
   display: flex;
   flex-direction: column;
 }
@@ -20,13 +19,7 @@ body > .footer {
 }
 
 .navbar {
-  margin-bottom: 0;
   border-radius: 0;
-}
-
-.breadcrumb-container .breadcrumb{
-  margin-bottom: 0;
-  padding-left: 0;
 }
 
 .page-container{
@@ -40,18 +33,12 @@ body > .footer {
 
 .navbar-logo {
   display: block;
-  /*color: #8c8c8c;*/
   height: 50px;
   width: 50px;
   background-image: url(https://brand.learnersguild.org/assets/learners-guild-logo-white.png);
   background-repeat: no-repeat;
   background-position: -30px 0;
   background-size: 116px;
-}
-
-.footer{
-  background-color: #333;
-  border-color: #333;
 }
 
 .footer-logo {

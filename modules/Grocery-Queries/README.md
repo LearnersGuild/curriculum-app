@@ -119,8 +119,7 @@ id |   item   | quantity | aisle_id | id | name
  5 | Cherries |        2 |        2 |  2 | Fruit
 ```
 
-### Select all items that are in the `Vegetables` aisle and have a quantity
-greater than 1 from the `groceries` table
+### Select all items that are in the `Vegetables` aisle and have a quantity greater than 1 from the `groceries` table
 
 ```sql
 # Expected output

@@ -23,8 +23,8 @@ node repl
 node module exports
 ```
 
-Skip anything you find that tries to show you how to make a web server. It wont
-be relevant to anything we do in phase 1. We'll get into making web servers
+Skip anything you find that tries to show you how to make a web server. It's not
+relevant to what we're do in phase 1. We'll get into making web servers
 later.
 
 ## Resources

@@ -5,6 +5,9 @@
 ## Dev Environment Setup
 
 
+Install and run Node v8.1.2
+
+
 #### Creating your `.env` file
 
 create a `.env` file like this:

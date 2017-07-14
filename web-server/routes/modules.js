@@ -26,7 +26,7 @@ module.exports = app => {
     response.locals.currentModuleSkills = currentModuleSkills
 
     const labels = currentModuleSkills.map(skill => skill.id)
-    queries.getChecks({userId, labels})
+    queries.getChecksForUserAndLabels({userId, labels})
       .then(checks => {
         currentModuleSkills.forEach(skill => {
           skill.checked = !!checks[skill.id]

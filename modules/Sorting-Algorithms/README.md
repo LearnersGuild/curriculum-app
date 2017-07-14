@@ -33,6 +33,8 @@ javascript selection sort
     - [Bubble Sort](https://en.wikipedia.org/wiki/Bubble_sort)
     - [Insertion Sort](https://en.wikipedia.org/wiki/Insertion_sort)
     - [Selection Sort](https://en.wikipedia.org/wiki/Selection_sort)
+- JS: Interview Questions - Sort related interview questions for intermediate JavaScript developers
+    - [Sorting Algorithm](https://khan4019.github.io/front-end-Interview-Questions/sort.html)
 
 ## Exercises
 - Implement the sorts (a skeleton file can be found [here](./index.js) for you to fill in the implementation)

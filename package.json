@@ -2,6 +2,9 @@
   "name": "curriculum",
   "version": "0.0.1",
   "description": "Learners Guild Curriculum",
+  "engines": {
+    "node": "8.1.2"
+  },
   "scripts": {
     "dev": "nodemon web-server",
     "start": "node web-server",
@@ -22,6 +25,7 @@
   "homepage": "https://github.com/GuildCrafts/curriculum#readme",
   "dependencies": {
     "@learnersguild/idm-jwt-auth": "^2.0.1",
+    "@learnersguild/styles": "^0.1.0",
     "body-parser": "^1.17.2",
     "bootflat": "^2.0.4",
     "cookie-parser": "^1.4.3",
@@ -37,8 +41,7 @@
     "pug": "^2.0.0-rc.2",
     "pygmentize-bundled": "^2.3.0",
     "pygments": "^0.2.1",
-    "pygments-css": "^1.0.0",
-    "serve-favicon": "^2.4.3"
+    "pygments-css": "^1.0.0"
   },
   "devDependencies": {
     "chai": "^4.0.2",

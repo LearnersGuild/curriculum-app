@@ -11,7 +11,7 @@ app.set('views', __dirname+'/views')
 if (process.env.NODE_ENV === 'production') {
   app.use(https({trustProtoHeader: true}))
 }
-app.use(require('serve-favicon')(`${__dirname}/assets/favicon.ico`))
+
 app.use(require('cookie-parser')())
 app.use('/assets', express.static(__dirname+'/assets'))
 

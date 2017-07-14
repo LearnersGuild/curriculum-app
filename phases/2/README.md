@@ -23,7 +23,7 @@ In this phase you will learn…
 - _P:_ [Committing Atomic Changes With Git](../../modules/Committing-Atomic-Changes-With-Git)
 - _P:_ [Digging Deeper Into JavaScript](../../modules/Digging-Deeper-Into-JavaScript)
 - _P:_ [Asynchronous JavaScript](../../modules/Asynchronous-JavaScript)
-- _B:_ [Command line Todo List With Callbacks](../../modules/Command-line-Todo-List-With-Callbacks)
+- _B:_ [Command line Todo List With Callbacks](../../modules/Command-Line-Todo-List-With-Callbacks)
 - _P:_ [HTTP Anatomy](../../modules/HTTP-Anatomy)
 - _P:_ [HTTP Node](../../modules/HTTP-Node)
 - _B:_ [Movie Search CLI](../../modules/Movie-Search-CLI)

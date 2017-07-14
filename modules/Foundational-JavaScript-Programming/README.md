@@ -85,7 +85,7 @@ before moving on from this module.
 | Truthy       | A value that translates to true when evaluated in a Boolean context |
 | Falsy        | A value that translates to false when evaluated in a Boolean context |
 | Comment      | A part of your source code that is ignored by the computed and is meant for other developers to read |
-| Error        | An unindented event or outcome |
+| Error        | An unintended event or outcome |
 | Syntax Error | A error that is thrown when your source code is written incorrectly |
 
 ### JavaScript Specific
@@ -96,9 +96,11 @@ before moving on from this module.
 | Object         | Almost all values in JavaScript are objects |
 | ReferenceError | The error that is thrown when your code attempts to use something that was not declared |
 
-[More](https://www.codecademy.com/articles/glossary-javascript)
-[A Lot More](https://developer.mozilla.org/en-US/docs/Glossary)
-[JavaScript Reference](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference)
+### Useful Glossarys
+
+- [Javascript Glossary](https://www.codecademy.com/articles/glossary-javascript)
+- [Mozilla Javascript Glossary](https://developer.mozilla.org/en-US/docs/Glossary)
+- [JavaScript Reference](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference)
 
 ## Search Terms
 
