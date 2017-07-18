@@ -1,6 +1,6 @@
 # Command Line Arguments Exercise
 
-In this exercise were going to explore reading command line arguments given
+In this exercise we're going to explore reading command line arguments given
 to a node script.
 
 
@@ -20,11 +20,11 @@ Now run
 node ./print_arguments.js a b c d
 ```
 
-An you should see text output representing a array with 6 members. The first 2
-arguments might seem odd that we have these first two arguments. The first
-argument is the fill path to the version of node we're running. The second
-argument is the fill path to the `print_arguments.js` script. We can always
-skip these first two arguments. So we might do something like this:
+You should see text output representing an array with 6 members. The first 2
+arguments you see may seem odd. The first argument is the fill path to the 
+version of node we're running. The second argument is the fill path to 
+the `print_arguments.js` script. We can always skip these first two arguments. 
+So we might do something like this:
 
 
 #### `./print_arguments.js`
@@ -34,7 +34,7 @@ const argv = process.argv.slice(2)
 console.log(argv)
 ```
 
-Now running
+Now running the following:
 
 ```sh
 node ./print_arguments.js a b c d
@@ -49,8 +49,8 @@ should output:
 
 ## Part 2
 
-In part two were going to create a script that takes a command as its first
-argument and then an input as its second argument. Like this:
+In part two we're going to create a script that takes a command as its first
+argument and then some input as its second argument. Like this:
 
 ```sh
 node ./string_manipulator.js reverse "hello world"
