@@ -4,7 +4,7 @@
 
 ## Skills
 
-- Can read a JavaScript backtrace
+- Can read a JavaScript stacktrace
 - Can find the file and line number where an JavaScript error was thrown
 - Can describe what the JavaScript call stack is
 - Can catch, log and re-throw errors in JavaScript
