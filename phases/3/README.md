@@ -25,6 +25,7 @@ In this phase you will learn…
 - _P:_ [Auth Snapshot Simple - Goal 444](../../modules/Auth-Snapshot-Simple--Goal-444)
 - _P:_ [To Do List App - Goal 64](../../modules/To-Do-List-App--Goal-64)
 - _P:_ [Testing Snapshot - Goal 446](../../modules/Testing-Snapshot--Goal-446)
+- _P:_ [Migrations Snapshot - Goal 447](../../modules/Migrations-Snapshot--Goal-447)
 - _P:_ [Mmmarkdown - Goal 387](../../modules/Mmmarkdown--Goal-387)
 - _P:_ [Pizza Restaurant: Relational DB With CRUD API - Goal 98](../../modules/Pizza-Restaurant-Relational-DB-Schema-With-CRUD-API--Goal-98)
 - _P:_ [Timeoff: Approver Epic - Goal 181](../../modules/Timeoff-Approver-Epic--Goal-181)
