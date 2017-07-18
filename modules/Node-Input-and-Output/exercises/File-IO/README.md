@@ -2,7 +2,7 @@
 
 In this exercise we'll be going through how to synchronously read from and write
 to files in Node. You'll find it is highly encouraged to read from and write
-to files asynchronously in node. Lets ignore that wise advice for now as we
+to files asynchronously in Node, however, lets ignore that advice for now as we
 learn the basics. Later on "in the real world" we'll explore reading from and
 writing to files asynchronously.
 
@@ -92,9 +92,9 @@ touch b.txt
 
 Double check that `a.txt` has all that Lorem ipsum in it by running `cat a.txt`
 
-And double check that `b.txt` is empty by running `cat b.txt`
+Also, double check that `b.txt` is empty by running `cat b.txt`
 
-Ok now run `node ./copy_a_to_b.js`. You shouldn't see any output but when you
+Now run `node ./copy_a_to_b.js`. You shouldn't see any output but when you
 `cat b.txt` again you should see that the content from `a.txt` was copied into
 `b.txt`.
 
