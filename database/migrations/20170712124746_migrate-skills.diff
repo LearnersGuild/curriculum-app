@@ -1,0 +1,225 @@
+-- Can use JavaScript's `Array#sort`
++- Can use `Array#sort` in JavaScript
+
+-- Can iterate through an Array
++- Can iterate through an Array in JavaScript
+
+-- Can describe what "state" is
++- Can describe the general programming term `state`
+
+-- Can explain what encryption is, and why it is important when dealing with sensitive information(eg: passwords)
++- Can describe what encryption is
++- Can describe why encryption is important when dealing with sensitive information like passwords
+
+-- Can explain the difference between authentication and authorization
++- Can describe the difference between HTTP authentication and authorization
+
+-- Can read and write to files using `fs.readFileSync`
++- Can read and write to files using `fs.readFileSync` in Node
+
+-- Can explain what the MVC(Model View Controller) pattern is
++- Can describe the general programming pattern `MVC` (Model View Controller)
+
+-- Can style typographic elements (headers, paragraphs, etc.)
++- Can style typographic elements (headers, paragraphs, etc.) in HTML & CSS
+
+-- Can hide elements using `display` in HTML & CSS
++- Can hide elements using `display` in CSS
+
+-- Can describe what "Defensive Programming" means
++- Can describe the general programming term `Defensive Programming`
+
+-- Can give two examples of "Defensive Programming"
++- Can give two examples of "Defensive Programming" in JavaScript
+
+-- Can describe what the a call stack is
++- Can describe the JavaScript call stack
+
+-- Can describe what a closure is
++- Can describe the general programming term `closure`
+
+-- Can give an example of when one might use a closure
++- Can give an example of a closure in JavaScript
+
+-- Can describe what a variable is
++- Can describe the general programming term `variable`
+
+-- Can describe the difference between a local and global variable
++- Can describe the general programming term `global variable`
++- Can describe the general programming term `local variable`
+
+-- Can describe a Function
++- Can describe the general programming term `Function`
+
+-- Can describe a Hash
++- Can describe the general programming term `Hash`
+
+-- Can describe a Array
++- Can describe the general programming term `Array`
+
+-- Can describe a Set
++- Can describe the general programming term `Set`
+
+-- Can describe the ! (bang) operator
++- Can describe the `!` (bang) operator in JavaScript
+
+-- Can describe an "if statement"
++- Can describe the general programming term `if statement`
+
+-- Can describe a pure vs. impure function
++- Can describe the general programming term `pure function`
+
+-- Can describe operator precedence
++- Can describe the general programming term `operator precedence`
+
+-- Can describe the `push` Array method
++- Can describe the `push` Array method in JavaScript
+
+-- Can describe the `pop` Array method
++- Can describe the `pop` Array method in JavaScript
+
+-- Can describe the `shift` Array method
++- Can describe the `shift` Array method in JavaScript
+
+-- Can describe the `unshift` Array method
++- Can describe the `unshift` Array method in JavaScript
+
+-- Can describe the `each` Array method
++- Can describe the `each` Array method in JavaScript
+
+-- Can describe the `map` Array method
++- Can describe the `map` Array method in JavaScript
+
+-- Can describe the `filter` Array method
++- Can describe the `filter` Array method in JavaScript
+
+-- Can describe the `reduce` Array method
++- Can describe the `reduce` Array method in JavaScript
+
+-- Can describe a closure
++- Can describe the general programming term `closure`
+
+-- Can position elements with `position: absolute` in HTML & CSS
++- Can position elements with `position: absolute` in CSS
+
+-- Can position elements with `position: relative` in HTML & CSS
++- Can position elements with `position: relative` in CSS
+
+-- Can position elements with `float: left | right` in HTML & CSS
++- Can position elements with `float: left | right` in CSS
+
+-- Can position elements with flexbox in HTML & CSS
++- Can position elements with flexbox in CSS
+
+-- Can convert a wireframe into an HTML page with proper styling
++- Can convert a wireframe into HTML & CSS
+
+-- Can convert a mockup into an HTML page with proper styling
++- Can convert a mockup into HTML & CSS
+
+-- Can diagram the anatomy of a URL
++- Can diagram the anatomy of an HTTP URL
+
+-- Can describe what XHR is
++- Can describe what XHR is (browser)
+
+-- Can describe what AJAX is
++- Can describe what AJAX is (browser)
+
+-- Can describe what a parameterized query(or prepared statement) is
++- Can describe what a SQL parameterized query (or prepared statement) is
+
+-- Can describe what Mocha's `done` function does
++- Can describe what Mocha's `done` function is for, in Node
+
+-- Can describe the difference between Chai's `eql` vs. `equal`
++- Can describe the difference between Chai's `eql` vs. `equal`, in Node
+
+-- Can describe DOM event bubbling
++- Can describe `DOM event bubbling` in the Browser
+
+-- Can explain what an HTML templating library is
++- Can describe what an HTML templating library is
+
+-- Can effectively use Promises
++- Can effectively use Promises in JavaScript
+
+-- Can design the HTML & CSS using wireframes provided
++- Can convert a wireframe into HTML & CSS
+
+-- Can lookup which ES2017 feature is supported in what environment
++- Can lookup which JavaScript ES2017 feature is supported in what environment
+
+-- Can explain what an Entity Relationship(ER) diagram is
++- Can describe the general programming term `Entity Relationship Diagram`
+
+-- Can explain what an SQL transaction is
++- Can describe a SQL transaction
+
+-- Can describe the difference between a relative and absolute URL path
++- Can describe the difference between a relative and absolute HTTP URL path
+
+-- Can describe what REST is
++- Can describe what HTTP REST is
+
+-- Can design an API which is RESTful
++- Can design an HTTP API which is RESTful
+
+-- Can describe the difference between query params and body params and url params
++- Can describe the difference between HTTP's query params and body params and url params
+
+-- Can author a RegExp literal in JavaScript
++- Can author a Regular Expression literal in JavaScript
+
+-- Can author a RegExp from using the RegExp constructor
++- Can author a Regular Expression by using the RegExp constructor
+
+-- Can add authorization to an API to restrict access to certain resources
++- Can add authorization to an HTTP API to restrict access to certain resources
+
+-- Can explain what a Minimum Viable Product(MVP) is.
++- Can describe the general programming term `Minimum Viable Product` or `MVP`
+
+-- Can build a HTTP API with authentication using Passport OAuth.
++- Can build a HTTP API with authentication using Passport OAuth
+
+-- Can install and use the `hub` command
++- Can install and use the `hub` command (for GitHub)
+
+-- Can identify objects and data that are or are not serializable via JSON
++- Can identify which data types are or are not serializable via JSON from JavaScript
+
+-- Can host a directory of static files as a local web server
++- Can serve a local directory of static files using the Node `http-server` module
+
+-- Can explain the difference between express's sendFile and serving static files
++- Can describe the difference between Node Express's sendFile and serving static files
+
+-- Can run tests from a command shell
++- Can run tests from the Terminal
+
+-- Can describe what a filesystem is
++- Can describe the UNIX filesystem
+
+-- Can describe the difference between absolute vs. relative filesystem paths
++- Can describe the difference between absolute vs. relative UNIX filesystem paths
+
+-- Can describe what a filesystem path is
++- Can describe what a UNIX filesystem path is
+
+-- Can explain the difference between unit vs integration vs end-to-end tests
++- Can describe the differences between `unit`, `integration` and `end-to-end` tests
+
+-- Can create different configuration files for multiple environments(test, development, production)
++- Can create different configuration files for multiple environments (test, development, production) in Node
+
+-- Can write code adhering to SOLID & DRY principles
++- Can describe the general programming term `SOLID`
++- Can describe the general programming term `DRY`
+
+-- Can add features to an existing codebase
++- Can add features to a pre-existing Node codebase
+
+-- Can explain what webpack is, and use it to create a bundle file
++- Can describe what Node's webpack is
++- Can setup webpack to bundle files in Node
