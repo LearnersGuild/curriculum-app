@@ -66,6 +66,11 @@ body > .footer {
   background-color: rgba(255,255,255,0.25);
 }
 
+.nav>li>a{
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
 h1, .h1,
 h2, .h2,
 h3, .h3,

@@ -24,6 +24,7 @@ require('./routes/users')(app)
 require('./routes/guide')(app)
 require('./routes/phases')(app)
 require('./routes/modules')(app)
+require('./routes/calendar')(app)
 
 app.get('/', (request, response, next) => {
   response.renderMarkdownFile(`/README.md`)
