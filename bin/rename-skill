@@ -1,0 +1,122 @@
+#!/usr/bin/env node
+
+const path = require('path')
+const util = require('util')
+const fs = require('fs-extra')
+const chalk = require('chalk')
+const generateDigest = require('../digest')
+const nameToId = require('../digest/utils').nameToId
+
+const usage = () => {
+  console.log(
+`Usage:
+  rename-skill CURRENT_SKILL_NAME NEW_SKILL_NAME [NEW_SKILL_NAME [NEW_SKILL_NAME […]]]
+`
+  )
+  process.exit(1)
+}
+
+const newSkillNames = process.argv.slice(2)
+const currentSkillName = newSkillNames.shift()
+
+if (!currentSkillName || newSkillNames.length === 0) usage()
+
+console.log(
+  '%s %s %s %s',
+  chalk.green('renaming'),
+  chalk.magenta(util.inspect(currentSkillName)),
+  chalk.green('to'),
+  chalk.magenta(util.inspect(newSkillNames))
+)
+
+const renameSkillsWithinModules = () =>
+  generateDigest().then(digest => {
+    const skillId = nameToId(currentSkillName)
+    const modules = Object.values(digest.modules).filter(module =>
+      module.skills.includes(skillId)
+    )
+
+    return Promise.all(
+      modules.map(renameSkillsWithinModule)
+    )
+  })
+
+const skillNameToMarkdown = skillName =>
+  `- ${skillName}\n`
+
+const renameSkillsWithinModule = (module) => {
+  const absolutePath = path.resolve(__dirname, `..${module.path}/README.md`)
+  console.log(
+    '%s %s',
+    chalk.green('updating module'),
+    module.path
+  )
+  return fs.readFile(absolutePath).then(markdown => {
+    markdown = markdown.toString().replace(
+      "\n"+skillNameToMarkdown(currentSkillName),
+      "\n"+newSkillNames.map(skillNameToMarkdown).join('')
+    )
+    return fs.writeFile(absolutePath, markdown)
+  })
+}
+
+const generateMigration = () => {
+  const migrationPath = `/database/migrations/${yyyymmddhhmmss()}_rename-skill.js`
+  const migrationFullPath = path.resolve(__dirname,`..${migrationPath}`)
+  const contents = migrationContents()
+  console.log(
+    '%s %s',
+    chalk.green('creating migration'),
+    chalk.magenta(migrationPath)
+  )
+  return fs.writeFile(migrationFullPath, contents)
+}
+
+const migrationContents = () =>
+`const databaseUtils = require('../utils')
+
+exports.up = function(knex, Promise) {
+  return databaseUtils.renameSkill(knex, {
+    from: ${toJS(currentSkillName)},
+    to: ${toJS(newSkillNames, 2)},
+  })
+};
+
+exports.down = function(knex, Promise) {
+  return databaseUtils.unrenameSkill(knex, {
+    from: ${toJS(currentSkillName)},
+    to: ${toJS(newSkillNames, 2)},
+  })
+};
+`
+
+const toJS = (object, indentation=0) =>
+  JSON.stringify(object, null, 2).split("\n").join("\n"+('  '.repeat(indentation)))
+
+// Ensure that we have 2 places for each of the date segments.
+const padDate = (segment) => {
+  segment = segment.toString();
+  return segment[1] ? segment : '0' + segment;
+}
+
+// Get a date object in the correct format, without requiring a full out library
+// like "moment.js".
+const yyyymmddhhmmss = () => {
+  var d = new Date();
+  return d.getFullYear().toString() + padDate(d.getMonth() + 1) + padDate(d.getDate()) + padDate(d.getHours()) + padDate(d.getMinutes()) + padDate(d.getSeconds());
+}
+
+
+
+
+Promise.all([
+  generateMigration(),
+  renameSkillsWithinModules(),
+]).then(_ => {
+  process.exit(0)
+})
+.catch(error => {
+  console.warn(error.message)
+  console.error(error)
+  process.exit(1)
+})

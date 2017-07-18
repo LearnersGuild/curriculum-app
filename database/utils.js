@@ -1,19 +1,25 @@
 const util = require('util')
 const nameToId = require('../digest/utils').nameToId
 
+const renameSkill = (knex, rename) => {
+  return migrateRenamedSkills(knex, rename.from, rename.to)
+}
+
+const unrenameSkill = (knex, rename) => {
+  return Promise.reject(new Error('unable to unrename skills'))
+}
+
 const migrateSkillsDiff = (knex, diffText) => {
-
   const changes = extractChangesFromDiff(diffText)
-
   return Promise.all(
     changes.map(([oldSkill, newSkills]) =>
       migrateRenamedSkills(knex, oldSkill, newSkills)
     )
   )
-
 }
 
 module.exports = {
+  renameSkill,
   migrateSkillsDiff,
 }
 
