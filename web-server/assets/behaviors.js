@@ -32,7 +32,12 @@ $(()=>{
     postJSON('/api/checks/set', {
       label: $(checkbox).data('label'),
       checked: checkbox.checked,
-    }).then(
+    })
+    .then( _ => {
+      const numerator = $('.skills-list-progress progress')[0].value += checkbox.checked ? 1 : -1
+      $('.skills-list-progress .progress-numerator').text(numerator)
+    })
+    .then(
       _ => { checkbox.disabled = false },
       _ => { checkbox.disabled = false }
     )
@@ -80,12 +85,16 @@ $(()=>{
     return postJSON('/api/checks/status', {labels})
     .then(checks => {
       $(() => {
+        let numerator = 0
         Object.keys(checks).forEach(label => {
           const checkbox = checkboxes[label]
-          if (checkbox.length === 0) console.warn('no checkbox found for '+label)
-          if (checkbox.prop('checked') !== !!checks[label]) console.info('FIXED',label)
-          checkbox.prop('checked', !!checks[label])
+          const checked = !!checks[label]
+          checkbox.prop('checked', checked)
+          if (checked) numerator++;
         })
+
+        $('.skills-list-progress progress').attr('value', numerator)
+        $('.skills-list-progress .progress-numerator').text(numerator)
       })
     })
   }

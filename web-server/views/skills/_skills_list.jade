@@ -3,6 +3,16 @@ mixin skillsList(skills)
   - skills = sortSkills(skills)
 
   .skills-list
+
+    p.skills-list-progress
+      - const numberOfSkills = skills.length
+      - const numberOfSkillsChecked = skills.filter(skill => skill.checked).length
+      progress.skill-progress(value=numberOfSkillsChecked max=numberOfSkills)
+      small
+        span.progress-numerator= numberOfSkillsChecked
+        &nbsp;/&nbsp;
+        span.progress-denominator= numberOfSkills
+
     .skills-list-controls
       ul.list-inline
         li
