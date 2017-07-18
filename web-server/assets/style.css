@@ -219,3 +219,19 @@ ul.skills > li > label > input[type="checkbox"] {
   display: block;
   width: 100%;
 }
+
+ul.phase-modules-list{
+  list-style-type: none;
+  padding: 0;
+}
+
+
+.practice-module-icon{
+  margin-right: 0.5em;
+  color: #97c93c;
+}
+
+.benchmark-module-icon{
+  margin-right: 0.5em;
+  color: #e67226;
+}
