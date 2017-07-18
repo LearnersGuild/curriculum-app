@@ -1,4 +1,4 @@
-let allContacts = [] // here is where you'll store your concats
+let contactStorage = [] // here is where you'll store your contacts
 
 /*
  * addContact
