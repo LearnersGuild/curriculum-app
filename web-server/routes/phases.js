@@ -46,10 +46,7 @@ module.exports = app => {
     response.render('phases/goals')
   })
 
-  app.use('/phases/:phaseNumber/dashboard', (request, response, next) => {
-    if (!request.user.isAdmin) return response.renderNotFound()
-    next()
-  })
+  app.use('/phases/:phaseNumber/dashboard', app.ensureAdmin)
 
   app.get('/phases/:phaseNumber/dashboard', (request, response, next) => {
     response.render('phases/dashboard/index')

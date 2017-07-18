@@ -29,6 +29,11 @@ module.exports = app => {
     )
   }
 
+  app.ensureAdmin = (request, response, next) => {
+    if (!request.user.isAdmin) return response.renderNotFound()
+    next()
+  }
+
   app.ensureTrailingSlash = (request, response, next) => {
     if (!request.path.match(/\/$/)){
       response.redirect(request.path+'/')
