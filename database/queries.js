@@ -19,7 +19,6 @@ const getCheckLogsForUsers = userIds => {
     .whereIn('user_id', userIds)
     .orderBy('occurred_at', 'asc')
     .then(checkLogs => {
-      console.log('checkLogs', checkLogs)
       const checkLogsByUserId = {}
       userIds.forEach(userId => {
         checkLogsByUserId[userId] = checkLogs.filter(checkLog =>
