@@ -140,7 +140,7 @@
     ],
     "published": false,
     "phase": 4,
-    "url": "https://curriculum.learnersguild.org/goals/414-Phase_4.html",
+    "url": "https://curriculum.learnersguild.org/goals/414-Phase_4",
     "dynamic": false
   },
   "415": {
@@ -156,7 +156,7 @@
     ],
     "published": false,
     "phase": 5,
-    "url": "https://curriculum.learnersguild.org/goals/415-Phase_5.html",
+    "url": "https://curriculum.learnersguild.org/goals/415-Phase_5",
     "dynamic": false
   },
   "416": {
@@ -172,7 +172,7 @@
     ],
     "published": false,
     "phase": 1,
-    "url": "https://curriculum.learnersguild.org/goals/416-Phase_2_Interview.html",
+    "url": "https://curriculum.learnersguild.org/goals/416-Phase_2_Interview",
     "dynamic": false
   },
   "417": {
@@ -188,7 +188,7 @@
     ],
     "published": false,
     "phase": 2,
-    "url": "https://curriculum.learnersguild.org/goals/417-Phase_3_Interview.html",
+    "url": "https://curriculum.learnersguild.org/goals/417-Phase_3_Interview",
     "dynamic": false
   },
   "418": {
@@ -204,7 +204,7 @@
     ],
     "published": false,
     "phase": 3,
-    "url": "https://curriculum.learnersguild.org/goals/418-Phase_4_Interview.html",
+    "url": "https://curriculum.learnersguild.org/goals/418-Phase_4_Interview",
     "dynamic": false
   },
   "444": {
@@ -220,7 +220,7 @@
     ],
     "published": true,
     "phase": 3,
-    "url": "https://curriculum.learnersguild.org/goals/444-Auth_Snapshot.html",
+    "url": "https://curriculum.learnersguild.org/goals/444-Auth_Snapshot",
     "dynamic": false
   },
   "446": {
@@ -236,7 +236,23 @@
     ],
     "published": true,
     "phase": 3,
-    "url": "https://curriculum.learnersguild.org/goals/446-Testing_Snapshot.html",
+    "url": "https://curriculum.learnersguild.org/goals/446-Testing_Snapshot",
+    "dynamic": false
+  },
+  "447": {
+    "authors": [
+      "punitrathore"
+    ],
+    "goal_id": 447,
+    "team_size": 2,
+    "title": "SQL Migrations Snapshot",
+    "created_at": "2017-07-18T11:10:48Z",
+    "labels": [
+      "snapshot"
+    ],
+    "published": true,
+    "phase": 3,
+    "url": "https://curriculum.learnersguild.org/modules/Migrations-Snapshot--Goal-447/",
     "dynamic": false
   },
   "64": {
@@ -253,7 +269,7 @@
     ],
     "published": true,
     "phase": 3,
-    "url": "https://curriculum.learnersguild.org/goals/64-To_Do_List_App.html",
+    "url": "https://curriculum.learnersguild.org/goals/64-To_Do_List_App",
     "dynamic": false
   },
   "69": {
@@ -269,7 +285,7 @@
     ],
     "published": true,
     "phase": 3,
-    "url": "https://curriculum.learnersguild.org/goals/69-Simple_Book_Store.html",
+    "url": "https://curriculum.learnersguild.org/goals/69-Simple_Book_Store",
     "dynamic": false
   },
   "98": {
@@ -285,7 +301,7 @@
     ],
     "published": true,
     "phase": 3,
-    "url": "https://curriculum.learnersguild.org/goals/98-Pizza_Restaurant-RDB_Schema_with_CRUD_API.html",
+    "url": "https://curriculum.learnersguild.org/goals/98-Pizza_Restaurant-RDB_Schema_with_CRUD_API",
     "dynamic": false
   }
 }
