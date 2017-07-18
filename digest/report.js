@@ -47,7 +47,7 @@ module.exports = digest => {
     }
 
     if (
-      !skill.name.match(/SQL|JavaScript|Node|Express|Browser|(g|G)it|Chrome Developer Tools|HTTP|HTML & CSS|Slack|Google|editor|terminal/)
+      !digest.skillContexts.find(c => !skill.name.toLowerCase().includes(c.toLowerCase()))
     ){
       report.skillsMissingContext.push(skill.rawText)
     }
