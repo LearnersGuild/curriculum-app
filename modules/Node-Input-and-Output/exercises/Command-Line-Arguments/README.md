@@ -21,8 +21,8 @@ node ./print_arguments.js a b c d
 ```
 
 You should see text output representing an array with 6 members. The first 2
-arguments you see may seem odd. The first argument is the fill path to the 
-version of node we're running. The second argument is the fill path to 
+arguments you see may seem odd. The first argument is the full path to the 
+version of node we're running. The second argument is the full path to 
 the `print_arguments.js` script. We can always skip these first two arguments. 
 So we might do something like this:
 
