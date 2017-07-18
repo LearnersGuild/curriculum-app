@@ -13,13 +13,12 @@ You will start by cloning a starter app which already has a database schema defi
 
 ### Setting Up Your Snapshot
 
-1. Fork & clone the [Contacts starter repo](https://github.com/GuildCrafts/contacts-snapshot-starter)
-1. Rename the fork to `migrations-snapshot`
-1. Follow the install instructions in teh README of the starter repo
+1. Fork & clone the [SQL Migrations Starter Repo](https://github.com/GuildCrafts/sql-migrations-snapshot)
+1. Follow the install instructions in the README of the starter repo
 
 ## Specifications
 
-- Use the [node-pg-migrate](https://github.com/theoephraim/node-pg-migrate) to add migrations to your project
+- Use the [node-pg-migrate](https://github.com/theoephraim/node-pg-migrate) library to add migrations to your project
 - Using the library above to create a migration for the SQL defined in the `src/db/schema/schema.sql` file
 - An npm script `db:migrate` exists which migrates the db to the latest migration
 - An npm script `db:init` exists which creates the database and migrates the database to the latest migration
