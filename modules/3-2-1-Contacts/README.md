@@ -13,7 +13,7 @@ Complete the functions provided, such that all the specs are met.
 
 ## Specs
 
-- Contacts printed in the console must be sorted by first and last name
+- Contacts printed in the console must be sorted by the contact's full name
 - functions `addContact`, `addContacts` and `printContacts` have been implemented
 
 Executing the file should print the following:
