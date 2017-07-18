@@ -1,7 +1,7 @@
 # Pipes
 
 In this exercise you'll write a node script that can read from
-STDIN or "Standard In" and write to STDOUT or "Standard Out"
+STDIN or "Standard In" and write to STDOUT or "Standard Out".
 
 
 ## Part 1
@@ -50,7 +50,7 @@ Now try pipping other things into your `passthrough.js` script. It
 should print out whatever you give it.
 
 ```
-ls -la | node ./passthrough.js`
+ls -la | node ./passthrough.js
 ```
 
 
@@ -60,16 +60,16 @@ your shell is frozen or something but its just reading STDIN from your terminal.
 To get out of this either hit `control-c` to abort the script or `control-d` to
 close and complete your input to STDIN.
 
-Like this:
+For example:
 
-Run `node ./passthrough.js` and it should print `passthrough.js start` and then
-it starts capturing everything you type, you can type whatever you want, hit
-enter, type whatever. When you're done just hit `control-d` and what you typed
+Run `node ./passthrough.js`. It should print `passthrough.js start` and then
+start capturing everything you type. You can type whatever you want, hit
+enter, type anything at all. When you're done hit `control-d` and what you typed
 is sent to your node script's STDIN.
 
 ## Part 2
 
-Okay now let's do something more useful than just print out out whatever we're
+Okay now let's do something more useful than just print out whatever we're
 given. In part two you're going to create a script that counts words in the text
 you pass to it through STDIN (Standard In).
 
