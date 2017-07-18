@@ -1,7 +1,7 @@
 # Node Input and Output
 
-In this module you'll learn several command ways to get data into your node
-program and several ways to generate output from your node program.
+In this module you'll learn several command methods to get data into your node
+program as well as several ways to generate output from your node program.
 
 ## Skills
 
