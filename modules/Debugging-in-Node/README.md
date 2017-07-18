@@ -30,6 +30,6 @@ what is javascript call stack
 - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Control_flow_and_error_handling#try...catch_statement
 - https://developer.mozilla.org/en-US/docs/Glossary/Call_stack
 
-### Watching
+### Video
 
 - https://www.youtube.com/watch?v=Vv1CLj4vLjE
