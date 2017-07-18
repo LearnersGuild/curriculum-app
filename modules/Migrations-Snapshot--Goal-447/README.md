@@ -2,9 +2,10 @@
 
 ## Skills
 
-- Can explain what a database migration is, and why we need it
+- Can describe what a SQL migration is
+- Can describe why we need SQL migrations
 - Can take an existing SQL schema, and convert them into migrations
-- Can create automated scripts to `reset`, `migrate`, and `seed` the database
+- Can create automated scripts to `reset`, `migrate`, and `seed` a SQL database
 
 ## Description
 
