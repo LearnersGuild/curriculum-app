@@ -2,7 +2,7 @@
 
 In this exercise we'll be going through how to synchronously read from and write
 to files in Node. You'll find it is highly encouraged to read from and write
-to files asynchronously in Node, however, lets ignore that advice for now as we
+to files asynchronously in Node, however, let's ignore that advice for now as we
 learn the basics. Later on "in the real world" we'll explore reading from and
 writing to files asynchronously.
 
