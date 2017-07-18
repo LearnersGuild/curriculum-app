@@ -13,7 +13,7 @@ This benchmark builds on the [3-2-1-Contacts](../3-2-1-Contacts) benchmark that 
   - The function should maintain the list of contacts that failed to be loaded, and should print a warning to the console about the failed imports
 - Test `addContact` and `addContacts` using `console.assert`
 
-Modify the [file](./contacts-with-testing.js) so that all the specs are met.
+Modify the [file](../3-2-1-Contacts/contacts.js) so that all the specs are met.
 
 Executing the file should print the following to the console:
 ```
