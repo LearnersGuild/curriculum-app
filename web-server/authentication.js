@@ -1,7 +1,7 @@
 const BackOffice = require('./BackOffice')
 const { addUserToRequestFromJWT } = require('@learnersguild/idm-jwt-auth/lib/middlewares')
 
-if ( !process.env.JWT_PUBLIC_KEY ) {
+if ( !process.env.DISABLE_IDM && !process.env.JWT_PUBLIC_KEY ) {
   throw new Error(`You do not have a JWT_PUBLIC_KEY in your .env. Please add it.`)
 }
 
