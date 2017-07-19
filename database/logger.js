@@ -1,6 +1,8 @@
 const chalk = require('chalk')
 
 module.exports = knex => {
+  if (!process.env.LOG_SQL_QUERIES) return
+
   knex.client.on('start', builder => {
 
     const startTime = process.hrtime()
