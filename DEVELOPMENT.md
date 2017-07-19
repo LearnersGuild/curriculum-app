@@ -16,7 +16,9 @@ create a `.env` file like this:
 PORT=3233
 DATABASE_URL=postgres://localhost:5432/lg-curriculum
 IDM_BASE_URL=http://idm.learnersguild.dev
+ECHO_BASE_URL=http://echo.learnersguild.dev
 JWT_PUBLIC_KEY="SEE IDM SETUP"
+LOG_SQL_QUERIES=1
 ```
 
 _NOTE: you can set `DISABLE_IDM=1` to disable authentication to IDM_
