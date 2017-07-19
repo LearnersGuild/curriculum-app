@@ -48,6 +48,10 @@ app.get('/', (request, response, next) => {
 })
 
 
-const server = app.listen(process.env.PORT, () => {
-  console.log('http://localhost:'+process.env.PORT)
-})
+if (!module.parent) {
+  app.listen(process.env.PORT, () => {
+    console.log('http://localhost:'+process.env.PORT)
+  })
+}else{
+  module.exports = app
+}

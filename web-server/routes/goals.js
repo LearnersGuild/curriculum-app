@@ -13,13 +13,13 @@ module.exports = app => {
     response.json({ goals })
   })
 
-  app.get('/api/goals/:id.json', (request, response, next) => {
-    const id = request.params.id
-    const goal = goalsById[id]
+  app.get('/api/goals/:goalId.json', (request, response, next) => {
+    const goalId = request.params.goalId
+    const goal = goalsById[goalId]
     if (goal) {
-      response.json(goal)
+      response.json({goal})
     } else {
-      response.status(404).json({error: `Could not find goal with id: ${id}`})
+      response.status(404).json({error: `Could not find goal with id: ${goalId}`})
     }
   })
 

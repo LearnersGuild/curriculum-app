@@ -1,5 +1,14 @@
+const chaiHttp = require('chai-http')
+const webServer = require('./web-server')
+
 global.chai = require('chai')
 global.expect = chai.expect
+
+chai.use(chaiHttp)
+
+global.webServer = () =>
+  chai.request(webServer)
+
 
 
 chai.Assertion.addMethod('haveDuplicates', function() {
