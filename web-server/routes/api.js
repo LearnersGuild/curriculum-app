@@ -33,20 +33,6 @@ module.exports = app => {
       .catch(next)
   })
 
-  app.get('/api/goals/index.json', (request, response, next) => {
-    response.json({goals: Object.keys(goalsById).map( goalId => goalsById[goalId])})
-  })
-
-  app.get('/api/goals/:id.json', (request, response, next) => {
-    const id = request.params.id
-    const goal = goalsById[id]
-    if (goal) {
-      response.json(goal)
-    } else {
-      response.status(404).json({error: `Could not find goal with id: ${id}`})
-    }
-  })
-
   // Error Handler
   app.use('/api', (error, req, res, next) => {
     let status = error.code || error.status
