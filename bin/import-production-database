@@ -3,5 +3,5 @@
 set -x
 rm ./latest.dump
 set -e
-heroku pg:backups:download
+heroku pg:backups:download --app lg-curriculum
 pg_restore --verbose --clean --no-acl --no-owner -d lg-curriculum latest.dump
