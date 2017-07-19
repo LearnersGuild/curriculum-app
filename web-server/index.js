@@ -12,6 +12,10 @@ if (process.env.NODE_ENV === 'production') {
   app.use(https({trustProtoHeader: true}))
 }
 
+app.get('/_status', (request, response, next) => {
+  response.send('status ok')
+})
+
 app.use(require('cookie-parser')())
 app.use('/assets', express.static(__dirname+'/assets'))
 
