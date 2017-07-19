@@ -8,7 +8,7 @@
   "scripts": {
     "dev": "nodemon web-server",
     "start": "node web-server",
-    "migrate": "knex --knexfile ./database/knex.js migrate:latest",
+    "migrate": "knex migrate:latest",
     "test": "mocha -G -r ./mocha.config.js $(find digest web-server database/ | grep .test.js) ",
     "test:watch": "npm test -- --watch"
   },
