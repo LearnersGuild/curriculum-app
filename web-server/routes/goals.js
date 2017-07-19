@@ -17,7 +17,7 @@ module.exports = app => {
     const goalId = request.params.goalId
     const goal = goalsById[goalId]
     if (goal) {
-      response.json({goal})
+      response.json(goal)
     } else {
       response.status(404).json({error: `Could not find goal with id: ${goalId}`})
     }
