@@ -28,7 +28,7 @@ Your `tasks` command should support the following sub-commands:
 | add      | adds the specified task                                | ./tasks add Finish reading Flatland |
 | list     | lists the incomplete tasks                             | ./tasks list                        |
 | complete | marks the task with `id` equal to `<task-id>` complete | ./tasks complete `<task-id>`        |
-| delete   | deleted the specified task                             | ./tasks delete                      |
+| delete   | deleted the specified task                             | ./tasks delete `<task-id>`          |
 
 
 In this 1st version the data for your tasks should be saved to a file called
