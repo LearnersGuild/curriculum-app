@@ -1,6 +1,8 @@
 require('../environment')
 const https = require('express-sslify').HTTPS
 const express = require('express')
+const compression = require('compression')
+
 
 const app = express()
 
@@ -16,6 +18,7 @@ app.get('/_status', (request, response, next) => {
   response.send('status ok')
 })
 
+app.use(compression())
 app.use(require('cookie-parser')())
 app.use('/assets', express.static(__dirname+'/assets'))
 
