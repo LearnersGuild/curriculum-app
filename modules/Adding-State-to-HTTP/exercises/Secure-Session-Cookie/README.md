@@ -87,7 +87,7 @@ In App 3 we're going to move our cookie logic into an express middleware and use
 
 The express middleware should look for the session cookie and if present deserialize it. Then it should place a session object at `request.session` so future request handlers can access the session. It also needs to serialize the session object back into the cookie before the response headers are sent.
 
-Build a middleware that serializes a session object into a session cookie using JSON. look at `cookie-session` as a guide. Each route should have access to the deserialized session cookie object at `req.session`. The cookie needs to be updated on each request. Update the form to store the users name in the session cookie object under the key `user_name`
+Build a middleware that serializes a session object into a session cookie using JSON. look at `cookie-session` as a guide. Each route should have access to the deserialized session cookie object at `req.session`. The cookie needs to be updated on each request. Update the form to store the user's first name, last name, and color in the session cookie object under the keys `first_name`, `last_name`, and `color`.
 
 
 ### Resources
@@ -120,8 +120,8 @@ Encrypt the session cookie using bcrypt
 
 ### Specs
 
-- your code is all in `/app3`
-- your dependencies are all listed in `/app3/package.json`
+- your code is all in `/app4`
+- your dependencies are all listed in `/app4/package.json`
 - your can start your server with `npm start`
 - your server should use `node` and `express`
 - When you type your first name, last name and favorite color into the text fields and press "That's me!", the page reloads and displays the text "Welcome back [first_name] [last_name] I bet your favorite color is [favorite_color]!".
