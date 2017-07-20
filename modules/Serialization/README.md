@@ -68,7 +68,7 @@ node parse xml
 
 ## Resources
 
-### watching
+### Watching
 
 - https://www.youtube.com/watch?v=uS37TujnLRw
 
