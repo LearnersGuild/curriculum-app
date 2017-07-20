@@ -1,11 +1,11 @@
 # Command Line Todo List
 
 This benchmark module is the 1st of a series of modules designed to take the
-same problem and make it increasingly more complex as you learn new skills.
+same problem and make it increasingly more complex as you learn new skills. 
+Below are the 2nd and 3rd modules for the Command Line Todo List benchmark. 
 
-1. [Command Line Todo List](../../modules/Command-Line-Todo-List)
-1. [Command Line Todo List With Callbacks](../../modules/Command-Line-Todo-List-With-Callbacks)
-1. [Command Line Todo List With SQL](../../modules/Command-Line-Todo-List-with-SQL)
+2. [Command Line Todo List With Callbacks](../../modules/Command-Line-Todo-List-With-Callbacks)
+2. [Command Line Todo List With SQL](../../modules/Command-Line-Todo-List-with-SQL)
 
 ## Skills
 
