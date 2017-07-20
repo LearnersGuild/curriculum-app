@@ -34,6 +34,8 @@ $(()=>{
       checked: checkbox.checked,
     })
     .then( _ => {
+      const skillProgress = $('.skills-list-progress progress')
+      if (skillProgress.length === 0) return
       const numerator = $('.skills-list-progress progress')[0].value += checkbox.checked ? 1 : -1
       $('.skills-list-progress .progress-numerator').text(numerator)
     })
