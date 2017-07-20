@@ -47,7 +47,7 @@ In this 1st version the data for your tasks should be saved to a file called
 - The `delete` command is implemented in `./commands/delete.js`
 - Add tests using Mocha and Chai for all functions
 - User receives an error message if they enter an invalid command
-- Your program should create the `tasks.json` file doesn't exist
+- Your program should create the `tasks.json` if the file doesn't exist
 - `tasks.json` is ignored and not checked into your Git repository
 
 ## Example Usage
