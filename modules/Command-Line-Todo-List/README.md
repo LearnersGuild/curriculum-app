@@ -123,10 +123,10 @@ $ ./tasks list
 
 ID Description
 -- -----------
-3  Bake cake
-4  Put groceries in the fridge
+1  Bake cake
+2  Put groceries in the fridge
 
-You have 4 tasks
+You have 2 tasks
 ```
 
 
