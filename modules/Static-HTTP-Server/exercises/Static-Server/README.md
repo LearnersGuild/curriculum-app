@@ -29,7 +29,7 @@ other than white
 1. You should see a blank page
 1. Edit the index.html page and add some HTML
 1. reload
-1. Now word toward all the specs
+1. Now work toward all the specs
 
 ##### Your directory should look like this
 
