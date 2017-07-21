@@ -4,8 +4,9 @@
 ## Asking For Help
 
 You can ask for help by putting a sticky note on your monitor or posting in
-you phase slack channel. You might want to do both since some of our experts
-are in-house and some are remote.
+your phase slack channel with the tag `@phase-n-help`, where `n` is replaced
+with the digit indicating your phase. You might want to do both since some
+of our experts are in-house and some are remote.
 
 #### Examples of what you can ask for
 
