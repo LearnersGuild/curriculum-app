@@ -1,7 +1,7 @@
 # Todo List
 
-Create a simple Todo List function that is able to add/remove/complete
-items in the list.
+Create a `TodoList` constructor that has methods to `add`, `remove`, and `complete`
+items in the todo list.
 
 ## Example Usage
 
