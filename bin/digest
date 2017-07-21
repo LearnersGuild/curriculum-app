@@ -1,17 +1,59 @@
 #!/usr/bin/env node
 
 const util = require('util')
+const commander = require('commander')
 const digest = require(__dirname+'/../digest')
+
+commander
+  .version(require(__dirname+'/../package.json').version)
+  .option('-C, --no-color', 'no color output')
+  .option('-s, --skills', 'list skills')
+  .option('-S, --skill-ids', 'list skill ids')
+  .option('-m, --modules', 'list modules')
+  .option('-M, --module-ids', 'list module ids')
+  .parse(process.argv)
 
 const inspect = object =>
   util.inspect(object, {
     depth: null,
-    colors: true,
+    colors: commander.color,
     maxArrayLength: null,
   })
 
 digest()
-  .then(digest => {
-    console.log(inspect(digest))
-  })
-  .catch(console.error)
+    .then(digest => {
+      if (commander.skills){
+        Object.values(digest.skills)
+          .map(skill => skill.name).sort()
+          .forEach(skillName => {
+            console.log(skillName)
+          })
+        return
+      }
+
+      if (commander.skillIds){
+        Object.keys(digest.skills).forEach(skillId => {
+          console.log(skillId)
+        })
+        return
+      }
+
+      if (commander.modules){
+        Object.values(digest.modules)
+          .map(module => module.name).sort()
+          .forEach(moduleName => {
+            console.log(moduleName)
+          })
+        return
+      }
+
+      if (commander.moduleIds){
+        Object.keys(digest.modules).forEach(moduleId => {
+          console.log(moduleId)
+        })
+        return
+      }
+
+      console.log(inspect(digest))
+    })
+    .catch(console.error)

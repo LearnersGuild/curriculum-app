@@ -29,6 +29,7 @@
     "body-parser": "^1.17.2",
     "bootflat": "^2.0.4",
     "chalk": "^2.0.1",
+    "commander": "^2.11.0",
     "compression": "^1.7.0",
     "cookie-parser": "^1.4.3",
     "ejs": "^2.5.6",
