@@ -1,6 +1,6 @@
 # Todo List
 
-Create a simple Todo List function, that is able to let you add/remove/complete
+Create a simple Todo List function that is able to add/remove/complete
 items in the list.
 
 ## Example Usage
