@@ -34,6 +34,7 @@ callbacks vs promises
 
 ### Reading
 
+- [Using Promises](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Using_promises)
 - [JavaScript Promises for Dummies](https://scotch.io/tutorials/javascript-promises-for-dummies)
 - [JavaScript Promises: Plain and Simple](https://coligo.io/javascript-promises-plain-simple/)
 - [Understanding JavaScript Promises, Part 1](https://scotch.io/tutorials/understanding-javascript-promises-pt-i-background-basics)
