@@ -50,6 +50,5 @@ callbacks vs promises
 ## Exercises
 
 - [Promise it won't hurt](https://github.com/stevekane/promise-it-wont-hurt)
-- [scotch.io's Javascript Promises](https://scotch.io/tutorials/javascript-promises-for-dummies)
 - Use the [MZ node module](https://github.com/normalize/mz) to wrap Node's `fs` module in promises (as described in the  [readme](https://github.com/normalize/mz))
 
