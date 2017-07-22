@@ -4,7 +4,7 @@ In this module you'll learn about the use of Promises for asynchronous programmi
 
 ## Skills
 
-- Can describe the difference between a JavaScript Promise being fulfilled vs. rejected
+- Can describe the difference between a JavaScript Promise being fulfilled and it being rejected
 - Can use `.then` to handle when a JavaScript Promise is fulfilled
 - Can use `.catch` to handle when a JavaScript Promise is rejected
 - Can use `.then` to chain JavaScript Promises
