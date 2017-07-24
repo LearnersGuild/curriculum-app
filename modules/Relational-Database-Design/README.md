@@ -12,7 +12,23 @@
 - Can describe SQL de-normalization
 - Can describe SQL ACID principals
 
+## Glossary of Terms
+
+- table
+- column / field
+- row / record
+- relationship
+- data type
+- schema
+- query
+- key (primary / foreign)
+- constraint
+- join table
+- normalization & denormalization
+- index
+
 ## Suggested Search Terms
+
 ```
 relational database relationships
 how to design a sql schema
@@ -39,6 +55,10 @@ what is ACID sql
 
 - https://www.youtube.com/watch?v=I_rxqSJAj6U
 - [Data Relationships](https://www.youtube.com/watch?v=ByqeSP9Y2UM)
+
+### Lectures
+
+- Tanner's Relational Database Lecture: [slides](https://docs.google.com/presentation/d/1Hc8ymBkAQ-7F4F83S8jqo_1leUJIoVnCYnbSZeM6WM0/edit?usp=sharing) | [video](https://youtu.be/qJltq18bSVI)
 
 ### Tools
 - [Visual SQL Designer](http://ondras.zarovi.cz/sql/demo/)
