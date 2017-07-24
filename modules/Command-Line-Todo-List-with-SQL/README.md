@@ -1,6 +1,6 @@
 # Command Line Todo List with SQL
 
-This benchmark modules is the 3rd of a series of modules designed to take the
+This benchmark module is the 3rd of a series of modules designed to take the
 same problem and make it increasingly more complex as you learn new skills.
 
 This module assumes you've already completed the
