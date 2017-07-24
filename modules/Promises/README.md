@@ -11,10 +11,10 @@ In this module you'll learn about the use of Promises for asynchronous programmi
 - Can use `.catch` to handle errors up a JavaScript Promise chain
 - Can create a `new Promise` in JavaScript
 - Can convert a function that uses callbacks into function that returns a JavaScript Promise
-- Can use describe and use `Promise.all()` in JavaScript
-- Can use describe and use `Promise.race()` in JavaScript
-- Can use describe and use `Promise.reject()` in JavaScript
-- Can use describe and use `Promise.resolve()` in JavaScript
+- Can describe and use `Promise.all()` in JavaScript
+- Can describe and use `Promise.race()` in JavaScript
+- Can describe and use `Promise.reject()` in JavaScript
+- Can describe and use `Promise.resolve()` in JavaScript
 
 ## Search Terms
 
