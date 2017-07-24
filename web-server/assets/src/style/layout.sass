@@ -5,6 +5,7 @@ body
   display: flex
   min-height: 100vh
   flex-direction: column
+  font-family: 'Proxima Nova'
 
   >
     main
@@ -19,8 +20,19 @@ body
       flex-wrap: row
       align-items: center
 
+// Override default styles from other libraries
+.container, .footer, .breadcrumb, .markdown-body
+  font-family: 'Proxima Nova' !important
+
 .navbar
   border-radius: 0
+
+// Override default bootflat colors for navbar-inverse
+.navbar-inverse,
+.navbar-inverse a
+  background-color: var(--color-slate-grey) !important
+  color: var(--color-light-grey) !important
+
 
 .page-container
   flex: 1 1
@@ -34,7 +46,7 @@ body
   display: block
   height: 50px
   width: 50px
-  background-image: url(https://brand.learnersguild.org/assets/learners-guild-logo-white.png)
+  background-image: url(https://brand.learnersguild.org/assets/learners-guild-logo-color.png)
   background-repeat: no-repeat
   background-position: -30px 0
   background-size: 116px
@@ -68,6 +80,7 @@ body
 
 
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6
+  font-family: 'Stag' !important
   margin-top: 24px
   margin-bottom: 16px
   font-weight: 600

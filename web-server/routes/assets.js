@@ -1,11 +1,13 @@
 const Path = require('path')
 const express = require('express')
 const assetBuildDirectoryPath = Path.resolve(__dirname, '../assets/build')
-const fontsDirectoryPath = Path.resolve(__dirname, '../assets/fonts')
+const learnersguildFontsDirectoryPath = Path.resolve(__dirname, '../assets/learnersguild-fonts')
+const bootflatFontsDirectoryPath = Path.resolve(__dirname, '../assets/bootflat-fonts')
 
 module.exports = app => {
 
-  app.use('/fonts', express.static(fontsDirectoryPath))
+  app.use('/fonts', express.static(bootflatFontsDirectoryPath))
+  app.use('/assets/fonts', express.static(learnersguildFontsDirectoryPath))
 
   if (process.env.NODE_ENV === 'production') {
 
