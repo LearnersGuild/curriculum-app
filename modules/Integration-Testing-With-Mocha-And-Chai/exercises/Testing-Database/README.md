@@ -4,7 +4,7 @@ Write tests for a set of functions that interact with a database storing address
 
 Use the starter code in https://github.com/GuildCrafts/example-address-book-api. Fork the repo, get a local copy working, and read the code to see how it works. Things to notice:
 
-- What are the different files? Why to do they exist?
+- What are the different files? Why do they exist?
 - How are tests run? What libraries/tools to they use?
 - How do the tests have data to work with? How is this test data separated from development data?
 
