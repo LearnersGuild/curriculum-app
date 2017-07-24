@@ -7,8 +7,7 @@ This module assumes you've already completed the
 [Command Line Todo List With Callbacks](../../modules/Command-Line-Todo-List-With-Callbacks)
 module.
 
-In this version we'll move from storing out tasks in a json file to storing our
-tasks in a Postgresql SQL database.
+In this version we'll move from storing our tasks in a json file to storing them in a Postgresql SQL database.
 
 ## Skills
 
