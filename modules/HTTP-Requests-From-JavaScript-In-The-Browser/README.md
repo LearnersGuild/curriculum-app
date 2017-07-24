@@ -13,7 +13,7 @@
 - Can find right method to use given browser support constraints
 - Can describe HTTP CORS
 - Can describe the HTTP Same-origin policy
-- Can describe at least one workarounds to the HTTP Same-origin policy
+- Can describe at least one workaround to the HTTP Same-origin policy
 
 
 ## Glossary of Terms
