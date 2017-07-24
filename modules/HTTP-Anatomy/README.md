@@ -16,7 +16,7 @@
 ### Reading
 
 - Introduction to HTTP: https://launchschool.com/books/http
-- https://code.tutsplus.com/tutorials/http-the-protocol-every-web-developer-must-know-part-1--net-31177
+- HTTP, a Protocol: https://code.tutsplus.com/tutorials/http-the-protocol-every-web-developer-must-know-part-1--net-31177
 - IETF documentation on cookies https://tools.ietf.org/html/rfc6265
 
 ### Watching
