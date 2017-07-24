@@ -28,7 +28,7 @@ See: [Github Glossary](https://help.github.com/articles/github-glossary/)
 | repository | A repository is a directory that is being tracked by git via adding and committing changes to files in that directory. |
 | commit     | A commit is any change to a file or set of files that you have saved. When you save your changes by using `git commit` you create a unique ID (a SHA) that lets you keep record of your changes. Commits have a date, author, and usually a brief commit message describing what has changed. |
 | branch     | A branch is a parallel version of a repository that you can make changes to that won't affect the primary or `master` branch. Once you've made all the changes you need in your branch, you can merge it into the `master` branch to publish your changes. |
-| remote     | The term remote refers to the copy of your repository that is online on Github |
+| remote     | The term remote refers to the copy of your repository that is online on Github. |
 | local      | The term local refers to the copy of your repository that you have on your local machine. |
 
 
