@@ -2,7 +2,7 @@
 
 This module is exactly the same as the
 [Movie Search CLI](../Movie-Search-CLI) phase 1 module but with the added
-requirement of the use of Promises.
+requirement of the use of the request-promise or request-promise-native library.
 
 ## Skills
 
@@ -20,4 +20,4 @@ requirement of the use of Promises.
 *These specs are in addition to the specs in the
 [Movie Search CLI](../Movie-Search-CLI) module*
 
-- use the [request-promise](https://github.com/request/request-promise) library to make HTTP requests
+- use the [request-promise](https://github.com/request/request-promise) or [request-promise-native](https://github.com/request/request-promise-native) library to make HTTP requests
