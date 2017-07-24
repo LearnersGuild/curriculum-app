@@ -39,9 +39,10 @@ slack
 screenhero
 spectacle
 postman
-copyclip
 xcode command line tools
 ```
+
+We would also recommend installing [copyclip](https://itunes.apple.com/us/app/copyclip-clipboard-history-manager/id595191960?mt=12) through the mac app store.
 
 ## Search Terms
 
