@@ -33,6 +33,7 @@ require('./routes/guide')(app)
 require('./routes/phases')(app)
 require('./routes/modules')(app)
 require('./routes/calendar')(app)
+require('./routes/cos')(app)
 
 app.get('/', (request, response, next) => {
   response.renderMarkdownFile(`/README.md`)
