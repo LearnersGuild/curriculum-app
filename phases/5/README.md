@@ -21,7 +21,7 @@ Weekly work plans should align with one of the four main accountabilities below.
   - Attend scheduled 1:1’s with Outbound Recruiter
 - Prepare for Technical Interviews
   - Complete at least 1 mock interview per week
-  - Complete at least 1 online interview challenge per week (e.g., HackerRank, Pramp, interview.io)
+  - Complete at least 1 online interview challenge per week (e.g., [HackerRank][hackerrank], [Pramp][pramp], [interviewing.io][interviewing-io])
 - Participate in Phase 5 Career Prep supports
   - Attend scheduled workshops
 - Continue to develop technical skills
@@ -44,3 +44,6 @@ Work plans must include specific objectives based on the accountabilities above 
 [gist]:https://gist.github.com
 [upwork]:https://www.upwork.com
 [fiverr]:https://www.fiverr.com
+[pramp]:https://www.pramp.com
+[hackerrank]:https://www.hackerrank.com
+[interviewing-io]:https://interviewing.io

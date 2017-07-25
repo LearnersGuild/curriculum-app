@@ -37,12 +37,6 @@ There are several different types of mock interviews we should do:
 - [ ] problem decomposition / whiteboard-interview strategy
 - [ ] systems design interviews
 
-### Practicing
-
-- [Pramp](https://pramp.com)
-- [HackerRank](https://hackerrank.com)
-- [interviewing.io](https://interviewing.io/)
-
 ## Miscellaneous
 
 ### Workshops / Lectures
