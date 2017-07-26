@@ -35,6 +35,10 @@ how to send a request using postman
 - https://www.youtube.com/watch?v=0M2S_7-Tcsc&t=414s
 - https://www.youtube.com/watch?v=Q-BpqyOT3a8
 
+## Lectures
+
+- Tanner's lecture on RESTful Routing & API Design: [slides](https://docs.google.com/presentation/d/1STfRtbAkxZ0JMzktW1-6XXagFiG-9hinQfWVnuadxds/edit?usp=sharing) | [video](https://youtu.be/7A6iuSGZFak)
+
 ## Exercises
 
 - [RESTful routing using files](./exercises/RESTful-routing-using-files.md)
