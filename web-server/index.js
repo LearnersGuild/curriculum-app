@@ -11,6 +11,7 @@ app.set('views', __dirname+'/views')
 
 // ensure secure connection
 if (process.env.NODE_ENV === 'production') {
+  require('newrelic')
   app.use(https({trustProtoHeader: true}))
 }
 
