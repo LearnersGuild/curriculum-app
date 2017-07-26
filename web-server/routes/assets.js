@@ -18,7 +18,11 @@ module.exports = app => {
         '/assets/'+files.find(path => path.match(/browser\..*\.js$/))
     })
 
-    app.use('/assets', express.static(assetBuildDirectoryPath))
+    app.use('/assets', express.static(assetBuildDirectoryPath, {
+      etag: true,
+      maxAge: '1d',
+      index: false,
+    }))
 
   }else{
 
