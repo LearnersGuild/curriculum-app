@@ -40,7 +40,7 @@ how to parse a body of a request express
 
 ### Part 2
 
-Build a basic web app using Express which can send data to the server via a HTML `<form>` element. You will be required to create two simple pages on the app. The mockups are provided below
+Build a basic web app using Express which can send data to the server via an HTML `<form>` element. You will be required to create two simple pages on the app. The mockups are provided below
 
 #### Form Get Page
 
@@ -57,7 +57,7 @@ The `action` property of the form should be set to `/submit-form`
 
 #### Server Routes
 
-The server should have the following routes
+The server should have the following routes:
 1. A route to render the `/form-get` page
     - url: `/form-get`
     - http method: `GET`
