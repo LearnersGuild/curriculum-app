@@ -7,9 +7,15 @@ Career Prep supports learners with interview readiness, job placement support an
 In this phase you will:
 
 - Practice realtime problem solving in mock technical interviews
+  - data structures and algorithms
+  - systems design
 - Attend career development workshops
 - Create and refine all job search materials
 - Develop networking and negotiation skills
+
+## Modules
+
+- _P:_ [Job Offers, Compensation, and Negotiation](../../modules/Job-Offers-Compensation-and-Negotiation)
 
 ## Accountabilities
 
