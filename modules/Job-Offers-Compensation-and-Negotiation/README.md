@@ -2,11 +2,11 @@
 
 ## Skills
 
-- Can read and understand an offer letter
-- Can explain the different parts of a compensation package
-- Can explain the difference between stock options and restricted stock units
-- Can list the "levers" available during a negotiation
-- Can assess what an appropriate salary is for my experience level
+- Can read and understand an offer letter from a hiring company
+- Can describe the different parts of a compensation package
+- Can describe the difference between stock options and restricted stock units (in terms of equity compensation)
+- Can list the "levers" available during negotiation with a hiring company
+- Can assess what an appropriate salary is for my experience level at a hiring company
 
 ## Suggested Resources
 
