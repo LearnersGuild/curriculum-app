@@ -10,7 +10,10 @@
     "start": "node web-server",
     "db:migrate": "knex migrate:latest",
     "test": "mocha -G -r ./mocha.config.js $(find digest web-server database/ | grep .test.js) ",
-    "test:watch": "npm test -- --watch"
+    "test:watch": "npm test -- --watch",
+    "webpack": "webpack --config ./web-server/webpack.config.js",
+    "heroku-prebuild": "NPM_CONFIG_PRODUCTION=false NODE_ENV=development npm install --only=dev; npm run webpack",
+    "heroku-postbuild": "rm -rf ./node_modules; NPM_CONFIG_PRODUCTION=true NODE_ENV=production npm install"
   },
   "repository": {
     "type": "git",
@@ -49,8 +52,18 @@
   "devDependencies": {
     "chai": "^4.0.2",
     "chai-http": "^3.0.0",
+    "clean-webpack-plugin": "^0.1.16",
+    "css-loader": "^0.28.4",
     "dotenv": "^4.0.0",
+    "extract-text-webpack-plugin": "^3.0.0",
     "mocha": "^3.4.2",
-    "nodemon": "^1.11.0"
+    "node-sass": "^4.5.3",
+    "nodemon": "^1.11.0",
+    "postcss-import": "^10.0.0",
+    "postcss-loader": "^2.0.6",
+    "raw-loader": "^0.5.1",
+    "sass-loader": "^6.0.6",
+    "webpack": "^3.4.0",
+    "webpack-middleware": "^1.5.1"
   }
 }
