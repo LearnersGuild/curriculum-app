@@ -28,8 +28,8 @@ module.exports = {
   },
   plugins: [
     new CleanWebpackPlugin([
-      paths.build+'/browser.*.js',
-      paths.build+'/browser.*.css',
+      paths.build+'/browser*.js',
+      paths.build+'/browser*.css',
     ]),
     extractCSS,
   ],
