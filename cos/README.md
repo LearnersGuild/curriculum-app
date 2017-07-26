@@ -1,1 +1,1 @@
-# Cultural Operatin System
+# Cultural Operating System
