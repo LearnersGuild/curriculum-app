@@ -1,7 +1,7 @@
 const Path = require('path')
 const express = require('express')
 const assetBuildDirectoryPath = Path.resolve(__dirname, '../assets/build')
-const fontsDirectoryPath = Path.resolve(__dirname, '../assets/src/bootflat/fonts')
+const fontsDirectoryPath = Path.resolve(__dirname, '../assets/fonts')
 
 module.exports = app => {
 

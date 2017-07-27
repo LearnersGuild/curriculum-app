@@ -1,10 +1,8 @@
 require('./browser.sass')
-global.jQuery = global.$ = require('./bootflat/js/jquery-1.10.1.min.js')
-require('./bootflat/js/bootstrap.min.js')
-
-
-require('./phases')
-require('./modules')
-require('./skills')
-require('./users')
-require('./markdown')
+global.jQuery = global.$ = require('./script/jquery-1.10.1.min.js')
+require('./script/bootstrap.min.js')
+require('./script/phases')
+require('./script/modules')
+require('./script/skills')
+require('./script/users')
+require('./script/markdown')
