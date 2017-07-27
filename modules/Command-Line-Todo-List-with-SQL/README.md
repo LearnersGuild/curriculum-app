@@ -42,3 +42,13 @@ except instead of `fs.readFileSync` and `fs.writeFileSync` you need to use the
 - All SQL functions are tested with mocha and chai
 
 
+## Resources
+
+### Reading
+
+- [Connecting to a PostgreSQL database from Node.js using the pg module](http://nodeexamples.com/2012/09/21/connecting-to-a-postgresql-database-from-node-js-using-the-pg-module/)
+- [Diving into PostgreSQL with node-postgres](http://russmatney.com/techsposure/diving-into-postgres-with-node-postgres/)
+- [Node-Postgres](https://node-postgres.com/)
+- [Connection Syntax when creating a Database object](https://github.com/vitaly-t/pg-promise/wiki/Connection-Syntax)
+- [PostgreSQL and NodeJS (ignore the Express parts)](http://mherman.org/blog/2015/02/12/postgresql-and-nodejs/#.WXpXV9PyvIE)
+
