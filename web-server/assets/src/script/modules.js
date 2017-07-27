@@ -1,5 +1,29 @@
 if (location.pathname.match(/^\/modules\//)) {
 
+  loadDigest().then(waitForDOMReady).then(digest => {
+    console.log('formatting skill list')
+    const skillsByHTML = document.data.currentModuleSkillsByHTML
+    const skillChecks = document.data.currentModuleSkillChecks
+
+    $('.markdown-body li').each((index, li) => {
+      li = $(li)
+      const html = li.html()
+      const skillId = skillsByHTML[html]
+      if (!skillId) return
+      const skill = digest.skills[skillId]
+      const checkbox = $('<input type="checkbox" class="skill-checkbox" />')
+      checkbox.attr('data-label', skillId)
+      checkbox.data('label', skillId)
+      checkbox[0].checked = skillChecks[skillId]
+      li
+        .data('skill', skill)
+        .addClass('list-item-with-checkbox')
+        .wrapInner(`<a href="${skill.path}"></a>`)
+        .prepend(checkbox)
+    })
+    reloadSkillCheckboxes()
+  })
+
   const addCheckboxesToSkillsListMembers = () => {
     const skills = JSON.parse($('.skills-data').val() || '[]')
 
@@ -24,6 +48,7 @@ if (location.pathname.match(/^\/modules\//)) {
         .wrapInner(`<a href="${skill.path}"></a>`)
         .prepend(checkbox)
     })
+    // reloadSkillCheckboxes()
   }
 
   $(addCheckboxesToSkillsListMembers)

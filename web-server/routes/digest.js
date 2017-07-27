@@ -9,6 +9,7 @@ module.exports = app => {
         .then(digest => {
           response.digest = digest
           response.locals.digest = digest
+          // response.locals.documentData.digest = digest
         })
         .then(next)
         .catch(next)
@@ -17,11 +18,6 @@ module.exports = app => {
     app.get('/digest', (request, response, next) => {
       response.render('digest')
     })
-
-    app.get('/digest.json', (request, response, next) => {
-      response.json(response.digest)
-    })
-
 
   }else{
 
@@ -39,4 +35,9 @@ module.exports = app => {
         process.exit(1)
       })
   }
+
+  app.get('/digest.json', (request, response, next) => {
+    response.json(response.digest)
+  })
+
 }

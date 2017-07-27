@@ -29,6 +29,7 @@ const reloadSkillCheckboxes = () => {
     }, {})
 
   const labels = Object.keys(checkboxes)
+  if (labels.length === 0) return
   return postJSON('/api/checks/status', {labels})
   .then(checks => {
     $(() => {

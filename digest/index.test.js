@@ -23,11 +23,12 @@ describe('digest', function(){
 
     it('should have keys', function(){
       expect(Object.keys(this.digest)).to.eql([
+        "COSWorkshops",
         "modules",
         "phases",
+        "report",
         "skillContexts",
         "skills",
-        "report",
       ])
     })
 

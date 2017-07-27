@@ -23,14 +23,20 @@ module.exports = app => {
 
     response.locals.moduleName = moduleName
     response.locals.currentModule = currentModule
-    response.locals.currentModuleSkills = currentModuleSkills
+    response.locals.documentData.currentModuleSkills = currentModule.skills
+    response.locals.documentData.currentModuleSkillsByHTML = currentModule.skills.reduce((map, skillId) => {
+      map[renderSkill(digest.skills[skillId])] = skillId
+      return map
+    },{})
+    // response.locals.currentModuleSkills = currentModuleSkills
 
-    const labels = currentModuleSkills.map(skill => skill.id)
+    const labels = currentModule.skills
     queries.getChecksForUserAndLabels({userId, labels})
       .then(checks => {
-        currentModuleSkills.forEach(skill => {
-          skill.checked = !!checks[skill.id]
-        })
+        response.locals.documentData.currentModuleSkillChecks = checks
+        // currentModuleSkills.forEach(skill => {
+        //   skill.checked = !!checks[skill.id]
+        // })
         next()
       })
       .catch(next)

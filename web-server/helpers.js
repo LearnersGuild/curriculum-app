@@ -45,6 +45,7 @@ module.exports = app => {
   app.use((request, response, next) => {
 
     response.path = request.url
+    response.locals.documentData = {}
     response.locals.IDM_BASE_URL = process.env.IDM_BASE_URL
     response.locals.currentURL = (
       request.protocol +

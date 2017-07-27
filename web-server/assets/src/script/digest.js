@@ -12,3 +12,12 @@ const loadDigest = () => {
 module.exports = {
   loadDigest,
 }
+
+
+const waitForDOMReady = (x) =>
+  new Promise((resolve, reject) => {
+    $(() => {
+      console.info('DOM READY', x)
+      resolve(x)
+    })
+  })
