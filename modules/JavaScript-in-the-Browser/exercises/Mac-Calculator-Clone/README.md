@@ -3,7 +3,7 @@
 
 ## Description
 
-Replicate the builtin Mac calculator as a web app.
+Replicate the built-in Mac calculator as a web app.
 
 This goal has 3 linear stages. You must complete the specs of each stage before
 progressing onto the next.
