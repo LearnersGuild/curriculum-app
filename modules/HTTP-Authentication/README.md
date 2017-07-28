@@ -50,7 +50,7 @@ There are a ton of specs you need to build so make sure you break each problem d
           not match"
         - with a valid email, and matching passwords
           - a new user should be inserted into the database
-          - your session cookie should be updated with the new user id
+          - your cookie session should be updated with the new user id
           - you should be logged in and redirected to the homepage
     - and you visit `/login` you see:
       - a form with:
@@ -81,8 +81,8 @@ There are a ton of specs you need to build so make sure you break each problem d
 
 ### Stretch
 
-- write tests for your express routes using `chai-http`
-- encrypt passwords using `bcrypt`
+- Write tests for your express routes using `chai-http`
+- Encrypt passwords using `bcrypt`
 
 ## Testing
 
@@ -98,5 +98,5 @@ If all of the above features are correctly implemented you should be able to
 
 Also try:
 
-- using a Chrome incognito window.
-- inspecting and deleting cookies in the Chrome Developer Tools application tab
+- Using a Chrome incognito window.
+- Inspecting and deleting cookies in the Chrome Developer Tools application tab
