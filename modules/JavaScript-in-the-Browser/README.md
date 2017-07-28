@@ -30,7 +30,7 @@ javascript event bubbling
 
 ### Watching
 
-- [Event handlers (5min)](https://www.youtube.com/watch?v=7UstS0hsHgI)
+- [Event handlers (20 min)](https://www.youtube.com/watch?v=7UstS0hsHgI)
 
 ## Exercises
 
