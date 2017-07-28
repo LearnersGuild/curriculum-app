@@ -7,7 +7,7 @@ cookies to remember the name of visitors to our app.
 
 1. Create an empty directory & repository
 0. Run `npm init -y`
-0. Run `npm install --save express cookie-parser`
+0. Run `npm install --save express body-parser`
 0. Run `npm install --save-dev nodemon`
 0. Put your express app in `app.js`
 0. Start your app with `nodemon app.js`
