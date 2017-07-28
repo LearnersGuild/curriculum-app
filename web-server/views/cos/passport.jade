@@ -1,0 +1,10 @@
+extends ../layout
+
+block content
+  h1 Passport
+
+  ul
+    for workshop in digest.COSWorkshops
+      li.list-item-with-checkbox
+        input(type="checkbox" disabled checked=false)
+        a(href=workshop.path)= workshop.name
