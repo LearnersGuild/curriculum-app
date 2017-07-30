@@ -30,7 +30,7 @@ cookie based authentication
 
 ### Read
 
-- https://en.wikipedia.org/wiki/State_(computer_science)
+- [State (computer science)](https://en.wikipedia.org/wiki/State_(computer_science))
 - [All You Ever Wanted to Know About Sessions In Node.js](https://stormpath.com/blog/everything-you-ever-wanted-to-know-about-node-dot-js-sessions)
 
 
