@@ -2,7 +2,7 @@
 
 HTTP is a stateless protocol. This means each request does not know anything
 about any previous requests. So in order to add state to your web application
-that state, or a reference to it, needs to be sent as part of every single
+you need to send that state, or a reference to it, as part of every single
 HTTP request. This is where cookies come in.
 
 ## Skills
