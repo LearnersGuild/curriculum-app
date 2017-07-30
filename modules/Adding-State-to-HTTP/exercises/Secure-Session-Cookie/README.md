@@ -19,7 +19,7 @@ upon the tools you learned and practiced in the last.
 
 In App 1 we're going to store a single string in an HTTP cookie.
 
-Using express, make an app that renders an html page that with a form that does
+Using express, make an app that renders an html page with a form that does
 a post of the users name and then store their given name in a cookie. Parse
 cookies using a cookie parsing node package. Display the user's name on the
 page if you have it in the cookie. The user should also have a "clear name" button.
