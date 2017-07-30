@@ -14,4 +14,4 @@ cookies to remember the name of visitors to our app.
 0. Open another terminal window
 0. On the homepage, render a form that asks for `Name` with a single text input
 0. When you submit that form it should `POST` to `/set-name`
-0. Within the `POST` `/set-name` route, take the posted name and save it to the a cookie named `username`
+0. Within the `POST` `/set-name` route, take the posted name and save it to a cookie named `username`
