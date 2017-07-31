@@ -27,10 +27,10 @@ simple express api tutorial
 
 ### Reading
 
-- [https://expressjs.com/]
-- [https://expressjs.com/en/starter/hello-world.html]
-- [https://www.thepolyglotdeveloper.com/2015/10/create-a-simple-restful-api-with-node-js/]
-- How body-parser works [https://medium.com/@adamzerner/how-bodyparser-works-247897a93b90]
+- https://expressjs.com/
+- https://expressjs.com/en/starter/hello-world.html
+- https://www.thepolyglotdeveloper.com/2015/10/create-a-simple-restful-api-with-node-js/
+- [How body-parser works](https://medium.com/@adamzerner/how-bodyparser-works-247897a93b90)
 
 ### Watching
 
