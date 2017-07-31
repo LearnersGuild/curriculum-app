@@ -8,7 +8,7 @@
 - Can describe the difference between normal HTTP requests and XHR
 - Can make an HTTP request from the browser without any libraries
 - Can make an HTTP request from the browser using jQuery
-- Can examine HTTP request from the Chrome Developer Tools
+- Can examine an HTTP request from the Chrome Developer Tools
 - Can make use of the `fetch` API in the browser
 - Can find right method to use given browser support constraints
 - Can describe HTTP CORS
