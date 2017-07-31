@@ -46,11 +46,11 @@ node express cookies
 - Your dependencies are all listed in `/app1/package.json`
 - You can start your server with `npm start`
 - Your server should use `node` and `express`
-- When you visit 'http://localhost:3000/' you see:
+- When I visit 'http://localhost:3000/' I see:
   - The text "Welcome stranger! What's your name?"
   - A text input with the place holder "Your name here"
   - A submit button with the text "Save my name!"
-- When you type your name into the text field and press "Save my name!" the page reloads and displays the text "Welcome back [the name you entered]!" only.
+- When I type my name into the text field and press "Save my name!" the page reloads and displays the text "Welcome back [the name I entered]!" only.
   - Example: If I enter "Ada Lovelace" and hit "Save my name!" The only thing I should see on the page is "Welcome back Ada Lovelace".
 - If I reload the page I should still see the same text
 - When I delete my cookies or visit the site in an incognito window, I should see the form again.
@@ -69,13 +69,13 @@ In App 2 we're going to store more than one piece of data in a cookie using JSON
 - Your dependencies are all listed in `/app2/package.json`
 - You can start your server with `npm start`
 - Your server should use `node` and `express`
-- When you visit 'http://localhost:3000/' you see:
+- When I visit 'http://localhost:3000/' I see:
   - The text "Welcome stranger! Tell us about yourself?"
   - A text input with the place holder "First name"
   - A text input with the place holder "Last name"
   - A text input with the place holder "Favorite color"
   - A submit button with the text "That's me!"
-- When you type your first name, last name and favorite color into the text fields and press "That's me!", the page reloads and displays the text "Welcome back [first_name] [last_name] I bet your favorite color is [favorite_color]!".
+- When I type my first name, last name and favorite color into the text fields and press "That's me!", the page reloads and displays the text "Welcome back [first_name] [last_name] I bet your favorite color is [favorite_color]!".
   - Example: If I enter "Ada", "Lovelace", "Green" and hit "Save my name!" The only thing I should see on the page is "Welcome back Ada Lovelace I bet your favorite color is green".
 - If I reload the page I should still see the same text
 - When I delete my cookies or visit the site in an incognito window, I should see the form again.
@@ -102,9 +102,9 @@ Build a middleware that serializes a session object into a session cookie using 
 
 - Your code is all in `/app3`
 - Your dependencies are all listed in `/app3/package.json`
-- Your can start your server with `npm start`
+- You can start your server with `npm start`
 - Your server should use `node` and `express`
-- When you type your first name, last name and favorite color into the text fields and press "That's me!", the page reloads and displays the text "Welcome back [first_name] [last_name] I bet your favorite color is [favorite_color]!".
+- When I type my first name, last name and favorite color into the text fields and press "That's me!", the page reloads and displays the text "Welcome back [first_name] [last_name] I bet your favorite color is [favorite_color]!".
   - Example: If I enter "Ada", "Lovelace", "Green" and hit "Save my name!" The only thing I should see on the page is "Welcome back Ada Lovelace I bet your favorite color is green".
 - If I reload the page I should still see the same text
 - When I delete my cookies or visit the site in an incognito window, I should see the form again.
@@ -122,9 +122,9 @@ Encrypt the session cookie using bcrypt.
 
 - Your code is all in `/app4`
 - Your dependencies are all listed in `/app4/package.json`
-- Your can start your server with `npm start`
+- You can start your server with `npm start`
 - Your server should use `node` and `express`
-- When you type your first name, last name and favorite color into the text fields and press "That's me!", the page reloads and displays the text "Welcome back [first_name] [last_name] I bet your favorite color is [favorite_color]!".
+- When I type my first name, last name and favorite color into the text fields and press "That's me!", the page reloads and displays the text "Welcome back [first_name] [last_name] I bet your favorite color is [favorite_color]!".
   - Example: If I enter "Ada", "Lovelace", "Green" and hit "Save my name!" The only thing I should see on the page is "Welcome back Ada Lovelace I bet your favorite color is green".
 - If I reload the page I should still see the same text
 - When I delete my cookies or visit the site in an incognito window, I should see the form again.
