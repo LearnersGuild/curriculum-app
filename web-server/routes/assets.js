@@ -41,7 +41,7 @@ module.exports = app => {
       quiet: false,
       // display nothing to the console
 
-      lazy: false,
+      lazy: true,
       // switch into lazy mode
       // that means no watching, but recompilation on every request
 
