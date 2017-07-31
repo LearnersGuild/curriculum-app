@@ -1,4 +1,4 @@
-# Party List Its ES2017
+# Party Like It's ES2017
 
 In this module we're going to cover what you need to know to use ES2017 features
 in both Node and the browser.
