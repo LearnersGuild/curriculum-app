@@ -44,7 +44,7 @@ node express cookies
 
 - Your code is all in `/app1`
 - Your dependencies are all listed in `/app1/package.json`
-- Your can start your server with `npm start`
+- You can start your server with `npm start`
 - Your server should use `node` and `express`
 - When you visit 'http://localhost:3000/' you see:
   - The text "Welcome stranger! What's your name?"
@@ -67,7 +67,7 @@ In App 2 we're going to store more than one piece of data in a cookie using JSON
 
 - Your code is all in `/app2`
 - Your dependencies are all listed in `/app2/package.json`
-- Your can start your server with `npm start`
+- You can start your server with `npm start`
 - Your server should use `node` and `express`
 - When you visit 'http://localhost:3000/' you see:
   - The text "Welcome stranger! Tell us about yourself?"
