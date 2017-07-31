@@ -50,7 +50,7 @@ There are a ton of specs you need to build so make sure you break each problem d
           not match"
         - with a valid email, and matching passwords
           - a new user should be inserted into the database
-          - your cookie session should be updated with the new user id
+          - your session cookie should be updated with the new user id
           - you should be logged in and redirected to the homepage
     - and you visit `/login` you see:
       - a form with:
