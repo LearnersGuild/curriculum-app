@@ -129,7 +129,7 @@ Encrypt the session cookie using bcrypt.
 - If I reload the page I should still see the same text
 - When I delete my cookies or visit the site in an incognito window, I should see the form again.
 - All cookie related code should be in the express middleware
-- The `homepage` and `form post` routes should only read and write data to and from `request.session` and not to the cookies header directly.
+- The `homepage` and `form post` routes should read and write data only to and from `request.session` and not to the cookies header directly.
 - The data in the cookie should be encrypted and decrypted on every request.
 
 
