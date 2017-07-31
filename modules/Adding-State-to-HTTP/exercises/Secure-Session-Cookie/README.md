@@ -48,7 +48,7 @@ node express cookies
 - Your server should use `node` and `express`
 - When I visit 'http://localhost:3000/' I see:
   - The text "Welcome stranger! What's your name?"
-  - A text input with the place holder "Your name here"
+  - A text input with the placeholder or label "Your name here"
   - A submit button with the text "Save my name!"
 - When I type my name into the text field and press "Save my name!" the page reloads and displays the text "Welcome back [the name I entered]!" only.
   - Example: If I enter "Ada Lovelace" and hit "Save my name!" The only thing I should see on the page is "Welcome back Ada Lovelace".
@@ -71,9 +71,9 @@ In App 2 we're going to store more than one piece of data in a cookie using JSON
 - Your server should use `node` and `express`
 - When I visit 'http://localhost:3000/' I see:
   - The text "Welcome stranger! Tell us about yourself?"
-  - A text input with the place holder "First name"
-  - A text input with the place holder "Last name"
-  - A text input with the place holder "Favorite color"
+  - A text input with the placeholder or label "First name"
+  - A text input with the placeholder or label "Last name"
+  - A text input with the placeholder or label "Favorite color"
   - A submit button with the text "That's me!"
 - When I type my first name, last name and favorite color into the text fields and press "That's me!", the page reloads and displays the text "Welcome back [first_name] [last_name] I bet your favorite color is [favorite_color]!".
   - Example: If I enter "Ada", "Lovelace", "Green" and hit "Save my name!" The only thing I should see on the page is "Welcome back Ada Lovelace I bet your favorite color is green".
