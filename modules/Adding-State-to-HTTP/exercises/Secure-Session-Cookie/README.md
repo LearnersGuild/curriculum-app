@@ -70,7 +70,7 @@ In App 2 we're going to store more than one piece of data in a cookie using JSON
 - You can start your server with `npm start`
 - Your server should use `node` and `express`
 - When I visit 'http://localhost:3000/' I see:
-  - The text "Welcome stranger! Tell us about yourself?"
+  - The text "Welcome stranger! Tell us about yourself."
   - A text input with the placeholder or label "First name"
   - A text input with the placeholder or label "Last name"
   - A text input with the placeholder or label "Favorite color"
