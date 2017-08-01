@@ -100,3 +100,7 @@ Also try:
 
 - Using a Chrome incognito window.
 - Inspecting and deleting cookies in the Chrome Developer Tools application tab
+
+## Reading
+
+- [Salted Password Hashing—Doing it Right](https://crackstation.net/hashing-security.htm)
