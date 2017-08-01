@@ -87,7 +87,7 @@ In App 3 we're going to move our cookie logic into an express middleware and use
 
 The express middleware should look for the session cookie and if present deserialize it. Then it should place a session object at `request.session` so future request handlers can access the session. It also needs to serialize the session object back into the cookie before the response headers are sent.
 
-Build a middleware that serializes a session object into a session cookie using JSON. Look at `cookie-session` as a guide. Each route should have access to the deserialized session cookie object at `req.session`. The cookie needs to be updated on each request. Update the form to store the user's first name, last name, and color in the session cookie object under the keys `first_name`, `last_name`, and `color`.
+Build a middleware that serializes a session object into a session cookie using JSON. Look at `cookie-session` as a guide. Each route should have access to the deserialized session cookie object at `req.session`. The cookie needs to be updated on each form submission. When the user's first name, last name, and color are submitted, store them in the session cookie object under the keys `first_name`, `last_name`, and `color`.
 
 
 ### Resources
