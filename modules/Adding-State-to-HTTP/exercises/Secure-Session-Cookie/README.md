@@ -70,15 +70,15 @@ In App 2 we're going to store more than one piece of data in a cookie using JSON
 - You can start your server with `npm start`
 - Your server should use `node` and `express`
 - When I visit 'http://localhost:3000/' I see:
-  - The text "Welcome stranger! Tell us about yourself."
+  - The text "Welcome, stranger! Tell us about yourself."
   - A text input with the placeholder or label "First name"
   - A text input with the placeholder or label "Last name"
   - A text input with the placeholder or label "Favorite color"
   - A submit button with the text "That's me!"
-- When I type my first name, last name and favorite color into the text fields and press "That's me!", the page reloads and displays the text "Welcome back [first_name] [last_name] I bet your favorite color is [favorite_color]!".
-  - Example: If I enter "Ada", "Lovelace", "Green" and hit "Save my name!" The only thing I should see on the page is "Welcome back Ada Lovelace I bet your favorite color is green".
+- When I type my first name, last name and favorite color into the text fields and press "That's me!", the page reloads and displays the text "Welcome back, [first_name] [last_name]. I bet your favorite color is [favorite_color]!"
+  - Example: If I enter "Ada", "Lovelace", "Green" and hit "Save my name!" The only thing I should see on the page is "Welcome back, Ada Lovelace. I bet your favorite color is green!"
 - If I reload the page I should still see the same text
-- When I delete my cookies or visit the site in an incognito window, I should see the form again.
+- When I delete my cookies or visit the site in an incognito window, I should see the form again
 
 
 ## App 3 - An insecure session
