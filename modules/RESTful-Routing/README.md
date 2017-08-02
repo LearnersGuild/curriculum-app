@@ -42,3 +42,4 @@ how to send a request using postman
 ## Exercises
 
 - [RESTful routing using files](./exercises/RESTful-routing-using-files.md)
+- [Build a REST api with express](https://teamtreehouse.com/library/build-a-rest-api-with-express)
