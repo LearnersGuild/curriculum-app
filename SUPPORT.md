@@ -42,7 +42,7 @@ attendance. We will cover more topics in less depth than a lecture.
 
 ## Live Code Reviews
 
-…are code reviews done by and SEP, of a learners code, in front of the whole
+…are code reviews done by an SEP, of a learners code, in front of the whole
 phase. This is intended to model to you, the learner, how a professional
 programmer might critic your code. Giving the author(s) feedback in a forum
 where everyone can ask questions.
