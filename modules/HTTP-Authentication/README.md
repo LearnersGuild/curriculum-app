@@ -68,6 +68,8 @@ There are a ton of specs you need to build so make sure you break each problem d
         or password"
       - with a matching email and password
         - you should be logged in and redirect to the home page
+    - and you visit `/logout`
+      - you are redirected to the home page
   - when you are logged in
     - and you visit `/` (the home page) you see:
       - "Welcome back [email address]"
@@ -77,7 +79,7 @@ There are a ton of specs you need to build so make sure you break each problem d
     - and you visit `/signup`
       - you are redirected to the homepage
     - and you visit `/logout`
-      - are logged out and then redirected to the home page
+      - you are logged out and then redirected to the home page
 
 ### Stretch
 
