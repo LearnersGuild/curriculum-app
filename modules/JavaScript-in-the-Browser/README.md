@@ -7,7 +7,7 @@
 - Can make HTTP requests from JavaScript in the Browser
 - Can describe `DOM event bubbling` in the Browser
 - Can describe what an HTML `<script>` tag does
-- Can describe the `window` variable is within JavaScript in the Browser
+- Can describe what the `window` variable is within JavaScript in the Browser
 - Can find DOM nodes using `querySelectorAll`
 
 ## Google Search Terms
