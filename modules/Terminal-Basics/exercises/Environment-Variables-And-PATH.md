@@ -65,12 +65,12 @@ To add `~/bin` to your `PATH`, you:
   1. Use the value of the current `PATH` first
   1. Separate the current path from your new directory using a `:`
   1. Add in the new directory name using its absolute path with `~/`
-  1. Permanently add it to your `PATH` using the `export` command
 
 ```bash
 PATH=$PATH:~/bin/
-export PATH # without this you will lose this change when you open a new shell window
 ```
+
+Notice, if you open a new terminal window, `~/bin` is no longer in your path. We'll learn in the next module, [Customizing Your Shell] (https://curriculum.learnersguild.org/modules/Terminal-Basics/exercises/Customizing-Your-Shell.md), how to update your PATH environment variable for every time you open a new shell.
 
 Now if you `echo $PATH` you should see `/Users/your_username/bin`. This is the absolute path we get by using `~/` before the directory. Learn more about absolute paths versus relative paths by watching this [BASH Basics video](https://youtu.be/eH8Z9zeywq0?t=506).
 
@@ -85,7 +85,6 @@ Research these links and topics to learn more about the `$PATH`. While you're re
 0. [ ] Add a new directory to your PATH
 0. [ ] Add a new directory to the beginning of your PATH
 0. [ ] Add a new directory to the end of your PATH
-0. [ ] Export an environment variable and access it in a new shell window
 0. [ ] Run the command `ls /usr/bin` and identify some programs you recognize. If you don't recognize any of them, try researching a few to see what they do!
 
 ### Suggested Search Terms
