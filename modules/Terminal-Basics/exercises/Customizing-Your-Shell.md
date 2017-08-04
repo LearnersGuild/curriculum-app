@@ -13,15 +13,15 @@ Read more about these files in the following resources:
 - [Bash Configurations Demystified](http://dghubble.com/blog/posts/.bashprofile-.profile-and-.bashrc-conventions/)
 - [.bash_profile vs .bashrc](http://www.joshstaiger.org/archives/2005/07/bash_profile_vs.html)
 
-## Exercise: Exporting Environment Variables
+## Exercise: Exporting Environment Variables in .bashrc
 
-When you modified your `PATH`
- using `export PATH`, you only added your custom path in your current session. If you want to keep that custom path, you'll need to add it every time you start a new terminal. You can do this by adding your custom path and `export PATH` command directly to your `.bashrc` to be loaded each time you open a new terminal window.
+Note: Please see the [Environment Variables and PATH](https://curriculum.learnersguild.org/modules/Terminal-Basics/exercises/Environment-Variables-And-PATH.md) module for an explanation of environment variables and how to change them from the shell. 
+
+Changing environment variables in the shell only applies to the current terminal window. But maybe you want to change environment variables so that they apply every time you open a new shell or window -- this requires `.bashrc`. To cause a custom path to be loaded for every new window, define and export your custom path in `.bashrc` like this:
 
 ```bash
 # in your .bashrc
-PATH=$PATH:~/your-custom-directory/
-export PATH
+export PATH=$PATH:~/your-custom-directory/
 ```
 
 Another useful environment variable you'll want to add to your `.bashrc` is your custom editor. This variable will tell bash which program to use when you want to open Javascript files.
