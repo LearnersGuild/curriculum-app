@@ -35,7 +35,7 @@ In this phase you will learn…
 - _B:_ [Command Line Todo List with SQL](../../modules/Command-Line-Todo-List-with-SQL)
 - _P:_ [Your First HTTP Server](../../modules/Your-First-HTTP-Server)
 - _P:_ [RESTful Routing](../../modules/RESTful-Routing)
-- _B:_ [Movie Search API](../../modules/Movie-Search-API)
+- _B:_ [Movie Search HTTP API](../../modules/Movie-Search-HTTP-API)
 - _P:_ [Posting Data To The Server With A Form](../../modules/Posting-Data-To-The-Server-With-A-Form)
 - _P:_ [Adding State to HTTP](../../modules/Adding-State-to-HTTP)
 - _B:_ [HTTP Authentication](../../modules/HTTP-Authentication)

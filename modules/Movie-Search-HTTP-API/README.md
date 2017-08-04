@@ -1,4 +1,4 @@
-# Movie Search API
+# Movie Search HTTP API
 
 
 ## Skills
