@@ -6,7 +6,7 @@
 
 Every time you open a new shell, initialization files are run to set up your basic shell environment with any custom configurations you might have. Two of these files are the `.bashrc` (bash resource) and the `.bash_profile`.
 
-According to `man bash`, `.bash_profile` is executed for shells where you've logged in, which is the default for each new terminal window in Mac OS. Both files are loaded when you start a new shell window, but it's easier to maintain configurations in one file. For this example, let's add configurations to the `.bash_rc`.
+According to `man bash`, `.bash_profile` is executed for shells where you've logged in, which is the default for each new terminal window in Mac OS. Both files are loaded when you start a new shell window, but it's easier to maintain configurations in one file. For this example, let's add configurations to the `.bashrc`.
 
 Read more about these files in the following resources:
 
