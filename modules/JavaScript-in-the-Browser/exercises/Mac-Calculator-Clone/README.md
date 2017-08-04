@@ -8,9 +8,6 @@ Replicate the built-in Mac calculator as a web app.
 This goal has 3 linear stages. You must complete the specs of each stage before
 progressing onto the next.
 
-Fork the the [mac-calculator-clone repository][mac-calculator-clone] and use
-the fork as your project artifact.
-
 ## Setup
 
 1. Create a new repository
