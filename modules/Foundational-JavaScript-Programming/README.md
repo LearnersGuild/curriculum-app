@@ -107,25 +107,9 @@ before moving on from this module.
 
 ```
 javascript split string into array
+javascript array methods
+javascript truthy falsy
 ```
-
-## Exercises
-
-- https://www.codecademy.com/courses/getting-started-v2/0/1
-- https://www.freecodecamp.com/challenges/use-conditional-logic-with-if-statements
-- https://www.freecodecamp.com/challenges/iterate-with-javascript-for-loops
-- https://www.freecodecamp.com/challenges/iterate-odd-numbers-with-a-for-loop
-- [Freecodecamp - Basic Javascript (10 hours)](https://www.freecodecamp.com/map)
-- https://www.freecodecamp.com/challenges/iterate-with-javascript-while-loops
-- https://www.freecodecamp.com/challenges/iterate-with-javascript-for-loops
-- https://www.freecodecamp.com/challenges/declare-javascript-variables
-- https://www.freecodecamp.com/challenges/iterate-over-arrays-with-map
-- https://www.freecodecamp.com/challenges/filter-arrays-with-filter
-- https://www.freecodecamp.com/challenges/condense-arrays-with-reduce
-- https://www.freecodecamp.com/challenges/split-strings-with-split
-- https://www.freecodecamp.com/challenges/join-strings-with-join
-- https://github.com/workshopper/javascripting
-
 
 
 ## Resources
@@ -147,3 +131,21 @@ javascript split string into array
 - https://auth0.com/blog/glossary-of-modern-javascript-concepts/#purity
 - https://medium.com/@zfrisch/destroying-buildings-a-simple-guide-to-javascript-closures-ef9fc326c73d
 - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Equality_comparisons_and_sameness
+- https://hackernoon.com/understand-nodejs-javascript-object-inheritance-proto-prototype-class-9bd951700b29
+
+## Exercises
+
+- https://www.codecademy.com/courses/getting-started-v2/0/1
+- https://www.freecodecamp.com/challenges/use-conditional-logic-with-if-statements
+- https://www.freecodecamp.com/challenges/iterate-with-javascript-for-loops
+- https://www.freecodecamp.com/challenges/iterate-odd-numbers-with-a-for-loop
+- [Freecodecamp - Basic Javascript (10 hours)](https://www.freecodecamp.com/map)
+- https://www.freecodecamp.com/challenges/iterate-with-javascript-while-loops
+- https://www.freecodecamp.com/challenges/iterate-with-javascript-for-loops
+- https://www.freecodecamp.com/challenges/declare-javascript-variables
+- https://www.freecodecamp.com/challenges/iterate-over-arrays-with-map
+- https://www.freecodecamp.com/challenges/filter-arrays-with-filter
+- https://www.freecodecamp.com/challenges/condense-arrays-with-reduce
+- https://www.freecodecamp.com/challenges/split-strings-with-split
+- https://www.freecodecamp.com/challenges/join-strings-with-join
+- https://github.com/workshopper/javascripting
