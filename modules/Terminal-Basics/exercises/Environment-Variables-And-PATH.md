@@ -70,7 +70,7 @@ To add `~/bin` to your `PATH`, you:
 PATH=$PATH:~/bin/
 ```
 
-Notice, if you open a new terminal window, `~/bin` is no longer in your path. We'll learn in the next module, [Customizing Your Shell] (https://curriculum.learnersguild.org/modules/Terminal-Basics/exercises/Customizing-Your-Shell.md), how to update your PATH environment variable for every time you open a new shell.
+Notice, if you open a new terminal window, `~/bin` is no longer in your path. We'll learn in the next exercise in this module, [Customizing Your Shell] (https://curriculum.learnersguild.org/modules/Terminal-Basics/exercises/Customizing-Your-Shell.md), how to update your PATH environment variable so that it persists every time you open a new shell.
 
 Now if you `echo $PATH` you should see `/Users/your_username/bin`. This is the absolute path we get by using `~/` before the directory. Learn more about absolute paths versus relative paths by watching this [BASH Basics video](https://youtu.be/eH8Z9zeywq0?t=506).
 
