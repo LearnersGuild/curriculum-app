@@ -24,22 +24,7 @@ Changing environment variables in the shell only applies to the current terminal
 export PATH=$PATH:~/your-custom-directory/
 ```
 
-Another useful environment variable you'll want to add to your `.bashrc` is your custom editor. This variable will tell bash which program to use when you want to open Javascript files.
-
-```bash
-export EDITOR='atom'
-# OR
-export EDITOR='sublime'
-```
-
-Try adding this to your `.bashrc` and then using your editor's command to open a directory:
-
-```bash
-# Opens the current working directory using atom
-atom .
-# OR
-sublime .
-```
+For other useful environment variables, take a look at the example `.bashrc` and `.bash_profile` files in the [Dot Files](https://github.com/GuildCrafts/dotfiles) exercise. You'll also be using envrionment variables in "Customizing Your Prompt" below.
 
 ## Exercise: Adding Aliases
 
