@@ -12,9 +12,12 @@ In this module you'll learn to use just enough of Git and GitHub to create a new
 - Can clone a Git repository
 - Can initialize a new Git repository
 - Can create a repository on GitHub
+- Can use `git clone`
 - Can use `git add`
 - Can use `git commit`
 - Can use `git push`
+- Can use `git pull`
+- Can use `git fetch`
 - Can install and use the `hub` command (for GitHub)
 
 ## Glossary of Terms
