@@ -18,6 +18,7 @@
 - Introduction to HTTP: https://launchschool.com/books/http
 - HTTP, a Protocol: https://code.tutsplus.com/tutorials/http-the-protocol-every-web-developer-must-know-part-1--net-31177
 - IETF documentation on cookies https://tools.ietf.org/html/rfc6265
+- [cheatsheet](https://dzone.com/refcardz/http-hypertext-transfer-0)
 
 ### Watching
 
