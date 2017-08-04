@@ -36,7 +36,7 @@ make the calculator work in stage 2.
 - CSS transitions
 - Chrome Developer Tools Element tab
 
-### During this phase you should…
+### During this stage you should…
 
 - Use [normalize.css](https://necolas.github.io/normalize.css/)
 - NOT use any other css frameworks or libraries
@@ -76,7 +76,7 @@ In stage 2 you will be adding `JavaScript` to make the calculator work.
 - Manipulating the DOM using the DOM API
 - Avoiding using the DOM for state
 
-### During this phase you should…
+### During this stage you should…
 
 - Store the state of your calculator in `JavaScript`
 - NOT use `jQuery` or any other `JavaScript` libraries or frameworks
@@ -131,7 +131,7 @@ In stage 3 you are going to add a second calculator to the page. Both calculator
 - Componentization
 - Composition
 
-### During this phase you should…
+### During this stage you should…
 
 - duplicate the HTML for the calculator
 - NOT try and render a calculator from `JavaScript`
