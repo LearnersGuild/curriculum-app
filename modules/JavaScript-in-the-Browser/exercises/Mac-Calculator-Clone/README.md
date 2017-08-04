@@ -49,7 +49,7 @@ make the calculator work in stage 2.
 ### You're done when…
 
 - All text is in the [Roboto](https://fonts.google.com/specimen/Roboto) web font
-- Your `HTML` and `CSS` follows this [style guide](https://google.github.io/styleguide/htmlcssguide.xml)
+- Your `HTML` and `CSS` follows this [style guide](https://google.github.io/styleguide/htmlcssguide.html)
 - The calculator is positioned in the center of the page, both vertically and horizontally
 - The calculator is a fixed size. It does not change in size when the page resizes.
 - If the window is too small for the calculator, the page scrolls, both vertically and horizontally
