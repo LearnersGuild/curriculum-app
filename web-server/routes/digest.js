@@ -18,11 +18,6 @@ module.exports = app => {
       response.render('digest')
     })
 
-    app.get('/digest.json', (request, response, next) => {
-      response.json(response.digest)
-    })
-
-
   }else{
 
     app.use((request, response, next) => {
@@ -39,4 +34,9 @@ module.exports = app => {
         process.exit(1)
       })
   }
+
+  app.get('/digest.json', (request, response, next) => {
+    response.json(response.digest)
+  })
+
 }
