@@ -53,8 +53,8 @@ make the calculator work in stage 2.
 - The calculator is positioned in the center of the page, both vertically and horizontally
 - The calculator is a fixed size. It does not change in size when the page resizes.
 - If the window is too small for the calculator, the page scrolls, both vertically and horizontally
-- Each button has a CSS transition to slightly darken the background color on hover over 100ms
-- Each button has a CSS transition to slightly darken the background color on click over 100ms
+- Each button has a CSS transition to slightly darken the background color for 100ms on hover
+- Each button has a CSS transition to slightly darken the background color for 100ms on click
 - All class names re: the calculator are name-spaced under `.calculator-…`
 - Your stylesheet contains little to no duplicate style declarations
 
