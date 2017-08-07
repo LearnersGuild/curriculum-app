@@ -60,3 +60,13 @@ install postgresql via homebrew
 - https://www.youtube.com/results?search_query=os+x+homebrew
 - https://www.howtogeek.com/211541/homebrew-for-os-x-easily-installs-desktop-apps-and-terminal-utilities/
 - https://github.com/GuildCrafts/Installapalooza
+
+### Links to Packages for Reference
+- [Caffeine](http://lightheadsw.com/caffeine/)
+- [Dash](https://kapeli.com/dash)
+- [Growl Notify](http://growl.info/)
+- [Slack](https://slack.com/)
+- [ScreenHero](https://screenhero.com/)
+- [Spectacle](https://www.spectacleapp.com/)
+- [Postman](https://www.getpostman.com/)
+- [Xcode](https://developer.apple.com/xcode/)
