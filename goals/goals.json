@@ -212,7 +212,7 @@
       "jlopker"
     ],
     "goal_id": 444,
-    "team_size": 1,
+    "team_size": 2,
     "title": "Auth Snapshot",
     "created_at": "2017-06-28T11:10:48Z",
     "labels": [
@@ -228,7 +228,7 @@
       "jlopker"
     ],
     "goal_id": 446,
-    "team_size": 1,
+    "team_size": 2,
     "title": "Testing Snapshot",
     "created_at": "2017-06-28T11:10:48Z",
     "labels": [
