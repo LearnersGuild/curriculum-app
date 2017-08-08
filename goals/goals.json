@@ -303,5 +303,21 @@
     "phase": 3,
     "url": "https://curriculum.learnersguild.org/modules/Pizza-Restaurant-Relational-DB-Schema-With-CRUD-API--Goal-98",
     "dynamic": false
+  },
+  "448": {
+    "authors": [
+      "punitrathore"
+    ],
+    "team_size": 1,
+    "goal_id": 448,
+    "title": "Debugging Snapshot",
+    "created_at": "2017-08-08T22:22:22Z",
+    "labels": [
+      "practice"
+    ],
+    "published": true,
+    "phase": 3,
+    "url": "https://curriculum.learnersguild.org/modules/Debugging-Snapshot--Goal-448",
+    "dynamic": false
   }
 }

@@ -32,6 +32,7 @@ In this phase you will learn…
 - _P:_ [Roam - Goal 330](../../modules/Roam--Goal-330)
 - _P:_ [Your Portfolio Site - Goal 356](../../modules/Your-Portfolio-Site--Goal-356)
 - _P:_ [Trossello Snapshot: Members and Teams Epic - Goal 232](../../modules/Trosello-Snapshot-Members-And-Teams-Epic--Goal-232)
+- _P:_ [Debugging Snapshat - Goal 448](../../modules/Debugging-Snapshot--Goal-448)
 
 ## Lectures
 
@@ -65,3 +66,22 @@ In this phase you will learn…
   - Sequencing and organizing work
   - Collaborating in parallel
   - Finding the minimum viable product (MVP)
+
+
+## Roadmap
+
+Week 1
+- programming naming conventions
+- code organization, splitting functions into their respective files, and folders
+Trail 1:
+- work on the CRUD App, play with Express routes (RESTful APIs)
+Trail 2:
+- work on the Authentication app
+
+Week 2
+- Build an Express App, and add
+
+
+Week 1 & Week 2 (ensure that you watch these videos in each of the weeks)
+- [Programming Naming Conventions](https://www.youtube.com/watch?v=IMxfIUzoy5A&list=PLcSbxZVkmW_gHJIVLffRGJ4FRXy9LNabc&index=1) -
+- [Code Organization](https://www.youtube.com/watch?v=q4J3QjKlKlg&list=PLcSbxZVkmW_gHJIVLffRGJ4FRXy9LNabc&index=2)
