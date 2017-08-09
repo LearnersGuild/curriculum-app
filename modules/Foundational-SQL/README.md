@@ -36,6 +36,7 @@ postgres autoincrement integer column
 
 - https://www.youtube.com/watch?v=53k1mcDLoXY&index=3&list=PLbp7jfOGpdRjLO9sPRJRSKm8T2TTi2hwa
 - https://www.youtube.com/watch?v=w4HEVY_GjqY
+- [LG Lecure on SQL Schema Design](https://youtu.be/62qx1Xu2ykA)
 
 ### Reading
 
