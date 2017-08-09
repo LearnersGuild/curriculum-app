@@ -53,13 +53,13 @@ what is ACID sql
 
 ### Watching
 
-- [LG Lecure on SQL Schema Design](https://youtu.be/62qx1Xu2ykA)
 - https://www.youtube.com/watch?v=I_rxqSJAj6U
 - [Data Relationships](https://www.youtube.com/watch?v=ByqeSP9Y2UM)
 
 ### Lectures
 
 - Tanner's Relational Database Lecture: [slides](https://docs.google.com/presentation/d/1Hc8ymBkAQ-7F4F83S8jqo_1leUJIoVnCYnbSZeM6WM0/edit?usp=sharing) | [video](https://youtu.be/qJltq18bSVI)
+- Trevor's SQL Schema Design Lecture: [sides](https://docs.google.com/presentation/d/13WpfaofHFVmEg2lchIs6-WdqBSl2LW6M3HJUl6BStj0/edit?usp=sharing) | [video](https://youtu.be/62qx1Xu2ykA)
 
 ### Tools
 - [Visual SQL Designer](http://ondras.zarovi.cz/sql/demo/)
