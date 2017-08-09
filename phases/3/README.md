@@ -34,6 +34,76 @@ In this phase you will learn…
 - _P:_ [Trossello Snapshot: Members and Teams Epic - Goal 232](../../modules/Trosello-Snapshot-Members-And-Teams-Epic--Goal-232)
 - _P:_ [Debugging Snapshat - Goal 448](../../modules/Debugging-Snapshot--Goal-448)
 
+
+## Recommended Roadmap
+
+### Week 1
+
+#### Goal: CRUD Mutability Goal(383)
+
+#### Concepts to focus on
+- Programming Naming Conventions
+- Code Organization: splitting functions into their respective files, and folders
+- Problem Decomposition: practice breaking each spec into smaller specs, so that it much easier to work on a smaller task at a time.
+- RESTful Routes: Designing an API using RESTful routes, and using `method override` package to override the HTTP method of the request.
+
+#### Videos to watch
+- [Programming Naming Conventions](https://www.youtube.com/watch?v=IMxfIUzoy5A&list=PLcSbxZVkmW_gHJIVLffRGJ4FRXy9LNabc&index=1)
+- [Code Organization](https://www.youtube.com/watch?v=q4J3QjKlKlg&list=PLcSbxZVkmW_gHJIVLffRGJ4FRXy9LNabc&index=2)
+
+### Week 2:
+
+#### Goal: Authentication app(Goal 444)
+
+#### Concepts to focus on
+- Programming Naming Conventions
+- Code Organization: splitting functions into their respective files, and folders
+- Problem Decomposition: practice breaking each spec into smaller specs, so that it much easier to work on a smaller task at a time.
+- Authentication: Adding authentication to an Express app using Postgres
+- Security: Learning about encyption (using `bcrypt` module), and understanding why it is important to not store passwords in plain-text.
+- Authorization: Adding roles to a user, such that access to a resource is restricted based on the role.
+
+#### Videos to watch
+- [Programming Naming Conventions](https://www.youtube.com/watch?v=IMxfIUzoy5A&list=PLcSbxZVkmW_gHJIVLffRGJ4FRXy9LNabc&index=1)
+- [Code Organization](https://www.youtube.com/watch?v=q4J3QjKlKlg&list=PLcSbxZVkmW_gHJIVLffRGJ4FRXy9LNabc&index=2)
+- [Simple Authentication using express](https://www.youtube.com/watch?v=zY18L-wv0XU&list=PLcSbxZVkmW_gHJIVLffRGJ4FRXy9LNabc&index=3)
+- [Add Authorization to an Express Server](https://www.youtube.com/watch?v=GLgNR1A0h_E&list=PLcSbxZVkmW_gHJIVLffRGJ4FRXy9LNabc&index=5)
+
+
+### Week 3:
+
+#### Goal: Simple Book Store(Goal #69)
+
+#### Concepts to focus on
+- Creating a configuration for your app using environment variables (test, development, production)
+- RESTful routing using `method override` module
+- Programming Naming Conventions
+- Code Organization: splitting functions into their respective files, and folders
+- Problem Decomposition: practice breaking each spec into smaller specs, so that it much easier to work on a smaller task at a time.
+
+#### Videos to watch
+- [Creating an abstraction for Environment Configs](https://www.youtube.com/watch?v=Yyh62EVrZO8&list=PLcSbxZVkmW_gHJIVLffRGJ4FRXy9LNabc&index=9)
+- [Programming Naming Conventions](https://www.youtube.com/watch?v=IMxfIUzoy5A&list=PLcSbxZVkmW_gHJIVLffRGJ4FRXy9LNabc&index=1)
+- [Code Organization](https://www.youtube.com/watch?v=q4J3QjKlKlg&list=PLcSbxZVkmW_gHJIVLffRGJ4FRXy9LNabc&index=2)
+
+
+### Week 4:
+
+#### Goal: Testing Snapshot 446
+
+#### Concepts to focus on
+- Understanding the difference between unit vs integration vs end-to-end testing
+- Able to write end-to-end tests using `chai-http`
+- Resetting your test DB before each test
+- Creating a configuration for your app using environment variables (test, development, production)
+
+#### Videos to Watch
+- [Resetting your DB in your tests](https://www.youtube.com/watch?v=dzRRLCEqfpY&list=PLcSbxZVkmW_gHJIVLffRGJ4FRXy9LNabc&index=6)
+- [Creating an abstraction for Environment Configs](https://www.youtube.com/watch?v=Yyh62EVrZO8&list=PLcSbxZVkmW_gHJIVLffRGJ4FRXy9LNabc&index=9)
+- [Programming Naming Conventions](https://www.youtube.com/watch?v=IMxfIUzoy5A&list=PLcSbxZVkmW_gHJIVLffRGJ4FRXy9LNabc&index=1)
+- [Code Organization](https://www.youtube.com/watch?v=q4J3QjKlKlg&list=PLcSbxZVkmW_gHJIVLffRGJ4FRXy9LNabc&index=2)
+
+
 ## Lectures
 
 - Deploying with Heroku
@@ -68,20 +138,3 @@ In this phase you will learn…
   - Finding the minimum viable product (MVP)
 
 
-## Roadmap
-
-Week 1
-- programming naming conventions
-- code organization, splitting functions into their respective files, and folders
-Trail 1:
-- work on the CRUD App, play with Express routes (RESTful APIs)
-Trail 2:
-- work on the Authentication app
-
-Week 2
-- Build an Express App, and add
-
-
-Week 1 & Week 2 (ensure that you watch these videos in each of the weeks)
-- [Programming Naming Conventions](https://www.youtube.com/watch?v=IMxfIUzoy5A&list=PLcSbxZVkmW_gHJIVLffRGJ4FRXy9LNabc&index=1) -
-- [Code Organization](https://www.youtube.com/watch?v=q4J3QjKlKlg&list=PLcSbxZVkmW_gHJIVLffRGJ4FRXy9LNabc&index=2)
