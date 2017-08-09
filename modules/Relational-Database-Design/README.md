@@ -53,6 +53,7 @@ what is ACID sql
 
 ### Watching
 
+- [LG Lecure on SQL Schema Design](https://youtu.be/62qx1Xu2ykA)
 - https://www.youtube.com/watch?v=I_rxqSJAj6U
 - [Data Relationships](https://www.youtube.com/watch?v=ByqeSP9Y2UM)
 
