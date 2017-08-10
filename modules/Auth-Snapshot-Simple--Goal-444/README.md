@@ -17,7 +17,7 @@ This goal will likely be within your ZPD if you...
 
 ## Description
 
-You will start by cloning a starter app the has full CRUD functionality. From here, you will implementing auth using `express-session`, `bcrypt`, and `cookie-parser`.
+You will start by cloning a starter app the has full CRUD functionality. From here, you will implementing auth using `express-session`, `bcrypt`.
 
 ### Setting Up Your Snapshot
 
@@ -44,7 +44,6 @@ You will start by cloning a starter app the has full CRUD functionality. From he
   - When a user logs in, their username and password are validated in the user table. If the username/password combo doesn't exist or is invalid, the user receives an error.
   - Passwords are encrypted with `bcrypt`
   - `express-session` is used to store sessions on the server
-  - `cookie-parser` is used to store cookies in the browser
 - Authorization
   - A user should have a `role` associated to it. The values are `admin` or `regular`.
   - Only a user with an `admin` role should be able to create a new contact. If the logged in user is not an `admin`, going to the route `/contacts/new` should return a status code 403.
