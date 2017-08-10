@@ -23,7 +23,7 @@ This goal will likely be within your ZPD if you...
 
 Visit the repo page for information about the resources available and how to interact with them: [https://github.com/GuildCrafts/mutably](https://github.com/GuildCrafts/mutably)
 
-Your goal is to build a front-end that consumes the Mutably API. You can choose any one of the 3 resources. You front-end needs to complete all of the CRUD (Create, Read, Update, Delete) functions.
+Your goal is to build a front-end that consumes the Mutably API. You can choose any one of the 3 resources. Your front-end needs to complete all of the CRUD (Create, Read, Update, Delete) functions.
 
 For the goal, you will start with [this scaffolded template](https://github.com/GuildCrafts/mutably-starter). Fork to get started.
 You will use jQuery to complete this goal.
