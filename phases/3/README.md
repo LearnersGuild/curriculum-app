@@ -32,7 +32,7 @@ In this phase you will learn…
 - _P:_ [Roam - Goal 330](../../modules/Roam--Goal-330)
 - _P:_ [Your Portfolio Site - Goal 356](../../modules/Your-Portfolio-Site--Goal-356)
 - _P:_ [Trossello Snapshot: Members and Teams Epic - Goal 232](../../modules/Trosello-Snapshot-Members-And-Teams-Epic--Goal-232)
-- _P:_ [Debugging Snapshat - Goal 448](../../modules/Debugging-Snapshot--Goal-448)
+- _P:_ [Debugging Snapshot - Goal 448](../../modules/Debugging-Snapshot--Goal-448)
 
 
 ## Recommended Roadmap
