@@ -33,7 +33,7 @@ The client has provided basic wireframes and user stories (broken into sprints).
 
 This goal will give you experience building an app from a set of client needs. **The goal is to gain experience working on a development project in a group while navigating a client's feature list.**
 
-Choose this goal if you’ve already build full-stack JavaScript apps are are interested in leveling-up your skills. Roam requires that you implement authentication- not a trivial task! This will be an immersive, intensive, and highly structured study.
+Choose this goal if you’ve already build full-stack JavaScript apps or are interested in leveling-up your skills. Roam requires that you implement authentication- not a trivial task! This will be an immersive, intensive, and highly structured study.
 
 ### Recommended Pace
 
