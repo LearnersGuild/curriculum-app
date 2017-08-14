@@ -29,5 +29,5 @@ block content
     h3 Phase #{phase.number}
     +usersList(users.filter(u => !u.roles.includes('staff') && u.phase === phase.number))
 
-  h3 Other Fine Folks
+  h2 Other Fine Folks
   +usersList(users.filter(u => !u.roles.includes('staff') && typeof(u.phase) !== 'number'))
