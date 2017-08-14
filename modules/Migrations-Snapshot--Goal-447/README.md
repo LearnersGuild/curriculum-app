@@ -28,3 +28,8 @@ You will start by cloning a starter app which already has a database schema defi
   - first_name
   - last_name
   - email
+
+## Resources
+
+- [Schema migration](https://en.wikipedia.org/wiki/Schema_migration)
+- [Using Migration Scripts in Database Deployments](https://www.red-gate.com/simple-talk/sql/database-administration/using-migration-scripts-in-database-deployments/)
