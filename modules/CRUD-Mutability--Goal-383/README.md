@@ -51,7 +51,7 @@ This goal is designed as an introduction to working with third-party APIs so tha
   <br>
   <img width="253" alt="screen shot 2017-05-11 at 3 26 18 pm" src="https://cloud.githubusercontent.com/assets/3010270/25974512/5024433e-365e-11e7-802f-c60afacddecd.png">
   <br>
-  When the user clickes the edit button.
+  When the user clicks the edit button.
 - A user can delete an existing item via a delete button next to each item. No page refresh.
 - Use a UI library to make your site look nice.
 - The artifact produced is properly licensed, preferably with the MIT license.
