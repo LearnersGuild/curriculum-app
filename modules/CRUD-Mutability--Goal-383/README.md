@@ -6,7 +6,6 @@
 - Can describe the general programming pattern `MVC` (Model View Controller)
 - Can use the MVC pattern to build a Single Page Application using JavaScript
 - Can integrate with an external HTTP API
-- Can use the MVC pattern to build a Single Page Application using JavaScript
 
 ## Challenge Rating
 
