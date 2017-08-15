@@ -12,7 +12,6 @@ loadGlossary()
     glossary.forEach(definition => {
       sortedGlossary[definition.term] = Object.assign({}, definition, {term:undefined})
     })
-    console.log('glossary', sortedGlossary)
     return fs.writeFile(path, JSON.stringify(sortedGlossary, null, 2))
   })
   .catch(error => {

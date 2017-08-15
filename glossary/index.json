@@ -1,44 +1,32 @@
 {
-  "module": {
-    "description": "A General term meaning an part of something"
-  },
-  "JavaScript": {
-    "description": ""
-  },
-  "Script": {
-    "description": ""
-  },
-  "SQL": {
-    "description": ""
-  },
-  "Syntax": {
-    "description": ""
-  },
-  "Syntax error": {
-    "description": ""
-  },
-  "SQL Injection": {
-    "description": ""
-  },
   "AJAX": {
     "description": "AJAX (Asynchronous JavaScript And XML) is a programming practice of combining HTML, CSS, JavaScript, the DOM, and the XMLHttpRequest object to build more complex webpages.  What AJAX allows you to do is just update parts of a webpage instead of having to reload the entire page. AJAX also lets you work asynchronously, meaning your code continues to run while that part of your webpage is trying to reload (compared to synchronously which will block your code from running until that part of your webpage is done reloading).",
     "links": [
       "https://developer.mozilla.org/en-US/docs/Glossary/AJAX"
     ]
   },
-  "Truthy": {
+  "API": {
+    "description": ""
+  },
+  "Browser": {
+    "description": "A Web Browser"
+  },
+  "Class": {
+    "description": ""
+  },
+  "Client": {
+    "description": ""
+  },
+  "Closure": {
+    "description": ""
+  },
+  "DOM Node": {
     "description": ""
   },
   "Falsey": {
     "description": ""
   },
-  "undefined": {
-    "description": ""
-  },
-  "URI": {
-    "description": ""
-  },
-  "API": {
+  "Form": {
     "description": ""
   },
   "HTTP Request": {
@@ -47,44 +35,41 @@
   "HTTP Response": {
     "description": ""
   },
-  "Node Module": {
+  "JavaScript": {
     "description": ""
   },
-  "Class": {
+  "Key": {
     "description": ""
   },
-  "Closure": {
-    "description": ""
-  },
-  "Node": {
-    "description": "Node is a generic term. See 'Node.js' or 'DOM Node'"
-  },
-  "Node.js": {
-    "description": ""
-  },
-  "DOM Node": {
-    "description": ""
+  "module": {
+    "description": "A General term meaning an part of something"
   },
   "NaN": {
     "description": "a specific object in JavaScript representing 'Not A Number'"
   },
-  "URL": {
+  "Node": {
+    "description": "Node is a generic term. See 'Node.js' or 'DOM Node'"
+  },
+  "Node Module": {
+    "description": ""
+  },
+  "Node.js": {
     "description": ""
   },
   "params": {
     "description": "parameters"
-  },
-  "query": {
-    "description": "A question made to a program with the expectation of recieving a response"
-  },
-  "URL Query Params": {
-    "description": "The part of a URL that follows the path, seperated by a questionmark"
   },
   "Parse": {
     "description": "The act of converting a serlized source of data into usable objects in a programming language"
   },
   "Parser": {
     "description": "A tool for parsing a string into something else"
+  },
+  "query": {
+    "description": "A question made to a program with the expectation of recieving a response"
+  },
+  "Script": {
+    "description": ""
   },
   "Serialize": {
     "links": [
@@ -96,16 +81,31 @@
       "https://developer.mozilla.org/en-US/docs/Glossary/Server"
     ]
   },
-  "Client": {
+  "SQL": {
     "description": ""
   },
-  "Browser": {
-    "description": "A Web Browser"
-  },
-  "Key": {
+  "SQL Injection": {
     "description": ""
   },
-  "Form": {
+  "Syntax": {
     "description": ""
+  },
+  "Syntax error": {
+    "description": ""
+  },
+  "Truthy": {
+    "description": ""
+  },
+  "undefined": {
+    "description": ""
+  },
+  "URI": {
+    "description": ""
+  },
+  "URL": {
+    "description": ""
+  },
+  "URL Query Params": {
+    "description": "The part of a URL that follows the path, seperated by a questionmark"
   }
 }
