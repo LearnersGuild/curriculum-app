@@ -5,7 +5,11 @@ module.exports = app => {
   app.get('/glossary', (request, response, next) => {
     loadGlossary()
     .then(glossary => {
-      response.render('glossary', { glossary })
+      const alphabet = 'abcdefghijklmnopqrstuvwxyz'
+      response.render('glossary', { 
+        glossary,
+        alphabet,
+      })
     })
     .catch(next)
   })
