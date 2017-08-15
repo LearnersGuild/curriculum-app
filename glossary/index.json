@@ -12,7 +12,10 @@
     "description": "A Web Browser"
   },
   "Class": {
-    "description": ""
+    "description": "In object-oriented programming, a class defines an object's characteristics. Class is a template definition of an object's properties and methods, the \"blueprint\" from which other more specific instances of the object are drawn.",
+    "links": [
+      "https://developer.mozilla.org/en-US/docs/Glossary/Class"
+    ]
   },
   "Client": {
     "description": ""
@@ -23,8 +26,11 @@
   "DOM Node": {
     "description": ""
   },
-  "Falsey": {
-    "description": ""
+  "Falsy": {
+    "description": "A falsy value is a value that translates to false when evaluated in a Boolean context.",
+    "links": [
+      "https://developer.mozilla.org/en-US/docs/Glossary/Falsy"
+    ]
   },
   "Form": {
     "description": ""
@@ -88,22 +94,40 @@
     "description": ""
   },
   "Syntax": {
-    "description": ""
+    "description": "Syntax specifies the required combination and sequence of characters making up correctly structured code. Syntax varies from language to language (e.g., syntax is different in HTML and JavaScript). Syntax applies both to programming languages (commands to the computer) and markup languages (document structure information).\n\nSyntax only governs ordering and structure; the instructions must also be meaningful, which is the province of semantics.\n\nCode must have correct syntax in order to compile correctly, otherwise a syntax error occurs. Even small errors, like a missing parenthesis, can keep source code from compiling.\n\nFrameworks are said to have a \"clean\" syntax if they produce simple, readable, concise results. If a codebase uses \"a lot of syntax\", it requires more characters to achieve the same functionality.",
+    "links": [
+      "https://developer.mozilla.org/en-US/docs/Glossary/Syntax"
+    ]
   },
   "Syntax error": {
-    "description": ""
+    "description": "An exception caused by the incorrect use of a pre-defined syntax. Syntax errors are detected while compiling or parsing source code.\n\nFor example, if you leave off a closing brace (}) when defining a JavaScript function, you trigger a syntax error.  Browser development tools display JavaScript and CSS syntax errors in the console.\n",
+    "links": [
+      "https://developer.mozilla.org/en-US/docs/Glossary/Syntax_error"
+    ]
   },
   "Truthy": {
-    "description": ""
+    "description": "In JavaScript, a truthy value is a value that is considered true when evaluated in a Boolean context. All values are truthy unless they are defined as falsy (i.e., except for false, 0, \"\", null, undefined, and NaN).",
+    "links": [
+      "https://developer.mozilla.org/en-US/docs/Glossary/Truthy"
+    ]
   },
   "undefined": {
-    "description": ""
+    "description": "A primitive value automatically assigned to variables that have just been declared or to formal arguments for which there are no actual arguments.",
+    "links": [
+      "https://developer.mozilla.org/en-US/docs/Glossary/undefined"
+    ]
   },
   "URI": {
-    "description": ""
+    "description": "A URI (Uniform Resource Identifier) is a string that refers to a resource. The most common are URLs, which identify the resource by giving its location on the Web. URNs, by contrast, refer to a resource by a name, in a given namespace, e.g. the ISBN of a book.",
+    "links": [
+      "https://developer.mozilla.org/en-US/docs/Glossary/URI"
+    ]
   },
   "URL": {
-    "description": ""
+    "description": "Uniform Resource Locator (URL) is a text string specifying where a resource can be found on the Internet.\n\nIn the context of HTTP, URLs are called \"Web address\" or \"link\". Your browser displays URLs in its address bar, for example https://developer.mozilla.org\n\nURLs can also be used for file transfer (FTP) , emails (SMTP), and other applications.",
+    "links": [
+      "https://developer.mozilla.org/en-US/docs/Glossary/URL"
+    ]
   },
   "URL Query Params": {
     "description": "The part of a URL that follows the path, seperated by a questionmark"

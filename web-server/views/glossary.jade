@@ -13,7 +13,7 @@ block content
 
   for definition in glossary
     h2(id=definition.term)= definition.term
-    pre.pre-wrap= definition.description
+    pre.pre-line= definition.description
 
     if "links" in definition
       ul
