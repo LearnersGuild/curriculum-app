@@ -31,6 +31,7 @@ In this phase you will learn…
 - _P:_ [Integration Testing With Mocha And Chai](../../modules/Integration-Testing-With-Mocha-And-Chai)
 - _B:_ [Movie Search CLI with Promises](../../modules/Movie-Search-CLI-With-Promises)
 - _P:_ [Relational Database Design](../../modules/Relational-Database-Design)
+- _P:_ [Postgres And Node](../../modules/Postgres-And-Node)
 - _P:_ [Defensive Programming](../../modules/Defensive-Programming)
 - _B:_ [Command Line Todo List with SQL](../../modules/Command-Line-Todo-List-with-SQL)
 - _P:_ [Your First HTTP Server](../../modules/Your-First-HTTP-Server)
