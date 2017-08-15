@@ -67,3 +67,8 @@ This goal is designed as an introduction to working with third-party APIs so tha
 ***If the mutably data gets too crazy from people adding / deleting things, you can reset the data to the seed data [here](http://mutably.herokuapp.com/).***
 
 ***Insider tip: there is an example "solution" (remember, there are MANY ways to hack it!) in the [solution branch](https://github.com/GuildCrafts/mutably-starter/tree/solution) of the starter template.***
+
+
+## Resources
+[jQuery tutorial (~3hrs)](https://www.codeschool.com/courses/try-jquery)
+[AJAX tutorial -first lesson free](https://www.codeschool.com/courses/jquery-the-return-flight?utm_medium=null&utm_campaign=jquery&utm_source=tryjquery)
