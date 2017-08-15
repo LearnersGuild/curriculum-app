@@ -11,7 +11,7 @@
 - Can understand and modify a Node `package.json` file
 - Can install and save Node packages as dependencies
 - Can require modules in Node
-- Can add `./node_modules/.bin` to your `$PATH`
+- Can add `./node_modules/.bin` to your `$PATH`, in the shell
 
 ## Google Search Terms
 

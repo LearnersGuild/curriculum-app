@@ -2,8 +2,8 @@
 
 ## Skills
 
-- Can describe what a unit test is
-- Can describe what a test assertion is
+- Can describe what unit tests are
+- Can describe what an assertion is, within tests
 - Can install and configure Mocha And Chai in Node
 - Can configure `npm test` to run Mocha, in Node
 - Can use Chai's `expect` syntax in Node
