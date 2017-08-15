@@ -9,7 +9,7 @@ block content
   for letter in alphabet
     - terms = glossary.filter(({term}) => term.toLowerCase().startsWith(letter))
     if terms.length > 0
-      h3= letter
+      h3= letter.toUpperCase()
       ul.glossary-terms-list
         for definition in terms
           li
