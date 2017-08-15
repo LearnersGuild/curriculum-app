@@ -1,0 +1,21 @@
+#!/usr/bin/env node
+
+const fs = require('fs-extra')
+const Path = require('path')
+const loadGlossary = require('../glossary').load
+
+const path = Path.resolve(__dirname, '../glossary/index.json')
+
+loadGlossary()
+  .then(glossary => {
+    const sortedGlossary = {}
+    glossary.forEach(definition => {
+      sortedGlossary[definition.term] = Object.assign({}, definition, {term:undefined})
+    })
+    console.log('glossary', sortedGlossary)
+    return fs.writeFile(path, JSON.stringify(sortedGlossary, null, 2))
+  })
+  .catch(error => {
+    console.error(error)
+    process.exit(1)
+  })

@@ -21,7 +21,10 @@
     "description": ""
   },
   "AJAX": {
-    "description": ""
+    "description": "AJAX (Asynchronous JavaScript And XML) is a programming practice of combining HTML, CSS, JavaScript, the DOM, and the XMLHttpRequest object to build more complex webpages.  What AJAX allows you to do is just update parts of a webpage instead of having to reload the entire page. AJAX also lets you work asynchronously, meaning your code continues to run while that part of your webpage is trying to reload (compared to synchronously which will block your code from running until that part of your webpage is done reloading).",
+    "links": [
+      "https://developer.mozilla.org/en-US/docs/Glossary/AJAX"
+    ]
   },
   "Truthy": {
     "description": ""

@@ -6,6 +6,17 @@ block breadcrumb
 block content
   h1 Glossary
 
-  for definition, term in glossary
-    h2= term
-    p= definition.description
+  ul
+    for definition in glossary
+      li
+        a(href="##{definition.term}")= definition.term
+
+  for definition in glossary
+    h2(id=definition.term)= definition.term
+    pre.pre-wrap= definition.description
+
+    if "links" in definition
+      ul
+        for link in definition.links
+          li
+            a(href=link target="_blank")= link
