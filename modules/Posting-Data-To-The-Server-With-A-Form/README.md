@@ -43,7 +43,7 @@ how to parse a body of a request express
 
 ### Part 2
 
-Build a basic web app using Express which can send data to the server via an HTML `<form>` element. You will be required to create two simple pages on the app. The mockups are provided below
+Build a basic web app using Express which can send data to the server via an HTML `<form>` element. You will be required to create two simple pages on the app. The mockups are provided below (notice that while the forms are nearly identical, they have two distinct differences, the URL, and the method attached to the form). When this is completed you should be able to navigate to both URLs and see the same form, but the form at the URL `'/form-get'` should use a `GET` method, while the form that is rendered at the URL `'/form-post'` should use a `POST` method. You could achieve this by creating two seperate views, or for an extra challenge, create one view, that depending on which URL you navigate to, dynamically sets the method of the form as appropriate. 
 
 #### Form Get Page
 
