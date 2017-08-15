@@ -30,6 +30,9 @@ how to parse a body of a request express
 - https://www.youtube.com/watch?v=rin7gb9kdpk
 - https://www.youtube.com/watch?v=vKlybue_yMQ
 
+### Lectures
+
+- [Trevor's Lecture on "Posting Data To The Server With A Form"](https://www.youtube.com/watch?v=DzSwBuMfo0g)
 
 ## Exercises
 
