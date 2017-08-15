@@ -1,0 +1,11 @@
+extends layout
+
+block breadcrumb
+
+
+block content
+  h1 Glossary
+
+  for definition, term in glossary
+    h2= term
+    p= definition.description

@@ -1,0 +1,108 @@
+{
+  "module": {
+    "description": "A General term meaning an part of something"
+  },
+  "JavaScript": {
+    "description": ""
+  },
+  "Script": {
+    "description": ""
+  },
+  "SQL": {
+    "description": ""
+  },
+  "Syntax": {
+    "description": ""
+  },
+  "Syntax error": {
+    "description": ""
+  },
+  "SQL Injection": {
+    "description": ""
+  },
+  "AJAX": {
+    "description": ""
+  },
+  "Truthy": {
+    "description": ""
+  },
+  "Falsey": {
+    "description": ""
+  },
+  "undefined": {
+    "description": ""
+  },
+  "URI": {
+    "description": ""
+  },
+  "API": {
+    "description": ""
+  },
+  "HTTP Request": {
+    "description": ""
+  },
+  "HTTP Response": {
+    "description": ""
+  },
+  "Node Module": {
+    "description": ""
+  },
+  "Class": {
+    "description": ""
+  },
+  "Closure": {
+    "description": ""
+  },
+  "Node": {
+    "description": "Node is a generic term. See 'Node.js' or 'DOM Node'"
+  },
+  "Node.js": {
+    "description": ""
+  },
+  "DOM Node": {
+    "description": ""
+  },
+  "NaN": {
+    "description": "a specific object in JavaScript representing 'Not A Number'"
+  },
+  "URL": {
+    "description": ""
+  },
+  "params": {
+    "description": "parameters"
+  },
+  "query": {
+    "description": "A question made to a program with the expectation of recieving a response"
+  },
+  "URL Query Params": {
+    "description": "The part of a URL that follows the path, seperated by a questionmark"
+  },
+  "Parse": {
+    "description": "The act of converting a serlized source of data into usable objects in a programming language"
+  },
+  "Parser": {
+    "description": "A tool for parsing a string into something else"
+  },
+  "Serialize": {
+    "links": [
+      "https://developer.mozilla.org/en-US/docs/Glossary/Serialize"
+    ]
+  },
+  "Server": {
+    "links": [
+      "https://developer.mozilla.org/en-US/docs/Glossary/Server"
+    ]
+  },
+  "Client": {
+    "description": ""
+  },
+  "Browser": {
+    "description": "A Web Browser"
+  },
+  "Key": {
+    "description": ""
+  },
+  "Form": {
+    "description": ""
+  }
+}
