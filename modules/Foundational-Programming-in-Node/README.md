@@ -36,7 +36,6 @@ later.
 - [What is Node.js Exactly? - a beginners introduction to Nodejs](https://www.youtube.com/watch?v=pU9Q6oiQNd0)
 - [What is npm?](https://www.youtube.com/watch?v=ZNbFagCBlwo)
 - [npm init](https://www.youtube.com/watch?v=ROoc5AW90pA)
-- [npm package.json](https://docs.npmjs.com/files/package.json)
 - [npm install](https://www.youtube.com/watch?v=2UNs7ohpfPo)
 - [require files & modules](https://www.youtube.com/watch?v=xAcEF-uDeVw&list=PLVHlCYNvnqYqjnypg2Czw4vVjTL2gB7_e&index=5)
 - [require and exports](https://www.youtube.com/watch?v=P51O_PT7NUg&list=PLVHlCYNvnqYqjnypg2Czw4vVjTL2gB7_e&index=10)
@@ -49,6 +48,7 @@ later.
 - [require and exports](http://openmymind.net/2012/2/3/Node-Require-and-Exports/)
 - [exporting in node](http://www.tutorialsteacher.com/nodejs/nodejs-module-exports)
 - [npm](https://www.tutorialspoint.com/nodejs/nodejs_npm.htm)
+- [npm package.json](https://docs.npmjs.com/files/package.json)
 
 ## Exercises
 
