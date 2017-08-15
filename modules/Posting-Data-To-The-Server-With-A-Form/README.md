@@ -1,3 +1,11 @@
+To improve this goal I think having more realistic examples in the description would help learners 
+understand what is being asked of them. I like the idea of using the same form in two different ways
+but it is a bit difficult to understand in this context why one would use a GET method on the form and 
+route. Maybe framing it like "This form could easily be used to search (use the GET example, which would have 
+query params)" & "This same form could be used to post data (use the POST example to show there are body params)
+I think most of the issue is in the framing, I know I have a lot of trouble understanding a concept at a zoomed
+in level, if I can't envision it's function when zoomed out. 
+
 # Posting Data To The Server With A Form
 
 
