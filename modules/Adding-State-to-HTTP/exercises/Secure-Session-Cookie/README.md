@@ -136,6 +136,7 @@ Encrypt and decrypt the session cookie with `cryptr` or another ecryption tool o
 
 
 
-## Solution
+## Solutions
 
-https://github.com/jason00111/http-authentication-214
+* [Trevor's Solution](https://github.com/bundacia/LG-Secure-Session-Cookie-Example-Solution) (app1 - app4)
+* [Jason's Solution](https://github.com/jason00111/http-authentication-214) (app4 only)
