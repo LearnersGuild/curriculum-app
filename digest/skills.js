@@ -1,4 +1,5 @@
 const utils = require('./utils')
+const regexpEscape = require('escape-string-regexp')
 
 module.exports = digest => {
 
@@ -20,9 +21,10 @@ module.exports = digest => {
       assertIdenticalSkills(preExistingSkill, newSkill)
       return preExistingSkill
     }
-    newSkill.contexts = digest.skillContexts.filter(skillContext =>
-      newSkill.name.toLowerCase().includes(skillContext.toLowerCase())
-    )
+    newSkill.contexts = digest.skillContexts.filter(skillContext => {
+      const regexp = new RegExp(`(^|\\W+)${regexpEscape(skillContext)}(\\W+|$)`, 'i')
+      return newSkill.name.match(regexp)
+    })
     assertSkillContainsAtLeastOneSkillContext(newSkill)
     digest.skills[id] = newSkill
     return newSkill

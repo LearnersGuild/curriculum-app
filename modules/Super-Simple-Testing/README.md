@@ -4,10 +4,9 @@ In this module we'll explore simple, manual ways you can test your code. This is
 
 ## Skills
 
-- Can describe what a test is
+- Can describe what `tests` are
 - Can use `console.assert()` to write simple tests
-- Can write a function to test another function
-- Can write a test script to test one or more functions in source code file
+- Can write a test script that tests one or more functions in source code file
 - Can run tests in a console
 - Can run tests from the Terminal
 

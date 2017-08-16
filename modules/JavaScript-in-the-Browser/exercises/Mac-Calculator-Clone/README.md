@@ -36,7 +36,7 @@ make the calculator work in stage 2.
 - CSS transitions
 - Chrome Developer Tools Element tab
 
-### During this phase you should…
+### During this stage you should…
 
 - Use [normalize.css](https://necolas.github.io/normalize.css/)
 - NOT use any other css frameworks or libraries
@@ -49,12 +49,12 @@ make the calculator work in stage 2.
 ### You're done when…
 
 - All text is in the [Roboto](https://fonts.google.com/specimen/Roboto) web font
-- Your `HTML` and `CSS` follows this [style guide](https://google.github.io/styleguide/htmlcssguide.xml)
+- Your `HTML` and `CSS` follows this [style guide](https://google.github.io/styleguide/htmlcssguide.html)
 - The calculator is positioned in the center of the page, both vertically and horizontally
 - The calculator is a fixed size. It does not change in size when the page resizes.
 - If the window is too small for the calculator, the page scrolls, both vertically and horizontally
-- Each button has a CSS transition to slightly darken the background color on hover over 100ms
-- Each button has a CSS transition to slightly darken the background color on click over 100ms
+- Each button has a CSS transition, lasting 100ms, to a slightly darker background color on hover
+- Each button has a CSS transition, lasting 100ms, to a slightly darker background color on click
 - All class names re: the calculator are name-spaced under `.calculator-…`
 - Your stylesheet contains little to no duplicate style declarations
 
@@ -76,7 +76,7 @@ In stage 2 you will be adding `JavaScript` to make the calculator work.
 - Manipulating the DOM using the DOM API
 - Avoiding using the DOM for state
 
-### During this phase you should…
+### During this stage you should…
 
 - Store the state of your calculator in `JavaScript`
 - NOT use `jQuery` or any other `JavaScript` libraries or frameworks
@@ -131,7 +131,7 @@ In stage 3 you are going to add a second calculator to the page. Both calculator
 - Componentization
 - Composition
 
-### During this phase you should…
+### During this stage you should…
 
 - duplicate the HTML for the calculator
 - NOT try and render a calculator from `JavaScript`

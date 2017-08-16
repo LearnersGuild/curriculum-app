@@ -8,7 +8,7 @@ In this module you'll learn to use just enough of Git and GitHub to create a new
 ## Skills
 
 - Can understand and configure your global git config `~/.gitconfig`
-- Can globally ignore commonly ignored file patterns in a global `.gitignore` file
+- Can tell git to ignore file patterns in a global `.gitignore` file
 - Can clone a Git repository
 - Can initialize a new Git repository
 - Can create a repository on GitHub

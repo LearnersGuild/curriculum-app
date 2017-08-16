@@ -27,13 +27,14 @@ module.exports = () =>
       'HTTP',
       'JavaScript',
       'Node',
-      'Regular Expressions',
+      'Regular Expression',
       'shell',
       'Slack',
       'SQL',
       'Terminal',
-      'test',
+      'tests',
       'UNIX',
+      'postgresql',
     ].sort()
     return digest
   })

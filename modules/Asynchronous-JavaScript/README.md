@@ -25,6 +25,7 @@
 - https://node.university/courses/you-dont-know-node/lectures/1590280
 - https://node.university/courses/you-dont-know-node/lectures/1590277
 - https://node.university/courses/you-dont-know-node/lectures/1590278
+- [Become an Async JS Ninja](https://www.youtube.com/playlist?list=PL4cUxeGkcC9jAhrjtZ9U93UMIhnCc44MH)
 
 
 ## Exercises
