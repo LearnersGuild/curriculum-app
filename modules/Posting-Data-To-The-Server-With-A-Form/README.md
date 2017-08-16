@@ -64,12 +64,12 @@ The server should have the following routes:
 1. A route to render the `/form-get` page
     - url: `/form-get`
     - http method: `GET`
-    - response: renders the `<form>` with method set to `GET`, and `action` set to `/submit-form`.
-1. A route to render the `/form-post` page
+    - response: renders the `<form>` with its method set to `GET`, and its `action` set to `/submit-form`.
+2. A route to render the `/form-post` page
     - url: `/form-post`
     - http method: `GET`
-    - response: renders the `<form>` with method set to `POST`,  and `action` set to `/submit-form`
-1. A route which handles the form submissions
+    - response: renders the `<form>` with its method set to `POST`,  and its `action` set to `/submit-form`
+3. A route which handles the form submissions
     - url: `/submit-form`
     - http method: `ANY`
     - response: returns a JSON response of the request's body params and the request's query params
