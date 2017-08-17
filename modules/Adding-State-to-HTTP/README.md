@@ -24,6 +24,10 @@ cookie based authentication
 
 ## Suggested Resources
 
+### Lectures
+ 
+- Trevor's [Adding State to HTTP Lecture](https://youtu.be/XV-WTZl3l6A)
+
 ### Watch
 
 - [Everything You Ever Wanted To Know About Authentication in Node.js](https://www.youtube.com/watch?v=yvviEA1pOXw&list=UUJI9gByFSXE1ABDRcLQjWgQ)
@@ -33,8 +37,6 @@ cookie based authentication
 - [State (computer science)](https://en.wikipedia.org/wiki/State_(computer_science))
 - [All You Ever Wanted to Know About Sessions In Node.js](https://stormpath.com/blog/everything-you-ever-wanted-to-know-about-node-dot-js-sessions)
 - [Auth-Boss](https://github.com/teesloane/Auth-Boss)
-
-
 
 ## Exercises
 
