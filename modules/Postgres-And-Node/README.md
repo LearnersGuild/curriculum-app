@@ -13,3 +13,9 @@
 ## Resources
 
 - http://russmatney.com/techsposure/diving-into-postgres-with-node-postgres/
+
+## Totorials
+
+- (intermediate, but thorough walkthrough) http://mherman.org/blog/2016/03/13/designing-a-restful-api-with-node-and-postgres/#.WZYHW3eGNTY 
+
+- (advanced, but thorough walkthrough) http://mherman.org/blog/2015/02/12/postgresql-and-nodejs/#.WZYGv3eGNTY
