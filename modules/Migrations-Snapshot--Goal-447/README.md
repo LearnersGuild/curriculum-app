@@ -4,7 +4,7 @@
 
 - Can describe what a SQL migration is
 - Can describe why we need SQL migrations
-- Can take an existing SQL schema, and convert them into migrations
+- Can take an existing SQL schema, and convert it into migrations
 - Can create automated scripts to `reset`, `migrate`, and `seed` a SQL database
 
 ## Description
