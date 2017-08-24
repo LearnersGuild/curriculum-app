@@ -126,7 +126,7 @@ ID Description
 3  Bake cake
 4  Put groceries in the fridge
 
-You have 4 tasks
+You have 2 tasks
 ```
 
 
