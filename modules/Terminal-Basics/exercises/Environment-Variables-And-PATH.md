@@ -20,7 +20,7 @@ Set a new variable in your shell:
   EXAMPLE_VARIABLE='Variables are so cool!'
 ```
 
-Access the new variable with the command `echo` and place a `$` in front of the variable. The `$` means you are accessing the variable instead of setting it. The `echo` command is a very simple UNIX program that just prints its arguments to the standard output (STDOUT), so you will see the value printed on the next line.
+Access the new variable with the command `echo` and place a `$` in front of the variable. The `$` means you are accessing a variable and not printing a literal value. The `echo` command is a very simple UNIX program that just prints its arguments to the standard output (STDOUT), so you will see the value printed on the next line.
 
 Access your newly set variable:
 
