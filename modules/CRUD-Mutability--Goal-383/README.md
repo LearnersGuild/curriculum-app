@@ -25,7 +25,7 @@ Visit the repo page for information about the resources available and how to int
 Your goal is to build a front-end that consumes the Mutably API. You can choose any one of the 3 resources. Your front-end needs to complete all of the CRUD (Create, Read, Update, Delete) functions.
 
 For the goal, you will start with [this scaffolded template](https://github.com/GuildCrafts/mutably-starter). Fork to get started.
-You will use jQuery to complete this goal.
+You will use the `fetch` API, and jQuery to complete this goal.
 
 ## Context
 
@@ -40,7 +40,7 @@ This goal is designed as an introduction to working with third-party APIs so tha
 - Your repo is a fork of [mutably-starter](https://github.com/GuildCrafts/mutably-starter).
 - Your repo has a README with instructions for how to run your project.
 - Your app is SPA (single page app). All CRUD actions take place on the same page, preferably the root (`/`) route.
-- All interaction with the API happens with jQuery's AJAX function -- don't submit data via forms. You can use `form` html tags, but do all your form submission in your `js`. Make use of jQuery's `event.preventDefault()`.
+- All interaction with the API happens with the `fetch` API -- don't submit data via forms. You can use `form` html tags, but do all your form submission in your `js`. Make use of jQuery's `event.preventDefault()`.
 - A user can read and display all the data for a resource.
 - A user can create a new item via a create form. When the user creates a new item, that item should either get appended to the page or all the items should get re-retrieved in the `js`. No full page refresh.
 - A user can update an existing item. Updating happens inline. This means that there is an edit button next to each item that, when clicked, causes the item text to be replaced with a pre-populated, editable input field. And the edit button becomes a save button. Once the save button is clicked and a success message comes back from the server, then the input gets replaced with the updated text. No page refresh.
@@ -67,7 +67,8 @@ This goal is designed as an introduction to working with third-party APIs so tha
 
 ***Insider tip: there is an example "solution" (remember, there are MANY ways to hack it!) in the [solution branch](https://github.com/GuildCrafts/mutably-starter/tree/solution) of the starter template.***
 
-
 ## Resources
-[jQuery tutorial (~3hrs)](https://www.codeschool.com/courses/try-jquery)
-[AJAX tutorial -first lesson free](https://www.codeschool.com/courses/jquery-the-return-flight?utm_medium=null&utm_campaign=jquery&utm_source=tryjquery)
+
+- [Fetch API tutorial](https://davidwalsh.name/fetch)
+- [jQuery tutorial (~3hrs)](https://www.codeschool.com/courses/try-jquery)
+- [AJAX tutorial -first lesson free](https://www.codeschool.com/courses/jquery-the-return-flight?utm_medium=null&utm_campaign=jquery&utm_source=tryjquery)
