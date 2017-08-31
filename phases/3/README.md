@@ -20,7 +20,7 @@ In this phase you will learn…
 
 ## Modules
 
-- _P:_ [CRUD Mutability - Goal 383](../../modules/CRUD-Mutability--Goal-383)
+- _P:_ [CRUD Mutably - Goal 383](../../modules/CRUD-Mutability--Goal-383)
 - _P:_ [Simple Book Store - Goal 69](../../modules/Simple-Book-Store--Goal-69)
 - _P:_ [Auth Snapshot Simple - Goal 444](../../modules/Auth-Snapshot-Simple--Goal-444)
 - _P:_ [To Do List App - Goal 64](../../modules/To-Do-List-App--Goal-64)
@@ -39,7 +39,7 @@ In this phase you will learn…
 
 ### Week 1
 
-#### Goal: CRUD Mutability Goal(383)
+#### Goal: CRUD Mutably Goal(383)
 
 #### Concepts to focus on
 - Programming Naming Conventions
