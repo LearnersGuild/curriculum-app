@@ -10,7 +10,7 @@ This goal will likely be within your ZPD if you ..
 
 ## Description
 
-This repo will test your ability to detect, analyze, and fix bugs in an existing codebase. You will start by cloning [this repo](https://github.com/GuildCrafts/debugging-snapshot). The code in the repo is in a broken state. The specifications describes the intended behavior of the app
+This repo will test your ability to detect, analyze, and fix bugs in an existing codebase. You will start by cloning [this repo](https://github.com/GuildCrafts/debugging-snapshot). The code in the repo is in a broken state. The specifications describe the intended behavior of the app.
 
 
 ## Specifications
