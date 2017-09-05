@@ -5,7 +5,7 @@ The Curriculum for Phase 1 and Phase 2 is broken up into [Modules](./modules).
 ## Phases
 
 Learners have a maximum of 8 weeks to pass each phase assessment. If a learner
-does not pass their phase assessment withing 8 weeks it starts a membership
+does not pass their phase assessment within 8 weeks it starts a membership
 review.
 
 
