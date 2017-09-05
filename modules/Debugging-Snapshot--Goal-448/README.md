@@ -15,7 +15,7 @@ This repo will test your ability to detect, analyze, and fix bugs in an existing
 
 ## Specifications
 
-- Fix the code in the forked repo such that the application behaves according to the spec listed below
+- Fix the code in the cloned repo such that the application behaves according to the spec listed below
   - Going to the Home Page (`http://localhost:3000/`) should let you see  all the contacts
   - Going to a contact detail page should show the full name of the contact
   - Adding a contact should add a new contact in the database, and redirect to the created contact
