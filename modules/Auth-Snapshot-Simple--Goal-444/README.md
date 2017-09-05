@@ -58,5 +58,5 @@ You will start by cloning a starter app the has full CRUD functionality. From he
 ## Resources
 - https://en.wikipedia.org/wiki/HTTP_403
 
-[express-session]: (https://github.com/expressjs/session)
-[cookie-session]: (https://github.com/expressjs/cookie-session)
+[express-session]: https://github.com/expressjs/session
+[cookie-session]: https://github.com/expressjs/cookie-session
