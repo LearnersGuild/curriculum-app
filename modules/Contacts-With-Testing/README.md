@@ -1,6 +1,8 @@
 # Contacts With Testing
 
 
+__TODO: add a starter test suite to make testing this easier__
+
 ## Exercise
 
 This benchmark builds on the [3-2-1-Contacts](../3-2-1-Contacts) benchmark that you may have completed earlier. In this benchmark you will be adding some additional functionality and tests to the code you have written earlier.

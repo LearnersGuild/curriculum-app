@@ -1,8 +1,8 @@
 # Command Line Todo List
 
 This benchmark module is the 1st of a series of modules designed to take the
-same problem and make it increasingly more complex as you learn new skills. 
-Below are the 2nd and 3rd modules for the Command Line Todo List benchmark. 
+same problem and make it increasingly more complex as you learn new skills.
+Below are the 2nd and 3rd modules for the Command Line Todo List benchmark.
 
 2. [Command Line Todo List With Callbacks](../../modules/Command-Line-Todo-List-With-Callbacks)
 2. [Command Line Todo List With SQL](../../modules/Command-Line-Todo-List-with-SQL)
@@ -14,7 +14,6 @@ Below are the 2nd and 3rd modules for the Command Line Todo List benchmark.
 - Can write a complex Node script with modular organization of the code
 - Can use `fs.readFileSync` to read from a file in Node
 - Can use `fs.writeFileSync` to write to a file in Node
-- Can write unit tests with mocha in Node
 
 ## Description
 
@@ -45,7 +44,6 @@ In this 1st version the data for your tasks should be saved to a file called
 - The `add` command is implemented in `./commands/add.js`
 - The `complete` command is implemented in `./commands/complete.js`
 - The `delete` command is implemented in `./commands/delete.js`
-- Add tests using Mocha and Chai for all functions
 - User receives an error message if they enter an invalid command
 - Your program should create the `tasks.json` if the file doesn't exist
 - `tasks.json` is ignored and not checked into your Git repository

@@ -44,18 +44,23 @@ To see how to use these skills to track and assess yourself, watch this [14m vid
 - _P:_ [Party Like Its ES2017](../../modules/Party-Like-Its-ES2017)
 - _P:_ [Error Handling](../../modules/Error-Handling)
 - _P:_ [Regular Expression Basics](../../modules/Regular-Expression-Basics)
+- _B:_ Missing Benchmark: write regexps to match parts of string and subsets of arrays of strings
 - _P:_ [Super Simple Testing](../../modules/Super-Simple-Testing)
 - _P:_ [Debugging in Node](../../modules/Debugging-in-Node)
 - _B:_ [Contacts With Testing](../../modules/Contacts-With-Testing)
 - _P:_ [Node Input and Output](../../modules/Node-Input-and-Output)
 - _P:_ [Serialization](../../modules/Serialization)
-- _P:_ [Unit Testing with Mocha and Chai](../../modules/Unit-Testing-With-Mocha-And-Chai)
 - _B:_ [Command line Todo List](../../modules/Command-Line-Todo-List)
+- _P:_ [Unit Testing with Mocha and Chai](../../modules/Unit-Testing-With-Mocha-And-Chai)
+- _B:_ Missing Benchmark: write tests for provided code, white code for provided tests
 - _P:_ [Foundational SQL](../../modules/Foundational-SQL)
 - _B:_ [Grocery Queries](../../modules/Grocery-Queries)
 - _P:_ [HTML-And-CSS-Layouts](../../modules/HTML-And-CSS-Layouts)
+- _B:_ Missing Benchmark: create these N layouts
 - _P:_ [HTML-And-CSS-Mockups-and-Wireframes](../../modules/HTML-And-CSS-Mockups-and-Wireframes)
+- _B:_ Missing Benchmark: create pages from mockups & wireframes
 - _P:_ [HTML-And-CSS-Common-Components](../../modules/HTML-And-CSS-Common-Components)
+- _B:_ Missing Benchmark: create N components
 - _P:_ [Static HTTP Server](../../modules/Static-HTTP-Server)
 - _B:_ [Clone Caviar](../../modules/Clone-Caviar)
 
