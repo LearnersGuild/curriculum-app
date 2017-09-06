@@ -16,9 +16,10 @@ In this phase you will learn…
 - how to use basic programming concepts
 - how to write basic synchronous JavaScript on Node
 - how to make simple command line applications
-- how to test your code
-- how to persist state in an application via reading and writing to local files
+- how to test your code using a testing framework
+- how to persist state in an application by reading and writing to local files
 - how to use basic SQL using the postgres command line interface and Postico
+- how to create webpage layouts using HTML and CSS, including modals and HTML forms
 
 To see how to use these skills to track and assess yourself, watch this [14m video tutorial](https://shereef.wistia.com/medias/t292vu1rk1).
 
