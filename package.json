@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "description": "Learners Guild Curriculum",
   "engines": {
-    "node": "8.1.2"
+    "node": "8.4.0"
   },
   "scripts": {
     "dev": "nodemon web-server",
@@ -12,8 +12,7 @@
     "test": "mocha -G -r ./mocha.config.js $(find digest web-server database/ | grep .test.js) ",
     "test:watch": "npm test -- --watch",
     "webpack": "webpack --config ./web-server/webpack.config.js",
-    "heroku-prebuild": "NPM_CONFIG_PRODUCTION=false NODE_ENV=development npm install --only=dev; npm run webpack",
-    "heroku-postbuild": "rm -rf ./node_modules; NPM_CONFIG_PRODUCTION=true NODE_ENV=production npm install"
+    "heroku-prebuild": "npm install && npm run webpack"
   },
   "repository": {
     "type": "git",
