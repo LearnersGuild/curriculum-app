@@ -10,12 +10,12 @@ This goal will likely be within your ZPD if you ..
 
 ## Description
 
-This repo will test your ability to detect, analyze, and fix bugs in an existing codebase. You will start by cloning [this repo](https://github.com/GuildCrafts/debugging-snapshot). The code in the repo is in a broken state. The specifications describes the intended behavior of the app
+This repo will test your ability to detect, analyze, and fix bugs in an existing codebase. You will start by cloning [this repo](https://github.com/GuildCrafts/debugging-snapshot). The code in the repo is in a broken state. The specifications describe the intended behavior of the app.
 
 
 ## Specifications
 
-- Fix the code in the forked repo such that the application behaves according to the spec listed below
+- Fix the code in the cloned repo such that the application behaves according to the spec listed below
   - Going to the Home Page (`http://localhost:3000/`) should let you see  all the contacts
   - Going to a contact detail page should show the full name of the contact
   - Adding a contact should add a new contact in the database, and redirect to the created contact

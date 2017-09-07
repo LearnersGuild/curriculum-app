@@ -46,6 +46,7 @@ In this phase you will learn…
 - Code Organization: splitting functions into their respective files, and folders
 - Problem Decomposition: practice breaking each spec into smaller specs, so that it much easier to work on a smaller task at a time.
 - RESTful Routes: Designing an API using RESTful routes, and using `method override` package to override the HTTP method of the request.
+- Using the `fetch` API to make asynchronous HTTP requests from the browser. Make use of this [tutorial](https://davidwalsh.name/fetch).
 
 #### Videos to watch
 - [Programming Naming Conventions](https://www.youtube.com/watch?v=IMxfIUzoy5A&list=PLcSbxZVkmW_gHJIVLffRGJ4FRXy9LNabc&index=1)
