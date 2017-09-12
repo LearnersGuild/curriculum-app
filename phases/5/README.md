@@ -54,7 +54,7 @@ The best way to get a job is to have an engineer who already works at a company 
 Here are the best ways to expand your network:
 
 - Attend some [Tech Meetups][eastbay-tech-meetups]
-- Participate in one or more hackathons ([Eventbrite][eventbrite-sfbay-hackatons] / [Meetup][meetup-sfbay-hackathons])
+- Participate in one or more hackathons ([Eventbrite][eventbrite-sfbay-hackathons] / [Meetup][meetup-sfbay-hackathons])
 - Use LinkedIn to expand your network (\*MODULE COMING SOON)
 
 
