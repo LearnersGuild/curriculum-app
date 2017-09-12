@@ -18,11 +18,12 @@ You will start by cloning a starter app which already has a database schema defi
 
 ## Specifications
 
-- Use the [node-pg-migrate](https://github.com/theoephraim/node-pg-migrate) library to add migrations to your project
-- Using the library above to create a migration for the SQL defined in the `src/db/schema/schema.sql` file
+- Use the [node-db-migrate](https://github.com/db-migrate/node-db-migrate) library to add migrations to your project. Read the [documentatation](https://db-migrate.readthedocs.io/en/latest/Getting%20Started/usage/).
+- Ensure that your migration files are written in SQL.
+- Using the library above to create a migration for the SQL defined in the `src/models/db/schema/schema.sql` file
 - An npm script `db:migrate` exists which migrates the db to the latest migration
-- An npm script `db:init` exists which creates the database and migrates the database to the latest migration
 - An npm script `db:migration:create` exists which lets you create a new migration
+- An npm script `db:reset` exists which drops, creates and migrates the database
 - Create a migration for a table called `user`. Table should contain the following fields
   - id
   - first_name
