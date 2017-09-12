@@ -35,6 +35,7 @@ module.exports = () =>
       'shell',
       'Slack',
       'SQL',
+      'System Design',
       'Terminal',
       'tests',
       'UNIX',
