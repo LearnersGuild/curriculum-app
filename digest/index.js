@@ -25,6 +25,7 @@ module.exports = () =>
       'HTML & CSS',
       'HTML',
       'HTTP',
+      'Interviews',
       'JavaScript',
       'Jobs',
       'LinkedIn',

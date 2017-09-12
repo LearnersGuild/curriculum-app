@@ -22,6 +22,7 @@ In this phase you will:
 
 - _P:_ [Job Offers, Compensation, and Negotiation](../../modules/Job-Offers-Compensation-and-Negotiation)
 - _P:_ [Job Search and Networking](../../modules/Job-Search-and-Networking)
+- _P:_ [Methodically Approaching Technical Interviews](../../modules/Methodically-Approaching-Technical-Interviews)
 
 ## Accountabilities
 
