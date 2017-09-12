@@ -21,6 +21,7 @@ In this phase you will:
 ## Modules
 
 - _P:_ [Job Offers, Compensation, and Negotiation](../../modules/Job-Offers-Compensation-and-Negotiation)
+- _P:_ [Job Search and Networking](../../modules/Job-Search-and-Networking)
 
 ## Accountabilities
 
@@ -55,7 +56,7 @@ Here are the best ways to expand your network:
 
 - Attend some [Tech Meetups][eastbay-tech-meetups]
 - Participate in one or more hackathons ([Eventbrite][eventbrite-sfbay-hackathons] / [Meetup][meetup-sfbay-hackathons])
-- Use LinkedIn to expand your network (\*MODULE COMING SOON)
+- Use LinkedIn to [expand your network](../../modules/Job-Search-and-Networking)
 
 
 ## Tracking Your Progress
