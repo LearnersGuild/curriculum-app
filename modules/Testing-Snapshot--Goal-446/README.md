@@ -38,7 +38,7 @@ You will start by cloning a starter app the has full CRUD functionality. From he
 - All "End to End" and Integrations tests are setup such that the database tables are truncated, and seeded before each test run.
 - End to End testing: Test the http routes exposed in the server
   - You have `chai-http` installed
-  - A test for the `/` GET route to make sure that the correct page is getting rendered and all the contacts are being received from the database
+  - A test for the `/` GET route to make sure that the correct page is getting rendered.
   - A test for the `/contacts/new` GET route that checks that the correct page is rendered
   - A test for the `/contacts` POST route that saves contact data to the database
   - A test for the `/contacts/:contactId` GET route that makes sure the correct data is returned
