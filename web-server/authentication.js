@@ -1,4 +1,4 @@
-const BackOffice = require('./BackOffice')
+const BackOffice = require('../backoffice')
 const { addUserToRequestFromJWT } = require('@learnersguild/idm-jwt-auth/lib/middlewares')
 
 if ( !process.env.DISABLE_IDM && !process.env.JWT_PUBLIC_KEY ) {

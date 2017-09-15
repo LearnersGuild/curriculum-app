@@ -2,26 +2,57 @@ extends ../layout
 
 block content
 
-  h1= targetUser.name
+  h1
+    span= targetUser.name
+    if targetUser.nickname
+      span &nbsp;(#{targetUser.nickname})
+
   h3= targetUser.handle
 
   if targetUser.exit_phase
     h6 Exit Phase: #{targetUser.exit_phase}
 
   else if targetUser.phase
-    h6 Phase: #{targetUser.phase}
+    h6
+      | Phase: #{targetUser.phase}
+      if targetUser.currentPhaseWeekNumber
+        span  (#{targetUser.currentPhaseWeekNumber}/8 weeks)
 
   ul.list-inline
     li
-      a(href="https://echo.learnersguild.org/users/"+targetUser.handle, target="_blank") echo
+      a(href=targetUser.echoProfileURL, target="_blank") echo
     li
-      a(href="https://github.com/"+targetUser.handle, target="_blank") GitHub
+      a(href=targetUser.githubURL, target="_blank") GitHub
     li
       a(href="mailto:"+targetUser.email) Email
     li
-      a(href="https://learnersguild.slack.com/messages/@"+targetUser.handle, target="_blank") Slack DM
+      a(href=targetUser.slackDirectMessageURL, target="_blank") Slack DM
     if user.isAdmin
       li
-        a(href="/admin/users/"+targetUser.handle) Admin
+        a(href=targetUser.hubspotURL target="_blank") Hubspot
 
   img(src=targetUser.avatarUrl)
+
+  if user.isAdmin
+    hr
+    h4 Admin Section:
+    dl
+      dt Learning Facilitator
+      dd= targetUser.learningFacilitator
+
+      dt Email
+      dd= targetUser.email
+
+      dt Personal Days
+      dd
+        span= targetUser.personalDaysUsed
+        span &nbsp;/&nbsp;
+        span= targetUser.personalDaysRemaining
+
+      dt Personal Development Days
+      dd
+        span= targetUser.personalDevelopmentDaysUsed
+        span &nbsp;/&nbsp;
+        span= targetUser.personalDevelopmentDaysRemaining
+    div
+      pre= inspect(targetUser)

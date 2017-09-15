@@ -133,7 +133,7 @@ module.exports = app => {
     }
 
     request.getUserWithCheckLog = (handle) => {
-      return request.backOffice.getUser(handle)
+      return request.backOffice.getUserByHandle(handle)
         .then(learner => {
           return queries.getCheckLogsForUsers([learner.id])
           .then(checkLogs => {
@@ -148,7 +148,10 @@ module.exports = app => {
     }
 
     request.getUsersForPhaseWithCheckLog = phaseNumber => {
-      return request.backOffice.getActiveLearnersForPhase(phaseNumber)
+      return request.backOffice.getAllLearners({
+        phase: phaseNumber,
+        includeHubspotData: true,
+      })
         .then(learners => {
           return queries.getCheckLogsForUsers(learners.map(l => l.id))
             .then(checkLogsByUserId => {

@@ -54,7 +54,7 @@ module.exports = app => {
 
   app.get('/phases/:phaseNumber/dashboard/progress', (request, response, next) => {
     const { phase } = request
-    request.getUsersForPhaseWithCheckLog(request.phase.number)
+    request.getUsersForPhaseWithCheckLog(phase.number)
       .then(learners => {
         learners.forEach(learner => {
           learner.skillsDenominator = phase.skills.length
@@ -69,9 +69,10 @@ module.exports = app => {
   })
 
   app.get('/phases/:phaseNumber/dashboard/learners', (request, response, next) => {
-    request.backOffice.getActiveLearners()
+    request.backOffice.getAllLearners({
+      phase: request.phase.number
+    })
       .then(learners => {
-        learners = learners.filter(learner => learner.phase === request.phase.number)
         response.render('phases/dashboard/learners/index', {learners})
       })
       .catch(next)
