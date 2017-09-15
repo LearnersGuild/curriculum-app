@@ -7,7 +7,7 @@ if ( !process.env.DISABLE_IDM && !process.env.JWT_PUBLIC_KEY ) {
 
 const addFakeAuthenticatedUser = (request, response, next ) => {
   request.user = {id: 'this is a fake user!!', handle: 'Fake News'}
-  response.locals.user = request.user
+  response.locals.currentUser = request.user
   next()
 }
 
@@ -34,7 +34,7 @@ if (process.env.DISABLE_IDM) {
     })
 
     app.use((request, response, next) => {
-      response.locals.user = request.user
+      response.locals.currentUser = request.user
       response.locals.logoutUrl = `${process.env.IDM_BASE_URL}/auth/sign-out?redirect=${encodeURIComponent(request.completeUrl)}`
       request.backOffice = new BackOffice(request.cookies.lgJWT)
       next()

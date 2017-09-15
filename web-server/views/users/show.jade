@@ -27,14 +27,14 @@ block content
       a(href="mailto:"+targetUser.email) Email
     li
       a(href=targetUser.slackDirectMessageURL, target="_blank") Slack DM
-    if user.isAdmin
+    if currentUser.isAdmin
       if targetUser.hubspotURL
         li
           a(href=targetUser.hubspotURL target="_blank") Hubspot
 
   img.user-avatar.user-avatar-huge(src=targetUser.avatarUrl)
 
-  if user.isAdmin
+  if currentUser.isAdmin
     hr
     h4 Admin Section:
     dl

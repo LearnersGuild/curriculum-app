@@ -13,12 +13,10 @@ block content
         a(href="/phases/#{phase.number}/skills") Skills
       li
         a(href="/phases/#{phase.number}/schedule") Schedule
-      if user.isAdmin
+      if currentUser.isAdmin
         li
           a(href="/phases/#{phase.number}/dashboard") Dashboard
 
   textarea.hidden.skills-data= JSON.stringify(currentModuleSkills)
 
   .markdown-body !{content}
-
-
