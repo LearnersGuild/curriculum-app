@@ -2,9 +2,13 @@ const HubspotClient = require('hubspot');
 const hubspot = new HubspotClient();
 const userProperties = require('./userProperties')
 
-hubspot.useKey(process.env.HUBSPOT_API_KEY, (error) => {
-  if (error) throw error
-});
+const enabled = !!process.env.HUBSPOT_API_KEY
+
+if (enabled){
+  hubspot.useKey(process.env.HUBSPOT_API_KEY, (error) => {
+    if (error) throw error
+  });
+}
 
 const getAllContacts = (options={}) => {
   return new Promise((resolve, reject) => {
