@@ -34,5 +34,5 @@ javascript event bubbling
 ## Exercises
 
 - [JavaScript and the DOM TreeHouse Course](https://teamtreehouse.com/library/javascript-and-the-dom-2)
-- [Mac Calculator Clone](./exercises/Mac-Calculator-Clone)
+- [Mac Calculator Reimplementation](./exercises/Mac-Calculator-Reimplementation)
 - [Tic Tac Toe](./exercises/Tic-Tac-Toe)
