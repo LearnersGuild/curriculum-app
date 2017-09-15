@@ -18,7 +18,7 @@ progressing onto the next.
 
 In stage 1 you will only be using `HTML` and `CSS` to build the interface of your
 calculator. You're only building the interface in this stage. You'll make the
-make the calculator work in stage 2.
+calculator work in stage 2.
 
 Here is an example of what your interface might look like.
 
