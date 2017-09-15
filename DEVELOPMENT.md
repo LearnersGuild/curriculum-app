@@ -8,6 +8,16 @@
 Install and run Node v8.1.2
 
 
+#### Setup and run [mehserve](https://github.com/timecounts/mehserve)
+```
+echo 3233 > ~/.mehserve/curriculum.learnersguild
+mehserve run
+```
+
+
+#### Setup and run [IDM](https://github.com/LearnersGuild/idm/)
+
+
 #### Creating your `.env` file
 
 create a `.env` file like this:
