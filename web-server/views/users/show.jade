@@ -2,19 +2,26 @@ extends ../layout
 
 block content
 
-  h1= user.name
-  h3= user.handle
+  h1= targetUser.name
+  h3= targetUser.handle
 
-  h6 Phase #{user.phase}
+  if targetUser.exit_phase
+    h6 Exit Phase: #{targetUser.exit_phase}
+
+  else if targetUser.phase
+    h6 Phase: #{targetUser.phase}
 
   ul.list-inline
     li
-      a(href="https://echo.learnersguild.org/users/"+user.handle, target="_blank") echo
+      a(href="https://echo.learnersguild.org/users/"+targetUser.handle, target="_blank") echo
     li
-      a(href="https://github.com/"+user.handle, target="_blank") GitHub
+      a(href="https://github.com/"+targetUser.handle, target="_blank") GitHub
     li
-      a(href="mailto:"+user.email) Email
+      a(href="mailto:"+targetUser.email) Email
     li
-      a(href="https://learnersguild.slack.com/messages/@"+user.handle, target="_blank") Slack DM
+      a(href="https://learnersguild.slack.com/messages/@"+targetUser.handle, target="_blank") Slack DM
+    if user.isAdmin
+      li
+        a(href="/admin/users/"+targetUser.handle) Admin
 
-  img(src=user.avatarUrl)
+  img(src=targetUser.avatarUrl)
