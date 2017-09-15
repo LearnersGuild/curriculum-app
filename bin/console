@@ -1,9 +1,11 @@
 #!/usr/bin/env bash
 
-echo locals: loadDigest, digest, queries, commands
+echo locals: loadDigest, digest, queries, commands, hubspot
 node -i -e "\
+require('./environment'); \
 const loadDigest = require('./digest'); \
 const queries = require('./database/queries'); \
 const commands = require('./database/commands'); \
+const hubspot = require('./backoffice/hubspot'); \
 let digest; loadDigest().then(d => digest = d); \
 "

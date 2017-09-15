@@ -9,7 +9,7 @@
     "dev": "nodemon web-server",
     "start": "node web-server",
     "db:migrate": "knex migrate:latest",
-    "test": "mocha -G -r ./mocha.config.js $(find digest web-server database/ | grep .test.js) ",
+    "test": "mocha -G -r ./mocha.config.js $(find digest web-server database backoffice | grep .test.js) ",
     "test:watch": "npm test -- --watch",
     "webpack": "webpack --config ./web-server/webpack.config.js",
     "heroku-prebuild": "npm install && npm run webpack"
@@ -39,6 +39,7 @@
     "express-sslify": "^1.2.0",
     "fs-extra": "^3.0.1",
     "highlight.js": "^9.12.0",
+    "hubspot": "^0.4.10",
     "jade": "^1.11.0",
     "knex": "^0.13.0",
     "marked": "^0.3.6",
