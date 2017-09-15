@@ -61,7 +61,7 @@ module.exports = app => {
 
   app.use((request, response, next) => {
 
-    response.path = request.url
+    response.path = request.url.split('?')[0]
     response.locals.IDM_BASE_URL = process.env.IDM_BASE_URL
     response.locals.currentURL = (
       request.protocol +
