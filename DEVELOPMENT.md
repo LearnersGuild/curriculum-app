@@ -18,6 +18,9 @@ mehserve run
 #### Setup and run [IDM](https://github.com/LearnersGuild/idm/)
 
 
+#### Setup and run [Echo](https://github.com/LearnersGuild/echo/)
+
+
 #### Creating your `.env` file
 
 create a `.env` file like this:
