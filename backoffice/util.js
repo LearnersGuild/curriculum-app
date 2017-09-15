@@ -13,6 +13,9 @@ const isUserARobot = user =>
 const isUserActive = user =>
   !!user.active
 
+const isUserInactive = user =>
+  !user.active
+
 const isUserStaff = user =>
   !isUserARobot(user) &&
   user.roles.includes('staff')

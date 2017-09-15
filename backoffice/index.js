@@ -2,7 +2,7 @@ require('../environment')
 const { IDMClient } = require('./idm')
 const { EchoClient } = require('./echo')
 const hubspot = require('./hubspot')
-const { PHASES, isValidPhase, isUserALearner, isUserActive } = require('./util')
+const { PHASES, isValidPhase, isUserALearner, isUserActive, isUserInactive } = require('./util')
 
 module.exports = class BackOffice {
 
@@ -39,7 +39,8 @@ module.exports = class BackOffice {
 
         // filters
         if (options.learners) users = users.filter(isUserALearner)
-        if (options.active) users = users.filter(isUserActive)
+        if (options.active === true) users = users.filter(isUserActive)
+        if (options.active === false) users = users.filter(isUserInactive)
 
         // load extra data
         const promises = []
