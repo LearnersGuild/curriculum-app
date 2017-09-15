@@ -15,7 +15,7 @@ module.exports = app => {
     })
 
     app.get('/digest', (request, response, next) => {
-      response.render('digest')
+      response.render('digest', {title: 'Digest'})
     })
 
   }else{

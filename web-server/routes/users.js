@@ -9,7 +9,7 @@ module.exports = app => {
     request.backOffice.getAllUsers({
       includePhases: true,
     }).then(users => {
-      response.render('users/index', { users })
+      response.render('users/index', { users, title: 'Users' })
     })
     .catch(next)
   })
@@ -21,7 +21,7 @@ module.exports = app => {
     })
     .then(targetUser => {
       if (!targetUser) return response.renderNotFound()
-      response.render('users/show', { targetUser })
+      response.render('users/show', { targetUser, title: handle })
     })
     .catch(next)
   })

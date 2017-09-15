@@ -74,7 +74,7 @@ module.exports = app => {
     response.renderNotFound = function(){
       response
         .status(404)
-        .render('not_found')
+        .render('not_found', {title: 'Not Found'})
     }
 
     response.renderError = function(error){
@@ -103,7 +103,7 @@ module.exports = app => {
             if (files.includes('README.md')){
               response.renderMarkdownFile(relativePath+'/README.md')
             }else{
-              response.render('directory', {files})
+              response.render('directory', {files, title: relativePath})
             }
           }
         })
@@ -140,8 +140,11 @@ module.exports = app => {
 
         const path = response.path.match(/\/$/) ? response.path+'README.md' : response.path
 
+        const title = getTitleFromHTML(content)
+
         const file = {
           content,
+          title,
           sourceUrl: 'https://github.com/GuildCrafts/curriculum/blob/master'+path,
           editeUrl: 'https://github.com/GuildCrafts/curriculum/edit/master'+path,
         }
@@ -186,4 +189,8 @@ module.exports = app => {
     next()
   })
 
+}
+
+function getTitleFromHTML(content) {
+  return content.match(/<h1[^>]*>([^<]*)<\/h1>/)[1]
 }
