@@ -1,5 +1,6 @@
 const util = require('util')
 const path = require('path')
+const moment = require('moment')
 const fs = require('fs-extra')
 const escapeHTML = require('jade').runtime.escape
 const renderMarkdown = require('./renderMarkdown')
@@ -13,8 +14,24 @@ module.exports = app => {
       colors: false,
       maxArrayLength: null,
     })
+
   app.locals.escapeHTML = escapeHTML
+
   app.locals.renderMarkdown = renderMarkdown
+
+  app.locals.renderDate = date =>
+    date ? moment(date).format("YYYY/MM/DD") : null
+
+  app.locals.renderDatetime = date =>
+    date ? moment(date).format("YYYY/MM/DD HH:mm") : null
+
+  app.locals.timeAgoInWords = date =>
+    date ? moment(date).fromNow() : null
+
+  app.locals.weeksAgoInWords = date =>
+    date ? moment().diff(moment(date), 'week')+' weeks ago' : null
+
+
 
   app.locals.renderSkill = skill =>
     renderMarkdown(skill.rawText).slice(3,-5).trim()

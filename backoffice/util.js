@@ -23,6 +23,8 @@ const isUserALearner = user =>
   user.roles.includes('learner')
 
 module.exports = {
+  PHASES,
+  ROBOT_HANDLES,
   isValidPhase,
   isUser,
   isUserARobot,

@@ -3,7 +3,25 @@ extends ../../../layout
 block content
   h1 Learners in Phase #{phase.number}
 
-  ol
-    for learner in learners
-      li
-        a(href="/phases/#{phase.number}/dashboard/learners/#{learner.handle}")= learner.handle
+  table.table
+    thead
+      tr
+        th
+        th Name
+        th Username
+        th Phase Start Date
+        th Phase Progress
+    tbody
+      for learner in learners
+        tr
+          td
+            img.user-avatar.user-avatar-small(src=learner.avatarUrl)
+          td
+            a(href="/phases/#{phase.number}/dashboard/learners/#{learner.handle}")= learner.name
+          td
+            a(href="/phases/#{phase.number}/dashboard/learners/#{learner.handle}")= learner.handle
+          td
+            - startDate = learner[`phase${phase.number}StartDate`]
+            span(title=renderDate(startDate))= timeAgoInWords(startDate)
+          td
+            progress(value=(learner.currentPhaseWeekNumber||0) max=8)
