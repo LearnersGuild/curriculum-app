@@ -84,14 +84,25 @@ module.exports = class BackOffice {
 
   getHubspotDataForUsers(users){
     const emails = users.map(user => user.email)
-    return this.hubspot.getContactsByEmail(emails).then(contacts => {
-      users.forEach(user => {
-        const contact = contacts.find(contact =>
-          contact.email === user.email
-        )
-        if (contact) mergeHubspotContactIntoUser(user, contact)
-      })
-    })
+    return this.hubspot.getContactsByEmail(emails)
+      .then(
+        contacts => {
+          users.forEach(user => {
+            const contact = contacts.find(contact =>
+              contact.email === user.email
+            )
+            if (contact) mergeHubspotContactIntoUser(user, contact)
+          })
+          return users
+        },
+        error => {
+          users.forEach(user => {
+            user.errors = user.errors || []
+            user.errors.push(`Erorr loading hubspot contact: ${error.message}`)
+          })
+          return users
+        }
+      )
   }
 }
 
@@ -101,8 +112,9 @@ const getHubspotDataForUser = user =>
       mergeHubspotContactIntoUser(user, hubspotContact)
     )
     .catch(error => {
-      if (error.message.includes('contact does not exist')) return user
-      throw error
+      user.errors = user.errors || []
+      user.errors.push(`Erorr loading hubspot contact: ${error.message}`)
+      return user
     })
 
 const mergeHubspotContactIntoUser = (user, contact) => {

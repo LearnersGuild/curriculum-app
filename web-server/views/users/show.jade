@@ -28,8 +28,9 @@ block content
     li
       a(href=targetUser.slackDirectMessageURL, target="_blank") Slack DM
     if user.isAdmin
-      li
-        a(href=targetUser.hubspotURL target="_blank") Hubspot
+      if targetUser.hubspotURL
+        li
+          a(href=targetUser.hubspotURL target="_blank") Hubspot
 
   img.user-avatar.user-avatar-huge(src=targetUser.avatarUrl)
 
@@ -43,16 +44,18 @@ block content
       dt Email
       dd= targetUser.email
 
-      dt Personal Days
-      dd
-        span= targetUser.personalDaysUsed
-        span &nbsp;/&nbsp;
-        span= targetUser.personalDaysRemaining
+      if 'personalDaysUsed' in targetUser
+        dt Personal Days
+        dd
+          span= targetUser.personalDaysUsed
+          span &nbsp;/&nbsp;
+          span= targetUser.personalDaysRemaining
 
-      dt Personal Development Days
-      dd
-        span= targetUser.personalDevelopmentDaysUsed
-        span &nbsp;/&nbsp;
-        span= targetUser.personalDevelopmentDaysRemaining
+      if 'personalDevelopmentDaysUsed' in targetUser
+        dt Personal Development Days
+        dd
+          span= targetUser.personalDevelopmentDaysUsed
+          span &nbsp;/&nbsp;
+          span= targetUser.personalDevelopmentDaysRemaining
     div
       pre= inspect(targetUser)
