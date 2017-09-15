@@ -2,7 +2,7 @@ require('../environment')
 const { IDMClient } = require('./idm')
 const { EchoClient } = require('./echo')
 const hubspot = require('./hubspot')
-const { isValidPhase, isUserALearner, isUserActive } = require('./util')
+const { PHASES, isValidPhase, isUserALearner, isUserActive } = require('./util')
 
 module.exports = class BackOffice {
 
@@ -130,6 +130,10 @@ const mergeHubspotContactIntoUser = (user, contact) => {
     user.phase1StartDate ? 1 :
     null
   )
+
+  PHASES.forEach(phase => {
+    user[`phase${phase}StartDate`] = contact[`date_phase_${phase}`]
+  })
 
   user.learningFacilitator = contact.learning_facilitator
 

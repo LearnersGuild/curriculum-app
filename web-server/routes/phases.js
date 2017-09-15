@@ -70,9 +70,15 @@ module.exports = app => {
 
   app.get('/phases/:phaseNumber/dashboard/learners', (request, response, next) => {
     request.backOffice.getAllLearners({
-      phase: request.phase.number
+      phase: request.phase.number,
+      includeHubspotData: true,
     })
       .then(learners => {
+        learners = learners.sort((a, b) => {
+          a = a[`phase${request.phase.number}StartDate`] || 0
+          b = b[`phase${request.phase.number}StartDate`] || 0
+          return a < b ? 1 : a > b ? -1 : 0
+        })
         response.render('phases/dashboard/learners/index', {learners})
       })
       .catch(next)
