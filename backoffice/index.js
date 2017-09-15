@@ -116,6 +116,8 @@ const getHubspotDataForUser = user =>
       user.errors = user.errors || []
       user.errors.push(`Erorr loading hubspot contact: ${error.message}`)
       return user
+      // if (error.message.includes('contact does not exist')) return user
+      // throw error
     })
 
 const mergeHubspotContactIntoUser = (user, contact) => {

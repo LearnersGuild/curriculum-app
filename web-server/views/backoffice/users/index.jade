@@ -1,0 +1,89 @@
+extends ../../minimum_layout
+
+block body
+  h1 Users
+
+  ul.list-inline
+    li
+      a(href="/backoffice/users.json") json
+    li
+      a(href="/backoffice/users.csv") csv
+
+  table.table.data-table
+    thead
+      tr
+        th active
+        th handle
+        th email
+        th name
+        th nickname
+        th phone
+        th dateOfBirth
+        th timezone
+        th roles
+        th createdAt
+        th updatedAt
+        th IDM id
+        th vid
+        th enrolleeStartDate
+        th phase
+        th currentPhaseWeekNumber
+        th phase0StartDate
+        th phase1StartDate
+        th phase2StartDate
+        th phase3StartDate
+        th phase4StartDate
+        th phase5StartDate
+        th learningFacilitator
+        th personalDevelopmentDaysRemaining
+        th personalDevelopmentDaysUsed
+        th personalDaysRemaining
+        th personalDaysUsed
+        th profileUrl
+        th avatarUrl
+        th githubURL
+        th echoProfileURL
+        th slackDirectMessageURL
+        th hubspotURL
+    tbody
+      for user in users
+        tr
+          td
+            input(type="checkbox" disabled checked=user.active)
+          td= user.handle
+          td= user.email
+          td= user.name
+          td= user.nickname
+          td= user.phone
+          td= renderDate(user.dateOfBirth)
+          td= user.timezone
+          td= user.roles.join(', ')
+          td= renderDate(user.createdAt)
+          td= renderDate(user.updatedAt)
+          td= user.id
+          td= user.vid
+          td= renderDate(user.enrolleeStartDate)
+          td= user.phase
+          td= user.currentPhaseWeekNumber
+          td= renderDate(user.phase0StartDate)
+          td= renderDate(user.phase1StartDate)
+          td= renderDate(user.phase2StartDate)
+          td= renderDate(user.phase3StartDate)
+          td= renderDate(user.phase4StartDate)
+          td= renderDate(user.phase5StartDate)
+          td= user.learningFacilitator
+          td= user.personalDevelopmentDaysRemaining
+          td= user.personalDevelopmentDaysUsed
+          td= user.personalDaysRemaining
+          td= user.personalDaysUsed
+          td= user.profileUrl
+          td
+            img.user-avatar.user-avatar-small(src=user.avatarUrl)
+          td
+            a(href=user.githubURL)= user.handle
+          td
+            a(href=user.echoProfileURL)= user.handle
+          td
+            a(href=user.slackDirectMessageURL)= user.handle
+          td
+            a(href=user.hubspotURL)= user.vid
