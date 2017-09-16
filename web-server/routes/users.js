@@ -19,9 +19,9 @@ module.exports = app => {
     request.backOffice.getUserByHandle(handle, {
       includeHubspotData: true,
     })
-    .then(targetUser => {
-      if (!targetUser) return response.renderNotFound()
-      response.render('users/show', { targetUser, title: handle })
+    .then(user => {
+      if (!user) return response.renderNotFound()
+      response.render('users/show', { user, title: handle })
     })
     .catch(next)
   })

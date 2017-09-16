@@ -3,59 +3,59 @@ extends ../layout
 block content
 
   h1
-    span= targetUser.name
-    if targetUser.nickname
-      span &nbsp;(#{targetUser.nickname})
+    span= user.name
+    if user.nickname
+      span &nbsp;(#{user.nickname})
 
-  h3= targetUser.handle
+  h3= user.handle
 
-  if targetUser.exit_phase
-    h6 Exit Phase: #{targetUser.exit_phase}
+  if user.exit_phase
+    h6 Exit Phase: #{user.exit_phase}
 
-  else if targetUser.phase
+  else if user.phase
     h6
-      | Phase: #{targetUser.phase}
-      if targetUser.currentPhaseWeekNumber
-        span  (#{targetUser.currentPhaseWeekNumber}/8 weeks)
+      | Phase: #{user.phase}
+      if user.currentPhaseWeekNumber
+        span  (#{user.currentPhaseWeekNumber}/8 weeks)
 
   ul.list-inline
     li
-      a(href=targetUser.echoProfileURL, target="_blank") echo
+      a(href=user.echoProfileURL, target="_blank") echo
     li
-      a(href=targetUser.githubURL, target="_blank") GitHub
+      a(href=user.githubURL, target="_blank") GitHub
     li
-      a(href="mailto:"+targetUser.email) Email
+      a(href="mailto:"+user.email) Email
     li
-      a(href=targetUser.slackDirectMessageURL, target="_blank") Slack DM
+      a(href=user.slackDirectMessageURL, target="_blank") Slack DM
     if currentUser.isAdmin
-      if targetUser.hubspotURL
+      if user.hubspotURL
         li
-          a(href=targetUser.hubspotURL target="_blank") Hubspot
+          a(href=user.hubspotURL target="_blank") Hubspot
 
-  img.user-avatar.user-avatar-huge(src=targetUser.avatarUrl)
+  img.user-avatar.user-avatar-huge(src=user.avatarUrl)
 
   if currentUser.isAdmin
     hr
     h4 Admin Section:
     dl
       dt Learning Facilitator
-      dd= targetUser.learningFacilitator
+      dd= user.learningFacilitator
 
       dt Email
-      dd= targetUser.email
+      dd= user.email
 
-      if 'personalDaysUsed' in targetUser
+      if 'personalDaysUsed' in user
         dt Personal Days
         dd
-          span= targetUser.personalDaysUsed
+          span= user.personalDaysUsed
           span &nbsp;/&nbsp;
-          span= targetUser.personalDaysRemaining
+          span= user.personalDaysRemaining
 
-      if 'personalDevelopmentDaysUsed' in targetUser
+      if 'personalDevelopmentDaysUsed' in user
         dt Personal Development Days
         dd
-          span= targetUser.personalDevelopmentDaysUsed
+          span= user.personalDevelopmentDaysUsed
           span &nbsp;/&nbsp;
-          span= targetUser.personalDevelopmentDaysRemaining
+          span= user.personalDevelopmentDaysRemaining
     div
-      pre= inspect(targetUser)
+      pre= inspect(user)
