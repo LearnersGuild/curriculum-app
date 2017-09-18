@@ -28,7 +28,7 @@ Some examples of projects you may work on:
 - Ghost: https://github.com/tryghost/ghost
 - Free Code Camp: https://github.com/freeCodeCamp/freeCodeCamp
 - React Toolbox: https://github.com/react-toolbox/react-toolbox
-- LOS: echo, idm
+- LOS: echo, idm, curriculum
 
 Work is selected by SEPs and tracked via the [Phase 4 Trello board][trello]. Join this board and the `#phase-4` Slack channel.
 
