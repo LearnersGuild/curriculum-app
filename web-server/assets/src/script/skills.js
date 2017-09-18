@@ -1,3 +1,4 @@
+const qs = require('./qs')
 const postJSON = require('./postJSON')
 
 $(document).on('change', '.skill-checkbox', event => {
@@ -55,7 +56,18 @@ $(reloadSkillCheckboxes)
 
 const setFilter = filter => {
   $('.skills-list-filter-input').val(filter)
+  setFilterQueryParam(filter)
   filterSkillsList(filter)
+}
+
+const setFilterQueryParam = filter => {
+  const search = qs.parse(location.search.slice(1))
+  if (filter) {
+    search.f = filter
+  }else{
+    delete search.f
+  }
+  history.replaceState({}, '', `${location.pathname}?${qs.stringify(search)}`)
 }
 
 const matchesFilters = (filters, string) => {
@@ -65,9 +77,6 @@ const matchesFilters = (filters, string) => {
 }
 
 const filterSkillsList = filter => {
-  const queryString = filter === '' ? '' : `?f=${filter}`
-  history.replaceState({}, '', `skills${queryString}`)
-
   const filters = filter.trim().toLowerCase().split(/\s+/)
   $('.skills-list .skills-list-list > li').each((i, skill) => {
     if (filter.length === 0 || matchesFilters(filters, $(skill).text())){
@@ -79,25 +88,25 @@ const filterSkillsList = filter => {
 }
 
 $(() => {
-  const query = parseQueryString(location.search)
-  if ('f' in query) {
-    setFilter(query.f)
-  }
+  const filter = qs.parse(location.search.slice(1)).f
+  if (filter) setFilter(filter.replace(/\+/g, ' '))
 })
 
-function parseQueryString(queryString) {
-  return queryString.slice(1).split('&').reduce((query, pair) => {
-    const [key, value] = pair.split('=')
-    query[key] = value
-    return query
-  }, {})
-}
-
 $(document).on('keyup', '.skills-list-filter-input', event => {
-  if (event.key === "Escape" )
+  const filter = event.target.value
+  if (event.key === "Escape"){
     setFilter('')
-  else
-    filterSkillsList(event.target.value)
+    return
+  }
+  if (event.key === "Enter"){
+    setFilterQueryParam(filter)
+    return
+  }
+  filterSkillsList(filter)
+})
+
+$(document).on('change blur', '.skills-list-filter-input', event => {
+  setFilterQueryParam(event.target.value)
 })
 
 $(document).on('click', '.skills-list-filter', event => {
