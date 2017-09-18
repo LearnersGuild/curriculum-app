@@ -65,6 +65,9 @@ const matchesFilters = (filters, string) => {
 }
 
 const filterSkillsList = filter => {
+  const queryString = filter === '' ? '' : `?f=${filter}`
+  history.replaceState({}, '', `skills${queryString}`)
+
   const filters = filter.trim().toLowerCase().split(/\s+/)
   $('.skills-list .skills-list-list > li').each((i, skill) => {
     if (filter.length === 0 || matchesFilters(filters, $(skill).text())){
@@ -73,6 +76,21 @@ const filterSkillsList = filter => {
       $(skill).hide()
     }
   })
+}
+
+$(() => {
+  const query = parseQueryString(location.search)
+  if ('f' in query) {
+    setFilter(query.f)
+  }
+})
+
+function parseQueryString(queryString) {
+  return queryString.slice(1).split('&').reduce((query, pair) => {
+    const [key, value] = pair.split('=')
+    query[key] = value
+    return query
+  }, {})
 }
 
 $(document).on('keyup', '.skills-list-filter-input', event => {
