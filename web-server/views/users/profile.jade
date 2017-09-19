@@ -4,23 +4,27 @@ block content
 
   .row
     .col-md-4
-    .col-md-4.profile-header
       h1= user.name
       ul.list-inline
         li
           a(href=user.profileUrl target="_blank") @#{user.handle}
         li
           a(href=user.echoProfileURL target="_blank") Echo
-    .col-md-4
-  .row.profile-content
-    .col-md-2
-    .col-md-4
+        li
+          a(href="https://curriculum.learnersguild.org/phases/4/") Phase: 3 (7/8)
       img.img-thumbnail.user-avatar.user-avatar-huge(src="#{user.avatarUrl}" alt="avatar")
-    .col-md-4.user-profile-info
-      h5
+    .col-md-8.profile-content
+      h6
         | Email:
         a(href="mailto:#{user.email}") #{user.email}
-      h5 Phone: #{user.phone}
-      h5 Join Date: #{renderDate(user.createdAt)}
-      h5 Updated: #{renderDate(user.updatedAt)}
-    .col-md-2
+      h6 Phone: #{user.phone}
+      h6 Join Date: #{renderDate(user.createdAt)}
+      h6 Updated: #{renderDate(user.updatedAt)}
+      h6
+        | Learning Facilitator:
+        a(href="https://learnersguild.slack.com/messages/@carlabagdonas" target="_blank") Carla
+      h6 Professional Days Remaining: 3
+      h6 Personal Days Remaining: 3
+      h6 Phase 4 Interview Date: 2017/09/01
+      h6 Phase 4 Interview Outcome: Denied
+      h6 Phase 3 Start Date: 2017/07/31
