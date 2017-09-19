@@ -54,7 +54,7 @@ body
 .footer-logo
   height: auto
   width: auto
-  margin-top: 0
+  margin-top: 20px
   line-height: inherit
   float: none
   padding: 0
@@ -109,14 +109,14 @@ ol > li, ul > li
   margin-left: 0.25em
 
 .guide-iframe
-  position: absolute
-  top: 0
+  position: fixed
+  top: 52px
   left: 0
-  bottom: 0
+  bottom: 95px
   right: 0
-  height: 100%
   width: 100%
   border: 0
+  height: calc(100% - 147px)
 
 .phase-calendar-iframe
   border: 0
@@ -143,3 +143,38 @@ ol > li, ul > li
 
 .data-table
   white-space: nowrap
+
+
+@media (max-width: 767px)
+  .navbar
+    margin-bottom: 0
+  .footer
+    height: 50px
+
+  .footer-logo
+    margin: 0
+    > img
+      height: 50px
+      width: 80px
+      margin: 0
+
+  .footer-copyright
+    font-size: 8pt
+
+  .breadcrumb-container
+    margin: 0
+    .breadcrumb
+      margin: 0
+      border-radius: 0
+
+  .guide-iframe
+    height: calc(100% - 102px)
+
+  .phase-calendar-iframe
+    position: fixed
+    top: 100px
+    left: 0
+    bottom: 148px
+    right: 0
+    width: 100%
+    height: calc(100% - 148px)

@@ -2,7 +2,7 @@ nav.navbar.navbar-inverse(role='navigation')
   .container-fluid
 
     .navbar-header
-      button.navbar-toggle(type='button', data-toggle='collapse', data-target='#bs-example-navbar-collapse-5')
+      button.navbar-toggle(type='button', data-toggle='collapse', data-target='.navbar-collapse')
         span.sr-only Toggle navigation
         span.icon-bar
         span.icon-bar
@@ -12,7 +12,7 @@ nav.navbar.navbar-inverse(role='navigation')
     .collapse.navbar-collapse
       ul.nav.navbar-nav
 
-        li
+        li.hidden-sm
           a(href='/guide') Guide
 
         li.dropdown
@@ -46,7 +46,7 @@ nav.navbar.navbar-inverse(role='navigation')
               li
                 a(href='/phases/'+phase.number+'/skills') Phase #{phase.number}
 
-        li.dropdown
+        li.dropdown.hidden-sm
           a(href='/cos/') COS
 
         li.dropdown
@@ -59,12 +59,11 @@ nav.navbar.navbar-inverse(role='navigation')
           li.dropdown
             a(href='/digest') Digest
 
-      .navbar-text.navbar-right
-        .list-inline
-          li
-            a.navbar-link(href="#{IDM_BASE_URL}/profile" target="_blank")= currentUser.handle
-          li
-            a.navbar-link(href=logoutUrl) logout
-          li
-            a.navbar-link(href="https://github.com/GuildCrafts/curriculum/issues/new" title="Report A Bug" target="_blank")
-              i.glyphicon.glyphicon-fire
+      ul.nav.navbar-nav.navbar-right
+        li.dropdown
+          a.navbar-link(href="#{IDM_BASE_URL}/profile" target="_blank")= currentUser.handle
+        li.dropdown
+          a.navbar-link(href=logoutUrl) logout
+        li.dropdown
+          a.navbar-link(href="https://github.com/GuildCrafts/curriculum/issues/new" title="Report A Bug" target="_blank")
+            i.glyphicon.glyphicon-fire
