@@ -188,9 +188,9 @@ module.exports = app => {
 
     next()
   })
-
 }
 
 function getTitleFromHTML(content) {
-  return content.match(/<h1[^>]*>([^<]*)<\/h1>/)[1]
+  const match = content.match(/<h1[^>]*>([^<]*)<\/h1>/)
+  return match ? match[1] : ''
 }
