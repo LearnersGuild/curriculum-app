@@ -1,0 +1,26 @@
+extends ../layout
+
+block content
+
+  .row
+    .col-md-4
+    .col-md-4.profile-header
+      h1= user.name
+      ul.list-inline
+        li
+          a(href=user.profileUrl target="_blank") @#{user.handle}
+        li
+          a(href=user.echoProfileURL target="_blank") Echo
+    .col-md-4
+  .row.profile-content
+    .col-md-2
+    .col-md-4
+      img.img-thumbnail.user-avatar.user-avatar-huge(src="#{user.avatarUrl}" alt="avatar")
+    .col-md-4.user-profile-info
+      h5
+        | Email:
+        a(href="mailto:#{user.email}") #{user.email}
+      h5 Phone: #{user.phone}
+      h5 Join Date: #{renderDate(user.createdAt)}
+      h5 Updated: #{renderDate(user.updatedAt)}
+    .col-md-2
