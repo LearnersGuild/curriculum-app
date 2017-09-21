@@ -51,6 +51,26 @@ describe('digest', function(){
           expect(phase.skills).to.not.haveDuplicates()
         })
       })
+
+      it('should link to existing modules', function(){
+        const allModuleIds = Object.values(this.digest.modules)
+          .map(module => module.id)
+          .sort()
+
+        const moduleIdsInPhases = Object.values(this.digest.phases)
+          .map(phase => phase.modules)
+          .reduce((a, b) => a.concat(b))
+          .sort()
+
+        const missingModuleIds = moduleIdsInPhases.filter(moduleId => !allModuleIds.includes(moduleId))
+
+        if (missingModuleIds.length > 0) {
+          throw new AssertionError(
+            `The following phases referenced by phases are missing:` +
+            `\n   - ${missingModuleIds.join("\n    - ")}`
+          )
+        }
+      })
     })
   })
 
