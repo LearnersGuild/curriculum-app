@@ -51,6 +51,16 @@ describe('digest', function(){
           expect(phase.skills).to.not.haveDuplicates()
         })
       })
+
+      it('should link to existing modules', function(){
+        const modules = Object.values(this.digest.modules)
+          .map(module => module.directoryName)
+
+        Object.values(this.digest.phases)
+          .forEach(phase => {
+            expect(modules).to.include.members(phase.modules)
+          })
+      })
     })
   })
 
