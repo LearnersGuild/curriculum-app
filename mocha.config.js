@@ -8,6 +8,7 @@ const chaiHttp = require('chai-http')
 const webServer = require('./web-server')
 
 global.chai = require('chai')
+global.AssertionError = chai.AssertionError
 global.expect = chai.expect
 
 chai.use(chaiHttp)

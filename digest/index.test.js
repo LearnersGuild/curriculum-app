@@ -53,13 +53,24 @@ describe('digest', function(){
       })
 
       it('should link to existing modules', function(){
-        const modules = Object.values(this.digest.modules)
-          .map(module => module.directoryName)
+        const allModuleIds = Object.values(this.digest.modules)
+          .map(module => module.id)
+          .sort()
 
-        Object.values(this.digest.phases)
-          .forEach(phase => {
-            expect(modules).to.include.members(phase.modules)
-          })
+        const moduleIdsInPhases = Object.values(this.digest.phases)
+          .map(phase => phase.modules)
+          .reduce((a, b) => a.concat(b))
+          .sort()
+
+        const missingModules = moduleIdsInPhases.filter(moduleId =>
+          !allModuleIds.includes(moduleId)
+        )
+
+        if (missingModules.length > 0)
+          throw new AssertionError(
+            `The following modules referenced by phases are missing:`+
+            `\n    - ${missingModules.join("\n    - ")}`
+          )
       })
     })
   })
