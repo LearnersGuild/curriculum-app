@@ -3,7 +3,7 @@ const postJSON = require('./postJSON')
 $(document).on('change', '.skill-checkbox', event => {
   const checkbox = event.target
   checkbox.disabled = true
-  postJSON('/api/checks/set', {
+  postJSON('/api/skill-checks/set', {
     label: $(checkbox).data('label'),
     checked: checkbox.checked,
   })
@@ -29,7 +29,7 @@ const reloadSkillCheckboxes = () => {
     }, {})
 
   const labels = Object.keys(checkboxes)
-  return postJSON('/api/checks/status', {labels})
+  return postJSON('/api/skill-checks/status', {labels})
   .then(checks => {
     $(() => {
       let numerator = 0
