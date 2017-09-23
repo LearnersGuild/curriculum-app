@@ -1,37 +1,35 @@
 const util = require('util')
 const knex = require('./knex')
 
-const logCheck = ({user_id, label, checked, referrer}) =>
+const logSkillCheck = ({user_id, label, checked, referrer}) =>
   knex
     .insert({
       occurred_at: knex.fn.now(),
+      type: 'skill_check',
       user_id,
-      label,
-      checked,
-      referrer
-    })
-    .into('check_log')
-
-const setCheck = ({user_id, label, checked, referrer}) =>
-  logCheck({user_id, label, checked, referrer})
-    .then(() => {
-      const record = {
-        updated_at: knex.fn.now(),
-        user_id,
+      metadata: {
         label,
         checked,
+        referrer,
       }
-      const insert = knex.insert(record).into('checks')
-      const update = knex.update(record).into('checks')
-      const query = util.format('%s ON CONFLICT (user_id, label) DO UPDATE SET %s',
-        insert.toString(),
-        update.toString().replace(/^update\s.*\sset\s/i, ''));
-      return knex.raw(query)
+    })
+    .into('event_logs')
+
+const setSkillCheck = ({user_id, label, checked, referrer}) =>
+  logSkillCheck({user_id, label, checked, referrer})
+    .then(() => {
+      if (checked) {
+        return knex
+          .insert({user_id, label, occurred_at: knex.fn.now()})
+          .into('skill_checks')
+      } else {
+          return knex('skill_checks')
+            .where('user_id', '=', user_id)
+            .andWhere('label', '=', label)
+            .del()
+      }
     })
 
-
 module.exports = {
-  setCheck,
+  setSkillCheck,
 }
-
-
