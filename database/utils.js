@@ -18,9 +18,43 @@ const migrateSkillsDiff = (knex, diffText) => {
   )
 }
 
+const migrateCheckLogs = (knex) => {
+  return knex
+    .select('*')
+    .from('check_log')
+    .then(checkLogs => {
+      const inserts = []
+      checkLogs.forEach(checkLog => {
+        const label = nameToId(checkLog.label)
+        inserts.push(
+          knex
+            .insert({
+              occurred_at: checkLog.occurred_at,
+              user_id: checkLog.user_id,
+              type: 'skill_check'
+            })
+            .into('event_logs'),
+          knex
+            .insert({
+              occurred_at: checkLog.occurred_at,
+              user_id: checkLog.user_id,
+              metadata: {
+                label: label,
+                checked: checkLog.checked,
+                referrer: checkLog.referrer
+              }
+            })
+            .into('event_log')
+        )
+      })
+      return Promise.all(inserts)
+    })
+}
+
 module.exports = {
   renameSkill,
   migrateSkillsDiff,
+  migrateCheckLogs,
 }
 
 
