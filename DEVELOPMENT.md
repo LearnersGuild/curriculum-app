@@ -21,6 +21,12 @@ mehserve run
 #### Setup and run [Echo](https://github.com/LearnersGuild/echo/)
 
 
+#### Setup repo
+
+Fork and clone the curriculum repository.
+Run 'npm install'.
+
+
 #### Creating your `.env` file
 
 create a `.env` file like this:
