@@ -20,7 +20,9 @@ You will start by cloning a starter app the has full CRUD functionality. From he
 
 ### Setting Up Your Snapshot
 
-1. Fork & clone the [Contacts starter repo](https://github.com/GuildCrafts/contacts-snapshot-starter)
+#### Forking the repo
+
+1. Fork the [Contacts starter repo](https://github.com/GuildCrafts/contacts-snapshot-starter) and clone the forked repo
 1. Create and checkout a new branch for this goal, something like `testing`
     ```
     $ git checkout -b testing
@@ -32,6 +34,30 @@ You will start by cloning a starter app the has full CRUD functionality. From he
 1. Follow the install instructions in the README of the starter repo
 1. Get started on the specs!
 
+#### Cloning the Repo
+
+If you are unable to fork the repo (you may have forked the repo already, and Github does not allow you to fork a repo twice), paste the following in the terminal
+
+1. Clone the [Contacts starter repo](https://github.com/GuildCrafts/contacts-snapshot-starter) by running
+```bash
+git clone git@github.com:GuildCrafts/contacts-snapshot-starter.git testing-snapshot
+```
+
+1. Remove the existing git tracking folder -
+```bash
+cd testing-snapshot
+rm -r .git
+```
+
+1. Setup the `testing-snapshot` folder as a fresh new git project, and push it to github
+```bash
+git init
+git add .
+git commit -m "first commit"
+git remote add origin <link-to-project-on-github>
+git push origin master
+```
+
 ## Specifications
 
 - All tests use the `contacts_test` database
@@ -42,15 +68,16 @@ You will start by cloning a starter app the has full CRUD functionality. From he
   - A test for the `/contacts/new` GET route that checks that the correct page is rendered
   - A test for the `/contacts` POST route that saves contact data to the database
   - A test for the `/contacts/:contactId` GET route that makes sure the correct data is returned
-  - A test for the `/contacts/:contactId/delete` GET route that makes sure the correct data is deleted
+  - A test for the `/contacts/:contactId` DELETE route that makes sure the correct data is deleted
   - A test for the `/search` GET route that checks that the search is returning the correct data and rendering the correct page
 
 - Integration testing: Write tests to test all the database functions
-  - A test to test the `createContact` function
-  - A test to test the `getContacts` function
-  - A test to test the `getContact` function
-  - A test to test the `deleteContact` function
-  - A test to test the `searchForContact` function
+  - For the file `src/models/contacts.js`
+  - A test to test the `create` function
+  - A test to test the `findAll` function
+  - A test to test the `findById` function
+  - A test to test the `destroy` function
+  - A test to test the `search` function
 
 - UI Tests: Use a headless browser testing libary (like PhantomJS)
   - As a user when I navigate to the `/contacts/new` page I should see a form which lets me create a new contact
