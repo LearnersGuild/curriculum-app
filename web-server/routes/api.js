@@ -7,7 +7,7 @@ module.exports = app => {
 
   app.use('/api', bodyParser.json())
 
-  app.post('/api/checks/status', (request, response, next) => {
+  app.post('/api/skill-checks/status', (request, response, next) => {
     const userId = request.user.id
     const { labels } = request.body
     queries.getChecksForUserAndLabels({userId, labels})
@@ -21,11 +21,11 @@ module.exports = app => {
       .catch(next)
   })
 
-  app.post('/api/checks/set', (request, response, next) => {
+  app.post('/api/skill-checks/set', (request, response, next) => {
     const user_id = request.user.id
     const { label, checked } = request.body
     const referrer = request.header('Referer');
-    commands.setCheck({user_id, label, checked, referrer})
+    commands.setSkillCheck({user_id, label, checked, referrer})
       .then(_ => {
         response.json({saved: true})
       })
