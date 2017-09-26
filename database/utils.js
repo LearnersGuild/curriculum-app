@@ -57,7 +57,7 @@ const migrateSkillChecks = (knex) => {
           inserts.push(
             knex
               .insert({
-                updated_at: check.updated_at,
+                occurred_at: check.updated_at,
                 user_id: check.user_id,
                 label: label
               })
