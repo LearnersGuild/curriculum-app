@@ -122,6 +122,7 @@ javascript truthy falsy
 - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Control_flow_and_error_handling
 - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Operator_Precedence
 - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Property_Accessors
+- [Which Array Function When? (a simple explanation of when to use map, reduce, filter, and forEach)](https://dev.to/andrew565/which-array-function-when?utm_content=bufferb9e7b&utm_medium=social&utm_source=facebook.com&utm_campaign=buffer)
 - http://javascriptissexy.com/javascript-objects-in-detail/
 - https://medium.com/@prufrock123/js-dot-notation-vs-bracket-notation-797c4e34f01d
 - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/keys
