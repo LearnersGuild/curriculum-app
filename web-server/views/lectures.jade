@@ -1,0 +1,29 @@
+extends layout
+
+block content
+  h1 Lectures
+  - var url = 'https://www.youtube.com/watch?v='
+  table.table
+    thead
+      tr
+        th
+        th Title
+        th Description
+    tbody
+    each video in videos
+        tr
+          th(scope='row')
+            a(href=`${url + video.resourceId.videoId}` target='_blank')
+              img(src=`${video.thumbnails.default.url}`)
+          td.lectures-title
+            a(href=`${url + video.resourceId.videoId}` target='_blank') #{video.title}
+          td #{video.description}
+
+  nav(aria-label='Search Results').lectures-nav
+    ul.pagination
+      if prevPageToken
+        li.page-item
+          a.page-link(href=`/lectures/${prevPageToken}`) Prev Page
+      if nextPageToken
+        li.page-item
+          a.page-link(href=`/lectures/${nextPageToken}`) Next Page
