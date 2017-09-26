@@ -66,7 +66,7 @@ describe('digest', function(){
 
         if (missingModuleIds.length > 0) {
           throw new AssertionError(
-            `The following phases referenced by phases are missing:` +
+            `The following modules, referenced by phase READMEs, are missing:` +
             `\n   - ${missingModuleIds.join("\n    - ")}`
           )
         }
