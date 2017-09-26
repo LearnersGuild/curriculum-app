@@ -55,6 +55,6 @@ As with phases 1, 2, and 5, weekly (cycle-based) project tracking for learners i
 
 To begin preparing for your work in Phase 4, you should read the following documentation and follow its instructions:
 
-- [learning-os-software README file](https://github.com/jrpool/learning-os-software)
-- [Learning OS software best practices, global requirements, and architecture](https://github.com/jrpool/learning-os-software/blob/master/SUMMARY.md) 
+- [learning OS software README file](https://github.com/LearnersGuild/learning-os-software)
+- [Learning OS software best practices, global requirements, and architecture](https://github.com/LearnersGuild/learning-os-software/blob/master/SUMMARY.md) 
 - [Git Workflow](development-guide.md)
