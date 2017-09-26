@@ -36,6 +36,7 @@ require('./routes/calendar')(app)
 require('./routes/cos')(app)
 require('./routes/backoffice')(app)
 require('./routes/profile')(app)
+require('./routes/lectures')(app)
 
 app.get('/', (request, response, next) => {
   response.renderMarkdownFile(`/README.md`)
