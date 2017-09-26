@@ -1,6 +1,7 @@
 require('../environment')
 const https = require('express-sslify').HTTPS
 const express = require('express')
+const bodyParser = require('body-parser')
 const compression = require('compression')
 
 
@@ -18,6 +19,8 @@ if (process.env.NODE_ENV === 'production') {
 app.get('/_status', (request, response, next) => {
   response.send('status ok')
 })
+
+app.use(bodyParser({ urlencoded: true }))
 
 app.use(compression())
 require('./routes/assets')(app)

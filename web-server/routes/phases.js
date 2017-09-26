@@ -1,4 +1,5 @@
 const queries = require('../../database/queries')
+const commands = require('../../database/commands')
 
 module.exports = app => {
 
@@ -46,6 +47,24 @@ module.exports = app => {
 
   app.get('/phases/3/goals', (request, response, next) => {
     response.render('phases/goals', {title: 'Phase 3 Goals'})
+  })
+
+  app.get('/phases/4/status', (request, response, next) => {
+    const userId = request.user.id
+    request.backOffice.getPhase4Statuses()
+      .then(users => {
+        response.render('users/status', {title: 'Phase 4 Status', users, userId})
+      })
+      .catch(next)
+  })
+
+  app.post('/phases/4/status', (request, response, next) => {
+    const user_id = request.user.id
+    const {status} = request.body
+    commands.setStatus({user_id, status})
+      .then(() => {
+        response.redirect('/phases/4/status')
+      })
   })
 
   app.use('/phases/:phaseNumber/dashboard', app.ensureAdmin)
