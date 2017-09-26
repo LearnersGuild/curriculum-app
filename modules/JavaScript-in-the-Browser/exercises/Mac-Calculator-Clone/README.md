@@ -29,13 +29,11 @@ deciding how faithful to the original your version will be. Give that question s
 help you make an informed decision. The Mac calculator has changed over time, and there have been criticisms
 of both the look-and-feel and the functionality of this application (and its competitors). See, for example:
 
-```
-http://lowendmac.com/2015/mac-calculators-from-jobsian-simplicity-to-eye-candy/
-https://apple.stackexchange.com/questions/214839/how-to-solve-the-issue-of-on-calculator-giving-different-results-on-iphone-v
-https://github.com/jrpool/calculator
-http://stulta.com/forumo/archives/2089#calc
-http://www.harold.thimbleby.net/cv/files/hucalc.pdf
-```
+- http://lowendmac.com/2015/mac-calculators-from-jobsian-simplicity-to-eye-candy/
+- https://apple.stackexchange.com/questions/214839/how-to-solve-the-issue-of-on-calculator-giving-different-results-on-iphone-v
+- https://github.com/jrpool/calculator
+- http://stulta.com/forumo/archives/2089#calc
+- http://www.harold.thimbleby.net/cv/files/hucalc.pdf
 
 ### In this stage you will be using at least the following skills:
 
