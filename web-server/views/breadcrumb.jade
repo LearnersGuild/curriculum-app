@@ -10,6 +10,9 @@ ol.breadcrumb.bg-light-grey
     - let part = decodeURIComponent(breadcrumbs[index].replace(/-/g,' '))
     if index === breadcrumbs.length - 1
       li.active= part
+    else if part === "exercises"
+      li
+        a(href='/'+breadcrumbs.slice(0, index).join('/')+'/#exercises')= part
     else
       li
         a(href='/'+breadcrumbs.slice(0, index+1).join('/')+'/')= part
