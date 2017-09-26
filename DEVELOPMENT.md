@@ -23,9 +23,13 @@ mehserve run
 
 #### Setup repo
 
-Fork and clone the curriculum repository.
-Run 'npm install'.
+First, fork and clone the curriculum repository.
 
+#### Install Node Packages
+
+```bash
+npm install
+```
 
 #### Creating your `.env` file
 
