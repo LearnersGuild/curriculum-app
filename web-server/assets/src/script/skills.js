@@ -53,6 +53,7 @@ $(reloadSkillCheckboxes)
 
 // Skills List Behaviors
 
+
 const setFilter = filter => {
   $('.skills-list-filter-input').val(filter)
   filterSkillsList(filter)
@@ -65,7 +66,7 @@ const matchesFilters = (filters, string) => {
 }
 
 const filterSkillsList = filter => {
-  const filters = filter.trim().toLowerCase().split(/\s+/)
+  const filters = (filter || '').trim().toLowerCase().split(/\s+/)
   $('.skills-list .skills-list-list > li').each((i, skill) => {
     if (filter.length === 0 || matchesFilters(filters, $(skill).text())){
       $(skill).show()
@@ -74,6 +75,10 @@ const filterSkillsList = filter => {
     }
   })
 }
+
+$(() => {
+  filterSkillsList( $('.skills-list-filter-input').val())
+})
 
 $(document).on('keyup', '.skills-list-filter-input', event => {
   if (event.key === "Escape" )
