@@ -2,14 +2,21 @@ const knex = require('./knex')
 
 const getChecksForUserAndLabels = ({userId, labels}) => {
   let query = knex
-    .select('*')
-    .from('checks')
+    .select('label')
+    .from('skill_checks')
     .where({user_id: userId})
 
   if (labels && labels.length > 0)
     query = query.whereIn('label', labels)
 
-  return query.then(hashChecksByLabel)
+  return query.then(rows => {
+    const results = {}
+    labels = labels || rows.map(row => row.label)
+    labels.forEach(label => {
+      results[label] = rows.some(row => row.label === label)
+    })
+    return results
+  })
 }
 
 const getCheckLogsForUsers = userIds => {
@@ -28,14 +35,6 @@ const getCheckLogsForUsers = userIds => {
       })
       return checkLogsByUserId
     })
-}
-
-const hashChecksByLabel = checks => {
-  const checkedMap = {}
-  checks.forEach(check => {
-    checkedMap[check.label] = check.checked
-  })
-  return checkedMap
 }
 
 module.exports = {
