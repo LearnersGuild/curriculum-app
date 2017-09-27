@@ -69,7 +69,7 @@ const processContact = function(_contact){
       value = parseDate(value)
 
     if (propType === 'Phase' && typeof value !== 'number')
-      value = Number.parseInt(value.replace('Phase ',''))
+      value = value ? Number.parseInt(value.replace('Phase ','')) : null
 
     contact[propName] = value
   })

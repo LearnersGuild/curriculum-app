@@ -21,10 +21,11 @@ class EchoClient {
         }
       }
     `).then(response => {
-      response.data.findUsers.forEach(user => {
-        const learner = users.find(learner => learner.handle === user.handle)
-        if (!learner) return
-        if (user.phase) learner.phase = user.phase.number
+      response.data.findUsers.forEach(echoUser => {
+        const user = users.find(user => user.handle === echoUser.handle)
+        if (!user) return
+        if (echoUser.phase) user.phase = echoUser.phase.number
+        user._echoPhase = echoUser.phase ? echoUser.phase.number : null
       })
       return users
     })

@@ -126,6 +126,8 @@ const mergeHubspotContactIntoUser = (user, contact) => {
   user.hubspotURL = contact.url
   user.nickname = contact.nickname
 
+  user._hubspotPhase = contact.phase
+
   user.enrolleeStartDate = contact.enrollee_start_date
 
   user.phase1StartDate = contact.date_phase_1
