@@ -53,6 +53,11 @@ $(reloadSkillCheckboxes)
 
 // Skills List Behaviors
 
+$(document).ready(()  => {
+  const filter = $('.skills-list-filter-input').val() || ''
+  filterSkillsList(filter)
+})
+
 const setFilter = filter => {
   $('.skills-list-filter-input').val(filter)
   filterSkillsList(filter)
