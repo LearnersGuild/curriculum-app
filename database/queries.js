@@ -3,7 +3,7 @@ const knex = require('./knex')
 const getChecksForUserAndLabels = ({userId, labels}) => {
   let query = knex
     .select('*')
-    .from('checks')
+    .from('skill_checks')
     .where({user_id: userId})
 
   if (labels && labels.length > 0)
@@ -16,7 +16,7 @@ const getCheckLogsForUsers = userIds => {
   return knex
     .select('*')
     .from('event_logs')
-    .where('type', 'check')
+    .where('type', 'skill_check')
     .whereIn('user_id', userIds)
     .orderBy('occurred_at', 'asc')
     .then(checkLogs => {
