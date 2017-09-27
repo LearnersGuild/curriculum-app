@@ -25,10 +25,51 @@ describe('digest', function(){
       expect(Object.keys(this.digest)).to.eql([
         "modules",
         "phases",
+        "glossary",
         "skillContexts",
         "skills",
         "report",
       ])
+    })
+
+    describe('.glossary', function(){
+      before(function(){
+        return digest().then(digest => {
+          this.digest = digest
+        })
+      })
+      it('should be an object', function() {
+        expect(this.digest.glossary).to.be.a('object')
+        expect(this.digest.glossary).to.not.be.an('array')
+      })
+      it('should contain terms', function(){
+        expect(Object.keys(this.digest.glossary).length).to.be.gt(0)
+      })
+
+      describe('[term]', function(){
+
+        let term
+        beforeEach(function(){
+          const termId = Object.keys(this.digest.glossary)[0]
+          term = this.digest.glossary[termId]
+        })
+
+        it('should be an object', function(){
+          expect(term).to.be.a('object')
+        })
+
+        it('should have an id', function(){
+          expect(term.id).to.be.a('string')
+        })
+
+        it('should have a value', function(){
+          expect(term.value).to.be.a('string')
+        })
+
+        it('should have a path', function(){
+          expect(term.path).to.be.a('string')
+        })
+      })
     })
 
     describe('.skills', function(){
