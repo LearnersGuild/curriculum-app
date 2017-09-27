@@ -1,81 +1,73 @@
-const databaseUtils = require('../utils')
 
-exports.up = knex =>
-  Promise.all([
-    knex.schema.createTable('event_logs', table => {
-      table.timestamp('occurred_at').defaultTo(knex.fn.now())
+exports.up = knex => {
+  const createEventLogsTable = () => {
+    return knex.schema.createTable('event_logs', table => {
       table.string('user_id').notNullable()
       table.string('type').notNullable()
+      table.timestamp('occurred_at').defaultTo(knex.fn.now())
       table.jsonb('metadata').notNullable()
     })
-    .then(tables =>
-      migrateCheckLogs(knex)
-    ),
+    .then(_ => {
+      console.log('insertSkillCheckLog DONE')
+    })
+  }
 
-    knex.schema.createTable('skill_checks', table => {
-      table.timestamp('occurred_at').defaultTo(knex.fn.now())
+  const migrateCheckLogs = () => {
+    return knex('event_logs').insert(function() {
+      this
+        .select([
+          'user_id',
+          knex.raw(`'skill_check' as "type"`),
+          'occurred_at',
+          knex.raw(`
+            json_build_object(
+              'label', "check_log"."label",
+              'checked', "check_log"."checked",
+              'referrer', "check_log"."referrer"
+            ) as "metadata"
+          `)
+        ])
+        .from('check_log')
+    })
+    .then(_ =>
+      knex.schema.dropTable('check_log')
+    )
+  }
+
+  const createSkillChecksTable = () => {
+    return knex.schema.createTable('skill_checks', table => {
       table.string('user_id').notNullable()
       table.string('label').notNullable()
+      table.timestamp('updated_at').defaultTo(knex.fn.now())
     })
-    .then(tables =>
-      migrateSkillChecks(knex)
-    ),
-  ])
+    .then(_ => {
+      console.log('insertSkillCheck DONE')
+    })
+  }
 
+  const migrateSkillChecks = () => {
+    return knex('skill_checks').insert(function() {
+      this
+        .select([
+          'user_id',
+          'label',
+          'updated_at',
+        ])
+        .from('checks')
+    })
+    .then(_ =>
+      knex.schema.dropTable('checks')
+    )
+  }
+
+  return Promise.all([
+    createEventLogsTable().then(migrateCheckLogs),
+    createSkillChecksTable().then(migrateSkillChecks),
+  ])
+}
 
 exports.down = knex =>
   Promise.all([
     knex.schema.dropTable('event_logs'),
     knex.schema.dropTable('skill_checks'),
   ])
-
-
-const migrateCheckLogs = (knex) => {
-  return knex
-    .select('*')
-    .from('check_log')
-    .then(checkLogs => {
-      const inserts = []
-      checkLogs.forEach(checkLog => {
-        const label = nameToId(checkLog.label)
-        inserts.push(
-          knex
-            .insert({
-              occurred_at: checkLog.occurred_at,
-              user_id: checkLog.user_id,
-              type: 'skill_check',
-              metadata: {
-                label: label,
-                checked: checkLog.checked,
-                referrer: checkLog.referrer
-              }
-            })
-            .into('event_logs')
-        )
-      })
-      return Promise.all(inserts)
-    })
-}
-
-const migrateSkillChecks = (knex) => {
-  return knex
-    .select('*')
-    .from('checks')
-    .then(checks => {
-      const inserts = []
-      checks.filter(element => element.checked)
-        .forEach(check => {
-          const label = nameToId(check.label)
-          inserts.push(
-            knex
-              .insert({
-                occurred_at: check.updated_at,
-                user_id: check.user_id,
-                label: label
-              })
-              .into('skill_checks')
-          )
-        })
-      return Promise.all(inserts)
-    })
-}
