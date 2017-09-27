@@ -18,15 +18,11 @@ block body
         th name
         th nickname
         th phone
-        th dateOfBirth
-        th timezone
         th roles
-        th createdAt
-        th updatedAt
-        th IDM id
-        th vid
         th enrolleeStartDate
         th phase
+        th Echo Phase
+        th Hubspot Phase
         th currentPhaseWeekNumber
         th phase0StartDate
         th phase1StartDate
@@ -45,6 +41,12 @@ block body
         th echoProfileURL
         th slackDirectMessageURL
         th hubspotURL
+        th dateOfBirth
+        th timezone
+        th IDM id
+        th vid
+        th createdAt
+        th updatedAt
     tbody
       for user in users
         tr
@@ -55,15 +57,11 @@ block body
           td= user.name
           td= user.nickname
           td= user.phone
-          td= renderDate(user.dateOfBirth)
-          td= user.timezone
           td= user.roles.join(', ')
-          td= renderDate(user.createdAt)
-          td= renderDate(user.updatedAt)
-          td= user.id
-          td= user.vid
           td= renderDate(user.enrolleeStartDate)
           td= user.phase
+          td= user._echoPhase
+          td= user._hubspotPhase
           td= user.currentPhaseWeekNumber
           td= renderDate(user.phase0StartDate)
           td= renderDate(user.phase1StartDate)
@@ -87,3 +85,9 @@ block body
             a(href=user.slackDirectMessageURL)= user.handle
           td
             a(href=user.hubspotURL)= user.vid
+          td= renderDate(user.dateOfBirth)
+          td= user.timezone
+          td= user.id
+          td= user.vid
+          td= renderDate(user.createdAt)
+          td= renderDate(user.updatedAt)
