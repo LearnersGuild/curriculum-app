@@ -32,6 +32,15 @@ const rawTextToName = rawText =>
     .replace(/^\s*/,'')
     .replace(/\s*$/,'')
 
+const indexById = terms => {
+  return terms.reduce((index, term) => {
+    index[term.id] = term
+    return index
+  }, {})
+}
+
+const noExtension = module => !module.includes('.')
+
 const extractListFromSection = (document, text, depth) => {
   // console.log('===== extractListFromSection ====', text, depth)
   let
@@ -83,4 +92,6 @@ const extractListFromSection = (document, text, depth) => {
   rawTextToName,
   nameToId,
   extractListFromSection,
+  indexById,
+  noExtension,
  }
