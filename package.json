@@ -9,7 +9,7 @@
     "dev": "nodemon web-server",
     "start": "node web-server",
     "db:migrate": "knex migrate:latest",
-    "test": "mocha -G -r ./mocha.config.js $(find digest web-server database backoffice | grep .test.js) ",
+    "test": "./bin/test",
     "test:watch": "npm test -- --watch",
     "webpack": "webpack --config ./web-server/webpack.config.js",
     "heroku-prebuild": "npm install && npm run webpack"
@@ -59,7 +59,7 @@
     "css-loader": "^0.28.4",
     "dotenv": "^4.0.0",
     "extract-text-webpack-plugin": "^3.0.0",
-    "mocha": "^3.4.2",
+    "mocha": "^3.5.3",
     "node-sass": "^4.5.3",
     "nodemon": "^1.11.0",
     "postcss-import": "^10.0.0",
