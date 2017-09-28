@@ -3,6 +3,20 @@ const qs = require('querystring')
 const API_KEY = process.env.YOUTUBE_API_KEY
 const URL = 'https://www.googleapis.com/youtube/v3/playlistItems'
 
+module.exports = app => {
+  app.get('/lectures(/:pageToken)?', (request, response, next) => {
+    requestYoutubeVideos(request.params.pageToken)
+      .then(videos => {
+        response.locals.title = 'Lectures'
+        response.locals.videos = videos
+        response.locals.nextPageToken = videos.nextPageToken || ''
+        response.locals.prevPageToken = videos.prevPageToken || ''
+        response.render('lectures')
+      })
+      .catch(next)
+  })
+}
+
 const generateApiUrl = function(pageToken) {
   const query = qs.stringify({
     part: 'snippet',
@@ -14,19 +28,14 @@ const generateApiUrl = function(pageToken) {
   return `${URL}?${query}`
 }
 
-module.exports = app => {
-  app.get('/lectures(/:pageToken)?', (request, response, next) => {
-    const { pageToken } = request.params
-    const url = generateApiUrl(pageToken)
-    fetch(url)
-      .then(function(res) {
-          return res.json();
-      }).then(function(json) {
-          app.locals.nextPageToken = json.nextPageToken || ''
-          app.locals.prevPageToken = json.prevPageToken || ''
-          const videos = json.items.map(video => video.snippet)
-          response.render('lectures', { title: 'Lectures', videos })
-      })
-      .catch(next)
-  })
-}
+const requestYoutubeVideos = pageToken =>
+  fetch(generateApiUrl(pageToken))
+    .then(response => response.json())
+    .then(response => {
+      if (response.error)
+        throw new Error(`Unable to request videos from youtube: ${response.error.message}`)
+      const videos = response.items.map(video => video.snippet)
+      videos.nextPageToken = response.nextPageToken
+      videos.prevPageToken = response.prevPageToken
+      return videos
+    })
