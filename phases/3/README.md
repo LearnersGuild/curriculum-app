@@ -35,10 +35,6 @@ In this phase you will learn…
 - _P:_ [Debugging Snapshot - Goal 448](../../modules/Debugging-Snapshot--Goal-448)
 - _P:_ [Refactoring Snapshot - Goal 449](../../modules/Refactoring-Snapshot--Goal-449)
 
-## Youtube Playlist
-
-- https://www.youtube.com/playlist?list=PLcSbxZVkmW_gHJIVLffRGJ4FRXy9LNabc
-
 ## Video Library
 
 Please look at the [Phase 3 Playlist](https://www.youtube.com/playlist?list=PLcSbxZVkmW_gHJIVLffRGJ4FRXy9LNabc) on YouTube. The playlist is constantly updated with new videos, which may be relevant to the work you are doing.
