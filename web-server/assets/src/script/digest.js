@@ -1,9 +1,11 @@
+let digest
 const loadDigest = () => {
-  if (digest) return Promise.resolve(digest)
   return new Promise((resolve, reject) => {
-    $.getJSON('/digest.json', _digest => {
-      digest = _digest
-      console.info('DIGEST LOADED', digest)
+    if (digest) return resolve(digest)
+    $(() => {
+      const json = $('.digest-data').text()
+      if(!json) return reject(new Error('.digest-data not found or empty'))
+      digest = JSON.parse(json)
       resolve(digest)
     })
   })

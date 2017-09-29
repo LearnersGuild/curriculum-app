@@ -18,5 +18,6 @@ block content
           a(href="/phases/#{phase.number}/dashboard") Dashboard
 
   textarea.hidden.skills-data= JSON.stringify(currentModuleSkills)
+  textarea.hidden.digest-data= JSON.stringify(digest)
 
   .markdown-body !{content}
