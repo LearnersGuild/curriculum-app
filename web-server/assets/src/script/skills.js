@@ -59,16 +59,15 @@ const setFilter = filter => {
   filterSkillsList(filter)
 }
 
-const matchesFilters = (filters, string) => {
+const matchFilter = (filter, string) => {
   string = string.toLowerCase()
-  return filters.every(filter => string.includes(filter))
-  return filters.some(filter => string.includes(filter))
+  return (filter || '').trim().toLowerCase().split(/\s+/)
+    .every(filter => string.includes(filter))
 }
 
 const filterSkillsList = filter => {
-  const filters = (filter || '').trim().toLowerCase().split(/\s+/)
   $('.skills-list .skills-list-list > li').each((i, skill) => {
-    if (filter.length === 0 || matchesFilters(filters, $(skill).text())){
+    if (filter.length === 0 || matchFilter(filter, $(skill).text())){
       $(skill).show()
     }else{
       $(skill).hide()
@@ -76,7 +75,21 @@ const filterSkillsList = filter => {
   })
 }
 
+const hideEmptyFilters = () => {
+  const skills =
+    $('.skills-list .skills-list-list > li').map((i, n) => $(n).text() || '')
+  )
+  $('.skills-list-filter').each((index, filterNode) => {
+    const filter = $(filterNode).text()
+    const hasSkills = skills.some(skill => {
+      return skill.toLowerCase().includes(filter.toLowerCase())
+    })
+    if (!hasSkills) $(filterNode).hide()
+  })
+}
+
 $(() => {
+  hideEmptyFilters()
   filterSkillsList( $('.skills-list-filter-input').val())
 })
 
