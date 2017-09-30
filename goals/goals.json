@@ -319,5 +319,21 @@
     "phase": 3,
     "url": "https://curriculum.learnersguild.org/modules/Debugging-Snapshot--Goal-448",
     "dynamic": false
+  },
+  "449": {
+    "authors": [
+      "punitrathore"
+    ],
+    "team_size": 2,
+    "goal_id": 449,
+    "title": "Refactoring Snapshot",
+    "created_at": "2017-09-29T22:22:22Z",
+    "labels": [
+      "practice"
+    ],
+    "published": true,
+    "phase": 3,
+    "url": "https://curriculum.learnersguild.org/modules/Refactoring-Snapshot--Goal-449",
+    "dynamic": false
   }
 }

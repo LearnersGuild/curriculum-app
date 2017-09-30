@@ -35,6 +35,10 @@ In this phase you will learn…
 - _P:_ [Debugging Snapshot - Goal 448](../../modules/Debugging-Snapshot--Goal-448)
 - _P:_ [Refactoring Snapshot - Goal 449](../../modules/Refactoring-Snapshot--Goal-449)
 
+## Youtube Playlist
+
+- https://www.youtube.com/playlist?list=PLcSbxZVkmW_gHJIVLffRGJ4FRXy9LNabc
+
 ## Recommended Roadmap
 
 ### Week 1
