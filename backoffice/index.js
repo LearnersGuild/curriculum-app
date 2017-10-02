@@ -1,4 +1,5 @@
 require('../environment')
+const moment = require('moment')
 const { IDMClient } = require('./idm')
 const { EchoClient } = require('./echo')
 const hubspot = require('./hubspot')
@@ -122,29 +123,38 @@ const getHubspotDataForUser = user =>
 
 const mergeHubspotContactIntoUser = (user, contact) => {
   user.errors = user.errors || []
-  user.vid = contact.vid
-  user.hubspotURL = contact.url
-  user.nickname = contact.nickname
+  user.vid = contact.vid || null
+  user.hubspotURL = contact.url || null
+  user.nickname = contact.nickname || null
 
-  user._hubspotPhase = contact.phase
+  user._echoPhase = user.phase || null
+  user._hubspotPhase = contact.phase || null
+  user._hubspotPhaseWeek = contact.phase_week || null
 
-  user.enrolleeStartDate = contact.enrollee_start_date
+  user.enrolleeStartDate = contact.enrollee_start_date || null
 
-  user.phase1StartDate = contact.date_phase_1
-  user.phase2StartDate = contact.date_phase_2
-  user.phase3StartDate = contact.date_phase_3
-  user.phase4StartDate = contact.date_phase_4
-  user.phase5StartDate = contact.date_phase_5
-  user.currentPhaseWeekNumber = contact.phase_week
+  user.phase1StartDate = contact.date_phase_1 || null
+  user.phase2StartDate = contact.date_phase_2 || null
+  user.phase3StartDate = contact.date_phase_3 || null
+  user.phase4StartDate = contact.date_phase_4 || null
+  user.phase5StartDate = contact.date_phase_5 || null
+
 
   user.phase = (
-    isValidPhase(user.phase) ? user.phase :
-    isValidPhase(contact.phase) ? contact.phase :
+    isValidPhase(user._hubspotPhase) ? user._hubspotPhase :
+    isValidPhase(user._echoPhase) ? user._echoPhase :
     user.phase5StartDate ? 5 :
     user.phase4StartDate ? 4 :
     user.phase3StartDate ? 3 :
     user.phase2StartDate ? 2 :
     user.phase1StartDate ? 1 :
+    null
+  )
+  user.phaseStartDate = user[`phase${user.phase}StartDate`]
+
+  user.currentPhaseWeekNumber = (
+    contact.phase_week ||
+    (user.phaseStartDate && moment().diff(user.phaseStartDate, 'week') ) ||
     null
   )
 
