@@ -54,4 +54,47 @@ module.exports = app => {
     )
   })
 
+  app.get(/\/backoffice\/users\/(\w+)(?:$|\.(json|csv))/, (request, response, next) => {
+    const handle = request.params["0"]
+    const format = (request.params["1"] || 'html').toLowerCase()
+
+    request.backOffice.getUserByHandle(handle, {
+      active: undefined,
+      includePhases: true,
+      includeHubspotData: true,
+    })
+    .then(user => {
+      if (format === 'html'){
+        response.render('backoffice/users/show', { user })
+      }
+      if (format === 'json'){
+        response.json({ user })
+      }
+      if (format === 'csv'){
+        const csv = ''
+        response.setHeader('Content-Type', 'text/csv')
+        response.setHeader("Content-Disposition", 'attachment; filename=users.csv')
+        response.send(csv)
+      }
+    })
+    .catch(next)
+  })
+
+  // Error Handler
+  app.use('/backoffice', (error, req, res, next) => {
+    let status = error.code || error.status
+    if (typeof status !== 'number') status = 500
+    const stack = process.env.NODE_ENV === 'development'
+      ? error.stack
+      : null
+    const json = {
+      error: {},
+    }
+    Object.assign(json.error, error)
+    json.error.message = error.message
+    json.error.stack = stack
+    res.status(status).json(json);
+  })
+
+
 }

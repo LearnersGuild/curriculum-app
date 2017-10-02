@@ -92,7 +92,10 @@ module.exports = app => {
   app.get('/phases/:phaseNumber/dashboard/learners/:learnerHandle', (request, response, next) => {
     const { learnerHandle } = request.params
 
-    request.getUserWithCheckLog(learnerHandle)
+    request.getUserWithCheckLog(learnerHandle, {
+      includePhases: true,
+      includeHubspotData: true,
+    })
       .then(learner => {
         response.render('phases/dashboard/learners/show', {learner, title: learnerHandle})
       })

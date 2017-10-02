@@ -21,7 +21,6 @@ app.get('/_status', (request, response, next) => {
 
 app.use(compression())
 require('./routes/assets')(app)
-app.use(require('cookie-parser')())
 require('./routes/goals')(app)
 require('./authentication')(app)
 require('./routes/api')(app)

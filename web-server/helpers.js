@@ -152,8 +152,8 @@ module.exports = app => {
       })
     }
 
-    request.getUserWithCheckLog = (handle) => {
-      return request.backOffice.getUserByHandle(handle)
+    request.getUserWithCheckLog = (handle, options={}) => {
+      return request.backOffice.getUserByHandle(handle, options)
         .then(learner => {
           return queries.getCheckLogsForUsers([learner.id])
           .then(checkLogs => {

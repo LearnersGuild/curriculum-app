@@ -15,8 +15,8 @@ block content
   else if user.phase
     h6
       | Phase: #{user.phase}
-      if user.currentPhaseWeekNumber
-        span  (#{user.currentPhaseWeekNumber}/8 weeks)
+      if user.phaseWeek
+        span  (#{user.phaseWeek}/8 weeks)
 
   ul.list-inline
     li
