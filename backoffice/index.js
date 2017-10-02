@@ -143,14 +143,10 @@ const mergeHubspotContactIntoUser = (user, contact) => {
   user.phase = (
     isValidPhase(user._hubspotPhase) ? user._hubspotPhase :
     isValidPhase(user._echoPhase) ? user._echoPhase :
-    user.phase5StartDate ? 5 :
-    user.phase4StartDate ? 4 :
-    user.phase3StartDate ? 3 :
-    user.phase2StartDate ? 2 :
-    user.phase1StartDate ? 1 :
     null
   )
-  user.phaseStartDate = user[`phase${user.phase}StartDate`]
+
+  user.phaseStartDate = user[`phase${user.phase}StartDate`] || null
 
   user.phaseWeek = (
     contact.phase_week ||
