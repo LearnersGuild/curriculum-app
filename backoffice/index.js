@@ -152,7 +152,7 @@ const mergeHubspotContactIntoUser = (user, contact) => {
   )
   user.phaseStartDate = user[`phase${user.phase}StartDate`]
 
-  user.currentPhaseWeekNumber = (
+  user.phaseWeek = (
     contact.phase_week ||
     (user.phaseStartDate && moment().diff(user.phaseStartDate, 'week') ) ||
     null

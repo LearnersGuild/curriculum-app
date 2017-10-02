@@ -23,7 +23,7 @@ block body
         th phase
         th Echo Phase
         th Hubspot Phase
-        th currentPhaseWeekNumber
+        th phaseWeek
         th phase0StartDate
         th phase1StartDate
         th phase2StartDate
@@ -62,7 +62,7 @@ block body
           td= user.phase
           td= user._echoPhase
           td= user._hubspotPhase
-          td= user.currentPhaseWeekNumber
+          td= user.phaseWeek
           td= renderDate(user.phase0StartDate)
           td= renderDate(user.phase1StartDate)
           td= renderDate(user.phase2StartDate)

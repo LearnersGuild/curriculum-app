@@ -24,4 +24,4 @@ block content
             - startDate = learner[`phase${phase.number}StartDate`]
             span(title=renderDate(startDate))= timeAgoInWords(startDate)
           td
-            progress(value=(learner.currentPhaseWeekNumber||1) max=8)
+            progress(value=(learner.phaseWeek||1) max=8)
