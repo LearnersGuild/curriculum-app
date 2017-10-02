@@ -43,10 +43,6 @@ app.get('/', (request, response, next) => {
   response.renderMarkdownFile(`/README.md`)
 })
 
-app.get('/*', (request, response, next) => {
-  response.renderFile(request.path)
-})
-
 ;[
   'CONTRIBUTING.md',
   'SUPPORT.md',
@@ -54,6 +50,11 @@ app.get('/*', (request, response, next) => {
   app.get(`/${topLevelMarkdownFile}`, (request, response, next) => {
     response.renderMarkdownFile(`/${topLevelMarkdownFile}`)
   })
+})
+
+// Last Route renders 404 Page
+app.get('*', (request, response, next) => {
+  response.renderNotFound()
 })
 
 

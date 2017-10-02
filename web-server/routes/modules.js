@@ -14,6 +14,7 @@ module.exports = app => {
     const { digest } = response
     const { renderSkill } = app.locals
     const currentModule = digest.modules[moduleName]
+    if (!currentModule) return next()
     const currentModuleSkills = currentModule.skills
       .map(id => {
         const skill = digest.skills[id]
