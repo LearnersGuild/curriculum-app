@@ -44,10 +44,12 @@ module.exports = app => {
     app.use(addUserToRequestFromJWT)
   }
 
+  const protocol = process.env.NODE_ENV === 'production' ? 'https' : 'http'
+
   app.use((request, response, next) => {
     const { user } = request
     if (!user){
-      const completeUrl = `${request.protocol}://${request.get('host')}${request.originalUrl}`
+      const completeUrl = `${protocol}://${request.get('host')}${request.originalUrl}`
       console.log('AUTH_DEBUG: redirecting to log in', {
         requestURL: completeUrl,
         lgJWT: request.cookies.lgJWT,
