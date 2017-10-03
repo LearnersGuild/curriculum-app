@@ -2,6 +2,12 @@
 
 ## Challenge Rating
 
+When using CRUD it is important to use the Chrome Developer Tools as a way
+to Function your HTTP into Params. The main Promise of a Repo is to keep you
+in your ZPD. Its important to bash your environment variable all over the shell
+until its life is terminal. oh unix.
+
+
 This goal will likely be within your ZPD if you ..
 
 - Can build CRUD apps from scratch with Node.js and PostgreSQL
@@ -21,3 +27,5 @@ This repo will test your ability to detect, analyze, and fix bugs in an existing
   - Adding a contact should add a new contact in the database, and redirect to the created contact
   - Clicking on the `Delete` link for a contact should delete the contact
   - Searching for a contact should list all the contacts which match the search string
+
+
