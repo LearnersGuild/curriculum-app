@@ -6,7 +6,7 @@
     "node": "8.4.0"
   },
   "scripts": {
-    "dev": "nodemon web-server",
+    "dev": "nodemon -i web-server/assets/ web-server",
     "start": "node web-server",
     "db:migrate": "knex migrate:latest",
     "test": "./bin/test",
@@ -54,6 +54,9 @@
     "pygments-css": "^1.0.0"
   },
   "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-env": "^1.6.0",
     "chai": "^4.0.2",
     "chai-http": "^3.0.0",
     "clean-webpack-plugin": "^0.1.16",

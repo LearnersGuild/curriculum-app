@@ -1,3 +1,4 @@
+const escapeRegExp = require('escape-string-regexp')
 const {loadDigest} = require('./digest')
 
 loadDigest().then((digest) => {

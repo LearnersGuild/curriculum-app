@@ -39,6 +39,13 @@ module.exports = {
       {
         test: /\.(sass|scss)$/,
         use: extractCSS.extract([ 'raw-loader', 'sass-loader' ]),
+      },
+      {
+        test: /\.js$/,
+        loader: 'babel-loader',
+        query: {
+          presets: ['env']
+        }
       }
     ]
   }
