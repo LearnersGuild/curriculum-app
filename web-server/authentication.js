@@ -47,7 +47,6 @@ module.exports = app => {
   app.use((request, response, next) => {
     const { user } = request
     if (!user){
-      console.log( '<3333333 redirecting to log in. <3333333' )
       const completeUrl = `${request.protocol}://${request.get('host')}${request.originalUrl}`
       console.log('AUTH_DEBUG: redirecting to log in', {
         requestURL: completeUrl,
