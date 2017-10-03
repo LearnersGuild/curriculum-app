@@ -1,0 +1,27 @@
+extends ../layout
+
+block content
+  mixin usersList(_users)
+    for user in _users
+      .users-status
+        .users-grid-member.well(data-user=JSON.stringify(user))
+          a(href='/users/'+user.handle)
+            .users-grid-member-name= user.name
+            .users-grid-member-handle= user.handle
+            .users-grid-member-avatar
+              img(src=user.avatarUrl)
+        p.users-status-content= user.status
+        if userId === user.id
+          button.btn.btn-primary(type='button' data-toggle='modal' data-target='#statusModal') Update Your Status
+      .modal.fade#statusModal(role='dialog')
+        .modal-dialog
+          .modal-content
+            .modal-header
+              button.close(type='button' data-dismiss='modal') &times;
+              h4.modal-title Update Your Status
+            .modal-body
+              form(action='/phases/4/status' method='post')
+                textarea(name='status' rows='6' cols='70')
+                button.btn.btn-default(type='submit') Update
+  h3 Phase #{phase.number} Status Reports
+  +usersList(users.filter(u => u.phase === 4))

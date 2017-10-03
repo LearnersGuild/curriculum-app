@@ -3,6 +3,7 @@ const moment = require('moment')
 const { IDMClient } = require('./idm')
 const { EchoClient } = require('./echo')
 const hubspot = require('./hubspot')
+const knex = require('../database/knex')
 const { PHASES, isValidPhase, isUserALearner, isUserActive, isUserInactive } = require('./util')
 
 module.exports = class BackOffice {
@@ -79,6 +80,29 @@ module.exports = class BackOffice {
       })
   }
 
+  getPhase4Statuses(){
+    return this.getAllUsers({
+      includePhases: true,
+      phase: 4,
+    })
+    .then(users => {
+      const userIds = users.map(user => user.id)
+      return knex
+        .select('*')
+        .from('phase_4_status')
+        .whereIn('user_id', userIds)
+        .then(statuses => {
+          users.map(user => {
+            statuses.forEach(status => {
+              user.status = status.user_id === user.id
+              ? status.status
+              : 'Status Not Updated'
+            })
+          })
+          return users
+        })
+    })
+  }
 
   getPhasesForUsers(users){
     return this.echo.getPhasesForUsers(users)
