@@ -1,5 +1,8 @@
+const bodyParser = require('body-parser')
 const queries = require('../../database/queries')
 const commands = require('../../database/commands')
+
+const urlEncodedBodyParser = bodyParser({ urlencoded: true })
 
 module.exports = app => {
 
@@ -51,14 +54,14 @@ module.exports = app => {
 
   app.get('/phases/4/status', (request, response, next) => {
     const userId = request.user.id
-    request.backOffice.getPhase4Statuses()
+    request.getPhase4UsersWithStatuses()
       .then(users => {
         response.render('users/status', {title: 'Phase 4 Status', users, userId})
       })
       .catch(next)
   })
 
-  app.post('/phases/4/status', (request, response, next) => {
+  app.post('/phases/4/status', urlEncodedBodyParser, (request, response, next) => {
     const user_id = request.user.id
     const {status} = request.body
     commands.setStatus({user_id, status})

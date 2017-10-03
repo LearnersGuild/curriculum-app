@@ -13,6 +13,9 @@ block content
         a(href="/phases/#{phase.number}/skills") Skills
       li
         a(href="/phases/#{phase.number}/schedule") Schedule
+      if phase.number === 4
+        li
+          a(href="/phases/4/status") Status
       if currentUser.isAdmin
         li
           a(href="/phases/#{phase.number}/dashboard") Dashboard

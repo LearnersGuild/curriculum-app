@@ -186,6 +186,27 @@ module.exports = app => {
         })
     }
 
+    request.getPhase4Users = function(){
+      return this.backOffice.getAllUsers({
+        includePhases: true,
+        phase: 4,
+      })
+    }
+
+    request.getPhase4UsersWithStatuses = function(){
+      return this.getPhase4Users()
+      .then(users => {
+        const userIds = users.map(user => user.id)
+        return queries.getPhase4Status(userIds).then(statuses => {
+          users.forEach(user => {
+            const status = statuses.find(status => status.user_id === user.id)
+            user.status = status ? status.status : '[no status found]'
+          })
+          return users
+        })
+      })
+    }
+
     next()
   })
 }
