@@ -55,6 +55,7 @@ module.exports = app => {
         lgJWT: request.cookies.lgJWT,
       })
       response.redirect(
+        302, // temporary redirect
         `${process.env.IDM_BASE_URL}/sign-in?redirect=${encodeURIComponent(completeUrl)}`
       )
       return
