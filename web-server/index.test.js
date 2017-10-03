@@ -8,7 +8,7 @@ describe('webServer', function(){
       it('should redirect login', function(){
         return this
           .get(`/some-bad-url/${Math.random()}`)
-          .expectToRecirectToLogin()
+          .expectToRedirectToLogin()
       })
     })
 
@@ -16,7 +16,7 @@ describe('webServer', function(){
       it('should redirect login', function(){
         return this
           .get(`/`)
-          .expectToRecirectToLogin()
+          .expectToRedirectToLogin()
       })
     })
 

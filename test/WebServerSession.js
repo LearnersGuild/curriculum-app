@@ -40,7 +40,7 @@ module.exports = class WebServerSession {
 }
 
 
-Request.prototype.expectToRecirectToLogin = function(){
+Request.prototype.expectToRedirectToLogin = function(){
   return this
   .redirects(0)
   .then(
