@@ -52,7 +52,7 @@ app.get('/', (request, response, next) => {
 })
 
 app.get('*', (request, response, next) => {
-  response.renderFile(request.path)
+  response.renderNotFound()
 })
 
 if (!module.parent) {
