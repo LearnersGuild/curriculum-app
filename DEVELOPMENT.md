@@ -1,6 +1,6 @@
 # DEVELOPMENT
 
-[![CircleCI](https://circleci.com/gh/GuildCrafts/curriculum.svg?style=svg)](https://circleci.com/gh/GuildCrafts/curriculum)
+[![CircleCI](https://circleci.com/gh/LearnersGuild/curriculum.svg?style=svg&circle-token=364528d1f379d9477094729dfa2aa22fc26867bc)](https://circleci.com/gh/LearnersGuild/curriculum)
 
 ## Dev Environment Setup
 
