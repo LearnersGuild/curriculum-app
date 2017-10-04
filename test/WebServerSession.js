@@ -9,7 +9,7 @@ module.exports = class WebServerSession {
   get(path, query){
     return this.agent
       .get(path)
-      .set('Host', 'http://curriculum.learnersguild.test')
+      .set('Host', 'curriculum.learnersguild.test')
   }
 
   post(path, query){
