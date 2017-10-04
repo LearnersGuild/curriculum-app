@@ -23,7 +23,7 @@ mixin skillsList(skills)
               ul.dropdown-menu(role='menu')
                 for filter in digest.skillContexts
                   li
-                    a.skills-list-filter(href='')= filter
+                    a.skills-list-filter.opt(href='', data-value=filter)= filter
                 li.divider
                 li
                   a.skills-list-clear-filter(href='#') Clear

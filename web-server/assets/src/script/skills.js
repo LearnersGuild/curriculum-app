@@ -81,17 +81,21 @@ const hideEmptyFilters = () => {
     .map(n => $(n).text() || '')
 
   $('.skills-list-filter').each((index, filterNode) => {
+    filterNode = $(filterNode)
     const filter = $(filterNode).text()
-    const hasSkills = skills.some(skill => {
-      return skill.toLowerCase().includes(filter.toLowerCase())
-    })
-    if (!hasSkills) $(filterNode).hide()
+    const numberOfSkills = skills
+      .filter(skill => matchFilter(filter, skill)).length
+    if (numberOfSkills > 0) {
+      filterNode.text(`(${numberOfSkills}) ${filterNode.text()}`)
+    } else {
+      filterNode.hide()
+    }
   })
 }
 
 $(() => {
   hideEmptyFilters()
-  filterSkillsList( $('.skills-list-filter-input').val())
+  filterSkillsList($('.skills-list-filter-input').val())
 })
 
 $(document).on('keyup', '.skills-list-filter-input', event => {
@@ -103,7 +107,7 @@ $(document).on('keyup', '.skills-list-filter-input', event => {
 
 $(document).on('click', '.skills-list-filter', event => {
   event.preventDefault()
-  setFilter(event.target.innerText)
+  setFilter(event.target.dataset.value)
 })
 
 $(document).on('click', '.skills-list-clear-filter', event => {
