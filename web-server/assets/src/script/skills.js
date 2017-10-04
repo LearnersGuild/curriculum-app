@@ -76,9 +76,10 @@ const filterSkillsList = filter => {
 }
 
 const hideEmptyFilters = () => {
-  const skills =
-    $('.skills-list .skills-list-list > li').map((i, n) => $(n).text() || '')
-  )
+  const skills = $('.skills-list .skills-list-list > li')
+    .get()
+    .map(n => $(n).text() || '')
+
   $('.skills-list-filter').each((index, filterNode) => {
     const filter = $(filterNode).text()
     const hasSkills = skills.some(skill => {
