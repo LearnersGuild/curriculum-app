@@ -50,10 +50,6 @@ module.exports = app => {
     const { user } = request
     if (!user){
       const completeUrl = `${protocol}://${request.get('host')}${request.originalUrl}`
-      console.log('AUTH_DEBUG: redirecting to log in', {
-        requestURL: completeUrl,
-        lgJWT: request.cookies.lgJWT,
-      })
       response.redirect(
         302, // temporary redirect
         `${process.env.IDM_BASE_URL}/sign-in?redirect=${encodeURIComponent(completeUrl)}`
