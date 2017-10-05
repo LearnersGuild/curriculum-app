@@ -7,28 +7,40 @@ module.exports = app => {
 
   app.use('/api', bodyParser.json())
 
-  app.post('/api/skill-checks/status', (request, response, next) => {
+  app.post('/api/skills/checked', (request, response, next) => {
     const userId = request.user.id
-    const { labels } = request.body
-    queries.getChecksForUserAndLabels({userId, labels})
-      .then(checks => {
-        const map = {}
-        labels.forEach(label => {
-          map[label] = !!checks[label]
-        })
-        response.json(map)
+    const skillIds = request.body.skills || []
+    queries.getCheckedSkills(userId, skillIds)
+      // .catch(error => {
+      //   console.log(require('../../database/knex'))
+      //   console.error(error)
+      //   throw error
+      // })
+      .then(checkedSkills => {
+        response.json(checkedSkills)
+      })
+      .catch(error => {
+        console.log('ETF?F?F?F?', error)
+        throw error
       })
       .catch(next)
   })
 
-  app.post('/api/skill-checks/set', (request, response, next) => {
-    const user_id = request.user.id
-    const { label, checked } = request.body
-    const referrer = request.header('Referer');
-    commands.setSkillCheck({user_id, label, checked, referrer})
-      .then(_ => {
-        response.json({saved: true})
-      })
+  app.post('/api/skills/:skillId/check', (request, response, next) => {
+    const userId = request.user.id
+    const { skillId } = request.params
+    const referrer = request.header('Referer')
+    commands.checkSkill(userId, skillId, referrer)
+      .then(_ => { response.json({checked: true}) })
+      .catch(next)
+  })
+
+  app.post('/api/skills/:skillId/uncheck', (request, response, next) => {
+    const userId = request.user.id
+    const { skillId } = request.params
+    const referrer = request.header('Referer')
+    commands.uncheckSkill(userId, skillId, referrer)
+      .then(_ => { response.json({unchecked: true}) })
       .catch(next)
   })
 

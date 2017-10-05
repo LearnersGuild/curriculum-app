@@ -15,6 +15,9 @@ module.exports = app => {
     const { renderSkill } = app.locals
     const currentModule = digest.modules[moduleName]
     if (!currentModule) return next()
+    response.locals.moduleName = moduleName
+    response.locals.currentModule = currentModule
+
     const currentModuleSkills = currentModule.skills
       .map(id => {
         const skill = digest.skills[id]
@@ -22,16 +25,9 @@ module.exports = app => {
         return {id, html, path: skill.path}
       })
 
-    response.locals.moduleName = moduleName
-    response.locals.currentModule = currentModule
-    response.locals.currentModuleSkills = currentModuleSkills
-
-    const labels = currentModuleSkills.map(skill => skill.id)
-    queries.getChecksForUserAndLabels({userId, labels})
-      .then(checks => {
-        currentModuleSkills.forEach(skill => {
-          skill.checked = !!checks[skill.id]
-        })
+    request.loadCheckedForSkills(userId, currentModuleSkills)
+      .then(currentModuleSkills => {
+        response.locals.currentModuleSkills = currentModuleSkills
         next()
       })
       .catch(next)

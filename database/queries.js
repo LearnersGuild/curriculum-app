@@ -1,22 +1,40 @@
 const knex = require('./knex')
 
-const getChecksForUserAndLabels = ({userId, labels}) => {
+const getCheckedSkills = (userIds, skillIds=[]) => {
+  console.log('getCheckedSkills', {userIds, skillIds})
+
+  const singleUser = !Array.isArray(userIds)
+  if (singleUser) userIds = [userIds]
+
   let query = knex
-    .select('*')
+    .select('user_id', 'skill_id')
     .from('skill_checks')
-    .where({user_id: userId})
+    .whereIn('user_id', userIds)
 
-  if (labels && labels.length > 0)
-    query = query.whereIn('label', labels)
-
-  return query.then(hashChecksByLabel)
+  if (skillIds && skillIds.length > 0)
+    query = query.whereIn('skill_id', skillIds)
+  console.log('getCheckedSkills', query+'')
+  return query.then(skillChecks => {
+    const checkedSkillsByUserId = {}
+    userIds.forEach(userId => {
+      checkedSkillsByUserId[userId] = skillChecks
+        .filter(skillCheck => skillCheck.user_id === userId)
+        .map(skillCheck => skillCheck.skill_id)
+    })
+    return singleUser ? checkedSkillsByUserId[userIds[0]] : checkedSkillsByUserId
+  })
 }
 
-const getCheckLogsForUsers = userIds => {
+const getSkillCheckLogs = userIds => {
   return knex
-    .select('*')
+    .select(knex.raw(`
+      user_id,
+      occurred_at,
+      "metadata"->'checked' as "checked",
+      "metadata"->'skill_id' as "skill_id"
+    `))
     .from('event_logs')
-    .where('type', 'check')
+    .where('type', 'skill_check')
     .whereIn('user_id', userIds)
     .orderBy('occurred_at', 'asc')
     .then(checkLogs => {
@@ -30,17 +48,17 @@ const getCheckLogsForUsers = userIds => {
     })
 }
 
-const hashChecksByLabel = checks => {
-  const checkedMap = {}
-  checks.forEach(check => {
-    checkedMap[check.label] = true
+const arrayToMapBySkillId = skillChecks => {
+  const skillCheckedMap = {}
+  skillChecks.forEach(skillCheck => {
+    skillCheckedMap[skillCheck.skill_id] = true
   })
-  return checkedMap
+  return skillCheckedMap
 }
 
 module.exports = {
-  getChecksForUserAndLabels,
-  getCheckLogsForUsers,
+  getCheckedSkills,
+  getSkillCheckLogs,
 }
 
 

@@ -1,35 +1,44 @@
 const util = require('util')
 const knex = require('./knex')
 
-const logSkillCheck = ({user_id, label, checked, referrer}) =>
+const logSkillCheck = ({userId, skillId, checked, referrer}) =>
   knex
     .insert({
       occurred_at: knex.fn.now(),
       type: 'skill_check',
-      user_id,
+      user_id: userId,
       metadata: {
-        label,
+        skill_d: skillId,
         checked,
         referrer,
       }
     })
     .into('event_logs')
 
-const setSkillCheck = ({user_id, label, checked, referrer}) =>
-  logSkillCheck({user_id, label, checked, referrer})
-    .then(() => {
-      if (checked) {
-        return knex
-          .insert({user_id, label, updated_at: knex.fn.now()})
-          .into('skill_checks')
-      } else {
-          return knex('skill_checks')
-            .where('user_id', '=', user_id)
-            .andWhere('label', '=', label)
-            .del()
-      }
-    })
+const checkSkill = (userId, skillId, referrer) =>
+  Promise.all([
+    logSkillCheck({userId, skillId, referrer, checked: true}),
+    knex('skill_checks')
+      .insert({
+        user_id: userId,
+        skill_id: skillId,
+        updated_at: knex.fn.now()
+      })
+  ])
+
+const uncheckSkill = (userId, skillId, referrer) =>
+  Promise.all([
+    logSkillCheck({userId, skillId, referrer, checked: false}),
+    knex('skill_checks')
+      .where({
+        user_id: userId,
+        skill_id: skillId,
+      })
+      .del()
+  ])
+
 
 module.exports = {
-  setSkillCheck,
+  checkSkill,
+  uncheckSkill,
 }
