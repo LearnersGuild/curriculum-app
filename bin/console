@@ -3,9 +3,10 @@
 echo locals: loadDigest, digest, queries, commands, hubspot
 node -i -e "\
 require('./environment'); \
-const loadDigest = require('./digest'); \
+const knex = require('./database/knex'); \
 const queries = require('./database/queries'); \
 const commands = require('./database/commands'); \
+const loadDigest = require('./digest'); \
 const hubspot = require('./backoffice/hubspot'); \
 let digest; loadDigest().then(d => digest = d); \
 "
