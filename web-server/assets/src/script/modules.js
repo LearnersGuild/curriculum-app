@@ -15,8 +15,8 @@ if (location.pathname.match(/^\/modules\//)) {
       const skill = skills.find(skill => skill.html === html)
       if (!skill) return false
       const checkbox = $('<input type="checkbox" class="skill-checkbox" />')
-      checkbox.attr('data-label', skill.id)
-      checkbox.data('label', skill.id)
+      checkbox.attr('data-skill-id', skill.id)
+      checkbox.data('skill-id', skill.id)
       checkbox[0].checked = skill.checked
       li
         .data('skill', skill)

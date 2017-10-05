@@ -1,45 +1,49 @@
 const postJSON = require('./postJSON')
 
+const checkSkill = skillId =>
+  postJSON(`/api/skills/${skillId}/check`)
+
+const uncheckSkill = skillId =>
+  postJSON(`/api/skills/${skillId}/uncheck`)
+
 $(document).on('change', '.skill-checkbox', event => {
   const checkbox = event.target
   checkbox.disabled = true
-  postJSON('/api/skill-checks/set', {
-    label: $(checkbox).data('label'),
-    checked: checkbox.checked,
-  })
-  .then(_ => {
-    const skillProgress = $('.skills-list-progress progress')
+
+  const skillId = $(checkbox).data('skill-id')
+
+  const action = checkbox.checked
+    ? checkSkill
+    : uncheckSkill
+
+  action(skillId).then(_ => {
     checkbox.disabled = false
+    const skillProgress = $('.skills-list-progress progress')
     if (skillProgress.length === 0) return
     const numerator = $('.skills-list-progress progress')[0].value += checkbox.checked ? 1 : -1
     $('.skills-list-progress .progress-numerator').text(numerator)
   })
-  .catch(_ => {
+  .catch(error => {
+    console.warn('failed to either check or uncheck skill')
+    console.error(error)
     checkbox.disabled = false
   })
 })
 
 const reloadSkillCheckboxes = () => {
-  const checkboxes = $('.skill-checkbox[data-label]').get()
-    .reduce((index, checkbox) => {
-      const label = $(checkbox).data('label')
-      index[label] = index[label] || $()
-      index[label] = index[label].add(checkbox)
-      return index
-    }, {})
-
-  const labels = Object.keys(checkboxes)
-  return postJSON('/api/skill-checks/status', {labels})
-  .then(checks => {
+  const checkboxes = $('.skill-checkbox[data-skill-id]').get()
+  const skillIds = checkboxes.map(c => $(c).data('skill-id'))
+  if (skillIds.length === 0) return
+  return postJSON('/api/skills/checked', {skills: skillIds})
+  .then(checkedSkills => {
     $(() => {
-      let numerator = 0
-      Object.keys(checks).forEach(label => {
-        const checkbox = checkboxes[label]
-        const checked = !!checks[label]
+      checkboxes.forEach(checkbox => {
+        checkbox = $(checkbox)
+        const skillId = checkbox.data('skill-id')
+        const checked = checkedSkills.includes(skillId)
         checkbox.prop('checked', checked)
-        if (checked) numerator++;
       })
-
+      const numerator = checkedSkills.length
       $('.skills-list-progress progress').attr('value', numerator)
       $('.skills-list-progress .progress-numerator').text(numerator)
     })

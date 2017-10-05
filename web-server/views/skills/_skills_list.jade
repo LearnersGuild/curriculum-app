@@ -10,7 +10,7 @@ mixin skillsList(skills)
         progress.skill-progress(value=numberOfSkillsChecked max=numberOfSkills)
         small
           span.progress-numerator= numberOfSkillsChecked
-          &nbsp;/&nbsp;
+          | &nbsp;/&nbsp;
           span.progress-denominator= numberOfSkills
 
       .skills-list-controls
@@ -32,7 +32,7 @@ mixin skillsList(skills)
     ul.skills-list-list
       each skill in skills
         li.list-item-with-checkbox
-          input.skill-checkbox(type="checkbox", checked=skill.checked, data-label=skill.id)
+          input.skill-checkbox(type="checkbox", checked=skill.checked, data-skill-id=skill.id)
           a(href=skill.path) !{renderSkill(skill)}
       else
         h3 Whoooops no skills here ¯\_(ツ)_/¯

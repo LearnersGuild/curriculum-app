@@ -152,38 +152,41 @@ module.exports = app => {
       })
     }
 
-    request.getUserWithCheckLog = (handle, options={}) => {
-      return request.backOffice.getUserByHandle(handle, options)
-        .then(learner => {
-          return queries.getCheckLogsForUsers([learner.id])
-          .then(checkLogs => {
-            const checkLog = checkLogs[learner.id]
-            learner.checkLog = checkLog
-            learner.checkedSkills = checkLog
-              .filter(checkLogLine => checkLogLine.checked)
-              .map(checkLogLine => checkLogLine.label)
-            return learner
+
+    request.getUserIncludingCheckedSkills = (handle, options={}) => {
+      return request.backOffice.getUserByHandle(handle, options).then(user => {
+          return queries.getCheckedSkills(user.id).then(checkedSkills => {
+            user.checkedSkills = checkedSkills
+            return user
           })
         })
     }
 
-    request.getUsersForPhaseWithCheckLog = phaseNumber => {
+    request.getUsersForPhaseIncludingCheckedSkills = phaseNumber => {
       return request.backOffice.getAllLearners({
         phase: phaseNumber,
         includeHubspotData: true,
       })
-        .then(learners => {
-          return queries.getCheckLogsForUsers(learners.map(l => l.id))
-            .then(checkLogsByUserId => {
-              learners.forEach(learner => {
-                learner.checkLog = checkLogsByUserId[learner.id]
-                learner.checkedSkills = learner.checkLog
-                  .filter(checkLogLine => checkLogLine.checked)
-                  .map(checkLogLine => checkLogLine.label)
+        .then(users => {
+          return queries.getCheckedSkills(users.map(l => l.id))
+            .then(checkedSkillsByUserId => {
+              users.forEach(user => {
+                user.checkedSkills = checkedSkillsByUserId[user.id]
               })
-              return learners
+              return users
             })
         })
+    }
+
+    request.loadCheckedForSkills = (userId, skills=[]) => {
+      return queries.getCheckedSkills(userId, skills.map(s => s.id))
+        .then(checkedSkills =>
+          skills.map(skill =>
+            Object.assign({}, skill, {
+              checked: checkedSkills.includes(skill.id),
+            })
+          )
+        )
     }
 
     next()

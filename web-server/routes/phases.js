@@ -31,14 +31,12 @@ module.exports = app => {
   })
 
   app.get('/phases/:phaseNumber/skills', (request, response, next) => {
+    const { digest } = response
     const userId = request.user.id
-    const labels = request.phase.skills
+    const skillIds = request.phase.skills
     const { phaseNumber } = request.params
-    queries.getChecksForUserAndLabels({userId, labels})
-      .then(checks => {
-        const skills = request.phase.skills.map(skillId =>
-          Object.assign({}, response.digest.skills[skillId], {checked: !!checks[skillId]})
-        )
+    request.loadCheckedForSkills(userId, skillIds)
+      .then(skills => {
         response.render('phases/skills', {skills, title: `Phase ${phaseNumber} Skills`})
       })
       .catch(next)
@@ -58,7 +56,7 @@ module.exports = app => {
   app.get('/phases/:phaseNumber/dashboard/progress', (request, response, next) => {
     const { phase } = request
     const { phaseNumber } = request.params
-    request.getUsersForPhaseWithCheckLog(phase.number)
+    request.getUsersForPhaseIncludingCheckedSkills(phase.number)
       .then(learners => {
         learners.forEach(learner => {
           learner.skillsDenominator = phase.skills.length
@@ -92,7 +90,7 @@ module.exports = app => {
   app.get('/phases/:phaseNumber/dashboard/learners/:learnerHandle', (request, response, next) => {
     const { learnerHandle } = request.params
 
-    request.getUserWithCheckLog(learnerHandle, {
+    request.getUserIncludingCheckedSkills(learnerHandle, {
       includePhases: true,
       includeHubspotData: true,
     })
@@ -105,7 +103,7 @@ module.exports = app => {
   app.get('/phases/:phaseNumber/dashboard/learners/:learnerHandle/skills', (request, response, next) => {
     const { learnerHandle } = request.params
 
-    request.getUserWithCheckLog(learnerHandle)
+    request.getUserIncludingCheckedSkills(learnerHandle)
       .then(learner => {
         response.render('phases/dashboard/learners/skills', {learner, title: `${learnerHandle} Skills`})
       })
@@ -115,7 +113,7 @@ module.exports = app => {
   app.get('/phases/:phaseNumber/dashboard/learners/:learnerHandle/check-log', (request, response, next) => {
     const { learnerHandle } = request.params
 
-    request.getUserWithCheckLog(learnerHandle)
+    request.getUserIncludingCheckedSkills(learnerHandle)
       .then(learner => {
         response.render('phases/dashboard/learners/check-log', {learner, title: `${learnerHandle} Check Log`})
       })

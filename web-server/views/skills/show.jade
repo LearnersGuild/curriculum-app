@@ -3,7 +3,7 @@ extends ../layout
 block content
 
   h1.skill-show-page-heading
-    input.skill-checkbox(type="checkbox", data-label=skill.id, checked=checked)
+    input.skill-checkbox(type="checkbox", data-skill-id=skill.id, checked=skill.checked)
     span !{renderSkill(skill)}
 
   h2 Modules
