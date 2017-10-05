@@ -11,7 +11,7 @@ const getCheckedSkills = (userIds, skillIds=[]) => {
 
   if (skillIds && skillIds.length > 0)
     query = query.whereIn('skill_id', skillIds)
-
+  console.log('getCheckedSkills', query+'')
   return query.then(skillChecks => {
     const checkedSkillsByUserId = {}
     userIds.forEach(userId => {

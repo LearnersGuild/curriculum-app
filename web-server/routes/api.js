@@ -10,7 +10,12 @@ module.exports = app => {
   app.post('/api/skills/checked', (request, response, next) => {
     const userId = request.user.id
     const skillIds = request.body.skills
-    queries.getCheckedSkills(userId, skillIds)
+    queries.getCheckedSkills(userId, skillIds || [])
+      .catch(error => {
+        console.log(require('../../database/knex'))
+        console.error(error)
+        throw error
+      })
       .then(checkedSkills => {
         response.json(checkedSkills)
       })
