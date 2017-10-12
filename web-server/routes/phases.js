@@ -33,9 +33,12 @@ module.exports = app => {
   app.get('/phases/:phaseNumber/skills', (request, response, next) => {
     const { digest } = response
     const userId = request.user.id
-    const skillIds = request.phase.skills
+    console.log('phase', request.phase)
+    const skills = request.phase.skills.map(skillId =>
+      response.digest.skills[skillId]
+    )
     const { phaseNumber } = request.params
-    request.loadCheckedForSkills(userId, skillIds)
+    request.loadCheckedForSkills(userId, skills)
       .then(skills => {
         response.render('phases/skills', {skills, title: `Phase ${phaseNumber} Skills`})
       })

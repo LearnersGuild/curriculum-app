@@ -1,6 +1,6 @@
 'use strict'
 
-describe.only('POST /api/skills/checked', function(){
+describe('POST /api/skills/checked', function(){
 
   whenNotLoggedIn(function(){
     it('should redirect to login', function(){

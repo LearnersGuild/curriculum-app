@@ -8,7 +8,8 @@ module.exports = app => {
   app.get('/skills', (request, response, next) => {
     const userId = request.user.id
 
-    queries.loadCheckedForSkills(userId)
+    const skills = Object.values(response.digest.skills)
+    request.loadCheckedForSkills(userId, skills)
       .then(skills => {
         response.render('skills/index', {
           skills,

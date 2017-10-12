@@ -1,6 +1,8 @@
 const knex = require('./knex')
 
 const getCheckedSkills = (userIds, skillIds=[]) => {
+  console.log('getCheckedSkills', {userIds, skillIds})
+
   const singleUser = !Array.isArray(userIds)
   if (singleUser) userIds = [userIds]
 
