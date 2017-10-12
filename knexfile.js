@@ -1,5 +1,5 @@
 require('./environment')
-require('pg').defaults.ssl = process.env.NODE_ENV !== 'development'
+// require('pg').defaults.ssl = process.env.NODE_ENV !== 'development'
 const environments = 'development test staging production'.split(' ')
 const config = {}
 

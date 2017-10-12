@@ -48,6 +48,7 @@ global.whenLoggedIn = function(spec){
   })
 }
 
+
 // Global before each
 beforeEach(function(){
   // reset the webserver agent (clear cookies)
@@ -62,6 +63,8 @@ beforeEach(function(){
       return this.webServerSession()[method](...args)
     }
   })
+
+  // return truncateAllTables()
 })
 
 // Asertions

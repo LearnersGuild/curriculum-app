@@ -11,7 +11,7 @@ describe('POST /api/skills/checked', function(){
   })
 
   whenLoggedIn(function(){
-    it('should render an array of skills ids as JSON', function(){
+    it.only('should render an array of skills ids as JSON', function(){
       return this
         .post(`/api/skills/checked`)
         .catch(error => {

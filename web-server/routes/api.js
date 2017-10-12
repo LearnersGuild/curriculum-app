@@ -9,8 +9,8 @@ module.exports = app => {
 
   app.post('/api/skills/checked', (request, response, next) => {
     const userId = request.user.id
-    const skillIds = request.body.skills
-    queries.getCheckedSkills(userId, skillIds || [])
+    const skillIds = request.body.skills || []
+    queries.getCheckedSkills(userId, skillIds)
       // .catch(error => {
       //   console.log(require('../../database/knex'))
       //   console.error(error)
@@ -18,6 +18,10 @@ module.exports = app => {
       // })
       .then(checkedSkills => {
         response.json(checkedSkills)
+      })
+      .catch(error => {
+        console.log('ETF?F?F?F?', error)
+        throw error
       })
       .catch(next)
   })
