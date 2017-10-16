@@ -4,14 +4,14 @@ module.exports = () =>
   loadModuleDirectoryNames()
     .then(convertModuleDirectoryNamesToModules)
     .then(extractModuleDetails)
-    .then(indexById)
+    .then(utils.indexById)
 
 const loadModuleDirectoryNames = () =>
   utils.readdir('/modules')
 
 const convertModuleDirectoryNamesToModules = moduleDirectoryNames =>
   moduleDirectoryNames
-    .filter(noExtension)
+    .filter(utils.noExtension)
     .sort()
     .map(directoryName => ({
       directoryName,
@@ -31,12 +31,3 @@ const extractModuleDetails = modules =>
         })
     )
   )
-
-const indexById = modules => {
-  return modules.reduce((index, module) => {
-    index[module.id] = module
-    return index
-  }, {})
-}
-
-const noExtension = module => !module.includes('.')

@@ -3,5 +3,7 @@
 set -x
 rm ./latest.dump
 set -e
+dropdb lg-curriculum
+createdb lg-curriculum
 heroku pg:backups:download
 pg_restore --verbose --clean --no-acl --no-owner -d lg-curriculum latest.dump

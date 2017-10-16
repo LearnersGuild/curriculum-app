@@ -1,12 +1,35 @@
 # DEVELOPMENT
 
-[![CircleCI](https://circleci.com/gh/GuildCrafts/curriculum.svg?style=svg)](https://circleci.com/gh/GuildCrafts/curriculum)
+[![CircleCI](https://circleci.com/gh/LearnersGuild/curriculum.svg?style=svg&circle-token=364528d1f379d9477094729dfa2aa22fc26867bc)](https://circleci.com/gh/LearnersGuild/curriculum)
 
 ## Dev Environment Setup
 
 
 Install and run Node v8.1.2
 
+
+#### Setup and run [mehserve](https://github.com/timecounts/mehserve)
+```
+echo 3233 > ~/.mehserve/curriculum.learnersguild
+mehserve run
+```
+
+
+#### Setup and run [IDM](https://github.com/LearnersGuild/idm/)
+
+
+#### Setup and run [Echo](https://github.com/LearnersGuild/echo/)
+
+
+#### Setup repo
+
+First, fork and clone the curriculum repository.
+
+#### Install Node Packages
+
+```bash
+npm install
+```
 
 #### Creating your `.env` file
 

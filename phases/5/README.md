@@ -42,7 +42,7 @@ Each week you should prioritize things as follows:
   - Scheduled check-ins with our internal recruiter / career coach
 - Prepare for technical interviews
   - Complete at least 1 mock interview per week
-  - Complete at least 1 online interview challenge per week (e.g., [HackerRank][hackerrank], [Pramp][pramp], [interviewing.io][interviewing-io])
+  - Complete at least 1 online interview challenge per week (e.g., [HackerRank][hackerrank], [Pramp][pramp], [interviewing.io][interviewing-io], [Refdash][refdash])
 - Continue to develop technical skills
   - Keep shipping code every day (Open Source, echo, etc.)
   - Take on contract work, e.g.:
@@ -76,6 +76,7 @@ In addition, you should attend daily stand-ups and share your progress with your
 [pramp]:https://www.pramp.com
 [hackerrank]:https://www.hackerrank.com
 [interviewing-io]:https://interviewing.io
+[refdash]:https://refdash.com/
 [eastbay-tech-meetups]:https://www.meetup.com/cities/us/ca/oakland/tech/?_cookie-check=eHMrSX_dwhNccQCZ
 [eventbrite-sfbay-hackathons]:https://www.eventbrite.com/d/ca--san-francisco/hackathon/
 [meetup-sfbay-hackathons]:https://www.meetup.com/Hackathons/

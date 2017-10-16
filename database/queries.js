@@ -3,7 +3,7 @@ const knex = require('./knex')
 const getChecksForUserAndLabels = ({userId, labels}) => {
   let query = knex
     .select('*')
-    .from('checks')
+    .from('skill_checks')
     .where({user_id: userId})
 
   if (labels && labels.length > 0)
@@ -15,7 +15,8 @@ const getChecksForUserAndLabels = ({userId, labels}) => {
 const getCheckLogsForUsers = userIds => {
   return knex
     .select('*')
-    .from('check_log')
+    .from('event_logs')
+    .where('type', 'check')
     .whereIn('user_id', userIds)
     .orderBy('occurred_at', 'asc')
     .then(checkLogs => {
@@ -32,7 +33,7 @@ const getCheckLogsForUsers = userIds => {
 const hashChecksByLabel = checks => {
   const checkedMap = {}
   checks.forEach(check => {
-    checkedMap[check.label] = check.checked
+    checkedMap[check.label] = true
   })
   return checkedMap
 }

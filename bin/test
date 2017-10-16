@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+
+set -e
+set -x
+
+mocha $@ -G ./mocha.config.js "./{digest,web-server,database,backoffice}/**/*.test.js"

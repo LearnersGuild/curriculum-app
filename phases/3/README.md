@@ -33,7 +33,11 @@ In this phase you will learn…
 - _P:_ [Your Portfolio Site - Goal 356](../../modules/Your-Portfolio-Site--Goal-356)
 - _P:_ [Trossello Snapshot: Members and Teams Epic - Goal 232](../../modules/Trosello-Snapshot-Members-And-Teams-Epic--Goal-232)
 - _P:_ [Debugging Snapshot - Goal 448](../../modules/Debugging-Snapshot--Goal-448)
+- _P:_ [Refactoring Snapshot - Goal 449](../../modules/Refactoring-Snapshot--Goal-449)
 
+## Video Library
+
+Please look at the [Phase 3 Playlist](https://www.youtube.com/playlist?list=PLcSbxZVkmW_gHJIVLffRGJ4FRXy9LNabc) on YouTube. The playlist is constantly updated with new videos, which may be relevant to the work you are doing.
 
 ## Recommended Roadmap
 
@@ -51,8 +55,8 @@ In this phase you will learn…
 #### Videos to watch
 - [Programming Naming Conventions](https://www.youtube.com/watch?v=IMxfIUzoy5A&list=PLcSbxZVkmW_gHJIVLffRGJ4FRXy9LNabc&index=1)
 - [Code Organization](https://www.youtube.com/watch?v=q4J3QjKlKlg&list=PLcSbxZVkmW_gHJIVLffRGJ4FRXy9LNabc&index=2)
-- [Method Override in an Express Server](https://www.youtube.com/watch?v=RuvqCpY_Q50&index=10&list=PLcSbxZVkmW_gHJIVLffRGJ4FRXy9LNabc)
 - [MVC for Single Page Apps](https://www.youtube.com/watch?v=lJYTnhqh3-U&index=8&list=PLcSbxZVkmW_gHJIVLffRGJ4FRXy9LNabc)
+- [MVC Pattern Explained](https://www.youtube.com/watch?v=dZCiCIVfe3s)
 
 ### Week 2:
 
@@ -69,6 +73,8 @@ In this phase you will learn…
 #### Videos to watch
 - [Programming Naming Conventions](https://www.youtube.com/watch?v=IMxfIUzoy5A&list=PLcSbxZVkmW_gHJIVLffRGJ4FRXy9LNabc&index=1)
 - [Code Organization](https://www.youtube.com/watch?v=q4J3QjKlKlg&list=PLcSbxZVkmW_gHJIVLffRGJ4FRXy9LNabc&index=2)
+- [Method Override in an Express Server](https://www.youtube.com/watch?v=RuvqCpY_Q50&index=10&list=PLcSbxZVkmW_gHJIVLffRGJ4FRXy9LNabc)
+- [MVC Pattern Explained](https://www.youtube.com/watch?v=dZCiCIVfe3s)
 - [Simple Authentication using express](https://www.youtube.com/watch?v=zY18L-wv0XU&list=PLcSbxZVkmW_gHJIVLffRGJ4FRXy9LNabc&index=3)
 - [Add Authorization to an Express Server](https://www.youtube.com/watch?v=GLgNR1A0h_E&list=PLcSbxZVkmW_gHJIVLffRGJ4FRXy9LNabc&index=5)
 
@@ -89,6 +95,7 @@ In this phase you will learn…
 - [Programming Naming Conventions](https://www.youtube.com/watch?v=IMxfIUzoy5A&list=PLcSbxZVkmW_gHJIVLffRGJ4FRXy9LNabc&index=1)
 - [Code Organization](https://www.youtube.com/watch?v=q4J3QjKlKlg&list=PLcSbxZVkmW_gHJIVLffRGJ4FRXy9LNabc&index=2)
 - [Method Override in an Express Server](https://www.youtube.com/watch?v=RuvqCpY_Q50&index=10&list=PLcSbxZVkmW_gHJIVLffRGJ4FRXy9LNabc)
+- [Error Handling in an Express Server](https://www.youtube.com/watch?v=ngkqRXklna8&list=PLcSbxZVkmW_gHJIVLffRGJ4FRXy9LNabc&index=12)
 
 ### Week 4:
 

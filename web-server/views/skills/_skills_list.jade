@@ -3,32 +3,32 @@ mixin skillsList(skills)
   - skills = sortSkills(skills)
 
   .skills-list
+    if skills[0]
+      p.skills-list-progress
+        - const numberOfSkills = skills.length
+        - const numberOfSkillsChecked = skills.filter(skill => skill.checked).length
+        progress.skill-progress(value=numberOfSkillsChecked max=numberOfSkills)
+        small
+          span.progress-numerator= numberOfSkillsChecked
+          &nbsp;/&nbsp;
+          span.progress-denominator= numberOfSkills
 
-    p.skills-list-progress
-      - const numberOfSkills = skills.length
-      - const numberOfSkillsChecked = skills.filter(skill => skill.checked).length
-      progress.skill-progress(value=numberOfSkillsChecked max=numberOfSkills)
-      small
-        span.progress-numerator= numberOfSkillsChecked
-        &nbsp;/&nbsp;
-        span.progress-denominator= numberOfSkills
-
-    .skills-list-controls
-      ul.list-inline
-        li
-          .btn-group
-            button.btn.btn-default.dropdown-toggle(type='button', data-toggle='dropdown')
-              | Filters
-              span.caret
-            ul.dropdown-menu(role='menu')
-              for filter in digest.skillContexts
+      .skills-list-controls
+        ul.list-inline
+          li
+            .btn-group
+              button.btn.btn-default.dropdown-toggle(type='button', data-toggle='dropdown')
+                | Filters
+                span.caret
+              ul.dropdown-menu(role='menu')
+                for filter in digest.skillContexts
+                  li
+                    a.skills-list-filter.opt(href='', data-value=filter)= filter
+                li.divider
                 li
-                  a.skills-list-filter(href='')= filter
-              li.divider
-              li
-                a.skills-list-clear-filter(href='#') Clear
-        li
-          input.skills-list-filter-input.form-control(type="text" placeholder="filter")
+                  a.skills-list-clear-filter(href='#') Clear
+          li
+            input.skills-list-filter-input.form-control(type="text" placeholder="filter")
     ul.skills-list-list
       each skill in skills
         li.list-item-with-checkbox

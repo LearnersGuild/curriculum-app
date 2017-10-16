@@ -28,7 +28,7 @@ Some examples of projects you may work on:
 - Ghost: https://github.com/tryghost/ghost
 - Free Code Camp: https://github.com/freeCodeCamp/freeCodeCamp
 - React Toolbox: https://github.com/react-toolbox/react-toolbox
-- LOS: echo, idm
+- LOS: echo, idm, curriculum
 
 Work is selected by SEPs and tracked via the [Phase 4 Trello board][trello]. Join this board and the `#phase-4` Slack channel.
 
@@ -50,3 +50,11 @@ When a learner has a set of changes ready to be submitted to the project maintai
 As with phases 1, 2, and 5, weekly (cycle-based) project tracking for learners in phase 4 will happen automatically in the background. The assigned goal will be a generic Phase 4 goal. These projects will have retro surveys, and learners will be expected to set a project artifact.
 
 [trello]: https://trello.com/b/5y3fu6Xj/phase-4
+
+## Getting Started
+
+To begin preparing for your work in Phase 4, you should read the following documentation and follow its instructions:
+
+- [Learning OS software README file](https://github.com/LearnersGuild/learning-os-software)
+- [Learning OS software best practices, global requirements, and architecture](https://github.com/LearnersGuild/learning-os-software/blob/master/SUMMARY.md) 
+- [Git Workflow](development-guide.md)

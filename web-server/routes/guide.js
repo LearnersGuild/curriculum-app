@@ -1,7 +1,7 @@
 module.exports = app => {
 
   app.get('/guide', (request, response, next) => {
-    response.render('guide')
+    response.render('guide', {title: 'Guide'})
   })
 
 }

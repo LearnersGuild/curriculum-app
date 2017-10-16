@@ -21,7 +21,6 @@ app.get('/_status', (request, response, next) => {
 
 app.use(compression())
 require('./routes/assets')(app)
-app.use(require('cookie-parser')())
 require('./routes/goals')(app)
 require('./authentication')(app)
 require('./routes/api')(app)
@@ -34,6 +33,10 @@ require('./routes/phases')(app)
 require('./routes/modules')(app)
 require('./routes/calendar')(app)
 require('./routes/cos')(app)
+require('./routes/backoffice')(app)
+require('./routes/profile')(app)
+require('./routes/lectures')(app)
+require('./routes/glossary')(app)
 
 app.get('/', (request, response, next) => {
   response.renderMarkdownFile(`/README.md`)
@@ -48,6 +51,9 @@ app.get('/', (request, response, next) => {
   })
 })
 
+app.get('*', (request, response, next) => {
+  response.renderNotFound()
+})
 
 if (!module.parent) {
   app.listen(process.env.PORT, () => {

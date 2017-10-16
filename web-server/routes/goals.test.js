@@ -3,14 +3,12 @@ const goalsById = require('../../goals/goals')
 const goals = Object.values(goalsById)
 
 describe('/api/goals/index.json', function(){
-  it('should render all goals', function(done){
-    webServer()
+  it('should render all goals', function(){
+    return this
       .get('/api/goals/index.json')
-      .end(function(error, response) {
-        if (error) { return done(error) }
+      .then(response => {
         expect(response).to.have.status(200)
         expect(response.body).to.deep.equal({ goals })
-        done()
       });
   })
 })
@@ -23,15 +21,13 @@ describe('/api/goals/:goalId.json', function(){
       expect(goalId).to.match(/^\d+$/)
     })
 
-    it('should render the goal', function(done){
-      webServer()
+    it('should render the goal', function(){
+      return this
         .get(`/api/goals/${goalId}.json`)
-        .end(function(error, response) {
-          if (error) { return done(error) }
+        .then(response => {
           expect(response).to.have.status(200)
           expect(response.body).to.deep.equal(goalsById[goalId])
-          done()
-        });
+        })
     })
   })
 
@@ -41,16 +37,20 @@ describe('/api/goals/:goalId.json', function(){
       goalId = '3746374'
     })
 
-    it('should render a 404', function(done){
-      webServer()
+    it('should render a 404', function(){
+      return this
         .get(`/api/goals/${goalId}.json`)
-        .end(function(error, response) {
-          expect(response).to.have.status(404)
-          expect(response.body).to.deep.equal({
-            error: `Could not find goal with id: ${goalId}`
-          })
-          done()
-        });
+        .then(
+          response => {
+            throw new Error('expected response to render 404')
+          },
+          error => {
+            expect(error.response).to.have.status(404)
+            expect(error.response.body).to.deep.equal({
+              error: `Could not find goal with id: ${goalId}`
+            })
+          }
+        )
     })
   })
 })

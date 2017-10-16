@@ -1,5 +1,6 @@
 const util = require('util')
 const path = require('path')
+const moment = require('moment')
 const fs = require('fs-extra')
 const escapeHTML = require('jade').runtime.escape
 const renderMarkdown = require('./renderMarkdown')
@@ -13,8 +14,24 @@ module.exports = app => {
       colors: false,
       maxArrayLength: null,
     })
+
   app.locals.escapeHTML = escapeHTML
+
   app.locals.renderMarkdown = renderMarkdown
+
+  app.locals.renderDate = date =>
+    date ? moment(date).format("YYYY/MM/DD") : null
+
+  app.locals.renderDatetime = date =>
+    date ? moment(date).format("YYYY/MM/DD HH:mm") : null
+
+  app.locals.timeAgoInWords = date =>
+    date ? moment(date).fromNow() : null
+
+  app.locals.weeksAgoInWords = date =>
+    date ? moment().diff(moment(date), 'week')+' weeks ago' : null
+
+
 
   app.locals.renderSkill = skill =>
     renderMarkdown(skill.rawText).slice(3,-5).trim()
@@ -44,7 +61,7 @@ module.exports = app => {
 
   app.use((request, response, next) => {
 
-    response.path = request.url
+    response.path = request.url.split('?')[0]
     response.locals.IDM_BASE_URL = process.env.IDM_BASE_URL
     response.locals.currentURL = (
       request.protocol +
@@ -57,7 +74,7 @@ module.exports = app => {
     response.renderNotFound = function(){
       response
         .status(404)
-        .render('not_found')
+        .render('not_found', {title: 'Not Found'})
     }
 
     response.renderError = function(error){
@@ -86,7 +103,7 @@ module.exports = app => {
             if (files.includes('README.md')){
               response.renderMarkdownFile(relativePath+'/README.md')
             }else{
-              response.render('directory', {files})
+              response.render('directory', {files, title: relativePath})
             }
           }
         })
@@ -123,8 +140,11 @@ module.exports = app => {
 
         const path = response.path.match(/\/$/) ? response.path+'README.md' : response.path
 
+        const title = getTitleFromHTML(content)
+
         const file = {
           content,
+          title,
           sourceUrl: 'https://github.com/GuildCrafts/curriculum/blob/master'+path,
           editeUrl: 'https://github.com/GuildCrafts/curriculum/edit/master'+path,
         }
@@ -132,8 +152,8 @@ module.exports = app => {
       })
     }
 
-    request.getUserWithCheckLog = (handle) => {
-      return request.backOffice.getUser(handle)
+    request.getUserWithCheckLog = (handle, options={}) => {
+      return request.backOffice.getUserByHandle(handle, options)
         .then(learner => {
           return queries.getCheckLogsForUsers([learner.id])
           .then(checkLogs => {
@@ -148,7 +168,10 @@ module.exports = app => {
     }
 
     request.getUsersForPhaseWithCheckLog = phaseNumber => {
-      return request.backOffice.getActiveLearnersForPhase(phaseNumber)
+      return request.backOffice.getAllLearners({
+        phase: phaseNumber,
+        includeHubspotData: true,
+      })
         .then(learners => {
           return queries.getCheckLogsForUsers(learners.map(l => l.id))
             .then(checkLogsByUserId => {
@@ -165,5 +188,9 @@ module.exports = app => {
 
     next()
   })
+}
 
+function getTitleFromHTML(content) {
+  const match = content.match(/<h1[^>]*>([^<]*)<\/h1>/)
+  return match ? match[1] : ''
 }

@@ -10,7 +10,7 @@ According to `man bash`, `.bash_profile` is executed for shells where you've log
 
 Read more about these files in the following resources:
 
-- [Bash Configurations Demystified](http://dghubble.com/blog/posts/.bashprofile-.profile-and-.bashrc-conventions/)
+- [Bash Configurations Demystified](https://blog.dghubble.io/post/.bashprofile-.profile-and-.bashrc-conventions/)
 - [.bash_profile vs .bashrc](http://www.joshstaiger.org/archives/2005/07/bash_profile_vs.html)
 
 ## Exercise: Exporting Environment Variables in .bashrc

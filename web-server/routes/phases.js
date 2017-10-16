@@ -26,35 +26,39 @@ module.exports = app => {
   })
 
   app.get('/phases/:phaseNumber/schedule', (request, response, next) => {
-    response.render("phases/schedule")
+    const { phaseNumber } = request.params
+    response.render("phases/schedule", {title: `Phase ${phaseNumber} Schedule`})
   })
 
   app.get('/phases/:phaseNumber/skills', (request, response, next) => {
     const userId = request.user.id
     const labels = request.phase.skills
+    const { phaseNumber } = request.params
     queries.getChecksForUserAndLabels({userId, labels})
       .then(checks => {
         const skills = request.phase.skills.map(skillId =>
           Object.assign({}, response.digest.skills[skillId], {checked: !!checks[skillId]})
         )
-        response.render('phases/skills', {skills})
+        response.render('phases/skills', {skills, title: `Phase ${phaseNumber} Skills`})
       })
       .catch(next)
   })
 
   app.get('/phases/3/goals', (request, response, next) => {
-    response.render('phases/goals')
+    response.render('phases/goals', {title: 'Phase 3 Goals'})
   })
 
   app.use('/phases/:phaseNumber/dashboard', app.ensureAdmin)
 
   app.get('/phases/:phaseNumber/dashboard', (request, response, next) => {
-    response.render('phases/dashboard/index')
+    const { phaseNumber } = request.params
+    response.render('phases/dashboard/index',  {title: `Phase ${phaseNumber} Dashboard`})
   })
 
   app.get('/phases/:phaseNumber/dashboard/progress', (request, response, next) => {
     const { phase } = request
-    request.getUsersForPhaseWithCheckLog(request.phase.number)
+    const { phaseNumber } = request.params
+    request.getUsersForPhaseWithCheckLog(phase.number)
       .then(learners => {
         learners.forEach(learner => {
           learner.skillsDenominator = phase.skills.length
@@ -63,16 +67,24 @@ module.exports = app => {
         learners.sort((a,b)=>
           b.skillsNumerator - a.skillsNumerator
         )
-        response.render('phases/dashboard/progress', {learners})
+        response.render('phases/dashboard/progress', {learners, title: `Phase ${phaseNumber} Progress`})
       })
       .catch(next)
   })
 
   app.get('/phases/:phaseNumber/dashboard/learners', (request, response, next) => {
-    request.backOffice.getActiveLearners()
+    const { phaseNumber } = request.params
+    request.backOffice.getAllLearners({
+      phase: request.phase.number,
+      includeHubspotData: true,
+    })
       .then(learners => {
-        learners = learners.filter(learner => learner.phase === request.phase.number)
-        response.render('phases/dashboard/learners/index', {learners})
+        learners = learners.sort((a, b) => {
+          a = a[`phase${request.phase.number}StartDate`] || 0
+          b = b[`phase${request.phase.number}StartDate`] || 0
+          return a < b ? 1 : a > b ? -1 : 0
+        })
+        response.render('phases/dashboard/learners/index', {learners, title: `Phase ${phaseNumber} Learners`})
       })
       .catch(next)
   })
@@ -80,9 +92,12 @@ module.exports = app => {
   app.get('/phases/:phaseNumber/dashboard/learners/:learnerHandle', (request, response, next) => {
     const { learnerHandle } = request.params
 
-    request.getUserWithCheckLog(learnerHandle)
+    request.getUserWithCheckLog(learnerHandle, {
+      includePhases: true,
+      includeHubspotData: true,
+    })
       .then(learner => {
-        response.render('phases/dashboard/learners/show', {learner})
+        response.render('phases/dashboard/learners/show', {learner, title: learnerHandle})
       })
       .catch(next)
   })
@@ -92,7 +107,7 @@ module.exports = app => {
 
     request.getUserWithCheckLog(learnerHandle)
       .then(learner => {
-        response.render('phases/dashboard/learners/skills', {learner})
+        response.render('phases/dashboard/learners/skills', {learner, title: `${learnerHandle} Skills`})
       })
       .catch(next)
   })
@@ -102,7 +117,7 @@ module.exports = app => {
 
     request.getUserWithCheckLog(learnerHandle)
       .then(learner => {
-        response.render('phases/dashboard/learners/check-log', {learner})
+        response.render('phases/dashboard/learners/check-log', {learner, title: `${learnerHandle} Check Log`})
       })
       .catch(next)
   })

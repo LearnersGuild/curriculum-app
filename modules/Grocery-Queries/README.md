@@ -1,13 +1,10 @@
 # Grocery Queries Exercise
 
-___Note:__ This module assumes you've already installed postgresql via homebrew. If you
-have not done that please do back and do the [Installfest](../Installfest)
-module._
+___Note:__ This module assumes you've already installed postgresql via homebrew. If you have not done that please do back and do the [Installfest](../Installfest) module._
 
 ## Skills
 
-___Note:__ all of the skills below are applicable to any SQL server but were
-practicing them in postgresql_
+___Note:__ all of the skills below are applicable to any SQL server but were practicing them in postgresql_
 
 - Can select everything from a single table in SQL
 - Can select specific columns from a single table in SQL

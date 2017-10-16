@@ -1,0 +1,42 @@
+extends ../layout
+
+block content
+  .row
+    .col-md-4
+      h1= user.name
+      ul.list-inline
+        li
+          a(href=user.profileUrl target="_blank") #{user.handle}
+        li
+          a(href=user.echoProfileURL target="_blank") Echo
+        li
+          a(href="https://curriculum.learnersguild.org/phases/#{user.phase}") Phase: #{user.phase} (#{user.phaseWeek}/8 weeks)
+      img.img-thumbnail.user-avatar.user-avatar-huge(src="#{user.avatarUrl}" alt="avatar")
+    .col-md-4
+      h6
+        | Email:
+        a(href="mailto:#{user.email}") #{user.email}
+      h6 Phone: #{user.phone}
+      h6 Join Date: #{renderDate(user.createdAt)}
+      h6 Updated: #{renderDate(user.updatedAt)}
+      h6 Learning Facilitator: #{user.learning_facilitator}
+      h6 Professional Days Remaining: #{user.pd_days_remaining}
+      h6 Personal Days Remaining: #{user.personal_days_remaining}
+    .col-md-4
+      dl
+        dt
+          h6 Phase 1
+        dd Start Date: #{renderDate(user.phase1StartDate)}
+        dt
+          h6 Phase 2
+        dd Start Date: #{renderDate(user.phase2StartDate)}
+        dt
+          h6 Phase 3
+        dd Start Date: #{renderDate(user.phase3StartDate)}
+        dt
+          h6 Phase 4
+        dd Start Date: #{renderDate(user.phase4StartDate)}
+        dt
+          h6 Phase 5
+        dd Start Date: #{renderDate(user.phase5StartDate)}
+

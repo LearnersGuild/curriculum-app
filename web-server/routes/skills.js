@@ -14,7 +14,8 @@ module.exports = app => {
           Object.assign({}, response.digest.skills[skillId], {checked: !!checks[skillId]})
         )
         response.render('skills/index', {
-          skills
+          skills,
+          title: 'All Skills'
         })
       })
       .catch(next)
@@ -30,7 +31,7 @@ module.exports = app => {
     queries.getChecksForUserAndLabels({userId, labels})
       .then(checks => {
         const checked = !!checks[skill.id]
-        response.render('skills/show', {skill, checked})
+        response.render('skills/show', {skill, checked, title: skill.name})
       })
       .catch(next)
   })
