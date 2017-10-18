@@ -18,22 +18,22 @@ In this phase you will learn…
 - How to render dynamically generated HTML
 - How to add migrations to your database schema
 
-## Modules
+## Challenges
 
-- _P:_ [CRUD Mutability - Goal 383](../../modules/CRUD-Mutability--Goal-383)
-- _P:_ [Simple Book Store - Goal 69](../../modules/Simple-Book-Store--Goal-69)
-- _P:_ [Auth Snapshot Simple - Goal 444](../../modules/Auth-Snapshot-Simple--Goal-444)
-- _P:_ [To Do List App - Goal 64](../../modules/To-Do-List-App--Goal-64)
-- _P:_ [Testing Snapshot - Goal 446](../../modules/Testing-Snapshot--Goal-446)
-- _P:_ [Migrations Snapshot - Goal 447](../../modules/Migrations-Snapshot--Goal-447)
-- _P:_ [Mmmarkdown - Goal 387](../../modules/Mmmarkdown--Goal-387)
-- _P:_ [Pizza Restaurant: Relational DB With CRUD API - Goal 98](../../modules/Pizza-Restaurant-Relational-DB-Schema-With-CRUD-API--Goal-98)
-- _P:_ [Timeoff: Approver Epic - Goal 181](../../modules/Timeoff-Approver-Epic--Goal-181)
-- _P:_ [Roam - Goal 330](../../modules/Roam--Goal-330)
-- _P:_ [Your Portfolio Site - Goal 356](../../modules/Your-Portfolio-Site--Goal-356)
-- _P:_ [Trossello Snapshot: Members and Teams Epic - Goal 232](../../modules/Trosello-Snapshot-Members-And-Teams-Epic--Goal-232)
-- _P:_ [Debugging Snapshot - Goal 448](../../modules/Debugging-Snapshot--Goal-448)
-- _P:_ [Refactoring Snapshot - Goal 449](../../modules/Refactoring-Snapshot--Goal-449)
+- [CRUD Mutability - Goal 383](../../challenges/CRUD-Mutability-Goal-383)
+- [Simple Book Store - Goal 69](../../challenges/Simple-Book-Store-Goal-69)
+- [Auth Snapshot Simple - Goal 444](../../challenges/Auth-Snapshot-Simple-Goal-444)
+- [To Do List App - Goal 64](../../challenges/To-Do-List-App-Goal-64)
+- [Testing Snapshot - Goal 446](../../challenges/Testing-Snapshot-Goal-446)
+- [Migrations Snapshot - Goal 447](../../challenges/Migrations-Snapshot-Goal-447)
+- [Mmmarkdown - Goal 387](../../challenges/Mmmarkdown-Goal-387)
+- [Pizza Restaurant: Relational DB With CRUD API - Goal 98](../../challenges/Pizza-Restaurant-RDB-Schema-with-CRUD-API-Goal-98)
+- [Timeoff: Approver Epic - Goal 181](../../challenges/Timeoff-Approver-Epic-Goal-181)
+- [Roam - Goal 330](../../challenges/Roam-Goal-330)
+- [Your Portfolio Site - Goal 356](../../challenges/Your-Portfolio-Site-Goal-356)
+- [Trossello Snapshot: Members and Teams Epic - Goal 232](../../challenges/Trossello-Snapshot-Members-And-Teams-Epic-Goal-232)
+- [Debugging Snapshot - Goal 448](../../challenges/Debugging-Snapshot-Goal-448)
+- [Refactoring Snapshot - Goal 449](../../challenges/Refactoring-Snapshot-Goal-449)
 
 ## Video Library
 

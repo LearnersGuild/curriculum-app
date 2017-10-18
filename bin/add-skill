@@ -1,0 +1,83 @@
+#!/usr/bin/env node
+
+const Path = require('path')
+const fs = require('fs-extra')
+const util = require('util')
+const { APP_ROOT, nameToId } = require('../digest/utils')
+
+const usage = () => {
+  console.log(
+`Usage:
+  add-skill 'Can use \`git fetch\`'
+`
+  )
+  process.exit(1)
+}
+
+const createSkillREADME = skill =>
+`# ${skill.name}
+
+_This skill has no description. Please ask an SEP to add one._
+
+## Resources
+
+### Reading
+
+- _This skill has no reading resources. Please find and add one._
+
+### Watching
+
+- _This skill has no video resources. Please find and add one._
+
+`
+
+
+const createSkill = name => {
+  if (!name || !name.trim()) return
+  if (name.match(/^".+"$/)) {
+    console.log({b4: name, af: eval(name)})
+    name = eval(name)
+  }
+  const skill = {
+    name,
+    id: nameToId(name)
+  }
+
+  const directoryRelativePath = `skills/${skill.id}`
+  const READMERelativePath    = `${directoryRelativePath}/README.md`
+  const directoryAbsolutePath = `${APP_ROOT}/${directoryRelativePath}`
+  const READMEAbsolutePath    = `${APP_ROOT}/${READMERelativePath}`
+
+  fs.mkdir(directoryAbsolutePath)
+  .then(
+    _ => {
+      console.log(`Created ${directoryRelativePath}`)
+    },
+    error => {
+      if (error.code !== 'EEXIST') throw error
+      console.log(`Already Exists ${directoryRelativePath}`)
+    }
+  )
+  .then(_ => {
+    return fs.access(READMEAbsolutePath).then(
+      _ => {
+        console.log(`Already Exists ${READMERelativePath}`)
+      },
+      error => {
+        if (error.code !== 'ENOENT') throw error
+        console.log(`Creating ${READMERelativePath}`)
+        return fs.writeFile(READMEAbsolutePath, createSkillREADME(skill))
+      },
+    )
+  })
+  .catch(error => {
+    console.error(error)
+    process.exit(1)
+  })
+}
+
+if (process.stdin.isTTY){
+  process.argv.slice(2).forEach(createSkill)
+}else{
+  process.stdin.pipe(require('split')()).on('data', createSkill)
+}

@@ -3,4 +3,4 @@
 set -e
 set -x
 
-mocha $@ -G ./mocha.config.js "./{digest,web-server,database,backoffice}/**/*.test.js"
+mocha $@ -G ./mocha.config.js "./{digest,web-server,database,backoffice,goals}/**/*.test.js"

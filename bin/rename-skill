@@ -107,8 +107,6 @@ const yyyymmddhhmmss = () => {
 }
 
 
-
-
 Promise.all([
   generateMigration(),
   renameSkillsWithinModules(),

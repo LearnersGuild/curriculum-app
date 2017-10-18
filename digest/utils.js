@@ -1,48 +1,121 @@
 const Path = require('path')
 const fs = require('fs-extra')
-const lexer = require('marked').lexer
+const renderMarkdown = require('marked')
+const lexer = renderMarkdown.lexer
 
 const APP_ROOT = Path.resolve(__dirname, '..')
 
-const values = object =>
-  Object.keys(object).map(key => object[key])
+const promiseMap = function(map){
+  const keys = Object.keys(map)
+  const promises = keys.map(key => map[key])
+  return Promise.all(promises).then(values => {
+    const map = {}
+    keys.forEach((key, index) => {
+      map[key] = values[index]
+    })
+    return map
+  })
+}
+
+const convertIdsToObjects = ids =>
+  ids.map(id => ({id}))
+
+const mapToObjectBy = property =>
+  members => {
+    const map = {}
+    members.forEach(member => {
+      map[member[property]] = member
+    })
+    return map
+  }
+
+const nameToId = name => {
+  if (typeof name !== 'string' || name.length < 5)
+    throw new Error('nameToId was given shit: '+name)
+  return String(name)
+    .trim()
+    .replace(' & ', ' and ')
+    .replace(/['":`\[\]\(\)]+/g, '')
+    .replace(/[^\w\d]+/g, '-')
+    .replace(/(^-+|-+$)/g, '')
+}
+
+
+const readFile = path =>
+  fs.readFile(APP_ROOT+path)
 
 const readdir = path =>
   fs.readdir(APP_ROOT+path).then(files =>
     files.filter(file => file[0] !== '.')
   )
 
-const readFile = path =>
-  fs.readFile(APP_ROOT+path)
+/*
+ * Usage:
+ *   readDirectoriesWithREADMEs('/modules')
+ *
+ * Returns:
+ *   array of objects like:
+ *     {
+ *       id: <directory name>,
+ *       readme: <contents of readme file>,
+ *     }
+ */
+const readDirectoriesWithREADMEs = path =>
+  readdir(path)
+  .then(files => files.sort())
+  .then(convertIdsToObjects)
+  .then(tryLoadingREADME(path))
+  .then(directories =>
+    directories.filter(directory => directory.READMEMarkdown)
+  )
+
+const tryLoadingREADME = path =>
+  directories =>
+    Promise.all(
+      directories.map(directory =>
+        readMarkdownFile(Path.join(path, directory.id, 'README.md'))
+        .then(
+          READMEMarkdown => {
+            directory.READMEMarkdown = READMEMarkdown
+            directory.name = getHeadingFromMarkdown(READMEMarkdown)
+            // directory.path = Path.join(path, directory.id)
+            directory.READMEpath = Path.join(path, directory.id, 'README.md')
+            return directory
+          },
+          error => { return directory },
+        )
+      )
+    )
+
+
+const removeREADMEMarkdown = objects => {
+  objects.forEach(object => {
+    delete object.READMEMarkdown
+  })
+  return objects
+}
+
+const getHeadingFromMarkdown = markdown =>
+  (markdown.find(token => token.type === 'heading') || {}).text
 
 const readMarkdownFile = path =>
   readFile(path)
     .then(file => lexer(file.toString()))
 
-const nameToId = name =>
-  name
-    .replace(/^\s*/,'')
-    .replace(/\s*$/,'')
-    .replace(/[\/ #]/g, '-')
-    .replace(/`/g, '')
-
-const rawTextToName = rawText =>
-  rawText
-    .replace(/^\s*\[\s+\]\s+/, '')
-    .replace(/^\s*/,'')
-    .replace(/\s*$/,'')
-
-const indexById = terms => {
-  return terms.reduce((index, term) => {
-    index[term.id] = term
-    return index
-  }, {})
+const extractSkillsFromREADMEMarkdowns = objects => {
+  objects.forEach(object => {
+    const skills = extractListFromMarkdownSection(
+      object.READMEMarkdown,
+      'Skills',
+      2,
+    )
+    object.skills = skills.map(nameToId)
+  })
+  return objects
 }
 
-const noExtension = module => !module.includes('.')
-
-const extractListFromSection = (document, text, depth) => {
-  // console.log('===== extractListFromSection ====', text, depth)
+const extractListFromMarkdownSection = (document, text, depth) => {
+  // console.log('===== extractListFromMarkdownSection ====', text, depth)
   let
     items = [],
     withinSection = false,
@@ -69,7 +142,7 @@ const extractListFromSection = (document, text, depth) => {
 
     if (token.type === 'list_item_end') {
       withinListItem = false
-      items.push(listItemText)
+      items.push(listItemText.trim())
       listItemText = ''
     }
 
@@ -78,20 +151,28 @@ const extractListFromSection = (document, text, depth) => {
     if (token.type === 'space') listItemText += ' '
     if (token.type === 'text') listItemText += token.text
   })
-  // console.log('ITEMSs =====', items)
   return items
 }
 
+const renderNameAsHTML = objects => {
+  objects.forEach(object => {
+    object.nameAsHTML = renderMarkdown(object.name)
+      .replace(/^<p>/, '')
+      .replace(/<\/p>\n?$/, '')
+  })
+  return objects
+}
 
- module.exports = {
+
+module.exports = {
   APP_ROOT,
-  values,
-  readdir,
-  readFile,
-  readMarkdownFile,
-  rawTextToName,
+  promiseMap,
+  readDirectoriesWithREADMEs,
+  extractListFromMarkdownSection,
+  extractSkillsFromREADMEMarkdowns,
+  mapToObjectBy,
   nameToId,
-  extractListFromSection,
-  indexById,
-  noExtension,
- }
+  removeREADMEMarkdown,
+  getHeadingFromMarkdown,
+  renderNameAsHTML,
+}

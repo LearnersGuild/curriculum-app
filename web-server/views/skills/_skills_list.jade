@@ -33,6 +33,6 @@ mixin skillsList(skills)
       each skill in skills
         li.list-item-with-checkbox
           input.skill-checkbox(type="checkbox", checked=skill.checked, data-skill-id=skill.id)
-          a(href=skill.path) !{renderSkill(skill)}
+          a(href=skill.path) !{skill.nameAsHTML}
       else
         h3 Whoooops no skills here ¯\_(ツ)_/¯
