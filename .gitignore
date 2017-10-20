@@ -1,5 +1,5 @@
 .DS_Store
-.env
+.env.development
 node_modules
 latest.dump
 web-server/assets/build

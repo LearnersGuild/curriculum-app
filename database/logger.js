@@ -1,7 +1,7 @@
 const chalk = require('chalk')
 
 module.exports = knex => {
-  if (!process.env.LOG_SQL_QUERIES) return
+  if (process.env.LOG_SQL_QUERIES !== "1") return
 
   knex.client.on('start', builder => {
 
