@@ -14,9 +14,8 @@ jobs:
           PGUSER: root
       - image: circleci/postgres:9.5-alpine
         environment:
-          POSTGRES_USER: lg-cirriculum
+          POSTGRES_USER: root
           POSTGRES_DB: lg-cirriculum-test
-          POSTGRES_PASSWORD: ""
 
     working_directory: ~/repo
 
