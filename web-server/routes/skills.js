@@ -28,10 +28,7 @@ module.exports = app => {
 
     request.loadCheckedForSkills(userId, [skill])
       .then(([skill]) => {
-        response.render('skills/show', {
-          title: skill.name,
-          skill,
-        })
+        response.render('skills/show', {skill, title: skill.name})
       })
       .catch(next)
   })

@@ -12,23 +12,8 @@ nav.navbar.navbar-inverse(role='navigation')
     .collapse.navbar-collapse
       ul.nav.navbar-nav
 
-        li.dropdown
-          a.dropdown-toggle(href='#', data-toggle='dropdown')
-            | Resources
-            b.caret
-          ul.dropdown-menu(role='menu')
-            li
-              a(href='/guide') Guide
-            li
-              a(href='/cos/') COS
-            li
-              a(href='/calendar') Calendar
-            li
-              a(href='/lectures') Lectures
-            if process.env.NODE_ENV === 'development'
-              li
-                a(href='/digest') Digest
-
+        li.hidden-sm
+          a(href='/guide') Guide
 
         li.dropdown
           a.dropdown-toggle(href='#', data-toggle='dropdown')
@@ -37,16 +22,7 @@ nav.navbar.navbar-inverse(role='navigation')
           ul.dropdown-menu(role='menu')
             each phase in digest.phases
               li
-                a(href=phase.path) Phase #{phase.number}
-
-        li.dropdown
-          a.dropdown-toggle(href='#', data-toggle='dropdown')
-            | Challenges
-            b.caret
-          ul.dropdown-menu(role='menu')
-            each challenge, id in digest.challenges
-              li
-                a(href=challenge.path)= challenge.name
+                a(href='/phases/'+phase.number+'/') Phase #{phase.number}
 
         li.dropdown
           a.dropdown-toggle(href='#', data-toggle='dropdown')
@@ -54,8 +30,9 @@ nav.navbar.navbar-inverse(role='navigation')
             b.caret
           ul.dropdown-menu(role='menu')
             each module, id in digest.modules
-              li
-                a(href=module.path)= module.name
+              - className = currentModule && currentModule.id == module.id ? 'dropdown-menu-current' : ''
+              li(class=className)
+                a(href='/modules/'+id+'/')= module.name
 
         li.dropdown
           a.dropdown-toggle(href='#', data-toggle='dropdown')
@@ -71,11 +48,22 @@ nav.navbar.navbar-inverse(role='navigation')
 
         li.dropdown.hidden-sm
           a(href='/glossary/') Glossary
-
+          
+        li.dropdown.hidden-sm
+          a(href='/cos/') COS
 
         li.dropdown
           a(href='/users') Users
 
+        li.dropdown
+          a(href='/calendar') Calendar
+
+        li.dropdown.hidden-sm
+          a(href='/lectures') Lectures
+
+        if process.env.NODE_ENV === 'development'
+          li.dropdown
+            a(href='/digest') Digest
 
       ul.nav.navbar-nav.navbar-right
         li.dropdown

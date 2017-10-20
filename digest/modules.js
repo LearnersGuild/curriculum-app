@@ -1,55 +1,33 @@
-const {
-  readDirectoriesWithREADMEs,
-  extractSkillsFromREADMEMarkdowns,
-  removeREADMEMarkdown,
-  mapToObjectBy,
-} = require('./utils')
+const utils = require('./utils')
 
 module.exports = () =>
-  readDirectoriesWithREADMEs('/modules')
-  .then(extractSkillsFromREADMEMarkdowns)
-  .then(removeREADMEMarkdown)
-  .then(mapToObjectBy('id'))
+  loadModuleDirectoryNames()
+    .then(convertModuleDirectoryNamesToModules)
+    .then(extractModuleDetails)
+    .then(utils.indexById)
 
+const loadModuleDirectoryNames = () =>
+  utils.readdir('/modules')
 
+const convertModuleDirectoryNamesToModules = moduleDirectoryNames =>
+  moduleDirectoryNames
+    .filter(utils.noExtension)
+    .sort()
+    .map(directoryName => ({
+      directoryName,
+      id: directoryName,
+      name: directoryName.replace(/-/g, ' '),
+      path: `/modules/${encodeURIComponent(directoryName)}`,
+    }))
 
-
-//   loadModuleDirectoryNames()
-//     .then(convertModuleDirectoryNamesToModules)
-//     .then(extractModuleDetails)
-//     .then(indexById)
-
-// const loadModuleDirectoryNames = () =>
-//   utils.readdir('/modules')
-
-// const convertModuleDirectoryNamesToModules = moduleDirectoryNames =>
-//   moduleDirectoryNames
-//     .filter(noExtension)
-//     .sort()
-//     .map(directoryName => ({
-//       directoryName,
-//       id: directoryName,
-//       name: directoryName.replace(/-/g, ' '),
-//       path: `/modules/${encodeURIComponent(directoryName)}`,
-//     }))
-
-// const extractModuleDetails = modules =>
-//   Promise.all(
-//     modules.map(module =>
-//       utils.readMarkdownFile(module.path+'/README.md')
-//         .then(document => {
-//           module.skills = utils.extractListFromSection(document, 'Skills', 2)
-//             .map(skill => skill.trim())
-//           return module
-//         })
-//     )
-//   )
-
-// const indexById = modules => {
-//   return modules.reduce((index, module) => {
-//     index[module.id] = module
-//     return index
-//   }, {})
-// }
-
-// const noExtension = module => !module.includes('.')
+const extractModuleDetails = modules =>
+  Promise.all(
+    modules.map(module =>
+      utils.readMarkdownFile(module.path+'/README.md')
+        .then(document => {
+          module.skills = utils.extractListFromSection(document, 'Skills', 2)
+            .map(skill => skill.trim())
+          return module
+        })
+    )
+  )

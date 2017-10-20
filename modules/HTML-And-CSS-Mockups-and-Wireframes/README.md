@@ -1,4 +1,4 @@
-# HTML And CSS Mockups and Wireframes
+# HTML and CSS Mockups and Wireframes
 
 ## Skills
 
