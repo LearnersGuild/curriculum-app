@@ -42,6 +42,8 @@ jobs:
 
       - run:
           name: Database create
+          command: sudo -u postgres psql -p 5433 -c "create user ubuntu with password ‘ubuntu’;”
+          command: sudo -u postgres psql -p 5433 -c "alter user ubuntu with superuser;"
           command: sudo -u postgres psql -p 5433 -c "create database lg-curriculum-test;"
 
       - run:
