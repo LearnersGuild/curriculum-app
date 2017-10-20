@@ -42,7 +42,7 @@ jobs:
 
       - run:
           name: Database create
-          command: createdb lg-curriculum-test
+          command: sudo -u postgres psql -p 5433 -c "create database lg-curriculum-test;"
 
       - run:
           name: Database setup
