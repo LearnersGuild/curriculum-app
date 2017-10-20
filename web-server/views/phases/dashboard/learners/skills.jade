@@ -10,5 +10,5 @@ block content
       - checked = learner.checkedSkills.includes(skillId)
       li.list-item-with-checkbox
         input(type="checkbox" checked=checked disabled)
-        a(href=skill.path) !{renderSkill(skill)}
+        a(href=skill.path) !{skill.nameAsHTML}
 

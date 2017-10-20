@@ -1,42 +1,37 @@
-const loadDigest = require('../../digest')
+const { getDigest } = require('../../digest')
 
 module.exports = app => {
 
-  if (process.env.NODE_ENV === 'development') {
-
-    app.use((request, response, next) => {
-      loadDigest()
-        .then(digest => {
-          response.digest = digest
-          response.locals.digest = digest
-        })
-        .then(next)
-        .catch(next)
-    })
-
-    app.get('/digest', (request, response, next) => {
-      response.render('digest', {title: 'Digest'})
-    })
-
-  }else{
-
-    app.use((request, response, next) => {
-      response.digest = app.locals.digest
-      next()
-    })
-
-    loadDigest()
+  app.use((request, response, next) => {
+    getDigest()
+      .then(addPathsToDigest)
       .then(digest => {
-        app.locals.digest = digest
+        response.digest = digest
+        response.locals.digest = digest
       })
-      .catch(error => {
-        console.error(error)
-        process.exit(1)
-      })
-  }
+      .then(next)
+      .catch(next)
+  })
 
   app.get('/digest.json', (request, response, next) => {
     response.json(response.digest)
   })
 
+}
+
+
+const addPathsToDigest = digest => {
+
+  const generatePaths = prop => {
+    Object.values(digest[prop]).forEach(member => {
+      member.path = `/${prop}/${member.id}`
+    })
+  }
+
+  generatePaths('phases')
+  generatePaths('challenges')
+  generatePaths('skills')
+  generatePaths('modules')
+
+  return digest
 }

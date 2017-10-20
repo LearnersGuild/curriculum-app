@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-echo locals: loadDigest, digest, queries, commands, hubspot
+echo locals: loadDigest, digest, queries, commands, hubspot, renderMarkdown
 node -i -e "\
 require('./environment'); \
 const knex = require('./database/knex'); \
@@ -8,5 +8,5 @@ const queries = require('./database/queries'); \
 const commands = require('./database/commands'); \
 const loadDigest = require('./digest'); \
 const hubspot = require('./backoffice/hubspot'); \
-let digest; loadDigest().then(d => digest = d); \
+const renderMarkdown = require('./web-server/renderMarkdown'); \
 "

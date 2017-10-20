@@ -1,44 +1,28 @@
-const queries = require('../../database/queries')
-
 module.exports = app => {
 
   app.get('/modules', app.ensureTrailingSlash, (request, response, next) => {
     response.renderMarkdownFile(`/modules/README.md`)
   })
 
-  app.get('/modules/:moduleName', app.ensureTrailingSlash)
-
-  app.use('/modules/:moduleName', (request, response, next) => {
+  app.get('/modules/:moduleId', app.ensureTrailingSlash, (request, response, next) => {
     const userId = request.user.id
-    const { moduleName } = request.params
     const { digest } = response
-    const { renderSkill } = app.locals
-    const currentModule = digest.modules[moduleName]
-    if (!currentModule) return next()
-    response.locals.moduleName = moduleName
-    response.locals.currentModule = currentModule
-
-    const currentModuleSkills = currentModule.skills
-      .map(id => {
-        const skill = digest.skills[id]
-        const html = renderSkill(skill)
-        return {id, html, path: skill.path}
-      })
-
-    request.loadCheckedForSkills(userId, currentModuleSkills)
-      .then(currentModuleSkills => {
-        response.locals.currentModuleSkills = currentModuleSkills
-        next()
+    const { moduleId } = request.params
+    const currentModule = digest.modules[moduleId]
+    if (!currentModule) return response.renderNotFound()
+    const skills = currentModule.skills.map(skillId => digest.skills[skillId])
+    request.loadCheckedForSkills(userId, skills)
+      .then(skills => {
+        response.renderMarkdownFile(`/modules/${moduleId}/README.md`, {
+          currentModule,
+          moduleId,
+          skills,
+        })
       })
       .catch(next)
   })
 
-  app.get('/modules/:moduleName', (request, response, next) => {
-    const { moduleName } = request.params
-    response.renderMarkdownFile(`/modules/${moduleName}/README.md`)
-  })
-
-  app.get('/modules/:moduleName/*', (request, response, next) => {
+  app.get('/modules/:moduleId/*', (request, response, next) => {
     response.renderFile(request.path)
   })
 

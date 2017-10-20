@@ -31,6 +31,7 @@
     "body-parser": "^1.17.2",
     "bootflat": "^2.0.4",
     "chalk": "^2.0.1",
+    "commander": "^2.11.0",
     "compression": "^1.7.0",
     "cookies": "^0.7.1",
     "csv-stringify": "^1.0.4",

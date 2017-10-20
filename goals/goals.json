@@ -12,7 +12,7 @@
     ],
     "published": true,
     "phase": 3,
-    "url": "https://curriculum.learnersguild.org/modules/Timeoff-Approver-Epic--Goal-181",
+    "path": "/challenges/Timeoff-Approver-Epic-Goal-181",
     "dynamic": false
   },
   "232": {
@@ -28,7 +28,7 @@
     ],
     "published": true,
     "phase": 3,
-    "url": "https://curriculum.learnersguild.org/modules/Trosello-Snapshot-Members-And-Teams-Epic--Goal-232",
+    "path": "/challenges/Trossello-Snapshot-Members-And-Teams-Epic-Goal-232",
     "dynamic": false
   },
   "330": {
@@ -44,7 +44,7 @@
     ],
     "published": true,
     "phase": 3,
-    "url": "https://curriculum.learnersguild.org/modules/Roam--Goal-330",
+    "path": "/challenges/Roam-Goal-330",
     "dynamic": false
   },
   "356": {
@@ -60,7 +60,7 @@
     ],
     "phase": 3,
     "published": true,
-    "url": "https://curriculum.learnersguild.org/modules/Your-Portfolio-Site--Goal-356",
+    "path": "/challenges/Your-Portfolio-Site-Goal-356",
     "dynamic": false
   },
   "383": {
@@ -76,7 +76,7 @@
     ],
     "phase": 3,
     "published": true,
-    "url": "https://curriculum.learnersguild.org/modules/CRUD-Mutability--Goal-383/",
+    "path": "/challenges/CRUD-Mutability-Goal-383/",
     "dynamic": false
   },
   "387": {
@@ -92,7 +92,7 @@
     ],
     "published": true,
     "phase": 3,
-    "url": "https://curriculum.learnersguild.org/modules/Mmmarkdown--Goal-387",
+    "path": "/challenges/Mmmarkdown-Goal-387",
     "dynamic": false
   },
   "412": {
@@ -108,7 +108,7 @@
     ],
     "published": false,
     "phase": 1,
-    "url": "https://curriculum.learnersguild.org/modules/Phase-1--Goal-412",
+    "path": "/challenges/Phase-1-Goal-412",
     "dynamic": false
   },
   "413": {
@@ -124,7 +124,7 @@
     ],
     "published": false,
     "phase": 2,
-    "url": "https://curriculum.learnersguild.org/modules/Phase-2--Goal-413",
+    "path": "/challenges/Phase-2-Goal-413",
     "dynamic": false
   },
   "414": {
@@ -140,7 +140,7 @@
     ],
     "published": false,
     "phase": 4,
-    "url": "https://curriculum.learnersguild.org/modules/Phase-4--Goal-414",
+    "path": "/challenges/Phase-4-Goal-414",
     "dynamic": false
   },
   "415": {
@@ -156,7 +156,7 @@
     ],
     "published": false,
     "phase": 5,
-    "url": "https://curriculum.learnersguild.org/modules/Phase-5--Goal-415",
+    "path": "/challenges/Phase-5-Goal-415",
     "dynamic": false
   },
   "416": {
@@ -172,7 +172,7 @@
     ],
     "published": false,
     "phase": 1,
-    "url": "https://curriculum.learnersguild.org/modules/Phase-2-Interview--Goal-416",
+    "path": "/challenges/Phase-2-Interview-Goal-416",
     "dynamic": false
   },
   "417": {
@@ -188,7 +188,7 @@
     ],
     "published": false,
     "phase": 2,
-    "url": "https://curriculum.learnersguild.org/modules/Phase-3-Interview--Goal-417",
+    "path": "/challenges/Phase-3-Interview-Goal-417",
     "dynamic": false
   },
   "418": {
@@ -204,7 +204,7 @@
     ],
     "published": false,
     "phase": 3,
-    "url": "https://curriculum.learnersguild.org/modules/Phase-4-Interview--Goal-418",
+    "path": "/challenges/Phase-4-Interview-Goal-418",
     "dynamic": false
   },
   "444": {
@@ -220,7 +220,7 @@
     ],
     "published": true,
     "phase": 3,
-    "url": "https://curriculum.learnersguild.org/modules/Auth-Snapshot-Simple--Goal-444",
+    "path": "/challenges/Auth-Snapshot-Simple-Goal-444",
     "dynamic": false
   },
   "446": {
@@ -236,7 +236,7 @@
     ],
     "published": true,
     "phase": 3,
-    "url": "https://curriculum.learnersguild.org/modules/Testing-Snapshot--Goal-446",
+    "path": "/challenges/Testing-Snapshot-Goal-446",
     "dynamic": false
   },
   "447": {
@@ -252,7 +252,7 @@
     ],
     "published": true,
     "phase": 3,
-    "url": "https://curriculum.learnersguild.org/modules/Migrations-Snapshot--Goal-447",
+    "path": "/challenges/Migrations-Snapshot-Goal-447",
     "dynamic": false
   },
   "64": {
@@ -269,7 +269,7 @@
     ],
     "published": true,
     "phase": 3,
-    "url": "https://curriculum.learnersguild.org/modules/To-Do-List-App--Goal-64",
+    "path": "/challenges/To-Do-List-App-Goal-64",
     "dynamic": false
   },
   "69": {
@@ -285,7 +285,7 @@
     ],
     "published": true,
     "phase": 3,
-    "url": "https://curriculum.learnersguild.org/modules/Simple-Book-Store--Goal-69",
+    "path": "/challenges/Simple-Book-Store-Goal-69",
     "dynamic": false
   },
   "98": {
@@ -301,7 +301,7 @@
     ],
     "published": true,
     "phase": 3,
-    "url": "https://curriculum.learnersguild.org/modules/Pizza-Restaurant-Relational-DB-Schema-With-CRUD-API--Goal-98",
+    "path": "/challenges/Pizza-Restaurant-RDB-Schema-with-CRUD-API-Goal-98",
     "dynamic": false
   },
   "448": {
@@ -317,7 +317,7 @@
     ],
     "published": true,
     "phase": 3,
-    "url": "https://curriculum.learnersguild.org/modules/Debugging-Snapshot--Goal-448",
+    "path": "/challenges/Debugging-Snapshot-Goal-448",
     "dynamic": false
   },
   "449": {
@@ -333,7 +333,7 @@
     ],
     "published": true,
     "phase": 3,
-    "url": "https://curriculum.learnersguild.org/modules/Refactoring-Snapshot--Goal-449",
+    "path": "/challenges/Refactoring-Snapshot-Goal-449",
     "dynamic": false
   }
 }

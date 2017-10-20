@@ -1,57 +1,38 @@
-const utils = require('./utils')
+const {
+  readDirectoriesWithREADMEs,
+  extractListFromMarkdownSection,
+  removeREADMEMarkdown,
+  mapToObjectBy,
+} = require('./utils')
 
 module.exports = () =>
-  utils.readdir('/phases')
-    .then(phaseNumbers =>
-      phaseNumbers.filter(phaseNumber => phaseNumber == Number(phaseNumber))
+  readDirectoriesWithREADMEs('/phases')
+  .then(moveIdToNumber)
+  .then(extractChallenges)
+  .then(removeREADMEMarkdown)
+  .then(mapToObjectBy('number'))
+
+const moveIdToNumber = phases => {
+  phases.forEach(phase => {
+    phase.number = Number(phase.id)
+  })
+  return phases
+}
+
+const extractChallenges = phases => {
+  phases.forEach(phase => {
+    const challenges = extractListFromMarkdownSection(
+      phase.READMEMarkdown,
+      'Challenges',
+      2,
     )
-    .then(phaseNumbersToPhases)
-    .then(loadDetails)
-    .then(indexByNumber)
+    phase.challenges = challenges.map(extractChallengeId)
+  })
+  return phases
+}
 
-const phaseNumbersToPhases = numbers =>
-  numbers.map(number => (
-    {
-      number: Number.parseInt(number),
-      path: `/phases/${number}`,
-    }
-  ))
-
-const loadDetails = phases =>
-  Promise.all(
-    phases.map(phase =>
-      utils.readMarkdownFile(`${phase.path}/README.md`)
-      .then(document => {
-        phase.modules =
-          utils.extractListFromSection(document, 'Modules', 2)
-          .map(parseModuleText)
-        return document
-      })
-      .then(_ => phase)
-    )
-  )
-
-const indexByNumber = phases =>
-  phases.reduce((index, phase) => {
-    index[phase.number] = phase
-    return index
-  }, {})
-
-const isModulesHeading = token =>
-  token.type === 'heading' &&
-  token.depth === 2 &&
-  token.text === 'Modules'
-
-const parseModuleText = (text) => {
-  const matches = text.match(/([^\[]+?)\s*\[([^\]]+)\]\(([^\(]+)\)/)
-  if (!matches) return
-  let [_, icon, name, path] = matches
-  let id = path.split('/modules/')[1]
-  // let type = (
-  //   icon === "🤸" ? 'practice' :
-  //   icon === "🏋" ? 'benchmark' :
-  //   undefined
-  // )
-  return id
-  // return {id, type, name, path}
+const extractChallengeId = (challenge) => {
+  const matches = challenge.match(/\/challenges\/([^\/]+?)\)/)
+  if (!matches) throw new Error('unable to parse challenge for phase: '+challenge)
+  return matches ? matches[1] : challenge
 }

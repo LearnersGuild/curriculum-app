@@ -1,28 +1,18 @@
-const utils = require('./utils')
+const {
+  readDirectoriesWithREADMEs,
+  getHeadingFromMarkdown,
+  removeREADMEMarkdown,
+  mapToObjectBy,
+} = require('./utils')
 
 module.exports = () =>
-  utils.readdir('/glossary')
-    .then(convertGlossaryFileNamesToTerms)
-    .then(loadTermValues)
-    .then(utils.indexById)
-
-const convertGlossaryFileNamesToTerms = glossaryFileName =>
-  glossaryFileName
-    .filter(utils.noExtension)
-    .map(fileName => ({
-      id: fileName,
-      value: fileName.replace(/-/g, ' '),
-      path: `/glossary/${fileName}`,
-    }))
-
-const loadTermValues = terms =>
-  Promise.all(
-    terms.map(term =>
-      utils.readMarkdownFile(`/glossary/${term.id}/README.md`)
-        .then(document => {
-          const heading = document.find( token => token.type === 'heading' && token.depth === 1 )
-          if (heading) term.value = heading.text
-          return term
-        })
-    )
-  )
+  readDirectoriesWithREADMEs('/glossary')
+  .then(terms => {
+    terms.forEach(term => {
+      term.value = term.name
+      delete term.name
+    })
+    return terms
+  })
+  .then(removeREADMEMarkdown)
+  .then(mapToObjectBy('id'))

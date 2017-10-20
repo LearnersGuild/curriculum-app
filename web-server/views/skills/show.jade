@@ -4,11 +4,18 @@ block content
 
   h1.skill-show-page-heading
     input.skill-checkbox(type="checkbox", data-skill-id=skill.id, checked=skill.checked)
-    span !{renderSkill(skill)}
+    span !{skill.nameAsHTML}
+
+  h2 Challenges
+  ul
+    for challengeId in skill.challenges
+      - const challenge = digest.challenges[challengeId]
+      li
+        a(href=challenge.path)= challenge.name
 
   h2 Modules
   ul
     for moduleId in skill.modules
       - const module = digest.modules[moduleId]
       li
-        a(href="/modules/"+module.id)= module.name
+        a(href=module.path)= module.name

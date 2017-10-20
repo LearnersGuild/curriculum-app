@@ -1,16 +1,22 @@
 #!/usr/bin/env node
 
-const util = require('util')
-const digest = require(__dirname+'/../digest')
+const cli = require('commander')
+const { getDigest } = require(__dirname+'/../digest')
+
+
+cli
+  .version('0.0.1')
+  .parse(process.argv)
+
+const { listSkillIds } = cli
+const pretty = cli.pretty !== false
+
+const color = process.stdin.isTTY ? false : cli.color
 
 const inspect = object =>
-  util.inspect(object, {
-    depth: null,
-    colors: true,
-    maxArrayLength: null,
-  })
+  JSON.stringify(object, null, 2)
 
-digest()
+getDigest()
   .then(digest => {
     console.log(inspect(digest))
   })

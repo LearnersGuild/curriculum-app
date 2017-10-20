@@ -31,11 +31,6 @@ module.exports = app => {
   app.locals.weeksAgoInWords = date =>
     date ? moment().diff(moment(date), 'week')+' weeks ago' : null
 
-
-
-  app.locals.renderSkill = skill =>
-    renderMarkdown(skill.rawText).slice(3,-5).trim()
-
   app.locals.sortSkills = skills => {
     skills = Array.isArray(skills)
       ? skills
@@ -118,7 +113,8 @@ module.exports = app => {
         })
     }
 
-    response.renderMarkdownFile = function(relativeFilePath=request.path){
+    response.renderMarkdownFile = function(relativeFilePath=request.path, locals={}){
+      Object.assign(response.locals, locals)
       const absoluteFilePath = path.resolve(__dirname, '..', '.'+relativeFilePath)
       fs.readFile(absoluteFilePath)
         .then(file => {
@@ -152,12 +148,61 @@ module.exports = app => {
       })
     }
 
-
     request.getUserIncludingCheckedSkills = (handle, options={}) => {
       return request.backOffice.getUserByHandle(handle, options).then(user => {
           return queries.getCheckedSkills(user.id).then(checkedSkills => {
             user.checkedSkills = checkedSkills
             return user
+          })
+        })
+    }
+
+    response.renderModuleOrChallenge = (type, id, request, response, next) => {
+      const userId = request.user.id
+      // const { moduleId } = request.params
+      const { digest } = response
+
+      const moduleOrChallenge = digest[type+'s'][id]
+      if (moduleOrChallenge){
+
+        // const skillData = currentModule.skills
+        //   .map(id => {
+        //     const { nameAsHTML, path } = digest.skills[id]
+        //     return { id, nameAsHTML, path }
+        //   })
+
+      }
+
+      // const currentModule = digest.modules[moduleId]
+      // if (!currentModule) return next()
+
+
+      // response.locals.moduleId = moduleId
+      // response.locals.currentModule = currentModule
+      response.locals.skillData = skillData
+
+      const labels = skillData.map(skill => skill.id)
+      queries.getChecksForUserAndLabels({userId, labels})
+        .then(checks => {
+          skillData.forEach(skill => {
+            skill.checked = !!checks[skill.id]
+          })
+          response.renderMarkdownFile(`/challenges/${challengeId}/README.md`)
+        })
+        .catch(next)
+    }
+
+    request.getUserWithCheckLog = (handle, options={}) => {
+      return request.backOffice.getUserByHandle(handle, options)
+        .then(learner => {
+          return queries.getCheckLogsForUsers([learner.id])
+          .then(checkLogs => {
+            const checkLog = checkLogs[learner.id]
+            learner.checkLog = checkLog
+            learner.checkedSkills = checkLog
+              .filter(checkLogLine => checkLogLine.checked)
+              .map(checkLogLine => checkLogLine.label)
+            return learner
           })
         })
     }
