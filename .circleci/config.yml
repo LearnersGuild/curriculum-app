@@ -8,12 +8,15 @@ jobs:
     docker:
       # specify the version you desire here
       - image: circleci/node:8.1.2
-
+        environment:
+          NODE_ENV: test
+          PGHOST: 127.0.0.1
+          PGUSER: root
       - image: circleci/postgres:9.5-alpine
         environment:
           POSTGRES_USER: lg-cirriculum
-          POSTGRES_DB: lg-cirriculum
-          POSTGRES_PASSWORD: lg-cirriculum
+          POSTGRES_DB: lg-cirriculum-test
+          POSTGRES_PASSWORD: ""
 
     working_directory: ~/repo
 
