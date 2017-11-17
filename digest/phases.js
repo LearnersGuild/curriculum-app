@@ -1,21 +1,21 @@
 const utils = require('./utils')
+const capitalize = require('lodash/capitalize');
 
 module.exports = () =>
-  utils.readdir('/phases')
-    .then(phaseNumbers =>
-      phaseNumbers.filter(phaseNumber => phaseNumber == Number(phaseNumber))
-    )
+  utils.getDirectoriesSync('/phases')
     .then(phaseNumbersToPhases)
     .then(loadDetails)
     .then(indexByNumber)
 
-const phaseNumbersToPhases = numbers =>
-  numbers.map(number => (
+const phaseNumbersToPhases = phases => {
+  return phases.map(phase => (
     {
-      number: Number.parseInt(number),
-      path: `/phases/${number}`,
+      number: phase,
+      path: `/phases/${phase}`,
+      humanName: capitalize(phase)
     }
   ))
+};
 
 const loadDetails = phases =>
   Promise.all(

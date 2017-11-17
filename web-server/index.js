@@ -20,9 +20,9 @@ app.get('/_status', (request, response, next) => {
 })
 
 app.use(compression())
+require('./authentication')(app)
 require('./routes/assets')(app)
 require('./routes/goals')(app)
-require('./authentication')(app)
 require('./routes/api')(app)
 require('./helpers')(app)
 require('./routes/digest')(app)

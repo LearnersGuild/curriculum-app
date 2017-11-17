@@ -23,7 +23,6 @@ module.exports = app => {
       }
       next()
     })
-    return
   }
 
   if (process.env.NODE_ENV === 'test') {

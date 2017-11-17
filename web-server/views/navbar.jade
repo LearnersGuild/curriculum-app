@@ -22,7 +22,7 @@ nav.navbar.navbar-inverse(role='navigation')
           ul.dropdown-menu(role='menu')
             each phase in digest.phases
               li
-                a(href='/phases/'+phase.number+'/') Phase #{phase.number}
+                a(href='/phases/'+phase.number+'/') #{phase.humanName}
 
         li.dropdown
           a.dropdown-toggle(href='#', data-toggle='dropdown')
