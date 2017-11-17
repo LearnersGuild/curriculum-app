@@ -1,11 +1,27 @@
 const Path = require('path')
 const fs = require('fs-extra')
 const lexer = require('marked').lexer
+const { lstatSync } = require('fs');
+const { join } = require('path')
 
 const APP_ROOT = Path.resolve(__dirname, '..')
 
 const values = object =>
   Object.keys(object).map(key => object[key])
+
+const isDirectory = source => {
+  return lstatSync(source.fullPath).isDirectory()
+}
+
+const getDirectoriesSync = path => {
+  return readdir(path)
+  .then(files => {
+    return files.map(name => ({fullPath: join((APP_ROOT+ path), name),
+                               name}))
+      .filter(isDirectory)
+      .map(file => file.name);
+  });
+};
 
 const readdir = path =>
   fs.readdir(APP_ROOT+path).then(files =>
@@ -94,4 +110,5 @@ const extractListFromSection = (document, text, depth) => {
   extractListFromSection,
   indexById,
   noExtension,
+  getDirectoriesSync
  }
