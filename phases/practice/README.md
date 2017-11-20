@@ -1,4 +1,4 @@
-# Phase 3
+# Practice Phase
 
 The Integrated Practice phase gives learners a chance to synthesize and utilize skills developed in Foundations 1 & 2 through module-based assignments and small projects that mimic real world applications.
 
