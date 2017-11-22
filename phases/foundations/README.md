@@ -1,6 +1,6 @@
 # Foundations Phase
 
-The Foundations phase is all about the fundamentals. Here you'll learn the basic skills needed to begin programming like a professional.
+The Foundations phase is all about the fundamentals. Here you'll learn the basic skills needed to begin programming like a professional. You will follow weekly study plans that include online modules and a project to apply the skills you've learned.
 
 ## High Level Skills
 
