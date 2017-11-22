@@ -44,7 +44,7 @@ nav.navbar.navbar-inverse(role='navigation')
             li.divider(role="presentation")
             each phase in digest.phases
               li
-                a(href='/phases/'+phase.number+'/skills') Phase #{phase.number}
+                a(href='/phases/'+phase.number+'/skills') #{phase.humanName}
 
         li.dropdown.hidden-sm
           a(href='/glossary/') Glossary
