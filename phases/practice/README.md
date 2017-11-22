@@ -2,7 +2,7 @@
 
 The Integrated Practice phase gives learners a chance to synthesize and utilize skills developed in the Foundations phase through module-based assignments and small projects that mimic real world applications.
 
-In Phase 3, you'll choose a goal that you'd like to work on and will be put on a team. Most of the goals are pairing goals, with a couple solo goals mixed in.
+In the Practice phase, you'll choose a goal that you'd like to work on and will be put on a team. Most of the goals are pairing goals, with a couple solo goals mixed in.
 
 ## High Level Skills
 
