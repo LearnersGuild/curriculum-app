@@ -20,3 +20,10 @@ In this phase you will learn…
 - how to use SQL to persist data from within a node program
 - how to create static HTML & CSS “pages” from mockups and wireframes
 - how to create a basic Express HTTP server on Node
+
+
+## Learner Expectations
+
+1. Daily stand-up (9am)
+2. Weekly 1:1 with an SEP
+3. Weekly Demo session to show off what you accomplished for the week (Friday at 4:30 pm)
