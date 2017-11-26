@@ -18,6 +18,11 @@ In this phase you will learn…
 - How to render dynamically generated HTML
 - How to add migrations to your database schema
 
+## Learner Expectations
+- Daily standup at 9am.
+- Weekly 1:1 checkin with an SEP.
+- End of week project demo.
+
 ## Modules
 
 - _P:_ [CRUD Mutability - Goal 383](../../modules/CRUD-Mutability--Goal-383)
