@@ -1,22 +1,28 @@
 # Practice Phase
 
-The Integrated Practice phase gives learners a chance to synthesize and utilize skills developed in the Foundations phase through module-based assignments and small projects that mimic real world applications.
+The Integrated Practice phase gives learners a chance to synthesize and utilize skills developed in the Foundations phase through module-based assignments and small projects that mimic real world applications. 
 
-In the Practice phase, you'll choose a goal that you'd like to work on and will be put on a team. Most of the goals are pairing goals, with a couple solo goals mixed in.
+Each week you will choose a module to work on and, in most cases, a partner to pair with. Though pairing with others is not strictly required, it is an important way to accelerate your learning and accustom you to working on teams, and is therefore highly encouraged.
+
+This phase is designed to give you the practice you need working on full-stack apps so that you can be an effective team member on large code bases with complex functionality and multiple different technologies at play.
 
 ## High Level Skills
 
 In this phase you will learn…
 
-- How to combine all of your `HTML and CSS`, `HTTP Server` and `Browser` skills together
-- More JavaScript design patterns
+- How to combine all of your front-end (HTML, CSS and Browser JavaScript) and back-end (HTTP Server, database) skills together to build full-stack applications
 - Full web application architecture
 - How authentication works on most of the web
+- How to use cookies and sessions to create continuity in your users' experience of your webpage.
 - Persisting web application state in a relational (SQL) database
-- More advanced asynchronous patterns in JavaScript
-- How to use Git and GitHub on a team
 - How to render dynamically generated HTML
-- How to add migrations to your database schema
+- How to use Git and GitHub on a team
+- How to interpret specs, breakdown problems into manageable parts, and debug your code more effectively
+- How to use _abstractions_ to make your code more maintainable and easier to reason about.
+- How to use AJAX to create dynamically updating single-page apps
+- How to make data available programatically by creating a RESTful API
+- How to make use of modern tools to improve code quality and your coding experience
+- How to understand, break down and solve the algorithm-based challenges that are typically used in interview settings.
 
 ## Learner Expectations
 - Daily standup at 9am.
