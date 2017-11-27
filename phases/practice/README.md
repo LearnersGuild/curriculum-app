@@ -10,6 +10,7 @@ In this phase you will learn…
 
 - How to combine all of your front-end (HTML, CSS and Browser JavaScript) and back-end (HTTP Server, database) skills together to build full-stack applications
 - Full web application architecture
+- (coming soon) How to use front-end reactive frameworks to create powerful and performant user interfaces.
 - How authentication works on most of the web
 - How to use cookies and sessions to create continuity in your users' experience of your webpage.
 - Persisting web application state in a relational (SQL) database
