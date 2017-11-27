@@ -1,10 +1,10 @@
-# Apprenticeship Phase
+# Area 45
 
 ## Description
 
 The software field -- and indeed, the world at large -- owes a great deal to the open source software community. Like most developers, members of Learners Guild benefit daily from the availability of countless freely available software tools and educational resources. We are committed to contributing to these efforts and resources as committers to (and even maintainers of) open source projects.
 
-In the **apprenticeship** phase, SEPs and learners will collaborate on contributions to OSS projects and possibly on live, production systems like the LOS apps (echo, idm, etc.). SEPs will select projects and work with learners to identify appropriate issues to work on, and learners will be expected to submit pull requests to project maintainers. Learners who wish to work on their own projects may choose to do so, if they follow the guidelines listed in the section below.
+In this phase, SEPs and learners will collaborate on contributions to OSS projects and possibly on live, production systems like the LOS apps (echo, idm, etc.). SEPs will select projects and work with learners to identify appropriate issues to work on, and learners will be expected to submit pull requests to project maintainers. Learners who wish to work on their own projects may choose to do so, if they follow the guidelines listed in the section below.
 
 Apart from helping you develop stellar technical skills, this phase also offers Career Prep. Career Prep supports learners with interview readiness, job placement support and overarching career development. Learners are responsible for working to become fully employed by the end of their time at the Guild. Since each learner’s application and job search strategy may vary, learners are responsible for keeping track of their job-hunt progress.
 

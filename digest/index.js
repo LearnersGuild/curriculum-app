@@ -42,6 +42,7 @@ module.exports = () =>
       'UNIX',
       'postgresql',
     ].sort()
+    digest.phaseOrder = ['foundations', 'practice', 'area 45'];
     return digest
   })
   .then(loadSkills)

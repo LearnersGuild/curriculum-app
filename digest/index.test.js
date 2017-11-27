@@ -27,6 +27,7 @@ describe('digest', function(){
         "phases",
         "glossary",
         "skillContexts",
+        "phaseOrder",
         "skills",
         "report",
       ])
@@ -82,7 +83,7 @@ describe('digest', function(){
     describe('.phases', function(){
       it('should be an object with keys', function(){
         const phases = Object.keys(this.digest.phases)
-        expect(phases).to.eql(['apprenticeship', 'foundations', 'practice'])
+        expect(phases).to.eql(['area 45', 'foundations', 'practice'])
       })
 
       it('should each have skills', function(){

@@ -20,7 +20,8 @@ nav.navbar.navbar-inverse(role='navigation')
             | Phases
             b.caret
           ul.dropdown-menu(role='menu')
-            each phase in digest.phases
+            each phaseName in digest.phaseOrder
+              - phase = digest.phases[phaseName]
               li
                 a(href='/phases/'+phase.number+'/') #{phase.humanName}
 
@@ -42,7 +43,8 @@ nav.navbar.navbar-inverse(role='navigation')
             li(class=className)
               a(href='/skills') All Skills
             li.divider(role="presentation")
-            each phase in digest.phases
+            each phaseName in digest.phaseOrder
+              - phase = digest.phases[phaseName]
               li
                 a(href='/phases/'+phase.number+'/skills') #{phase.humanName}
 
