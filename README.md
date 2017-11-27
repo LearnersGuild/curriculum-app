@@ -4,7 +4,7 @@ The Learners Guild program has been broken down into 3 phases. Each phase is 12 
 
 - [Foundations](./phases/foundations)
 - [Practice](./phases/practice)
-- [Area 45](./phases/area 45)
+- [Area 45](./phases/area%2045)
 
 
 ## Contributing
