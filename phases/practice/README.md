@@ -1,10 +1,8 @@
 # Practice Phase
 
-The Integrated Practice phase gives learners a chance to synthesize and utilize skills developed in the Foundations phase through module-based assignments and small projects that mimic real world applications. 
+The Integrated Practice phase gives learners a chance to synthesize and utilize skills developed in the Foundations phase through small projects (modules) that mimic real world applications. 
 
 Each week you will choose a module to work on and, in most cases, a partner to pair with. Though pairing with others is not strictly required, it is an important way to accelerate your learning and accustom you to working on teams, and is therefore highly encouraged.
-
-This phase is designed to give you the practice you need working on full-stack apps so that you can be an effective team member on large code bases with complex functionality and multiple different technologies at play.
 
 ## High Level Skills
 
@@ -25,9 +23,31 @@ In this phase you will learn…
 - How to understand, break down and solve the algorithm-based challenges that are typically used in interview settings.
 
 ## Learner Expectations
-- Daily standup at 9am.
-- Weekly 1:1 checkin with an SEP.
-- End of week project demo.
+
+Required:
+
+- Attend daily standup at 9am.
+- Have a weekly 1:1 checkin with an SEP.
+- Share what you've accomplished and learned in the end-of-week project demos.
+
+Optional:
+
+- Attend lectures and office hours offered throughout the week
+- Participate in the daily algorithm challenge group
+
+*Consult the [Learner Guide](https://guide.learnersguild.org/) for a full list of Learner Expectations*
+
+### Phase Calendar 🗓
+
+All phase lectures, office hours and other activities are listed in the phase calendar ([view here](https://calendar.google.com/calendar/embed?src=learnersguild.org_cp10fqmfm51bcojt2n6jscnjlk%40group.calendar.google.com&ctz=America/Los_Angeles)).
+
+Use the following steps to add the phase calendar to your Google Calendar:
+
+1. Open Google Calendar.
+2. On the left side, find “Other calendars” and click the down arrow .
+3. Select Add by URL.
+4. Enter the calendar’s address in the field provided. The address needs to be an ICAL link: `https://calendar.google.com/calendar/ical/learnersguild.org_cp10fqmfm51bcojt2n6jscnjlk%40group.calendar.google.com/public/basic.ics`
+5. Click Add calendar.
 
 ## Modules
 
@@ -50,11 +70,9 @@ In this phase you will learn…
 
 Please look at the [Phase 3 Playlist](https://www.youtube.com/playlist?list=PLcSbxZVkmW_gHJIVLffRGJ4FRXy9LNabc) on YouTube. The playlist is constantly updated with new videos, which may be relevant to the work you are doing.
 
-## Recommended Roadmap
+## Recommended Roadmap 🛣
 
-### Week 1
-
-#### Goal: CRUD Mutability Goal(383)
+### [Week 1] Goal: CRUD Mutability Goal(383)
 
 #### Concepts to focus on
 - Programming Naming Conventions
@@ -69,9 +87,7 @@ Please look at the [Phase 3 Playlist](https://www.youtube.com/playlist?list=PLcS
 - [MVC for Single Page Apps](https://www.youtube.com/watch?v=lJYTnhqh3-U&index=8&list=PLcSbxZVkmW_gHJIVLffRGJ4FRXy9LNabc)
 - [MVC Pattern Explained](https://www.youtube.com/watch?v=dZCiCIVfe3s)
 
-### Week 2:
-
-#### Goal: Authentication app(Goal 444)
+### [Week 2] Goal: Authentication app(Goal 444)
 
 #### Concepts to focus on
 - Programming Naming Conventions
@@ -90,9 +106,7 @@ Please look at the [Phase 3 Playlist](https://www.youtube.com/playlist?list=PLcS
 - [Add Authorization to an Express Server](https://www.youtube.com/watch?v=GLgNR1A0h_E&list=PLcSbxZVkmW_gHJIVLffRGJ4FRXy9LNabc&index=5)
 
 
-### Week 3:
-
-#### Goal: Simple Book Store(Goal #69)
+### [Week 3] Goal: Simple Book Store(Goal #69)
 
 #### Concepts to focus on
 - Creating a configuration for your app using environment variables (test, development, production)
@@ -108,9 +122,7 @@ Please look at the [Phase 3 Playlist](https://www.youtube.com/playlist?list=PLcS
 - [Method Override in an Express Server](https://www.youtube.com/watch?v=RuvqCpY_Q50&index=10&list=PLcSbxZVkmW_gHJIVLffRGJ4FRXy9LNabc)
 - [Error Handling in an Express Server](https://www.youtube.com/watch?v=ngkqRXklna8&list=PLcSbxZVkmW_gHJIVLffRGJ4FRXy9LNabc&index=12)
 
-### Week 4:
-
-#### Goal: Testing Snapshot 446
+### [Week 4] - Goal: Testing Snapshot 446
 
 #### Concepts to focus on
 - Understanding the difference between unit vs integration vs end-to-end testing
@@ -125,7 +137,7 @@ Please look at the [Phase 3 Playlist](https://www.youtube.com/playlist?list=PLcS
 - [Code Organization](https://www.youtube.com/watch?v=q4J3QjKlKlg&list=PLcSbxZVkmW_gHJIVLffRGJ4FRXy9LNabc&index=2)
 
 
-## Lectures
+## Lecture Topics
 
 - Deploying with Heroku
   - Buildpacks
